@@ -125,8 +125,10 @@
     color:var(--dim); background:transparent; border:none; border-radius:6px;
     padding:0; cursor:pointer; transition:all 0.12s ease;
   }
+  .theme-toggle .theme-btn[data-theme="dark"]{color:#9aa4ad;}
+  .theme-toggle .theme-btn[data-theme="light"]{color:#f5a524;}
   .theme-toggle .theme-btn:hover{color:var(--chalk);}
-  .theme-toggle .theme-btn.active{background:var(--turf,var(--gold)); color:#04140a;}
+  .theme-toggle .theme-btn.active{background:var(--turf,var(--gold)); color:#fff;}
 
   @media (max-width: 760px){
     .hamburger-btn{display:flex; align-items:center; justify-content:center;}
@@ -181,7 +183,7 @@
     padding:0.35rem 0.9rem; cursor:pointer; transition:all 0.12s ease;
   }
   .format-btn:hover{color:var(--chalk);}
-  .format-btn.active{background:var(--gold); color:#1a1400;}
+  .format-btn.active{background:var(--gold); color:#fff;}
 
   section.export-group{
     background:var(--bg-panel); border:1px solid var(--line); border-radius:12px;
@@ -206,7 +208,7 @@
   .export-btn{
     font-family:'Oswald',sans-serif; font-weight:600; font-size:0.78rem;
     text-transform:uppercase; letter-spacing:0.04em;
-    color:#0e130f; background:var(--turf-bright); border:none; border-radius:6px;
+    color:#fff; background:var(--turf-bright); border:none; border-radius:6px;
     padding:0.55rem 0.9rem; cursor:pointer; transition:opacity 0.12s ease;
   }
   .export-btn:hover{opacity:0.85;}
@@ -237,7 +239,7 @@
     <a href="picks.html">Picks</a>
   </div>
   <div class="theme-toggle" role="group" aria-label="Color theme">
-    <button type="button" class="theme-btn" data-theme="dark" aria-label="Dark theme">🌙</button>
+    <button type="button" class="theme-btn" data-theme="dark" aria-label="Dark theme">☾</button>
     <button type="button" class="theme-btn" data-theme="light" aria-label="Light theme">☀</button>
   </div>
 </nav>
