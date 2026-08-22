@@ -35,6 +35,7 @@
     --purple-deep: #8b5cf6;
     --purple-deep-rgb: 139,92,246;
     --purple-soft: #c4b5fd;
+    --on-solid: #000;
   }
 
   /* Light theme -- same variable names, redefined on body.light-theme so
@@ -71,6 +72,7 @@
     --purple-deep: #6d3fd6;
     --purple-deep-rgb: 109,63,214;
     --purple-soft: #6d3fd6;
+    --on-solid: #fff;
   }
 
   *{box-sizing:border-box;}
@@ -107,7 +109,7 @@
   }
   .nav-links{display:flex; gap:1.25rem; align-items:center; order:1;}
   .site-nav a{
-    font-family:'Oswald',sans-serif; font-weight:600; font-size:0.82rem;
+    font-family:'Oswald',sans-serif; font-weight:600; font-size:0.68rem;
     text-transform:uppercase; letter-spacing:0.04em;
     color:var(--dim); text-decoration:none;
     padding:0.3rem 0; border-bottom:2px solid transparent;
@@ -128,7 +130,8 @@
   .theme-toggle .theme-btn[data-theme="dark"]{color:#9aa4ad;}
   .theme-toggle .theme-btn[data-theme="light"]{color:#f5a524;}
   .theme-toggle .theme-btn:hover{color:var(--chalk);}
-  .theme-toggle .theme-btn.active{background:var(--turf,var(--gold)); color:#fff;}
+  .theme-toggle .theme-btn.active{background:var(--turf,var(--gold)); color:var(--on-solid);}
+  .theme-toggle .theme-btn[data-theme="light"].active{color:#f5a524;}
 
   @media (max-width: 760px){
     .hamburger-btn{display:flex; align-items:center; justify-content:center;}
@@ -183,7 +186,7 @@
     padding:0.35rem 0.9rem; cursor:pointer; transition:all 0.12s ease;
   }
   .format-btn:hover{color:var(--chalk);}
-  .format-btn.active{background:var(--gold); color:#fff;}
+  .format-btn.active{background:var(--gold); color:var(--on-solid);}
 
   section.export-group{
     background:var(--bg-panel); border:1px solid var(--line); border-radius:12px;
@@ -208,7 +211,7 @@
   .export-btn{
     font-family:'Oswald',sans-serif; font-weight:600; font-size:0.78rem;
     text-transform:uppercase; letter-spacing:0.04em;
-    color:#fff; background:var(--turf-bright); border:none; border-radius:6px;
+    color:var(--on-solid); background:var(--turf-bright); border:none; border-radius:6px;
     padding:0.55rem 0.9rem; cursor:pointer; transition:opacity 0.12s ease;
   }
   .export-btn:hover{opacity:0.85;}

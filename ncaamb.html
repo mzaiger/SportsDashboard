@@ -39,6 +39,7 @@
     --toggle-bg: var(--bg-panel);
     --toggle-border: var(--line);
     --toggle-text: var(--dim);
+    --on-solid: #000;
   }
 
   /* Light theme -- same variable names, redefined on body.light-theme so
@@ -78,6 +79,7 @@
     --toggle-bg: #dde2e6;
     --toggle-border: #aab1b8;
     --toggle-text: #40474e;
+    --on-solid: #fff;
   }
 
   *{box-sizing:border-box;}
@@ -115,7 +117,7 @@
   }
   .nav-links{display:flex; gap:1.25rem; align-items:center; order:1;}
   .site-nav a{
-    font-family:'Oswald',sans-serif; font-weight:600; font-size:0.82rem;
+    font-family:'Oswald',sans-serif; font-weight:600; font-size:0.68rem;
     text-transform:uppercase; letter-spacing:0.04em;
     color:var(--dim); text-decoration:none;
     padding:0.3rem 0; border-bottom:2px solid transparent;
@@ -127,11 +129,11 @@
     display:flex; align-items:center; gap:0.3rem;
     font-family:'Oswald',sans-serif; font-weight:600; font-size:0.72rem;
     text-transform:uppercase; letter-spacing:0.03em;
-    color:var(--dim); background:var(--pill-bg); border:1px solid var(--line); border-radius:6px;
+    color:var(--toggle-text); background:var(--toggle-bg); border:1px solid var(--toggle-border); border-radius:6px;
     padding:0.1rem 0.22rem; cursor:pointer; transition:all 0.12s ease;
   }
   .status-pill:hover{color:var(--chalk);}
-  .status-pill.active{background:var(--turf); color:#fff; border-color:var(--turf);}
+  .status-pill.active{background:var(--turf); color:var(--on-solid); border-color:var(--turf);}
   .pill-count{font-family:'JetBrains Mono',monospace; font-weight:500; opacity:0.85;}
   .view-toggle{
     display:flex; gap:0.25rem; background:var(--toggle-bg);
@@ -145,7 +147,7 @@
     padding:0.1rem 0.22rem; cursor:pointer; transition:all 0.12s ease;
   }
   .view-toggle .view-btn:hover{color:var(--chalk);}
-  .view-toggle .view-btn.active{background:var(--turf); color:#fff;}
+  .view-toggle .view-btn.active{background:var(--turf); color:var(--on-solid);}
   .theme-toggle{
     display:flex; gap:0.15rem; background:var(--bg-panel);
     border:1px solid var(--line); border-radius:8px; padding:0.2rem;
@@ -160,7 +162,8 @@
   .theme-toggle .theme-btn[data-theme="dark"]{color:#9aa4ad;}
   .theme-toggle .theme-btn[data-theme="light"]{color:#f5a524;}
   .theme-toggle .theme-btn:hover{color:var(--chalk);}
-  .theme-toggle .theme-btn.active{background:var(--turf,var(--gold)); color:#fff;}
+  .theme-toggle .theme-btn.active{background:var(--turf,var(--gold)); color:var(--on-solid);}
+  .theme-toggle .theme-btn[data-theme="light"].active{color:#f5a524;}
 
   /* Filter options now live inline in the nav bar itself (same sticky
      element, same background) instead of a separate bar underneath --
@@ -175,19 +178,19 @@
   .filter-pill{
     font-family:'Oswald',sans-serif; font-weight:600; font-size:0.72rem;
     text-transform:uppercase; letter-spacing:0.04em;
-    color:var(--dim); background:var(--pill-bg); border:1px solid var(--line); border-radius:6px;
+    color:var(--toggle-text); background:var(--toggle-bg); border:1px solid var(--toggle-border); border-radius:6px;
     padding:0.1rem 0.22rem; cursor:pointer; transition:all 0.12s ease;
   }
   .filter-pill:hover{color:var(--chalk);}
-  .filter-pill.active{background:var(--turf); color:#fff; border-color:var(--turf);}
+  .filter-pill.active{background:var(--turf); color:var(--on-solid); border-color:var(--turf);}
 
   .filter-conf-group{
     display:flex; align-items:center; gap:0.5rem;
-    border:1px solid var(--line); border-radius:8px;
+    border:1px solid var(--toggle-border); border-radius:8px;
     padding:0.1rem 0.22rem;
   }
   .conf-type-toggle{
-    display:flex; gap:0.2rem; background:var(--bg); border-radius:6px; padding:0.1rem;
+    display:flex; gap:0.2rem; background:var(--toggle-bg); border-radius:6px; padding:0.1rem;
   }
   .conf-type-btn{
     font-family:'Oswald',sans-serif; font-weight:600; font-size:0.7rem;
@@ -196,14 +199,14 @@
     padding:0.1rem 0.22rem; cursor:pointer; transition:all 0.12s ease;
   }
   .conf-type-btn:hover{color:var(--chalk);}
-  .conf-type-btn.active{background:var(--turf); color:#fff;}
+  .conf-type-btn.active{background:var(--turf); color:var(--on-solid);}
   .filter-conf{display:flex; align-items:center; gap:0.35rem;}
   .filter-conf label{
     font-family:'Oswald',sans-serif; font-weight:600; font-size:0.7rem;
     text-transform:uppercase; letter-spacing:0.03em; color:var(--dim);
   }
   .filter-conf select{
-    background:var(--bg); color:var(--chalk); border:none;
+    background:var(--toggle-bg); color:var(--chalk); border:none;
     border-radius:5px; padding:0.18rem 0.4rem; font-family:'JetBrains Mono',monospace;
     font-size:0.72rem; cursor:pointer;
   }
@@ -260,7 +263,7 @@
     border-bottom:1px dashed var(--line);
   }
   .week-heading .week-name{
-    font-family:'Oswald',sans-serif; font-weight:700; font-size:1.15rem;
+    font-family:'Oswald',sans-serif; font-weight:700; font-size:0.6rem;
     text-transform:uppercase; letter-spacing:0.05em; color:var(--gold);
   }
   .week-heading .week-count{margin-left:auto; color:var(--dim); font-size:0.78rem;}
@@ -412,14 +415,14 @@
     border-bottom:2px solid var(--turf);
   }
   .day-heading .weekday{
-    font-family:'Oswald',sans-serif; font-weight:700; font-size:1.5rem;
+    font-family:'Oswald',sans-serif; font-weight:700; font-size:0.78rem;
     text-transform:uppercase; letter-spacing:0.02em;
   }
-  .day-heading .date{color:var(--dim); font-size:0.85rem;}
+  .day-heading .date{color:var(--dim); font-size:0.68rem;}
   @media (max-width: 480px){
     .day-heading{gap:0.5rem;}
-    .day-heading .weekday{font-size:1.2rem;}
-    .day-heading .date{font-size:0.65rem;}
+    .day-heading .weekday{font-size:0.65rem;}
+    .day-heading .date{font-size:0.58rem;}
   }
   .day-heading .count{
     margin-left:auto; color:var(--dim); font-size:0.78rem;
@@ -469,7 +472,7 @@
   }
   .pick-banner{
     position:absolute; top:0; left:0; right:0;
-    background:var(--pick-yellow); color:#fff;
+    background:var(--pick-yellow); color:var(--on-solid);
     font-family:'Oswald',sans-serif; font-weight:700; font-size:0.7rem;
     text-transform:uppercase; letter-spacing:0.1em; text-align:center;
     padding:0.3rem 0.5rem; border-radius:9px 9px 0 0;
@@ -492,10 +495,10 @@
     text-align:center; line-height:1.15; transition:all 0.12s ease;
   }
   .pick-btn:hover{border-color:var(--pick-yellow); color:var(--chalk);}
-  .pick-btn.active{background:var(--pick-yellow); border-color:var(--pick-yellow); color:#fff;}
+  .pick-btn.active{background:var(--pick-yellow); border-color:var(--pick-yellow); color:var(--on-solid);}
   .pick-btn:disabled{opacity:0.55; cursor:not-allowed;}
   .pick-btn:disabled:hover{border-color:var(--line); color:var(--dim);}
-  .pick-btn.active:disabled{color:#fff;}
+  .pick-btn.active:disabled{color:var(--on-solid);}
   .pick-btn.active:disabled:hover{border-color:var(--pick-yellow);}
 
   .card-top{display:flex; justify-content:space-between; align-items:flex-start; gap:0.75rem;}
@@ -508,7 +511,7 @@
   .close-game .score-badge{color:var(--gold); border-color:rgba(var(--gold-rgb),0.45);}
   .channel-pill{
     font-family:'Oswald',sans-serif; font-weight:600; font-size:0.7rem;
-    background:var(--turf); color:#fff; border-radius:5px;
+    background:var(--turf); color:var(--on-solid); border-radius:5px;
     padding:0.2rem 0.5rem; letter-spacing:0.02em;
     /* Capped to roughly the width of the Matchup badge ("Matchup: XX")
        and wraps instead of overflowing, so a long combined national-TV

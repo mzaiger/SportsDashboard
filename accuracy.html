@@ -32,6 +32,7 @@
     --purple-deep: #8b5cf6;
     --purple-deep-rgb: 139,92,246;
     --purple-soft: #c4b5fd;
+    --on-solid: #000;
   }
 
   /* Light theme -- same variable names, redefined on body.light-theme so
@@ -68,6 +69,7 @@
     --purple-deep: #6d3fd6;
     --purple-deep-rgb: 109,63,214;
     --purple-soft: #6d3fd6;
+    --on-solid: #fff;
   }
 
 
@@ -106,7 +108,7 @@
   }
   .nav-links{display:flex; gap:1.25rem; align-items:center; order:1;}
   .site-nav a{
-    font-family:'Oswald',sans-serif; font-weight:600; font-size:0.82rem;
+    font-family:'Oswald',sans-serif; font-weight:600; font-size:0.68rem;
     text-transform:uppercase; letter-spacing:0.04em;
     color:var(--dim); text-decoration:none;
     padding:0.3rem 0; border-bottom:2px solid transparent;
@@ -127,7 +129,8 @@
   .theme-toggle .theme-btn[data-theme="dark"]{color:#9aa4ad;}
   .theme-toggle .theme-btn[data-theme="light"]{color:#f5a524;}
   .theme-toggle .theme-btn:hover{color:var(--chalk);}
-  .theme-toggle .theme-btn.active{background:var(--turf,var(--gold)); color:#fff;}
+  .theme-toggle .theme-btn.active{background:var(--turf,var(--gold)); color:var(--on-solid);}
+  .theme-toggle .theme-btn[data-theme="light"].active{color:#f5a524;}
 
   .filter-bar-inner{
     display:flex; flex-wrap:wrap; gap:0.6rem; align-items:center;
@@ -137,19 +140,19 @@
   .filter-pill{
     font-family:'Oswald',sans-serif; font-weight:600; font-size:0.72rem;
     text-transform:uppercase; letter-spacing:0.04em;
-    color:var(--dim); background:var(--pill-bg); border:1px solid var(--line); border-radius:6px;
+    color:var(--toggle-text); background:var(--toggle-bg); border:1px solid var(--toggle-border); border-radius:6px;
     padding:0.1rem 0.22rem; cursor:pointer; transition:all 0.12s ease;
   }
   .filter-pill:hover{color:var(--chalk);}
-  .filter-pill.active{background:var(--gold); color:#fff; border-color:var(--gold);}
+  .filter-pill.active{background:var(--gold); color:var(--on-solid); border-color:var(--gold);}
 
   .filter-conf-group{
     display:flex; align-items:center; gap:0.5rem;
-    border:1px solid var(--line); border-radius:8px;
+    border:1px solid var(--toggle-border); border-radius:8px;
     padding:0.1rem 0.22rem;
   }
   .conf-type-toggle{
-    display:flex; gap:0.2rem; background:var(--bg); border-radius:6px; padding:0.1rem;
+    display:flex; gap:0.2rem; background:var(--toggle-bg); border-radius:6px; padding:0.1rem;
   }
   .conf-type-btn{
     font-family:'Oswald',sans-serif; font-weight:600; font-size:0.7rem;
@@ -158,14 +161,14 @@
     padding:0.1rem 0.22rem; cursor:pointer; transition:all 0.12s ease;
   }
   .conf-type-btn:hover{color:var(--chalk);}
-  .conf-type-btn.active{background:var(--gold); color:#fff;}
+  .conf-type-btn.active{background:var(--gold); color:var(--on-solid);}
   .filter-conf{display:flex; align-items:center; gap:0.35rem;}
   .filter-conf label{
     font-family:'Oswald',sans-serif; font-weight:600; font-size:0.7rem;
     text-transform:uppercase; letter-spacing:0.03em; color:var(--dim);
   }
   .filter-conf select{
-    background:var(--bg); color:var(--chalk); border:none;
+    background:var(--toggle-bg); color:var(--chalk); border:none;
     border-radius:5px; padding:0.18rem 0.4rem; font-family:'JetBrains Mono',monospace;
     font-size:0.72rem; cursor:pointer;
   }
