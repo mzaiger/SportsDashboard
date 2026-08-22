@@ -19,13 +19,66 @@
     --dk-green: #53d337;
     --fd-blue: #1493ff;
     --loss-red: #e2584a;
+    --bg-panel2: #161b20;
+    --bg-panel3: #14101c;
+    --pill-bg: #000;
+    --card-hover-border: #39424b;
+    --empty-cell: #3d454d;
+    --strong-text: #ffffff;
+    --bg-top-glow: #131a1f;
+    --grid-line-color: rgba(255,255,255,0.015);
+    --nav-shadow: rgba(0,0,0,0.6);
+    --gold-rgb: 224,166,60;
+    --pick-yellow-rgb: 255,214,10;
+    --purple: #a78bfa;
+    --purple-rgb: 167,139,250;
+    --purple-deep: #8b5cf6;
+    --purple-deep-rgb: 139,92,246;
+    --purple-soft: #c4b5fd;
   }
+
+  /* Light theme -- same variable names, redefined on body.light-theme so
+     every rule below (already written in terms of var(--x)) flips for
+     free. Turf (sport accent) is left unchanged on purpose. Yellow accents
+     (--gold, --pick-yellow) become baby blue; --gold stays a touch richer
+     than --pick-yellow so it reads clearly as plain text on white. The
+     Gemini purple accent keeps its hue but goes a shade deeper so it still
+     has enough contrast as text on a light background. */
+  body.light-theme{
+    --bg: #ffffff;
+    --bg-panel: #f3f5f7;
+    --bg-panel2: #e9edf1;
+    --bg-panel3: #f1eefb;
+    --line: #d7dde2;
+    --chalk: #12161b;
+    --dim: #5b6570;
+    --gold: #1f9cd8;
+    --gold-rgb: 31,156,216;
+    --pick-yellow: #8ecfef;
+    --pick-yellow-rgb: 142,207,239;
+    --dk-green: #1f8a0e;
+    --fd-blue: #0e6fc7;
+    --loss-red: #c0392b;
+    --pill-bg: #eef1f3;
+    --card-hover-border: #b9c2ca;
+    --empty-cell: #c7ccd1;
+    --strong-text: #12161b;
+    --bg-top-glow: #eef4f8;
+    --grid-line-color: rgba(10,20,30,0.025);
+    --nav-shadow: rgba(20,30,40,0.12);
+    --purple: #7c4dd6;
+    --purple-rgb: 124,77,214;
+    --purple-deep: #6d3fd6;
+    --purple-deep-rgb: 109,63,214;
+    --purple-soft: #6d3fd6;
+  }
+
   *{box-sizing:border-box;}
   html,body{margin:0;padding:0;}
   body{
     background:
-      radial-gradient(ellipse at top, #131a1f 0%, var(--bg) 55%),
-      repeating-linear-gradient(90deg, rgba(255,255,255,0.015) 0 1px, transparent 1px 64px);
+      radial-gradient(ellipse at top, var(--bg-top-glow) 0%, var(--bg) 55%),
+      repeating-linear-gradient(90deg, var(--grid-line-color) 0 1px, transparent 1px 64px);
     color:var(--chalk);
     font-family:'JetBrains Mono', monospace;
     min-height:100vh;
@@ -39,7 +92,7 @@
   }
   .nav-bar.stuck{
     border-bottom-color:var(--line);
-    box-shadow:0 8px 20px -12px rgba(0,0,0,0.6);
+    box-shadow:0 8px 20px -12px var(--nav-shadow);
   }
   .site-nav{
     max-width:1180px; margin:0 auto; padding:0.9rem 1.5rem;
@@ -61,6 +114,19 @@
   }
   .site-nav a:hover{color:var(--chalk);}
   .site-nav a.active{color:var(--turf-bright); border-bottom-color:var(--turf-bright);}
+  .theme-toggle{
+    display:flex; gap:0.15rem; background:var(--bg-panel);
+    border:1px solid var(--line); border-radius:8px; padding:0.2rem;
+    order:5; margin-left:auto;
+  }
+  .theme-toggle .theme-btn{
+    font-size:0.8rem; line-height:1; width:1.5rem; height:1.5rem;
+    display:flex; align-items:center; justify-content:center;
+    color:var(--dim); background:transparent; border:none; border-radius:6px;
+    padding:0; cursor:pointer; transition:all 0.12s ease;
+  }
+  .theme-toggle .theme-btn:hover{color:var(--chalk);}
+  .theme-toggle .theme-btn.active{background:var(--turf,var(--gold)); color:#04140a;}
 
   @media (max-width: 760px){
     .hamburger-btn{display:flex; align-items:center; justify-content:center;}
@@ -130,7 +196,7 @@
 
   .export-cards{display:flex; flex-wrap:wrap; gap:0.9rem;}
   .export-card{
-    flex:1 1 200px; background:#000; border:1px solid var(--line); border-radius:10px;
+    flex:1 1 200px; background:var(--pill-bg); border:1px solid var(--line); border-radius:10px;
     padding:1rem 1.1rem; display:flex; flex-direction:column; gap:0.6rem;
   }
   .export-card .card-title{
@@ -169,6 +235,10 @@
     <a href="accuracy.html">Accuracy</a>
     <a href="export.html" class="active">Export</a>
     <a href="picks.html">Picks</a>
+  </div>
+  <div class="theme-toggle" role="group" aria-label="Color theme">
+    <button type="button" class="theme-btn" data-theme="dark" aria-label="Dark theme">🌙</button>
+    <button type="button" class="theme-btn" data-theme="light" aria-label="Light theme">☀</button>
   </div>
 </nav>
 </div>
@@ -251,6 +321,7 @@
   onScroll();
   window.addEventListener('scroll', onScroll, { passive: true });
 })();
+initThemeToggle();
 initHamburgerMenu();
 </script>
 <script src="site-key.js"></script>

@@ -20,13 +20,66 @@
     --fd-blue: #1493ff;
     --loss-red: #e2584a;
     --pick-yellow: #ffd60a;
+    --bg-panel2: #161b20;
+    --bg-panel3: #14101c;
+    --pill-bg: #000;
+    --card-hover-border: #39424b;
+    --empty-cell: #3d454d;
+    --strong-text: #ffffff;
+    --bg-top-glow: #131a1f;
+    --grid-line-color: rgba(255,255,255,0.015);
+    --nav-shadow: rgba(0,0,0,0.6);
+    --gold-rgb: 224,166,60;
+    --pick-yellow-rgb: 255,214,10;
+    --purple: #a78bfa;
+    --purple-rgb: 167,139,250;
+    --purple-deep: #8b5cf6;
+    --purple-deep-rgb: 139,92,246;
+    --purple-soft: #c4b5fd;
   }
+
+  /* Light theme -- same variable names, redefined on body.light-theme so
+     every rule below (already written in terms of var(--x)) flips for
+     free. Turf (sport accent) is left unchanged on purpose. Yellow accents
+     (--gold, --pick-yellow) become baby blue; --gold stays a touch richer
+     than --pick-yellow so it reads clearly as plain text on white. The
+     Gemini purple accent keeps its hue but goes a shade deeper so it still
+     has enough contrast as text on a light background. */
+  body.light-theme{
+    --bg: #ffffff;
+    --bg-panel: #f3f5f7;
+    --bg-panel2: #e9edf1;
+    --bg-panel3: #f1eefb;
+    --line: #d7dde2;
+    --chalk: #12161b;
+    --dim: #5b6570;
+    --gold: #1f9cd8;
+    --gold-rgb: 31,156,216;
+    --pick-yellow: #8ecfef;
+    --pick-yellow-rgb: 142,207,239;
+    --dk-green: #1f8a0e;
+    --fd-blue: #0e6fc7;
+    --loss-red: #c0392b;
+    --pill-bg: #eef1f3;
+    --card-hover-border: #b9c2ca;
+    --empty-cell: #c7ccd1;
+    --strong-text: #12161b;
+    --bg-top-glow: #eef4f8;
+    --grid-line-color: rgba(10,20,30,0.025);
+    --nav-shadow: rgba(20,30,40,0.12);
+    --purple: #7c4dd6;
+    --purple-rgb: 124,77,214;
+    --purple-deep: #6d3fd6;
+    --purple-deep-rgb: 109,63,214;
+    --purple-soft: #6d3fd6;
+  }
+
   *{box-sizing:border-box;}
   html,body{margin:0;padding:0;}
   body{
     background:
-      radial-gradient(ellipse at top, #131a1f 0%, var(--bg) 55%),
-      repeating-linear-gradient(90deg, rgba(255,255,255,0.015) 0 1px, transparent 1px 64px);
+      radial-gradient(ellipse at top, var(--bg-top-glow) 0%, var(--bg) 55%),
+      repeating-linear-gradient(90deg, var(--grid-line-color) 0 1px, transparent 1px 64px);
     color:var(--chalk);
     font-family:'JetBrains Mono', monospace;
     min-height:100vh;
@@ -41,7 +94,7 @@
   }
   .nav-bar.stuck{
     border-bottom-color:var(--line);
-    box-shadow:0 8px 20px -12px rgba(0,0,0,0.6);
+    box-shadow:0 8px 20px -12px var(--nav-shadow);
   }
   .site-nav{
     max-width:1180px; margin:0 auto; padding:0.9rem 1.5rem;
@@ -68,7 +121,7 @@
     display:flex; align-items:center; gap:0.3rem;
     font-family:'Oswald',sans-serif; font-weight:600; font-size:0.72rem;
     text-transform:uppercase; letter-spacing:0.03em;
-    color:var(--dim); background:#000; border:1px solid var(--line); border-radius:6px;
+    color:var(--dim); background:var(--pill-bg); border:1px solid var(--line); border-radius:6px;
     padding:0.1rem 0.22rem; cursor:pointer; transition:all 0.12s ease;
   }
   .status-pill:hover{color:var(--chalk);}
@@ -87,6 +140,19 @@
   }
   .view-toggle .view-btn:hover{color:var(--chalk);}
   .view-toggle .view-btn.active{background:var(--turf); color:#04140a;}
+  .theme-toggle{
+    display:flex; gap:0.15rem; background:var(--bg-panel);
+    border:1px solid var(--line); border-radius:8px; padding:0.2rem;
+    order:5; margin-left:0.35rem;
+  }
+  .theme-toggle .theme-btn{
+    font-size:0.8rem; line-height:1; width:1.5rem; height:1.5rem;
+    display:flex; align-items:center; justify-content:center;
+    color:var(--dim); background:transparent; border:none; border-radius:6px;
+    padding:0; cursor:pointer; transition:all 0.12s ease;
+  }
+  .theme-toggle .theme-btn:hover{color:var(--chalk);}
+  .theme-toggle .theme-btn.active{background:var(--turf,var(--gold)); color:#04140a;}
 
   /* Filter options now live inline in the nav bar itself (same sticky
      element, same background) instead of a separate bar underneath --
@@ -101,7 +167,7 @@
   .filter-pill{
     font-family:'Oswald',sans-serif; font-weight:600; font-size:0.72rem;
     text-transform:uppercase; letter-spacing:0.04em;
-    color:var(--dim); background:#000; border:1px solid var(--line); border-radius:6px;
+    color:var(--dim); background:var(--pill-bg); border:1px solid var(--line); border-radius:6px;
     padding:0.1rem 0.22rem; cursor:pointer; transition:all 0.12s ease;
   }
   .filter-pill:hover{color:var(--chalk);}
@@ -153,7 +219,8 @@
     .nav-links.open{display:flex;}
     .status-pills{order:2;}
     .view-toggle{order:3; margin-left:0;}
-    .filter-bar-inner{order:4; flex:1 1 100%; justify-content:flex-start;}
+    .theme-toggle{order:4; margin-left:0.3rem;}
+    .filter-bar-inner{order:5; flex:1 1 100%; justify-content:flex-start;}
   }
 
 
@@ -365,11 +432,11 @@
     position:relative;
     transition:border-color .15s ease, transform .15s ease;
   }
-  .card:hover{border-color:#39424b; transform:translateY(-1px);}
-  .card.close-game{border-color:rgba(224,166,60,0.55); box-shadow:0 0 0 1px rgba(224,166,60,0.12), 0 8px 24px -12px rgba(224,166,60,0.25);}
+  .card:hover{border-color:var(--card-hover-border); transform:translateY(-1px);}
+  .card.close-game{border-color:rgba(var(--gold-rgb),0.55); box-shadow:0 0 0 1px rgba(var(--gold-rgb),0.12), 0 8px 24px -12px rgba(var(--gold-rgb),0.25);}
   .card.slot-pick{
     border:2px solid var(--pick-yellow);
-    box-shadow:0 0 0 1px rgba(255,214,10,0.25), 0 10px 26px -12px rgba(255,214,10,0.4);
+    box-shadow:0 0 0 1px rgba(var(--pick-yellow-rgb),0.25), 0 10px 26px -12px rgba(var(--pick-yellow-rgb),0.4);
     padding-top:2.4rem;
   }
   .pick-banner{
@@ -379,7 +446,7 @@
     text-transform:uppercase; letter-spacing:0.1em; text-align:center;
     padding:0.3rem 0.5rem; border-radius:9px 9px 0 0;
   }
-  .odds td.picked{background:rgba(255,214,10,0.16); color:var(--pick-yellow); font-weight:700; border-radius:4px;}
+  .odds td.picked{background:rgba(var(--pick-yellow-rgb),0.16); color:var(--pick-yellow); font-weight:700; border-radius:4px;}
   .odds td.hit{background:rgba(62,207,106,0.18); color:#3ecf6a; font-weight:700; border-radius:4px;}
   .odds td.miss{background:rgba(226,88,74,0.16); color:var(--loss-red); font-weight:700; border-radius:4px;}
   .odds td.picked.hit,
@@ -387,12 +454,12 @@
   .pick-toolbar{display:grid; grid-template-columns:repeat(4,1fr); gap:0.35rem; margin-top:0.6rem;}
   .payout-summary{
     grid-column: 1 / -1;
-    font-family:'JetBrains Mono',monospace; font-size:0.7rem; font-weight:700; color:#ffffff;
+    font-family:'JetBrains Mono',monospace; font-size:0.7rem; font-weight:700; color:var(--strong-text);
     text-align:center; margin-top:0.25rem;
   }
   .pick-btn{
     font-family:'Inter',sans-serif; font-size:0.68rem; font-weight:600;
-    color:var(--dim); background:#161b20; border:1px solid var(--line);
+    color:var(--dim); background:var(--bg-panel2); border:1px solid var(--line);
     border-radius:6px; padding:0.4rem 0.2rem; cursor:pointer;
     text-align:center; line-height:1.15; transition:all 0.12s ease;
   }
@@ -410,7 +477,7 @@
     border:1px solid rgba(67,148,193,0.35); border-radius:999px;
     padding:0.2rem 0.55rem; white-space:nowrap;
   }
-  .close-game .score-badge{color:var(--gold); border-color:rgba(224,166,60,0.45);}
+  .close-game .score-badge{color:var(--gold); border-color:rgba(var(--gold-rgb),0.45);}
   .channel-pill{
     font-family:'Oswald',sans-serif; font-weight:600; font-size:0.7rem;
     background:var(--turf); color:#04140a; border-radius:5px;
@@ -446,7 +513,7 @@
     letter-spacing:0.01em; color:var(--dim); opacity:0.85;
   }
   .rank{
-    font-size:0.68rem; color:var(--gold); border:1px solid rgba(224,166,60,0.4);
+    font-size:0.68rem; color:var(--gold); border:1px solid rgba(var(--gold-rgb),0.4);
     border-radius:4px; padding:0.05rem 0.3rem; min-width:1.6rem; text-align:center;
     flex-shrink:0;
   }
@@ -484,7 +551,7 @@
   .book.fd{color:var(--fd-blue);}
   .num.neg{color:var(--loss-red);}
   .num-am{display:block; font-size:0.7rem; margin-top:0.1rem;}
-  .empty-cell{color:#3d454d;}
+  .empty-cell{color:var(--empty-cell);}
 
   .no-odds{color:var(--dim); font-size:0.75rem; padding:0.4rem 0;}
 
@@ -510,12 +577,12 @@
     width:100%; margin-top:0.6rem;
     display:flex; align-items:center; gap:0.5rem; flex-wrap:wrap; row-gap:0.3rem;
     font-family:'Oswald',sans-serif; font-weight:600; font-size:0.7rem;
-    color:var(--dim); background:#161b20; border:1px solid var(--line);
+    color:var(--dim); background:var(--bg-panel2); border:1px solid var(--line);
     border-radius:6px; padding:0.45rem 0.6rem; cursor:pointer;
     text-align:left; transition:all 0.12s ease;
   }
-  .gemini-toggle:hover{border-color:#8b5cf6; color:var(--chalk);}
-  .gemini-toggle.open{border-color:#8b5cf6; color:#c4b5fd; background:rgba(139,92,246,0.1);}
+  .gemini-toggle:hover{border-color:var(--purple-deep); color:var(--chalk);}
+  .gemini-toggle.open{border-color:var(--purple-deep); color:var(--purple-soft); background:rgba(var(--purple-deep-rgb),0.1);}
   .gemini-toggle-icon{font-size:0.85rem; flex-shrink:0;}
   .gemini-toggle-main{
     display:flex; align-items:center; gap:0.5rem; flex-wrap:wrap;
@@ -542,12 +609,12 @@
   body:not(.row-view) .gemini-toggle-trailing{
     flex-basis:100%; margin-left:0; justify-content:space-between;
   }
-  .gemini-conf{color:#a78bfa; font-family:'JetBrains Mono',monospace; font-weight:700; text-transform:none;}
+  .gemini-conf{color:var(--purple); font-family:'JetBrains Mono',monospace; font-weight:700; text-transform:none;}
   .gemini-caret{font-size:0.6rem; transition:transform .12s ease; color:inherit;}
   .gemini-toggle.open .gemini-caret{transform:rotate(180deg);}
   .gemini-panel{
     margin-top:0.5rem; padding:0.7rem 0.8rem;
-    background:#14101c; border:1px solid rgba(139,92,246,0.3); border-radius:8px;
+    background:var(--bg-panel3); border:1px solid rgba(var(--purple-deep-rgb),0.3); border-radius:8px;
   }
   .gemini-panel-row{
     display:flex; justify-content:space-between; gap:0.75rem;
@@ -637,6 +704,10 @@
   <div class="view-toggle">
     <button type="button" class="view-btn" data-mode="tiles">Tiles</button>
     <button type="button" class="view-btn" data-mode="rows">Rows</button>
+  </div>
+  <div class="theme-toggle" role="group" aria-label="Color theme">
+    <button type="button" class="theme-btn" data-theme="dark" aria-label="Dark theme">🌙</button>
+    <button type="button" class="theme-btn" data-theme="light" aria-label="Light theme">☀</button>
   </div>
 </nav>
 </div>
@@ -895,6 +966,7 @@ async function init() {
 }
 
 initViewToggle();
+initThemeToggle();
 initHamburgerMenu();
 init();
 </script>

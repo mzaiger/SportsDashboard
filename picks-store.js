@@ -854,6 +854,64 @@ function initViewToggle() {
 }
 
 /*
+ * Dark / light theme toggle, shared across every page.
+ *
+ * If the person has never explicitly picked a theme here, the site
+ * follows the OS/browser-level color-scheme preference (the same signal
+ * iOS, Android, and desktop browsers/OSes expose for "light" vs "dark"
+ * appearance, and that a user sets once in their system settings) via the
+ * `prefers-color-scheme` media query, and keeps following it live if they
+ * flip that system setting while the page is open. The moment they tap a
+ * sun/moon button here, that explicit choice is saved in localStorage and
+ * wins on every page from then on, exactly like the Tiles/Rows toggle,
+ * until they change it again or clear site data.
+ */
+
+const THEME_KEY = 'fb_theme';
+const THEME_DARK_QUERY = '(prefers-color-scheme: dark)';
+
+function getStoredTheme() {
+  const stored = localStorage.getItem(THEME_KEY);
+  return (stored === 'dark' || stored === 'light') ? stored : null;
+}
+
+function getEffectiveTheme() {
+  const stored = getStoredTheme();
+  if (stored) return stored;
+  // No explicit choice yet -- match the device/browser's own light/dark
+  // setting. Defaults to dark if the environment doesn't expose a
+  // preference at all (matches this site's original look).
+  return window.matchMedia(THEME_DARK_QUERY).matches ? 'dark' : 'light';
+}
+
+function applyTheme(theme) {
+  document.body.classList.toggle('light-theme', theme === 'light');
+  document.querySelectorAll('.theme-toggle .theme-btn').forEach(btn => {
+    btn.classList.toggle('active', btn.dataset.theme === theme);
+  });
+}
+
+function setTheme(theme) {
+  localStorage.setItem(THEME_KEY, theme);
+  applyTheme(theme);
+}
+
+// Call once per page, after the nav (with its .theme-toggle buttons) is in
+// the DOM.
+function initThemeToggle() {
+  applyTheme(getEffectiveTheme());
+  document.querySelectorAll('.theme-toggle .theme-btn').forEach(btn => {
+    btn.addEventListener('click', () => setTheme(btn.dataset.theme));
+  });
+  // If the person never explicitly chose a theme on this device, keep
+  // following the system light/dark setting live (e.g. iOS/Android auto
+  // dark mode kicking in at sunset, or a desktop OS-level toggle).
+  window.matchMedia(THEME_DARK_QUERY).addEventListener('change', () => {
+    if (!getStoredTheme()) applyTheme(getEffectiveTheme());
+  });
+}
+
+/*
  * Board filters (Best Matchup Only / Min Conf / ML-ATS) -- shared by
  * index.html and nfl.html. Not used on picks.html, which shows every pick
  * ever made rather than the current board.

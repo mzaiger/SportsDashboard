@@ -16,14 +16,67 @@
     --gold: #e0a63c;
     --dk-green: #53d337;
     --loss-red: #e2584a;
+    --bg-panel2: #161b20;
+    --bg-panel3: #14101c;
+    --pill-bg: #000;
+    --card-hover-border: #39424b;
+    --empty-cell: #3d454d;
+    --strong-text: #ffffff;
+    --bg-top-glow: #131a1f;
+    --grid-line-color: rgba(255,255,255,0.015);
+    --nav-shadow: rgba(0,0,0,0.6);
+    --gold-rgb: 224,166,60;
+    --pick-yellow-rgb: 255,214,10;
+    --purple: #a78bfa;
+    --purple-rgb: 167,139,250;
+    --purple-deep: #8b5cf6;
+    --purple-deep-rgb: 139,92,246;
+    --purple-soft: #c4b5fd;
   }
+
+  /* Light theme -- same variable names, redefined on body.light-theme so
+     every rule below (already written in terms of var(--x)) flips for
+     free. Turf (sport accent) is left unchanged on purpose. Yellow accents
+     (--gold, --pick-yellow) become baby blue; --gold stays a touch richer
+     than --pick-yellow so it reads clearly as plain text on white. The
+     Gemini purple accent keeps its hue but goes a shade deeper so it still
+     has enough contrast as text on a light background. */
+  body.light-theme{
+    --bg: #ffffff;
+    --bg-panel: #f3f5f7;
+    --bg-panel2: #e9edf1;
+    --bg-panel3: #f1eefb;
+    --line: #d7dde2;
+    --chalk: #12161b;
+    --dim: #5b6570;
+    --gold: #1f9cd8;
+    --gold-rgb: 31,156,216;
+    --pick-yellow: #8ecfef;
+    --pick-yellow-rgb: 142,207,239;
+    --dk-green: #1f8a0e;
+    --fd-blue: #0e6fc7;
+    --loss-red: #c0392b;
+    --pill-bg: #eef1f3;
+    --card-hover-border: #b9c2ca;
+    --empty-cell: #c7ccd1;
+    --strong-text: #12161b;
+    --bg-top-glow: #eef4f8;
+    --grid-line-color: rgba(10,20,30,0.025);
+    --nav-shadow: rgba(20,30,40,0.12);
+    --purple: #7c4dd6;
+    --purple-rgb: 124,77,214;
+    --purple-deep: #6d3fd6;
+    --purple-deep-rgb: 109,63,214;
+    --purple-soft: #6d3fd6;
+  }
+
 
   *{box-sizing:border-box;}
   html,body{margin:0;padding:0;}
   body{
     background:
-      radial-gradient(ellipse at top, #131a1f 0%, var(--bg) 55%),
-      repeating-linear-gradient(90deg, rgba(255,255,255,0.015) 0 1px, transparent 1px 64px);
+      radial-gradient(ellipse at top, var(--bg-top-glow) 0%, var(--bg) 55%),
+      repeating-linear-gradient(90deg, var(--grid-line-color) 0 1px, transparent 1px 64px);
     color:var(--chalk);
     font-family:'JetBrains Mono', monospace;
     min-height:100vh;
@@ -38,7 +91,7 @@
   }
   .nav-bar.stuck{
     border-bottom-color:var(--line);
-    box-shadow:0 8px 20px -12px rgba(0,0,0,0.6);
+    box-shadow:0 8px 20px -12px var(--nav-shadow);
   }
   .site-nav{
     max-width:1180px; margin:0 auto; padding:0.9rem 1.5rem;
@@ -60,6 +113,19 @@
   }
   .site-nav a:hover{color:var(--chalk);}
   .site-nav a.active{color:var(--gold); border-bottom-color:var(--gold);}
+  .theme-toggle{
+    display:flex; gap:0.15rem; background:var(--bg-panel);
+    border:1px solid var(--line); border-radius:8px; padding:0.2rem;
+    order:5; margin-left:auto;
+  }
+  .theme-toggle .theme-btn{
+    font-size:0.8rem; line-height:1; width:1.5rem; height:1.5rem;
+    display:flex; align-items:center; justify-content:center;
+    color:var(--dim); background:transparent; border:none; border-radius:6px;
+    padding:0; cursor:pointer; transition:all 0.12s ease;
+  }
+  .theme-toggle .theme-btn:hover{color:var(--chalk);}
+  .theme-toggle .theme-btn.active{background:var(--turf,var(--gold)); color:#04140a;}
 
   .filter-bar-inner{
     display:flex; flex-wrap:wrap; gap:0.6rem; align-items:center;
@@ -69,7 +135,7 @@
   .filter-pill{
     font-family:'Oswald',sans-serif; font-weight:600; font-size:0.72rem;
     text-transform:uppercase; letter-spacing:0.04em;
-    color:var(--dim); background:#000; border:1px solid var(--line); border-radius:6px;
+    color:var(--dim); background:var(--pill-bg); border:1px solid var(--line); border-radius:6px;
     padding:0.1rem 0.22rem; cursor:pointer; transition:all 0.12s ease;
   }
   .filter-pill:hover{color:var(--chalk);}
@@ -111,6 +177,7 @@
       padding:0.85rem 1.5rem; z-index:150;
     }
     .nav-links.open{display:flex;}
+    .theme-toggle{order:1; margin-left:auto;}
     .filter-bar-inner{order:2; flex:1 1 100%; justify-content:flex-start; margin-left:0;}
   }
 
@@ -123,7 +190,7 @@
   .hero::before{
     content:"";
     position:absolute; inset:0;
-    background:linear-gradient(120deg, rgba(167,139,250,0.16), transparent 55%);
+    background:linear-gradient(120deg, rgba(var(--purple-rgb),0.16), transparent 55%);
     pointer-events:none;
   }
   .hero-inner{max-width:1180px;margin:0 auto;position:relative;}
@@ -132,7 +199,7 @@
     text-transform:uppercase;
     letter-spacing:0.22em;
     font-size:0.72rem;
-    color:#a78bfa;
+    color:var(--purple);
     font-weight:600;
   }
   h1{
@@ -164,7 +231,7 @@
   .big-stat::before{
     content:"";
     position:absolute; inset:0;
-    background:radial-gradient(circle at 85% -10%, rgba(167,139,250,0.16), transparent 60%);
+    background:radial-gradient(circle at 85% -10%, rgba(var(--purple-rgb),0.16), transparent 60%);
     pointer-events:none;
   }
   .big-stat-col{
@@ -178,12 +245,12 @@
   .filter-note{
     display:block; margin-top:0.2rem;
     font-size:0.68rem; font-weight:500; letter-spacing:0.03em;
-    text-transform:none; color:#a78bfa; opacity:0.85;
+    text-transform:none; color:var(--purple); opacity:0.85;
   }
   th .filter-note{ margin-top:0.15rem; font-size:0.62rem; }
   .big-stat-col .pct{
     font-family:'Oswald',sans-serif; font-weight:700; font-size:2.6rem;
-    color:#a78bfa; line-height:1.1; margin-top:0.35rem;
+    color:var(--purple); line-height:1.1; margin-top:0.35rem;
   }
   .big-stat-col .frac{
     font-size:0.8rem; color:var(--dim); margin-top:0.25rem;
@@ -226,7 +293,7 @@
   table.breakdown-table td.sport-name{
     font-family:'Oswald',sans-serif; font-weight:700; letter-spacing:0.03em;
   }
-  table.breakdown-table td.pct-cell{color:#a78bfa; font-weight:600;}
+  table.breakdown-table td.pct-cell{color:var(--purple); font-weight:600;}
   table.breakdown-table td.pct-cell .cell-frac{
     display:block; color:var(--dim); font-weight:500; font-size:0.72rem;
     margin-top:0.15rem; letter-spacing:0.01em;
@@ -300,6 +367,10 @@
         </select>
       </div>
     </div>
+  </div>
+  <div class="theme-toggle" role="group" aria-label="Color theme">
+    <button type="button" class="theme-btn" data-theme="dark" aria-label="Dark theme">🌙</button>
+    <button type="button" class="theme-btn" data-theme="light" aria-label="Light theme">☀</button>
   </div>
 </nav>
 </div>
@@ -676,6 +747,7 @@ async function init() {
   }
 }
 
+initThemeToggle();
 initHamburgerMenu();
 init();
 </script>
