@@ -91,6 +91,7 @@
           <button type="button" id="keyModalClose" aria-label="Close">Close &times;</button>
         </h2>
         <dl>
+          <div class="key-row"><dt>☾ / ☀</dt><dd>Theme toggle -- the moon switches to dark mode, the sun switches to light mode.</dd></div>
           <div class="key-row"><dt>ML</dt><dd>Money Line -- bet on which team wins outright, no spread involved.</dd></div>
           <div class="key-row"><dt>ATS</dt><dd>Against The Spread -- bet on a team to cover the posted point spread.</dd></div>
           <div class="key-row"><dt>DK</dt><dd>DraftKings sportsbook.</dd></div>
