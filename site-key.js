@@ -53,6 +53,27 @@
       border-top:1px dashed #2a323a; padding-top:0.9rem; margin-top:0.2rem;
       margin-bottom:0.9rem;
     }
+
+    /* Light-theme overrides -- the page toggles body.light-theme, so the
+       key widget (otherwise fully self-contained/hardcoded above) mirrors
+       that here rather than staying dark all the time. */
+    body.light-theme #keyFabBtn{
+      color:#12161b; background:#f3f5f7; border-color:#aab1b8;
+    }
+    body.light-theme #keyFabBtn:hover{border-color:#1f9cd8; color:#1f9cd8;}
+    body.light-theme #keyModal{
+      background:#f3f5f7; border-color:#aab1b8; color:#12161b;
+    }
+    body.light-theme #keyModal h2{color:#1f9cd8;}
+    body.light-theme #keyModalClose{
+      background:transparent; border-color:#aab1b8; color:#5b6570;
+    }
+    body.light-theme #keyModalClose:hover{color:#12161b; border-color:#12161b;}
+    body.light-theme #keyModal dt{color:#1f8a0e;}
+    body.light-theme #keyModal dd{color:#33393f;}
+    body.light-theme #keyModal .key-note{
+      color:#12161b; border-top-color:#d7dde2;
+    }
   `;
 
   function injectStyle() {

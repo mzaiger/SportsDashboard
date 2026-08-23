@@ -57,8 +57,8 @@
     --dim: #5b6570;
     --gold: #1f9cd8;
     --gold-rgb: 31,156,216;
-    --pick-yellow: #8ecfef;
-    --pick-yellow-rgb: 142,207,239;
+    --pick-yellow: #5ab4e1;
+    --pick-yellow-rgb: 90,180,225;
     --dk-green: #1f8a0e;
     --fd-blue: #0e6fc7;
     --loss-red: #c0392b;
@@ -76,7 +76,7 @@
     --purple-soft: #6d3fd6;
     --toggle-bg: #dde2e6;
     --toggle-border: #aab1b8;
-    --toggle-text: #40474e;
+    --toggle-text: var(--dim);
     --on-solid: #fff;
   }
 
@@ -154,8 +154,8 @@
   .view-toggle .view-btn:hover{color:var(--chalk);}
   .view-toggle .view-btn.active{background:var(--gold); color:var(--on-solid);}
   .theme-toggle{
-    display:flex; gap:0.15rem; background:var(--bg-panel);
-    border:1px solid var(--line); border-radius:8px; padding:0.2rem;
+    display:flex; gap:0.15rem; background:var(--toggle-bg);
+    border:1px solid var(--toggle-border); border-radius:8px; padding:0.2rem;
     order:5; margin-left:0.35rem;
   }
   .theme-toggle .theme-btn{
@@ -243,25 +243,25 @@
   @media (max-width: 480px){
     .site-nav{padding-left:1rem; padding-right:1rem; gap:.35rem;}
     .hamburger-btn{padding:0.24rem 0.4rem; font-size:1rem;}
-    .status-pill{font-size:0.78rem; padding:0.1rem 0.2rem; gap:0.2rem;}
-    .view-toggle{padding:0.15rem; gap:0.15rem;}
-    .view-toggle .view-btn{font-size:0.78rem; padding:0.1rem 0.22rem;}
-    .theme-toggle{padding:0.15rem; margin-left:0.2rem;}
-    .theme-toggle .theme-btn{width:1.25rem; height:1.25rem; font-size:0.7rem;}
-    .filter-pill{font-size:0.78rem; padding:0.1rem 0.2rem;}
-    .conf-type-btn{font-size:0.78rem; padding:0.1rem 0.2rem;}
-    .filter-conf label{font-size:0.78rem;}
-    .filter-conf select{font-size:0.78rem; padding:0.16rem 0.34rem;}
+    .status-pill{font-size:0.86rem; padding:0.11rem 0.22rem; gap:0.22rem;}
+    .view-toggle{padding:0.17rem; gap:0.17rem;}
+    .view-toggle .view-btn{font-size:0.86rem; padding:0.11rem 0.24rem;}
+    .theme-toggle{padding:0.17rem; margin-left:0.22rem;}
+    .theme-toggle .theme-btn{width:1.38rem; height:1.38rem; font-size:0.77rem;}
+    .filter-pill{font-size:0.86rem; padding:0.11rem 0.22rem;}
+    .conf-type-btn{font-size:0.86rem; padding:0.11rem 0.22rem;}
+    .filter-conf label{font-size:0.86rem;}
+    .filter-conf select{font-size:0.86rem; padding:0.18rem 0.37rem;}
   }
   @media (max-width: 380px){
     .site-nav{gap:.25rem;}
-    .status-pill{font-size:0.7rem; padding:0.08rem 0.15rem;}
-    .view-toggle .view-btn{font-size:0.7rem; padding:0.08rem 0.17rem;}
-    .theme-toggle .theme-btn{width:1.1rem; height:1.1rem; font-size:0.62rem;}
-    .filter-pill{font-size:0.7rem; padding:0.08rem 0.15rem;}
-    .conf-type-btn{font-size:0.7rem; padding:0.08rem 0.15rem;}
-    .filter-conf label{font-size:0.7rem;}
-    .filter-conf select{font-size:0.7rem; padding:0.12rem 0.27rem;}
+    .status-pill{font-size:0.77rem; padding:0.09rem 0.17rem;}
+    .view-toggle .view-btn{font-size:0.77rem; padding:0.09rem 0.19rem;}
+    .theme-toggle .theme-btn{width:1.21rem; height:1.21rem; font-size:0.68rem;}
+    .filter-pill{font-size:0.77rem; padding:0.09rem 0.17rem;}
+    .conf-type-btn{font-size:0.77rem; padding:0.09rem 0.17rem;}
+    .filter-conf label{font-size:0.77rem;}
+    .filter-conf select{font-size:0.77rem; padding:0.13rem 0.30rem;}
   }
 
   .week-block{margin-top:1.75rem;}

@@ -32,6 +32,9 @@
     --purple-deep: #8b5cf6;
     --purple-deep-rgb: 139,92,246;
     --purple-soft: #c4b5fd;
+    --toggle-bg: var(--bg-panel);
+    --toggle-border: var(--line);
+    --toggle-text: var(--dim);
     --on-solid: #000;
   }
 
@@ -52,8 +55,8 @@
     --dim: #5b6570;
     --gold: #1f9cd8;
     --gold-rgb: 31,156,216;
-    --pick-yellow: #8ecfef;
-    --pick-yellow-rgb: 142,207,239;
+    --pick-yellow: #5ab4e1;
+    --pick-yellow-rgb: 90,180,225;
     --dk-green: #1f8a0e;
     --fd-blue: #0e6fc7;
     --loss-red: #c0392b;
@@ -69,6 +72,9 @@
     --purple-deep: #6d3fd6;
     --purple-deep-rgb: 109,63,214;
     --purple-soft: #6d3fd6;
+    --toggle-bg: #dde2e6;
+    --toggle-border: #aab1b8;
+    --toggle-text: var(--dim);
     --on-solid: #fff;
   }
 
@@ -116,8 +122,8 @@
   .site-nav a:hover{color:var(--chalk);}
   .site-nav a.active{color:var(--gold); border-bottom-color:var(--gold);}
   .theme-toggle{
-    display:flex; gap:0.15rem; background:var(--bg-panel);
-    border:1px solid var(--line); border-radius:8px; padding:0.2rem;
+    display:flex; gap:0.15rem; background:var(--toggle-bg);
+    border:1px solid var(--toggle-border); border-radius:8px; padding:0.2rem;
     order:5; margin-left:auto;
   }
   .theme-toggle .theme-btn{
@@ -185,6 +191,24 @@
     .nav-links.open{display:flex;}
     .theme-toggle{order:1; margin-left:auto;}
     .filter-bar-inner{order:2; flex:1 1 100%; justify-content:flex-start; margin-left:0;}
+  }
+  @media (max-width: 480px){
+    .site-nav{padding-left:1rem; padding-right:1rem; gap:.35rem;}
+    .hamburger-btn{padding:0.24rem 0.4rem; font-size:1rem;}
+    .theme-toggle{padding:0.17rem;}
+    .theme-toggle .theme-btn{width:1.38rem; height:1.38rem; font-size:0.77rem;}
+    .filter-pill{font-size:0.86rem; padding:0.11rem 0.22rem;}
+    .conf-type-btn{font-size:0.86rem; padding:0.11rem 0.22rem;}
+    .filter-conf label{font-size:0.86rem;}
+    .filter-conf select{font-size:0.86rem; padding:0.18rem 0.37rem;}
+  }
+  @media (max-width: 380px){
+    .site-nav{gap:.25rem;}
+    .theme-toggle .theme-btn{width:1.21rem; height:1.21rem; font-size:0.68rem;}
+    .filter-pill{font-size:0.77rem; padding:0.09rem 0.17rem;}
+    .conf-type-btn{font-size:0.77rem; padding:0.09rem 0.17rem;}
+    .filter-conf label{font-size:0.77rem;}
+    .filter-conf select{font-size:0.77rem; padding:0.13rem 0.30rem;}
   }
 
   .hero{
