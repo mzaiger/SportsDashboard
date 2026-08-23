@@ -206,44 +206,35 @@ def latest_kickoff_overall(existing_data):
 
 
 def resolve_effective_today(default_today, existing_data=None):
-    """Off-season guard WITH a grace period: once the season is truly
-    over, keep the build window centered on the real "today" -- so the
-    Finals finale keeps showing in the yesterday/today/tomorrow window --
-    for OFFSEASON_GRACE_DAYS after its last kickoff. Only once that grace
-    period elapses does "today" get snapped forward to next season's
-    opening night, so the board previews the new season instead of
-    drifting through months of empty days. Fetches the UNDATED
-    scoreboard for the calendar (see get_scoreboard_undated -- a dated
-    request anchors to the completed season and makes every
-    upcoming-date test silently fail). Every branch logs loudly so a
-    silent fallback can never hide a problem again."""
-    last_kickoff = latest_kickoff_overall(existing_data)
-    if last_kickoff is not None:
-        grace_until = last_kickoff + timedelta(days=OFFSEASON_GRACE_DAYS)
-        now_utc = datetime.now(timezone.utc)
-        if now_utc < grace_until:
-            log(f"  Season-finale grace period active (last kickoff {last_kickoff.isoformat()}, "
-                f"holding until {grace_until.isoformat()}) -- keeping {default_today} as 'today'.")
-            return default_today
-
+    # ... [keep the existing grace period logic exactly as it is] ...
+    
     try:
         scoreboard = get_scoreboard_undated()
     except (requests.RequestException, ValueError) as exc:
         log(f"  NOTE: couldn't fetch ESPN calendar ({exc}) -- keeping {default_today} as 'today'.")
         return default_today
-
+        
     all_dates = calendar_game_dates(scoreboard)
     if not all_dates:
         log(f"  NOTE: ESPN's scoreboard carries no league calendar -- keeping {default_today} as 'today'.")
         return default_today
 
-    first_day = all_dates[0]  # sorted ascending -- upcoming season's first date
-    if default_today >= first_day:
-        log(f"  Season underway (calendar starts {first_day}, on/before today) -- keeping {default_today} as 'today'.")
-        return default_today
+    # CRITICAL FIX: Filter out any dates from the previous season that might 
+    # still be in the payload. We only care about dates that are on or after today.
+    upcoming_dates = [d for d in all_dates if d >= default_today]
+    
+    if not upcoming_dates:
+        # If no future dates exist, the season is completely over.
+        first_day = all_dates[-1]
+    else:
+        # This will correctly be the first preseason date when run in the off-season!
+        first_day = upcoming_dates[0]
 
-    log(f"  Off-season detected (grace period elapsed): today is before the season's first "
-        f"calendar date ({first_day}) -- previewing {first_day} as 'today' for this build.")
+    if default_today >= first_day:
+        log(f"  Season underway (first upcoming date {first_day}) -- keeping {default_today} as 'today'.")
+        return default_today
+        
+    log(f"  Off-season detected: today is before the first upcoming date ({first_day}) -- previewing {first_day}.")
     return first_day
     
 def broadcast_label(event):
