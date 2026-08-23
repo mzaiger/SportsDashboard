@@ -463,13 +463,14 @@
     order:5; margin-left:0.35rem;
   }
   .theme-toggle .theme-btn{
-    font-family:'Oswald',sans-serif; font-weight:600; font-size:0.68rem; line-height:1;
+    font-family:'Oswald',sans-serif; font-weight:600; font-size:0.68rem;
     display:flex; align-items:center; justify-content:center;
-    color:var(--toggle-text); background:transparent; border:none; border-radius:6px;
+    background:transparent; border:none; border-radius:6px;
     padding:0.1rem 0.22rem; cursor:pointer; transition:all 0.12s ease;
   }
-  .theme-toggle .theme-btn:hover{color:var(--chalk);}
-  .theme-toggle .theme-btn.active{background:var(--turf,var(--gold)); color:var(--on-solid);}
+  .theme-toggle .theme-btn[data-theme="dark"]{color:#9aa4ad;}
+  .theme-toggle .theme-btn[data-theme="light"]{color:#f5a524;}
+  .theme-toggle .theme-btn.active{background:var(--turf,var(--gold));}
 
   /* Filter options now live inline in the nav bar itself (same sticky
      element, same background) instead of a separate bar underneath --
