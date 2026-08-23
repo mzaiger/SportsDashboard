@@ -159,17 +159,13 @@
     order:5; margin-left:0.35rem;
   }
   .theme-toggle .theme-btn{
-    font-size:0.8rem; line-height:1; width:1.5rem; height:1.5rem;
+    font-family:'Oswald',sans-serif; font-weight:600; font-size:0.68rem; line-height:1;
     display:flex; align-items:center; justify-content:center;
-    color:var(--dim); background:transparent; border:none; border-radius:6px;
-    padding:0; cursor:pointer; transition:all 0.12s ease;
+    color:var(--toggle-text); background:transparent; border:none; border-radius:6px;
+    padding:0.1rem 0.22rem; cursor:pointer; transition:all 0.12s ease;
   }
-  .theme-toggle .theme-btn[data-theme="dark"]{color:#9aa4ad;}
-  .theme-toggle .theme-btn[data-theme="light"]{color:#f5a524;}
   .theme-toggle .theme-btn:hover{color:var(--chalk);}
   .theme-toggle .theme-btn.active{background:var(--turf,var(--gold)); color:var(--on-solid);}
-  .theme-toggle .theme-btn[data-theme="light"].active{color:#f5a524;}
-  .theme-toggle .theme-btn[data-theme="dark"].active{color:#9aa4ad;}
 
   /* Filter options -- Best Slot Matchups + ML/ATS/All Confidence -- live
      inline in the nav bar itself, same as index.html/nfl.html/mlb.html;
