@@ -131,6 +131,7 @@
   .theme-toggle .theme-btn:hover{color:var(--chalk);}
   .theme-toggle .theme-btn.active{background:var(--turf,var(--gold)); color:var(--on-solid);}
   .theme-toggle .theme-btn[data-theme="light"].active{color:#f5a524;}
+  .theme-toggle .theme-btn[data-theme="dark"].active{color:#9aa4ad;}
 
   .filter-bar-inner{
     display:flex; flex-wrap:wrap; gap:0.6rem; align-items:center;
@@ -138,7 +139,7 @@
     flex:1 1 auto; order:2; margin-left:auto;
   }
   .filter-pill{
-    font-family:'Oswald',sans-serif; font-weight:600; font-size:0.72rem;
+    font-family:'Oswald',sans-serif; font-weight:600; font-size:0.68rem;
     text-transform:uppercase; letter-spacing:0.04em;
     color:var(--toggle-text); background:var(--toggle-bg); border:1px solid var(--toggle-border); border-radius:6px;
     padding:0.1rem 0.22rem; cursor:pointer; transition:all 0.12s ease;
@@ -155,22 +156,22 @@
     display:flex; gap:0.2rem; background:var(--toggle-bg); border-radius:6px; padding:0.1rem;
   }
   .conf-type-btn{
-    font-family:'Oswald',sans-serif; font-weight:600; font-size:0.7rem;
+    font-family:'Oswald',sans-serif; font-weight:600; font-size:0.68rem;
     text-transform:uppercase; letter-spacing:0.03em;
-    color:var(--dim); background:transparent; border:none; border-radius:5px;
+    color:var(--toggle-text); background:transparent; border:none; border-radius:5px;
     padding:0.1rem 0.22rem; cursor:pointer; transition:all 0.12s ease;
   }
   .conf-type-btn:hover{color:var(--chalk);}
   .conf-type-btn.active{background:var(--gold); color:var(--on-solid);}
   .filter-conf{display:flex; align-items:center; gap:0.35rem;}
   .filter-conf label{
-    font-family:'Oswald',sans-serif; font-weight:600; font-size:0.7rem;
-    text-transform:uppercase; letter-spacing:0.03em; color:var(--dim);
+    font-family:'Oswald',sans-serif; font-weight:600; font-size:0.68rem;
+    text-transform:uppercase; letter-spacing:0.03em; color:var(--toggle-text);
   }
   .filter-conf select{
     background:var(--toggle-bg); color:var(--chalk); border:none;
     border-radius:5px; padding:0.18rem 0.4rem; font-family:'JetBrains Mono',monospace;
-    font-size:0.72rem; cursor:pointer;
+    font-size:0.68rem; cursor:pointer;
   }
 
   @media (max-width: 760px){
@@ -213,6 +214,13 @@
     font-size:clamp(0.68rem, 1.7vw, 1.05rem);
     margin:0.35rem 0 0.5rem;
     letter-spacing:-0.01em;
+  }
+  /* Desktop keeps the clamp() above; mobile gets its own fixed size
+     (roughly double what the clamp's mobile-width minimum resolves to)
+     since the clamp's vw-based scaling stays pinned at its floor on
+     narrow screens. */
+  @media (max-width: 760px){
+    h1{font-size:1.36rem;}
   }
   .meta-row{
     display:flex; flex-wrap:wrap; gap:1.25rem;
@@ -316,7 +324,7 @@
 
   footer{
     max-width:1180px; margin:3rem auto 0; padding:1.5rem;
-    color:var(--dim); font-size:0.78rem; line-height:1.6;
+    color:var(--toggle-text); font-size:0.78rem; line-height:1.6;
     border-top:1px solid var(--line);
   }
 </style>
@@ -385,7 +393,7 @@
     <div class="eyebrow">All-Time &middot; Every Prediction</div>
     <h1>Gemini Accuracy</h1>
     <div class="meta-row">
-      <span>Every graded prediction Gemini has ever made across NCAAF, NFL, and MLB &mdash; not just the games you picked.</span>
+      <span>Every graded prediction Gemini has ever made across NCAAF, NCAAMB, NFL, MLB, NBA, and NHL &mdash; not just the games you picked.</span>
     </div>
   </div>
 </div>
@@ -482,6 +490,9 @@
   winnings, it's your own real picks priced at the odds locked in when you made them, and &mdash; like My
   Accuracy &mdash; is affected by Best Matchups only, never by Confidence or the ML/ATS/Both toggle, since
   what a bet pays doesn't depend on how confident Gemini was or which column it's displayed under.
+  <br><br>
+  &#9790; / &#9728; in the nav switches this site between dark and light color themes &mdash; your choice is
+  remembered on this device and used on every page from then on.
 </footer>
 
 <script src="picks-store.js"></script>

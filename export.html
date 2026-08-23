@@ -132,6 +132,7 @@
   .theme-toggle .theme-btn:hover{color:var(--chalk);}
   .theme-toggle .theme-btn.active{background:var(--turf,var(--gold)); color:var(--on-solid);}
   .theme-toggle .theme-btn[data-theme="light"].active{color:#f5a524;}
+  .theme-toggle .theme-btn[data-theme="dark"].active{color:#9aa4ad;}
 
   @media (max-width: 760px){
     .hamburger-btn{display:flex; align-items:center; justify-content:center;}
@@ -163,6 +164,9 @@
     font-family:'Oswald',sans-serif; font-weight:700;
     font-size:clamp(0.68rem, 1.7vw, 1.05rem);
     margin:0.35rem 0 0.5rem;
+  }
+  @media (max-width: 760px){
+    h1{font-size:1.36rem;}
   }
   .hero p{color:var(--dim); font-size:0.9rem; max-width:38rem; margin:0;}
 
