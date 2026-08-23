@@ -46,6 +46,7 @@ from common import (
     assign_matchup_ranks,
     carry_forward_odds,
     fetch_all_odds,
+    get_json_with_retries,
     load_existing_dashboard,
     load_previous_game_entries,
     load_previous_odds_by_game,
@@ -463,14 +464,16 @@ def get_scoreboard_undated():
     ended). The UNDATED request instead snaps forward to the next season
     and ships ITS calendar -- which is the only place next season's first
     date (the HOF game) exists before that season is underway. See
-    resolve_effective_today(), the only caller."""
-    resp = requests.get(
+    resolve_effective_today(), the only caller. Retries a few times on
+    failure (see get_json_with_retries) so a single transient ESPN
+    hiccup can't silently bounce the board back to showing today's
+    date."""
+    return get_json_with_retries(
         ESPN_SCOREBOARD_URL,
         params={"limit": 100},
         timeout=REQUEST_TIMEOUT,
+        label="NFL undated scoreboard fetch",
     )
-    resp.raise_for_status()
-    return resp.json()
 
 
 def calendar_game_dates(scoreboard):

@@ -56,6 +56,7 @@ from common import (
     assign_matchup_ranks,
     carry_forward_odds,
     fetch_all_odds,
+    get_json_with_retries,
     load_existing_dashboard,
     load_previous_game_entries,
     load_previous_odds_by_game,
@@ -171,14 +172,15 @@ def get_scoreboard_undated():
     game day and ships the UPCOMING season's calendar (2026-27:
     2026-10-03 -> 2027-04-11) -- which is the only place the next
     season's first date exists. The off-season resolver therefore reads
-    THIS payload, never the dated one."""
-    resp = requests.get(
+    THIS payload, never the dated one. Retries a few times on failure
+    (see get_json_with_retries) so a single transient ESPN hiccup can't
+    silently bounce the board back to showing today's date."""
+    return get_json_with_retries(
         ESPN_NBA_SCOREBOARD_URL,
         params={"limit": 100},
         timeout=REQUEST_TIMEOUT,
+        label="NBA undated scoreboard fetch",
     )
-    resp.raise_for_status()
-    return resp.json()
 
 
 def latest_kickoff_overall(existing_data):

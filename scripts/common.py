@@ -42,6 +42,48 @@ def log(msg):
     print(f"[{datetime.now().strftime('%H:%M:%S')}] {msg}", file=sys.stderr)
 
 
+ESPN_UNDATED_MAX_RETRIES = 3
+ESPN_UNDATED_RETRY_BACKOFF = 1.5  # seconds, doubles each attempt
+
+
+def get_json_with_retries(url, params, timeout, max_retries=ESPN_UNDATED_MAX_RETRIES,
+                           backoff_seconds=ESPN_UNDATED_RETRY_BACKOFF, label="request"):
+    """GET `url` and return the parsed JSON body, retrying up to
+    `max_retries` times (short exponential backoff) before giving up.
+
+    Written for each sport's get_scoreboard_undated() -- the off-season
+    calendar check that resolve_effective_today() relies on to detect an
+    upcoming season and preview its opening date. That check previously
+    had zero retry: a single transient network hiccup (timeout, a 5xx, a
+    dropped connection) made the whole fetch raise, which
+    resolve_effective_today() quietly treats as "couldn't fetch the
+    calendar -- keep today's date" -- so one bad request on a given
+    GitHub Actions run was enough to make the board flip back to showing
+    today's date instead of the season's real opening night, and then
+    "self-heal" back to normal on some later run once the fetch happened
+    to succeed again. That flapping (rather than a hard, consistent
+    failure) is exactly what made it easy to miss in testing but visible
+    in production. Retrying here closes that gap the same way
+    fetch_all_odds() already retries a flaky SharpAPI page.
+    """
+    last_exc = None
+    for attempt in range(1, max_retries + 1):
+        try:
+            resp = requests.get(url, params=params, timeout=timeout)
+            resp.raise_for_status()
+            return resp.json()
+        except (requests.RequestException, ValueError) as exc:
+            last_exc = exc
+            if attempt < max_retries:
+                wait = backoff_seconds * attempt
+                log(f"  {label} attempt {attempt}/{max_retries} failed ({exc}) -- "
+                    f"retrying in {wait:.1f}s.")
+                time.sleep(wait)
+            else:
+                log(f"  {label} attempt {attempt}/{max_retries} failed ({exc}) -- giving up.")
+    raise last_exc
+
+
 def normalize_minmax(values):
     """Min-max scale a list of numbers (or None) to [0, 1] (0 = best/lowest,
     1 = worst/highest). Shared by CFB's slot-pick blend and NFL's matchup

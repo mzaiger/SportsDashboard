@@ -56,6 +56,7 @@ from common import (
     assign_matchup_ranks,
     carry_forward_odds,
     fetch_all_odds,
+    get_json_with_retries,
     load_existing_dashboard,
     load_previous_game_entries,
     load_previous_odds_by_game,
@@ -225,14 +226,16 @@ def get_scoreboard_undated():
     the UPCOMING season's calendar -- which is the only place the next
     season's first date exists. The off-season resolver therefore reads
     THIS payload, never the dated one. (groups/limit match the dated
-    call so the event slate stays D1-only and untruncated.)"""
-    resp = requests.get(
+    call so the event slate stays D1-only and untruncated.) Retries a
+    few times on failure (see get_json_with_retries) so a single
+    transient ESPN hiccup can't silently bounce the board back to
+    showing today's date."""
+    return get_json_with_retries(
         ESPN_NCAAMB_SCOREBOARD_URL,
         params={"groups": D1_GROUP, "limit": SCOREBOARD_LIMIT},
         timeout=REQUEST_TIMEOUT,
+        label="NCAAMB undated scoreboard fetch",
     )
-    resp.raise_for_status()
-    return resp.json()
 
 
 def latest_kickoff_overall(existing_data):

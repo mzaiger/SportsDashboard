@@ -39,6 +39,7 @@ from common import (
     assign_matchup_ranks,
     carry_forward_odds,
     fetch_all_odds,
+    get_json_with_retries,
     load_existing_dashboard,
     load_previous_game_entries,
     load_previous_odds_by_game,
@@ -472,14 +473,15 @@ def get_scoreboard_undated():
     the only place next season's first date (Week 1) exists before that
     season is underway. See resolve_effective_today(), the only caller.
     (groups/limit match the dated call so the calendar stays FBS-only and
-    untruncated.)"""
-    resp = requests.get(
+    untruncated.) Retries a few times on failure (see
+    get_json_with_retries) so a single transient ESPN hiccup can't
+    silently bounce the board back to showing today's date."""
+    return get_json_with_retries(
         ESPN_SCOREBOARD_URL,
         params={"groups": FBS_GROUP, "limit": SCOREBOARD_LIMIT},
         timeout=REQUEST_TIMEOUT,
+        label="NCAAF undated scoreboard fetch",
     )
-    resp.raise_for_status()
-    return resp.json()
 
 
 def calendar_game_dates(scoreboard):
