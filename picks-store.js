@@ -288,12 +288,26 @@ function _nextAug1Utc() {
   return aug1;
 }
 
-function isPickLocked(gScore) {
-  if (!gScore || !gScore.status) return false;
+// Locked if either (a) the scores feed says the game is underway/final, or
+// (b) the game's own kickoff time has simply passed on the viewer's clock.
+// (b) is the important one for a static page: SCORES is fetched once when
+// the page loads, so a tab left open across kickoff would never see (a)
+// update on its own. Checking g.start_time against `new Date()` fresh on
+// every call means this is correct no matter how stale SCORES is or how
+// long the tab has been sitting open -- the periodic re-render (see
+// setInterval(renderBoard, ...) in each page's init()) re-evaluates it
+// every minute, and the pick click-handler double-checks it again at the
+// moment of the click as a last line of defense.
+function isPickLocked(gScore, g) {
+  const status = gScore && gScore.status ? String(gScore.status).toLowerCase() : '';
+  if (PICK_LOCKED_STATUSES.includes(status)) return true;
 
-  const status = String(gScore.status).toLowerCase();
+  if (g && g.start_time && !g.start_time_tbd) {
+    const kickoff = new Date(g.start_time).getTime();
+    if (!Number.isNaN(kickoff) && Date.now() >= kickoff) return true;
+  }
 
-  return PICK_LOCKED_STATUSES.includes(status);
+  return false;
 }
 
 function _pickCookieName(sport, gameId) {
@@ -444,7 +458,7 @@ function renderPayoutSummary(pick) {
 // changed after the fact.
 function renderPickToolbar(sport, g, gScore) {
   const pick = getPick(sport, g.id);
-  const locked = isPickLocked(gScore);
+  const locked = isPickLocked(gScore, g);
 
   const oddsFor = (market, side) => ({
     draftkings: (g.odds?.draftkings?.[market]?.[side]) || null,
@@ -463,7 +477,7 @@ function renderPickToolbar(sport, g, gScore) {
     const oddsAttr = encodeURIComponent(JSON.stringify(oddsFor(o.market, o.side)));
     const lockedSuffix = active ? formatLockedLine(pick) : '';
 
-    return `<button type="button" class="pick-btn${active ? ' active' : ''}" data-sport="${sport}" data-game="${g.id}" data-market="${o.market}" data-side="${o.side}" data-odds="${oddsAttr}"${locked ? ' disabled' : ''}>${active ? '\u2605 ' : ''}${o.label}${lockedSuffix}</button>`;
+    return `<button type="button" class="pick-btn${active ? ' active' : ''}" data-sport="${sport}" data-game="${g.id}" data-market="${o.market}" data-side="${o.side}" data-odds="${oddsAttr}" data-start="${g.start_time_tbd ? '' : (g.start_time || '')}"${locked ? ' disabled' : ''}>${active ? '\u2605 ' : ''}${o.label}${lockedSuffix}</button>`;
   }).join('');
 
   const payoutHtml = pick ? renderPayoutSummary(pick) : '';
@@ -723,6 +737,23 @@ function attachPickHandlers(containerEl, onPick) {
   containerEl.addEventListener('click', (e) => {
     const btn = e.target.closest('.pick-btn');
     if (!btn || !containerEl.contains(btn) || btn.disabled) return;
+
+    // Re-check kickoff time right now, at the moment of the click, instead
+    // of trusting the `disabled` attribute alone. That attribute was only
+    // ever as fresh as the last render -- if the page has been sitting
+    // open since before kickoff (no re-render has happened in between),
+    // `disabled` would still be false even though the game has since
+    // started. This catches that case even if the periodic re-render
+    // timer somehow didn't fire in between.
+    const startStr = btn.dataset.start;
+    if (startStr) {
+      const kickoff = new Date(startStr).getTime();
+      if (!Number.isNaN(kickoff) && Date.now() >= kickoff) {
+        if (typeof onPick === 'function') onPick(); // re-render so the button shows locked
+        return;
+      }
+    }
+
     const { sport, game, market, side, odds } = btn.dataset;
     let oddsSnapshot = null;
     if (odds) {
