@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-26T04:42:36.628191+00:00",
+  "generated_at": "2026-08-26T08:46:54.401855+00:00",
   "season": 2026,
   "display_timezone": "America/Chicago",
   "weeks": [
@@ -112,13 +112,48 @@
     },
     {
       "week": 20261004,
-      "total_games": 0,
+      "total_games": 1,
       "days": [
         {
           "date": "2026-10-04",
           "weekday": "Sunday",
-          "game_count": 0,
-          "time_slots": []
+          "game_count": 1,
+          "time_slots": [
+            {
+              "slot": "Prime Time",
+              "best_matchup_score": 50.0,
+              "pick_reason": "spread_and_wins",
+              "games": [
+                {
+                  "id": "401914127",
+                  "start_time": "2026-10-04T23:00Z",
+                  "start_time_tbd": false,
+                  "home_team": "Denver Nuggets",
+                  "home_abbr": "DEN",
+                  "home_record": null,
+                  "away_team": "Utah Jazz",
+                  "away_abbr": "UTAH",
+                  "away_record": null,
+                  "matchup_score": 50.0,
+                  "channel": "TBD",
+                  "venue": "CU Events Center",
+                  "neutral_site": false,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {},
+                      "moneyline": {}
+                    },
+                    "fanduel": {
+                      "spread": {},
+                      "moneyline": {}
+                    }
+                  },
+                  "matchup_rank": 1,
+                  "is_slot_pick": true
+                }
+              ]
+            }
+          ]
         }
       ]
     }
