@@ -443,6 +443,55 @@
     background:radial-gradient(circle at 32% 28%, rgba(83,211,55,0.28), rgba(83,211,55,0.04));
     box-shadow:0 0 20px rgba(83,211,55,0.4), inset 0 0 14px rgba(83,211,55,0.18);
   }
+
+  /* Clear-all-picks -- sits under the 4 stat circles, above the picks
+     list itself. Deletes every pick_* cookie, so it's gated behind a
+     confirm modal (see #clearPicksModal below) rather than firing on a
+     single click. */
+  .clear-picks-row{ margin-top:1.35rem; }
+  .clear-picks-btn{
+    font-family:'Oswald',sans-serif; font-weight:600; font-size:0.7rem;
+    text-transform:uppercase; letter-spacing:0.05em;
+    color:var(--loss-red); background:transparent;
+    border:1px solid var(--loss-red); border-radius:8px;
+    padding:0.45rem 0.85rem; cursor:pointer; transition:all 0.12s ease;
+  }
+  .clear-picks-btn:hover{ background:rgba(226,88,74,0.12); }
+  .clear-picks-btn:disabled{ opacity:0.45; cursor:default; background:transparent; }
+
+  #clearPicksOverlay{
+    display:none; position:fixed; inset:0; z-index:600;
+    background:rgba(4,6,8,0.72);
+    align-items:center; justify-content:center; padding:1.25rem;
+  }
+  #clearPicksOverlay.open{ display:flex; }
+  #clearPicksModal{
+    width:100%; max-width:26rem;
+    background:var(--bg-panel); border:1px solid var(--loss-red); border-radius:12px;
+    padding:1.5rem 1.5rem 1.25rem;
+    font-family:'JetBrains Mono', monospace; color:var(--chalk);
+  }
+  #clearPicksModal h2{
+    font-family:'Oswald',sans-serif; font-weight:700; font-size:1.05rem;
+    margin:0 0 0.75rem; text-transform:uppercase; letter-spacing:0.03em;
+    color:var(--loss-red);
+  }
+  #clearPicksModal p{ font-size:0.85rem; line-height:1.55; color:var(--dim); margin:0 0 1.25rem; }
+  #clearPicksModal p b{ color:var(--chalk); }
+  .clear-picks-actions{ display:flex; gap:0.6rem; justify-content:flex-end; }
+  .clear-picks-cancel, .clear-picks-confirm{
+    font-family:'Oswald',sans-serif; font-weight:600; font-size:0.72rem;
+    text-transform:uppercase; letter-spacing:0.04em;
+    border-radius:8px; padding:0.4rem 0.85rem; cursor:pointer;
+  }
+  .clear-picks-cancel{
+    background:transparent; border:1px solid var(--toggle-border); color:var(--dim);
+  }
+  .clear-picks-cancel:hover{ color:var(--chalk); border-color:var(--chalk); }
+  .clear-picks-confirm{
+    background:var(--loss-red); border:1px solid var(--loss-red); color:#fff;
+  }
+  .clear-picks-confirm:hover{ filter:brightness(1.1); }
   .stat-inactive-circle .sub{ font-size:0.66rem; }
   .stat-money-circle{
     color:var(--dim);
@@ -832,6 +881,20 @@
         <div class="stat-title">Gemini<span>Accuracy</span></div>
       </div>
     </div>
+    <div class="clear-picks-row">
+      <button type="button" class="clear-picks-btn" id="clearPicksBtn">Clear All Picks</button>
+    </div>
+  </div>
+</div>
+
+<div id="clearPicksOverlay">
+  <div id="clearPicksModal" role="dialog" aria-modal="true" aria-labelledby="clearPicksTitle">
+    <h2 id="clearPicksTitle">Clear All Picks?</h2>
+    <p>This will remove <b>all history of any picks</b> you've made, everywhere on the site. This is stored in your browser's cookies and <b>can never be recovered</b> once deleted.</p>
+    <div class="clear-picks-actions">
+      <button type="button" class="clear-picks-cancel" id="clearPicksCancel">Cancel</button>
+      <button type="button" class="clear-picks-confirm" id="clearPicksConfirm">Delete Everything</button>
+    </div>
   </div>
 </div>
 
@@ -1186,6 +1249,34 @@ function renderBoard() {
   sectionsEl.innerHTML = dayGroups.map(renderUnifiedDay).join('');
 }
 
+// Wires the "Clear All Picks" button under the 4 stat circles to the
+// confirm modal, and the modal's buttons to actually deleting every
+// pick_* cookie (see clearAllPickCookies() in picks-store.js). Nothing
+// fires on the initial click -- it only opens the modal -- so a stray
+// tap can't nuke someone's whole pick history.
+function initClearAllPicks(onCleared) {
+  const btn = document.getElementById('clearPicksBtn');
+  const overlay = document.getElementById('clearPicksOverlay');
+  const cancelBtn = document.getElementById('clearPicksCancel');
+  const confirmBtn = document.getElementById('clearPicksConfirm');
+  if (!btn || !overlay) return;
+
+  const open = () => overlay.classList.add('open');
+  const close = () => overlay.classList.remove('open');
+
+  btn.addEventListener('click', open);
+  cancelBtn.addEventListener('click', close);
+  overlay.addEventListener('click', (e) => { if (e.target === overlay) close(); });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && overlay.classList.contains('open')) close();
+  });
+  confirmBtn.addEventListener('click', () => {
+    clearAllPickCookies();
+    close();
+    onCleared();
+  });
+}
+
 async function init() {
   const statusEl = document.getElementById('statusMsg');
   try {
@@ -1214,6 +1305,7 @@ async function init() {
     attachPickHandlers(document.getElementById('sections'), renderBoard);
     attachGeminiHandlers(document.getElementById('sections'));
     initFilterBar(renderBoard);
+    initClearAllPicks(renderBoard);
 
     // Re-render every minute so pick buttons actually lock at kickoff even
     // if the tab has just been sitting open since before the game started

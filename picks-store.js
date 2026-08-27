@@ -359,6 +359,21 @@ function getAllPicks(sport) {
   return out;
 }
 
+// Deletes every pick_* cookie, across every sport, with no way back --
+// only call this from behind a confirm step in the UI (see picks.html's
+// clear-all-picks modal). Returns the count removed so the caller can
+// bail out of re-rendering if there was nothing to clear.
+function clearAllPickCookies() {
+  const names = document.cookie.split(';').reduce((acc, raw) => {
+    const eq = raw.indexOf('=');
+    const name = (eq === -1 ? raw : raw.slice(0, eq)).trim();
+    if (name.startsWith(PICK_COOKIE_PREFIX)) acc.push(name);
+    return acc;
+  }, []);
+  names.forEach(_deleteCookie);
+  return names.length;
+}
+
 // Standard American-odds payout formula -- this is what DraftKings and
 // FanDuel (and every other US book) both use for both moneyline AND
 // against-the-spread bets: the "line" (point spread / run line) only
