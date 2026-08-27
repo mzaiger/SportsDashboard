@@ -49,12 +49,17 @@ Weekly full-refresh schedule:
   regardless of whether its odds hash matches an existing cache entry.
   Games already underway or final are left completely alone (see
   skip_ids below), so a Wednesday refresh mid-week never touches a
-  game that's already been decided.
-- CFB: same, but on Thursday (UTC) instead of Wednesday.
+  game that's already been decided. This happens ONCE per UTC calendar
+  day, not once per run -- the odds workflow runs every 4 hours, so
+  without tracking this, a Wednesday would force-refresh 6 times
+  instead of 1. See _already_refreshed_today/_mark_refreshed_today.
+- CFB: same, but on Thursday (UTC) instead of Wednesday, also once per
+  day.
 - MLB/NBA/NCAAMB: no scheduled full-refresh day -- caching behaves as
   described above on every day of the week for these three.
-Any day that isn't that sport's refresh day, caching works as described
-above (reuse whenever the odds hash matches).
+Any day that isn't that sport's refresh day, or any run after the first
+one that day, caching works as described above (reuse whenever the odds
+hash matches).
 
 Env var required: GEMINI_KEY.
 If missing, predictions are skipped entirely.
@@ -157,6 +162,26 @@ def _save_cache(cache):
     os.makedirs(os.path.dirname(CACHE_PATH), exist_ok=True)
     with open(CACHE_PATH, "w") as f:
         json.dump(cache, f, indent=2)
+
+
+# Reserved cache key (won't collide with real odds hashes -- those are hex
+# digests, this starts with an underscore) tracking the UTC date each
+# sport's weekly full-refresh last actually ran. The odds workflow runs
+# every 4 hours, so without this, "NFL every Wednesday" would force-refresh
+# on EVERY run that happens to land on a Wednesday -- 6 times that day
+# instead of once. This makes it once per UTC calendar day per sport,
+# regardless of how many times the build runs that day.
+_FULL_REFRESH_LOG_KEY = "_full_refresh_log"
+
+
+def _already_refreshed_today(cache, sport, today_str):
+    return cache.get(_FULL_REFRESH_LOG_KEY, {}).get(sport) == today_str
+
+
+def _mark_refreshed_today(cache, sport, today_str):
+    log_entry = cache.setdefault(_FULL_REFRESH_LOG_KEY, {})
+    log_entry[sport] = today_str
+    _save_cache(cache)
 
 
 def _odds_hash(sport, season, week, away_team, home_team, odds, away_pitcher=None, home_pitcher=None):
@@ -592,10 +617,24 @@ def attach_gemini_predictions(games, sport, season, week, gemini_key, skip_ids=N
     # hasn't changed. Games that are already underway or final never see
     # this override regardless of sport/day, since those game ids are
     # already excluded via skip_ids above.
-    today_utc = datetime.now(timezone.utc).weekday()  # Mon=0 ... Wed=2, Thu=3
-    force_refresh = (sport == "nfl" and today_utc == 2) or (sport == "cfb" and today_utc == 3)
+    #
+    # Gated to ONCE PER UTC CALENDAR DAY (not once per run) via the cache's
+    # _full_refresh_log entry -- the odds workflow runs every 4 hours, so
+    # without this a single Wednesday would otherwise trigger the NFL
+    # full-refresh on every one of that day's runs instead of just the
+    # first.
+    today_utc_date = datetime.now(timezone.utc)
+    today_str = today_utc_date.strftime("%Y-%m-%d")
+    today_utc = today_utc_date.weekday()  # Mon=0 ... Wed=2, Thu=3
+    is_refresh_day = (sport == "nfl" and today_utc == 2) or (sport == "cfb" and today_utc == 3)
 
     cache = _load_cache()
+
+    force_refresh = is_refresh_day and not _already_refreshed_today(cache, sport, today_str)
+    if is_refresh_day and not force_refresh:
+        log(f"Gemini predictions: today's {sport.upper()} full-refresh already ran earlier -- "
+            f"skipping, using normal caching for the rest of today.")
+
     to_call = []
 
     for g in games:
@@ -635,6 +674,13 @@ def attach_gemini_predictions(games, sport, season, week, gemini_key, skip_ids=N
         refresh_day = "Wednesday" if sport == "nfl" else "Thursday"
         log(f"Gemini predictions: today is {refresh_day} -- forcing a refresh for every "
             f"not-yet-started {sport.upper()} game with posted odds, cache or not.")
+        # Mark it done for today NOW, before making any calls -- so that
+        # even if this run gets rate-limited/interrupted partway through,
+        # a later run the same day won't re-trigger the full refresh (it
+        # still falls back to normal per-game caching, and any game with
+        # no cached prediction at all still gets called regardless of this
+        # flag, since `cached` is falsy for those).
+        _mark_refreshed_today(cache, sport, today_str)
 
     log(
         f"Gemini predictions: calling for {len(to_call)} game(s) with new/changed odds, "
