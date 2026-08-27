@@ -54,6 +54,7 @@ from common import (
     log,
     match_odds_for_game,
     merge_weeks,
+    nfl_leagues_for_build,
     normalize_minmax,
     time_slot_for,
 )
@@ -584,6 +585,16 @@ def build_week(year, week, season_type, sharp_key, gemini_key=None, previous_odd
     log(f"  {len(events)} games")
 
     log("Fetching DraftKings/FanDuel NFL odds from SharpAPI...")
+    # league="nfl" alone never sees preseason games -- SharpAPI tags them
+    # with a genuinely separate league id (confirmed against real odds-row
+    # dumps: preseason rows come back as league="nfl_preseason", not as
+    # league="nfl" with some season_type flag). nfl_leagues_for_build()
+    # adds "nfl_preseason" to the request during the preseason window
+    # (season_type == 1) and fetch_all_odds() merges both leagues' rows
+    # into one list; outside preseason it's just "nfl" as before, so we're
+    # not spending an extra request per day asking a league that reliably
+    # has nothing posted once the regular season starts.
+    leagues = nfl_leagues_for_build(season_type == 1)
     # Fetch ONE DAY AT A TIME across this week's actual game dates, rather
     # than a single date_from/date_to spanning the whole week -- a full
     # week of NFL spreads (moneyline + spread, including every alternate
@@ -606,7 +617,7 @@ def build_week(year, week, season_type, sharp_key, gemini_key=None, previous_odd
             continue
     odds_rows = []
     for d in sorted(game_dates):
-        day_rows = fetch_all_odds(sharp_key, league="nfl", markets=("spread", "moneyline"),
+        day_rows = fetch_all_odds(sharp_key, league=leagues, markets=("spread", "moneyline"),
                                    date_from=d, date_to=d)
         odds_rows.extend(day_rows)
     log(f"  {len(odds_rows)} odds rows returned across {len(game_dates)} day(s)")
