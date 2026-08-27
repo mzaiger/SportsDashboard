@@ -175,8 +175,23 @@ MAX_PAGE_RETRIES = 3
 
 def fetch_all_odds(sharp_key, league, sportsbooks=("draftkings", "fanduel"),
                     markets=("spread", "moneyline"), date_from=None, date_to=None):
-    """Pull every odds row for the given league/books/markets, following
+    """Pull every odds row for the given league(s)/books/markets, following
     pagination.
+
+    `league` is normally a single SharpAPI league id string (e.g. "mlb"),
+    but can also be a list/tuple of league ids -- e.g.
+    `("nfl", "usa_-_nfl_preseason", "nfl_-_preseason", "usa_-_nfl_-_preseason")`
+    to cover regular season plus every preseason variant SharpAPI happens
+    to carry that season. This exists because SharpAPI's own /leagues
+    endpoint (GET /api/v1/leagues) shows preseason odds split across
+    *several* differently-named leagues that look like they come from
+    different upstream providers -- there's no single clean "nfl_preseason"
+    id, and no way to know ahead of time which of them actually has
+    DraftKings/FanDuel rows for a given week, so the safe move is to
+    request all of them and merge whatever comes back. Each league id is
+    fetched as its own fully-paginated request; rows from every league are
+    concatenated into one list. A league that returns nothing just
+    contributes zero rows -- it doesn't cause the others to fail.
 
     `date_from`/`date_to` (YYYY-MM-DD strings) are optional but recommended
     when the caller knows the exact date range it's building -- narrowing
@@ -197,6 +212,19 @@ def fetch_all_odds(sharp_key, league, sportsbooks=("draftkings", "fanduel"),
     budget at all -- it's an expected throttle, not a failure, so it's
     retried until it clears rather than giving up after 3 tries.
     """
+    leagues = (league,) if isinstance(league, str) else tuple(league)
+    if len(leagues) > 1:
+        all_rows = []
+        for lg in leagues:
+            lg_rows = fetch_all_odds(sharp_key, lg, sportsbooks=sportsbooks,
+                                      markets=markets, date_from=date_from,
+                                      date_to=date_to)
+            all_rows.extend(lg_rows)
+        log(f"  {len(all_rows)} odds row(s) combined across {len(leagues)} "
+            f"leagues ({', '.join(leagues)})")
+        return all_rows
+
+    league = leagues[0]
     rows = []
     offset = 0
     cursor = None
@@ -283,9 +311,6 @@ def fetch_all_odds(sharp_key, league, sportsbooks=("draftkings", "fanduel"),
         else:
             offset = pagination.get("next_offset", offset + SHARPAPI_PAGE_LIMIT)
         time.sleep(0.3)  # be polite to the free tier (12 req/min)
-
-    _log_odds_breakdown(rows, sportsbooks, markets)
-    return rows
 
     _log_odds_breakdown(rows, sportsbooks, markets)
     return rows
