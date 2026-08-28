@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-28T00:06:22.578829+00:00",
+  "generated_at": "2026-08-28T04:00:05.628482+00:00",
   "season": 2026,
   "season_type": 1,
   "display_timezone": "America/Chicago",
@@ -1185,7 +1185,7 @@
           "time_slots": [
             {
               "slot": "Prime Time",
-              "best_matchup_score": 56.0,
+              "best_matchup_score": 59.5,
               "pick_reason": "blended_score",
               "games": [
                 {
@@ -1194,11 +1194,11 @@
                   "start_time_tbd": false,
                   "home_team": "Buffalo Bills",
                   "home_abbr": "BUF",
-                  "home_record": "2-0",
+                  "home_record": "3-0",
                   "away_team": "Pittsburgh Steelers",
                   "away_abbr": "PIT",
-                  "away_record": "1-1",
-                  "matchup_score": 56.0,
+                  "away_record": "1-2",
+                  "matchup_score": 59.5,
                   "channel": "NFL Net, KDKA-TV",
                   "venue": "Highmark Stadium",
                   "neutral_site": false,
@@ -1212,35 +1212,8 @@
                       "moneyline": {}
                     }
                   },
-                  "matchup_rank": 7,
+                  "matchup_rank": 8,
                   "is_slot_pick": true
-                },
-                {
-                  "id": "401873299",
-                  "start_time": "2026-08-28T00:00Z",
-                  "start_time_tbd": false,
-                  "home_team": "Cleveland Browns",
-                  "home_abbr": "CLE",
-                  "home_record": "0-2",
-                  "away_team": "New England Patriots",
-                  "away_abbr": "NE",
-                  "away_record": "1-0-1",
-                  "matchup_score": 69.0,
-                  "channel": "Prime Video",
-                  "venue": "Huntington Bank Field",
-                  "neutral_site": false,
-                  "odds": {
-                    "draftkings": {
-                      "spread": {},
-                      "moneyline": {}
-                    },
-                    "fanduel": {
-                      "spread": {},
-                      "moneyline": {}
-                    }
-                  },
-                  "matchup_rank": 10,
-                  "is_slot_pick": false
                 },
                 {
                   "id": "401873641",
@@ -1248,11 +1221,11 @@
                   "start_time_tbd": false,
                   "home_team": "Las Vegas Raiders",
                   "home_abbr": "LV",
-                  "home_record": "1-1",
+                  "home_record": "1-2",
                   "away_team": "San Francisco 49ers",
                   "away_abbr": "SF",
-                  "away_record": "1-1",
-                  "matchup_score": 73.8,
+                  "away_record": "2-1",
+                  "matchup_score": 67.9,
                   "channel": "ESPN Unlmtd, Fox 5 Vegas, KPIX",
                   "venue": "Allegiant Stadium",
                   "neutral_site": false,
@@ -1284,7 +1257,6 @@
                       }
                     }
                   },
-                  "matchup_rank": 12,
                   "gemini_prediction": {
                     "winner": "San Francisco 49ers",
                     "confidence": 78,
@@ -1297,13 +1269,41 @@
                     "odds_hash": "501d75fed6412495",
                     "model": "gemini-3.5-flash-lite"
                   },
+                  "matchup_rank": 10,
+                  "is_slot_pick": false
+                },
+                {
+                  "id": "401873299",
+                  "start_time": "2026-08-28T00:00Z",
+                  "start_time_tbd": false,
+                  "home_team": "Cleveland Browns",
+                  "home_abbr": "CLE",
+                  "home_record": "1-2",
+                  "away_team": "New England Patriots",
+                  "away_abbr": "NE",
+                  "away_record": "1-1-1",
+                  "matchup_score": 77.4,
+                  "channel": "Prime Video",
+                  "venue": "Huntington Bank Field",
+                  "neutral_site": false,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {},
+                      "moneyline": {}
+                    },
+                    "fanduel": {
+                      "spread": {},
+                      "moneyline": {}
+                    }
+                  },
+                  "matchup_rank": 16,
                   "is_slot_pick": false
                 }
               ]
             },
             {
               "slot": "Late Night",
-              "best_matchup_score": 54.8,
+              "best_matchup_score": 53.6,
               "pick_reason": "blended_score",
               "games": [
                 {
@@ -1316,7 +1316,7 @@
                   "away_team": "Los Angeles Rams",
                   "away_abbr": "LAR",
                   "away_record": "2-0",
-                  "matchup_score": 54.8,
+                  "matchup_score": 53.6,
                   "channel": "NFL Net, CBS LA, KCAL",
                   "venue": "SoFi Stadium",
                   "neutral_site": false,
@@ -1357,7 +1357,6 @@
                       }
                     }
                   },
-                  "matchup_rank": 6,
                   "gemini_prediction": {
                     "winner": "Los Angeles Rams",
                     "confidence": 65,
@@ -1370,6 +1369,7 @@
                     "odds_hash": "7e0f2fc1056578b3",
                     "model": "gemini-3.5-flash-lite"
                   },
+                  "matchup_rank": 5,
                   "is_slot_pick": true
                 }
               ]
@@ -1590,7 +1590,7 @@
                       }
                     }
                   },
-                  "matchup_rank": 5,
+                  "matchup_rank": 6,
                   "gemini_prediction": {
                     "winner": "Tampa Bay Buccaneers",
                     "confidence": 62,
@@ -1615,7 +1615,7 @@
                   "away_team": "Washington Commanders",
                   "away_abbr": "WSH",
                   "away_record": "1-1",
-                  "matchup_score": 57.1,
+                  "matchup_score": 56.0,
                   "channel": "NFL Net, WBAL-TV, WUSA9",
                   "venue": "M&T Bank Stadium",
                   "neutral_site": false,
@@ -1647,7 +1647,7 @@
                       }
                     }
                   },
-                  "matchup_rank": 8,
+                  "matchup_rank": 7,
                   "gemini_prediction": {
                     "winner": "Baltimore Ravens",
                     "confidence": 62,
@@ -1672,7 +1672,7 @@
                   "away_team": "Minnesota Vikings",
                   "away_abbr": "MIN",
                   "away_record": "1-1",
-                  "matchup_score": 64.3,
+                  "matchup_score": 63.1,
                   "channel": "NFL Net, KUSA-TV (9NEWS)",
                   "venue": "Empower Field at Mile High",
                   "neutral_site": false,
@@ -1685,21 +1685,21 @@
                       "spread": {
                         "home": {
                           "line": -3.5,
-                          "american": -105
+                          "american": -108
                         },
                         "away": {
                           "line": 3.5,
-                          "american": -115
+                          "american": -112
                         }
                       },
                       "moneyline": {
                         "home": {
                           "line": null,
-                          "american": -168
+                          "american": -174
                         },
                         "away": {
                           "line": null,
-                          "american": 142
+                          "american": 146
                         }
                       }
                     }
@@ -1710,11 +1710,11 @@
                     "confidence": 62,
                     "ats_pick": "Denver Broncos",
                     "ats_confidence": 58,
-                    "analysis": "The Denver Broncos return to Empower Field at Mile High carrying strong momentum from the early 2026 campaign. Minnesota Vikings' offense has shown flashes of brilliance but struggles considerably with consistency on the road. Denver's defensive pressure neutralizes the explosive elements of the Vikings' passing attack effectively. Special teams execution and turnover margin heavily favor the home side in this crucial early-season matchup. Ultimately, the Broncos control the line of scrimmage to secure a narrow victory and cover the spread.",
-                    "splits_and_direction": "Approximately 61 percent of public bets are backing the Denver Broncos to cover the 3.5-point spread at home. Both the point spread and moneyline have remained stable since opening with no notable line movement reported.",
-                    "display_text": "Summary: The Denver Broncos return to Empower Field at Mile High carrying strong momentum from the early 2026 campaign. Minnesota Vikings' offense has shown flashes of brilliance but struggles considerably with consistency on the road. Denver's defensive pressure neutralizes the explosive elements of the Vikings' passing attack effectively. Special teams execution and turnover margin heavily favor the home side in this crucial early-season matchup. Ultimately, the Broncos control the line of scrimmage to secure a narrow victory and cover the spread.\n\nSplits and Direction: Approximately 61 percent of public bets are backing the Denver Broncos to cover the 3.5-point spread at home. Both the point spread and moneyline have remained stable since opening with no notable line movement reported.",
-                    "generated_at": "2026-08-28T00:06:02.479406+00:00",
-                    "odds_hash": "0ac12d349c468586",
+                    "analysis": "The Denver Broncos return home for this Week 4 matchup holding a slight edge in early 2026 efficiency metrics. Minnesota's offense has struggled to establish consistency through the air, creating issues with sustained drives. Denver's defensive front has excelled at generating pressure, which should disrupt the Vikings' timing. Playing at Empower Field gives the Broncos a distinct situational advantage over the visiting team. Ultimately, Denver does enough on both sides of the ball to secure a home victory and cover the 3.5-point spread.",
+                    "splits_and_direction": "Approximately 58 percent of early public moneyline bets are backing the favored Denver Broncos at home. The point spread has remained steady at 3.5 since opening at FanDuel without significant movement.",
+                    "display_text": "Summary: The Denver Broncos return home for this Week 4 matchup holding a slight edge in early 2026 efficiency metrics. Minnesota's offense has struggled to establish consistency through the air, creating issues with sustained drives. Denver's defensive front has excelled at generating pressure, which should disrupt the Vikings' timing. Playing at Empower Field gives the Broncos a distinct situational advantage over the visiting team. Ultimately, Denver does enough on both sides of the ball to secure a home victory and cover the 3.5-point spread.\n\nSplits and Direction: Approximately 58 percent of early public moneyline bets are backing the favored Denver Broncos at home. The point spread has remained steady at 3.5 since opening at FanDuel without significant movement.",
+                    "generated_at": "2026-08-28T04:00:05.354653+00:00",
+                    "odds_hash": "3bc4c115a1a416f8",
                     "model": "gemini-3.5-flash-lite"
                   },
                   "is_slot_pick": false
@@ -1729,7 +1729,7 @@
                   "away_team": "Houston Texans",
                   "away_abbr": "HOU",
                   "away_record": "0-2",
-                  "matchup_score": 71.4,
+                  "matchup_score": 70.2,
                   "channel": "KTRK (ABC)",
                   "venue": "Bank of America Stadium",
                   "neutral_site": false,
@@ -1777,7 +1777,7 @@
                   "away_team": "Arizona Cardinals",
                   "away_abbr": "ARI",
                   "away_record": "1-2",
-                  "matchup_score": 73.8,
+                  "matchup_score": 71.4,
                   "channel": "Packers TV Network",
                   "venue": "Lambeau Field",
                   "neutral_site": false,
@@ -1800,7 +1800,7 @@
                       }
                     }
                   },
-                  "matchup_rank": 13,
+                  "matchup_rank": 12,
                   "gemini_prediction": {
                     "winner": "Green Bay Packers",
                     "confidence": 54,
@@ -1857,7 +1857,7 @@
                       }
                     }
                   },
-                  "matchup_rank": 15,
+                  "matchup_rank": 13,
                   "gemini_prediction": {
                     "winner": "Atlanta Falcons",
                     "confidence": 68,
@@ -1919,7 +1919,7 @@
                       }
                     }
                   },
-                  "matchup_rank": 16,
+                  "matchup_rank": 14,
                   "gemini_prediction": {
                     "winner": "Seattle Seahawks",
                     "confidence": 68,
@@ -1945,7 +1945,7 @@
           "time_slots": [
             {
               "slot": "Noon",
-              "best_matchup_score": 73.8,
+              "best_matchup_score": 75.0,
               "pick_reason": "blended_score",
               "games": [
                 {
@@ -1958,7 +1958,7 @@
                   "away_team": "Detroit Lions",
                   "away_abbr": "DET",
                   "away_record": "1-1",
-                  "matchup_score": 73.8,
+                  "matchup_score": 75.0,
                   "channel": "NFL Net, CBS4, Lions TV Network",
                   "venue": "Lucas Oil Stadium",
                   "neutral_site": false,
@@ -1990,7 +1990,7 @@
                       }
                     }
                   },
-                  "matchup_rank": 14,
+                  "matchup_rank": 15,
                   "gemini_prediction": {
                     "winner": "Detroit Lions",
                     "confidence": 62,
