@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-28T04:00:05.628482+00:00",
+  "generated_at": "2026-08-28T16:36:45.087814+00:00",
   "season": 2026,
   "season_type": 1,
   "display_timezone": "America/Chicago",
@@ -1212,7 +1212,7 @@
                       "moneyline": {}
                     }
                   },
-                  "matchup_rank": 8,
+                  "matchup_rank": 6,
                   "is_slot_pick": true
                 },
                 {
@@ -1225,7 +1225,7 @@
                   "away_team": "San Francisco 49ers",
                   "away_abbr": "SF",
                   "away_record": "2-1",
-                  "matchup_score": 67.9,
+                  "matchup_score": 66.7,
                   "channel": "ESPN Unlmtd, Fox 5 Vegas, KPIX",
                   "venue": "Allegiant Stadium",
                   "neutral_site": false,
@@ -1269,7 +1269,7 @@
                     "odds_hash": "501d75fed6412495",
                     "model": "gemini-3.5-flash-lite"
                   },
-                  "matchup_rank": 10,
+                  "matchup_rank": 9,
                   "is_slot_pick": false
                 },
                 {
@@ -1282,7 +1282,7 @@
                   "away_team": "New England Patriots",
                   "away_abbr": "NE",
                   "away_record": "1-1-1",
-                  "matchup_score": 77.4,
+                  "matchup_score": 75.0,
                   "channel": "Prime Video",
                   "venue": "Huntington Bank Field",
                   "neutral_site": false,
@@ -1296,14 +1296,14 @@
                       "moneyline": {}
                     }
                   },
-                  "matchup_rank": 16,
+                  "matchup_rank": 15,
                   "is_slot_pick": false
                 }
               ]
             },
             {
               "slot": "Late Night",
-              "best_matchup_score": 53.6,
+              "best_matchup_score": 59.5,
               "pick_reason": "blended_score",
               "games": [
                 {
@@ -1312,11 +1312,11 @@
                   "start_time_tbd": false,
                   "home_team": "Los Angeles Chargers",
                   "home_abbr": "LAC",
-                  "home_record": "1-1",
+                  "home_record": "1-2",
                   "away_team": "Los Angeles Rams",
                   "away_abbr": "LAR",
-                  "away_record": "2-0",
-                  "matchup_score": 53.6,
+                  "away_record": "3-0",
+                  "matchup_score": 59.5,
                   "channel": "NFL Net, CBS LA, KCAL",
                   "venue": "SoFi Stadium",
                   "neutral_site": false,
@@ -1369,7 +1369,7 @@
                     "odds_hash": "7e0f2fc1056578b3",
                     "model": "gemini-3.5-flash-lite"
                   },
-                  "matchup_rank": 5,
+                  "matchup_rank": 7,
                   "is_slot_pick": true
                 }
               ]
@@ -1383,7 +1383,7 @@
           "time_slots": [
             {
               "slot": "Prime Time",
-              "best_matchup_score": 19.0,
+              "best_matchup_score": 20.2,
               "pick_reason": "blended_score",
               "games": [
                 {
@@ -1396,7 +1396,7 @@
                   "away_team": "New Orleans Saints",
                   "away_abbr": "NO",
                   "away_record": "0-2",
-                  "matchup_score": 19.0,
+                  "matchup_score": 20.2,
                   "channel": "ESPN Unlmtd, Fox 8",
                   "venue": "AT&T Stadium",
                   "neutral_site": false,
@@ -1453,7 +1453,7 @@
                   "away_team": "Cincinnati Bengals",
                   "away_abbr": "CIN",
                   "away_record": "2-0",
-                  "matchup_score": 19.0,
+                  "matchup_score": 20.2,
                   "channel": "CBS",
                   "venue": "Lincoln Financial Field",
                   "neutral_site": false,
@@ -1501,63 +1501,6 @@
                   "is_slot_pick": false
                 },
                 {
-                  "id": "401873303",
-                  "start_time": "2026-08-28T23:30Z",
-                  "start_time_tbd": false,
-                  "home_team": "New York Jets",
-                  "home_abbr": "NYJ",
-                  "home_record": "1-1",
-                  "away_team": "New York Giants",
-                  "away_abbr": "NYG",
-                  "away_record": "1-1",
-                  "matchup_score": 50.0,
-                  "channel": "WCBS",
-                  "venue": "MetLife Stadium",
-                  "neutral_site": false,
-                  "odds": {
-                    "draftkings": {
-                      "spread": {},
-                      "moneyline": {}
-                    },
-                    "fanduel": {
-                      "spread": {
-                        "home": {
-                          "line": -3.0,
-                          "american": -115
-                        },
-                        "away": {
-                          "line": 3.0,
-                          "american": -105
-                        }
-                      },
-                      "moneyline": {
-                        "home": {
-                          "line": null,
-                          "american": -156
-                        },
-                        "away": {
-                          "line": null,
-                          "american": 132
-                        }
-                      }
-                    }
-                  },
-                  "matchup_rank": 4,
-                  "gemini_prediction": {
-                    "winner": "New York Jets",
-                    "confidence": 58,
-                    "ats_pick": "New York Giants",
-                    "ats_confidence": 55,
-                    "analysis": "Through the early portion of the 2026 season, the New York Jets have displayed a slightly more cohesive defensive unit that can pressure opposing quarterbacks consistently. The New York Giants continue to struggle with offensive line consistency, stalling drives and putting immense pressure on their defense to keep games close. Field position and turnover battles will be critical in this MetLife Stadium matchup, favoring the team that commits fewer unforced errors. While the Jets hold a slight roster advantage, a three-point spread in a rivalry game is generous given both squads' current offensive limitations. Ultimately, the Jets should find a way to edge out a narrow victory, but the Giants are well-positioned to keep the final margin within a field goal.",
-                    "splits_and_direction": "Based on standard public tendencies for cross-town rivalry games, approximately 58% of spread bets are currently backing the New York Jets, while 65% of moneyline action is also favoring the home side. The spread has remained steady at -3 since opening, and the moneyline has seen a minor shift from the Jets opening at -150 to its current position at -156 due to early public support.",
-                    "display_text": "Summary: Through the early portion of the 2026 season, the New York Jets have displayed a slightly more cohesive defensive unit that can pressure opposing quarterbacks consistently. The New York Giants continue to struggle with offensive line consistency, stalling drives and putting immense pressure on their defense to keep games close. Field position and turnover battles will be critical in this MetLife Stadium matchup, favoring the team that commits fewer unforced errors. While the Jets hold a slight roster advantage, a three-point spread in a rivalry game is generous given both squads' current offensive limitations. Ultimately, the Jets should find a way to edge out a narrow victory, but the Giants are well-positioned to keep the final margin within a field goal.\n\nSplits and Direction: Based on standard public tendencies for cross-town rivalry games, approximately 58% of spread bets are currently backing the New York Jets, while 65% of moneyline action is also favoring the home side. The spread has remained steady at -3 since opening, and the moneyline has seen a minor shift from the Jets opening at -150 to its current position at -156 due to early public support.",
-                    "generated_at": "2026-08-28T00:05:02.648283+00:00",
-                    "odds_hash": "945f98195399bc4d",
-                    "model": "gemini-3.5-flash-lite"
-                  },
-                  "is_slot_pick": false
-                },
-                {
                   "id": "401873306",
                   "start_time": "2026-08-28T23:30Z",
                   "start_time_tbd": false,
@@ -1581,7 +1524,7 @@
                       "moneyline": {
                         "home": {
                           "line": null,
-                          "american": 122
+                          "american": 124
                         },
                         "away": {
                           "line": null,
@@ -1590,17 +1533,17 @@
                       }
                     }
                   },
-                  "matchup_rank": 6,
+                  "matchup_rank": 4,
                   "gemini_prediction": {
                     "winner": "Tampa Bay Buccaneers",
-                    "confidence": 62,
+                    "confidence": 60,
                     "ats_pick": null,
                     "ats_confidence": 0,
-                    "analysis": "The Tampa Bay Buccaneers enter this early-season contest with a slightly more efficient offensive scheme through the first three weeks of 2026. Jacksonville has struggled to establish consistency in the running game, putting heavy pressure on their passing attack. Defensively, Tampa Bay has demonstrated a better ability to force turnovers and limit explosive plays from opposing wide receivers. Turnovers could ultimately decide this matchup as the Jaguars have proven prone to costly mistakes in the red zone. Road field advantage is mitigated here, but the Buccaneers have executed their situational football significantly better overall.",
-                    "splits_and_direction": "Given that DraftKings has not yet posted odds and only FanDuel's moneyline is available at -144 for the away team and +122 for the home team, exact betting-split data is estimated based on public tendency leaning toward the road favorite. The moneyline has seen slight early movement favoring the Tampa Bay Buccaneers as sharp money enters on the perceived value of the better-performing current-season roster.",
-                    "display_text": "Summary: The Tampa Bay Buccaneers enter this early-season contest with a slightly more efficient offensive scheme through the first three weeks of 2026. Jacksonville has struggled to establish consistency in the running game, putting heavy pressure on their passing attack. Defensively, Tampa Bay has demonstrated a better ability to force turnovers and limit explosive plays from opposing wide receivers. Turnovers could ultimately decide this matchup as the Jaguars have proven prone to costly mistakes in the red zone. Road field advantage is mitigated here, but the Buccaneers have executed their situational football significantly better overall.\n\nSplits and Direction: Given that DraftKings has not yet posted odds and only FanDuel's moneyline is available at -144 for the away team and +122 for the home team, exact betting-split data is estimated based on public tendency leaning toward the road favorite. The moneyline has seen slight early movement favoring the Tampa Bay Buccaneers as sharp money enters on the perceived value of the better-performing current-season roster.",
-                    "generated_at": "2026-08-28T00:05:12.771103+00:00",
-                    "odds_hash": "f0f0f631714ad990",
+                    "analysis": "The Tampa Bay Buccaneers enter this early-season contest with a more cohesive offensive scheme during the opening weeks of 2026. Jacksonville has struggled to establish consistency on defense, allowing opponents to sustain drives in crucial moments. Tampa Bay's passing attack should find success against a secondary that has given up chunk plays consistently this year. The Jaguars will need their rushing attack to control the clock, but the Buccaneers' front seven has proven resilient against the run. Ultimately, Tampa Bay makes fewer critical mistakes down the stretch to secure a narrow victory on the road.",
+                    "splits_and_direction": "Based on early public tendencies without official ticket data available, roughly 58 percent of moneyline bets are leaning toward the favored Tampa Bay Buccaneers. Since DraftKings has not yet posted odds and FanDuel opened with Tampa Bay at -144 and Jacksonville at +124, no significant line movement has occurred yet.",
+                    "display_text": "Summary: The Tampa Bay Buccaneers enter this early-season contest with a more cohesive offensive scheme during the opening weeks of 2026. Jacksonville has struggled to establish consistency on defense, allowing opponents to sustain drives in crucial moments. Tampa Bay's passing attack should find success against a secondary that has given up chunk plays consistently this year. The Jaguars will need their rushing attack to control the clock, but the Buccaneers' front seven has proven resilient against the run. Ultimately, Tampa Bay makes fewer critical mistakes down the stretch to secure a narrow victory on the road.\n\nSplits and Direction: Based on early public tendencies without official ticket data available, roughly 58 percent of moneyline bets are leaning toward the favored Tampa Bay Buccaneers. Since DraftKings has not yet posted odds and FanDuel opened with Tampa Bay at -144 and Jacksonville at +124, no significant line movement has occurred yet.",
+                    "generated_at": "2026-08-28T16:36:34.790722+00:00",
+                    "odds_hash": "68f63831e99e6b36",
                     "model": "gemini-3.5-flash-lite"
                   },
                   "is_slot_pick": false
@@ -1647,7 +1590,7 @@
                       }
                     }
                   },
-                  "matchup_rank": 7,
+                  "matchup_rank": 5,
                   "gemini_prediction": {
                     "winner": "Baltimore Ravens",
                     "confidence": 62,
@@ -1672,7 +1615,7 @@
                   "away_team": "Minnesota Vikings",
                   "away_abbr": "MIN",
                   "away_record": "1-1",
-                  "matchup_score": 63.1,
+                  "matchup_score": 61.9,
                   "channel": "NFL Net, KUSA-TV (9NEWS)",
                   "venue": "Empower Field at Mile High",
                   "neutral_site": false,
@@ -1685,36 +1628,36 @@
                       "spread": {
                         "home": {
                           "line": -3.5,
-                          "american": -108
+                          "american": -110
                         },
                         "away": {
                           "line": 3.5,
-                          "american": -112
+                          "american": -110
                         }
                       },
                       "moneyline": {
                         "home": {
                           "line": null,
-                          "american": -174
+                          "american": -186
                         },
                         "away": {
                           "line": null,
-                          "american": 146
+                          "american": 156
                         }
                       }
                     }
                   },
-                  "matchup_rank": 9,
+                  "matchup_rank": 8,
                   "gemini_prediction": {
                     "winner": "Denver Broncos",
                     "confidence": 62,
-                    "ats_pick": "Denver Broncos",
+                    "ats_pick": "Minnesota Vikings",
                     "ats_confidence": 58,
-                    "analysis": "The Denver Broncos return home for this Week 4 matchup holding a slight edge in early 2026 efficiency metrics. Minnesota's offense has struggled to establish consistency through the air, creating issues with sustained drives. Denver's defensive front has excelled at generating pressure, which should disrupt the Vikings' timing. Playing at Empower Field gives the Broncos a distinct situational advantage over the visiting team. Ultimately, Denver does enough on both sides of the ball to secure a home victory and cover the 3.5-point spread.",
-                    "splits_and_direction": "Approximately 58 percent of early public moneyline bets are backing the favored Denver Broncos at home. The point spread has remained steady at 3.5 since opening at FanDuel without significant movement.",
-                    "display_text": "Summary: The Denver Broncos return home for this Week 4 matchup holding a slight edge in early 2026 efficiency metrics. Minnesota's offense has struggled to establish consistency through the air, creating issues with sustained drives. Denver's defensive front has excelled at generating pressure, which should disrupt the Vikings' timing. Playing at Empower Field gives the Broncos a distinct situational advantage over the visiting team. Ultimately, Denver does enough on both sides of the ball to secure a home victory and cover the 3.5-point spread.\n\nSplits and Direction: Approximately 58 percent of early public moneyline bets are backing the favored Denver Broncos at home. The point spread has remained steady at 3.5 since opening at FanDuel without significant movement.",
-                    "generated_at": "2026-08-28T04:00:05.354653+00:00",
-                    "odds_hash": "3bc4c115a1a416f8",
+                    "analysis": "The Denver Broncos return home for this Week 4 matchup holding a slight edge due to their defensive efficiency early in the 2026 campaign. Minnesota has shown flashes of offensive explosiveness, keeping games tight against formidable opponents through the first month of the season. Denver's home-field advantage at Empower Field at Mile High proves difficult for visiting offenses to navigate cleanly. The Vikings' rushing attack should do enough to chew up clock and keep the final score within a field goal. Ultimately, the Broncos make one more stop defensively to secure a narrow outright victory.",
+                    "splits_and_direction": "Based on public tendencies and the current odds, an estimated 58 percent of spread bets are backing the Minnesota Vikings as road underdogs while 55 percent of moneyline tickets lean toward the Denver Broncos. Because no opening numbers are available from DraftKings and FanDuel released a static -3.5, the spread and moneyline have not shifted from their initial postings.",
+                    "display_text": "Summary: The Denver Broncos return home for this Week 4 matchup holding a slight edge due to their defensive efficiency early in the 2026 campaign. Minnesota has shown flashes of offensive explosiveness, keeping games tight against formidable opponents through the first month of the season. Denver's home-field advantage at Empower Field at Mile High proves difficult for visiting offenses to navigate cleanly. The Vikings' rushing attack should do enough to chew up clock and keep the final score within a field goal. Ultimately, the Broncos make one more stop defensively to secure a narrow outright victory.\n\nSplits and Direction: Based on public tendencies and the current odds, an estimated 58 percent of spread bets are backing the Minnesota Vikings as road underdogs while 55 percent of moneyline tickets lean toward the Denver Broncos. Because no opening numbers are available from DraftKings and FanDuel released a static -3.5, the spread and moneyline have not shifted from their initial postings.",
+                    "generated_at": "2026-08-28T16:36:44.839411+00:00",
+                    "odds_hash": "9d9932138ed45f76",
                     "model": "gemini-3.5-flash-lite"
                   },
                   "is_slot_pick": false
@@ -1743,26 +1686,26 @@
                       "moneyline": {
                         "home": {
                           "line": null,
-                          "american": -106
+                          "american": -104
                         },
                         "away": {
                           "line": null,
-                          "american": -110
+                          "american": -112
                         }
                       }
                     }
                   },
-                  "matchup_rank": 11,
+                  "matchup_rank": 10,
                   "gemini_prediction": {
                     "winner": "Houston Texans",
                     "confidence": 55,
                     "ats_pick": null,
                     "ats_confidence": 0,
-                    "analysis": "The Houston Texans travel to face the Carolina Panthers in what shapes up as a tightly contested early-season matchup during the 2026 campaign. Early-season performances from both squads indicate an evenly matched contest with narrow margins in efficiency metrics. Houston's offensive unit has shown slightly more consistency through the first three weeks of the year compared to Carolina's inconsistent output. The Panthers hold home-field advantage, which the current betting odds reflect by pricing them as a slight moneyline underdog at -106. Ultimately, the Texans' execution in situational football should give them the edge needed to secure a narrow victory on the road.",
-                    "splits_and_direction": "Betting splits are not officially available this early, but public tendencies lean slightly toward the Texans on the moneyline given their marginal perception edge. No point spread was posted at DraftKings, and FanDuel only displays moneyline pricing at -110 for Houston and -106 for Carolina without active movement yet.",
-                    "display_text": "Summary: The Houston Texans travel to face the Carolina Panthers in what shapes up as a tightly contested early-season matchup during the 2026 campaign. Early-season performances from both squads indicate an evenly matched contest with narrow margins in efficiency metrics. Houston's offensive unit has shown slightly more consistency through the first three weeks of the year compared to Carolina's inconsistent output. The Panthers hold home-field advantage, which the current betting odds reflect by pricing them as a slight moneyline underdog at -106. Ultimately, the Texans' execution in situational football should give them the edge needed to secure a narrow victory on the road.\n\nSplits and Direction: Betting splits are not officially available this early, but public tendencies lean slightly toward the Texans on the moneyline given their marginal perception edge. No point spread was posted at DraftKings, and FanDuel only displays moneyline pricing at -110 for Houston and -106 for Carolina without active movement yet.",
-                    "generated_at": "2026-08-28T00:04:52.537989+00:00",
-                    "odds_hash": "c40da317e0c2157c",
+                    "analysis": "The Houston Texans travel to face the Carolina Panthers in what shapes up as a tightly contested early-season matchup. Both teams enter this week four game looking to establish consistency on the offensive side of the ball. The FanDuel moneyline slightly favors the visiting Texans at minus one hundred twelve based on early market sentiment. Houston's roster execution has shown marginally better efficiency through the initial weeks of the two thousand twenty-six campaign. Ultimately, the Texans should secure a narrow victory in a game that could easily come down to the final possession.",
+                    "splits_and_direction": "Given the lack of official public betting data, it is estimated that roughly sixty percent of early moneyline bets are backing the Houston Texans. Both the moneyline and spread markets remain largely stagnant due to the absence of posted point spreads from major sportsbooks.",
+                    "display_text": "Summary: The Houston Texans travel to face the Carolina Panthers in what shapes up as a tightly contested early-season matchup. Both teams enter this week four game looking to establish consistency on the offensive side of the ball. The FanDuel moneyline slightly favors the visiting Texans at minus one hundred twelve based on early market sentiment. Houston's roster execution has shown marginally better efficiency through the initial weeks of the two thousand twenty-six campaign. Ultimately, the Texans should secure a narrow victory in a game that could easily come down to the final possession.\n\nSplits and Direction: Given the lack of official public betting data, it is estimated that roughly sixty percent of early moneyline bets are backing the Houston Texans. Both the moneyline and spread markets remain largely stagnant due to the absence of posted point spreads from major sportsbooks.",
+                    "generated_at": "2026-08-28T16:36:14.643292+00:00",
+                    "odds_hash": "5ee23e2a50fe4434",
                     "model": "gemini-3.5-flash-lite"
                   },
                   "is_slot_pick": false
@@ -1777,7 +1720,7 @@
                   "away_team": "Arizona Cardinals",
                   "away_abbr": "ARI",
                   "away_record": "1-2",
-                  "matchup_score": 71.4,
+                  "matchup_score": 70.2,
                   "channel": "Packers TV Network",
                   "venue": "Lambeau Field",
                   "neutral_site": false,
@@ -1800,7 +1743,7 @@
                       }
                     }
                   },
-                  "matchup_rank": 12,
+                  "matchup_rank": 11,
                   "gemini_prediction": {
                     "winner": "Green Bay Packers",
                     "confidence": 54,
@@ -1811,6 +1754,63 @@
                     "display_text": "Summary: This early-season matchup features two competitive NFC squads navigating the challenges of the 2026 campaign. Green Bay holds a slight advantage playing at Lambeau Field, where their offense has executed efficiently in the early weeks. Arizona brings a potent passing attack that can exploit defensive gaps, keeping this game tightly contested throughout four quarters. Turnovers and red-zone efficiency will ultimately dictate which team sustains its drives better down the stretch. The Packers manage to secure a narrow victory at home by capitalizing on a late defensive stop.\n\nSplits and Direction: Given that no official point spread has been posted yet, betting splits are estimated at roughly fifty-five percent of public money backing the home Packers on the moneyline at -110. The moneyline has remained relatively stable at -106 for the Cardinals and -110 for the Packers since opening.",
                     "generated_at": "2026-08-28T00:05:32.651302+00:00",
                     "odds_hash": "4e56fd93568580bf",
+                    "model": "gemini-3.5-flash-lite"
+                  },
+                  "is_slot_pick": false
+                },
+                {
+                  "id": "401873303",
+                  "start_time": "2026-08-28T23:30Z",
+                  "start_time_tbd": false,
+                  "home_team": "New York Jets",
+                  "home_abbr": "NYJ",
+                  "home_record": "1-1",
+                  "away_team": "New York Giants",
+                  "away_abbr": "NYG",
+                  "away_record": "1-1",
+                  "matchup_score": 72.6,
+                  "channel": "WCBS",
+                  "venue": "MetLife Stadium",
+                  "neutral_site": false,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {},
+                      "moneyline": {}
+                    },
+                    "fanduel": {
+                      "spread": {
+                        "home": {
+                          "line": -3.5,
+                          "american": -102
+                        },
+                        "away": {
+                          "line": 3.5,
+                          "american": -120
+                        }
+                      },
+                      "moneyline": {
+                        "home": {
+                          "line": null,
+                          "american": -156
+                        },
+                        "away": {
+                          "line": null,
+                          "american": 132
+                        }
+                      }
+                    }
+                  },
+                  "matchup_rank": 12,
+                  "gemini_prediction": {
+                    "winner": "New York Jets",
+                    "confidence": 65,
+                    "ats_pick": "New York Jets",
+                    "ats_confidence": 60,
+                    "analysis": "Through the early weeks of the 2026 NFL season, the New York Jets have demonstrated superior defensive cohesion compared to their cross-town rivals. The New York Giants continue to struggle with offensive consistency and protecting the football under pressure. Playing at home gives the Jets a slight schematic advantage in crowd noise management and field position. Although both squads are fighting to establish an identity, the Jets possess a more reliable running game to grind out clock in the second half. Ultimately, the home side should secure a narrow victory that clears the field goal spread.",
+                    "splits_and_direction": "Based on current public betting tendencies, roughly 58 percent of spread tickets are backing the home team, while the moneyline has seen moderate action favoring the Jets. Since opening at 3.5, the point spread has remained stable without significant movement, and the moneyline has held steady at its current price.",
+                    "display_text": "Summary: Through the early weeks of the 2026 NFL season, the New York Jets have demonstrated superior defensive cohesion compared to their cross-town rivals. The New York Giants continue to struggle with offensive consistency and protecting the football under pressure. Playing at home gives the Jets a slight schematic advantage in crowd noise management and field position. Although both squads are fighting to establish an identity, the Jets possess a more reliable running game to grind out clock in the second half. Ultimately, the home side should secure a narrow victory that clears the field goal spread.\n\nSplits and Direction: Based on current public betting tendencies, roughly 58 percent of spread tickets are backing the home team, while the moneyline has seen moderate action favoring the Jets. Since opening at 3.5, the point spread has remained stable without significant movement, and the moneyline has held steady at its current price.",
+                    "generated_at": "2026-08-28T16:36:24.872837+00:00",
+                    "odds_hash": "168496ac5cf63fd9",
                     "model": "gemini-3.5-flash-lite"
                   },
                   "is_slot_pick": false
@@ -1838,21 +1838,21 @@
                       "spread": {
                         "home": {
                           "line": 3.5,
-                          "american": -106
+                          "american": -104
                         },
                         "away": {
                           "line": -3.5,
-                          "american": -114
+                          "american": -118
                         }
                       },
                       "moneyline": {
                         "home": {
                           "line": null,
-                          "american": 150
+                          "american": 162
                         },
                         "away": {
                           "line": null,
-                          "american": -178
+                          "american": -194
                         }
                       }
                     }
@@ -1860,14 +1860,14 @@
                   "matchup_rank": 13,
                   "gemini_prediction": {
                     "winner": "Atlanta Falcons",
-                    "confidence": 68,
-                    "ats_pick": "Miami Dolphins",
-                    "ats_confidence": 62,
-                    "analysis": "The Atlanta Falcons enter this Week 4 matchup with a more efficient offensive attack that has consistently capitalized on early-down success throughout the early 2026 season. Miami's defense has struggled to generate consistent pressure, which should allow the visiting passing game to operate with rhythm and rhythm. However, the Miami Dolphins possess enough explosive playmakers at home to keep the game within a single possession despite their current roster limitations. Atlanta's defense has shown vulnerabilities against dynamic wide receiver groups, creating favorable matchups for the home offense. Ultimately, the Falcons secure a narrow road victory, but the Dolphins successfully cover the 3.5-point spread.",
-                    "splits_and_direction": "Based on current odds and public tendencies, approximately sixty percent of early point-spread bets are backing the favorite Atlanta Falcons on the road. The point spread has remained stable at Miami plus 3.5 since opening, while the moneyline has seen slight action push the Atlanta price to minus 178.",
-                    "display_text": "Summary: The Atlanta Falcons enter this Week 4 matchup with a more efficient offensive attack that has consistently capitalized on early-down success throughout the early 2026 season. Miami's defense has struggled to generate consistent pressure, which should allow the visiting passing game to operate with rhythm and rhythm. However, the Miami Dolphins possess enough explosive playmakers at home to keep the game within a single possession despite their current roster limitations. Atlanta's defense has shown vulnerabilities against dynamic wide receiver groups, creating favorable matchups for the home offense. Ultimately, the Falcons secure a narrow road victory, but the Dolphins successfully cover the 3.5-point spread.\n\nSplits and Direction: Based on current odds and public tendencies, approximately sixty percent of early point-spread bets are backing the favorite Atlanta Falcons on the road. The point spread has remained stable at Miami plus 3.5 since opening, while the moneyline has seen slight action push the Atlanta price to minus 178.",
-                    "generated_at": "2026-08-28T00:04:44.642992+00:00",
-                    "odds_hash": "8769c717e2d16a79",
+                    "confidence": 76,
+                    "ats_pick": "Atlanta Falcons",
+                    "ats_confidence": 70,
+                    "analysis": "The Atlanta Falcons enter this Week 4 matchup with a significantly more cohesive offense and a stout defense through the first three weeks of the 2026 season. Meanwhile, the Miami Dolphins have struggled to protect the quarterback and have shown major defensive lapses against dual-threat attacks. Atlanta's balanced ground game will control the clock and wear down Miami's front seven over four quarters. The Falcons' secondary is well-equipped to limit the explosive plays that the Dolphins rely on heavily. Consequently, Atlanta will secure a comfortable victory that covers the spread on the road.",
+                    "splits_and_direction": "Approximately 68 percent of public bets are currently backing the away team on the moneyline, reflecting confidence in their strong start to the season. The spread has remained steady at 3.5 points since opening, while the moneyline has seen slight action pushing the Falcons from -180 to -194 based on estimated early betting data.",
+                    "display_text": "Summary: The Atlanta Falcons enter this Week 4 matchup with a significantly more cohesive offense and a stout defense through the first three weeks of the 2026 season. Meanwhile, the Miami Dolphins have struggled to protect the quarterback and have shown major defensive lapses against dual-threat attacks. Atlanta's balanced ground game will control the clock and wear down Miami's front seven over four quarters. The Falcons' secondary is well-equipped to limit the explosive plays that the Dolphins rely on heavily. Consequently, Atlanta will secure a comfortable victory that covers the spread on the road.\n\nSplits and Direction: Approximately 68 percent of public bets are currently backing the away team on the moneyline, reflecting confidence in their strong start to the season. The spread has remained steady at 3.5 points since opening, while the moneyline has seen slight action pushing the Falcons from -180 to -194 based on estimated early betting data.",
+                    "generated_at": "2026-08-28T16:36:04.878068+00:00",
+                    "odds_hash": "29980109b6462c04",
                     "model": "gemini-3.5-flash-lite"
                   },
                   "is_slot_pick": false
@@ -1990,7 +1990,7 @@
                       }
                     }
                   },
-                  "matchup_rank": 15,
+                  "matchup_rank": 16,
                   "gemini_prediction": {
                     "winner": "Detroit Lions",
                     "confidence": 62,
