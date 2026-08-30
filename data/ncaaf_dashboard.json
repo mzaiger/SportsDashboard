@@ -1,30 +1,32 @@
 {
-  "generated_at": "2026-08-30T09:42:03.242552+00:00",
+  "generated_at": "2026-08-30T13:10:03.756140+00:00",
   "season": 2026,
   "season_type": 2,
   "main_channels": [
     "ABC",
     "CBS",
+    "CW",
     "ESPN",
     "ESPN2",
     "FOX",
     "FS1",
-    "NBC"
+    "NBC",
+    "The CW"
   ],
   "display_timezone": "America/Chicago",
   "weeks": [
     {
       "week": 1,
-      "total_games": 27,
+      "total_games": 30,
       "days": [
         {
           "date": "2026-08-29",
           "weekday": "Saturday",
-          "game_count": 4,
+          "game_count": 5,
           "time_slots": [
             {
               "slot": "Noon",
-              "best_matchup_score": 54.0,
+              "best_matchup_score": 54.2,
               "pick_reason": "watchability",
               "games": [
                 {
@@ -37,7 +39,7 @@
                   "away_team": "North Carolina Tar Heels",
                   "away_rank": null,
                   "away_record": "1-0",
-                  "matchup_score": 54.0,
+                  "matchup_score": 54.2,
                   "channel": "ESPN, Disney+",
                   "venue": "Aviva Stadium",
                   "neutral_site": true,
@@ -192,7 +194,7 @@
                   "away_team": "San Jos\u00e9 State Spartans",
                   "away_rank": null,
                   "away_record": "0-1",
-                  "matchup_score": 62.2,
+                  "matchup_score": 62.4,
                   "channel": "NBC",
                   "venue": "Los Angeles Memorial Coliseum",
                   "neutral_site": false,
@@ -237,14 +239,49 @@
                     "odds_hash": "6d0c7ed830f06bf4",
                     "model": "gemini-3.5-flash-lite"
                   },
-                  "matchup_rank": 10,
+                  "matchup_rank": 11,
                   "is_slot_pick": false
                 }
               ]
             },
             {
+              "slot": "Prime Time",
+              "best_matchup_score": 75.8,
+              "pick_reason": "watchability",
+              "games": [
+                {
+                  "id": "401864570",
+                  "start_time": "2026-08-29T23:00Z",
+                  "start_time_tbd": false,
+                  "home_team": "Florida State Seminoles",
+                  "home_rank": null,
+                  "home_record": "1-0",
+                  "away_team": "New Mexico State Aggies",
+                  "away_rank": null,
+                  "away_record": "0-1",
+                  "matchup_score": 75.8,
+                  "channel": "CW",
+                  "venue": "Doak Campbell Stadium",
+                  "neutral_site": false,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {},
+                      "moneyline": {}
+                    },
+                    "fanduel": {
+                      "spread": {},
+                      "moneyline": {}
+                    }
+                  },
+                  "is_nebraska": false,
+                  "matchup_rank": 26,
+                  "is_slot_pick": true
+                }
+              ]
+            },
+            {
               "slot": "Late Night",
-              "best_matchup_score": 51.8,
+              "best_matchup_score": 52.1,
               "pick_reason": "watchability",
               "games": [
                 {
@@ -257,7 +294,7 @@
                   "away_team": "Memphis Tigers",
                   "away_rank": null,
                   "away_record": "1-0",
-                  "matchup_score": 51.8,
+                  "matchup_score": 52.1,
                   "channel": "FOX",
                   "venue": "Allegiant Stadium",
                   "neutral_site": false,
@@ -308,7 +345,6 @@
                     }
                   },
                   "is_nebraska": false,
-                  "matchup_rank": 3,
                   "gemini_prediction": {
                     "winner": "Memphis Tigers",
                     "confidence": 58,
@@ -321,6 +357,7 @@
                     "odds_hash": "e1d609d08535bf9f",
                     "model": "gemini-3.5-flash-lite"
                   },
+                  "matchup_rank": 3,
                   "is_slot_pick": true
                 }
               ]
@@ -398,7 +435,7 @@
                     }
                   },
                   "is_nebraska": false,
-                  "matchup_rank": 27,
+                  "matchup_rank": 28,
                   "gemini_prediction": {
                     "winner": "Georgia Tech Yellow Jackets",
                     "confidence": 78,
@@ -424,7 +461,7 @@
           "time_slots": [
             {
               "slot": "Prime Time",
-              "best_matchup_score": 60.7,
+              "best_matchup_score": 61.3,
               "pick_reason": "watchability",
               "games": [
                 {
@@ -437,7 +474,7 @@
                   "away_team": "Miami Hurricanes",
                   "away_rank": 7,
                   "away_record": "0-0",
-                  "matchup_score": 60.7,
+                  "matchup_score": 61.3,
                   "channel": "ESPN",
                   "venue": "Stanford Stadium",
                   "neutral_site": false,
@@ -465,7 +502,7 @@
                   "away_team": "Fresno State Bulldogs",
                   "away_rank": null,
                   "away_record": "0-0",
-                  "matchup_score": 63.5,
+                  "matchup_score": 63.6,
                   "channel": "FOX",
                   "venue": "Los Angeles Memorial Coliseum",
                   "neutral_site": false,
@@ -541,7 +578,7 @@
                   "away_team": "Toledo Rockets",
                   "away_rank": null,
                   "away_record": "0-0",
-                  "matchup_score": 67.7,
+                  "matchup_score": 68.3,
                   "channel": "FS1",
                   "venue": "Spartan Stadium",
                   "neutral_site": false,
@@ -614,11 +651,11 @@
         {
           "date": "2026-09-05",
           "weekday": "Saturday",
-          "game_count": 15,
+          "game_count": 17,
           "time_slots": [
             {
               "slot": "Noon",
-              "best_matchup_score": 69.1,
+              "best_matchup_score": 69.5,
               "pick_reason": "watchability",
               "games": [
                 {
@@ -631,7 +668,7 @@
                   "away_team": "East Carolina Pirates",
                   "away_rank": null,
                   "away_record": "0-0",
-                  "matchup_score": 69.1,
+                  "matchup_score": 69.5,
                   "channel": "ABC",
                   "venue": "Bryant-Denny Stadium",
                   "neutral_site": false,
@@ -687,7 +724,7 @@
                     "odds_hash": "1c2eea050e399eb4",
                     "model": "gemini-3.5-flash-lite"
                   },
-                  "is_slot_pick": true
+                  "is_slot_pick": false
                 },
                 {
                   "id": "401858430",
@@ -699,7 +736,7 @@
                   "away_team": "Ohio Bobcats",
                   "away_rank": null,
                   "away_record": "0-0",
-                  "matchup_score": 70.9,
+                  "matchup_score": 71.6,
                   "channel": "FS1",
                   "venue": "Memorial Stadium (Lincoln, NE)",
                   "neutral_site": false,
@@ -763,6 +800,64 @@
                     "odds_hash": "a1ca35923d26cb71",
                     "model": "gemini-3.5-flash-lite"
                   },
+                  "is_slot_pick": true
+                },
+                {
+                  "id": "401858425",
+                  "start_time": "2026-09-05T16:00Z",
+                  "start_time_tbd": false,
+                  "home_team": "Indiana Hoosiers",
+                  "home_rank": 6,
+                  "home_record": "0-0",
+                  "away_team": "North Texas Mean Green",
+                  "away_rank": null,
+                  "away_record": "0-0",
+                  "matchup_score": 73.7,
+                  "channel": "FOX",
+                  "venue": "Memorial Stadium (Bloomington, IN)",
+                  "neutral_site": false,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {
+                        "home": {
+                          "line": -40.5,
+                          "american": -112
+                        },
+                        "away": {
+                          "line": 40.5,
+                          "american": -108
+                        }
+                      },
+                      "moneyline": {}
+                    },
+                    "fanduel": {
+                      "spread": {
+                        "home": {
+                          "line": -40.5,
+                          "american": -110
+                        },
+                        "away": {
+                          "line": 40.5,
+                          "american": -110
+                        }
+                      },
+                      "moneyline": {}
+                    }
+                  },
+                  "is_nebraska": false,
+                  "matchup_rank": 23,
+                  "gemini_prediction": {
+                    "winner": "Indiana Hoosiers",
+                    "confidence": 95,
+                    "ats_pick": "Indiana Hoosiers",
+                    "ats_confidence": 75,
+                    "analysis": "The Indiana Hoosiers enter this week one matchup with a vastly superior roster and explosive offensive scheme that has overwhelmed opponents throughout the early 2026 season. North Texas Mean Green struggles immensely on defense, giving up massive yardage through the air and failing to establish any consistent pass rush against elite competition. Indiana's high-powered offense is executing at a peak efficiency level, capitalizing on every turnover and short-field opportunity provided by their dominant front seven. Meanwhile, the North Texas offense is entirely one-dimensional and will find virtually no running lanes against a stout Indiana interior line. Expect the Hoosiers to control the tempo from the opening whistle and build an insurmountable lead well before the fourth quarter begins.",
+                    "splits_and_direction": "Approximately 78 percent of the early bets and handle are backing the Indiana Hoosiers to cover the massive 40.5-point spread and heavily favoring them on the moneyline. The spread has remained steady at -40.5 at both DraftKings and FanDuel since opening, while the heavy moneyline action has kept the price prohibitive.",
+                    "display_text": "Summary: The Indiana Hoosiers enter this week one matchup with a vastly superior roster and explosive offensive scheme that has overwhelmed opponents throughout the early 2026 season. North Texas Mean Green struggles immensely on defense, giving up massive yardage through the air and failing to establish any consistent pass rush against elite competition. Indiana's high-powered offense is executing at a peak efficiency level, capitalizing on every turnover and short-field opportunity provided by their dominant front seven. Meanwhile, the North Texas offense is entirely one-dimensional and will find virtually no running lanes against a stout Indiana interior line. Expect the Hoosiers to control the tempo from the opening whistle and build an insurmountable lead well before the fourth quarter begins.\n\nSplits and Direction: Approximately 78 percent of the early bets and handle are backing the Indiana Hoosiers to cover the massive 40.5-point spread and heavily favoring them on the moneyline. The spread has remained steady at -40.5 at both DraftKings and FanDuel since opening, while the heavy moneyline action has kept the price prohibitive.",
+                    "generated_at": "2026-08-29T02:40:39.771441+00:00",
+                    "odds_hash": "1064d4c1f10e9cb0",
+                    "model": "gemini-3.5-flash-lite"
+                  },
                   "is_slot_pick": false
                 },
                 {
@@ -775,7 +870,7 @@
                   "away_team": "Oregon State Beavers",
                   "away_rank": null,
                   "away_record": "0-0",
-                  "matchup_score": 73.2,
+                  "matchup_score": 74.1,
                   "channel": "ESPN, Disney+",
                   "venue": "TDECU Stadium",
                   "neutral_site": false,
@@ -826,7 +921,7 @@
                     }
                   },
                   "is_nebraska": false,
-                  "matchup_rank": 23,
+                  "matchup_rank": 24,
                   "gemini_prediction": {
                     "winner": "Houston Cougars",
                     "confidence": 92,
@@ -842,68 +937,38 @@
                   "is_slot_pick": false
                 },
                 {
-                  "id": "401858425",
-                  "start_time": "2026-09-05T16:00Z",
+                  "id": "401858207",
+                  "start_time": "2026-09-05T16:30Z",
                   "start_time_tbd": false,
-                  "home_team": "Indiana Hoosiers",
-                  "home_rank": 6,
+                  "home_team": "Pittsburgh Panthers",
+                  "home_rank": null,
                   "home_record": "0-0",
-                  "away_team": "North Texas Mean Green",
+                  "away_team": "Miami (OH) RedHawks",
                   "away_rank": null,
                   "away_record": "0-0",
-                  "matchup_score": 73.4,
-                  "channel": "FOX",
-                  "venue": "Memorial Stadium (Bloomington, IN)",
+                  "matchup_score": 85.3,
+                  "channel": "CW",
+                  "venue": "Acrisure Stadium",
                   "neutral_site": false,
                   "odds": {
                     "draftkings": {
-                      "spread": {
-                        "home": {
-                          "line": -40.5,
-                          "american": -112
-                        },
-                        "away": {
-                          "line": 40.5,
-                          "american": -108
-                        }
-                      },
+                      "spread": {},
                       "moneyline": {}
                     },
                     "fanduel": {
-                      "spread": {
-                        "home": {
-                          "line": -40.5,
-                          "american": -110
-                        },
-                        "away": {
-                          "line": 40.5,
-                          "american": -110
-                        }
-                      },
+                      "spread": {},
                       "moneyline": {}
                     }
                   },
                   "is_nebraska": false,
-                  "matchup_rank": 24,
-                  "gemini_prediction": {
-                    "winner": "Indiana Hoosiers",
-                    "confidence": 95,
-                    "ats_pick": "Indiana Hoosiers",
-                    "ats_confidence": 75,
-                    "analysis": "The Indiana Hoosiers enter this week one matchup with a vastly superior roster and explosive offensive scheme that has overwhelmed opponents throughout the early 2026 season. North Texas Mean Green struggles immensely on defense, giving up massive yardage through the air and failing to establish any consistent pass rush against elite competition. Indiana's high-powered offense is executing at a peak efficiency level, capitalizing on every turnover and short-field opportunity provided by their dominant front seven. Meanwhile, the North Texas offense is entirely one-dimensional and will find virtually no running lanes against a stout Indiana interior line. Expect the Hoosiers to control the tempo from the opening whistle and build an insurmountable lead well before the fourth quarter begins.",
-                    "splits_and_direction": "Approximately 78 percent of the early bets and handle are backing the Indiana Hoosiers to cover the massive 40.5-point spread and heavily favoring them on the moneyline. The spread has remained steady at -40.5 at both DraftKings and FanDuel since opening, while the heavy moneyline action has kept the price prohibitive.",
-                    "display_text": "Summary: The Indiana Hoosiers enter this week one matchup with a vastly superior roster and explosive offensive scheme that has overwhelmed opponents throughout the early 2026 season. North Texas Mean Green struggles immensely on defense, giving up massive yardage through the air and failing to establish any consistent pass rush against elite competition. Indiana's high-powered offense is executing at a peak efficiency level, capitalizing on every turnover and short-field opportunity provided by their dominant front seven. Meanwhile, the North Texas offense is entirely one-dimensional and will find virtually no running lanes against a stout Indiana interior line. Expect the Hoosiers to control the tempo from the opening whistle and build an insurmountable lead well before the fourth quarter begins.\n\nSplits and Direction: Approximately 78 percent of the early bets and handle are backing the Indiana Hoosiers to cover the massive 40.5-point spread and heavily favoring them on the moneyline. The spread has remained steady at -40.5 at both DraftKings and FanDuel since opening, while the heavy moneyline action has kept the price prohibitive.",
-                    "generated_at": "2026-08-29T02:40:39.771441+00:00",
-                    "odds_hash": "1064d4c1f10e9cb0",
-                    "model": "gemini-3.5-flash-lite"
-                  },
+                  "matchup_rank": 30,
                   "is_slot_pick": false
                 }
               ]
             },
             {
               "slot": "Afternoon",
-              "best_matchup_score": 58.0,
+              "best_matchup_score": 58.4,
               "pick_reason": "watchability",
               "games": [
                 {
@@ -916,7 +981,7 @@
                   "away_team": "Boise State Broncos",
                   "away_rank": null,
                   "away_record": "0-0",
-                  "matchup_score": 58.0,
+                  "matchup_score": 58.4,
                   "channel": "CBS",
                   "venue": "Autzen Stadium",
                   "neutral_site": false,
@@ -992,7 +1057,7 @@
                   "away_team": "Boston College Eagles",
                   "away_rank": null,
                   "away_record": "0-0",
-                  "matchup_score": 61.1,
+                  "matchup_score": 61.8,
                   "channel": "FOX",
                   "venue": "Nippert Stadium",
                   "neutral_site": false,
@@ -1068,7 +1133,7 @@
                   "away_team": "Baylor Bears",
                   "away_rank": null,
                   "away_record": "0-0",
-                  "matchup_score": 63.8,
+                  "matchup_score": 64.8,
                   "channel": "ABC, Disney+",
                   "venue": "Mercedes-Benz Stadium",
                   "neutral_site": true,
@@ -1110,7 +1175,7 @@
                     }
                   },
                   "is_nebraska": false,
-                  "matchup_rank": 13,
+                  "matchup_rank": 14,
                   "gemini_prediction": {
                     "winner": "Auburn Tigers",
                     "confidence": 75,
@@ -1135,7 +1200,7 @@
                   "away_team": "Texas State Bobcats",
                   "away_rank": null,
                   "away_record": "0-0",
-                  "matchup_score": 65.1,
+                  "matchup_score": 65.6,
                   "channel": "ESPN",
                   "venue": "DKR-Texas Memorial Stadium",
                   "neutral_site": false,
@@ -1195,7 +1260,7 @@
                   "away_team": "Marshall Thundering Herd",
                   "away_rank": null,
                   "away_record": "0-0",
-                  "matchup_score": 74.1,
+                  "matchup_score": 74.6,
                   "channel": "FS1",
                   "venue": "Beaver Stadium",
                   "neutral_site": false,
@@ -1265,7 +1330,7 @@
             },
             {
               "slot": "Prime Time",
-              "best_matchup_score": 60.4,
+              "best_matchup_score": 60.9,
               "pick_reason": "watchability",
               "games": [
                 {
@@ -1278,7 +1343,7 @@
                   "away_team": "Clemson Tigers",
                   "away_rank": null,
                   "away_record": "0-0",
-                  "matchup_score": 60.4,
+                  "matchup_score": 60.9,
                   "channel": "ABC",
                   "venue": "Tiger Stadium (LA)",
                   "neutral_site": false,
@@ -1354,7 +1419,7 @@
                   "away_team": "Western Michigan Broncos",
                   "away_rank": null,
                   "away_record": "0-0",
-                  "matchup_score": 70.2,
+                  "matchup_score": 70.7,
                   "channel": "NBC",
                   "venue": "Michigan Stadium",
                   "neutral_site": false,
@@ -1405,64 +1470,6 @@
                   "is_slot_pick": false
                 },
                 {
-                  "id": "401856668",
-                  "start_time": "2026-09-05T23:00Z",
-                  "start_time_tbd": false,
-                  "home_team": "Texas A&M Aggies",
-                  "home_rank": 8,
-                  "home_record": "0-0",
-                  "away_team": "Missouri State Bears",
-                  "away_rank": null,
-                  "away_record": "0-0",
-                  "matchup_score": 71.4,
-                  "channel": "ESPN",
-                  "venue": "Kyle Field",
-                  "neutral_site": false,
-                  "odds": {
-                    "draftkings": {
-                      "spread": {
-                        "home": {
-                          "line": -41.5,
-                          "american": -102
-                        },
-                        "away": {
-                          "line": 41.5,
-                          "american": -118
-                        }
-                      },
-                      "moneyline": {}
-                    },
-                    "fanduel": {
-                      "spread": {
-                        "home": {
-                          "line": -41.5,
-                          "american": -105
-                        },
-                        "away": {
-                          "line": 41.5,
-                          "american": -115
-                        }
-                      },
-                      "moneyline": {}
-                    }
-                  },
-                  "is_nebraska": false,
-                  "matchup_rank": 21,
-                  "gemini_prediction": {
-                    "winner": "Texas A&M Aggies",
-                    "confidence": 99,
-                    "ats_pick": "Texas A&M Aggies",
-                    "ats_confidence": 65,
-                    "analysis": "The Texas A&M Aggies enter this week 1 matchup with a vastly superior roster built through elite recruiting and the transfer portal. Missouri State Bears struggle significantly to match the SEC-level athleticism across both lines of scrimmage. Texas A&M Aggies should easily control the tempo of the game on both sides of the ball from the opening whistle. The massive talent disparity will likely result in a blowout well before the fourth quarter begins. Expect a comfortable victory for the home team as they flex their depth against an overmatched opponent.",
-                    "splits_and_direction": "Given the massive talent gap, an estimated 85 percent of public bets are currently backing the Texas A&M Aggies to cover the huge spread and win comfortably on the moneyline. Both the spread and moneyline have remained stable since opening, with sportsbooks holding firm at -41.5 due to heavy one-sided action.",
-                    "display_text": "Summary: The Texas A&M Aggies enter this week 1 matchup with a vastly superior roster built through elite recruiting and the transfer portal. Missouri State Bears struggle significantly to match the SEC-level athleticism across both lines of scrimmage. Texas A&M Aggies should easily control the tempo of the game on both sides of the ball from the opening whistle. The massive talent disparity will likely result in a blowout well before the fourth quarter begins. Expect a comfortable victory for the home team as they flex their depth against an overmatched opponent.\n\nSplits and Direction: Given the massive talent gap, an estimated 85 percent of public bets are currently backing the Texas A&M Aggies to cover the huge spread and win comfortably on the moneyline. Both the spread and moneyline have remained stable since opening, with sportsbooks holding firm at -41.5 due to heavy one-sided action.",
-                    "generated_at": "2026-08-28T16:32:38.071156+00:00",
-                    "odds_hash": "4d49742e656e3c73",
-                    "model": "gemini-3.5-flash-lite"
-                  },
-                  "is_slot_pick": false
-                },
-                {
                   "id": "401856770",
                   "start_time": "2026-09-05T23:00Z",
                   "start_time_tbd": false,
@@ -1472,7 +1479,7 @@
                   "away_team": "Abilene Christian Wildcats",
                   "away_rank": null,
                   "away_record": "0-1",
-                  "matchup_score": 71.7,
+                  "matchup_score": 72.1,
                   "channel": "FS1",
                   "venue": "Galaxy Stadium",
                   "neutral_site": false,
@@ -1505,7 +1512,7 @@
                     }
                   },
                   "is_nebraska": false,
-                  "matchup_rank": 22,
+                  "matchup_rank": 21,
                   "gemini_prediction": {
                     "winner": "Texas Tech Red Raiders",
                     "confidence": 99,
@@ -1519,12 +1526,70 @@
                     "model": "gemini-3.5-flash-lite"
                   },
                   "is_slot_pick": false
+                },
+                {
+                  "id": "401856668",
+                  "start_time": "2026-09-05T23:00Z",
+                  "start_time_tbd": false,
+                  "home_team": "Texas A&M Aggies",
+                  "home_rank": 8,
+                  "home_record": "0-0",
+                  "away_team": "Missouri State Bears",
+                  "away_rank": null,
+                  "away_record": "0-0",
+                  "matchup_score": 72.2,
+                  "channel": "ESPN",
+                  "venue": "Kyle Field",
+                  "neutral_site": false,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {
+                        "home": {
+                          "line": -41.5,
+                          "american": -102
+                        },
+                        "away": {
+                          "line": 41.5,
+                          "american": -118
+                        }
+                      },
+                      "moneyline": {}
+                    },
+                    "fanduel": {
+                      "spread": {
+                        "home": {
+                          "line": -41.5,
+                          "american": -105
+                        },
+                        "away": {
+                          "line": 41.5,
+                          "american": -115
+                        }
+                      },
+                      "moneyline": {}
+                    }
+                  },
+                  "is_nebraska": false,
+                  "matchup_rank": 22,
+                  "gemini_prediction": {
+                    "winner": "Texas A&M Aggies",
+                    "confidence": 99,
+                    "ats_pick": "Texas A&M Aggies",
+                    "ats_confidence": 65,
+                    "analysis": "The Texas A&M Aggies enter this week 1 matchup with a vastly superior roster built through elite recruiting and the transfer portal. Missouri State Bears struggle significantly to match the SEC-level athleticism across both lines of scrimmage. Texas A&M Aggies should easily control the tempo of the game on both sides of the ball from the opening whistle. The massive talent disparity will likely result in a blowout well before the fourth quarter begins. Expect a comfortable victory for the home team as they flex their depth against an overmatched opponent.",
+                    "splits_and_direction": "Given the massive talent gap, an estimated 85 percent of public bets are currently backing the Texas A&M Aggies to cover the huge spread and win comfortably on the moneyline. Both the spread and moneyline have remained stable since opening, with sportsbooks holding firm at -41.5 due to heavy one-sided action.",
+                    "display_text": "Summary: The Texas A&M Aggies enter this week 1 matchup with a vastly superior roster built through elite recruiting and the transfer portal. Missouri State Bears struggle significantly to match the SEC-level athleticism across both lines of scrimmage. Texas A&M Aggies should easily control the tempo of the game on both sides of the ball from the opening whistle. The massive talent disparity will likely result in a blowout well before the fourth quarter begins. Expect a comfortable victory for the home team as they flex their depth against an overmatched opponent.\n\nSplits and Direction: Given the massive talent gap, an estimated 85 percent of public bets are currently backing the Texas A&M Aggies to cover the huge spread and win comfortably on the moneyline. Both the spread and moneyline have remained stable since opening, with sportsbooks holding firm at -41.5 due to heavy one-sided action.",
+                    "generated_at": "2026-08-28T16:32:38.071156+00:00",
+                    "odds_hash": "4d49742e656e3c73",
+                    "model": "gemini-3.5-flash-lite"
+                  },
+                  "is_slot_pick": false
                 }
               ]
             },
             {
               "slot": "Late Night",
-              "best_matchup_score": 64.1,
+              "best_matchup_score": 64.7,
               "pick_reason": "watchability",
               "games": [
                 {
@@ -1537,7 +1602,7 @@
                   "away_team": "Central Michigan Chippewas",
                   "away_rank": null,
                   "away_record": "0-0",
-                  "matchup_score": 64.1,
+                  "matchup_score": 64.7,
                   "channel": "FS1",
                   "venue": "University Stadium (NM)",
                   "neutral_site": false,
@@ -1588,7 +1653,7 @@
                     }
                   },
                   "is_nebraska": false,
-                  "matchup_rank": 14,
+                  "matchup_rank": 13,
                   "gemini_prediction": {
                     "winner": "New Mexico Lobos",
                     "confidence": 78,
@@ -1601,7 +1666,7 @@
                     "odds_hash": "79ea276354941e26",
                     "model": "gemini-3.5-flash-lite"
                   },
-                  "is_slot_pick": true
+                  "is_slot_pick": false
                 },
                 {
                   "id": "401858210",
@@ -1613,7 +1678,7 @@
                   "away_team": "UCLA Bruins",
                   "away_rank": null,
                   "away_record": "0-0",
-                  "matchup_score": 66.7,
+                  "matchup_score": 67.4,
                   "channel": "ESPN",
                   "venue": "California Memorial Stadium",
                   "neutral_site": false,
@@ -1677,6 +1742,34 @@
                     "odds_hash": "6b27816883f42aff",
                     "model": "gemini-3.5-flash-lite"
                   },
+                  "is_slot_pick": true
+                },
+                {
+                  "id": "401864497",
+                  "start_time": "2026-09-06T02:00Z",
+                  "start_time_tbd": false,
+                  "home_team": "Hawai'i Rainbow Warriors",
+                  "home_rank": null,
+                  "home_record": "0-1",
+                  "away_team": "UNLV Rebels",
+                  "away_rank": null,
+                  "away_record": "0-1",
+                  "matchup_score": 78.5,
+                  "channel": "CW",
+                  "venue": "Clarence T.C. Ching Athletics Complex",
+                  "neutral_site": false,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {},
+                      "moneyline": {}
+                    },
+                    "fanduel": {
+                      "spread": {},
+                      "moneyline": {}
+                    }
+                  },
+                  "is_nebraska": false,
+                  "matchup_rank": 29,
                   "is_slot_pick": false
                 }
               ]
@@ -1690,7 +1783,7 @@
           "time_slots": [
             {
               "slot": "Afternoon",
-              "best_matchup_score": 75.6,
+              "best_matchup_score": 76.0,
               "pick_reason": "watchability",
               "games": [
                 {
@@ -1703,7 +1796,7 @@
                   "away_team": "Washington State Cougars",
                   "away_rank": null,
                   "away_record": "0-0",
-                  "matchup_score": 75.6,
+                  "matchup_score": 76.0,
                   "channel": "NBC",
                   "venue": "Husky Stadium",
                   "neutral_site": false,
@@ -1738,7 +1831,7 @@
                     }
                   },
                   "is_nebraska": false,
-                  "matchup_rank": 26,
+                  "matchup_rank": 27,
                   "gemini_prediction": {
                     "winner": "Washington Huskies",
                     "confidence": 91,
@@ -1757,7 +1850,7 @@
             },
             {
               "slot": "Prime Time",
-              "best_matchup_score": 19.7,
+              "best_matchup_score": 19.9,
               "pick_reason": "watchability",
               "games": [
                 {
@@ -1770,7 +1863,7 @@
                   "away_team": "Louisville Cardinals",
                   "away_rank": 24,
                   "away_record": "0-0",
-                  "matchup_score": 19.7,
+                  "matchup_score": 19.9,
                   "channel": "ABC",
                   "venue": "Nissan Stadium",
                   "neutral_site": true,
@@ -1846,7 +1939,7 @@
                   "away_team": "Wisconsin Badgers",
                   "away_rank": null,
                   "away_record": "0-0",
-                  "matchup_score": 62.2,
+                  "matchup_score": 62.3,
                   "channel": "NBC",
                   "venue": "Lambeau Field",
                   "neutral_site": true,
@@ -1897,7 +1990,7 @@
                     }
                   },
                   "is_nebraska": false,
-                  "matchup_rank": 11,
+                  "matchup_rank": 10,
                   "gemini_prediction": {
                     "winner": "Notre Dame Fighting Irish",
                     "confidence": 92,
@@ -1923,7 +2016,7 @@
           "time_slots": [
             {
               "slot": "Prime Time",
-              "best_matchup_score": 54.2,
+              "best_matchup_score": 54.6,
               "pick_reason": "watchability",
               "games": [
                 {
@@ -1936,7 +2029,7 @@
                   "away_team": "SMU Mustangs",
                   "away_rank": 19,
                   "away_record": "0-0",
-                  "matchup_score": 54.2,
+                  "matchup_score": 54.6,
                   "channel": "ESPN",
                   "venue": "Doak Campbell Stadium",
                   "neutral_site": false,
@@ -2010,7 +2103,7 @@
     },
     {
       "week": 2,
-      "total_games": 21,
+      "total_games": 24,
       "days": [
         {
           "date": "2026-09-11",
@@ -2019,7 +2112,7 @@
           "time_slots": [
             {
               "slot": "Prime Time",
-              "best_matchup_score": 63.7,
+              "best_matchup_score": 62.8,
               "pick_reason": "watchability",
               "games": [
                 {
@@ -2032,7 +2125,7 @@
                   "away_team": "Missouri Tigers",
                   "away_rank": 25,
                   "away_record": "0-0",
-                  "matchup_score": 63.7,
+                  "matchup_score": 62.8,
                   "channel": "FOX",
                   "venue": "David Booth Kansas Memorial Stadium",
                   "neutral_site": false,
@@ -2110,7 +2203,7 @@
                     }
                   },
                   "is_nebraska": false,
-                  "matchup_rank": 6,
+                  "matchup_rank": 7,
                   "is_slot_pick": false
                 }
               ]
@@ -2120,11 +2213,11 @@
         {
           "date": "2026-09-12",
           "weekday": "Saturday",
-          "game_count": 19,
+          "game_count": 22,
           "time_slots": [
             {
               "slot": "Noon",
-              "best_matchup_score": 17.3,
+              "best_matchup_score": 16.9,
               "pick_reason": "watchability",
               "games": [
                 {
@@ -2137,7 +2230,7 @@
                   "away_team": "Oklahoma Sooners",
                   "away_rank": 10,
                   "away_record": "0-0",
-                  "matchup_score": 17.3,
+                  "matchup_score": 16.9,
                   "channel": "FOX",
                   "venue": "Michigan Stadium",
                   "neutral_site": false,
@@ -2213,7 +2306,7 @@
                   "away_team": "Oregon Ducks",
                   "away_rank": 2,
                   "away_record": "0-0",
-                  "matchup_score": 69.4,
+                  "matchup_score": 68.3,
                   "channel": "ESPN, Disney+",
                   "venue": "Boone Pickens Stadium",
                   "neutral_site": false,
@@ -2289,7 +2382,7 @@
                   "away_team": "Penn State Nittany Lions",
                   "away_rank": 18,
                   "away_record": "0-0",
-                  "matchup_score": 80.2,
+                  "matchup_score": 78.8,
                   "channel": "ESPN2",
                   "venue": "Lincoln Financial Field",
                   "neutral_site": false,
@@ -2304,7 +2397,7 @@
                     }
                   },
                   "is_nebraska": false,
-                  "matchup_rank": 12,
+                  "matchup_rank": 11,
                   "is_slot_pick": false
                 },
                 {
@@ -2317,7 +2410,7 @@
                   "away_team": "Arizona State Sun Devils",
                   "away_rank": null,
                   "away_record": "0-0",
-                  "matchup_score": 84.1,
+                  "matchup_score": 83.2,
                   "channel": "ABC",
                   "venue": "Kyle Field",
                   "neutral_site": false,
@@ -2346,7 +2439,7 @@
                     }
                   },
                   "is_nebraska": false,
-                  "matchup_rank": 14,
+                  "matchup_rank": 15,
                   "gemini_prediction": {
                     "winner": "Texas A&M Aggies",
                     "confidence": 88,
@@ -2371,100 +2464,9 @@
                   "away_team": "Wake Forest Demon Deacons",
                   "away_rank": null,
                   "away_record": "0-0",
-                  "matchup_score": 84.5,
+                  "matchup_score": 83.6,
                   "channel": "FS1",
                   "venue": "Ross-Ade Stadium",
-                  "neutral_site": false,
-                  "odds": {
-                    "draftkings": {
-                      "spread": {},
-                      "moneyline": {}
-                    },
-                    "fanduel": {
-                      "spread": {},
-                      "moneyline": {}
-                    }
-                  },
-                  "is_nebraska": false,
-                  "matchup_rank": 15,
-                  "is_slot_pick": false
-                }
-              ]
-            },
-            {
-              "slot": "Afternoon",
-              "best_matchup_score": 75.0,
-              "pick_reason": "watchability",
-              "games": [
-                {
-                  "id": "401856810",
-                  "start_time": "2026-09-12T19:30Z",
-                  "start_time_tbd": false,
-                  "home_team": "BYU Cougars",
-                  "home_rank": 14,
-                  "home_record": "0-0",
-                  "away_team": "Arizona Wildcats",
-                  "away_rank": null,
-                  "away_record": "0-0",
-                  "matchup_score": 75.0,
-                  "channel": "FOX",
-                  "venue": "LaVell Edwards Stadium",
-                  "neutral_site": false,
-                  "odds": {
-                    "draftkings": {
-                      "spread": {},
-                      "moneyline": {}
-                    },
-                    "fanduel": {
-                      "spread": {},
-                      "moneyline": {}
-                    }
-                  },
-                  "is_nebraska": false,
-                  "matchup_rank": 7,
-                  "is_slot_pick": true
-                },
-                {
-                  "id": "401859184",
-                  "start_time": "2026-09-12T19:30Z",
-                  "start_time_tbd": false,
-                  "home_team": "Notre Dame Fighting Irish",
-                  "home_rank": 4,
-                  "home_record": "0-0",
-                  "away_team": "Rice Owls",
-                  "away_rank": null,
-                  "away_record": "0-0",
-                  "matchup_score": 80.0,
-                  "channel": "NBC",
-                  "venue": "Notre Dame Stadium",
-                  "neutral_site": false,
-                  "odds": {
-                    "draftkings": {
-                      "spread": {},
-                      "moneyline": {}
-                    },
-                    "fanduel": {
-                      "spread": {},
-                      "moneyline": {}
-                    }
-                  },
-                  "is_nebraska": false,
-                  "matchup_rank": 11,
-                  "is_slot_pick": false
-                },
-                {
-                  "id": "401856790",
-                  "start_time": "2026-09-12T19:30Z",
-                  "start_time_tbd": false,
-                  "home_team": "Pittsburgh Panthers",
-                  "home_rank": null,
-                  "home_record": "0-0",
-                  "away_team": "UCF Knights",
-                  "away_rank": null,
-                  "away_record": "0-0",
-                  "matchup_score": 85.3,
-                  "channel": "ESPN2",
-                  "venue": "Acrisure Stadium",
                   "neutral_site": false,
                   "odds": {
                     "draftkings": {
@@ -2481,6 +2483,125 @@
                   "is_slot_pick": false
                 },
                 {
+                  "id": "401858221",
+                  "start_time": "2026-09-12T16:00Z",
+                  "start_time_tbd": false,
+                  "home_team": "Virginia Tech Hokies",
+                  "home_rank": null,
+                  "home_record": "0-0",
+                  "away_team": "Old Dominion Monarchs",
+                  "away_rank": null,
+                  "away_record": "0-0",
+                  "matchup_score": 94.5,
+                  "channel": "CW",
+                  "venue": "Lane Stadium",
+                  "neutral_site": false,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {},
+                      "moneyline": {}
+                    },
+                    "fanduel": {
+                      "spread": {},
+                      "moneyline": {}
+                    }
+                  },
+                  "is_nebraska": false,
+                  "matchup_rank": 23,
+                  "is_slot_pick": false
+                }
+              ]
+            },
+            {
+              "slot": "Afternoon",
+              "best_matchup_score": 74.2,
+              "pick_reason": "watchability",
+              "games": [
+                {
+                  "id": "401856810",
+                  "start_time": "2026-09-12T19:30Z",
+                  "start_time_tbd": false,
+                  "home_team": "BYU Cougars",
+                  "home_rank": 14,
+                  "home_record": "0-0",
+                  "away_team": "Arizona Wildcats",
+                  "away_rank": null,
+                  "away_record": "0-0",
+                  "matchup_score": 74.2,
+                  "channel": "FOX",
+                  "venue": "LaVell Edwards Stadium",
+                  "neutral_site": false,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {},
+                      "moneyline": {}
+                    },
+                    "fanduel": {
+                      "spread": {},
+                      "moneyline": {}
+                    }
+                  },
+                  "is_nebraska": false,
+                  "matchup_rank": 6,
+                  "is_slot_pick": true
+                },
+                {
+                  "id": "401859184",
+                  "start_time": "2026-09-12T19:30Z",
+                  "start_time_tbd": false,
+                  "home_team": "Notre Dame Fighting Irish",
+                  "home_rank": 4,
+                  "home_record": "0-0",
+                  "away_team": "Rice Owls",
+                  "away_rank": null,
+                  "away_record": "0-0",
+                  "matchup_score": 79.0,
+                  "channel": "NBC",
+                  "venue": "Notre Dame Stadium",
+                  "neutral_site": false,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {},
+                      "moneyline": {}
+                    },
+                    "fanduel": {
+                      "spread": {},
+                      "moneyline": {}
+                    }
+                  },
+                  "is_nebraska": false,
+                  "matchup_rank": 12,
+                  "is_slot_pick": false
+                },
+                {
+                  "id": "401856790",
+                  "start_time": "2026-09-12T19:30Z",
+                  "start_time_tbd": false,
+                  "home_team": "Pittsburgh Panthers",
+                  "home_rank": null,
+                  "home_record": "0-0",
+                  "away_team": "UCF Knights",
+                  "away_rank": null,
+                  "away_record": "0-0",
+                  "matchup_score": 83.9,
+                  "channel": "ESPN2",
+                  "venue": "Acrisure Stadium",
+                  "neutral_site": false,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {},
+                      "moneyline": {}
+                    },
+                    "fanduel": {
+                      "spread": {},
+                      "moneyline": {}
+                    }
+                  },
+                  "is_nebraska": false,
+                  "matchup_rank": 17,
+                  "is_slot_pick": false
+                },
+                {
                   "id": "401856677",
                   "start_time": "2026-09-12T19:30Z",
                   "start_time_tbd": false,
@@ -2490,7 +2611,7 @@
                   "away_team": "Mississippi State Bulldogs",
                   "away_rank": null,
                   "away_record": "0-0",
-                  "matchup_score": 85.7,
+                  "matchup_score": 86.0,
                   "channel": "CBS",
                   "venue": "Huntington Bank Stadium",
                   "neutral_site": false,
@@ -2505,7 +2626,7 @@
                     }
                   },
                   "is_nebraska": false,
-                  "matchup_rank": 17,
+                  "matchup_rank": 18,
                   "is_slot_pick": false
                 },
                 {
@@ -2533,7 +2654,7 @@
                     }
                   },
                   "is_nebraska": false,
-                  "matchup_rank": 18,
+                  "matchup_rank": 19,
                   "is_slot_pick": false
                 },
                 {
@@ -2561,14 +2682,42 @@
                     }
                   },
                   "is_nebraska": false,
-                  "matchup_rank": 19,
+                  "matchup_rank": 21,
+                  "is_slot_pick": false
+                },
+                {
+                  "id": "401860884",
+                  "start_time": "2026-09-12T19:30Z",
+                  "start_time_tbd": false,
+                  "home_team": "Texas State Bobcats",
+                  "home_rank": null,
+                  "home_record": "0-0",
+                  "away_team": "UTSA Roadrunners",
+                  "away_rank": null,
+                  "away_record": "0-0",
+                  "matchup_score": 95.5,
+                  "channel": "CW",
+                  "venue": "UFCU Stadium",
+                  "neutral_site": false,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {},
+                      "moneyline": {}
+                    },
+                    "fanduel": {
+                      "spread": {},
+                      "moneyline": {}
+                    }
+                  },
+                  "is_nebraska": false,
+                  "matchup_rank": 24,
                   "is_slot_pick": false
                 }
               ]
             },
             {
               "slot": "Prime Time",
-              "best_matchup_score": 11.5,
+              "best_matchup_score": 10.3,
               "pick_reason": "watchability",
               "games": [
                 {
@@ -2581,7 +2730,7 @@
                   "away_team": "Ohio State Buckeyes",
                   "away_rank": 1,
                   "away_record": "0-0",
-                  "matchup_score": 11.5,
+                  "matchup_score": 10.3,
                   "channel": "ABC",
                   "venue": "DKR-Texas Memorial Stadium",
                   "neutral_site": false,
@@ -2657,7 +2806,7 @@
                   "away_team": "Charlotte 49ers",
                   "away_rank": null,
                   "away_record": "0-0",
-                  "matchup_score": 70.9,
+                  "matchup_score": 69.9,
                   "channel": "ESPN2",
                   "venue": "Vaught-Hemingway Stadium",
                   "neutral_site": false,
@@ -2685,7 +2834,7 @@
                   "away_team": "Bowling Green Falcons",
                   "away_rank": null,
                   "away_record": "0-0",
-                  "matchup_score": 78.6,
+                  "matchup_score": 78.1,
                   "channel": "FS1",
                   "venue": "Memorial Stadium (Lincoln, NE)",
                   "neutral_site": false,
@@ -2713,7 +2862,7 @@
                   "away_team": "Texas Tech Red Raiders",
                   "away_rank": 12,
                   "away_record": "0-0",
-                  "matchup_score": 80.3,
+                  "matchup_score": 79.3,
                   "channel": "CBS",
                   "venue": "Reser Stadium",
                   "neutral_site": false,
@@ -2741,7 +2890,7 @@
                   "away_team": "Iowa State Cyclones",
                   "away_rank": null,
                   "away_record": "0-0",
-                  "matchup_score": 91.5,
+                  "matchup_score": 90.6,
                   "channel": "NBC",
                   "venue": "Kinnick Stadium",
                   "neutral_site": false,
@@ -2791,7 +2940,7 @@
                   "away_team": "Tennessee Volunteers",
                   "away_rank": 20,
                   "away_record": "0-0",
-                  "matchup_score": 93.6,
+                  "matchup_score": 93.0,
                   "channel": "ESPN",
                   "venue": "Bobby Dodd Stadium",
                   "neutral_site": false,
@@ -2806,14 +2955,14 @@
                     }
                   },
                   "is_nebraska": false,
-                  "matchup_rank": 21,
+                  "matchup_rank": 22,
                   "is_slot_pick": false
                 }
               ]
             },
             {
               "slot": "Late Night",
-              "best_matchup_score": 76.2,
+              "best_matchup_score": 76.0,
               "pick_reason": "watchability",
               "games": [
                 {
@@ -2826,7 +2975,7 @@
                   "away_team": "North Dakota State Bison",
                   "away_rank": null,
                   "away_record": "1-0",
-                  "matchup_score": 76.2,
+                  "matchup_score": 76.0,
                   "channel": "FS1",
                   "venue": "Falcon Stadium",
                   "neutral_site": false,
@@ -2842,7 +2991,7 @@
                   },
                   "is_nebraska": false,
                   "matchup_rank": 8,
-                  "is_slot_pick": true
+                  "is_slot_pick": false
                 },
                 {
                   "id": "401856670",
@@ -2854,7 +3003,7 @@
                   "away_team": "Arkansas Razorbacks",
                   "away_rank": null,
                   "away_record": "0-0",
-                  "matchup_score": 78.5,
+                  "matchup_score": 77.5,
                   "channel": "ESPN",
                   "venue": "Rice-Eccles Stadium",
                   "neutral_site": false,
@@ -2909,6 +3058,34 @@
                     "odds_hash": "f7499aab4d6ab821",
                     "model": "gemini-3.5-flash-lite"
                   },
+                  "is_slot_pick": true
+                },
+                {
+                  "id": "401864500",
+                  "start_time": "2026-09-13T02:30Z",
+                  "start_time_tbd": false,
+                  "home_team": "Nevada Wolf Pack",
+                  "home_rank": null,
+                  "home_record": "0-0",
+                  "away_team": "Montana State Bobcats",
+                  "away_rank": null,
+                  "away_record": "1-0",
+                  "matchup_score": 79.5,
+                  "channel": "CW",
+                  "venue": "Mackay Stadium",
+                  "neutral_site": false,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {},
+                      "moneyline": {}
+                    },
+                    "fanduel": {
+                      "spread": {},
+                      "moneyline": {}
+                    }
+                  },
+                  "is_nebraska": false,
+                  "matchup_rank": 14,
                   "is_slot_pick": false
                 }
               ]
