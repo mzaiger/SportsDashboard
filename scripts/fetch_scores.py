@@ -62,10 +62,11 @@ import argparse
 import json
 import os
 from datetime import datetime, timezone
+from zoneinfo import ZoneInfo
 
 import requests
 
-from common import log, _normalize, _fuzzy_team
+from common import log, _normalize, _fuzzy_team, DISPLAY_TIMEZONE
 
 ESPN_CFB_SCOREBOARD_URL = "https://site.api.espn.com/apis/site/v2/sports/football/college-football/scoreboard"
 ESPN_SCOREBOARD_URL = "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard"
@@ -250,11 +251,20 @@ def fetch_cfb_scores(dashboard, weeks_to_fetch=None):
         log(f"  WARNING: couldn't fetch CFB scores from ESPN ({dates_param}): {e}")
         return scores
 
-    # Bucket ESPN events by their own calendar date so a dashboard game
-    # only ever gets matched against an ESPN event from the same day.
+    # Bucket ESPN events by their calendar date in DISPLAY_TIMEZONE --
+    # NOT the raw UTC date -- so this lines up with the dashboard's own
+    # day_key (see build_ncaaf_dashboard.py), which is also computed in
+    # DISPLAY_TIMEZONE. A 9pm CDT kickoff is already "tomorrow" in UTC;
+    # bucketing on the raw UTC date silently drops the match (and thus
+    # the score) for every late-night/West Coast game.
     events_by_date = {}
     for event in payload.get("events", []):
-        event_date = (event.get("date") or "")[:10].replace("-", "")
+        raw_date = event.get("date") or ""
+        try:
+            event_dt_utc = datetime.fromisoformat(raw_date.replace("Z", "+00:00"))
+            event_date = event_dt_utc.astimezone(ZoneInfo(DISPLAY_TIMEZONE)).date().isoformat().replace("-", "")
+        except (TypeError, ValueError):
+            event_date = raw_date[:10].replace("-", "")
         events_by_date.setdefault(event_date, []).append(event)
 
     for date_str, games in games_by_date.items():
