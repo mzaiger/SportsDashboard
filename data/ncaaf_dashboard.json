@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-29T22:21:40.344084+00:00",
+  "generated_at": "2026-08-30T03:15:04.177881+00:00",
   "season": 2026,
   "season_type": 2,
   "main_channels": [
@@ -24,7 +24,7 @@
           "time_slots": [
             {
               "slot": "Noon",
-              "best_matchup_score": 53.7,
+              "best_matchup_score": 53.9,
               "pick_reason": "watchability",
               "games": [
                 {
@@ -37,7 +37,7 @@
                   "away_team": "North Carolina Tar Heels",
                   "away_rank": null,
                   "away_record": "1-0",
-                  "matchup_score": 53.7,
+                  "matchup_score": 53.9,
                   "channel": "ESPN, Disney+",
                   "venue": "Aviva Stadium",
                   "neutral_site": true,
@@ -100,85 +100,27 @@
                     "odds_hash": "4aa59dc1ea695fb6",
                     "model": "gemini-3.5-flash-lite"
                   },
-                  "matchup_rank": 2,
+                  "matchup_rank": 3,
                   "is_slot_pick": true
                 }
               ]
             },
             {
               "slot": "Afternoon",
-              "best_matchup_score": 61.3,
+              "best_matchup_score": 51.5,
               "pick_reason": "watchability",
               "games": [
-                {
-                  "id": "401864494",
-                  "start_time": "2026-08-29T19:00Z",
-                  "start_time_tbd": false,
-                  "home_team": "USC Trojans",
-                  "home_rank": 14,
-                  "home_record": "1-0",
-                  "away_team": "San Jos\u00e9 State Spartans",
-                  "away_rank": null,
-                  "away_record": "0-1",
-                  "matchup_score": 61.3,
-                  "channel": "NBC",
-                  "venue": "Los Angeles Memorial Coliseum",
-                  "neutral_site": false,
-                  "odds": {
-                    "draftkings": {
-                      "spread": {
-                        "home": {
-                          "line": -38.5,
-                          "american": -105
-                        },
-                        "away": {
-                          "line": 38.5,
-                          "american": -115
-                        }
-                      },
-                      "moneyline": {}
-                    },
-                    "fanduel": {
-                      "spread": {
-                        "home": {
-                          "line": -38.5,
-                          "american": -112
-                        },
-                        "away": {
-                          "line": 38.5,
-                          "american": -108
-                        }
-                      },
-                      "moneyline": {}
-                    }
-                  },
-                  "is_nebraska": false,
-                  "gemini_prediction": {
-                    "winner": "USC Trojans",
-                    "confidence": 99,
-                    "ats_pick": "San Jos\u00e9 State Spartans",
-                    "ats_confidence": 60,
-                    "analysis": "The USC Trojans enter this week 1 matchup with superior roster depth and elite offensive talent that will overwhelm the opponent. San Jos\u00e9 State Spartans struggle to find consistency on defense and will have immense difficulty slowing down the explosive home attack. While USC will undoubtedly secure the outright victory comfortably, a 38.5-point spread is an extremely wide margin to cover in an opening game. Penalties, early-season rust, and late garbage-time scores by San Jos\u00e9 State Spartans should allow the visitors to keep the final deficit within the massive number. Consequently, the game script favors a blowout win for the Trojans without necessarily translating to a cover of the historically large spread.",
-                    "splits_and_direction": "Approximately 78 percent of public bets are currently backing the USC Trojans to cover the massive spread and win in a blowout. Both the spread and moneyline have remained completely stable at -38.5 since opening due to heavy lopsided public action mirroring the initial line.",
-                    "display_text": "Summary: The USC Trojans enter this week 1 matchup with superior roster depth and elite offensive talent that will overwhelm the opponent. San Jos\u00e9 State Spartans struggle to find consistency on defense and will have immense difficulty slowing down the explosive home attack. While USC will undoubtedly secure the outright victory comfortably, a 38.5-point spread is an extremely wide margin to cover in an opening game. Penalties, early-season rust, and late garbage-time scores by San Jos\u00e9 State Spartans should allow the visitors to keep the final deficit within the massive number. Consequently, the game script favors a blowout win for the Trojans without necessarily translating to a cover of the historically large spread.\n\nSplits and Direction: Approximately 78 percent of public bets are currently backing the USC Trojans to cover the massive spread and win in a blowout. Both the spread and moneyline have remained completely stable at -38.5 since opening due to heavy lopsided public action mirroring the initial line.",
-                    "generated_at": "2026-08-28T16:30:18.415548+00:00",
-                    "odds_hash": "6d0c7ed830f06bf4",
-                    "model": "gemini-3.5-flash-lite"
-                  },
-                  "matchup_rank": 6,
-                  "is_slot_pick": true
-                },
                 {
                   "id": "401858202",
                   "start_time": "2026-08-29T19:30Z",
                   "start_time_tbd": false,
                   "home_team": "Virginia Cavaliers",
                   "home_rank": null,
-                  "home_record": "0-0",
+                  "home_record": "1-0",
                   "away_team": "NC State Wolfpack",
                   "away_rank": null,
-                  "away_record": "0-0",
-                  "matchup_score": 62.2,
+                  "away_record": "0-1",
+                  "matchup_score": 51.5,
                   "channel": "ESPN",
                   "venue": "Scott Stadium",
                   "neutral_site": false,
@@ -237,14 +179,72 @@
                     "odds_hash": "b9cf4f9f42b091f5",
                     "model": "gemini-3.5-flash-lite"
                   },
-                  "matchup_rank": 8,
+                  "matchup_rank": 2,
+                  "is_slot_pick": true
+                },
+                {
+                  "id": "401864494",
+                  "start_time": "2026-08-29T19:00Z",
+                  "start_time_tbd": false,
+                  "home_team": "USC Trojans",
+                  "home_rank": 14,
+                  "home_record": "1-0",
+                  "away_team": "San Jos\u00e9 State Spartans",
+                  "away_rank": null,
+                  "away_record": "0-1",
+                  "matchup_score": 62.2,
+                  "channel": "NBC",
+                  "venue": "Los Angeles Memorial Coliseum",
+                  "neutral_site": false,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {
+                        "home": {
+                          "line": -38.5,
+                          "american": -105
+                        },
+                        "away": {
+                          "line": 38.5,
+                          "american": -115
+                        }
+                      },
+                      "moneyline": {}
+                    },
+                    "fanduel": {
+                      "spread": {
+                        "home": {
+                          "line": -38.5,
+                          "american": -112
+                        },
+                        "away": {
+                          "line": 38.5,
+                          "american": -108
+                        }
+                      },
+                      "moneyline": {}
+                    }
+                  },
+                  "is_nebraska": false,
+                  "gemini_prediction": {
+                    "winner": "USC Trojans",
+                    "confidence": 99,
+                    "ats_pick": "San Jos\u00e9 State Spartans",
+                    "ats_confidence": 60,
+                    "analysis": "The USC Trojans enter this week 1 matchup with superior roster depth and elite offensive talent that will overwhelm the opponent. San Jos\u00e9 State Spartans struggle to find consistency on defense and will have immense difficulty slowing down the explosive home attack. While USC will undoubtedly secure the outright victory comfortably, a 38.5-point spread is an extremely wide margin to cover in an opening game. Penalties, early-season rust, and late garbage-time scores by San Jos\u00e9 State Spartans should allow the visitors to keep the final deficit within the massive number. Consequently, the game script favors a blowout win for the Trojans without necessarily translating to a cover of the historically large spread.",
+                    "splits_and_direction": "Approximately 78 percent of public bets are currently backing the USC Trojans to cover the massive spread and win in a blowout. Both the spread and moneyline have remained completely stable at -38.5 since opening due to heavy lopsided public action mirroring the initial line.",
+                    "display_text": "Summary: The USC Trojans enter this week 1 matchup with superior roster depth and elite offensive talent that will overwhelm the opponent. San Jos\u00e9 State Spartans struggle to find consistency on defense and will have immense difficulty slowing down the explosive home attack. While USC will undoubtedly secure the outright victory comfortably, a 38.5-point spread is an extremely wide margin to cover in an opening game. Penalties, early-season rust, and late garbage-time scores by San Jos\u00e9 State Spartans should allow the visitors to keep the final deficit within the massive number. Consequently, the game script favors a blowout win for the Trojans without necessarily translating to a cover of the historically large spread.\n\nSplits and Direction: Approximately 78 percent of public bets are currently backing the USC Trojans to cover the massive spread and win in a blowout. Both the spread and moneyline have remained completely stable at -38.5 since opening due to heavy lopsided public action mirroring the initial line.",
+                    "generated_at": "2026-08-28T16:30:18.415548+00:00",
+                    "odds_hash": "6d0c7ed830f06bf4",
+                    "model": "gemini-3.5-flash-lite"
+                  },
+                  "matchup_rank": 9,
                   "is_slot_pick": false
                 }
               ]
             },
             {
               "slot": "Late Night",
-              "best_matchup_score": 63.0,
+              "best_matchup_score": 63.7,
               "pick_reason": "watchability",
               "games": [
                 {
@@ -257,7 +257,7 @@
                   "away_team": "Memphis Tigers",
                   "away_rank": null,
                   "away_record": "0-0",
-                  "matchup_score": 63.0,
+                  "matchup_score": 63.7,
                   "channel": "FOX",
                   "venue": "Allegiant Stadium",
                   "neutral_site": false,
@@ -308,7 +308,7 @@
                     }
                   },
                   "is_nebraska": false,
-                  "matchup_rank": 12,
+                  "matchup_rank": 14,
                   "gemini_prediction": {
                     "winner": "Memphis Tigers",
                     "confidence": 58,
@@ -424,9 +424,37 @@
           "time_slots": [
             {
               "slot": "Prime Time",
-              "best_matchup_score": 62.8,
+              "best_matchup_score": 60.5,
               "pick_reason": "watchability",
               "games": [
+                {
+                  "id": "401858206",
+                  "start_time": "2026-09-05T01:00Z",
+                  "start_time_tbd": false,
+                  "home_team": "Stanford Cardinal",
+                  "home_rank": null,
+                  "home_record": "1-0",
+                  "away_team": "Miami Hurricanes",
+                  "away_rank": 7,
+                  "away_record": "0-0",
+                  "matchup_score": 60.5,
+                  "channel": "ESPN",
+                  "venue": "Stanford Stadium",
+                  "neutral_site": false,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {},
+                      "moneyline": {}
+                    },
+                    "fanduel": {
+                      "spread": {},
+                      "moneyline": {}
+                    }
+                  },
+                  "is_nebraska": false,
+                  "matchup_rank": 8,
+                  "is_slot_pick": true
+                },
                 {
                   "id": "401858436",
                   "start_time": "2026-09-05T01:00Z",
@@ -437,7 +465,7 @@
                   "away_team": "Fresno State Bulldogs",
                   "away_rank": null,
                   "away_record": "0-0",
-                  "matchup_score": 62.8,
+                  "matchup_score": 63.5,
                   "channel": "FOX",
                   "venue": "Los Angeles Memorial Coliseum",
                   "neutral_site": false,
@@ -445,22 +473,22 @@
                     "draftkings": {
                       "spread": {
                         "home": {
-                          "line": -22.5,
-                          "american": -115
+                          "line": -23.5,
+                          "american": -108
                         },
                         "away": {
-                          "line": 22.5,
-                          "american": -105
+                          "line": 23.5,
+                          "american": -112
                         }
                       },
                       "moneyline": {
                         "home": {
                           "line": null,
-                          "american": -3600
+                          "american": -3200
                         },
                         "away": {
                           "line": null,
-                          "american": 1500
+                          "american": 1400
                         }
                       }
                     },
@@ -488,17 +516,17 @@
                     }
                   },
                   "is_nebraska": false,
-                  "matchup_rank": 11,
+                  "matchup_rank": 13,
                   "gemini_prediction": {
                     "winner": "USC Trojans",
                     "confidence": 95,
                     "ats_pick": "Fresno State Bulldogs",
                     "ats_confidence": 60,
-                    "analysis": "The USC Trojans host the Fresno State Bulldogs in a marquee week 1 matchup of the 2026 college football season. USC boasts an explosive offense capable of exploiting defensive weaknesses early in the campaign. Fresno State enters this contest with a gritty roster that aims to keep the game competitive through methodical drives. While USC's superior overall talent profile ensures an outright victory, a 23.5-point spread provides a substantial cushion. The Bulldogs possess enough offensive execution to backdoor cover late in the fourth quarter.",
-                    "splits_and_direction": "Approximately 78 percent of public bets are backing the USC Trojans to cover the massive home spread due to their brand recognition. The point spread has slightly ticked up from 22.5 to 23.5 at several sportsbooks, reflecting heavy early liability on the heavily favored home side.",
-                    "display_text": "Summary: The USC Trojans host the Fresno State Bulldogs in a marquee week 1 matchup of the 2026 college football season. USC boasts an explosive offense capable of exploiting defensive weaknesses early in the campaign. Fresno State enters this contest with a gritty roster that aims to keep the game competitive through methodical drives. While USC's superior overall talent profile ensures an outright victory, a 23.5-point spread provides a substantial cushion. The Bulldogs possess enough offensive execution to backdoor cover late in the fourth quarter.\n\nSplits and Direction: Approximately 78 percent of public bets are backing the USC Trojans to cover the massive home spread due to their brand recognition. The point spread has slightly ticked up from 22.5 to 23.5 at several sportsbooks, reflecting heavy early liability on the heavily favored home side.",
-                    "generated_at": "2026-08-28T16:31:08.142102+00:00",
-                    "odds_hash": "c43b56484ef2e6f5",
+                    "analysis": "The USC Trojans enter this 2026 week one matchup with a vastly superior overall roster and explosive offensive firepower. Fresno State Bulldogs put up a valiant effort, but managing a massive road environment proves extremely difficult for them early in the year. USC's defensive front generates consistent pressure, limiting big plays from the opposing passing attack throughout the contest. Although the Trojans secure a comfortable victory outright, the large twenty-three-and-a-half-point spread leaves a slightly too wide margin for comfort. Ultimately, Fresno State does just enough late in the game via garbage-time production to narrowly cover the inflated spread.",
+                    "splits_and_direction": "Approximately 78 percent of the public betting handle is backing the USC Trojans to cover the large spread and win on the moneyline. Both the point spread and moneyline have remained stable since opening with minimal market movement due to heavy early favorite action.",
+                    "display_text": "Summary: The USC Trojans enter this 2026 week one matchup with a vastly superior overall roster and explosive offensive firepower. Fresno State Bulldogs put up a valiant effort, but managing a massive road environment proves extremely difficult for them early in the year. USC's defensive front generates consistent pressure, limiting big plays from the opposing passing attack throughout the contest. Although the Trojans secure a comfortable victory outright, the large twenty-three-and-a-half-point spread leaves a slightly too wide margin for comfort. Ultimately, Fresno State does just enough late in the game via garbage-time production to narrowly cover the inflated spread.\n\nSplits and Direction: Approximately 78 percent of the public betting handle is backing the USC Trojans to cover the large spread and win on the moneyline. Both the point spread and moneyline have remained stable since opening with minimal market movement due to heavy early favorite action.",
+                    "generated_at": "2026-08-30T03:14:07.221970+00:00",
+                    "odds_hash": "7d83aa43a8adf1a6",
                     "model": "gemini-3.5-flash-lite"
                   },
                   "is_slot_pick": false
@@ -513,7 +541,7 @@
                   "away_team": "Toledo Rockets",
                   "away_rank": null,
                   "away_record": "0-0",
-                  "matchup_score": 66.4,
+                  "matchup_score": 67.4,
                   "channel": "FS1",
                   "venue": "Spartan Stadium",
                   "neutral_site": false,
@@ -564,7 +592,7 @@
                     }
                   },
                   "is_nebraska": false,
-                  "matchup_rank": 14,
+                  "matchup_rank": 17,
                   "gemini_prediction": {
                     "winner": "Michigan State Spartans",
                     "confidence": 78,
@@ -577,34 +605,6 @@
                     "odds_hash": "f02f1d348c57340f",
                     "model": "gemini-3.5-flash-lite"
                   },
-                  "is_slot_pick": true
-                },
-                {
-                  "id": "401858206",
-                  "start_time": "2026-09-05T01:00Z",
-                  "start_time_tbd": false,
-                  "home_team": "Stanford Cardinal",
-                  "home_rank": null,
-                  "home_record": "0-0",
-                  "away_team": "Miami Hurricanes",
-                  "away_rank": 7,
-                  "away_record": "0-0",
-                  "matchup_score": 66.8,
-                  "channel": "ESPN",
-                  "venue": "Stanford Stadium",
-                  "neutral_site": false,
-                  "odds": {
-                    "draftkings": {
-                      "spread": {},
-                      "moneyline": {}
-                    },
-                    "fanduel": {
-                      "spread": {},
-                      "moneyline": {}
-                    }
-                  },
-                  "is_nebraska": false,
-                  "matchup_rank": 17,
                   "is_slot_pick": false
                 }
               ]
@@ -618,7 +618,7 @@
           "time_slots": [
             {
               "slot": "Noon",
-              "best_matchup_score": 67.7,
+              "best_matchup_score": 68.8,
               "pick_reason": "watchability",
               "games": [
                 {
@@ -631,7 +631,7 @@
                   "away_team": "East Carolina Pirates",
                   "away_rank": null,
                   "away_record": "0-0",
-                  "matchup_score": 67.7,
+                  "matchup_score": 68.8,
                   "channel": "ABC",
                   "venue": "Bryant-Denny Stadium",
                   "neutral_site": false,
@@ -687,7 +687,7 @@
                     "odds_hash": "1c2eea050e399eb4",
                     "model": "gemini-3.5-flash-lite"
                   },
-                  "is_slot_pick": false
+                  "is_slot_pick": true
                 },
                 {
                   "id": "401858430",
@@ -699,7 +699,7 @@
                   "away_team": "Ohio Bobcats",
                   "away_rank": null,
                   "away_record": "0-0",
-                  "matchup_score": 68.8,
+                  "matchup_score": 70.1,
                   "channel": "FS1",
                   "venue": "Memorial Stadium (Lincoln, NE)",
                   "neutral_site": false,
@@ -750,7 +750,7 @@
                     }
                   },
                   "is_nebraska": false,
-                  "matchup_rank": 19,
+                  "matchup_rank": 20,
                   "gemini_prediction": {
                     "winner": "Nebraska Cornhuskers",
                     "confidence": 95,
@@ -763,7 +763,7 @@
                     "odds_hash": "a1ca35923d26cb71",
                     "model": "gemini-3.5-flash-lite"
                   },
-                  "is_slot_pick": true
+                  "is_slot_pick": false
                 },
                 {
                   "id": "401856778",
@@ -775,7 +775,7 @@
                   "away_team": "Oregon State Beavers",
                   "away_rank": null,
                   "away_record": "0-0",
-                  "matchup_score": 72.3,
+                  "matchup_score": 72.9,
                   "channel": "ESPN, Disney+",
                   "venue": "TDECU Stadium",
                   "neutral_site": false,
@@ -826,7 +826,7 @@
                     }
                   },
                   "is_nebraska": false,
-                  "matchup_rank": 22,
+                  "matchup_rank": 23,
                   "gemini_prediction": {
                     "winner": "Houston Cougars",
                     "confidence": 92,
@@ -851,7 +851,7 @@
                   "away_team": "North Texas Mean Green",
                   "away_rank": null,
                   "away_record": "0-0",
-                  "matchup_score": 73.3,
+                  "matchup_score": 73.5,
                   "channel": "FOX",
                   "venue": "Memorial Stadium (Bloomington, IN)",
                   "neutral_site": false,
@@ -903,7 +903,7 @@
             },
             {
               "slot": "Afternoon",
-              "best_matchup_score": 58.0,
+              "best_matchup_score": 58.1,
               "pick_reason": "watchability",
               "games": [
                 {
@@ -916,7 +916,7 @@
                   "away_team": "Boise State Broncos",
                   "away_rank": null,
                   "away_record": "0-0",
-                  "matchup_score": 58.0,
+                  "matchup_score": 58.1,
                   "channel": "CBS",
                   "venue": "Autzen Stadium",
                   "neutral_site": false,
@@ -967,7 +967,7 @@
                     }
                   },
                   "is_nebraska": false,
-                  "matchup_rank": 3,
+                  "matchup_rank": 5,
                   "gemini_prediction": {
                     "winner": "Oregon Ducks",
                     "confidence": 92,
@@ -992,7 +992,7 @@
                   "away_team": "Boston College Eagles",
                   "away_rank": null,
                   "away_record": "0-0",
-                  "matchup_score": 59.0,
+                  "matchup_score": 60.3,
                   "channel": "FOX",
                   "venue": "Nippert Stadium",
                   "neutral_site": false,
@@ -1043,7 +1043,7 @@
                     }
                   },
                   "is_nebraska": false,
-                  "matchup_rank": 4,
+                  "matchup_rank": 7,
                   "gemini_prediction": {
                     "winner": "Cincinnati Bearcats",
                     "confidence": 78,
@@ -1068,7 +1068,7 @@
                   "away_team": "Baylor Bears",
                   "away_rank": null,
                   "away_record": "0-0",
-                  "matchup_score": 62.1,
+                  "matchup_score": 63.2,
                   "channel": "ABC, Disney+",
                   "venue": "Mercedes-Benz Stadium",
                   "neutral_site": true,
@@ -1110,7 +1110,7 @@
                     }
                   },
                   "is_nebraska": false,
-                  "matchup_rank": 7,
+                  "matchup_rank": 11,
                   "gemini_prediction": {
                     "winner": "Auburn Tigers",
                     "confidence": 75,
@@ -1135,7 +1135,7 @@
                   "away_team": "Texas State Bobcats",
                   "away_rank": null,
                   "away_record": "0-0",
-                  "matchup_score": 64.8,
+                  "matchup_score": 65.2,
                   "channel": "ESPN",
                   "venue": "DKR-Texas Memorial Stadium",
                   "neutral_site": false,
@@ -1170,7 +1170,7 @@
                     }
                   },
                   "is_nebraska": false,
-                  "matchup_rank": 13,
+                  "matchup_rank": 15,
                   "gemini_prediction": {
                     "winner": "Texas Longhorns",
                     "confidence": 95,
@@ -1195,7 +1195,7 @@
                   "away_team": "Marshall Thundering Herd",
                   "away_rank": null,
                   "away_record": "0-0",
-                  "matchup_score": 73.2,
+                  "matchup_score": 73.8,
                   "channel": "FS1",
                   "venue": "Beaver Stadium",
                   "neutral_site": false,
@@ -1246,7 +1246,7 @@
                     }
                   },
                   "is_nebraska": false,
-                  "matchup_rank": 23,
+                  "matchup_rank": 25,
                   "gemini_prediction": {
                     "winner": "Penn State Nittany Lions",
                     "confidence": 99,
@@ -1265,7 +1265,7 @@
             },
             {
               "slot": "Prime Time",
-              "best_matchup_score": 59.6,
+              "best_matchup_score": 60.0,
               "pick_reason": "watchability",
               "games": [
                 {
@@ -1278,7 +1278,7 @@
                   "away_team": "Clemson Tigers",
                   "away_rank": null,
                   "away_record": "0-0",
-                  "matchup_score": 59.6,
+                  "matchup_score": 60.0,
                   "channel": "ABC",
                   "venue": "Tiger Stadium (LA)",
                   "neutral_site": false,
@@ -1329,7 +1329,7 @@
                     }
                   },
                   "is_nebraska": false,
-                  "matchup_rank": 5,
+                  "matchup_rank": 6,
                   "gemini_prediction": {
                     "winner": "LSU Tigers",
                     "confidence": 78,
@@ -1354,7 +1354,7 @@
                   "away_team": "Western Michigan Broncos",
                   "away_rank": null,
                   "away_record": "0-0",
-                  "matchup_score": 68.9,
+                  "matchup_score": 69.9,
                   "channel": "NBC",
                   "venue": "Michigan Stadium",
                   "neutral_site": false,
@@ -1389,7 +1389,7 @@
                     }
                   },
                   "is_nebraska": false,
-                  "matchup_rank": 20,
+                  "matchup_rank": 19,
                   "gemini_prediction": {
                     "winner": "Michigan Wolverines",
                     "confidence": 95,
@@ -1414,7 +1414,7 @@
                   "away_team": "Missouri State Bears",
                   "away_rank": null,
                   "away_record": "0-0",
-                  "matchup_score": 71.4,
+                  "matchup_score": 71.6,
                   "channel": "ESPN",
                   "venue": "Kyle Field",
                   "neutral_site": false,
@@ -1471,8 +1471,8 @@
                   "home_record": "0-0",
                   "away_team": "Abilene Christian Wildcats",
                   "away_rank": null,
-                  "away_record": "0-0",
-                  "matchup_score": 74.5,
+                  "away_record": "0-1",
+                  "matchup_score": 71.7,
                   "channel": "FS1",
                   "venue": "Galaxy Stadium",
                   "neutral_site": false,
@@ -1481,11 +1481,11 @@
                       "spread": {
                         "home": {
                           "line": -42.5,
-                          "american": -110
+                          "american": -112
                         },
                         "away": {
                           "line": 42.5,
-                          "american": -110
+                          "american": -108
                         }
                       },
                       "moneyline": {}
@@ -1505,7 +1505,7 @@
                     }
                   },
                   "is_nebraska": false,
-                  "matchup_rank": 25,
+                  "matchup_rank": 22,
                   "gemini_prediction": {
                     "winner": "Texas Tech Red Raiders",
                     "confidence": 99,
@@ -1524,7 +1524,7 @@
             },
             {
               "slot": "Late Night",
-              "best_matchup_score": 62.2,
+              "best_matchup_score": 63.3,
               "pick_reason": "watchability",
               "games": [
                 {
@@ -1537,7 +1537,7 @@
                   "away_team": "Central Michigan Chippewas",
                   "away_rank": null,
                   "away_record": "0-0",
-                  "matchup_score": 62.2,
+                  "matchup_score": 63.3,
                   "channel": "FS1",
                   "venue": "University Stadium (NM)",
                   "neutral_site": false,
@@ -1588,7 +1588,7 @@
                     }
                   },
                   "is_nebraska": false,
-                  "matchup_rank": 9,
+                  "matchup_rank": 12,
                   "gemini_prediction": {
                     "winner": "New Mexico Lobos",
                     "confidence": 78,
@@ -1613,7 +1613,7 @@
                   "away_team": "UCLA Bruins",
                   "away_rank": null,
                   "away_record": "0-0",
-                  "matchup_score": 66.6,
+                  "matchup_score": 66.9,
                   "channel": "ESPN",
                   "venue": "California Memorial Stadium",
                   "neutral_site": false,
@@ -1690,7 +1690,7 @@
           "time_slots": [
             {
               "slot": "Afternoon",
-              "best_matchup_score": 75.6,
+              "best_matchup_score": 75.7,
               "pick_reason": "watchability",
               "games": [
                 {
@@ -1703,7 +1703,7 @@
                   "away_team": "Washington State Cougars",
                   "away_rank": null,
                   "away_record": "0-0",
-                  "matchup_score": 75.6,
+                  "matchup_score": 75.7,
                   "channel": "NBC",
                   "venue": "Husky Stadium",
                   "neutral_site": false,
@@ -1757,7 +1757,7 @@
             },
             {
               "slot": "Prime Time",
-              "best_matchup_score": 18.5,
+              "best_matchup_score": 19.3,
               "pick_reason": "watchability",
               "games": [
                 {
@@ -1770,7 +1770,7 @@
                   "away_team": "Louisville Cardinals",
                   "away_rank": 24,
                   "away_record": "0-0",
-                  "matchup_score": 18.5,
+                  "matchup_score": 19.3,
                   "channel": "ABC",
                   "venue": "Nissan Stadium",
                   "neutral_site": true,
@@ -1923,7 +1923,7 @@
           "time_slots": [
             {
               "slot": "Prime Time",
-              "best_matchup_score": 66.4,
+              "best_matchup_score": 54.3,
               "pick_reason": "watchability",
               "games": [
                 {
@@ -1932,11 +1932,11 @@
                   "start_time_tbd": false,
                   "home_team": "Florida State Seminoles",
                   "home_rank": null,
-                  "home_record": "0-0",
+                  "home_record": "1-0",
                   "away_team": "SMU Mustangs",
                   "away_rank": 19,
                   "away_record": "0-0",
-                  "matchup_score": 66.4,
+                  "matchup_score": 54.3,
                   "channel": "ESPN",
                   "venue": "Doak Campbell Stadium",
                   "neutral_site": false,
@@ -1987,7 +1987,7 @@
                     }
                   },
                   "is_nebraska": false,
-                  "matchup_rank": 15,
+                  "matchup_rank": 4,
                   "gemini_prediction": {
                     "winner": "SMU Mustangs",
                     "confidence": 62,
@@ -2019,7 +2019,7 @@
           "time_slots": [
             {
               "slot": "Prime Time",
-              "best_matchup_score": 63.5,
+              "best_matchup_score": 63.7,
               "pick_reason": "watchability",
               "games": [
                 {
@@ -2032,7 +2032,7 @@
                   "away_team": "Missouri Tigers",
                   "away_rank": 25,
                   "away_record": "0-0",
-                  "matchup_score": 63.5,
+                  "matchup_score": 63.7,
                   "channel": "FOX",
                   "venue": "David Booth Kansas Memorial Stadium",
                   "neutral_site": false,
@@ -2124,7 +2124,7 @@
           "time_slots": [
             {
               "slot": "Noon",
-              "best_matchup_score": 17.2,
+              "best_matchup_score": 17.3,
               "pick_reason": "watchability",
               "games": [
                 {
@@ -2137,7 +2137,7 @@
                   "away_team": "Oklahoma Sooners",
                   "away_rank": 10,
                   "away_record": "0-0",
-                  "matchup_score": 17.2,
+                  "matchup_score": 17.3,
                   "channel": "FOX",
                   "venue": "Michigan Stadium",
                   "neutral_site": false,
@@ -2213,7 +2213,7 @@
                   "away_team": "Oregon Ducks",
                   "away_rank": 2,
                   "away_record": "0-0",
-                  "matchup_score": 69.5,
+                  "matchup_score": 69.4,
                   "channel": "ESPN, Disney+",
                   "venue": "Boone Pickens Stadium",
                   "neutral_site": false,
@@ -2289,7 +2289,7 @@
                   "away_team": "Penn State Nittany Lions",
                   "away_rank": 18,
                   "away_record": "0-0",
-                  "matchup_score": 79.9,
+                  "matchup_score": 80.2,
                   "channel": "ESPN2",
                   "venue": "Lincoln Financial Field",
                   "neutral_site": false,
@@ -2304,7 +2304,7 @@
                     }
                   },
                   "is_nebraska": false,
-                  "matchup_rank": 11,
+                  "matchup_rank": 12,
                   "is_slot_pick": false
                 },
                 {
@@ -2317,7 +2317,7 @@
                   "away_team": "Arizona State Sun Devils",
                   "away_rank": null,
                   "away_record": "0-0",
-                  "matchup_score": 84.2,
+                  "matchup_score": 84.1,
                   "channel": "ABC",
                   "venue": "Kyle Field",
                   "neutral_site": false,
@@ -2346,7 +2346,7 @@
                     }
                   },
                   "is_nebraska": false,
-                  "matchup_rank": 13,
+                  "matchup_rank": 14,
                   "gemini_prediction": {
                     "winner": "Texas A&M Aggies",
                     "confidence": 88,
@@ -2371,7 +2371,7 @@
                   "away_team": "Wake Forest Demon Deacons",
                   "away_rank": null,
                   "away_record": "0-0",
-                  "matchup_score": 84.6,
+                  "matchup_score": 84.5,
                   "channel": "FS1",
                   "venue": "Ross-Ade Stadium",
                   "neutral_site": false,
@@ -2386,14 +2386,14 @@
                     }
                   },
                   "is_nebraska": false,
-                  "matchup_rank": 14,
+                  "matchup_rank": 15,
                   "is_slot_pick": false
                 }
               ]
             },
             {
               "slot": "Afternoon",
-              "best_matchup_score": 75.1,
+              "best_matchup_score": 75.0,
               "pick_reason": "watchability",
               "games": [
                 {
@@ -2406,7 +2406,7 @@
                   "away_team": "Arizona Wildcats",
                   "away_rank": null,
                   "away_record": "0-0",
-                  "matchup_score": 75.1,
+                  "matchup_score": 75.0,
                   "channel": "FOX",
                   "venue": "LaVell Edwards Stadium",
                   "neutral_site": false,
@@ -2434,7 +2434,7 @@
                   "away_team": "Rice Owls",
                   "away_rank": null,
                   "away_record": "0-0",
-                  "matchup_score": 79.8,
+                  "matchup_score": 80.0,
                   "channel": "NBC",
                   "venue": "Notre Dame Stadium",
                   "neutral_site": false,
@@ -2449,7 +2449,7 @@
                     }
                   },
                   "is_nebraska": false,
-                  "matchup_rank": 10,
+                  "matchup_rank": 11,
                   "is_slot_pick": false
                 },
                 {
@@ -2462,7 +2462,7 @@
                   "away_team": "UCF Knights",
                   "away_rank": null,
                   "away_record": "0-0",
-                  "matchup_score": 85.0,
+                  "matchup_score": 85.3,
                   "channel": "ESPN2",
                   "venue": "Acrisure Stadium",
                   "neutral_site": false,
@@ -2477,7 +2477,7 @@
                     }
                   },
                   "is_nebraska": false,
-                  "matchup_rank": 15,
+                  "matchup_rank": 16,
                   "is_slot_pick": false
                 },
                 {
@@ -2490,7 +2490,7 @@
                   "away_team": "Mississippi State Bulldogs",
                   "away_rank": null,
                   "away_record": "0-0",
-                  "matchup_score": 85.8,
+                  "matchup_score": 85.7,
                   "channel": "CBS",
                   "venue": "Huntington Bank Stadium",
                   "neutral_site": false,
@@ -2505,7 +2505,7 @@
                     }
                   },
                   "is_nebraska": false,
-                  "matchup_rank": 16,
+                  "matchup_rank": 17,
                   "is_slot_pick": false
                 },
                 {
@@ -2657,7 +2657,7 @@
                   "away_team": "Charlotte 49ers",
                   "away_rank": null,
                   "away_record": "0-0",
-                  "matchup_score": 70.7,
+                  "matchup_score": 70.9,
                   "channel": "ESPN2",
                   "venue": "Vaught-Hemingway Stadium",
                   "neutral_site": false,
@@ -2685,7 +2685,7 @@
                   "away_team": "Bowling Green Falcons",
                   "away_rank": null,
                   "away_record": "0-0",
-                  "matchup_score": 78.5,
+                  "matchup_score": 78.6,
                   "channel": "FS1",
                   "venue": "Memorial Stadium (Lincoln, NE)",
                   "neutral_site": false,
@@ -2700,7 +2700,7 @@
                     }
                   },
                   "is_nebraska": false,
-                  "matchup_rank": 8,
+                  "matchup_rank": 10,
                   "is_slot_pick": false
                 },
                 {
@@ -2713,7 +2713,7 @@
                   "away_team": "Texas Tech Red Raiders",
                   "away_rank": 12,
                   "away_record": "0-0",
-                  "matchup_score": 80.2,
+                  "matchup_score": 80.3,
                   "channel": "CBS",
                   "venue": "Reser Stadium",
                   "neutral_site": false,
@@ -2728,7 +2728,7 @@
                     }
                   },
                   "is_nebraska": false,
-                  "matchup_rank": 12,
+                  "matchup_rank": 13,
                   "is_slot_pick": false
                 },
                 {
@@ -2741,7 +2741,7 @@
                   "away_team": "Iowa State Cyclones",
                   "away_rank": null,
                   "away_record": "0-0",
-                  "matchup_score": 91.3,
+                  "matchup_score": 91.5,
                   "channel": "NBC",
                   "venue": "Kinnick Stadium",
                   "neutral_site": false,
@@ -2791,7 +2791,7 @@
                   "away_team": "Tennessee Volunteers",
                   "away_rank": 20,
                   "away_record": "0-0",
-                  "matchup_score": 93.7,
+                  "matchup_score": 93.6,
                   "channel": "ESPN",
                   "venue": "Bobby Dodd Stadium",
                   "neutral_site": false,
@@ -2813,9 +2813,37 @@
             },
             {
               "slot": "Late Night",
-              "best_matchup_score": 78.6,
+              "best_matchup_score": 76.2,
               "pick_reason": "watchability",
               "games": [
+                {
+                  "id": "401864502",
+                  "start_time": "2026-09-13T02:00Z",
+                  "start_time_tbd": false,
+                  "home_team": "Air Force Falcons",
+                  "home_rank": null,
+                  "home_record": "0-0",
+                  "away_team": "North Dakota State Bison",
+                  "away_rank": null,
+                  "away_record": "1-0",
+                  "matchup_score": 76.2,
+                  "channel": "FS1",
+                  "venue": "Falcon Stadium",
+                  "neutral_site": false,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {},
+                      "moneyline": {}
+                    },
+                    "fanduel": {
+                      "spread": {},
+                      "moneyline": {}
+                    }
+                  },
+                  "is_nebraska": false,
+                  "matchup_rank": 8,
+                  "is_slot_pick": true
+                },
                 {
                   "id": "401856670",
                   "start_time": "2026-09-13T02:15Z",
@@ -2826,7 +2854,7 @@
                   "away_team": "Arkansas Razorbacks",
                   "away_rank": null,
                   "away_record": "0-0",
-                  "matchup_score": 78.6,
+                  "matchup_score": 78.5,
                   "channel": "ESPN",
                   "venue": "Rice-Eccles Stadium",
                   "neutral_site": false,
@@ -2836,11 +2864,11 @@
                       "moneyline": {
                         "home": {
                           "line": null,
-                          "american": -395
+                          "american": -380
                         },
                         "away": {
                           "line": null,
-                          "american": 310
+                          "american": 300
                         }
                       }
                     },
@@ -2873,42 +2901,14 @@
                     "winner": "Utah Utes",
                     "confidence": 78,
                     "ats_pick": "Utah Utes",
-                    "ats_confidence": 65,
-                    "analysis": "The Utah Utes host the Arkansas Razorbacks in a crucial early-season non-conference matchup during week two of the 2026 campaign. Utah enters this contest with a potent offensive attack that capitalized heavily on explosive plays in their season opener. Arkansas struggled defensively on the perimeter in their first game, exposing vulnerabilities that Utah's wide receiver corps is well-equipped to exploit. Furthermore, the hostile environment in Salt Lake City presents a distinct home-field advantage that heavily favors the Utes. Ultimately, Utah's balanced execution on both sides of the ball will allow them to secure a comfortable victory and cover the spread.",
-                    "splits_and_direction": "Approximately 68 percent of public bets are currently backing the Utah Utes to cover the 7.5-point spread and win on the moneyline. Reflecting this heavy one-way action, the home spread has ticked up slightly from an opening line of -7 while the moneyline has lengthened in favor of the Utes.",
-                    "display_text": "Summary: The Utah Utes host the Arkansas Razorbacks in a crucial early-season non-conference matchup during week two of the 2026 campaign. Utah enters this contest with a potent offensive attack that capitalized heavily on explosive plays in their season opener. Arkansas struggled defensively on the perimeter in their first game, exposing vulnerabilities that Utah's wide receiver corps is well-equipped to exploit. Furthermore, the hostile environment in Salt Lake City presents a distinct home-field advantage that heavily favors the Utes. Ultimately, Utah's balanced execution on both sides of the ball will allow them to secure a comfortable victory and cover the spread.\n\nSplits and Direction: Approximately 68 percent of public bets are currently backing the Utah Utes to cover the 7.5-point spread and win on the moneyline. Reflecting this heavy one-way action, the home spread has ticked up slightly from an opening line of -7 while the moneyline has lengthened in favor of the Utes.",
-                    "generated_at": "2026-08-29T10:43:04.598684+00:00",
-                    "odds_hash": "44ea764d791341ad",
+                    "ats_confidence": 70,
+                    "analysis": "The Utah Utes host the Arkansas Razorbacks in a crucial early-season matchup during week 2 of the 2026 college football slate. Utah enters this contest with a potent offensive attack that dominated their season opener through efficient passing and a relentless rushing attack. Arkansas struggled defensively in their first game of the 2026 campaign, exposing significant weaknesses in their secondary and run-stopping capabilities. Playing at home gives the Utes a distinct advantage as their crowd noise heavily disrupts opposing offensive play-calling. Consequently, Utah's balanced roster execution will allow them to control the clock and comfortably exceed the 7.5-point spread.",
+                    "splits_and_direction": "Based on early public tendencies, approximately 68 percent of spread bets and 75 percent of moneyline wagers are backing the favored Utah Utes at home. The point spread has moved slightly from an opening line of -7 up to -7.5, while the moneyline has ticked up in favor of the home team due to heavy early action.",
+                    "display_text": "Summary: The Utah Utes host the Arkansas Razorbacks in a crucial early-season matchup during week 2 of the 2026 college football slate. Utah enters this contest with a potent offensive attack that dominated their season opener through efficient passing and a relentless rushing attack. Arkansas struggled defensively in their first game of the 2026 campaign, exposing significant weaknesses in their secondary and run-stopping capabilities. Playing at home gives the Utes a distinct advantage as their crowd noise heavily disrupts opposing offensive play-calling. Consequently, Utah's balanced roster execution will allow them to control the clock and comfortably exceed the 7.5-point spread.\n\nSplits and Direction: Based on early public tendencies, approximately 68 percent of spread bets and 75 percent of moneyline wagers are backing the favored Utah Utes at home. The point spread has moved slightly from an opening line of -7 up to -7.5, while the moneyline has ticked up in favor of the home team due to heavy early action.",
+                    "generated_at": "2026-08-30T03:15:04.155411+00:00",
+                    "odds_hash": "f7499aab4d6ab821",
                     "model": "gemini-3.5-flash-lite"
                   },
-                  "is_slot_pick": true
-                },
-                {
-                  "id": "401864502",
-                  "start_time": "2026-09-13T02:00Z",
-                  "start_time_tbd": false,
-                  "home_team": "Air Force Falcons",
-                  "home_rank": null,
-                  "home_record": "0-0",
-                  "away_team": "North Dakota State Bison",
-                  "away_rank": null,
-                  "away_record": "0-0",
-                  "matchup_score": 85.8,
-                  "channel": "FS1",
-                  "venue": "Falcon Stadium",
-                  "neutral_site": false,
-                  "odds": {
-                    "draftkings": {
-                      "spread": {},
-                      "moneyline": {}
-                    },
-                    "fanduel": {
-                      "spread": {},
-                      "moneyline": {}
-                    }
-                  },
-                  "is_nebraska": false,
-                  "matchup_rank": 17,
                   "is_slot_pick": false
                 }
               ]
