@@ -101,7 +101,7 @@ def current_season_year():
 # since it isn't confirmed which exact string ESPN's API returns as the
 # broadcast shortName -- an unmatched variant here is harmless (it just
 # never matches _channel_tokens()), so both are kept for safety.
-MAIN_CHANNELS = {"ABC", "CBS", "NBC", "FOX", "ESPN", "ESPN2", "FS1", "CW", "The CW"}
+MAIN_CHANNELS = {"ABC", "CBS", "NBC", "FOX", "ESPN", "ESPN2", "FS1", "CW"}
 
 # Nebraska always gets pulled onto the board and always wins its time
 # slot's "Time Slot Most Watchable Game" pick, no matter its AP rank or
