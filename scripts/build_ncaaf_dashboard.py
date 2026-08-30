@@ -96,7 +96,12 @@ def current_season_year():
 # "Main channels" = national broadcast + flagship cable. Games on ESPNU,
 # SECN, ESPN+, streaming-only, etc. are filtered out. Edit this set to
 # widen or narrow what counts as a "main channel" game.
-MAIN_CHANNELS = {"ABC", "CBS", "NBC", "FOX", "ESPN", "ESPN2", "FS1"}
+# CW = The CW Network's college football package (ACC, Pac-12, Mountain
+# West games since the 2023 season). Both "CW" and "The CW" are listed
+# since it isn't confirmed which exact string ESPN's API returns as the
+# broadcast shortName -- an unmatched variant here is harmless (it just
+# never matches _channel_tokens()), so both are kept for safety.
+MAIN_CHANNELS = {"ABC", "CBS", "NBC", "FOX", "ESPN", "ESPN2", "FS1", "CW", "The CW"}
 
 # Nebraska always gets pulled onto the board and always wins its time
 # slot's "Time Slot Most Watchable Game" pick, no matter its AP rank or
