@@ -457,6 +457,26 @@ def _fuzzy_team(normalized_target, candidate_raw):
     if not target_words or not candidate_words:
         return False
 
+    # Explicit exception list for real, different schools whose core name
+    # is short enough that the character-overlap ratio below can't tell
+    # them apart no matter how the words are split (e.g. "Arkansas" vs
+    # "Kansas" -- 0.86 ratio even comparing only the non-shared words,
+    # well over the 0.72 cutoff; "Tulane" vs "Tulsa" is the same problem).
+    # Checked and blocked here, ahead of every other rule, rather than
+    # lowering the global ratio threshold, which risks rejecting genuine
+    # spelling-variant matches elsewhere. Add a pair here only once it's
+    # been confirmed as a real false-positive collision (verified against
+    # an actual SharpAPI dump), not preemptively.
+    _NEVER_MATCH_PAIRS = (
+        ("arkansas", "kansas"),
+        ("tulane", "tulsa"),
+    )
+    for word_a, word_b in _NEVER_MATCH_PAIRS:
+        if (word_a in target_words and word_b in candidate_words) or (
+            word_b in target_words and word_a in candidate_words
+        ):
+            return False
+
     disqualifying = {
         # Original
         "state", "tech", "international", "commonwealth",
@@ -508,8 +528,31 @@ def _fuzzy_team(normalized_target, candidate_raw):
     if any(w in disqualifying for w in symmetric_diff):
         return False
 
-    a = " ".join(sorted(target_words))
-    b = " ".join(sorted(candidate_words))
+    # Verified against a real SharpAPI dump: "Boise State" vs "Ohio State"
+    # scores 0.76 (over threshold) on the OLD full-word-set ratio below,
+    # purely because both contain "state" -- neither "boise" nor "ohio" is
+    # in the named disqualifying list, so the check above didn't catch it,
+    # and the shared word "state" was carrying most of the two strings'
+    # length, drowning out that "boise" and "ohio" don't overlap at all.
+    # That false match pulled an entire unrelated game's odds (Ohio State
+    # @ Oregon) into a Boise State @ Oregon matchup on the live board. Fix:
+    # score the ratio on the WORDS THAT DIFFER only, not the full name --
+    # a shared filler word like "state" or "university" should never be
+    # able to carry a match on its own.
+    target_extra = target_words - candidate_words
+    candidate_extra = candidate_words - target_words
+    if not target_extra or not candidate_extra:
+        # One side's words are fully contained in the other's (this is the
+        # subset case above having fallen through only because its extra
+        # word was short/disqualifying, e.g. "Miami" vs "Miami FL") --
+        # there's no non-shared wording left to meaningfully score. Real
+        # disambiguation for same-named schools (e.g. Miami FL vs Miami OH)
+        # comes from match_odds_for_game's own requirement that BOTH the
+        # home AND away team match, not from this function in isolation.
+        return True
+
+    a = " ".join(sorted(target_extra))
+    b = " ".join(sorted(candidate_extra))
     return difflib.SequenceMatcher(None, a, b).ratio() > 0.72
 
 
