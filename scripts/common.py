@@ -552,6 +552,29 @@ def match_odds_for_game(home_team, away_team, odds_rows, team_cache, row_claims)
     result = {"draftkings": {"spread": {}, "moneyline": {}}, "fanduel": {"spread": {}, "moneyline": {}}}
     rejected = 0
 
+    # SharpAPI's is_main_line/is_alternate_line flags are per-ROW, not
+    # per-line-pair -- verified against real dumps, for lopsided games
+    # (e.g. a 25+ point spread) only the FAVORITE's side gets is_main_line
+    # True; the underdog's mirrored line (e.g. -29.5 / +29.5, same market,
+    # same book) comes back is_alternate_line True even though it's not a
+    # genuine alternate, it's the other half of the same main line. The
+    # strict per-row filter below was dropping that underdog spread
+    # outright, which is why the away/underdog side of the spread table
+    # went blank specifically on blowout games. Fix: first find whichever
+    # magnitude IS confirmed main-line for each book, then also accept the
+    # opposite side's row if its line is that same magnitude (mirrored
+    # sign), even when SharpAPI's own flag on that specific row says
+    # alternate. A book with no confirmed main-line row at all falls back
+    # to the old strict behavior for that book (nothing to mirror against).
+    confirmed_main_abs_line = {}  # {book: abs(line)}
+    for row in candidates:
+        if _SPREAD_MARKET_ALIASES.get(row.get("market_type")) != "spread":
+            continue
+        if row.get("is_main_line") and row.get("line") is not None:
+            book = row.get("sportsbook")
+            if book not in confirmed_main_abs_line:
+                confirmed_main_abs_line[book] = abs(row["line"])
+
     for row in candidates:
         row_id = row.get("id")
         if row_id is not None:
@@ -575,23 +598,47 @@ def match_odds_for_game(home_team, away_team, odds_rows, team_cache, row_claims)
         # up randomly picking whichever alternate line happened to match
         # first. Moneyline has no alternates, so this only applies to spread.
         if market == "spread":
-            # 1. Explicitly drop known alternate lines
-            if row.get("is_alternate_line"):
+            line = row.get("line")
+            mirrors_confirmed_main = (
+                line is not None
+                and book in confirmed_main_abs_line
+                and abs(line) == confirmed_main_abs_line[book]
+            )
+
+            # 1. Explicitly drop known alternate lines -- unless it's
+            # actually the mirror of this book's confirmed main line (see
+            # comment above the confirmed_main_abs_line pass).
+            if row.get("is_alternate_line") and not mirrors_confirmed_main:
                 continue
-    
-            # 2. Explicitly require the main line flag (or accept None as a strict fallback)
-            if row.get("is_main_line") is False:
+
+            # 2. Explicitly require the main line flag (or accept None as a
+            # strict fallback) -- same mirror exception as above.
+            if row.get("is_main_line") is False and not mirrors_confirmed_main:
                 continue
                 
-        # Prefer SharpAPI's own selection_type field ("home"/"away", always
+        # Prefer SharpAPI's own team_side field ("home"/"away", always
         # relative to THIS row's own home_team/away_team) over parsing the
         # `selection` text -- selection is sometimes an abbreviated form
         # (e.g. "TEX Rangers", "Athletics" with no city) that doesn't always
         # fuzzy-match reliably against the full team name, which was
-        # silently dropping some games' odds. Only fall back to the old
-        # text-parsing approach for rows that don't have selection_type at
-        # all, so nothing that used to match stops matching.
-        row_side = row.get("selection_type")
+        # silently dropping some games' odds.
+        #
+        # team_side is used ahead of the superficially similar
+        # selection_type field: verified against real SharpAPI dumps,
+        # selection_type mislabels the AWAY team's own row as "home" for a
+        # cluster of lopsided games (e.g. Texas State @ Texas -- Texas
+        # State's row comes back with selection_type "home" even though
+        # it's the away team), which either drops that side's odds or lets
+        # it silently overwrite the real home team's entry -- the "away
+        # side always blank" bug seen on the board. team_side was checked
+        # against every mismatching row in that dump and was correct every
+        # time, so it's the trustworthy one; selection_type is kept only as
+        # a fallback for any row missing team_side. Only fall back further
+        # to the old text-parsing approach for rows that have neither
+        # field, so nothing that used to match stops matching.
+        row_side = row.get("team_side")
+        if row_side not in ("home", "away"):
+            row_side = row.get("selection_type")
         if row_side not in ("home", "away"):
             team_part, line_val = _parse_selection(row.get("selection", ""), market, row.get("line"))
             row_side = "home" if _fuzzy_team(home_norm, team_part) else (

@@ -725,6 +725,18 @@ def build_week(year, week, season_type, sharp_key, channels, gemini_key=None, ra
 
         home_team = home["team"].get("displayName")
         away_team = away["team"].get("displayName")
+        # For odds matching only (not display): ESPN's displayName includes
+        # the mascot (e.g. "Miami Hurricanes"), but SharpAPI names teams by
+        # school/state only (e.g. "Miami FL"). Matching the full mascot
+        # name against that dropped the game entirely for schools whose
+        # mascot + SharpAPI's state-code suffix push the fuzzy-match ratio
+        # below threshold (verified: "Miami Hurricanes" vs "Miami FL"
+        # scores 0.5, under the 0.72 cutoff -- see _fuzzy_team). ESPN's
+        # "location" field is the school/city name alone with no mascot
+        # (e.g. "Miami"), which matches SharpAPI's convention directly.
+        # Falls back to displayName if location is ever missing.
+        home_match_name = home["team"].get("location") or home_team
+        away_match_name = away["team"].get("location") or away_team
         home_id = home["team"].get("id")
         away_id = away["team"].get("id")
         is_nebraska = NEBRASKA_TEAM in (home_team or "", away_team or "")
@@ -774,7 +786,7 @@ def build_week(year, week, season_type, sharp_key, channels, gemini_key=None, ra
             odds = previous_entry.get("odds") or {}
             frozen_prediction_skip_ids.add(gid_str)
         else:
-            odds = match_odds_for_game(home_team, away_team, odds_rows, team_cache, row_claims)
+            odds = match_odds_for_game(home_match_name, away_match_name, odds_rows, team_cache, row_claims)
             if previous_odds_by_id:
                 odds = carry_forward_odds(odds, previous_odds_by_id.get(event.get("id")))
 
