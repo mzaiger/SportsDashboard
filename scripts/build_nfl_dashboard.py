@@ -420,26 +420,51 @@ def resolve_current(existing_data, forced_season_type=None, effective_today=None
     # guard below back onto the highest CONFIRMED preseason week, keeping
     # the board stuck on preseason indefinitely. Either way,
     # formatWeekLabel() ends up rendering a nonexistent "Preseason Week N"
-    # for the current_week+1 placeholder the boards also try to show. If
-    # the real last stored kickoff (NOT the highest stored week NUMBER --
-    # that can be a previously-built EMPTY placeholder week with no
-    # games, which has no kickoff to compare and would silently defeat
-    # this check) is already in the past, check whether regular season
-    # week 1 is posted yet and roll over to it instead of inventing
-    # another preseason week.
+    # for the current_week+1 placeholder the boards also try to show.
+    #
+    # This must only fire once the LAST real preseason week (week
+    # PRESEASON_WEEKS below) is fully done -- NOT after any earlier
+    # preseason week's own dead-day gap (e.g. between the HOF game and the
+    # next preseason week's games). The obvious-looking signal "does ESPN
+    # have regular season week 1 posted yet" is a bad gate on its own: the
+    # full regular-season schedule is announced months before the season
+    # even starts, so that's true for basically the entire preseason, not
+    # just the final gap. Gating on "the final preseason week's games have
+    # all already kicked off" is what actually distinguishes "still mid-
+    # preseason" from "preseason is genuinely over."
+    PRESEASON_WEEKS = 4  # ESPN's week numbering: 1 = Hall of Fame Game,
+                         # 2-4 = the three preseason games each team plays
+                         # under the current (since 2021) preseason format.
     if season_type == 1 and forced_season_type is None:
         stored_season_type = (existing_data or {}).get("season_type")
-        last_kickoff = latest_kickoff_overall(existing_data)
+        final_preseason_week = next(
+            (w for w in (existing_data or {}).get("weeks", []) if w.get("week") == PRESEASON_WEEKS),
+            None,
+        )
+        final_week_kickoffs = [
+            g.get("start_time")
+            for day in (final_preseason_week or {}).get("days", [])
+            for slot in day.get("time_slots", [])
+            for g in slot.get("games", [])
+            if g.get("start_time")
+        ]
+        parsed_kickoffs = []
+        for raw in final_week_kickoffs:
+            try:
+                parsed_kickoffs.append(datetime.fromisoformat(raw.replace("Z", "+00:00")))
+            except ValueError:
+                continue
+        last_kickoff = max(parsed_kickoffs) if parsed_kickoffs else None
         now = datetime.now(timezone.utc)
-        if last_kickoff is not None and last_kickoff < now and stored_season_type == 1:
+        if stored_season_type == 1 and last_kickoff is not None and last_kickoff < now:
             try:
                 reg_season_year = current_season_year()
                 reg_week1 = get_scoreboard(reg_season_year, 1, 2)
                 if reg_week1.get("events"):
-                    log("  NOTE: preseason has fully elapsed (last stored kickoff "
-                        f"{last_kickoff.isoformat()}) and regular season week 1 games "
-                        "are posted -- rolling over to season_type 2, week 1 instead of "
-                        "reporting another preseason week.")
+                    log(f"  NOTE: preseason week {PRESEASON_WEEKS} (the last real preseason "
+                        f"week) has fully elapsed (last kickoff {last_kickoff.isoformat()}) and "
+                        "regular season week 1 games are posted -- rolling over to "
+                        "season_type 2, week 1 instead of reporting another preseason week.")
                     return 1, 2
             except (requests.RequestException, ValueError) as exc:
                 log(f"  NOTE: couldn't check regular season week 1 availability ({exc}) -- "

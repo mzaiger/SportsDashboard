@@ -110,6 +110,50 @@ def current_season_year():
 # ESPN calls
 # ---------------------------------------------------------------------------
 
+def _extract_season_type(payload):
+    """Pull the numeric season type (1=preseason, 2=regular, 3=postseason)
+    out of an ESPN scoreboard response, same extraction build_nfl_
+    dashboard.py's own _extract_season_type() uses. Tries the top-level
+    `season.type` field first, then falls back to `leagues[0].season.type`.
+    Returns None if neither is present (caller decides the fallback --
+    see is_preseason_day() below)."""
+    raw = payload.get("season", {}).get("type")
+    if isinstance(raw, bool):
+        return None
+    if isinstance(raw, int):
+        return raw
+    if isinstance(raw, dict):
+        val = raw.get("type", raw.get("id"))
+        try:
+            return int(val)
+        except (TypeError, ValueError):
+            pass
+
+    leagues = payload.get("leagues") or [{}]
+    raw2 = (leagues[0].get("season") or {}).get("type")
+    if isinstance(raw2, int):
+        return raw2
+    if isinstance(raw2, dict):
+        val = raw2.get("type", raw2.get("id"))
+        try:
+            return int(val)
+        except (TypeError, ValueError):
+            pass
+    return None
+
+
+def is_preseason_day(scoreboard):
+    """Whether a fetched day's scoreboard is preseason (exhibition) games,
+    so build_day() can tag the day and the front end can show a
+    "Preseason" badge instead of treating them identically to real
+    regular/postseason games. Defaults to False (regular season) when
+    ESPN's response doesn't say -- silently mislabeling real games as
+    preseason would be worse than the reverse, which just leaves an
+    exhibition day unbadged."""
+    season_type = _extract_season_type(scoreboard)
+    return season_type == 1
+
+
 def get_scoreboard(date_str):
     """Fetch one day's scoreboard. IMPORTANT: ESPN's scoreboard endpoint
     does NOT return an empty event list for a date with no games -- it
@@ -322,7 +366,8 @@ def build_day(day, sharp_key, gemini_key=None, previous_odds_by_id=None,
     log(f"Fetching NBA schedule for {date_str}...")
     scoreboard = get_scoreboard(date_str)
     events = scoreboard.get("events", [])
-    log(f"  {len(events)} games")
+    is_preseason = is_preseason_day(scoreboard)
+    log(f"  {len(events)} games" + (" (preseason)" if is_preseason else ""))
 
     log("Fetching DraftKings/FanDuel NBA odds from SharpAPI...")
     day_str = day.isoformat()
@@ -460,6 +505,7 @@ def build_day(day, sharp_key, gemini_key=None, previous_odds_by_id=None,
         "date": day.isoformat(),
         "weekday": day.strftime("%A"),
         "game_count": len(all_games),
+        "is_preseason": is_preseason,
         "time_slots": time_slots,
     }
 
