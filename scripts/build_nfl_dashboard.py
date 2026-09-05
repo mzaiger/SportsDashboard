@@ -410,6 +410,36 @@ def resolve_current(existing_data, forced_season_type=None, effective_today=None
     else:
         espn_week, season_type = get_espn_current_state(as_of_date=effective_today)
 
+    # Preseason-to-regular-season rollover: there's a dead-week gap between
+    # the last preseason game (~Aug 29) and the regular-season opener
+    # (~Sept 9-10) with no NFL games at all. During that gap, ESPN's dated
+    # `today` lookup above has nothing to anchor "current" to and keeps
+    # reporting the just-finished preseason (season_type 1, stuck at its
+    # highest real week) instead of advancing -- which then makes
+    # formatWeekLabel() render a nonexistent "Preseason Week N" for the
+    # current_week+1 placeholder the boards also try to show. If the
+    # highest STORED preseason week has already fully kicked off, check
+    # whether regular season week 1 is posted yet and roll over to it
+    # instead of inventing another preseason week.
+    if season_type == 1 and forced_season_type is None:
+        highest_week, highest_last_kickoff = highest_stored_week_info(existing_data)
+        stored_season_type = (existing_data or {}).get("season_type")
+        now = datetime.now(timezone.utc)
+        if (highest_week is not None and highest_last_kickoff is not None
+                and highest_last_kickoff < now and stored_season_type == 1):
+            try:
+                reg_season_year = current_season_year()
+                reg_week1 = get_scoreboard(reg_season_year, 1, 2)
+                if reg_week1.get("events"):
+                    log("  NOTE: preseason has fully elapsed (last stored kickoff "
+                        f"{highest_last_kickoff.isoformat()}) and regular season week 1 games "
+                        "are posted -- rolling over to season_type 2, week 1 instead of "
+                        "reporting another preseason week.")
+                    return 1, 2
+            except (requests.RequestException, ValueError) as exc:
+                log(f"  NOTE: couldn't check regular season week 1 availability ({exc}) -- "
+                    f"keeping season_type 1 for now.")
+
     floor_week = earliest_unelapsed_stored_week(existing_data)
     if floor_week is not None and espn_week < floor_week - 1:
         fallback_week = floor_week - 1
