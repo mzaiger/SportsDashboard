@@ -413,26 +413,31 @@ def resolve_current(existing_data, forced_season_type=None, effective_today=None
     # Preseason-to-regular-season rollover: there's a dead-week gap between
     # the last preseason game (~Aug 29) and the regular-season opener
     # (~Sept 9-10) with no NFL games at all. During that gap, ESPN's dated
-    # `today` lookup above has nothing to anchor "current" to and keeps
-    # reporting the just-finished preseason (season_type 1, stuck at its
-    # highest real week) instead of advancing -- which then makes
-    # formatWeekLabel() render a nonexistent "Preseason Week N" for the
-    # current_week+1 placeholder the boards also try to show. If the
-    # highest STORED preseason week has already fully kicked off, check
-    # whether regular season week 1 is posted yet and roll over to it
-    # instead of inventing another preseason week.
+    # `today` lookup above has nothing to anchor "current" to and its
+    # answer for week/season_type is unreliable (observed returning
+    # week 1/season_type 1 out of nowhere) -- which then either gets
+    # trusted directly or, worse, gets overridden by the anti-regression
+    # guard below back onto the highest CONFIRMED preseason week, keeping
+    # the board stuck on preseason indefinitely. Either way,
+    # formatWeekLabel() ends up rendering a nonexistent "Preseason Week N"
+    # for the current_week+1 placeholder the boards also try to show. If
+    # the real last stored kickoff (NOT the highest stored week NUMBER --
+    # that can be a previously-built EMPTY placeholder week with no
+    # games, which has no kickoff to compare and would silently defeat
+    # this check) is already in the past, check whether regular season
+    # week 1 is posted yet and roll over to it instead of inventing
+    # another preseason week.
     if season_type == 1 and forced_season_type is None:
-        highest_week, highest_last_kickoff = highest_stored_week_info(existing_data)
         stored_season_type = (existing_data or {}).get("season_type")
+        last_kickoff = latest_kickoff_overall(existing_data)
         now = datetime.now(timezone.utc)
-        if (highest_week is not None and highest_last_kickoff is not None
-                and highest_last_kickoff < now and stored_season_type == 1):
+        if last_kickoff is not None and last_kickoff < now and stored_season_type == 1:
             try:
                 reg_season_year = current_season_year()
                 reg_week1 = get_scoreboard(reg_season_year, 1, 2)
                 if reg_week1.get("events"):
                     log("  NOTE: preseason has fully elapsed (last stored kickoff "
-                        f"{highest_last_kickoff.isoformat()}) and regular season week 1 games "
+                        f"{last_kickoff.isoformat()}) and regular season week 1 games "
                         "are posted -- rolling over to season_type 2, week 1 instead of "
                         "reporting another preseason week.")
                     return 1, 2
