@@ -152,12 +152,32 @@ def is_preseason_day(scoreboard):
     """Whether a fetched day's scoreboard is preseason (exhibition) games,
     so build_day() can tag the day and the front end can show a
     "Preseason" badge instead of treating them identically to real
-    regular/postseason games. Defaults to False (regular season) when
-    ESPN's response doesn't say -- silently mislabeling real games as
-    preseason would be worse than the reverse, which just leaves an
-    exhibition day unbadged."""
-    season_type = _extract_season_type(scoreboard)
-    return season_type == 1
+    regular/postseason games.
+
+    IMPORTANT: read season type off the EVENT itself, not the payload's
+    top-level "season"/"leagues[].season" field. That top-level field
+    reflects ESPN's real-world "current season" context as of whenever
+    the request happens to run -- not the date being queried. That's
+    harmless for same-day queries, but this app frequently queries dates
+    weeks or months ahead during the off-season preview (see
+    calendar_game_dates()), and in that case the top-level metadata just
+    describes whatever's currently active in the real world (typically
+    still the last completed season, since off-season has no "current"
+    season of its own) -- not the phase the requested date's games
+    actually belong to. Each event carries its own accurate season type,
+    so use that instead; only fall back to the payload-level field when
+    there's no event to read from (an empty day, where it does not
+    affect what gets displayed anyway).
+
+    Defaults to False (regular season) when nothing usable is found --
+    silently mislabeling real games as preseason would be worse than the
+    reverse, which just leaves an exhibition day unbadged."""
+    events = scoreboard.get("events") or []
+    if events:
+        season_type = _extract_season_type(events[0])
+        if season_type is not None:
+            return season_type == 1
+    return _extract_season_type(scoreboard) == 1
 
 
 def get_scoreboard(date_str):
