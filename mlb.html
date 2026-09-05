@@ -425,10 +425,18 @@
     text-transform:uppercase; letter-spacing:0.02em;
   }
   .day-heading .date{color:var(--dim); font-size:0.85rem;}
+  .day-heading .preseason-tag{
+    font-family:'JetBrains Mono',monospace; font-weight:600; font-size:0.68rem;
+    text-transform:uppercase; letter-spacing:0.04em;
+    color:var(--gold); border:1px solid rgba(var(--gold-rgb),0.5);
+    background:rgba(var(--gold-rgb),0.12);
+    padding:0.15rem 0.5rem; border-radius:999px;
+  }
   @media (max-width: 480px){
     .day-heading{gap:0.5rem;}
     .day-heading .weekday{font-size:1.2rem;}
     .day-heading .date{font-size:0.65rem;}
+    .day-heading .preseason-tag{font-size:0.6rem; padding:0.1rem 0.4rem;}
   }
   .day-heading .count{
     margin-left:auto; color:var(--dim); font-size:0.78rem;
@@ -932,6 +940,7 @@ function renderDay(day) {
     <div class="day-heading">
       <span class="weekday">${day.weekday}</span>
       <span class="date">${dateStr}</span>
+      ${day.is_preseason ? '<span class="preseason-tag">Spring Training</span>' : ''}
       <span class="count">${day.game_count} game${day.game_count === 1 ? '' : 's'}</span>
     </div>
     ${day.time_slots.map(renderSlot).join('')}
