@@ -442,18 +442,27 @@ function formatLockedLine(pick) {
   if (!pick || !pick.odds) return '';
   const entry = pick.odds.draftkings || pick.odds.fanduel;
   if (!entry) return '';
-  const raw = pick.market === 'spread' ? entry.line : entry.american;
+  const raw = (pick.market === 'spread' || pick.market === 'total') ? entry.line : entry.american;
   if (raw === undefined || raw === null || raw === '') return '';
   const n = Number(raw);
   if (Number.isNaN(n)) return '';
   return ` (${n > 0 ? '+' : ''}${n})`;
 }
-// Shown inside the pick toolbar, under the 4 buttons, once a pick has
+
+// Short "ATS"/"ML"/"O/U" label for a pick's market, used on the payout
+// line and in exports/summaries so each bet type reads on its own.
+function marketLabel(market) {
+  return market === 'spread' ? 'ATS' : market === 'total' ? 'O/U' : 'ML';
+}
+
+// Shown inside the pick toolbar, under the buttons, once a pick has
 // been made -- what a $10 and a $100 bet on the picked side would pay out
 // (profit only, not counting the stake back), using whichever payout was
 // locked in at pick time (see togglePick above). Falls back to computing
 // live from the pick's stored odds snapshot for a pick made before that
 // locking existed (an older cookie won't have payout10/payout100 at all).
+// Labeled with the bet type (ATS/ML/O-U) so it's clear which of the three
+// separately-tracked bets this payout belongs to.
 function renderPayoutSummary(pick) {
   if (!pick) return '';
   let p10 = pick.payout10;
@@ -465,12 +474,14 @@ function renderPayoutSummary(pick) {
     p100 = calcPayout(americanOdds, 100);
   }
   if (p10 === null || p10 === undefined || p100 === null || p100 === undefined) return '';
-  return `<div class="payout-summary">Win $${p10.toFixed(2)} on $10</div>`;
+  return `<div class="payout-summary">Win $${p10.toFixed(2)} on $10 for ${marketLabel(pick.market)}</div>`;
 }
-// The 4-button toolbar (away/home x spread/moneyline) for one game card.
-// Once a game is final (gScore.status === 'final'), the buttons render
-// disabled -- the pick made (if any) still shows, but can no longer be
-// changed after the fact.
+// The pick toolbar for one game card: away/home x spread/moneyline, plus
+// Over/Under (the total's number is baked right into the button label,
+// since there's no team name to hang it on the way ATS/ML have). Once a
+// game is final (gScore.status === 'final'), the buttons render disabled
+// -- the pick made (if any) still shows, but can no longer be changed
+// after the fact.
 function renderPickToolbar(sport, g, gScore) {
   const pick = getPick(sport, g.id);
   const locked = isPickLocked(gScore, g);
@@ -480,11 +491,16 @@ function renderPickToolbar(sport, g, gScore) {
     fanduel: (g.odds?.fanduel?.[market]?.[side]) || null,
   });
 
+  const totalLine = _currentTotalLine(g);
+  const totalLineSuffix = (totalLine !== null && totalLine !== undefined) ? ` ${totalLine}` : '';
+
   const opts = [
     { market: 'spread', side: 'away', label: `${g.away_team} ATS` },
     { market: 'spread', side: 'home', label: `${g.home_team} ATS` },
     { market: 'moneyline', side: 'away', label: `${g.away_team} ML` },
     { market: 'moneyline', side: 'home', label: `${g.home_team} ML` },
+    { market: 'total', side: 'over', label: `Over${totalLineSuffix} Total` },
+    { market: 'total', side: 'under', label: `Under${totalLineSuffix} Total` },
   ];
 
   const btns = opts.map(o => {
@@ -524,6 +540,25 @@ function oddsHitClass(sport, gameId, book, market, side, entry, gScore) {
 
   if (gScore.home_score === null || gScore.home_score === undefined) return '';
   if (gScore.away_score === null || gScore.away_score === undefined) return '';
+
+  if (market === 'total') {
+    const home = Number(gScore.home_score);
+    const away = Number(gScore.away_score);
+    if (Number.isNaN(home) || Number.isNaN(away)) return '';
+
+    const lockedEntry = getLockedOddsEntry(sport, gameId, market, side, book);
+    const source = lockedEntry || entry;
+    if (!source || source.line === null || source.line === undefined) return '';
+    const line = Number(source.line);
+    if (Number.isNaN(line)) return '';
+
+    const combined = home + away;
+    // Currently pushing live game or final push: no loser (same neutral
+    // convention as spread's exact-margin push, above).
+    if (combined === line) return 'hit';
+    const overHits = combined > line;
+    return (side === 'over') === overHits ? 'hit' : 'miss';
+  }
 
   const sideScore = Number(side === 'home' ? gScore.home_score : gScore.away_score);
   const otherScore = Number(side === 'home' ? gScore.away_score : gScore.home_score);
@@ -625,6 +660,26 @@ function _myPickResult(g, gScore, pick) {
     return result > 0 ? 'hit' : 'miss';
   }
 
+  if (pick.market === 'total') {
+    let line = null;
+    if (pick.odds) {
+      const entry = pick.odds.draftkings || pick.odds.fanduel;
+      if (entry && entry.line !== undefined && entry.line !== null) line = Number(entry.line);
+    }
+    if (line === null) {
+      // Pick made before line-locking existed -- fall back to today's
+      // live total line.
+      const live = _currentTotalLine(g);
+      line = (live !== null && live !== undefined) ? Number(live) : null;
+    }
+    if (line === null || Number.isNaN(line)) return null;
+
+    const combined = final.home + final.away;
+    if (combined === line) return 'hit'; // push -> hit, same convention as spread/oddsHitClass
+    const overHits = combined > line;
+    return (pick.side === 'over') === overHits ? 'hit' : 'miss';
+  }
+
   return null;
 }
 
@@ -716,7 +771,8 @@ function computeMoneyRecordAllTime(datasets, scores, filterState) {
   let net = 0, graded = 0;
   const wantMarket = filterState && filterState.confType === 'ml' ? 'moneyline'
     : filterState && filterState.confType === 'ats' ? 'spread'
-    : null; // null = both markets count
+    : filterState && filterState.confType === 'ou' ? 'total'
+    : null; // null = all markets count
 
   (datasets || []).forEach(({ sport, data }) => {
     if (!data) return;
@@ -806,12 +862,24 @@ function renderGeminiBlock(g) {
                : p.confidence;
   const atsConf = fmt(atsRaw);
 
-  // Splits and Direction: dedicated field from newer cache entries, with a
-  // fallback that pulls it out of display_text for any older cached
-  // predictions that predate this field.
+  const ouConf = fmt(p.total_confidence);
+
+  // Analysis / Over-Under / Splits: dedicated fields from newer cache
+  // entries, with a fallback that pulls each out of display_text for any
+  // older cached predictions that predate the split-out fields.
+  let analysis = p.analysis || '';
+  if (!analysis && p.display_text) {
+    const match = p.display_text.match(/Analysis:\s*([\s\S]*?)(?:\n\n|$)/i);
+    if (match) analysis = match[1].trim();
+  }
+  let ouAnalysis = p.ou_analysis || '';
+  if (!ouAnalysis && p.display_text) {
+    const match = p.display_text.match(/Over Under:\s*([\s\S]*?)(?:\n\n|$)/i);
+    if (match) ouAnalysis = match[1].trim();
+  }
   let splits = p.splits_and_direction || '';
   if (!splits && p.display_text) {
-    const match = p.display_text.match(/Splits and Direction:\s*([\s\S]*)/i);
+    const match = p.display_text.match(/(?:Splits and Direction|Splits):\s*([\s\S]*)/i);
     if (match) splits = match[1].trim();
   }
 
@@ -822,6 +890,7 @@ function renderGeminiBlock(g) {
       <span class="gemini-picks-summary">
         <span class="gemini-toggle-winner"><span class="gemini-pick-label">ML (${conf}):</span><span class="gemini-pick-team">${p.winner || 'TBD'}</span></span>
         ${p.ats_pick ? `<span class="gemini-toggle-ats"><span class="gemini-pick-label">ATS (${atsConf}):</span><span class="gemini-pick-team">${p.ats_pick}</span></span>` : ''}
+        ${p.total_pick ? `<span class="gemini-toggle-ou"><span class="gemini-pick-label">O/U (${ouConf}):</span><span class="gemini-pick-team">${p.total_pick}</span></span>` : ''}
       </span>
       <span class="gemini-caret">▾</span>
     </span>
@@ -829,10 +898,13 @@ function renderGeminiBlock(g) {
   <div class="gemini-panel" hidden>
     <div class="gemini-panel-row"><span>Winner</span> <span class="gemini-value">${p.winner || '—'}</span></div>
     ${p.ats_pick ? `<div class="gemini-panel-row"><span>ATS</span> <span class="gemini-value">${p.ats_pick}</span></div>` : ''}
+    ${p.total_pick ? `<div class="gemini-panel-row"><span>O/U</span> <span class="gemini-value">${p.total_pick}</span></div>` : ''}
     <div class="gemini-panel-row"><span>ML Confidence</span> <span class="gemini-value">${conf}</span></div>
     ${p.ats_pick ? `<div class="gemini-panel-row"><span>ATS Confidence</span> <span class="gemini-value">${atsConf}</span></div>` : ''}
-    <p class="gemini-analysis"><strong>Analysis:</strong> ${p.analysis || ''}</p>
-    ${splits ? `<p class="gemini-analysis"><strong>Splits and Direction:</strong> ${splits}</p>` : ''}
+    ${p.total_pick ? `<div class="gemini-panel-row"><span>O/U Confidence</span> <span class="gemini-value">${ouConf}</span></div>` : ''}
+    <p class="gemini-analysis"><strong>Analysis:</strong> ${analysis}</p>
+    ${ouAnalysis ? `<p class="gemini-analysis"><strong>Over Under:</strong> ${ouAnalysis}</p>` : ''}
+    ${splits ? `<p class="gemini-analysis"><strong>Splits:</strong> ${splits}</p>` : ''}
   </div>`;
 }
 
@@ -985,7 +1057,10 @@ function getFilterState() {
   return {
     bestMatchupOnly: !!(stored && stored.bestMatchupOnly),
     minConf: (stored && Number.isInteger(stored.minConf)) ? stored.minConf : 0,
-    confType: (stored && (stored.confType === 'ats' || stored.confType === 'ml' || stored.confType === 'both'))
+    // 'both' is the internal value for the "All" pill (kept as-is so old
+    // localStorage/filter-state values don't get invalidated) -- 'ou' is
+    // the Over/Under confidence-type option, alongside 'ml'/'ats'.
+    confType: (stored && (stored.confType === 'ats' || stored.confType === 'ml' || stored.confType === 'ou' || stored.confType === 'both'))
       ? stored.confType : 'both',
   };
 }
@@ -1012,18 +1087,22 @@ function gamePassesFilters(g, state) {
       if ((pred.ats_confidence ?? 0) < state.minConf) return false;
     } else if (state.confType === 'ml') {
       if ((pred.confidence ?? 0) < state.minConf) return false;
+    } else if (state.confType === 'ou') {
+      if (!pred.total_pick) return false;
+      if ((pred.total_confidence ?? 0) < state.minConf) return false;
     } else {
-      // 'all' -- pass if EITHER market meets the threshold
+      // 'all' -- pass if ANY of the three markets meets the threshold
       const mlOk = (pred.confidence ?? 0) >= state.minConf;
       const atsOk = pred.ats_pick && (pred.ats_confidence ?? 0) >= state.minConf;
-      if (!mlOk && !atsOk) return false;
+      const ouOk = pred.total_pick && (pred.total_confidence ?? 0) >= state.minConf;
+      if (!mlOk && !atsOk && !ouOk) return false;
     }
   }
   return true;
 }
 
 // Pick-market-based filter -- used on picks.html instead of
-// gamePassesFilters() above, since the Picks page's ML/ATS/All toggle
+// gamePassesFilters() above, since the Picks page's ML/ATS/O-U/All toggle
 // filters by which market YOUR OWN PICK was made on (not by Gemini's
 // prediction confidence for the game in general -- Gemini might not have
 // even picked the same side you did). The confidence floor, when set,
@@ -1033,14 +1112,17 @@ function gamePassesFilters(g, state) {
 function pickPassesMarketFilter(sport, g, state) {
   const pick = getPick(sport, g.id);
   if (!pick) return false;
-  const pickIsSpread = pick.market === 'spread';
-  if (state.confType === 'ats' && !pickIsSpread) return false;
-  if (state.confType === 'ml' && pickIsSpread) return false;
+  if (state.confType === 'ats' && pick.market !== 'spread') return false;
+  if (state.confType === 'ml' && pick.market !== 'moneyline') return false;
+  if (state.confType === 'ou' && pick.market !== 'total') return false;
   if (state.minConf > 0) {
     const pred = g.gemini_prediction;
     if (!pred) return false;
-    const relevantConf = pickIsSpread ? pred.ats_confidence : pred.confidence;
-    if (pickIsSpread && !pred.ats_pick) return false;
+    const relevantConf = pick.market === 'spread' ? pred.ats_confidence
+      : pick.market === 'total' ? pred.total_confidence
+      : pred.confidence;
+    if (pick.market === 'spread' && !pred.ats_pick) return false;
+    if (pick.market === 'total' && !pred.total_pick) return false;
     if ((relevantConf ?? 0) < state.minConf) return false;
   }
   return true;
@@ -1128,6 +1210,28 @@ function _finalScore(gScore) {
   return { home: gScore.home_score, away: gScore.away_score };
 }
 
+// Today's live total (Over/Under) line for a game -- DraftKings first,
+// FanDuel fallback, same book-preference order used everywhere else on
+// the board. Over and Under share the identical line number, so either
+// side's `line` field (whichever is posted) works.
+function _currentTotalLine(g) {
+  const dkTotal = g.odds && g.odds.draftkings && g.odds.draftkings.total;
+  const fdTotal = g.odds && g.odds.fanduel && g.odds.fanduel.total;
+  const dkLine = dkTotal && (dkTotal.over || dkTotal.under)
+    ? (dkTotal.over ? dkTotal.over.line : dkTotal.under.line) : null;
+  const fdLine = fdTotal && (fdTotal.over || fdTotal.under)
+    ? (fdTotal.over ? fdTotal.over.line : fdTotal.under.line) : null;
+  return (dkLine !== null && dkLine !== undefined) ? dkLine : fdLine;
+}
+
+// Today's live odds entry ({line, american}) for one side ("over"/"under")
+// of the total market -- DraftKings first, FanDuel fallback.
+function _totalOddsEntry(g, side) {
+  const dk = g.odds && g.odds.draftkings && g.odds.draftkings.total && g.odds.draftkings.total[side];
+  const fd = g.odds && g.odds.fanduel && g.odds.fanduel.total && g.odds.fanduel.total[side];
+  return dk || fd || null;
+}
+
 // Same idea as filterWeeksForDisplay, but ONLY applies bestMatchupOnly --
 // never minConf. Used by the accuracy.html all-time aggregations
 // (computeGeminiAccuracyAllTime / computeGeminiMoneyRecordAllTime) instead
@@ -1175,7 +1279,7 @@ function filterWeeksByBestMatchupOnly(weeks, state) {
 // alone could show a smaller total than "Both" did. That's fixed by
 // gating here, per market, instead.)
 function computeGeminiAccuracy(datasets, scores, minConf) {
-  let mlTotal = 0, mlCorrect = 0, atsTotal = 0, atsCorrect = 0;
+  let mlTotal = 0, mlCorrect = 0, atsTotal = 0, atsCorrect = 0, ouTotal = 0, ouCorrect = 0;
   // Distinct games (not predictions) that have SOME Gemini prediction
   // but haven't finished yet -- one count per game, even if it has both
   // a winner pick and an ATS pick still pending.
@@ -1190,12 +1294,13 @@ function computeGeminiAccuracy(datasets, scores, minConf) {
 
         const mlEligible = !!pred.winner && (pred.confidence ?? 0) >= conf;
         const atsEligible = !!pred.ats_pick && (pred.ats_confidence ?? 0) >= conf;
-        if (!mlEligible && !atsEligible) return;
+        const ouEligible = !!pred.total_pick && (pred.total_confidence ?? 0) >= conf;
+        if (!mlEligible && !atsEligible && !ouEligible) return;
 
         const gScore = (scores[sport] || {})[String(g.id)];
         const final = _finalScore(gScore);
         if (!final) {
-          if (mlEligible || atsEligible) ungradedGameIds.add(`${sport}:${g.id}`);
+          if (mlEligible || atsEligible || ouEligible) ungradedGameIds.add(`${sport}:${g.id}`);
           return;
         }
 
@@ -1224,17 +1329,30 @@ function computeGeminiAccuracy(datasets, scores, minConf) {
             }
           }
         }
+
+        if (ouEligible) {
+          const line = _currentTotalLine(g);
+          if (line !== null && line !== undefined) {
+            const combined = final.home + final.away;
+            if (combined !== line) {
+              const actualResult = combined > line ? 'Over' : 'Under';
+              ouTotal++;
+              if (pred.total_pick === actualResult) ouCorrect++;
+            }
+          }
+        }
       });
     })));
   });
   return {
     mlPct: mlTotal ? Math.round((mlCorrect / mlTotal) * 100) : null,
     atsPct: atsTotal ? Math.round((atsCorrect / atsTotal) * 100) : null,
+    ouPct: ouTotal ? Math.round((ouCorrect / ouTotal) * 100) : null,
     // Raw counts, in addition to the rounded percentages above -- added
     // for accuracy.html's all-time breakdown (which wants to show
     // "89/142" alongside "63%"), but harmless for existing callers
     // (picks.html) which only read the *Pct fields.
-    mlTotal, mlCorrect, atsTotal, atsCorrect,
+    mlTotal, mlCorrect, atsTotal, atsCorrect, ouTotal, ouCorrect,
     ungraded: ungradedGameIds.size,
   };
 }
@@ -1275,8 +1393,9 @@ function computeGeminiMoneyRecordAllTime(datasets, scores, filterState) {
     sport,
     data: data ? { ...data, weeks: filterWeeksByBestMatchupOnly(data.weeks || [], filterState) } : data,
   }));
-  const wantMl = !filterState || filterState.confType !== 'ats';
-  const wantAts = !filterState || filterState.confType !== 'ml';
+  const wantMl = !filterState || filterState.confType === 'both' || filterState.confType === 'ml';
+  const wantAts = !filterState || filterState.confType === 'both' || filterState.confType === 'ats';
+  const wantOu = !filterState || filterState.confType === 'both' || filterState.confType === 'ou';
   const conf = (filterState && filterState.minConf) || 0;
 
   let net = 0, graded = 0;
@@ -1326,6 +1445,24 @@ function computeGeminiMoneyRecordAllTime(datasets, scores, filterState) {
             }
           }
         }
+
+        if (wantOu && pred.total_pick && (pred.total_confidence ?? 0) >= conf) {
+          const line = _currentTotalLine(g);
+          if (line !== null && line !== undefined) {
+            const combined = final.home + final.away;
+            if (combined !== line) {
+              const actualResult = combined > line ? 'Over' : 'Under';
+              const side = pred.total_pick === 'Over' ? 'over' : 'under';
+              const entry = _totalOddsEntry(g, side);
+              const american = entry ? entry.american : null;
+              if (american !== null && american !== undefined) {
+                if (pred.total_pick === actualResult) net += (calcPayout(american, 10) || 0);
+                else net -= 10;
+                graded++;
+              }
+            }
+          }
+        }
       });
     })));
   });
@@ -1350,7 +1487,8 @@ function computeMyAccuracyAllTime(datasets, scores, filterState) {
   let correct = 0, total = 0, ungraded = 0;
   const wantMarket = filterState && filterState.confType === 'ml' ? 'moneyline'
     : filterState && filterState.confType === 'ats' ? 'spread'
-    : null; // null = both markets count
+    : filterState && filterState.confType === 'ou' ? 'total'
+    : null; // null = all markets count
 
   (datasets || []).forEach(({ sport, data }) => {
     if (!data) return;
@@ -1396,6 +1534,7 @@ function computeGeminiAccuracyOnMyPicks(datasets, scores, filterState) {
   let correct = 0, total = 0;
   const wantMarket = filterState && filterState.confType === 'ml' ? 'moneyline'
     : filterState && filterState.confType === 'ats' ? 'spread'
+    : filterState && filterState.confType === 'ou' ? 'total'
     : null;
 
   (datasets || []).forEach(({ sport, data }) => {
@@ -1435,6 +1574,15 @@ function computeGeminiAccuracyOnMyPicks(datasets, scores, filterState) {
           const coveringTeam = margin > 0 ? g.home_team : g.away_team;
           total++;
           if (_normalizeAtsPick(pred.ats_pick) === coveringTeam) correct++;
+        } else if (pick.market === 'total') {
+          if (!pred.total_pick) return;
+          const line = _currentTotalLine(g);
+          if (line === null || line === undefined) return;
+          const combined = final.home + final.away;
+          if (combined === line) return; // push -- not a right/wrong result for Gemini's pick
+          const actualResult = combined > line ? 'Over' : 'Under';
+          total++;
+          if (pred.total_pick === actualResult) correct++;
         }
       });
     })));
@@ -1446,12 +1594,12 @@ function computeGeminiAccuracyOnMyPicks(datasets, scores, filterState) {
 // Single-percentage accuracy for the Picks page's Gemini-accuracy stat
 // circle -- Gemini's accuracy on just the games you picked (see
 // computeGeminiAccuracyOnMyPicks), in whichever market the filter bar has
-// selected. `sub` is 'ML'/'ATS'/'Both' for the tag under the circle;
+// selected. `sub` is 'ML'/'ATS'/'O/U'/'All' for the tag under the circle;
 // `correct`/`total` are the circle's second line ("x/x").
 function singleGeminiAccuracy(datasets, scores, filterState) {
   const confType = filterState.confType;
   const acc = computeGeminiAccuracyOnMyPicks(datasets, scores, filterState);
-  const sub = confType === 'ml' ? 'ML' : confType === 'ats' ? 'ATS' : 'Both';
+  const sub = confType === 'ml' ? 'ML' : confType === 'ats' ? 'ATS' : confType === 'ou' ? 'O/U' : 'All';
   return { pct: acc.pct, sub, correct: acc.correct, total: acc.total };
 }
 

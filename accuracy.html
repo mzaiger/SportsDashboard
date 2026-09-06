@@ -370,9 +370,10 @@
     <button type="button" class="filter-pill" id="bestMatchupOnly">Best Matchups</button>
     <div class="filter-conf-group">
       <div class="conf-type-toggle">
-        <button type="button" class="conf-type-btn" data-conftype="both">Both</button>
+        <button type="button" class="conf-type-btn" data-conftype="both">All</button>
         <button type="button" class="conf-type-btn" data-conftype="ml">ML</button>
         <button type="button" class="conf-type-btn" data-conftype="ats">ATS</button>
+        <button type="button" class="conf-type-btn" data-conftype="ou">O/U</button>
       </div>
       <div class="filter-conf">
         <label for="minConfSelect">Confidence:</label>
@@ -446,6 +447,19 @@
         <div class="frac" id="atsMyFrac">Loading&hellip;</div>
       </div>
     </div>
+    <div class="big-stat">
+      <div class="big-stat-col">
+        <div class="label" id="ouLabel">GEMINI O/U Accuracy</div>
+        <div class="pct" id="ouPct">&mdash;</div>
+        <div class="frac" id="ouFrac">Loading&hellip;</div>
+      </div>
+      <div class="big-stat-divider"></div>
+      <div class="big-stat-col my-accuracy-col">
+        <div class="label">My O/U Accuracy</div>
+        <div class="pct" id="ouMyPct">&mdash;</div>
+        <div class="frac" id="ouMyFrac">Loading&hellip;</div>
+      </div>
+    </div>
   </div>
 
   <div class="big-stats">
@@ -471,6 +485,7 @@
           <th>Sport</th>
           <th id="geminiByMlHeader">ML Accuracy</th>
           <th id="geminiByAtsHeader">ATS Accuracy</th>
+          <th id="geminiByOuHeader">O/U Accuracy</th>
           <th>Closed</th>
           <th>Open</th>
         </tr>
@@ -487,6 +502,7 @@
           <th>Sport</th>
           <th id="myByMlHeader">ML Accuracy</th>
           <th id="myByAtsHeader">ATS Accuracy</th>
+          <th id="myByOuHeader">O/U Accuracy</th>
           <th>Closed</th>
           <th>Open</th>
         </tr>
@@ -634,26 +650,33 @@ function fmtMyPct(pct) {
 function renderAccuracy(datasets, scores, state) {
   const overall = computeGeminiAccuracyAllTime(datasets, scores, state);
 
-  const mlApplies = state.confType !== 'ats';
-  const atsApplies = state.confType !== 'ml';
+  const mlApplies = state.confType === 'both' || state.confType === 'ml';
+  const atsApplies = state.confType === 'both' || state.confType === 'ats';
+  const ouApplies = state.confType === 'both' || state.confType === 'ou';
 
   document.getElementById('mlLabel').innerHTML = buildLabelHTML('Gemini ML Accuracy', state, mlApplies, true);
   document.getElementById('mlPct').innerHTML = mlApplies ? fmtPct(overall.mlPct) : 'NA';
   document.getElementById('mlFrac').textContent = !mlApplies
-    ? 'Excluded by ATS-only filter'
+    ? 'Excluded by the current filter'
     : (overall.mlTotal ? `${overall.mlCorrect}/${overall.mlTotal} correct` : 'No graded games match these filters');
 
   document.getElementById('atsLabel').innerHTML = buildLabelHTML('Gemini ATS Accuracy', state, atsApplies, true);
   document.getElementById('atsPct').innerHTML = atsApplies ? fmtPct(overall.atsPct) : 'NA';
   document.getElementById('atsFrac').textContent = !atsApplies
-    ? 'Excluded by ML-only filter'
+    ? 'Excluded by the current filter'
     : (overall.atsTotal ? `${overall.atsCorrect}/${overall.atsTotal} correct` : 'No graded games match these filters');
 
-  // "My Accuracy" columns side by side with Gemini's in the same two
+  document.getElementById('ouLabel').innerHTML = buildLabelHTML('Gemini O/U Accuracy', state, ouApplies, true);
+  document.getElementById('ouPct').innerHTML = ouApplies ? fmtPct(overall.ouPct) : 'NA';
+  document.getElementById('ouFrac').textContent = !ouApplies
+    ? 'Excluded by the current filter'
+    : (overall.ouTotal ? `${overall.ouCorrect}/${overall.ouTotal} correct` : 'No graded games match these filters');
+
+  // "My Accuracy" columns side by side with Gemini's in the same three
   // cards -- graded against the user's OWN saved picks, restricted to
   // that card's market (moneyline for the ML card, spread for the ATS
-  // card), honoring bestMatchupOnly but ignoring the confidence
-  // threshold entirely (see computeMyAccuracyAllTime).
+  // card, total for the O/U card), honoring bestMatchupOnly but ignoring
+  // the confidence threshold entirely (see computeMyAccuracyAllTime).
   const myMl = computeMyAccuracyAllTime(datasets, scores, { ...state, confType: 'ml' });
   document.getElementById('mlMyPct').innerHTML = fmtMyPct(myMl.pct);
   document.getElementById('mlMyFrac').textContent = myMl.total ? `${myMl.correct}/${myMl.total} correct` : 'No picks match these filters';
@@ -662,8 +685,12 @@ function renderAccuracy(datasets, scores, state) {
   document.getElementById('atsMyPct').innerHTML = fmtMyPct(myAts.pct);
   document.getElementById('atsMyFrac').textContent = myAts.total ? `${myAts.correct}/${myAts.total} correct` : 'No picks match these filters';
 
+  const myOu = computeMyAccuracyAllTime(datasets, scores, { ...state, confType: 'ou' });
+  document.getElementById('ouMyPct').innerHTML = fmtMyPct(myOu.pct);
+  document.getElementById('ouMyFrac').textContent = myOu.total ? `${myOu.correct}/${myOu.total} correct` : 'No picks match these filters';
+
   // Total Winnings -- Gemini's side is a hypothetical "flat $10 on every
-  // Gemini pick" and DOES honor Best Matchups/Confidence/ML-ATS-Both,
+  // Gemini pick" and DOES honor Best Matchups/Confidence/ML-ATS-O-U-All,
   // same as Gemini's accuracy numbers above. My side reuses the same
   // Best-Matchups-only rule as My Accuracy (see computeMoneyRecordAllTime
   // for why confidence/market are ignored there).
@@ -693,6 +720,7 @@ function renderAccuracy(datasets, scores, state) {
   // the top cards, since both filters affect Gemini's own numbers.
   document.getElementById('geminiByMlHeader').innerHTML = buildLabelHTML('ML Accuracy', state, mlApplies, true);
   document.getElementById('geminiByAtsHeader').innerHTML = buildLabelHTML('ATS Accuracy', state, atsApplies, true);
+  document.getElementById('geminiByOuHeader').innerHTML = buildLabelHTML('O/U Accuracy', state, ouApplies, true);
 
   const sportLabels = { cfb: 'NCAAF', nfl: 'NFL', mlb: 'MLB', nba: 'NBA', ncaamb: 'NCAAMB', nhl: 'NHL' };
 
@@ -710,19 +738,24 @@ function renderAccuracy(datasets, scores, state) {
 
   const geminiRows = datasets.map(({ sport, data }) => {
     const acc = computeGeminiAccuracyAllTime([{ sport, data }], scores, state);
-    const closed = Math.max(acc.mlTotal, acc.atsTotal);
+    const closed = Math.max(acc.mlTotal, acc.atsTotal, acc.ouTotal);
     const mlMoney = mlApplies ? computeGeminiMoneyRecordAllTime([{ sport, data }], scores, { ...state, confType: 'ml' }) : null;
     const atsMoney = atsApplies ? computeGeminiMoneyRecordAllTime([{ sport, data }], scores, { ...state, confType: 'ats' }) : null;
+    const ouMoney = ouApplies ? computeGeminiMoneyRecordAllTime([{ sport, data }], scores, { ...state, confType: 'ou' }) : null;
     const mlCell = mlApplies
       ? `${fmtPct(acc.mlPct)}${acc.mlTotal ? `<span class="cell-frac">${acc.mlCorrect}/${acc.mlTotal}</span>` : ''}${moneyLineHTML(mlMoney)}`
       : 'NA';
     const atsCell = atsApplies
       ? `${fmtPct(acc.atsPct)}${acc.atsTotal ? `<span class="cell-frac">${acc.atsCorrect}/${acc.atsTotal}</span>` : ''}${moneyLineHTML(atsMoney)}`
       : 'NA';
+    const ouCell = ouApplies
+      ? `${fmtPct(acc.ouPct)}${acc.ouTotal ? `<span class="cell-frac">${acc.ouCorrect}/${acc.ouTotal}</span>` : ''}${moneyLineHTML(ouMoney)}`
+      : 'NA';
     return `<tr>
       <td class="sport-name">${sportLabels[sport] || sport}</td>
       <td class="pct-cell">${mlCell}</td>
       <td class="pct-cell">${atsCell}</td>
+      <td class="pct-cell">${ouCell}</td>
       <td>${closed || 0}</td>
       <td>${acc.ungraded || 0}</td>
     </tr>`;
@@ -733,20 +766,25 @@ function renderAccuracy(datasets, scores, state) {
   // tag (see buildLabelHTML's includeConfidence param above).
   document.getElementById('myByMlHeader').innerHTML = buildLabelHTML('ML Accuracy', state, true, false);
   document.getElementById('myByAtsHeader').innerHTML = buildLabelHTML('ATS Accuracy', state, true, false);
+  document.getElementById('myByOuHeader').innerHTML = buildLabelHTML('O/U Accuracy', state, true, false);
 
   const myRows = datasets.map(({ sport, data }) => {
     const myMlSport = computeMyAccuracyAllTime([{ sport, data }], scores, { ...state, confType: 'ml' });
     const myAtsSport = computeMyAccuracyAllTime([{ sport, data }], scores, { ...state, confType: 'ats' });
-    const closed = myMlSport.total + myAtsSport.total;
-    const open = myMlSport.ungraded + myAtsSport.ungraded;
+    const myOuSport = computeMyAccuracyAllTime([{ sport, data }], scores, { ...state, confType: 'ou' });
+    const closed = myMlSport.total + myAtsSport.total + myOuSport.total;
+    const open = myMlSport.ungraded + myAtsSport.ungraded + myOuSport.ungraded;
     const myMlMoney = computeMoneyRecordAllTime([{ sport, data }], scores, { ...state, confType: 'ml' });
     const myAtsMoney = computeMoneyRecordAllTime([{ sport, data }], scores, { ...state, confType: 'ats' });
+    const myOuMoney = computeMoneyRecordAllTime([{ sport, data }], scores, { ...state, confType: 'ou' });
     const mlCell = `${fmtMyPct(myMlSport.pct)}${myMlSport.total ? `<span class="cell-frac">${myMlSport.correct}/${myMlSport.total}</span>` : ''}${moneyLineHTML(myMlMoney)}`;
     const atsCell = `${fmtMyPct(myAtsSport.pct)}${myAtsSport.total ? `<span class="cell-frac">${myAtsSport.correct}/${myAtsSport.total}</span>` : ''}${moneyLineHTML(myAtsMoney)}`;
+    const ouCell = `${fmtMyPct(myOuSport.pct)}${myOuSport.total ? `<span class="cell-frac">${myOuSport.correct}/${myOuSport.total}</span>` : ''}${moneyLineHTML(myOuMoney)}`;
     return `<tr>
       <td class="sport-name">${sportLabels[sport] || sport}</td>
       <td class="pct-cell">${mlCell}</td>
       <td class="pct-cell">${atsCell}</td>
+      <td class="pct-cell">${ouCell}</td>
       <td>${closed}</td>
       <td>${open}</td>
     </tr>`;

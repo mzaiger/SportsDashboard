@@ -410,6 +410,8 @@ function flattenSportGames(sport, data) {
         (slot.games || []).forEach(g => {
           const dk = g.odds && g.odds.draftkings || {};
           const fd = g.odds && g.odds.fanduel || {};
+          const dkTotal = dk.total || {};
+          const fdTotal = fd.total || {};
           rows.push({
             'Period': periodLabel,
             'Date': day.date || '',
@@ -426,10 +428,16 @@ function flattenSportGames(sport, data) {
             'DK Spread Home': dk.spread && dk.spread.home ? dk.spread.home.line : '',
             'DK ML Away': dk.moneyline && dk.moneyline.away ? dk.moneyline.away.american : '',
             'DK ML Home': dk.moneyline && dk.moneyline.home ? dk.moneyline.home.american : '',
+            'DK Total Line': dkTotal.over ? dkTotal.over.line : (dkTotal.under ? dkTotal.under.line : ''),
+            'DK Total Over Odds': dkTotal.over ? dkTotal.over.american : '',
+            'DK Total Under Odds': dkTotal.under ? dkTotal.under.american : '',
             'FD Spread Away': fd.spread && fd.spread.away ? fd.spread.away.line : '',
             'FD Spread Home': fd.spread && fd.spread.home ? fd.spread.home.line : '',
             'FD ML Away': fd.moneyline && fd.moneyline.away ? fd.moneyline.away.american : '',
             'FD ML Home': fd.moneyline && fd.moneyline.home ? fd.moneyline.home.american : '',
+            'FD Total Line': fdTotal.over ? fdTotal.over.line : (fdTotal.under ? fdTotal.under.line : ''),
+            'FD Total Over Odds': fdTotal.over ? fdTotal.over.american : '',
+            'FD Total Under Odds': fdTotal.under ? fdTotal.under.american : '',
             'Matchup Rank': g.matchup_rank != null ? g.matchup_rank : '',
             'Slot Pick': g.is_slot_pick ? 'Yes' : 'No',
           });
@@ -444,7 +452,9 @@ const SPORT_CSV_COLUMNS = [
   'Period', 'Date', 'Weekday', 'Time Slot', 'Away Team', 'Away Record',
   'Home Team', 'Home Record', 'Channel', 'Venue', 'Start Time (UTC)',
   'DK Spread Away', 'DK Spread Home', 'DK ML Away', 'DK ML Home',
+  'DK Total Line', 'DK Total Over Odds', 'DK Total Under Odds',
   'FD Spread Away', 'FD Spread Home', 'FD ML Away', 'FD ML Home',
+  'FD Total Line', 'FD Total Over Odds', 'FD Total Under Odds',
   'Matchup Rank', 'Slot Pick',
 ];
 
@@ -475,8 +485,8 @@ document.querySelectorAll('.export-btn[data-sport]').forEach(btn => {
 
 const PICKS_CSV_COLUMNS = [
   'Sport', 'Period', 'Date', 'Weekday', 'Time Slot', 'Away Team', 'Home Team',
-  'Channel', 'Pick Type', 'Your Pick', 'Spread', 'Money Line', 'Result',
-  'Amount Won/Lost ($10 bet)',
+  'Channel', 'Pick Type', 'Your Pick', 'Spread', 'Money Line', 'Total Line',
+  'Result', 'Amount Won/Lost ($10 bet)',
 ];
 
 function buildPickRows(sport, data, scores) {
@@ -494,13 +504,23 @@ function buildPickRows(sport, data, scores) {
           const gScore = (scores[sport] || {})[String(g.id)];
           const outcome = _myPickResult(g, gScore, pick);
           const entry = pick.odds ? (pick.odds.draftkings || pick.odds.fanduel) : null;
-          const pickedTeam = pick.side === 'home' ? g.home_team : g.away_team;
+          const pickedTeam = pick.side === 'home' ? g.home_team
+            : pick.side === 'away' ? g.away_team
+            : null;
           let payout10 = pick.payout10;
           if (payout10 === undefined) payout10 = calcPayout(entry ? entry.american : null, 10);
           let amount = '';
           let result = 'Pending';
           if (outcome === 'hit') { result = 'Win'; amount = payout10 != null ? payout10 : ''; }
           else if (outcome === 'miss') { result = 'Loss'; amount = -10; }
+
+          const pickTypeLabel = pick.market === 'spread' ? 'ATS'
+            : pick.market === 'total' ? 'O/U'
+            : 'ML';
+          const yourPick = pick.market === 'total'
+            ? (pick.side === 'over' ? 'Over' : 'Under')
+            : `${pickedTeam || ''} (${pick.side === 'home' ? 'Home' : 'Away'})`;
+
           rows.push({
             'Sport': label,
             'Period': periodLabel,
@@ -510,10 +530,11 @@ function buildPickRows(sport, data, scores) {
             'Away Team': g.away_team || '',
             'Home Team': g.home_team || '',
             'Channel': g.channel || '',
-            'Pick Type': pick.market === 'spread' ? 'ATS' : 'ML',
-            'Your Pick': `${pickedTeam || ''} (${pick.side === 'home' ? 'Home' : 'Away'})`,
+            'Pick Type': pickTypeLabel,
+            'Your Pick': yourPick,
             'Spread': pick.market === 'spread' && entry ? entry.line : '',
             'Money Line': pick.market === 'moneyline' && entry ? entry.american : '',
+            'Total Line': pick.market === 'total' && entry ? entry.line : '',
             'Result': result,
             'Amount Won/Lost ($10 bet)': amount,
           });

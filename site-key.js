@@ -94,6 +94,7 @@
           <div class="key-row"><dt>☾ / ☀</dt><dd>Theme toggle -- the moon switches to dark mode, the sun switches to light mode.</dd></div>
           <div class="key-row"><dt>ML</dt><dd>Money Line -- bet on which team wins outright, no spread involved.</dd></div>
           <div class="key-row"><dt>ATS</dt><dd>Against The Spread -- bet on a team to cover the posted point spread.</dd></div>
+          <div class="key-row"><dt>O/U</dt><dd>Over/Under (Total) -- bet on whether the two teams' combined final score goes over or under a posted number, regardless of who wins.</dd></div>
           <div class="key-row"><dt>DK</dt><dd>DraftKings sportsbook.</dd></div>
           <div class="key-row"><dt>FD</dt><dd>FanDuel sportsbook.</dd></div>
           <div class="key-row"><dt>AP</dt><dd>The AP (Associated Press) Top 25 poll, used for college football and college basketball rankings.</dd></div>
@@ -102,9 +103,11 @@
           <div class="key-row"><dt>NFL</dt><dd>National Football League (pro football).</dd></div>
           <div class="key-row"><dt>NBA</dt><dd>National Basketball Association (pro basketball).</dd></div>
           <div class="key-row"><dt>MLB</dt><dd>Major League Baseball.</dd></div>
+          <div class="key-row"><dt>NHL</dt><dd>National Hockey League (pro hockey).</dd></div>
         </dl>
         <div class="key-note">Matchup / Slot Pick badges rank games by a blend of team rank, record, and posted spread -- see each page's footer for the exact formula.</div>
-        <div class="key-note"><b>+ / - odds:</b> a minus number is the favorite -- it's how much you'd need to bet to win $100 (e.g. -150 means bet $150 to win $100). A plus number is the underdog -- it's how much you'd win on a $100 bet (e.g. +150 means bet $100 to win $150). For a $10 bet: on -150, profit is 10 / (150/100) = $6.67; on +150, profit is 10 * (150/100) = $15. Either way you also get your original $10 back on a win. This applies the same way to ATS spread prices (usually around -110) and to moneyline prices.</div>
+        <div class="key-note"><b>O/U Line / O/U Odds:</b> the "O/U Line" column shows the posted total (e.g. "O 49.5" over "U 49.5" -- same number for both, since Over and Under are opposite sides of the identical line), and "O/U Odds" shows each side's price stacked the same way. If the combined final score lands exactly on the line, it's a push -- no winner or loser, same as an exact-margin push against the spread.</div>
+        <div class="key-note"><b>+ / - odds:</b> a minus number is the favorite -- it's how much you'd need to bet to win $100 (e.g. -150 means bet $150 to win $100). A plus number is the underdog -- it's how much you'd win on a $100 bet (e.g. +150 means bet $100 to win $150). For a $10 bet: on -150, profit is 10 / (150/100) = $6.67; on +150, profit is 10 * (150/100) = $15. Either way you also get your original $10 back on a win. This applies the same way to ATS spread prices (usually around -110), moneyline prices, and O/U prices.</div>
         <div class="key-note">Picks are saved in your browser's cookies and expire every <b>August 1st</b>, just before the next season's week 1 -- so last season's picks clear out on their own before the new one starts.</div>
       </div>
     `;
