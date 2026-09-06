@@ -570,14 +570,28 @@ def _fuzzy_team(normalized_target, candidate_raw):
 _SPREAD_MARKET_ALIASES = {"point_spread": "spread", "run_line": "spread", "puck_line": "spread", "spread": "spread"}
 
 # SharpAPI's over/under market -- confirmed via docs.sharpapi.io/en/api-reference/markets/
-# (2026-09-06): the market id is "total_points" ("Over/Under combined
-# score"), used the SAME across every sport (unlike spread, there's no
-# sport-specific total name documented -- MLB/NHL/NBA/NFL/NCAAF/NCAAMB all
-# use "total_points"). Selections come back with selection_type "over"/
-# "under" (not "home"/"away") and a `line` field holding the total number
-# itself (e.g. 49.5), identical for both the over and under side of the
-# same book/line. Maps back to our internal "total" bucket.
-_TOTAL_MARKET_ALIASES = {"total_points": "total", "total": "total"}
+# (2026-09-06) that a market called "total_points" exists ("Over/Under
+# combined score"), but it's sport-specific the same way spread is
+# (point_spread/run_line/puck_line): MLB uses "total_runs", NHL uses
+# "total_goals", and football/basketball use "total_points". Each build
+# script's own `markets=` request argument asks for the right one per
+# sport (see build_mlb_dashboard.py / build_nhl_dashboard.py). NBA/NCAAMB
+# showing no Over/Under data isn't a naming bug -- "total_points" is
+# already correct there -- it just means it's too early in the season for
+# either book to have posted a total yet, same as spread/moneyline being
+# sparse for far-out games. Every plausible name is still accepted here on
+# the parsing side regardless of which one was actually requested (this
+# only ever adds recognized market_type strings, never removes any, so
+# it's harmless either way). Selections come back with selection_type
+# "over"/"under" (not "home"/"away") and a `line` field holding the total
+# number itself (e.g. 49.5), identical for both the over and under side of
+# the same book/line, regardless of which of these names is in use.
+_TOTAL_MARKET_ALIASES = {
+    "total_points": "total",
+    "total_runs": "total",
+    "total_goals": "total",
+    "total": "total",
+}
 
 # Combined lookup used everywhere a raw SharpAPI market_type needs mapping
 # to one of our three internal buckets ("spread", "total", "moneyline").
