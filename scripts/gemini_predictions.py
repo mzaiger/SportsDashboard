@@ -4,12 +4,15 @@ build_nfl_dashboard.py (NFL), build_mlb_dashboard.py (MLB),
 build_nba_dashboard.py (NBA), and build_ncaamb_dashboard.py (NCAAMB).
 
 For every game that has at least one posted line (DraftKings or FanDuel,
-spread or moneyline), asks Gemini for:
+spread, moneyline, or total), asks Gemini for:
 - a straight-up winner pick
 - an ATS pick
+- an Over/Under pick
 - a 1-100 confidence score for the straight-up winner
 - a 0-100 confidence score for the ATS pick
-- a five-sentence explanation
+- a 0-100 confidence score for the Over/Under pick
+- a five-sentence explanation, plus a dedicated three-sentence
+  Over/Under-specific explanation
 
 Uses only current-season data.
 
@@ -201,10 +204,14 @@ def _odds_hash(sport, season, week, away_team, home_team, odds, away_pitcher=Non
     dk_spread = (odds.get("draftkings", {}).get("spread", {}).get("home") or {})
     dk_ml_away = (odds.get("draftkings", {}).get("moneyline", {}).get("away") or {})
     dk_ml_home = (odds.get("draftkings", {}).get("moneyline", {}).get("home") or {})
+    dk_total_over = (odds.get("draftkings", {}).get("total", {}).get("over") or {})
+    dk_total_under = (odds.get("draftkings", {}).get("total", {}).get("under") or {})
 
     fd_spread = (odds.get("fanduel", {}).get("spread", {}).get("home") or {})
     fd_ml_away = (odds.get("fanduel", {}).get("moneyline", {}).get("away") or {})
     fd_ml_home = (odds.get("fanduel", {}).get("moneyline", {}).get("home") or {})
+    fd_total_over = (odds.get("fanduel", {}).get("total", {}).get("over") or {})
+    fd_total_under = (odds.get("fanduel", {}).get("total", {}).get("under") or {})
 
     key_material = "|".join(str(x) for x in [
         "|".join(GEMINI_MODELS),
@@ -217,10 +224,16 @@ def _odds_hash(sport, season, week, away_team, home_team, odds, away_pitcher=Non
         dk_spread.get("line"),
         dk_ml_away.get("american"),
         dk_ml_home.get("american"),
+        dk_total_over.get("line"),
+        dk_total_over.get("american"),
+        dk_total_under.get("american"),
         "FD",
         fd_spread.get("line"),
         fd_ml_away.get("american"),
         fd_ml_home.get("american"),
+        fd_total_over.get("line"),
+        fd_total_over.get("american"),
+        fd_total_under.get("american"),
         "SP",
         away_pitcher,
         home_pitcher,
@@ -244,6 +257,8 @@ def _fmt_book(book):
     spread_home = (book.get("spread", {}).get("home") or {})
     ml_away = (book.get("moneyline", {}).get("away") or {})
     ml_home = (book.get("moneyline", {}).get("home") or {})
+    total_over = (book.get("total", {}).get("over") or {})
+    total_under = (book.get("total", {}).get("under") or {})
 
     lines = []
 
@@ -256,6 +271,12 @@ def _fmt_book(book):
 
     if ml_home.get("american") is not None:
         lines.append(f"Home moneyline: {_fmt_odds_value(ml_home['american'])}")
+
+    total_line = total_over.get("line") if total_over.get("line") is not None else total_under.get("line")
+    if total_line is not None:
+        over_price = f"{_fmt_odds_value(total_over['american'])}" if total_over.get("american") is not None else "n/a"
+        under_price = f"{_fmt_odds_value(total_under['american'])}" if total_under.get("american") is not None else "n/a"
+        lines.append(f"Total (Over/Under): {total_line} (Over {over_price} / Under {under_price})")
 
     return "\n".join(lines) if lines else "No odds posted yet"
 
@@ -330,13 +351,20 @@ Using ONLY statistics, injuries, roster status, and performance from the
    null). Answer with the exact team name only, written exactly as it
    appears above under "Away Team"/"Home Team" -- do not append the line
    number or a "+"/"-" sign to it.
-3. A confidence score from 1-100 for the outright winner pick.
-4. A confidence score from 0-100 for the ATS pick.
-5. A five-sentence explanation of the reasoning.
-6. What percentage of bets (or bet count) is going to each side of the
-   spread and each side of the moneyline, and which direction the spread
-   and moneyline have moved from their opening numbers -- in exactly two
-   sentences.
+3. Whether the combined final score goes OVER or UNDER the posted total
+   (only if a total is posted above; otherwise null).
+4. A confidence score from 1-100 for the outright winner pick.
+5. A confidence score from 0-100 for the ATS pick.
+6. A confidence score from 0-100 for the Over/Under pick.
+7. A five-sentence explanation of the overall winner/ATS reasoning.
+8. A dedicated explanation, in exactly three sentences, of the
+   Over/Under reasoning specifically (pace, scoring environment,
+   weather/pitching/injuries as relevant to this sport, and why the
+   total goes over or under).
+9. What percentage of bets (or bet count) is going to each side of the
+   spread, each side of the moneyline, and each side of the total, and
+   which direction the spread, moneyline, and total have moved from
+   their opening numbers -- in exactly two sentences.
 
 Ignore previous seasons, franchise history, and reputation -- current-season
 data only.
@@ -348,19 +376,26 @@ Return ONLY a valid JSON object with exactly these keys:
   above under "Away Team"/"Home Team"), never the team name plus the
   line number
 - "ats_confidence": integer 0-100
-- "analysis": string with exactly five sentences
+- "total_pick": string or null -- exactly "Over" or "Under" (capitalized
+  exactly like that), or JSON null if no total is posted
+- "total_confidence": integer 0-100
+- "analysis": string with exactly five sentences (winner/ATS reasoning)
+- "ou_analysis": string with exactly three sentences (Over/Under-specific
+  reasoning)
 - "splits_and_direction": string with exactly two sentences covering the
-  spread/moneyline betting percentage splits between the two teams and
-  which direction each line has moved
+  spread/moneyline/total betting percentage splits between the two teams
+  and which direction each line has moved
 
 If no spread is posted, set "ats_pick" to JSON null and "ats_confidence" to 0.
+If no total is posted, set "total_pick" to JSON null, "total_confidence" to
+0, and "ou_analysis" to an empty string.
 Do not put the word "null" in quotes.
 If betting-splits data is not available to you, give your best estimate
 based on the odds and public tendencies and say so briefly rather than
 leaving the field empty.
 
 Example shape:
-{{"winner": "Team A", "confidence": 72, "ats_pick": "Team B", "ats_confidence": 64, "analysis": "Sentence one. Sentence two. Sentence three. Sentence four. Sentence five.", "splits_and_direction": "Sentence one about the split. Sentence two about line direction."}}"""
+{{"winner": "Team A", "confidence": 72, "ats_pick": "Team B", "ats_confidence": 64, "total_pick": "Over", "total_confidence": 58, "analysis": "Sentence one. Sentence two. Sentence three. Sentence four. Sentence five.", "ou_analysis": "Sentence one about pace. Sentence two about scoring environment. Sentence three about the total pick.", "splits_and_direction": "Sentence one about the split. Sentence two about line direction."}}"""
 
 
 #---------------------------------------------------------------------------
@@ -407,8 +442,30 @@ def _strip_ats_line_suffix(pick):
     return _ATS_PICK_LINE_SUFFIX_RE.sub("", pick).strip() or None
 
 
+_VALID_TOTAL_PICKS = {"over": "Over", "under": "Under"}
+
+
+def _clean_total_pick(value):
+    """Normalizes a raw total_pick value down to exactly "Over"/"Under"
+    or None. Tolerant of case and of Gemini occasionally echoing the line
+    back (e.g. "Over 49.5") the same way ats_pick can carry a trailing
+    line -- only the leading Over/Under word actually matters for
+    grading."""
+    s = _clean_nullable_string(value)
+    if not s:
+        return None
+    m = _TOTAL_SELECTION_WORD_RE.match(s)
+    if not m:
+        return None
+    return _VALID_TOTAL_PICKS[m.group(1).lower()]
+
+
+_TOTAL_SELECTION_WORD_RE = re.compile(r"^(over|under)\b", re.IGNORECASE)
+
+
 def _normalize_prediction(raw):
-    """Forces the prediction into the expected shape with both confidence fields."""
+    """Forces the prediction into the expected shape with all three
+    confidence fields (ML/ATS/O-U)."""
     if not isinstance(raw, dict):
         raise ValueError("Gemini response was not a JSON object")
 
@@ -424,12 +481,26 @@ def _normalize_prediction(raw):
     else:
         ats_confidence = max(1, min(100, _as_int(raw.get("ats_confidence"), 50)))
 
+    total_pick = _clean_total_pick(raw.get("total_pick"))
+    if total_pick is None:
+        total_confidence = 0
+    else:
+        total_confidence = max(1, min(100, _as_int(raw.get("total_confidence"), 50)))
+
     analysis = str(raw.get("analysis", "")).strip()
+    ou_analysis = str(raw.get("ou_analysis", "")).strip()
     splits_and_direction = str(raw.get("splits_and_direction", "")).strip()
 
-    display_parts = [f"Summary: {analysis}"]
+    # Three separate paragraphs, in the order requested: overall
+    # Analysis, then Over/Under-specific reasoning, then the betting
+    # Splits. Each only appears if there's actually content for it (an
+    # older cached prediction, or a game with no total posted, may be
+    # missing ou_analysis).
+    display_parts = [f"Analysis: {analysis}"]
+    if ou_analysis:
+        display_parts.append(f"Over Under: {ou_analysis}")
     if splits_and_direction:
-        display_parts.append(f"Splits and Direction: {splits_and_direction}")
+        display_parts.append(f"Splits: {splits_and_direction}")
     display_text = "\n\n".join(display_parts)
 
     return {
@@ -437,7 +508,10 @@ def _normalize_prediction(raw):
         "confidence": confidence,
         "ats_pick": ats_pick,
         "ats_confidence": ats_confidence,
+        "total_pick": total_pick,
+        "total_confidence": total_confidence,
         "analysis": analysis,
+        "ou_analysis": ou_analysis,
         "splits_and_direction": splits_and_direction,
         "display_text": display_text,
     }
@@ -644,7 +718,8 @@ def attach_gemini_predictions(games, sport, season, week, gemini_key, skip_ids=N
         odds = g.get("odds") or {}
 
         has_odds = any(
-            (odds.get(book, {}).get("spread") or odds.get(book, {}).get("moneyline"))
+            (odds.get(book, {}).get("spread") or odds.get(book, {}).get("moneyline")
+             or odds.get(book, {}).get("total"))
             for book in ("draftkings", "fanduel")
         )
 

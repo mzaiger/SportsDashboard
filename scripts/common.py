@@ -569,6 +569,25 @@ def _fuzzy_team(normalized_target, candidate_raw):
 # back to our internal "spread" bucket.
 _SPREAD_MARKET_ALIASES = {"point_spread": "spread", "run_line": "spread", "puck_line": "spread", "spread": "spread"}
 
+# SharpAPI's over/under market -- confirmed via docs.sharpapi.io/en/api-reference/markets/
+# (2026-09-06): the market id is "total_points" ("Over/Under combined
+# score"), used the SAME across every sport (unlike spread, there's no
+# sport-specific total name documented -- MLB/NHL/NBA/NFL/NCAAF/NCAAMB all
+# use "total_points"). Selections come back with selection_type "over"/
+# "under" (not "home"/"away") and a `line` field holding the total number
+# itself (e.g. 49.5), identical for both the over and under side of the
+# same book/line. Maps back to our internal "total" bucket.
+_TOTAL_MARKET_ALIASES = {"total_points": "total", "total": "total"}
+
+# Combined lookup used everywhere a raw SharpAPI market_type needs mapping
+# to one of our three internal buckets ("spread", "total", "moneyline").
+_MARKET_ALIASES = {**_SPREAD_MARKET_ALIASES, **_TOTAL_MARKET_ALIASES, "moneyline": "moneyline"}
+
+# Regex fallback for a total-market selection when neither team_side nor
+# selection_type identifies over/under (older-format rows) -- matches the
+# leading "Over"/"Under" word off a selection string like "Over 49.5".
+_TOTAL_SELECTION_RE = re.compile(r"^(over|under)\b", re.IGNORECASE)
+
 
 def match_odds_for_game(home_team, away_team, odds_rows, team_cache, row_claims):
     cache_key = (home_team, away_team)
@@ -592,7 +611,10 @@ def match_odds_for_game(home_team, away_team, odds_rows, team_cache, row_claims)
         if straight_match or flipped_match:
             candidates.append(r)
 
-    result = {"draftkings": {"spread": {}, "moneyline": {}}, "fanduel": {"spread": {}, "moneyline": {}}}
+    result = {
+        "draftkings": {"spread": {}, "moneyline": {}, "total": {}},
+        "fanduel": {"spread": {}, "moneyline": {}, "total": {}},
+    }
     rejected = 0
 
     # SharpAPI's is_main_line/is_alternate_line flags are per-ROW, not
@@ -609,14 +631,20 @@ def match_odds_for_game(home_team, away_team, odds_rows, team_cache, row_claims)
     # sign), even when SharpAPI's own flag on that specific row says
     # alternate. A book with no confirmed main-line row at all falls back
     # to the old strict behavior for that book (nothing to mirror against).
-    confirmed_main_abs_line = {}  # {book: abs(line)}
+    confirmed_main_abs_line = {}  # {book: abs(line)} -- spread
+    confirmed_main_total_line = {}  # {book: line} -- total (unsigned, over/under share the same number)
     for row in candidates:
-        if _SPREAD_MARKET_ALIASES.get(row.get("market_type")) != "spread":
+        row_market = _MARKET_ALIASES.get(row.get("market_type"))
+        if row_market not in ("spread", "total"):
             continue
         if row.get("is_main_line") and row.get("line") is not None:
             book = row.get("sportsbook")
-            if book not in confirmed_main_abs_line:
-                confirmed_main_abs_line[book] = abs(row["line"])
+            if row_market == "spread":
+                if book not in confirmed_main_abs_line:
+                    confirmed_main_abs_line[book] = abs(row["line"])
+            else:
+                if book not in confirmed_main_total_line:
+                    confirmed_main_total_line[book] = row["line"]
 
     for row in candidates:
         row_id = row.get("id")
@@ -629,17 +657,18 @@ def match_odds_for_game(home_team, away_team, odds_rows, team_cache, row_claims)
             row_claims[row_id] = cache_key
 
         book = row.get("sportsbook")
-        market = _SPREAD_MARKET_ALIASES.get(row.get("market_type"), row.get("market_type"))
+        market = _MARKET_ALIASES.get(row.get("market_type"), row.get("market_type"))
 
-        if book not in result or market not in ("spread", "moneyline"):
+        if book not in result or market not in ("spread", "moneyline", "total"):
             continue
 
         # A book typically posts many alternate lines alongside the main
         # one (e.g. every run line from +/-0.5 up to +/-8.5 for MLB, or a
-        # handful of alternate point spreads for football) -- keep only
-        # the primary line SharpAPI itself flags, so the board doesn't end
-        # up randomly picking whichever alternate line happened to match
-        # first. Moneyline has no alternates, so this only applies to spread.
+        # handful of alternate totals a few points either side of the main
+        # number) -- keep only the primary line SharpAPI itself flags, so
+        # the board doesn't end up randomly picking whichever alternate
+        # line happened to match first. Moneyline has no alternates, so
+        # this only applies to spread/total.
         if market == "spread":
             line = row.get("line")
             mirrors_confirmed_main = (
@@ -658,7 +687,46 @@ def match_odds_for_game(home_team, away_team, odds_rows, team_cache, row_claims)
             # strict fallback) -- same mirror exception as above.
             if row.get("is_main_line") is False and not mirrors_confirmed_main:
                 continue
-                
+
+        elif market == "total":
+            # Same is_main_line/is_alternate_line quirk as spread above,
+            # applied to Over/Under: SharpAPI's own main-line flag has been
+            # seen landing on only ONE of the two rows for a two-way market
+            # (e.g. Over 49.5 flagged main, Under 49.5 -- the mirror of the
+            # exact same line -- flagged alternate even though it isn't
+            # one). Over/Under share the identical line number (no sign
+            # flip the way spread does), so "mirrors the confirmed main"
+            # here just means "this row's line equals the book's confirmed
+            # main total line".
+            line = row.get("line")
+            mirrors_confirmed_main = (
+                line is not None
+                and book in confirmed_main_total_line
+                and line == confirmed_main_total_line[book]
+            )
+            if row.get("is_alternate_line") and not mirrors_confirmed_main:
+                continue
+            if row.get("is_main_line") is False and not mirrors_confirmed_main:
+                continue
+
+        if market == "total":
+            # Over/Under isn't team-relative, so none of the home/away
+            # flip logic below applies -- side is "over"/"under" straight
+            # from SharpAPI's selection_type, falling back to parsing the
+            # leading word off `selection` (e.g. "Over 49.5") for any
+            # older-format row missing that field.
+            side = row.get("selection_type")
+            if side not in ("over", "under"):
+                m = _TOTAL_SELECTION_RE.match((row.get("selection") or "").strip())
+                side = m.group(1).lower() if m else None
+            if side not in ("over", "under"):
+                continue
+            result[book]["total"][side] = {
+                "line": row.get("line"),
+                "american": row.get("odds_american"),
+            }
+            continue
+
         # Prefer SharpAPI's own team_side field ("home"/"away", always
         # relative to THIS row's own home_team/away_team) over parsing the
         # `selection` text -- selection is sometimes an abbreviated form
@@ -868,7 +936,7 @@ def carry_forward_odds(new_odds, previous_odds):
         return new_odds
     merged = {}
     for book in ("draftkings", "fanduel"):
-        merged[book] = {"spread": {}, "moneyline": {}}
+        merged[book] = {"spread": {}, "moneyline": {}, "total": {}}
         new_book = (new_odds or {}).get(book, {}) or {}
         old_book = (previous_odds or {}).get(book, {}) or {}
         for market in ("spread", "moneyline"):
@@ -879,4 +947,15 @@ def carry_forward_odds(new_odds, previous_odds):
                     merged[book][market][side] = new_sides[side]
                 elif old_sides.get(side):
                     merged[book][market][side] = old_sides[side]
+        # Total market's two sides are "over"/"under", not "home"/"away" --
+        # same carry-forward reasoning as spread/moneyline above (a book
+        # temporarily pulling its total line shouldn't blank it out on the
+        # board if a previous run had it).
+        new_total = new_book.get("total", {}) or {}
+        old_total = old_book.get("total", {}) or {}
+        for side in ("over", "under"):
+            if new_total.get(side):
+                merged[book]["total"][side] = new_total[side]
+            elif old_total.get(side):
+                merged[book]["total"][side] = old_total[side]
     return merged

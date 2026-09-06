@@ -677,7 +677,7 @@ def build_week(year, week, season_type, sharp_key, gemini_key=None, previous_odd
             continue
     odds_rows = []
     for d in sorted(game_dates):
-        day_rows = fetch_all_odds(sharp_key, league=leagues, markets=("spread", "moneyline"),
+        day_rows = fetch_all_odds(sharp_key, league=leagues, markets=("spread", "moneyline", "total_points"),
                                    date_from=d, date_to=d)
         odds_rows.extend(day_rows)
     log(f"  {len(odds_rows)} odds rows returned across {len(game_dates)} day(s)")

@@ -488,7 +488,7 @@ def build_day(day, sharp_key, gemini_key=None, previous_odds_by_id=None,
 
     log("Fetching DraftKings/FanDuel NCAAMB odds from SharpAPI...")
     day_str = day.isoformat()
-    odds_rows = fetch_all_odds(sharp_key, league=SHARPAPI_LEAGUE, markets=("spread", "moneyline"),
+    odds_rows = fetch_all_odds(sharp_key, league=SHARPAPI_LEAGUE, markets=("spread", "moneyline", "total_points"),
                                 date_from=day_str, date_to=day_str)
     log(f"  {len(odds_rows)} odds rows returned")
     team_cache = {}
