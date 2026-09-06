@@ -323,7 +323,22 @@ function _deleteCookie(name) {
   document.cookie = `${name}=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; SameSite=Lax`;
 }
 
-function getPick(sport, gameId) {
+// Splits a stored cookie payload into { main, total } -- the two
+// independently-picked slots for a game (see togglePick below for why
+// there are two). Backward-compatible with every pick made before this
+// split existed: an old cookie's payload WAS the pick object directly (no
+// wrapper), and since Over/Under didn't exist yet when those were made,
+// any old-format pick is always a spread/moneyline pick -- it slots into
+// "main" untouched, so nothing already saved is lost or reinterpreted.
+function _normalizePickGroup(parsed) {
+  if (!parsed) return { main: null, total: null };
+  if (Object.prototype.hasOwnProperty.call(parsed, 'main') || Object.prototype.hasOwnProperty.call(parsed, 'total')) {
+    return { main: parsed.main || null, total: parsed.total || null };
+  }
+  return { main: parsed, total: null }; // old-format cookie
+}
+
+function getPickGroup(sport, gameId) {
   const target = _pickCookieName(sport, gameId) + '=';
   const parts = document.cookie.split(';');
   for (let raw of parts) {
@@ -336,11 +351,32 @@ function getPick(sport, gameId) {
         // set/change -- harmless once the target date is fixed, and
         // keeps behavior consistent if this ever changes again.
         _setCookie(_pickCookieName(sport, gameId), decoded);
-        return parsed;
-      } catch (e) { return null; }
+        return _normalizePickGroup(parsed);
+      } catch (e) { return { main: null, total: null }; }
     }
   }
-  return null;
+  return { main: null, total: null };
+}
+
+// The spread/moneyline pick for a game (mutually exclusive with itself --
+// picking Home ML clears Away ATS, etc. -- but independent of the O/U
+// pick below).
+function getMainPick(sport, gameId) {
+  return getPickGroup(sport, gameId).main;
+}
+
+// The Over/Under pick for a game (mutually exclusive with itself -- Over
+// clears Under and vice versa -- but independent of the ATS/ML pick
+// above, so a game can have BOTH a main pick and a total pick at once).
+function getTotalPick(sport, gameId) {
+  return getPickGroup(sport, gameId).total;
+}
+
+// True if EITHER slot has a pick -- used anywhere that only needs to know
+// "is this game picked at all" (e.g. the Picks page's game list).
+function hasAnyPick(sport, gameId) {
+  const g = getPickGroup(sport, gameId);
+  return !!(g.main || g.total);
 }
 
 function getAllPicks(sport) {
@@ -353,7 +389,7 @@ function getAllPicks(sport) {
     const name = raw.slice(0, eq);
     if (!name.startsWith(prefix)) return;
     const gameId = name.slice(prefix.length);
-    try { out[gameId] = JSON.parse(decodeURIComponent(raw.slice(eq + 1))); }
+    try { out[gameId] = _normalizePickGroup(JSON.parse(decodeURIComponent(raw.slice(eq + 1)))); }
     catch (e) { /* ignore malformed cookie */ }
   });
   return out;
@@ -407,21 +443,52 @@ function calcPayout(americanOdds, stake) {
 // reasoning as locking the line itself: if a later rebuild changes or
 // removes this game's price entirely, the payout shown for an
 // already-made pick shouldn't silently change or disappear along with it.
+// Toggle a pick within its group. A game has two INDEPENDENT pick slots:
+// "main" (spread/moneyline -- picking any one of the 4 buttons there
+// clears whichever other one was active) and "total" (Over/Under --
+// picking one clears the other). The two slots don't affect each other,
+// so a game can carry a main pick AND a total pick at the same time --
+// e.g. Home ATS + Over -- each graded and paid out independently.
+// Clicking the already-active option in a slot clears just that slot.
+//
+// `oddsSnapshot`, when provided, is `{draftkings: entry|null, fanduel: entry|null}`
+// -- each entry is a copy of that book's odds row (`{line, american}`) for
+// the chosen market/side, captured at the moment of the click. It's stored
+// in the cookie alongside the pick so the line you actually took survives
+// even if a later daily rebuild shows a different number (the market
+// moved) or no number at all (the book pulled the line after the game
+// closed). Live cells that were never picked keep showing today's live
+// line as always -- only the picked cell is pinned.
+//
+// payout10/payout100 (profit on a $10 / $100 bet, DraftKings' price if
+// present else FanDuel's) are calculated ONCE here, at pick time, and
+// stored in the cookie right alongside the locked-in line/price -- same
+// reasoning as locking the line itself: if a later rebuild changes or
+// removes this game's price entirely, the payout shown for an
+// already-made pick shouldn't silently change or disappear along with it.
 function togglePick(sport, gameId, market, side, oddsSnapshot) {
-  const current = getPick(sport, gameId);
+  const group = getPickGroup(sport, gameId);
+  const slot = market === 'total' ? 'total' : 'main';
+  const current = group[slot];
+
   if (current && current.market === market && current.side === side) {
-    _deleteCookie(_pickCookieName(sport, gameId));
-    return null;
+    group[slot] = null;
+  } else {
+    const entry = oddsSnapshot ? (oddsSnapshot.draftkings || oddsSnapshot.fanduel) : null;
+    const americanOdds = entry ? entry.american : null;
+    group[slot] = {
+      market, side, odds: oddsSnapshot || null,
+      payout10: calcPayout(americanOdds, 10),
+      payout100: calcPayout(americanOdds, 100),
+    };
   }
-  const entry = oddsSnapshot ? (oddsSnapshot.draftkings || oddsSnapshot.fanduel) : null;
-  const americanOdds = entry ? entry.american : null;
-  const value = {
-    market, side, odds: oddsSnapshot || null,
-    payout10: calcPayout(americanOdds, 10),
-    payout100: calcPayout(americanOdds, 100),
-  };
-  _setCookie(_pickCookieName(sport, gameId), JSON.stringify(value));
-  return value;
+
+  if (!group.main && !group.total) {
+    _deleteCookie(_pickCookieName(sport, gameId));
+  } else {
+    _setCookie(_pickCookieName(sport, gameId), JSON.stringify(group));
+  }
+  return group[slot];
 }
 
 // Returns the locked-in odds entry (`{line, american}`) captured at pick
@@ -430,7 +497,7 @@ function togglePick(sport, gameId, market, side, oddsSnapshot) {
 // to today's live line. This is what lets grading survive a book removing
 // its line after a game closes.
 function getLockedOddsEntry(sport, gameId, market, side, book) {
-  const pick = getPick(sport, gameId);
+  const pick = market === 'total' ? getTotalPick(sport, gameId) : getMainPick(sport, gameId);
   if (!pick || pick.market !== market || pick.side !== side || !pick.odds) return null;
   return pick.odds[book] || null;
 }
@@ -478,12 +545,17 @@ function renderPayoutSummary(pick) {
 }
 // The pick toolbar for one game card: away/home x spread/moneyline, plus
 // Over/Under (the total's number is baked right into the button label,
-// since there's no team name to hang it on the way ATS/ML have). Once a
-// game is final (gScore.status === 'final'), the buttons render disabled
-// -- the pick made (if any) still shows, but can no longer be changed
-// after the fact.
+// since there's no team name to hang it on the way ATS/ML have). The
+// spread/moneyline buttons and the Over/Under buttons are two
+// INDEPENDENT selections (see togglePick) -- a game can have one active
+// button from each half at once. Laid out 2 rows x 3 columns: row 1 is
+// away-side/Over, row 2 is home-side/Under, so each bet type keeps its
+// own column (ATS | ML | Total). Once a game is final
+// (gScore.status === 'final'), the buttons render disabled -- any picks
+// made still show, but can no longer be changed after the fact.
 function renderPickToolbar(sport, g, gScore) {
-  const pick = getPick(sport, g.id);
+  const mainPick = getMainPick(sport, g.id);
+  const totalPick = getTotalPick(sport, g.id);
   const locked = isPickLocked(gScore, g);
 
   const oddsFor = (market, side) => ({
@@ -494,32 +566,41 @@ function renderPickToolbar(sport, g, gScore) {
   const totalLine = _currentTotalLine(g);
   const totalLineSuffix = (totalLine !== null && totalLine !== undefined) ? ` ${totalLine}` : '';
 
+  // Row-major order for a 3-column grid: [away ATS, away ML, Over],
+  // [home ATS, home ML, Under].
   const opts = [
     { market: 'spread', side: 'away', label: `${g.away_team} ATS` },
-    { market: 'spread', side: 'home', label: `${g.home_team} ATS` },
     { market: 'moneyline', side: 'away', label: `${g.away_team} ML` },
-    { market: 'moneyline', side: 'home', label: `${g.home_team} ML` },
     { market: 'total', side: 'over', label: `Over${totalLineSuffix} Total` },
+    { market: 'spread', side: 'home', label: `${g.home_team} ATS` },
+    { market: 'moneyline', side: 'home', label: `${g.home_team} ML` },
     { market: 'total', side: 'under', label: `Under${totalLineSuffix} Total` },
   ];
 
   const btns = opts.map(o => {
-    const active = pick && pick.market === o.market && pick.side === o.side;
+    const relevantPick = o.market === 'total' ? totalPick : mainPick;
+    const active = relevantPick && relevantPick.market === o.market && relevantPick.side === o.side;
     const oddsAttr = encodeURIComponent(JSON.stringify(oddsFor(o.market, o.side)));
-    const lockedSuffix = active ? formatLockedLine(pick) : '';
+    const lockedSuffix = active ? formatLockedLine(relevantPick) : '';
 
     return `<button type="button" class="pick-btn${active ? ' active' : ''}" data-sport="${sport}" data-game="${g.id}" data-market="${o.market}" data-side="${o.side}" data-odds="${oddsAttr}" data-start="${g.start_time_tbd ? '' : (g.start_time || '')}"${locked ? ' disabled' : ''}>${active ? '\u2605 ' : ''}${o.label}${lockedSuffix}</button>`;
   }).join('');
 
-  const payoutHtml = pick ? renderPayoutSummary(pick) : '';
+  // Both payout lines stack when both a main pick AND a total pick are
+  // active -- each is its own separate $10 bet (see renderPayoutSummary).
+  // Wrapped in its own box (".pick-toolbar-payout") so row view can size
+  // it to match the odds table's own header row and anchor it flush to
+  // the top of the card -- see the CSS for how tile view treats this
+  // same box differently (just plain stacked text above the buttons).
+  const payoutHtml = `${mainPick ? renderPayoutSummary(mainPick) : ''}${totalPick ? renderPayoutSummary(totalPick) : ''}`;
 
-  return `<div class="pick-toolbar">${payoutHtml}${btns}</div>`;
+  return `<div class="pick-toolbar"><div class="pick-toolbar-payout">${payoutHtml}</div><div class="pick-buttons">${btns}</div></div>`;
 }
 
 // CSS class to drop on an odds-table cell so the picked market/side lights
 // up yellow wherever it appears (both the DraftKings and FanDuel rows).
 function pickCellClass(sport, g, market, side) {
-  const pick = getPick(sport, g.id);
+  const pick = market === 'total' ? getTotalPick(sport, g.id) : getMainPick(sport, g.id);
   return (pick && pick.market === market && pick.side === side) ? 'picked' : '';
 }
 

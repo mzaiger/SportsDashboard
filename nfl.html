@@ -296,11 +296,11 @@
   }
   body.row-view .card{
     display:grid;
-    grid-template-columns:auto auto minmax(200px,1fr) 280px 190px;
+    grid-template-columns:auto auto minmax(180px,1fr) 300px 205px;
     grid-template-rows:auto auto;
     align-items:center;
-    column-gap:0.3rem;
-    padding:0.45rem 0.9rem;
+    column-gap:0.15rem;
+    padding:0.35rem 0.7rem;
     position:relative;
   }
   body.row-view .card.slot-pick{padding-top:1rem;}
@@ -315,11 +315,11 @@
   body.row-view .card-top{display:contents;}
   body.row-view .card-top .score-badge{
     grid-column:1; grid-row:1 / 3; justify-self:start; align-self:center;
-    margin-right:1rem;
+    margin-right:0.45rem;
   }
   body.row-view .card-top .channel-pill{
     grid-column:2; grid-row:1 / 3; justify-self:start; align-self:center;
-    margin-right:0.8rem;
+    margin-right:0.4rem;
   }
   body.row-view .matchup{
     grid-column:3; grid-row:1;
@@ -342,9 +342,21 @@
   body.row-view table.odds td:first-child{width:20px;}
   body.row-view .no-odds{font-size:0.68rem;}
   body.row-view .pick-toolbar{
-    grid-column:5; grid-row:1 / 4;
-    margin:0; width:100%;
-    grid-template-columns:repeat(2,1fr); gap:0.3rem;
+    grid-column:5; grid-row:1 / 3;
+    margin:0; width:100%; align-self:start;
+    display:flex; flex-direction:column; height:100%;
+  }
+  body.row-view .pick-toolbar-payout{
+    display:flex; flex-direction:column; justify-content:center; gap:0.05rem;
+    min-height:1.05rem; padding:0 0.1rem;
+  }
+  body.row-view .pick-toolbar-payout .payout-summary{
+    margin-top:0; font-size:0.58rem; text-align:left; white-space:nowrap;
+    overflow:hidden; text-overflow:ellipsis;
+  }
+  body.row-view .pick-buttons{
+    display:grid; grid-template-columns:repeat(3,1fr); gap:0.22rem;
+    margin-top:0; flex:1;
   }
   body.row-view .pick-btn{min-width:0; font-size:0.62rem; padding:0.32rem 0.2rem; overflow-wrap:break-word;}
   /* Below this width there isn't enough room for a true single-line row even
@@ -488,9 +500,10 @@
   .odds td.miss{background:rgba(226,88,74,0.16); color:var(--loss-red); font-weight:700; border-radius:4px;}
   .odds td.picked.hit,
   .odds td.picked.miss{box-shadow:inset 0 0 0 2px var(--pick-yellow);}
-  .pick-toolbar{display:grid; grid-template-columns:repeat(2,1fr); gap:0.35rem; margin-top:0.6rem;}
+  .pick-toolbar{ }
+  .pick-toolbar-payout:empty{display:none;}
+  .pick-buttons{display:grid; grid-template-columns:repeat(3,1fr); gap:0.35rem; margin-top:0.6rem;}
   .payout-summary{
-    grid-column: 1 / -1;
     font-family:'JetBrains Mono',monospace; font-size:0.7rem; font-weight:700; color:var(--strong-text);
     text-align:center; margin-top:0.25rem;
   }
@@ -529,11 +542,10 @@
 
   .matchup{
     margin:0.85rem 0 0.6rem;
-    display:flex; align-items:center; justify-content:center; flex-wrap:nowrap; gap:0.45rem;
+    display:flex; align-items:center; justify-content:center; flex-wrap:wrap; gap:0.45rem;
     font-family:'Oswald',sans-serif; font-size:1.05rem; font-weight:600;
-    white-space:nowrap; overflow-x:auto; scrollbar-width:none;
+    white-space:normal; overflow-x:visible;
   }
-  .matchup::-webkit-scrollbar{display:none;}
   .team{display:inline-flex; align-items:center; gap:0.4rem;}
   .team-name-wrap{display:inline-flex; flex-direction:column; align-items:flex-start; line-height:1.2;}
   .team-name-line{display:inline-flex; align-items:baseline; gap:0.4rem;}
@@ -553,7 +565,6 @@
 
   @media (max-width: 480px){
     .matchup{
-      flex-wrap:wrap; white-space:normal; overflow-x:visible;
       font-size:1rem;
     }
     .at{margin:0 0.1rem;}
@@ -621,9 +632,10 @@
     flex:1; min-width:0;
   }
   .gemini-toggle-winner,
-  .gemini-toggle-ats{
-    display:flex; flex-direction:column; align-items:flex-end; line-height:1.25;
-    text-transform:none; letter-spacing:normal;
+  .gemini-toggle-ats,
+  .gemini-toggle-ou{
+    display:flex; flex-direction:row; align-items:baseline; gap:0.3em; line-height:1.25;
+    text-transform:none; letter-spacing:normal; white-space:nowrap;
   }
   .gemini-pick-label{
     color:var(--chalk); font-weight:500; font-size:.75rem; letter-spacing:0.03em;
@@ -656,11 +668,20 @@
   .gemini-analysis{
     margin:0.55rem 0 0; color:var(--chalk); font-size:0.78rem; line-height:1.55;
   }
+  /* Tile layout: each pick (ML/ATS/O-U) gets its own full line, stacked --
+     "ML (92%): Oregon Ducks" / "ATS (60%): Oregon Ducks" / "O/U (60%): Over".
+     Row view overrides this back to one single line below (tighter cards
+     don't have room to stack three lines). */
   .gemini-picks-summary {
     display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.2rem;
+  }
+  body.row-view .gemini-picks-summary{
+    flex-direction: row;
     align-items: center;
-    justify-content: flex-end;
-    gap: 28px;              /* separation — bump up or down to taste */
+    gap: 20px;
     flex-wrap: wrap;
   }
   body.row-view .gemini-toggle,
@@ -807,35 +828,6 @@ function fmtLine(n) {
   return num > 0 ? `+${num}` : `${num}`;
 }
 
-function fmtTotalLine(n) {
-  if (n === null || n === undefined || n === '') return null;
-  const num = Number(n);
-  if (Number.isNaN(num)) return null;
-  return `${num}`;
-}
-
-function totalLineCell(total) {
-  const over = total && total.over, under = total && total.under;
-  const overLine = (over && over.line !== undefined && over.line !== null) ? fmtTotalLine(over.line) : null;
-  const underLine = (under && under.line !== undefined && under.line !== null) ? fmtTotalLine(under.line) : null;
-  if (overLine === null && underLine === null) return '<span class="empty-cell">—</span>';
-  const top = overLine !== null ? `O ${overLine}` : '<span class="empty-cell">—</span>';
-  const bot = underLine !== null ? `U ${underLine}` : '<span class="empty-cell">—</span>';
-  return `${top}<span class="num-am">${bot}</span>`;
-}
-
-function totalOddsCell(total) {
-  const over = total && total.over, under = total && total.under;
-  const overAm = (over && over.american !== undefined && over.american !== null) ? fmtAmerican(over.american) : null;
-  const underAm = (under && under.american !== undefined && under.american !== null) ? fmtAmerican(under.american) : null;
-  if (overAm === null && underAm === null) return '<span class="empty-cell">—</span>';
-  const overNeg = (typeof over?.american === 'number' && over.american < 0) ? 'neg' : '';
-  const underNeg = (typeof under?.american === 'number' && under.american < 0) ? 'neg' : '';
-  const top = overAm !== null ? `<span class="num ${overNeg}">(${overAm})</span>` : '<span class="empty-cell">—</span>';
-  const bot = underAm !== null ? `<span class="num-am ${underNeg}">(${underAm})</span>` : '<span class="num-am"><span class="empty-cell">—</span></span>';
-  return `${top}${bot}`;
-}
-
 function oddsCell(entry) {
   if (!entry || (entry.line === undefined && entry.american === undefined)) {
     return '<span class="empty-cell">—</span>';
@@ -887,28 +879,20 @@ function renderGame(g) {
     const total = g.odds?.[b]?.total || {};
     const cellCls = (market, side, entry) =>
       `${pickCellClass(SPORT, g, market, side)} ${oddsHitClass(SPORT, g.id, b, market, side, entry, gScore)}`.trim();
-    // The Over/Under column isn't home/away-relative like spread/ML, so
-    // instead of two separate columns it's one column per stat (line,
-    // odds) with Over stacked on top of Under -- the whole cell is
-    // colored/picked-highlighted off whichever side (over/under) is
-    // actually picked for this game, defaulting to "over" if neither is.
-    const pickForTotal = getPick(SPORT, g.id);
-    const totalSide = (pickForTotal && pickForTotal.market === 'total') ? pickForTotal.side : 'over';
-    const totalCls = cellCls('total', totalSide, total[totalSide]);
     rows += `<tr>
       <td class="book ${bookCls[b]}">${bookLabel[b]}</td>
       <td class="${cellCls('spread', 'away', spread.away)}">${oddsCell(spread.away)}</td>
       <td class="${cellCls('spread', 'home', spread.home)}">${oddsCell(spread.home)}</td>
       <td class="${cellCls('moneyline', 'away', ml.away)}">${oddsCell(ml.away)}</td>
       <td class="${cellCls('moneyline', 'home', ml.home)}">${oddsCell(ml.home)}</td>
-      <td class="${totalCls}">${totalLineCell(total)}</td>
-      <td class="${totalCls}">${totalOddsCell(total)}</td>
+      <td class="${cellCls('total', 'over', total.over)}">${oddsCell(total.over)}</td>
+      <td class="${cellCls('total', 'under', total.under)}">${oddsCell(total.under)}</td>
     </tr>`;
   });
 
   const oddsBlock = hasAnyOdds
     ? `<table class="odds">
-        <thead><tr><th></th><th>Away Spd</th><th>Home Spd</th><th>Away ML</th><th>Home ML</th><th>O/U Line</th><th>O/U Odds</th></tr></thead>
+        <thead><tr><th></th><th>Away Spd</th><th>Home Spd</th><th>Away ML</th><th>Home ML</th><th>Over</th><th>Under</th></tr></thead>
         <tbody>${rows}</tbody>
       </table>`
     : `<div class="no-odds">Odds not yet posted</div>`;
