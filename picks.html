@@ -1040,7 +1040,7 @@ const SLOT_ICON = {
 // if it's Nebraska's game -- Nebraska always shows up here whether or not
 // it's been picked.
 function keepGame(sport, g) {
-  if (getPick(sport, g.id)) return true;
+  if (hasAnyPick(sport, g.id)) return true;
   if (sport === 'cfb' && g.is_nebraska) return true;
   return false;
 }
