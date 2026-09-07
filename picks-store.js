@@ -682,14 +682,33 @@ function oddsHitClass(sport, gameId, book, market, side, entry, gScore) {
 // falling back to FanDuel, same preference order as formatLockedLine) so
 // this always agrees with the color already shown on that picked cell.
 // Returns null if no pick was made on this game at all.
+// Whether the MAIN (ATS/ML) pick made on this game (if any) is currently
+// a win ('hit'), a loss ('miss'), or not yet determined (''). See
+// totalPickOutcome() below for the equivalent on the O/U pick -- a game
+// can have both at once, graded independently. Reuses oddsHitClass()
+// against the picked market/side (preferring the DraftKings snapshot,
+// falling back to FanDuel, same preference order as formatLockedLine) so
+// this always agrees with the color already shown on that picked cell.
+// Returns null if no main pick was made on this game at all.
 function pickOutcome(sport, g, gScore) {
-  const pick = getPick(sport, g.id);
+  const pick = getMainPick(sport, g.id);
   if (!pick) return null;
   const dkEntry = g.odds && g.odds.draftkings && g.odds.draftkings[pick.market] && g.odds.draftkings[pick.market][pick.side];
   const fdEntry = g.odds && g.odds.fanduel && g.odds.fanduel[pick.market] && g.odds.fanduel[pick.market][pick.side];
   const book = dkEntry ? 'draftkings' : 'fanduel';
   const entry = dkEntry || fdEntry || null;
   return oddsHitClass(sport, g.id, book, pick.market, pick.side, entry, gScore) || '';
+}
+
+// Same as pickOutcome() above, but for the O/U pick slot.
+function totalPickOutcome(sport, g, gScore) {
+  const pick = getTotalPick(sport, g.id);
+  if (!pick) return null;
+  const dkEntry = g.odds && g.odds.draftkings && g.odds.draftkings.total && g.odds.draftkings.total[pick.side];
+  const fdEntry = g.odds && g.odds.fanduel && g.odds.fanduel.total && g.odds.fanduel.total[pick.side];
+  const book = dkEntry ? 'draftkings' : 'fanduel';
+  const entry = dkEntry || fdEntry || null;
+  return oddsHitClass(sport, g.id, book, 'total', pick.side, entry, gScore) || '';
 }
 
 // Grades a saved pick against the FINAL score only (gScore.status must be
@@ -782,13 +801,15 @@ function computePickRecord(datasets, scores) {
     if (!data) return;
     (data.weeks || []).forEach(week => (week.days || []).forEach(day => (day.time_slots || []).forEach(slot => {
       (slot.games || []).forEach(g => {
-        const pick = getPick(sport, g.id);
-        if (!pick) return;
+        const picks = [getMainPick(sport, g.id), getTotalPick(sport, g.id)].filter(Boolean);
+        if (!picks.length) return;
         const gScore = (scores[sport] || {})[String(g.id)];
-        const outcome = _myPickResult(g, gScore, pick);
-        if (outcome === 'hit') { inactiveTotal++; inactiveCorrect++; }
-        else if (outcome === 'miss') { inactiveTotal++; }
-        else { active++; }
+        picks.forEach(pick => {
+          const outcome = _myPickResult(g, gScore, pick);
+          if (outcome === 'hit') { inactiveTotal++; inactiveCorrect++; }
+          else if (outcome === 'miss') { inactiveTotal++; }
+          else { active++; }
+        });
       });
     })));
   });
@@ -814,20 +835,22 @@ function computeMoneyRecord(datasets, scores) {
     if (!data) return;
     (data.weeks || []).forEach(week => (week.days || []).forEach(day => (day.time_slots || []).forEach(slot => {
       (slot.games || []).forEach(g => {
-        const pick = getPick(sport, g.id);
-        if (!pick) return;
+        const picks = [getMainPick(sport, g.id), getTotalPick(sport, g.id)].filter(Boolean);
+        if (!picks.length) return;
         const gScore = (scores[sport] || {})[String(g.id)];
-        const outcome = _myPickResult(g, gScore, pick);
-        if (outcome === 'hit') {
-          let p10 = pick.payout10;
-          if (p10 === undefined) {
-            const entry = pick.odds ? (pick.odds.draftkings || pick.odds.fanduel) : null;
-            p10 = calcPayout(entry ? entry.american : null, 10);
+        picks.forEach(pick => {
+          const outcome = _myPickResult(g, gScore, pick);
+          if (outcome === 'hit') {
+            let p10 = pick.payout10;
+            if (p10 === undefined) {
+              const entry = pick.odds ? (pick.odds.draftkings || pick.odds.fanduel) : null;
+              p10 = calcPayout(entry ? entry.american : null, 10);
+            }
+            net += (p10 || 0);
+          } else if (outcome === 'miss') {
+            net -= 10;
           }
-          net += (p10 || 0);
-        } else if (outcome === 'miss') {
-          net -= 10;
-        }
+        });
       });
     })));
   });
@@ -860,23 +883,25 @@ function computeMoneyRecordAllTime(datasets, scores, filterState) {
     (data.weeks || []).forEach(week => (week.days || []).forEach(day => (day.time_slots || []).forEach(slot => {
       (slot.games || []).forEach(g => {
         if (filterState && filterState.bestMatchupOnly && !g.is_slot_pick) return;
-        const pick = getPick(sport, g.id);
-        if (!pick) return;
-        if (wantMarket && pick.market !== wantMarket) return;
+        const picks = [getMainPick(sport, g.id), getTotalPick(sport, g.id)].filter(Boolean);
+        if (!picks.length) return;
         const gScore = (scores[sport] || {})[String(g.id)];
-        const outcome = _myPickResult(g, gScore, pick);
-        if (outcome === 'hit') {
-          let p10 = pick.payout10;
-          if (p10 === undefined) {
-            const entry = pick.odds ? (pick.odds.draftkings || pick.odds.fanduel) : null;
-            p10 = calcPayout(entry ? entry.american : null, 10);
+        picks.forEach(pick => {
+          if (wantMarket && pick.market !== wantMarket) return;
+          const outcome = _myPickResult(g, gScore, pick);
+          if (outcome === 'hit') {
+            let p10 = pick.payout10;
+            if (p10 === undefined) {
+              const entry = pick.odds ? (pick.odds.draftkings || pick.odds.fanduel) : null;
+              p10 = calcPayout(entry ? entry.american : null, 10);
+            }
+            net += (p10 || 0);
+            graded++;
+          } else if (outcome === 'miss') {
+            net -= 10;
+            graded++;
           }
-          net += (p10 || 0);
-          graded++;
-        } else if (outcome === 'miss') {
-          net -= 10;
-          graded++;
-        }
+        });
       });
     })));
   });
@@ -1191,22 +1216,42 @@ function gamePassesFilters(g, state) {
 // picked, so "ATS, 80+" shows only your spread picks where Gemini was
 // also at least 80% confident on its own ATS pick for that game.
 function pickPassesMarketFilter(sport, g, state) {
-  const pick = getPick(sport, g.id);
-  if (!pick) return false;
-  if (state.confType === 'ats' && pick.market !== 'spread') return false;
-  if (state.confType === 'ml' && pick.market !== 'moneyline') return false;
-  if (state.confType === 'ou' && pick.market !== 'total') return false;
-  if (state.minConf > 0) {
-    const pred = g.gemini_prediction;
-    if (!pred) return false;
-    const relevantConf = pick.market === 'spread' ? pred.ats_confidence
-      : pick.market === 'total' ? pred.total_confidence
-      : pred.confidence;
-    if (pick.market === 'spread' && !pred.ats_pick) return false;
-    if (pick.market === 'total' && !pred.total_pick) return false;
-    if ((relevantConf ?? 0) < state.minConf) return false;
+  const mainPick = getMainPick(sport, g.id);
+  const totalPick = getTotalPick(sport, g.id);
+
+  if (state.confType === 'ats') {
+    return !!mainPick && mainPick.market === 'spread' && _pickClearsConfidence(g, mainPick, state);
   }
-  return true;
+  if (state.confType === 'ml') {
+    return !!mainPick && mainPick.market === 'moneyline' && _pickClearsConfidence(g, mainPick, state);
+  }
+  if (state.confType === 'ou') {
+    return !!totalPick && _pickClearsConfidence(g, totalPick, state);
+  }
+
+  // 'both' / All -- a game can have a main pick, a total pick, or both
+  // (see togglePick) -- passes if EITHER exists, and (when a confidence
+  // floor is set) at least one of them clears it.
+  const candidates = [mainPick, totalPick].filter(Boolean);
+  if (!candidates.length) return false;
+  if (state.minConf <= 0) return true;
+  return candidates.some(p => _pickClearsConfidence(g, p, state));
+}
+
+// Whether Gemini's own confidence for the market `pick` belongs to (ML
+// confidence for a moneyline pick, ATS confidence for a spread pick, O/U
+// confidence for a total pick) clears state.minConf. Shared by every
+// branch of pickPassesMarketFilter() above.
+function _pickClearsConfidence(g, pick, state) {
+  if (state.minConf <= 0) return true;
+  const pred = g.gemini_prediction;
+  if (!pred) return false;
+  const relevantConf = pick.market === 'spread' ? pred.ats_confidence
+    : pick.market === 'total' ? pred.total_confidence
+    : pred.confidence;
+  if (pick.market === 'spread' && !pred.ats_pick) return false;
+  if (pick.market === 'total' && !pred.total_pick) return false;
+  return (relevantConf ?? 0) >= state.minConf;
 }
 
 // Returns a filtered copy of `weeks` -- games that don't pass, then any
@@ -1576,7 +1621,11 @@ function computeMyAccuracyAllTime(datasets, scores, filterState) {
     (data.weeks || []).forEach(week => (week.days || []).forEach(day => (day.time_slots || []).forEach(slot => {
       (slot.games || []).forEach(g => {
         if (filterState && filterState.bestMatchupOnly && !g.is_slot_pick) return;
-        const pick = getPick(sport, g.id);
+        // Always called with one specific market narrowed in (see the
+        // three separate calls on accuracy.html) -- total picks live in
+        // the separate "total" cookie slot, main (spread/moneyline)
+        // picks in the "main" slot.
+        const pick = wantMarket === 'total' ? getTotalPick(sport, g.id) : getMainPick(sport, g.id);
         if (!pick) return;
         if (wantMarket && pick.market !== wantMarket) return;
 
@@ -1623,53 +1672,71 @@ function computeGeminiAccuracyOnMyPicks(datasets, scores, filterState) {
     (data.weeks || []).forEach(week => (week.days || []).forEach(day => (day.time_slots || []).forEach(slot => {
       (slot.games || []).forEach(g => {
         if (filterState && filterState.bestMatchupOnly && !g.is_slot_pick) return;
-        const pick = getPick(sport, g.id);
-        if (!pick) return;
-        if (wantMarket && pick.market !== wantMarket) return;
 
-        const gScore = (scores[sport] || {})[String(g.id)];
-        const final = _finalScore(gScore);
-        if (!final) return; // not final yet -- excluded, same as My Accuracy
+        // wantMarket narrows to a single slot when the page's filter is
+        // ML/ATS/O-U specifically; for "All" (wantMarket null, used by
+        // picks.html's own live toggle) both the main and total pick
+        // slots are checked, since a game can carry one of each at once.
+        const candidates = wantMarket === 'total' ? [getTotalPick(sport, g.id)]
+          : wantMarket ? [getMainPick(sport, g.id)]
+          : [getMainPick(sport, g.id), getTotalPick(sport, g.id)];
 
-        const pred = g.gemini_prediction;
-        if (!pred) return;
-
-        if (pick.market === 'moneyline') {
-          if (!pred.winner) return;
-          const actualWinner = final.home > final.away ? g.home_team
-            : final.away > final.home ? g.away_team
-            : null;
-          if (!actualWinner) return;
-          total++;
-          if (pred.winner === actualWinner) correct++;
-        } else if (pick.market === 'spread') {
-          if (!pred.ats_pick) return;
-          const dkLine = g.odds && g.odds.draftkings && g.odds.draftkings.spread && g.odds.draftkings.spread.home
-            ? g.odds.draftkings.spread.home.line : null;
-          const fdLine = g.odds && g.odds.fanduel && g.odds.fanduel.spread && g.odds.fanduel.spread.home
-            ? g.odds.fanduel.spread.home.line : null;
-          const homeLine = (dkLine !== null && dkLine !== undefined) ? dkLine : fdLine;
-          if (homeLine === null || homeLine === undefined) return;
-          const margin = (final.home - final.away) + homeLine;
-          if (margin === 0) return; // push -- not a right/wrong result for Gemini's pick
-          const coveringTeam = margin > 0 ? g.home_team : g.away_team;
-          total++;
-          if (_normalizeAtsPick(pred.ats_pick) === coveringTeam) correct++;
-        } else if (pick.market === 'total') {
-          if (!pred.total_pick) return;
-          const line = _currentTotalLine(g);
-          if (line === null || line === undefined) return;
-          const combined = final.home + final.away;
-          if (combined === line) return; // push -- not a right/wrong result for Gemini's pick
-          const actualResult = combined > line ? 'Over' : 'Under';
-          total++;
-          if (pred.total_pick === actualResult) correct++;
-        }
+        candidates.filter(Boolean).forEach(pick => {
+          if (wantMarket && pick.market !== wantMarket) return;
+          _gradeOnePickAgainstGemini(g, scores[sport], pick, (isCorrect) => {
+            total++;
+            if (isCorrect) correct++;
+          });
+        });
       });
     })));
   });
 
   return { pct: total ? Math.round((correct / total) * 100) : null, correct, total };
+}
+
+// Grades ONE saved pick against Gemini's own prediction in that same
+// market, calling `report(true|false)` once if (and only if) there's
+// something gradeable (game final, Gemini made a call in that market,
+// and -- for spread/total -- the actual result isn't an exact push).
+// Factored out of computeGeminiAccuracyOnMyPicks so it can be called once
+// per candidate pick (a game can have a main pick AND a total pick).
+function _gradeOnePickAgainstGemini(g, gScoreMap, pick, report) {
+  const gScore = (gScoreMap || {})[String(g.id)];
+  const final = _finalScore(gScore);
+  if (!final) return; // not final yet -- excluded, same as My Accuracy
+
+  const pred = g.gemini_prediction;
+  if (!pred) return;
+
+  if (pick.market === 'moneyline') {
+    if (!pred.winner) return;
+    const actualWinner = final.home > final.away ? g.home_team
+      : final.away > final.home ? g.away_team
+      : null;
+    if (!actualWinner) return;
+    report(pred.winner === actualWinner);
+  } else if (pick.market === 'spread') {
+    if (!pred.ats_pick) return;
+    const dkLine = g.odds && g.odds.draftkings && g.odds.draftkings.spread && g.odds.draftkings.spread.home
+      ? g.odds.draftkings.spread.home.line : null;
+    const fdLine = g.odds && g.odds.fanduel && g.odds.fanduel.spread && g.odds.fanduel.spread.home
+      ? g.odds.fanduel.spread.home.line : null;
+    const homeLine = (dkLine !== null && dkLine !== undefined) ? dkLine : fdLine;
+    if (homeLine === null || homeLine === undefined) return;
+    const margin = (final.home - final.away) + homeLine;
+    if (margin === 0) return; // push -- not a right/wrong result for Gemini's pick
+    const coveringTeam = margin > 0 ? g.home_team : g.away_team;
+    report(_normalizeAtsPick(pred.ats_pick) === coveringTeam);
+  } else if (pick.market === 'total') {
+    if (!pred.total_pick) return;
+    const line = _currentTotalLine(g);
+    if (line === null || line === undefined) return;
+    const combined = final.home + final.away;
+    if (combined === line) return; // push -- not a right/wrong result for Gemini's pick
+    const actualResult = combined > line ? 'Over' : 'Under';
+    report(pred.total_pick === actualResult);
+  }
 }
 
 // Single-percentage accuracy for the Picks page's Gemini-accuracy stat
