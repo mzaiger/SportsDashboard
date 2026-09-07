@@ -675,7 +675,7 @@
   table.odds th{
     text-align:right; color:var(--dim); font-weight:500;
     font-size:0.66rem; text-transform:uppercase; letter-spacing:0.05em;
-    padding-bottom:0.35rem;
+    padding-bottom:0.35rem; line-height:1.25;
   }
   table.odds th:first-child, table.odds td:first-child{text-align:left;}
   table.odds td{text-align:right; padding:0.3rem 0; border-top:1px solid var(--line);}
@@ -1072,13 +1072,15 @@ function renderGame(sport, g) {
 
   const hasAnyOdds = books.some(b =>
     Object.keys((g.odds?.[b]?.spread) || {}).length ||
-    Object.keys((g.odds?.[b]?.moneyline) || {}).length
+    Object.keys((g.odds?.[b]?.moneyline) || {}).length ||
+    Object.keys((g.odds?.[b]?.total) || {}).length
   );
 
   let rows = '';
   books.forEach(b => {
     const spread = g.odds?.[b]?.spread || {};
     const ml = g.odds?.[b]?.moneyline || {};
+    const total = g.odds?.[b]?.total || {};
     const cellCls = (market, side, entry) =>
       `${pickCellClass(sport, g, market, side)} ${oddsHitClass(sport, g.id, b, market, side, entry, gScore)}`.trim();
     rows += `<tr>
@@ -1087,12 +1089,14 @@ function renderGame(sport, g) {
       <td class="${cellCls('spread', 'home', spread.home)}">${oddsCell(spread.home)}</td>
       <td class="${cellCls('moneyline', 'away', ml.away)}">${oddsCell(ml.away)}</td>
       <td class="${cellCls('moneyline', 'home', ml.home)}">${oddsCell(ml.home)}</td>
+      <td class="${cellCls('total', 'over', total.over)}">${oddsCell(total.over)}</td>
+      <td class="${cellCls('total', 'under', total.under)}">${oddsCell(total.under)}</td>
     </tr>`;
   });
 
   const oddsBlock = hasAnyOdds
     ? `<table class="odds">
-        <thead><tr><th></th><th>Away Spd</th><th>Home Spd</th><th>Away ML</th><th>Home ML</th></tr></thead>
+        <thead><tr><th></th><th>Away<br>Spd</th><th>Home<br>Spd</th><th>Away<br>ML</th><th>Home<br>ML</th><th>Over</th><th>Under</th></tr></thead>
         <tbody>${rows}</tbody>
       </table>`
     : `<div class="no-odds">Odds not yet posted</div>`;
