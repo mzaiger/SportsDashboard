@@ -335,7 +335,7 @@
     width:100%;
   }
   body.row-view table.odds{table-layout:fixed; font-size:0.7rem;}
-  body.row-view table.odds th{font-size:0.6rem; padding-bottom:0.2rem;}
+  body.row-view table.odds th{font-size:0.6rem; padding-bottom:0.2rem; line-height:1.15;}
   body.row-view table.odds td{padding:0.18rem 0;}
   body.row-view .book{font-size:0.64rem;}
   body.row-view table.odds th:first-child,
@@ -348,7 +348,7 @@
   }
   body.row-view .pick-toolbar-payout{
     display:flex; flex-direction:column; justify-content:center; gap:0.05rem;
-    min-height:1.05rem; padding:0 0.1rem;
+    min-height:1.65rem; padding:0 0.1rem;
   }
   body.row-view .pick-toolbar-payout .payout-summary{
     margin-top:0; font-size:0.58rem; text-align:left; white-space:nowrap;
@@ -589,7 +589,7 @@
   table.odds th{
     text-align:right; color:var(--dim); font-weight:500;
     font-size:0.66rem; text-transform:uppercase; letter-spacing:0.05em;
-    padding-bottom:0.35rem;
+    padding-bottom:0.35rem; line-height:1.25;
   }
   table.odds th:first-child, table.odds td:first-child{text-align:left;}
   table.odds td{
@@ -639,17 +639,30 @@
     display:flex; align-items:center; gap:0.5rem; flex-wrap:wrap;
     flex:1; min-width:0;
   }
+  /* Tile view: each pick (ML/ATS/O-U) is a row in a 3-column grid --
+     column 1 (20%) is a blank spacer (just indents the whole block a
+     bit), column 2 (20%) is the right-aligned "ML (92%):" label (so
+     every row's colon lines up on the same right edge), column 3 (60%)
+     is the left-aligned team/pick value. .gemini-toggle-winner/-ats/-ou
+     go display:contents so their own children (spacer/label/team) become
+     direct grid items instead of nesting a level deeper -- that's what
+     lets all three rows share the same 3 grid columns. Row view
+     overrides all of this back to the original single-line-per-card
+     layout below (no room to spare for a 3-column grid there).
+  */
   .gemini-toggle-winner,
   .gemini-toggle-ats,
   .gemini-toggle-ou{
-    display:flex; flex-direction:row; align-items:baseline; gap:0.3em; line-height:1.25;
-    text-transform:none; letter-spacing:normal; white-space:nowrap;
+    display:contents;
   }
+  .gemini-pick-spacer{ }
   .gemini-pick-label{
     color:var(--chalk); font-weight:500; font-size:.75rem; letter-spacing:0.03em;
+    text-align:right; white-space:nowrap;
   }
   .gemini-pick-team{
     color:var(--chalk); font-weight:600; font-size:.75rem; letter-spacing:0.02em;
+    text-align:left;
   }
   .gemini-toggle-trailing{
     display:flex; align-items:center; gap:0.4rem; margin-left:auto; flex-shrink:0;
@@ -676,22 +689,28 @@
   .gemini-analysis{
     margin:0.55rem 0 0; color:var(--chalk); font-size:0.78rem; line-height:1.55;
   }
-  /* Tile layout: each pick (ML/ATS/O-U) gets its own full line, stacked --
-     "ML (92%): Oregon Ducks" / "ATS (60%): Oregon Ducks" / "O/U (60%): Over".
-     Row view overrides this back to one single line below (tighter cards
-     don't have room to stack three lines). */
   .gemini-picks-summary {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    gap: 0.2rem;
+    display: grid;
+    grid-template-columns: 20% 20% 60%;
+    row-gap: 0.25rem;
+    column-gap: 0.4rem;
+    flex: 1;
   }
   body.row-view .gemini-picks-summary{
+    display: flex;
     flex-direction: row;
     align-items: center;
     gap: 20px;
     flex-wrap: wrap;
   }
+  body.row-view .gemini-toggle-winner,
+  body.row-view .gemini-toggle-ats,
+  body.row-view .gemini-toggle-ou{
+    display:flex; flex-direction:row; align-items:baseline; gap:0.3em; line-height:1.25;
+    text-transform:none; letter-spacing:normal; white-space:nowrap;
+  }
+  body.row-view .gemini-pick-spacer{display:none;}
+  body.row-view .gemini-pick-label{text-align:left;}
   body.row-view .gemini-toggle,
   body.row-view .gemini-panel{grid-column:1 / -1;}
   body.row-view .gemini-toggle{grid-row:3;}
@@ -897,7 +916,7 @@ function renderGame(g) {
 
   const oddsBlock = hasAnyOdds
     ? `<table class="odds">
-        <thead><tr><th></th><th>Away Spd</th><th>Home Spd</th><th>Away ML</th><th>Home ML</th><th>Over</th><th>Under</th></tr></thead>
+        <thead><tr><th></th><th>Away<br>Spd</th><th>Home<br>Spd</th><th>Away<br>ML</th><th>Home<br>ML</th><th>Over</th><th>Under</th></tr></thead>
         <tbody>${rows}</tbody>
       </table>`
     : `<div class="no-odds">Odds not yet posted</div>`;

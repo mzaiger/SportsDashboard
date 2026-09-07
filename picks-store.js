@@ -969,9 +969,9 @@ function renderGeminiBlock(g) {
     <span class="gemini-toggle-main">Gemini Prediction Summary</span>
     <span class="gemini-toggle-trailing">
       <span class="gemini-picks-summary">
-        <span class="gemini-toggle-winner"><span class="gemini-pick-label">ML (${conf}):</span><span class="gemini-pick-team">${p.winner || 'TBD'}</span></span>
-        ${p.ats_pick ? `<span class="gemini-toggle-ats"><span class="gemini-pick-label">ATS (${atsConf}):</span><span class="gemini-pick-team">${p.ats_pick}</span></span>` : ''}
-        ${p.total_pick ? `<span class="gemini-toggle-ou"><span class="gemini-pick-label">O/U (${ouConf}):</span><span class="gemini-pick-team">${p.total_pick}</span></span>` : ''}
+        <span class="gemini-toggle-winner"><span class="gemini-pick-spacer"></span><span class="gemini-pick-label">ML (${conf}):</span><span class="gemini-pick-team">${p.winner || 'TBD'}</span></span>
+        ${p.ats_pick ? `<span class="gemini-toggle-ats"><span class="gemini-pick-spacer"></span><span class="gemini-pick-label">ATS (${atsConf}):</span><span class="gemini-pick-team">${p.ats_pick}</span></span>` : ''}
+        ${p.total_pick ? `<span class="gemini-toggle-ou"><span class="gemini-pick-spacer"></span><span class="gemini-pick-label">O/U (${ouConf}):</span><span class="gemini-pick-team">${p.total_pick}</span></span>` : ''}
       </span>
       <span class="gemini-caret">▾</span>
     </span>
