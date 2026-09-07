@@ -499,44 +499,50 @@ function buildPickRows(sport, data, scores) {
     (period.days || []).forEach(day => {
       (day.time_slots || []).forEach(slot => {
         (slot.games || []).forEach(g => {
-          const pick = getPick(sport, g.id);
-          if (!pick) return;
+          // A game can carry both a main (ATS/ML) pick and a total (O/U)
+          // pick at once (see togglePick in picks-store.js) -- each is
+          // graded and paid out independently, so each gets its own row.
+          const picks = [getMainPick(sport, g.id), getTotalPick(sport, g.id)].filter(Boolean);
+          if (!picks.length) return;
           const gScore = (scores[sport] || {})[String(g.id)];
-          const outcome = _myPickResult(g, gScore, pick);
-          const entry = pick.odds ? (pick.odds.draftkings || pick.odds.fanduel) : null;
-          const pickedTeam = pick.side === 'home' ? g.home_team
-            : pick.side === 'away' ? g.away_team
-            : null;
-          let payout10 = pick.payout10;
-          if (payout10 === undefined) payout10 = calcPayout(entry ? entry.american : null, 10);
-          let amount = '';
-          let result = 'Pending';
-          if (outcome === 'hit') { result = 'Win'; amount = payout10 != null ? payout10 : ''; }
-          else if (outcome === 'miss') { result = 'Loss'; amount = -10; }
 
-          const pickTypeLabel = pick.market === 'spread' ? 'ATS'
-            : pick.market === 'total' ? 'O/U'
-            : 'ML';
-          const yourPick = pick.market === 'total'
-            ? (pick.side === 'over' ? 'Over' : 'Under')
-            : `${pickedTeam || ''} (${pick.side === 'home' ? 'Home' : 'Away'})`;
+          picks.forEach(pick => {
+            const outcome = _myPickResult(g, gScore, pick);
+            const entry = pick.odds ? (pick.odds.draftkings || pick.odds.fanduel) : null;
+            const pickedTeam = pick.side === 'home' ? g.home_team
+              : pick.side === 'away' ? g.away_team
+              : null;
+            let payout10 = pick.payout10;
+            if (payout10 === undefined) payout10 = calcPayout(entry ? entry.american : null, 10);
+            let amount = '';
+            let result = 'Pending';
+            if (outcome === 'hit') { result = 'Win'; amount = payout10 != null ? payout10 : ''; }
+            else if (outcome === 'miss') { result = 'Loss'; amount = -10; }
 
-          rows.push({
-            'Sport': label,
-            'Period': periodLabel,
-            'Date': day.date || '',
-            'Weekday': day.weekday || '',
-            'Time Slot': slot.slot || '',
-            'Away Team': g.away_team || '',
-            'Home Team': g.home_team || '',
-            'Channel': g.channel || '',
-            'Pick Type': pickTypeLabel,
-            'Your Pick': yourPick,
-            'Spread': pick.market === 'spread' && entry ? entry.line : '',
-            'Money Line': pick.market === 'moneyline' && entry ? entry.american : '',
-            'Total Line': pick.market === 'total' && entry ? entry.line : '',
-            'Result': result,
-            'Amount Won/Lost ($10 bet)': amount,
+            const pickTypeLabel = pick.market === 'spread' ? 'ATS'
+              : pick.market === 'total' ? 'O/U'
+              : 'ML';
+            const yourPick = pick.market === 'total'
+              ? (pick.side === 'over' ? 'Over' : 'Under')
+              : `${pickedTeam || ''} (${pick.side === 'home' ? 'Home' : 'Away'})`;
+
+            rows.push({
+              'Sport': label,
+              'Period': periodLabel,
+              'Date': day.date || '',
+              'Weekday': day.weekday || '',
+              'Time Slot': slot.slot || '',
+              'Away Team': g.away_team || '',
+              'Home Team': g.home_team || '',
+              'Channel': g.channel || '',
+              'Pick Type': pickTypeLabel,
+              'Your Pick': yourPick,
+              'Spread': pick.market === 'spread' && entry ? entry.line : '',
+              'Money Line': pick.market === 'moneyline' && entry ? entry.american : '',
+              'Total Line': pick.market === 'total' && entry ? entry.line : '',
+              'Result': result,
+              'Amount Won/Lost ($10 bet)': amount,
+            });
           });
         });
       });

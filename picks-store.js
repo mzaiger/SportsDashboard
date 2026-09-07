@@ -1596,7 +1596,8 @@ function computeGeminiMoneyRecordAllTime(datasets, scores, filterState) {
   return { net: Math.round(net * 100) / 100, graded };
 }
 
-// Grades the user's OWN saved picks (cookie-based, via getPick()) against
+// Grades the user's OWN saved picks (cookie-based, via getMainPick()/
+// getTotalPick()) against
 // final scores, across the full all-time history in every dataset's
 // `weeks` array -- accuracy.html's "My Accuracy" pill/table, and (via the
 // weekly-windowed dataset it's called with) picks.html's own My Accuracy

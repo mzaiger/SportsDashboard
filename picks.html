@@ -640,11 +640,10 @@
 
   .matchup{
     margin:0.85rem 0 0.6rem;
-    display:flex; align-items:center; justify-content:center; flex-wrap:nowrap; gap:0.45rem;
+    display:flex; align-items:center; justify-content:center; flex-wrap:wrap; gap:0.45rem;
     font-family:'Oswald',sans-serif; font-size:1.05rem; font-weight:600;
-    white-space:nowrap; overflow-x:auto; scrollbar-width:none;
+    white-space:normal; overflow-x:visible;
   }
-  .matchup::-webkit-scrollbar{display:none;}
   .team{display:inline-flex; align-items:center; gap:0.4rem;}
   .team-name-wrap{display:inline-flex; flex-direction:column; align-items:flex-start; line-height:1.2;}
   .team-name-line{display:inline-flex; align-items:baseline; gap:0.4rem;}
