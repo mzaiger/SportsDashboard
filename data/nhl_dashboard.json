@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-09T08:59:01.659270+00:00",
+  "generated_at": "2026-09-09T16:33:05.853857+00:00",
   "season": 2026,
   "display_timezone": "America/Chicago",
   "weeks": [
@@ -64,20 +64,120 @@
           "time_slots": [
             {
               "slot": "Prime Time",
-              "best_matchup_score": 50.0,
+              "best_matchup_score": 0.0,
               "pick_reason": "combined_points",
               "games": [
+                {
+                  "id": "401886258",
+                  "start_time": "2026-09-20T00:00Z",
+                  "start_time_tbd": false,
+                  "home_team": "Minnesota Wild",
+                  "home_abbr": "MIN",
+                  "home_record": "0-0-0",
+                  "away_team": "Chicago Blackhawks",
+                  "away_abbr": "CHI",
+                  "away_record": "0-0-0",
+                  "matchup_score": 0.0,
+                  "channel": "TBD",
+                  "venue": "Grand Casino Arena",
+                  "neutral_site": false,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    },
+                    "fanduel": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    }
+                  },
+                  "matchup_rank": 1,
+                  "is_slot_pick": true
+                },
+                {
+                  "id": "401886427",
+                  "start_time": "2026-09-19T23:00Z",
+                  "start_time_tbd": false,
+                  "home_team": "St. Louis Blues",
+                  "home_abbr": "STL",
+                  "home_record": "0-0-0",
+                  "away_team": "Dallas Stars",
+                  "away_abbr": "DAL",
+                  "away_record": "0-0-0",
+                  "matchup_score": 36.4,
+                  "channel": "TBD",
+                  "venue": "Enterprise Center",
+                  "neutral_site": false,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {
+                        "home": {
+                          "line": 1.5,
+                          "american": -142
+                        },
+                        "away": {
+                          "line": -1.5,
+                          "american": 120
+                        }
+                      },
+                      "moneyline": {
+                        "home": {
+                          "line": null,
+                          "american": 170
+                        },
+                        "away": {
+                          "line": null,
+                          "american": -205
+                        }
+                      },
+                      "total": {
+                        "over": {
+                          "line": 5.5,
+                          "american": -120
+                        },
+                        "under": {
+                          "line": 5.5,
+                          "american": 100
+                        }
+                      }
+                    },
+                    "fanduel": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    }
+                  },
+                  "matchup_rank": 2,
+                  "gemini_prediction": {
+                    "winner": "Dallas Stars",
+                    "confidence": 68,
+                    "ats_pick": "St. Louis Blues",
+                    "ats_confidence": 62,
+                    "total_pick": "Over",
+                    "total_confidence": 55,
+                    "analysis": "The Dallas Stars enter this matchup displaying superior offensive depth and special teams efficiency compared to their opponents. St. Louis has struggled to maintain consistent defensive pairings throughout the 2026 season, giving up high-danger scoring chances at an alarming rate. However, the Blues remain competitive on home ice and possess enough scoring punch to keep the game within a single goal. Dallas holds the overall talent advantage, making them the correct choice to secure the outright victory. Taking the home underdog on the spread provides excellent value given the tight nature of division games this year.",
+                    "ou_analysis": "Both teams feature aggressive forechecking schemes that frequently lead to high-tempo transitions and numerous scoring opportunities. Goaltending metrics for both squads indicate some vulnerability during high-volume shot sequences early in the season. Consequently, the game script points toward a slightly higher-scoring affair that pushes past the 5.5 goal threshold.",
+                    "splits_and_direction": "Based on public betting tendencies, approximately 68 percent of moneyline and spread wagers are backing the favored Dallas Stars. The spread has remained steady at +1.5 for the home side, while the total has ticked upward from an opening number of 5.0 to the current 5.5 line due to heavy early action on the over.",
+                    "display_text": "Analysis: The Dallas Stars enter this matchup displaying superior offensive depth and special teams efficiency compared to their opponents. St. Louis has struggled to maintain consistent defensive pairings throughout the 2026 season, giving up high-danger scoring chances at an alarming rate. However, the Blues remain competitive on home ice and possess enough scoring punch to keep the game within a single goal. Dallas holds the overall talent advantage, making them the correct choice to secure the outright victory. Taking the home underdog on the spread provides excellent value given the tight nature of division games this year.\n\nOver Under: Both teams feature aggressive forechecking schemes that frequently lead to high-tempo transitions and numerous scoring opportunities. Goaltending metrics for both squads indicate some vulnerability during high-volume shot sequences early in the season. Consequently, the game script points toward a slightly higher-scoring affair that pushes past the 5.5 goal threshold.\n\nSplits: Based on public betting tendencies, approximately 68 percent of moneyline and spread wagers are backing the favored Dallas Stars. The spread has remained steady at +1.5 for the home side, while the total has ticked upward from an opening number of 5.0 to the current 5.5 line due to heavy early action on the over.",
+                    "generated_at": "2026-09-07T02:39:05.959883+00:00",
+                    "odds_hash": "8c8a1bd30e144d57",
+                    "model": "gemini-3.5-flash-lite"
+                  },
+                  "is_slot_pick": false
+                },
                 {
                   "id": "401881922",
                   "start_time": "2026-09-19T23:00Z",
                   "start_time_tbd": false,
                   "home_team": "Toronto Maple Leafs",
                   "home_abbr": "TOR",
-                  "home_record": null,
+                  "home_record": "0-0-0",
                   "away_team": "Montreal Canadiens",
                   "away_abbr": "MTL",
-                  "away_record": null,
-                  "matchup_score": 50.0,
+                  "away_record": "0-0-0",
+                  "matchup_score": 81.8,
                   "channel": "TBD",
                   "venue": "Scotiabank Arena",
                   "neutral_site": false,
@@ -138,7 +238,7 @@
                       }
                     }
                   },
-                  "matchup_rank": 1,
+                  "matchup_rank": 3,
                   "gemini_prediction": {
                     "winner": "Toronto Maple Leafs",
                     "confidence": 54,
@@ -154,7 +254,7 @@
                     "odds_hash": "06dbacd242d04d3b",
                     "model": "gemini-3.5-flash-lite"
                   },
-                  "is_slot_pick": true
+                  "is_slot_pick": false
                 },
                 {
                   "id": "401881923",
@@ -162,113 +262,13 @@
                   "start_time_tbd": false,
                   "home_team": "Montreal Canadiens",
                   "home_abbr": "MTL",
-                  "home_record": null,
+                  "home_record": "0-0-0",
                   "away_team": "Toronto Maple Leafs",
                   "away_abbr": "TOR",
-                  "away_record": null,
-                  "matchup_score": 50.0,
+                  "away_record": "0-0-0",
+                  "matchup_score": 81.8,
                   "channel": "TBD",
                   "venue": "Bell Centre",
-                  "neutral_site": false,
-                  "odds": {
-                    "draftkings": {
-                      "spread": {},
-                      "moneyline": {},
-                      "total": {}
-                    },
-                    "fanduel": {
-                      "spread": {},
-                      "moneyline": {},
-                      "total": {}
-                    }
-                  },
-                  "matchup_rank": 2,
-                  "is_slot_pick": false
-                },
-                {
-                  "id": "401886427",
-                  "start_time": "2026-09-19T23:00Z",
-                  "start_time_tbd": false,
-                  "home_team": "St. Louis Blues",
-                  "home_abbr": "STL",
-                  "home_record": null,
-                  "away_team": "Dallas Stars",
-                  "away_abbr": "DAL",
-                  "away_record": null,
-                  "matchup_score": 50.0,
-                  "channel": "TBD",
-                  "venue": "Enterprise Center",
-                  "neutral_site": false,
-                  "odds": {
-                    "draftkings": {
-                      "spread": {
-                        "home": {
-                          "line": 1.5,
-                          "american": -142
-                        },
-                        "away": {
-                          "line": -1.5,
-                          "american": 120
-                        }
-                      },
-                      "moneyline": {
-                        "home": {
-                          "line": null,
-                          "american": 170
-                        },
-                        "away": {
-                          "line": null,
-                          "american": -205
-                        }
-                      },
-                      "total": {
-                        "over": {
-                          "line": 5.5,
-                          "american": -120
-                        },
-                        "under": {
-                          "line": 5.5,
-                          "american": 100
-                        }
-                      }
-                    },
-                    "fanduel": {
-                      "spread": {},
-                      "moneyline": {},
-                      "total": {}
-                    }
-                  },
-                  "matchup_rank": 3,
-                  "gemini_prediction": {
-                    "winner": "Dallas Stars",
-                    "confidence": 68,
-                    "ats_pick": "St. Louis Blues",
-                    "ats_confidence": 62,
-                    "total_pick": "Over",
-                    "total_confidence": 55,
-                    "analysis": "The Dallas Stars enter this matchup displaying superior offensive depth and special teams efficiency compared to their opponents. St. Louis has struggled to maintain consistent defensive pairings throughout the 2026 season, giving up high-danger scoring chances at an alarming rate. However, the Blues remain competitive on home ice and possess enough scoring punch to keep the game within a single goal. Dallas holds the overall talent advantage, making them the correct choice to secure the outright victory. Taking the home underdog on the spread provides excellent value given the tight nature of division games this year.",
-                    "ou_analysis": "Both teams feature aggressive forechecking schemes that frequently lead to high-tempo transitions and numerous scoring opportunities. Goaltending metrics for both squads indicate some vulnerability during high-volume shot sequences early in the season. Consequently, the game script points toward a slightly higher-scoring affair that pushes past the 5.5 goal threshold.",
-                    "splits_and_direction": "Based on public betting tendencies, approximately 68 percent of moneyline and spread wagers are backing the favored Dallas Stars. The spread has remained steady at +1.5 for the home side, while the total has ticked upward from an opening number of 5.0 to the current 5.5 line due to heavy early action on the over.",
-                    "display_text": "Analysis: The Dallas Stars enter this matchup displaying superior offensive depth and special teams efficiency compared to their opponents. St. Louis has struggled to maintain consistent defensive pairings throughout the 2026 season, giving up high-danger scoring chances at an alarming rate. However, the Blues remain competitive on home ice and possess enough scoring punch to keep the game within a single goal. Dallas holds the overall talent advantage, making them the correct choice to secure the outright victory. Taking the home underdog on the spread provides excellent value given the tight nature of division games this year.\n\nOver Under: Both teams feature aggressive forechecking schemes that frequently lead to high-tempo transitions and numerous scoring opportunities. Goaltending metrics for both squads indicate some vulnerability during high-volume shot sequences early in the season. Consequently, the game script points toward a slightly higher-scoring affair that pushes past the 5.5 goal threshold.\n\nSplits: Based on public betting tendencies, approximately 68 percent of moneyline and spread wagers are backing the favored Dallas Stars. The spread has remained steady at +1.5 for the home side, while the total has ticked upward from an opening number of 5.0 to the current 5.5 line due to heavy early action on the over.",
-                    "generated_at": "2026-09-07T02:39:05.959883+00:00",
-                    "odds_hash": "8c8a1bd30e144d57",
-                    "model": "gemini-3.5-flash-lite"
-                  },
-                  "is_slot_pick": false
-                },
-                {
-                  "id": "401878099",
-                  "start_time": "2026-09-20T00:00Z",
-                  "start_time_tbd": false,
-                  "home_team": "Edmonton Oilers",
-                  "home_abbr": "EDM",
-                  "home_record": null,
-                  "away_team": "Winnipeg Jets",
-                  "away_abbr": "WPG",
-                  "away_record": null,
-                  "matchup_score": 50.0,
-                  "channel": "TBD",
-                  "venue": "Rogers Place",
                   "neutral_site": false,
                   "odds": {
                     "draftkings": {
@@ -286,18 +286,18 @@
                   "is_slot_pick": false
                 },
                 {
-                  "id": "401886258",
+                  "id": "401878099",
                   "start_time": "2026-09-20T00:00Z",
                   "start_time_tbd": false,
-                  "home_team": "Minnesota Wild",
-                  "home_abbr": "MIN",
-                  "home_record": null,
-                  "away_team": "Chicago Blackhawks",
-                  "away_abbr": "CHI",
-                  "away_record": null,
-                  "matchup_score": 50.0,
+                  "home_team": "Edmonton Oilers",
+                  "home_abbr": "EDM",
+                  "home_record": "0-0-0",
+                  "away_team": "Winnipeg Jets",
+                  "away_abbr": "WPG",
+                  "away_record": "0-0-0",
+                  "matchup_score": 81.8,
                   "channel": "TBD",
-                  "venue": "Grand Casino Arena",
+                  "venue": "Rogers Place",
                   "neutral_site": false,
                   "odds": {
                     "draftkings": {
@@ -320,11 +320,11 @@
                   "start_time_tbd": false,
                   "home_team": "Los Angeles Kings",
                   "home_abbr": "LA",
-                  "home_record": null,
+                  "home_record": "0-0-0",
                   "away_team": "Vegas Golden Knights",
                   "away_abbr": "VGK",
-                  "away_record": null,
-                  "matchup_score": 50.0,
+                  "away_record": "0-0-0",
+                  "matchup_score": 81.8,
                   "channel": "Scripps Sports",
                   "venue": "Toyota Arena",
                   "neutral_site": true,
@@ -347,7 +347,7 @@
             },
             {
               "slot": "Late Night",
-              "best_matchup_score": 50.0,
+              "best_matchup_score": 100.0,
               "pick_reason": "combined_points",
               "games": [
                 {
@@ -356,11 +356,11 @@
                   "start_time_tbd": false,
                   "home_team": "Seattle Kraken",
                   "home_abbr": "SEA",
-                  "home_record": null,
+                  "home_record": "0-0-0",
                   "away_team": "Vancouver Canucks",
                   "away_abbr": "VAN",
-                  "away_record": null,
-                  "matchup_score": 50.0,
+                  "away_record": "0-0-0",
+                  "matchup_score": 100.0,
                   "channel": "TBD",
                   "venue": "Climate Pledge Arena",
                   "neutral_site": false,
@@ -397,7 +397,7 @@
           "time_slots": [
             {
               "slot": "Noon",
-              "best_matchup_score": 50.0,
+              "best_matchup_score": 77.8,
               "pick_reason": "combined_points",
               "games": [
                 {
@@ -406,11 +406,11 @@
                   "start_time_tbd": false,
                   "home_team": "New Jersey Devils",
                   "home_abbr": "NJ",
-                  "home_record": null,
+                  "home_record": "0-0-0",
                   "away_team": "New York Islanders",
                   "away_abbr": "NYI",
-                  "away_record": null,
-                  "matchup_score": 50.0,
+                  "away_record": "0-0-0",
+                  "matchup_score": 77.8,
                   "channel": "TBD",
                   "venue": "Prudential Center",
                   "neutral_site": false,
@@ -426,14 +426,14 @@
                       "total": {}
                     }
                   },
-                  "matchup_rank": 1,
+                  "matchup_rank": 5,
                   "is_slot_pick": true
                 }
               ]
             },
             {
               "slot": "Afternoon",
-              "best_matchup_score": 50.0,
+              "best_matchup_score": 11.1,
               "pick_reason": "combined_points",
               "games": [
                 {
@@ -442,11 +442,11 @@
                   "start_time_tbd": false,
                   "home_team": "Anaheim Ducks",
                   "home_abbr": "ANA",
-                  "home_record": null,
+                  "home_record": "0-0-0",
                   "away_team": "San Jose Sharks",
                   "away_abbr": "SJ",
-                  "away_record": null,
-                  "matchup_score": 50.0,
+                  "away_record": "0-0-0",
+                  "matchup_score": 11.1,
                   "channel": "TBD",
                   "venue": "Honda Center",
                   "neutral_site": false,
@@ -471,11 +471,11 @@
                   "start_time_tbd": false,
                   "home_team": "Boston Bruins",
                   "home_abbr": "BOS",
-                  "home_record": null,
+                  "home_record": "0-0-0",
                   "away_team": "Washington Capitals",
                   "away_abbr": "WSH",
-                  "away_record": null,
-                  "matchup_score": 50.0,
+                  "away_record": "0-0-0",
+                  "matchup_score": 66.7,
                   "channel": "NESN+, MNMT2",
                   "venue": "TD Garden",
                   "neutral_site": false,
@@ -491,7 +491,7 @@
                       "total": {}
                     }
                   },
-                  "matchup_rank": 3,
+                  "matchup_rank": 4,
                   "is_slot_pick": false
                 },
                 {
@@ -500,11 +500,11 @@
                   "start_time_tbd": false,
                   "home_team": "Tampa Bay Lightning",
                   "home_abbr": "TB",
-                  "home_record": null,
+                  "home_record": "0-0-0",
                   "away_team": "Nashville Predators",
                   "away_abbr": "NSH",
-                  "away_record": null,
-                  "matchup_score": 50.0,
+                  "away_record": "0-0-0",
+                  "matchup_score": 100.0,
                   "channel": "The Spot - MTN, Scripps Sports",
                   "venue": "Benchmark International Arena",
                   "neutral_site": false,
@@ -520,56 +520,27 @@
                       "total": {}
                     }
                   },
-                  "matchup_rank": 4,
+                  "matchup_rank": 7,
                   "is_slot_pick": false
                 }
               ]
             },
             {
               "slot": "Prime Time",
-              "best_matchup_score": 50.0,
+              "best_matchup_score": 0.0,
               "pick_reason": "combined_points",
               "games": [
-                {
-                  "id": "401879364",
-                  "start_time": "2026-09-20T23:00Z",
-                  "start_time_tbd": false,
-                  "home_team": "Colorado Avalanche",
-                  "home_abbr": "COL",
-                  "home_record": null,
-                  "away_team": "Utah Mammoth",
-                  "away_abbr": "UTA",
-                  "away_record": null,
-                  "matchup_score": 50.0,
-                  "channel": "TBD",
-                  "venue": "Ball Arena",
-                  "neutral_site": false,
-                  "odds": {
-                    "draftkings": {
-                      "spread": {},
-                      "moneyline": {},
-                      "total": {}
-                    },
-                    "fanduel": {
-                      "spread": {},
-                      "moneyline": {},
-                      "total": {}
-                    }
-                  },
-                  "matchup_rank": 5,
-                  "is_slot_pick": true
-                },
                 {
                   "id": "401879932",
                   "start_time": "2026-09-20T23:00Z",
                   "start_time_tbd": false,
                   "home_team": "Florida Panthers",
                   "home_abbr": "FLA",
-                  "home_record": null,
+                  "home_record": "0-0-0",
                   "away_team": "Carolina Hurricanes",
                   "away_abbr": "CAR",
-                  "away_record": null,
-                  "matchup_score": 50.0,
+                  "away_record": "0-0-0",
+                  "matchup_score": 0.0,
                   "channel": "Scripps Sports",
                   "venue": "Amerant Bank Arena",
                   "neutral_site": false,
@@ -639,7 +610,7 @@
                       }
                     }
                   },
-                  "matchup_rank": 6,
+                  "matchup_rank": 1,
                   "gemini_prediction": {
                     "winner": "Carolina Hurricanes",
                     "confidence": 58,
@@ -655,7 +626,7 @@
                     "odds_hash": "d0d194156d0c5507",
                     "model": "gemini-3.5-flash-lite"
                   },
-                  "is_slot_pick": false
+                  "is_slot_pick": true
                 },
                 {
                   "id": "401879309",
@@ -663,11 +634,11 @@
                   "start_time_tbd": false,
                   "home_team": "Calgary Flames",
                   "home_abbr": "CGY",
-                  "home_record": null,
+                  "home_record": "0-0-0",
                   "away_team": "Seattle Kraken",
                   "away_abbr": "SEA",
-                  "away_record": null,
-                  "matchup_score": 50.0,
+                  "away_record": "0-0-0",
+                  "matchup_score": 44.4,
                   "channel": "TBD",
                   "venue": "Scotiabank Saddledome",
                   "neutral_site": false,
@@ -710,7 +681,7 @@
                       "total": {}
                     }
                   },
-                  "matchup_rank": 7,
+                  "matchup_rank": 3,
                   "gemini_prediction": {
                     "winner": "Seattle Kraken",
                     "confidence": 55,
@@ -726,6 +697,35 @@
                     "odds_hash": "7d66b3b4d6a1009f",
                     "model": "gemini-3.5-flash-lite"
                   },
+                  "is_slot_pick": false
+                },
+                {
+                  "id": "401879364",
+                  "start_time": "2026-09-20T23:00Z",
+                  "start_time_tbd": false,
+                  "home_team": "Colorado Avalanche",
+                  "home_abbr": "COL",
+                  "home_record": "0-0-0",
+                  "away_team": "Utah Mammoth",
+                  "away_abbr": "UTA",
+                  "away_record": "0-0-0",
+                  "matchup_score": 88.9,
+                  "channel": "TBD",
+                  "venue": "Ball Arena",
+                  "neutral_site": false,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    },
+                    "fanduel": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    }
+                  },
+                  "matchup_rank": 6,
                   "is_slot_pick": false
                 }
               ]
