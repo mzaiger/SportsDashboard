@@ -952,9 +952,18 @@ function attachPickHandlers(containerEl, onPick) {
  * attachPickHandlers, so it survives re-renders without re-binding.
  */
 
-function renderGeminiBlock(g) {
+// Tracks which games' Gemini panels are currently expanded, keyed by
+// "<sport>:<gameId>", so a periodic renderBoard() re-render (see the
+// setInterval in each page's init()) can restore the open/closed state
+// instead of always re-rendering every panel collapsed.
+const _openGeminiPanels = new Set();
+
+function renderGeminiBlock(g, sport) {
   const p = g.gemini_prediction;
   if (!p) return '';
+
+  const key = `${sport}:${g.id}`;
+  const isOpen = _openGeminiPanels.has(key);
 
   const fmt = (v) => (v !== undefined && v !== null && v !== '') ? `${v}%` : '—';
 
@@ -989,7 +998,7 @@ function renderGeminiBlock(g) {
     if (match) splits = match[1].trim();
   }
 
-  return `<button type="button" class="gemini-toggle" aria-expanded="false">
+  return `<button type="button" class="gemini-toggle${isOpen ? ' open' : ''}" aria-expanded="${isOpen}" data-gemini-key="${key}">
     <span class="gemini-toggle-icon">&#10024;</span>
     <span class="gemini-toggle-main">Gemini Prediction Summary</span>
     <span class="gemini-toggle-trailing">
@@ -1001,7 +1010,7 @@ function renderGeminiBlock(g) {
       <span class="gemini-caret">▾</span>
     </span>
   </button>
-  <div class="gemini-panel" hidden>
+  <div class="gemini-panel"${isOpen ? '' : ' hidden'}>
     <div class="gemini-panel-row"><span>Winner</span> <span class="gemini-value">${p.winner || '—'}</span></div>
     ${p.ats_pick ? `<div class="gemini-panel-row"><span>ATS</span> <span class="gemini-value">${p.ats_pick}</span></div>` : ''}
     ${p.total_pick ? `<div class="gemini-panel-row"><span>O/U</span> <span class="gemini-value">${p.total_pick}</span></div>` : ''}
@@ -1024,6 +1033,11 @@ function attachGeminiHandlers(containerEl) {
     panel.hidden = isOpen;
     btn.classList.toggle('open', !isOpen);
     btn.setAttribute('aria-expanded', String(!isOpen));
+    const key = btn.dataset.geminiKey;
+    if (key) {
+      if (isOpen) _openGeminiPanels.delete(key);
+      else _openGeminiPanels.add(key);
+    }
   });
 }
 
