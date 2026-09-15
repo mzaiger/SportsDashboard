@@ -998,9 +998,22 @@ function renderGeminiBlock(g, sport) {
     if (match) splits = match[1].trim();
   }
 
+  // When the prediction was generated, shown right after the label so
+  // it's clear how fresh the pick is relative to the current odds.
+  let genAtStr = '';
+  if (p.generated_at) {
+    const genAt = new Date(p.generated_at);
+    if (!isNaN(genAt)) {
+      genAtStr = genAt.toLocaleString('en-US', {
+        month: 'short', day: 'numeric',
+        hour: 'numeric', minute: '2-digit', timeZoneName: 'short'
+      });
+    }
+  }
+
   return `<button type="button" class="gemini-toggle${isOpen ? ' open' : ''}" aria-expanded="${isOpen}" data-gemini-key="${key}">
     <span class="gemini-toggle-icon">&#10024;</span>
-    <span class="gemini-toggle-main">Gemini Prediction Summary</span>
+    <span class="gemini-toggle-main">Gemini Prediction Summary${genAtStr ? ` (${genAtStr})` : ''}</span>
     <span class="gemini-toggle-trailing">
       <span class="gemini-picks-summary">
         <span class="gemini-toggle-winner"><span class="gemini-pick-spacer"></span><span class="gemini-pick-label">ML (${conf}):</span><span class="gemini-pick-team">${p.winner || 'TBD'}</span></span>
