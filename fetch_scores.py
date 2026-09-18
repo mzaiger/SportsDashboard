@@ -233,7 +233,21 @@ def fetch_cfb_scores(dashboard, weeks_to_fetch=None):
             log(f"  WARNING: couldn't fetch CFB scores for week {week_num} from ESPN ({dates_param}): {e}")
             continue
 
-        for event in payload.get("events", []):
+        events = payload.get("events", [])
+        returned_ids = {str(e.get("id")) for e in events if e.get("id") is not None}
+        matched_ids = returned_ids & ids_needed
+        missing_ids = ids_needed - returned_ids
+        log(f"  week {week_num}: ESPN returned {len(events)} event(s); "
+            f"{len(matched_ids)}/{len(ids_needed)} of our game id(s) present"
+            + (f"; MISSING from response: {sorted(missing_ids)}" if missing_ids else ""))
+        if not events:
+            # Dump whatever top-level keys/error info came back instead of
+            # just "0 events" -- if ESPN 200'd with an error/empty body for
+            # this dates_param, this is the only way to tell from the log.
+            log(f"  week {week_num}: raw payload keys: {list(payload.keys())}"
+                + (f", payload: {json.dumps(payload)[:500]}" if len(payload) <= 3 else ""))
+
+        for event in events:
             game_id = event.get("id")
             if game_id is None or str(game_id) not in ids_needed:
                 continue
@@ -247,6 +261,8 @@ def fetch_cfb_scores(dashboard, weeks_to_fetch=None):
             status = event.get("status", {}).get("type", {})
             state = status.get("state")  # "pre" / "in" / "post"
             if state == "pre":
+                log(f"  week {week_num}: game {game_id} present but still 'pre' -- odd if it's "
+                    f"the Pitt/Syracuse game, which already finished")
                 continue  # hasn't started -- nothing to overlay yet
 
             home_score = home_c.get("score")
