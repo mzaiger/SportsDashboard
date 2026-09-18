@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""
+"""2026-09-18
 Live score poller -- run hourly via .github/workflows/fetch-scores.yml.
 
 Overlays home/away scores + game status onto the games already listed in
