@@ -165,36 +165,44 @@ def espn_get_cfb_scoreboard(dates_param):
 
 
 def _cfb_dates_and_ids_needing_scores(dashboard, weeks_to_fetch):
-    """Return {week_number: (set of "YYYYMMDD" date strings, set of
-    game-id strings)} for the given week numbers of the CFB dashboard
-    (every week if weeks_to_fetch is None), keyed per week so each week
-    can be requested from ESPN as its own (narrow) date range instead of
-    one combined range spanning every week that still needs a refresh.
-    ESPN's scoreboard endpoint doesn't reliably return events for wide
-    multi-week date ranges -- a combined range silently comes back empty
-    once two non-adjacent-enough weeks (e.g. the current week and next
-    week) both still need refreshing, which was dropping scores for
-    every game in both weeks, finished or not."""
-    by_week = {}
+    """Return {date_str ("YYYYMMDD"): set of game-id strings} for the given
+    week numbers of the CFB dashboard (every week if weeks_to_fetch is
+    None), keyed per CALENDAR DAY (not per week) so each day can be
+    requested from ESPN as its own single-date request.
+
+    Previously this fetched one ESPN request per WEEK, covering the whole
+    date range spanned by whichever weeks still needed a refresh. That
+    broke in two ways: (1) when more than one week needed refreshing at
+    once (e.g. the current week and next week), their ranges got merged
+    into one combined request spanning both -- and (2) even a single
+    week's own range can span many days (week 1 ran Aug 29 - Sep 7, 10
+    days, because of a lone MAC Tuesday/Wednesday game). Either way,
+    ESPN's college-football scoreboard endpoint returns an outright
+    `400 Bad Request` for a `dates=` range once it's too wide -- confirmed
+    from a real run's log ("400 Client Error: Bad Request ... dates=
+    20260917-20260926"). That exception was being caught and logged as a
+    WARNING, then the whole request's worth of games (every week involved,
+    finished or not) silently got zero scores. Per-day requests (one exact
+    YYYYMMDD each, never a range) sidestep the width limit entirely and
+    match how MLB/NBA/NCAAMB/NHL already fetch scores below."""
+    by_date = {}
     if not dashboard:
-        return by_week
+        return by_date
     wanted = set(weeks_to_fetch) if weeks_to_fetch is not None else None
     for week in dashboard.get("weeks", []):
         if wanted is not None and week["week"] not in wanted:
             continue
-        dates, ids = set(), set()
         for day in week.get("days", []):
             date_str = (day.get("date") or "").replace("-", "")
+            if not date_str:
+                continue
+            ids = by_date.setdefault(date_str, set())
             for slot in day.get("time_slots", []):
                 for g in slot.get("games", []):
-                    if date_str:
-                        dates.add(date_str)
                     game_id = g.get("id")
                     if game_id is not None:
                         ids.add(str(game_id))
-        if dates and ids:
-            by_week[week["week"]] = (dates, ids)
-    return by_week
+    return {d: ids for d, ids in by_date.items() if ids}
 
 
 def fetch_cfb_scores(dashboard, weeks_to_fetch=None):
@@ -209,42 +217,39 @@ def fetch_cfb_scores(dashboard, weeks_to_fetch=None):
 
     `weeks_to_fetch` restricts which week numbers are pulled from the
     dashboard (see weeks_needing_refresh()); defaults to every week in
-    the dashboard if not given. Issues one ESPN request per week (its
-    own narrow date range) rather than one combined request spanning
-    every week that still needs a refresh -- see
-    _cfb_dates_and_ids_needing_scores() for why.
+    the dashboard if not given. Issues one ESPN request per CALENDAR DAY
+    (a single exact date, never a range) -- see
+    _cfb_dates_and_ids_needing_scores() for why a date range isn't safe
+    here even scoped to one week.
     """
     scores = {}
     if not dashboard:
         return scores
 
-    per_week = _cfb_dates_and_ids_needing_scores(dashboard, weeks_to_fetch)
-    if not per_week:
+    per_date = _cfb_dates_and_ids_needing_scores(dashboard, weeks_to_fetch)
+    if not per_date:
         return scores
 
-    for week_num, (dates_needed, ids_needed) in sorted(per_week.items()):
-        dates_sorted = sorted(dates_needed)
-        dates_param = dates_sorted[0] if len(dates_sorted) == 1 else f"{dates_sorted[0]}-{dates_sorted[-1]}"
-
-        log(f"CFB scores: fetching ESPN scoreboard for week {week_num} ({dates_param})...")
+    for date_str, ids_needed in sorted(per_date.items()):
+        log(f"CFB scores: fetching ESPN scoreboard for {date_str}...")
         try:
-            payload = espn_get_cfb_scoreboard(dates_param)
+            payload = espn_get_cfb_scoreboard(date_str)
         except requests.RequestException as e:
-            log(f"  WARNING: couldn't fetch CFB scores for week {week_num} from ESPN ({dates_param}): {e}")
+            log(f"  WARNING: couldn't fetch CFB scores for {date_str} from ESPN: {e}")
             continue
 
         events = payload.get("events", [])
         returned_ids = {str(e.get("id")) for e in events if e.get("id") is not None}
         matched_ids = returned_ids & ids_needed
         missing_ids = ids_needed - returned_ids
-        log(f"  week {week_num}: ESPN returned {len(events)} event(s); "
+        log(f"  {date_str}: ESPN returned {len(events)} event(s); "
             f"{len(matched_ids)}/{len(ids_needed)} of our game id(s) present"
             + (f"; MISSING from response: {sorted(missing_ids)}" if missing_ids else ""))
         if not events:
             # Dump whatever top-level keys/error info came back instead of
             # just "0 events" -- if ESPN 200'd with an error/empty body for
-            # this dates_param, this is the only way to tell from the log.
-            log(f"  week {week_num}: raw payload keys: {list(payload.keys())}"
+            # this date, this is the only way to tell from the log.
+            log(f"  {date_str}: raw payload keys: {list(payload.keys())}"
                 + (f", payload: {json.dumps(payload)[:500]}" if len(payload) <= 3 else ""))
 
         for event in events:
@@ -261,8 +266,8 @@ def fetch_cfb_scores(dashboard, weeks_to_fetch=None):
             status = event.get("status", {}).get("type", {})
             state = status.get("state")  # "pre" / "in" / "post"
             if state == "pre":
-                log(f"  week {week_num}: game {game_id} present but still 'pre' -- odd if it's "
-                    f"the Pitt/Syracuse game, which already finished")
+                log(f"  {date_str}: game {game_id} present but still 'pre' -- odd if it's "
+                    f"a game that should already be final")
                 continue  # hasn't started -- nothing to overlay yet
 
             home_score = home_c.get("score")
