@@ -1,3 +1,4 @@
+# SCRIPT VERSION: 2026-09-18-mlb-date-aware-odds-match
 """
 Shared utilities for the sports betting dashboards (CFB + NFL).
 
@@ -14,6 +15,7 @@ import re
 import sys
 import time
 from datetime import datetime
+from zoneinfo import ZoneInfo
 
 import requests
 
@@ -603,17 +605,61 @@ _MARKET_ALIASES = {**_SPREAD_MARKET_ALIASES, **_TOTAL_MARKET_ALIASES, "moneyline
 _TOTAL_SELECTION_RE = re.compile(r"^(over|under)\b", re.IGNORECASE)
 
 
-def match_odds_for_game(home_team, away_team, odds_rows, team_cache, row_claims):
-    cache_key = (home_team, away_team)
+def match_odds_for_game(home_team, away_team, odds_rows, team_cache, row_claims, target_date=None):
+    """`target_date`, if given, is a "YYYY-MM-DD" string in DISPLAY_TIMEZONE
+    (the same local calendar date used to bucket games into dashboard
+    "days" -- see build_*_dashboard.py). When provided, candidate rows are
+    first restricted to ones whose own `event_start_time` falls on that
+    same local date, before any team-name matching happens.
+
+    This exists because a full raw SharpAPI dump (requested with
+    date_from=date_to=one single day) came back containing rows for THREE
+    different calendar dates (the day before, the requested day, and the
+    day after) -- SharpAPI silently ignores date_from/date_to for this
+    kind of multi-market request rather than erroring, so relying on it to
+    scope the rows was never safe. Without this filter, two teams playing
+    each other on back-to-back days (an ordinary short series -- confirmed
+    in that same dump for four different match-ups, e.g. Astros/Braves
+    on both 9/18 and 9/19) means match_odds_for_game() had candidate rows
+    from BOTH days' games for the exact same team-name pair, with no way
+    to tell them apart -- explaining reports of a wrong run-line value
+    (e.g. both sides showing the same -1.5) once odds started coming from
+    a blended, multi-day pool instead of a cleanly single-day one.
+    Every row already carries `event_start_time` (UTC, e.g.
+    "2026-09-18T22:41Z"); this is the only field used for the check, since
+    the OTHER date-looking field (`event_id`'s embedded date suffix,
+    e.g. "..._2026-09-18_b3") was observed NOT matching event_start_time's
+    calendar date for some rows -- almost certainly a different
+    timezone/convention on SharpAPI's side -- so it isn't trustworthy for
+    this comparison and is deliberately not used here.
+    """
+    cache_key = (home_team, away_team, target_date)
     if cache_key in team_cache:
         return team_cache[cache_key]
 
     home_norm = _normalize(home_team)
     away_norm = _normalize(away_team)
 
+    pool = odds_rows
+    if target_date:
+        same_day_rows = []
+        for r in odds_rows:
+            start = r.get("event_start_time")
+            if not start:
+                continue
+            try:
+                # "2026-09-18T22:41Z" -> aware UTC datetime
+                dt_utc = datetime.fromisoformat(start.replace("Z", "+00:00"))
+            except ValueError:
+                continue
+            local_date = dt_utc.astimezone(ZoneInfo(DISPLAY_TIMEZONE)).date().isoformat()
+            if local_date == target_date:
+                same_day_rows.append(r)
+        pool = same_day_rows
+
     # 1. Match candidates checking both straight and flipped home/away
     candidates = []
-    for r in odds_rows:
+    for r in pool:
         r_home = r.get("home_team", "")
         r_away = r.get("away_team", "")
         
