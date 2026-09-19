@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SCRIPT VERSION: 2026-09-18-mlb-date-aware-odds-match
 """
 NCAAMB (Division I men's college basketball) Betting Dashboard builder.
 
@@ -576,7 +577,8 @@ def build_day(day, sharp_key, gemini_key=None, previous_odds_by_id=None,
             odds = previous_entry.get("odds") or {}
             frozen_prediction_skip_ids.add(gid_str)
         else:
-            odds = match_odds_for_game(home_match_name, away_match_name, odds_rows, team_cache, row_claims)
+            odds = match_odds_for_game(home_match_name, away_match_name, odds_rows, team_cache, row_claims,
+                                        target_date=day_str)
             if previous_odds_by_id:
                 odds = carry_forward_odds(odds, previous_odds_by_id.get(event.get("id")))
 
