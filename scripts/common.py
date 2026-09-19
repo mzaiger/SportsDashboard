@@ -1,4 +1,4 @@
-# SCRIPT VERSION: 2026-09-18-mlb-date-aware-odds-match
+# SCRIPT VERSION: 2026-09-19-dk-abbreviation-fuzzy-match
 """
 Shared utilities for the sports betting dashboards (CFB + NFL).
 
@@ -553,9 +553,31 @@ def _fuzzy_team(normalized_target, candidate_raw):
         # home AND away team match, not from this function in isolation.
         return True
 
+    # DraftKings rows (confirmed via a real raw SharpAPI dump) sometimes
+    # abbreviate just one team's CITY to three letters while leaving the
+    # mascot full -- e.g. "TOR Blue Jays" / "ARI Diamondbacks" / "BOS Red
+    # Sox" -- while our side and FanDuel both use the full city
+    # ("Toronto Blue Jays" / "Arizona Diamondbacks" / "Boston Red Sox").
+    # The character-overlap ratio below scores "toronto" vs "tor" at only
+    # 0.6 (well under the 0.72 cutoff), so the whole game failed to match
+    # and DraftKings' real, already-posted odds got dropped for these
+    # games -- not a "book hasn't priced it" situation, a matching bug.
+    # A plain prefix check ("toronto".startswith("tor")) catches this
+    # safely: verified against the known false-positive pairs this
+    # function already guards against (Arkansas/Kansas, Tulane/Tulsa) --
+    # neither is a prefix of the other, so this can't resurrect either of
+    # those. Only applies when there's exactly one unshared word on each
+    # side (a single abbreviated city, not a multi-word difference).
+    if len(target_extra) == 1 and len(candidate_extra) == 1:
+        word_a, word_b = next(iter(target_extra)), next(iter(candidate_extra))
+        shorter, longer = (word_a, word_b) if len(word_a) <= len(word_b) else (word_b, word_a)
+        if len(shorter) >= 2 and longer.startswith(shorter):
+            return True
+
     a = " ".join(sorted(target_extra))
     b = " ".join(sorted(candidate_extra))
     return difflib.SequenceMatcher(None, a, b).ratio() > 0.72
+
 
 
 # SharpAPI's spread-equivalent market is named differently per sport --
