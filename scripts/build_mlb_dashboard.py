@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SCRIPT VERSION: 2026-09-18-mlb-date-aware-odds-match
 """
 MLB Betting Dashboard builder.
 
@@ -425,12 +426,15 @@ def build_day(day, sharp_key, gemini_key=None, previous_odds_by_id=None,
     # is why the board's spread/run-line column was always empty. See
     # common.py's _SPREAD_MARKET_ALIASES, which maps "run_line" back to
     # our internal "spread" bucket once the rows come back.
-    # date_from/date_to scope the request to just this one day -- without
-    # them SharpAPI returns everything currently posted across every date
-    # (thousands of rows on a busy day, per-player prop markets included),
-    # relying entirely on this script's own pagination to walk through all
-    # of it; narrowing server-side means fewer pages and less exposure to
-    # any pagination edge case cutting a page short.
+    # date_from/date_to scope the request to just this one day -- but a
+    # real raw dump proved SharpAPI silently ignores them for this
+    # multi-market request: a request scoped to exactly 2026-09-19 came
+    # back with rows spanning 2026-09-18 through 2026-09-20. So these are
+    # sent on the chance they narrow anything server-side (fewer pages to
+    # walk), but nothing downstream may rely on the response actually
+    # being limited to this day -- see match_odds_for_game()'s
+    # target_date filter below, which does that filtering for real using
+    # each row's own event_start_time.
     day_str = day.isoformat()
     odds_rows = fetch_all_odds(sharp_key, league="mlb", markets=("run_line", "moneyline", "total_runs"),
                                 date_from=day_str, date_to=day_str)
@@ -498,7 +502,8 @@ def build_day(day, sharp_key, gemini_key=None, previous_odds_by_id=None,
             odds = previous_entry.get("odds") or {}
             frozen_prediction_skip_ids.add(gid_str)
         else:
-            odds = match_odds_for_game(home_team, away_team, odds_rows, team_cache, row_claims)
+            odds = match_odds_for_game(home_team, away_team, odds_rows, team_cache, row_claims,
+                                        target_date=day_str)
             if previous_odds_by_id:
                 odds = carry_forward_odds(odds, previous_odds_by_id.get(event.get("id")))
 
