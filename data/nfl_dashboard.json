@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-20T18:32:05.791706+00:00",
+  "generated_at": "2026-09-20T22:14:41.431225+00:00",
   "season": 2026,
   "season_type": 2,
   "display_timezone": "America/Chicago",
@@ -1632,7 +1632,7 @@
           "time_slots": [
             {
               "slot": "Prime Time",
-              "best_matchup_score": 18.8,
+              "best_matchup_score": 13.6,
               "pick_reason": "blended_score",
               "games": [
                 {
@@ -1645,7 +1645,7 @@
                   "away_team": "Detroit Lions",
                   "away_abbr": "DET",
                   "away_record": "1-1",
-                  "matchup_score": 18.8,
+                  "matchup_score": 13.6,
                   "channel": "Prime Video",
                   "venue": "Highmark Stadium",
                   "neutral_site": false,
@@ -1730,7 +1730,7 @@
                     "odds_hash": "0e77a74829924384",
                     "model": "gemini-3.5-flash-lite"
                   },
-                  "matchup_rank": 4,
+                  "matchup_rank": 3,
                   "is_slot_pick": true
                 }
               ]
@@ -1744,7 +1744,7 @@
           "time_slots": [
             {
               "slot": "Noon",
-              "best_matchup_score": 9.1,
+              "best_matchup_score": 10.4,
               "pick_reason": "blended_score",
               "games": [
                 {
@@ -1753,11 +1753,11 @@
                   "start_time_tbd": false,
                   "home_team": "Chicago Bears",
                   "home_abbr": "CHI",
-                  "home_record": "1-0",
+                  "home_record": "1-1",
                   "away_team": "Minnesota Vikings",
                   "away_abbr": "MIN",
-                  "away_record": "1-0",
-                  "matchup_score": 9.1,
+                  "away_record": "2-0",
+                  "matchup_score": 10.4,
                   "channel": "FOX",
                   "venue": "Soldier Field",
                   "neutral_site": false,
@@ -1842,7 +1842,7 @@
                     "odds_hash": "33449908170a1b10",
                     "model": "gemini-3.5-flash-lite"
                   },
-                  "matchup_rank": 1,
+                  "matchup_rank": 2,
                   "is_slot_pick": true
                 },
                 {
@@ -1851,11 +1851,11 @@
                   "start_time_tbd": false,
                   "home_team": "Houston Texans",
                   "home_abbr": "HOU",
-                  "home_record": "0-1",
+                  "home_record": "0-2",
                   "away_team": "Cincinnati Bengals",
                   "away_abbr": "CIN",
-                  "away_record": "1-0",
-                  "matchup_score": 21.5,
+                  "away_record": "2-0",
+                  "matchup_score": 16.4,
                   "channel": "CBS",
                   "venue": "Reliant Stadium",
                   "neutral_site": false,
@@ -1940,7 +1940,7 @@
                     "odds_hash": "ec41851812bbcec9",
                     "model": "gemini-3.5-flash-lite"
                   },
-                  "matchup_rank": 5,
+                  "matchup_rank": 4,
                   "is_slot_pick": false
                 },
                 {
@@ -1949,11 +1949,11 @@
                   "start_time_tbd": false,
                   "home_team": "Atlanta Falcons",
                   "home_abbr": "ATL",
-                  "home_record": "0-1",
+                  "home_record": "0-2",
                   "away_team": "Carolina Panthers",
                   "away_abbr": "CAR",
-                  "away_record": "0-1",
-                  "matchup_score": 28.2,
+                  "away_record": "1-1",
+                  "matchup_score": 23.1,
                   "channel": "FOX",
                   "venue": "Mercedes-Benz Stadium",
                   "neutral_site": false,
@@ -2047,11 +2047,11 @@
                   "start_time_tbd": false,
                   "home_team": "New York Jets",
                   "home_abbr": "NYJ",
-                  "home_record": "1-0",
+                  "home_record": "1-1",
                   "away_team": "Green Bay Packers",
                   "away_abbr": "GB",
-                  "away_record": "0-1",
-                  "matchup_score": 30.2,
+                  "away_record": "1-1",
+                  "matchup_score": 28.9,
                   "channel": "FOX",
                   "venue": "MetLife Stadium",
                   "neutral_site": false,
@@ -2145,11 +2145,11 @@
                   "start_time_tbd": false,
                   "home_team": "New England Patriots",
                   "home_abbr": "NE",
-                  "home_record": "0-1",
+                  "home_record": "1-1",
                   "away_team": "Pittsburgh Steelers",
                   "away_abbr": "PIT",
-                  "away_record": "1-0",
-                  "matchup_score": 49.5,
+                  "away_record": "1-1",
+                  "matchup_score": 40.6,
                   "channel": "CBS",
                   "venue": "Gillette Stadium",
                   "neutral_site": false,
@@ -2234,105 +2234,7 @@
                     "odds_hash": "bb7e8940757bb609",
                     "model": "gemini-3.5-flash-lite"
                   },
-                  "matchup_rank": 10,
-                  "is_slot_pick": false
-                },
-                {
-                  "id": "401872938",
-                  "start_time": "2026-09-20T17:00Z",
-                  "start_time_tbd": false,
-                  "home_team": "Baltimore Ravens",
-                  "home_abbr": "BAL",
-                  "home_record": "1-0",
-                  "away_team": "New Orleans Saints",
-                  "away_abbr": "NO",
-                  "away_record": "0-1",
-                  "matchup_score": 51.6,
-                  "channel": "CBS",
-                  "venue": "M&T Bank Stadium",
-                  "neutral_site": false,
-                  "odds": {
-                    "draftkings": {
-                      "spread": {
-                        "home": {
-                          "line": -8.5,
-                          "american": -105
-                        },
-                        "away": {
-                          "line": 8.5,
-                          "american": -115
-                        }
-                      },
-                      "moneyline": {
-                        "home": {
-                          "line": null,
-                          "american": -380
-                        },
-                        "away": {
-                          "line": null,
-                          "american": 300
-                        }
-                      },
-                      "total": {
-                        "over": {
-                          "line": 9.5,
-                          "american": 3000
-                        },
-                        "under": {
-                          "line": 45.5,
-                          "american": -110
-                        }
-                      }
-                    },
-                    "fanduel": {
-                      "spread": {
-                        "home": {
-                          "line": -8.5,
-                          "american": -105
-                        },
-                        "away": {
-                          "line": 8.5,
-                          "american": -115
-                        }
-                      },
-                      "moneyline": {
-                        "home": {
-                          "line": null,
-                          "american": -430
-                        },
-                        "away": {
-                          "line": null,
-                          "american": 340
-                        }
-                      },
-                      "total": {
-                        "over": {
-                          "line": 46.5,
-                          "american": -104
-                        },
-                        "under": {
-                          "line": 46.5,
-                          "american": -118
-                        }
-                      }
-                    }
-                  },
-                  "gemini_prediction": {
-                    "winner": "Baltimore Ravens",
-                    "confidence": 82,
-                    "ats_pick": "New Orleans Saints",
-                    "ats_confidence": 65,
-                    "total_pick": "Over",
-                    "total_confidence": 70,
-                    "analysis": "The Baltimore Ravens enter Week 2 with an explosive offense capable of exploiting defensive vulnerabilities. New Orleans struggles to generate consistent pressure, giving Baltimore's talented backfield ample room to operate. While the Ravens should comfortably secure the outright victory, the generous spread offers substantial padding for the visitors. The Saints feature a resilient passing attack that can trade blows throughout the afternoon. Consequently, New Orleans keeps the final margin within single digits despite falling short on the scoreboard.",
-                    "ou_analysis": "Both teams feature rapid offensive tempos that consistently produce sustained, high-scoring drives in the early 2026 campaign. Favorable weather conditions and porous secondary play on both sides create an ideal environment for offensive production. Therefore, the combined score comfortably surpasses the modest posted total.",
-                    "splits_and_direction": "Approximately 74 percent of public bets are backing the Ravens on the spread and moneyline, while the over is drawing heavy 81 percent support. The spread has ticked up slightly from an opener of -8 to -8.5, and the total has climbed from an opening number of 45.5 to 46.5.",
-                    "display_text": "Analysis: The Baltimore Ravens enter Week 2 with an explosive offense capable of exploiting defensive vulnerabilities. New Orleans struggles to generate consistent pressure, giving Baltimore's talented backfield ample room to operate. While the Ravens should comfortably secure the outright victory, the generous spread offers substantial padding for the visitors. The Saints feature a resilient passing attack that can trade blows throughout the afternoon. Consequently, New Orleans keeps the final margin within single digits despite falling short on the scoreboard.\n\nOver Under: Both teams feature rapid offensive tempos that consistently produce sustained, high-scoring drives in the early 2026 campaign. Favorable weather conditions and porous secondary play on both sides create an ideal environment for offensive production. Therefore, the combined score comfortably surpasses the modest posted total.\n\nSplits: Approximately 74 percent of public bets are backing the Ravens on the spread and moneyline, while the over is drawing heavy 81 percent support. The spread has ticked up slightly from an opener of -8 to -8.5, and the total has climbed from an opening number of 45.5 to 46.5.",
-                    "generated_at": "2026-09-20T15:24:22.592293+00:00",
-                    "odds_hash": "d5d9604c977c0be9",
-                    "model": "gemini-3.5-flash-lite"
-                  },
-                  "matchup_rank": 12,
+                  "matchup_rank": 9,
                   "is_slot_pick": false
                 },
                 {
@@ -2341,11 +2243,11 @@
                   "start_time_tbd": false,
                   "home_team": "Tennessee Titans",
                   "home_abbr": "TEN",
-                  "home_record": "0-1",
+                  "home_record": "0-2",
                   "away_team": "Philadelphia Eagles",
                   "away_abbr": "PHI",
-                  "away_record": "1-0",
-                  "matchup_score": 58.9,
+                  "away_record": "2-0",
+                  "matchup_score": 44.8,
                   "channel": "FOX",
                   "venue": "Nissan Stadium",
                   "neutral_site": false,
@@ -2430,7 +2332,105 @@
                     "odds_hash": "38486163dbd1fabf",
                     "model": "gemini-3.5-flash-lite"
                   },
-                  "matchup_rank": 14,
+                  "matchup_rank": 11,
+                  "is_slot_pick": false
+                },
+                {
+                  "id": "401872938",
+                  "start_time": "2026-09-20T17:00Z",
+                  "start_time_tbd": false,
+                  "home_team": "Baltimore Ravens",
+                  "home_abbr": "BAL",
+                  "home_record": "1-1",
+                  "away_team": "New Orleans Saints",
+                  "away_abbr": "NO",
+                  "away_record": "1-1",
+                  "matchup_score": 45.2,
+                  "channel": "CBS",
+                  "venue": "M&T Bank Stadium",
+                  "neutral_site": false,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {
+                        "home": {
+                          "line": -8.5,
+                          "american": -105
+                        },
+                        "away": {
+                          "line": 8.5,
+                          "american": -115
+                        }
+                      },
+                      "moneyline": {
+                        "home": {
+                          "line": null,
+                          "american": -380
+                        },
+                        "away": {
+                          "line": null,
+                          "american": 300
+                        }
+                      },
+                      "total": {
+                        "over": {
+                          "line": 9.5,
+                          "american": 3000
+                        },
+                        "under": {
+                          "line": 45.5,
+                          "american": -110
+                        }
+                      }
+                    },
+                    "fanduel": {
+                      "spread": {
+                        "home": {
+                          "line": -8.5,
+                          "american": -105
+                        },
+                        "away": {
+                          "line": 8.5,
+                          "american": -115
+                        }
+                      },
+                      "moneyline": {
+                        "home": {
+                          "line": null,
+                          "american": -430
+                        },
+                        "away": {
+                          "line": null,
+                          "american": 340
+                        }
+                      },
+                      "total": {
+                        "over": {
+                          "line": 46.5,
+                          "american": -104
+                        },
+                        "under": {
+                          "line": 46.5,
+                          "american": -118
+                        }
+                      }
+                    }
+                  },
+                  "gemini_prediction": {
+                    "winner": "Baltimore Ravens",
+                    "confidence": 82,
+                    "ats_pick": "New Orleans Saints",
+                    "ats_confidence": 65,
+                    "total_pick": "Over",
+                    "total_confidence": 70,
+                    "analysis": "The Baltimore Ravens enter Week 2 with an explosive offense capable of exploiting defensive vulnerabilities. New Orleans struggles to generate consistent pressure, giving Baltimore's talented backfield ample room to operate. While the Ravens should comfortably secure the outright victory, the generous spread offers substantial padding for the visitors. The Saints feature a resilient passing attack that can trade blows throughout the afternoon. Consequently, New Orleans keeps the final margin within single digits despite falling short on the scoreboard.",
+                    "ou_analysis": "Both teams feature rapid offensive tempos that consistently produce sustained, high-scoring drives in the early 2026 campaign. Favorable weather conditions and porous secondary play on both sides create an ideal environment for offensive production. Therefore, the combined score comfortably surpasses the modest posted total.",
+                    "splits_and_direction": "Approximately 74 percent of public bets are backing the Ravens on the spread and moneyline, while the over is drawing heavy 81 percent support. The spread has ticked up slightly from an opener of -8 to -8.5, and the total has climbed from an opening number of 45.5 to 46.5.",
+                    "display_text": "Analysis: The Baltimore Ravens enter Week 2 with an explosive offense capable of exploiting defensive vulnerabilities. New Orleans struggles to generate consistent pressure, giving Baltimore's talented backfield ample room to operate. While the Ravens should comfortably secure the outright victory, the generous spread offers substantial padding for the visitors. The Saints feature a resilient passing attack that can trade blows throughout the afternoon. Consequently, New Orleans keeps the final margin within single digits despite falling short on the scoreboard.\n\nOver Under: Both teams feature rapid offensive tempos that consistently produce sustained, high-scoring drives in the early 2026 campaign. Favorable weather conditions and porous secondary play on both sides create an ideal environment for offensive production. Therefore, the combined score comfortably surpasses the modest posted total.\n\nSplits: Approximately 74 percent of public bets are backing the Ravens on the spread and moneyline, while the over is drawing heavy 81 percent support. The spread has ticked up slightly from an opener of -8 to -8.5, and the total has climbed from an opening number of 45.5 to 46.5.",
+                    "generated_at": "2026-09-20T15:24:22.592293+00:00",
+                    "odds_hash": "d5d9604c977c0be9",
+                    "model": "gemini-3.5-flash-lite"
+                  },
+                  "matchup_rank": 13,
                   "is_slot_pick": false
                 },
                 {
@@ -2535,7 +2535,7 @@
             },
             {
               "slot": "Afternoon",
-              "best_matchup_score": 9.7,
+              "best_matchup_score": 4.5,
               "pick_reason": "blended_score",
               "games": [
                 {
@@ -2548,7 +2548,7 @@
                   "away_team": "Seattle Seahawks",
                   "away_abbr": "SEA",
                   "away_record": "1-0",
-                  "matchup_score": 9.7,
+                  "matchup_score": 4.5,
                   "channel": "FOX",
                   "venue": "State Farm Stadium",
                   "neutral_site": false,
@@ -2618,7 +2618,6 @@
                       }
                     }
                   },
-                  "matchup_rank": 2,
                   "gemini_prediction": {
                     "winner": "Seattle Seahawks",
                     "confidence": 76,
@@ -2634,6 +2633,7 @@
                     "odds_hash": "a8c77b83a695a579",
                     "model": "gemini-3.5-flash-lite"
                   },
+                  "matchup_rank": 1,
                   "is_slot_pick": true
                 },
                 {
@@ -2716,7 +2716,6 @@
                       }
                     }
                   },
-                  "matchup_rank": 3,
                   "gemini_prediction": {
                     "winner": "Denver Broncos",
                     "confidence": 63,
@@ -2732,6 +2731,7 @@
                     "odds_hash": "3ea3969c160ccde5",
                     "model": "gemini-3.5-flash-lite"
                   },
+                  "matchup_rank": 5,
                   "is_slot_pick": false
                 },
                 {
@@ -2744,7 +2744,7 @@
                   "away_team": "Las Vegas Raiders",
                   "away_abbr": "LV",
                   "away_record": "1-0",
-                  "matchup_score": 43.8,
+                  "matchup_score": 42.5,
                   "channel": "CBS",
                   "venue": "SoFi Stadium",
                   "neutral_site": false,
@@ -2814,7 +2814,6 @@
                       }
                     }
                   },
-                  "matchup_rank": 9,
                   "gemini_prediction": {
                     "winner": "Los Angeles Chargers",
                     "confidence": 78,
@@ -2830,6 +2829,7 @@
                     "odds_hash": "768945ec5e307fbb",
                     "model": "gemini-3.5-flash-lite"
                   },
+                  "matchup_rank": 10,
                   "is_slot_pick": false
                 },
                 {
@@ -2912,7 +2912,6 @@
                       }
                     }
                   },
-                  "matchup_rank": 13,
                   "gemini_prediction": {
                     "winner": "Dallas Cowboys",
                     "confidence": 75,
@@ -2928,6 +2927,7 @@
                     "odds_hash": "8b836f4f5d299b0f",
                     "model": "gemini-3.5-flash-lite"
                   },
+                  "matchup_rank": 14,
                   "is_slot_pick": false
                 },
                 {
@@ -2940,7 +2940,7 @@
                   "away_team": "Miami Dolphins",
                   "away_abbr": "MIA",
                   "away_record": "0-1",
-                  "matchup_score": 85.9,
+                  "matchup_score": 79.5,
                   "channel": "FOX",
                   "venue": "Levi's Stadium",
                   "neutral_site": false,
@@ -3010,7 +3010,6 @@
                       }
                     }
                   },
-                  "matchup_rank": 16,
                   "gemini_prediction": {
                     "winner": "San Francisco 49ers",
                     "confidence": 88,
@@ -3026,13 +3025,14 @@
                     "odds_hash": "7cde2b29176bb864",
                     "model": "gemini-3.5-flash-lite"
                   },
+                  "matchup_rank": 16,
                   "is_slot_pick": false
                 }
               ]
             },
             {
               "slot": "Prime Time",
-              "best_matchup_score": 39.0,
+              "best_matchup_score": 37.7,
               "pick_reason": "blended_score",
               "games": [
                 {
@@ -3045,7 +3045,7 @@
                   "away_team": "Indianapolis Colts",
                   "away_abbr": "IND",
                   "away_record": "0-1",
-                  "matchup_score": 39.0,
+                  "matchup_score": 37.7,
                   "channel": "NBC",
                   "venue": "Arrowhead Stadium",
                   "neutral_site": false,
@@ -3144,7 +3144,7 @@
           "time_slots": [
             {
               "slot": "Prime Time",
-              "best_matchup_score": 49.9,
+              "best_matchup_score": 45.1,
               "pick_reason": "blended_score",
               "games": [
                 {
@@ -3157,7 +3157,7 @@
                   "away_team": "New York Giants",
                   "away_abbr": "NYG",
                   "away_record": "1-0",
-                  "matchup_score": 49.9,
+                  "matchup_score": 45.1,
                   "channel": "ESPN, ABC",
                   "venue": "SoFi Stadium",
                   "neutral_site": false,
@@ -3165,32 +3165,32 @@
                     "draftkings": {
                       "spread": {
                         "home": {
-                          "line": -7.0,
-                          "american": -108
+                          "line": -6.5,
+                          "american": -115
                         },
                         "away": {
-                          "line": 7.0,
-                          "american": -112
+                          "line": 6.5,
+                          "american": -105
                         }
                       },
                       "moneyline": {
                         "home": {
                           "line": null,
-                          "american": -305
+                          "american": -285
                         },
                         "away": {
                           "line": null,
-                          "american": 245
+                          "american": 230
                         }
                       },
                       "total": {
                         "over": {
                           "line": 47.5,
-                          "american": -115
+                          "american": -110
                         },
                         "under": {
                           "line": 47.5,
-                          "american": -105
+                          "american": -110
                         }
                       }
                     },
@@ -3227,20 +3227,20 @@
                       }
                     }
                   },
-                  "matchup_rank": 11,
+                  "matchup_rank": 12,
                   "gemini_prediction": {
                     "winner": "Los Angeles Rams",
-                    "confidence": 78,
+                    "confidence": 76,
                     "ats_pick": "Los Angeles Rams",
-                    "ats_confidence": 65,
+                    "ats_confidence": 70,
                     "total_pick": "Over",
-                    "total_confidence": 60,
-                    "analysis": "The Los Angeles Rams enter week two with an explosive offensive rhythm established in their opening performance. The New York Giants struggled defensively in their first game, exposing critical flaws in pass coverage and run stopping. Los Angeles features superior offensive weapons that should consistently exploit these defensive vulnerabilities throughout the matchup. Playing at home provides a significant advantage for the Rams, keeping their offensive operation synchronized and efficient. Ultimately, the superior roster depth and cleaner execution give Los Angeles the decisive edge to win and cover the spread.",
-                    "ou_analysis": "Both teams showcase high-tempo offensive schemes that naturally push the pace and inflate possession counts. Defensive injuries on both sides further hinder any sustainable stops, creating an ideal environment for consistent scoring. Consequently, the combined final score easily surpasses the 47.5 line to hit the over.",
-                    "splits_and_direction": "Based on current public tendencies and odds, roughly 68 percent of spread bets and 75 percent of moneyline bets are backing the Los Angeles Rams. The spread has ticked up slightly from -6.5 to -7 at DraftKings, while the total has remained stable at 47.5 with minor juice adjustments.",
-                    "display_text": "Analysis: The Los Angeles Rams enter week two with an explosive offensive rhythm established in their opening performance. The New York Giants struggled defensively in their first game, exposing critical flaws in pass coverage and run stopping. Los Angeles features superior offensive weapons that should consistently exploit these defensive vulnerabilities throughout the matchup. Playing at home provides a significant advantage for the Rams, keeping their offensive operation synchronized and efficient. Ultimately, the superior roster depth and cleaner execution give Los Angeles the decisive edge to win and cover the spread.\n\nOver Under: Both teams showcase high-tempo offensive schemes that naturally push the pace and inflate possession counts. Defensive injuries on both sides further hinder any sustainable stops, creating an ideal environment for consistent scoring. Consequently, the combined final score easily surpasses the 47.5 line to hit the over.\n\nSplits: Based on current public tendencies and odds, roughly 68 percent of spread bets and 75 percent of moneyline bets are backing the Los Angeles Rams. The spread has ticked up slightly from -6.5 to -7 at DraftKings, while the total has remained stable at 47.5 with minor juice adjustments.",
-                    "generated_at": "2026-09-20T18:32:02.972862+00:00",
-                    "odds_hash": "6c8aafd0340ae401",
+                    "total_confidence": 65,
+                    "analysis": "The Los Angeles Rams enter this week 2 matchup with a potent offensive attack that overwhelmed their previous opponents in the opening contest of the 2026 season. New York Giants struggled mightily on defensive assignments, yielding high yardage totals through both the air and on the ground. Los Angeles utilizes a balanced scheme that consistently exploits mismatched coverages in opposing secondaries. While the Giants fought hard in their initial outing, their offensive line allowed excessive pressure that stalled vital drives. Expect the Rams to dictate the tempo early and build a commanding lead that covers the 6.5-point spread.",
+                    "ou_analysis": "Both teams showed a propensity for fast-paced offensive play calling and high snap counts in their respective season openers. The Los Angeles passing game should exploit weak spots in the Giants' secondary, while New York will likely find garbage-time production against a softening Rams defense. Consequently, these combined offensive efforts will push the final score past the established 47.5 line.",
+                    "splits_and_direction": "Based on early public tendencies following week 1 performances, approximately 62 percent of spread bets and 68 percent of moneyline wagers are backing the heavily favored Los Angeles Rams. The point spread has remained stable at -6.5 across major sportsbooks, while the over/under total has nudged upward slightly from an opening number of 47.0 to 47.5 due to early sharp action on the over.",
+                    "display_text": "Analysis: The Los Angeles Rams enter this week 2 matchup with a potent offensive attack that overwhelmed their previous opponents in the opening contest of the 2026 season. New York Giants struggled mightily on defensive assignments, yielding high yardage totals through both the air and on the ground. Los Angeles utilizes a balanced scheme that consistently exploits mismatched coverages in opposing secondaries. While the Giants fought hard in their initial outing, their offensive line allowed excessive pressure that stalled vital drives. Expect the Rams to dictate the tempo early and build a commanding lead that covers the 6.5-point spread.\n\nOver Under: Both teams showed a propensity for fast-paced offensive play calling and high snap counts in their respective season openers. The Los Angeles passing game should exploit weak spots in the Giants' secondary, while New York will likely find garbage-time production against a softening Rams defense. Consequently, these combined offensive efforts will push the final score past the established 47.5 line.\n\nSplits: Based on early public tendencies following week 1 performances, approximately 62 percent of spread bets and 68 percent of moneyline wagers are backing the heavily favored Los Angeles Rams. The point spread has remained stable at -6.5 across major sportsbooks, while the over/under total has nudged upward slightly from an opening number of 47.0 to 47.5 due to early sharp action on the over.",
+                    "generated_at": "2026-09-20T22:14:39.998316+00:00",
+                    "odds_hash": "4272413e6a1e228a",
                     "model": "gemini-3.5-flash-lite"
                   },
                   "is_slot_pick": true
@@ -3262,7 +3262,7 @@
           "time_slots": [
             {
               "slot": "Prime Time",
-              "best_matchup_score": 72.8,
+              "best_matchup_score": 65.4,
               "pick_reason": "blended_score",
               "games": [
                 {
@@ -3271,11 +3271,11 @@
                   "start_time_tbd": false,
                   "home_team": "Green Bay Packers",
                   "home_abbr": "GB",
-                  "home_record": "0-1",
+                  "home_record": "1-1",
                   "away_team": "Atlanta Falcons",
                   "away_abbr": "ATL",
-                  "away_record": "0-1",
-                  "matchup_score": 72.8,
+                  "away_record": "0-2",
+                  "matchup_score": 65.4,
                   "channel": "Prime Video",
                   "venue": "Lambeau Field",
                   "neutral_site": false,
@@ -3374,7 +3374,7 @@
           "time_slots": [
             {
               "slot": "Noon",
-              "best_matchup_score": 10.4,
+              "best_matchup_score": 16.6,
               "pick_reason": "blended_score",
               "games": [
                 {
@@ -3383,11 +3383,11 @@
                   "start_time_tbd": false,
                   "home_team": "Pittsburgh Steelers",
                   "home_abbr": "PIT",
-                  "home_record": "1-0",
+                  "home_record": "1-1",
                   "away_team": "Cincinnati Bengals",
                   "away_abbr": "CIN",
-                  "away_record": "1-0",
-                  "matchup_score": 10.4,
+                  "away_record": "2-0",
+                  "matchup_score": 16.6,
                   "channel": "CBS",
                   "venue": "Acrisure Stadium",
                   "neutral_site": false,
@@ -3484,8 +3484,8 @@
                   "home_record": "1-0",
                   "away_team": "New England Patriots",
                   "away_abbr": "NE",
-                  "away_record": "0-1",
-                  "matchup_score": 36.2,
+                  "away_record": "1-1",
+                  "matchup_score": 18.0,
                   "channel": "CBS",
                   "venue": "EverBank Stadium",
                   "neutral_site": false,
@@ -3555,7 +3555,7 @@
                       }
                     }
                   },
-                  "matchup_rank": 4,
+                  "matchup_rank": 3,
                   "gemini_prediction": {
                     "winner": "Jacksonville Jaguars",
                     "confidence": 62,
@@ -3574,104 +3574,6 @@
                   "is_slot_pick": false
                 },
                 {
-                  "id": "401872953",
-                  "start_time": "2026-09-27T17:00Z",
-                  "start_time_tbd": false,
-                  "home_team": "Buffalo Bills",
-                  "home_abbr": "BUF",
-                  "home_record": "2-0",
-                  "away_team": "Los Angeles Chargers",
-                  "away_abbr": "LAC",
-                  "away_record": "0-1",
-                  "matchup_score": 37.6,
-                  "channel": "FOX",
-                  "venue": "Highmark Stadium",
-                  "neutral_site": false,
-                  "odds": {
-                    "draftkings": {
-                      "spread": {
-                        "home": {
-                          "line": -4.5,
-                          "american": -110
-                        },
-                        "away": {
-                          "line": 4.5,
-                          "american": -110
-                        }
-                      },
-                      "moneyline": {
-                        "home": {
-                          "line": null,
-                          "american": -225
-                        },
-                        "away": {
-                          "line": null,
-                          "american": 185
-                        }
-                      },
-                      "total": {
-                        "over": {
-                          "line": 49.5,
-                          "american": -110
-                        },
-                        "under": {
-                          "line": 49.5,
-                          "american": -110
-                        }
-                      }
-                    },
-                    "fanduel": {
-                      "spread": {
-                        "home": {
-                          "line": -4.5,
-                          "american": -110
-                        },
-                        "away": {
-                          "line": 4.5,
-                          "american": -110
-                        }
-                      },
-                      "moneyline": {
-                        "home": {
-                          "line": null,
-                          "american": -225
-                        },
-                        "away": {
-                          "line": null,
-                          "american": 188
-                        }
-                      },
-                      "total": {
-                        "over": {
-                          "line": 50.5,
-                          "american": -118
-                        },
-                        "under": {
-                          "line": 50.5,
-                          "american": -104
-                        }
-                      }
-                    }
-                  },
-                  "matchup_rank": 6,
-                  "gemini_prediction": {
-                    "winner": "Buffalo Bills",
-                    "confidence": 68,
-                    "ats_pick": "Los Angeles Chargers",
-                    "ats_confidence": 61,
-                    "total_pick": "Over",
-                    "total_confidence": 57,
-                    "analysis": "The Buffalo Bills return home for a critical early-season matchup relying on their high-powered offensive execution to dictate the tempo. Los Angeles Chargers have shown impressive resilience through the opening weeks, maintaining efficient offensive drives and solid defensive adjustments. While Buffalo holds the definitive home-field advantage and boasts a slightly more explosive scoring unit, the Chargers possess the offensive weaponry to keep this contest well within a single possession. Consequently, the visitors will leverage their balanced attack to stay competitive deep into the fourth quarter. Backing the home team to secure a narrow outright victory while the road team covers the 4.5-point spread represents the sharpest side of this matchup.",
-                    "ou_analysis": "Both teams operate at an above-average pace of play with dynamic quarterbacks capable of stretching the field efficiently. Favorable early-season weather conditions at Highmark Stadium will further support clean passing attacks and explosive scoring opportunities for both units. These factors combined push the projected final score past the consensus 50-point mark to hit the over.",
-                    "splits_and_direction": "Based on public betting tendencies, approximately 62 percent of spread bets are currently backing the home favorite, while the moneyline has seen steady action on Buffalo. The spread has held firm at -4.5 and the total has ticked up slightly from an opening line of 49.5 to 50.5 at major sportsbooks.",
-                    "display_text": "Analysis: The Buffalo Bills return home for a critical early-season matchup relying on their high-powered offensive execution to dictate the tempo. Los Angeles Chargers have shown impressive resilience through the opening weeks, maintaining efficient offensive drives and solid defensive adjustments. While Buffalo holds the definitive home-field advantage and boasts a slightly more explosive scoring unit, the Chargers possess the offensive weaponry to keep this contest well within a single possession. Consequently, the visitors will leverage their balanced attack to stay competitive deep into the fourth quarter. Backing the home team to secure a narrow outright victory while the road team covers the 4.5-point spread represents the sharpest side of this matchup.\n\nOver Under: Both teams operate at an above-average pace of play with dynamic quarterbacks capable of stretching the field efficiently. Favorable early-season weather conditions at Highmark Stadium will further support clean passing attacks and explosive scoring opportunities for both units. These factors combined push the projected final score past the consensus 50-point mark to hit the over.\n\nSplits: Based on public betting tendencies, approximately 62 percent of spread bets are currently backing the home favorite, while the moneyline has seen steady action on Buffalo. The spread has held firm at -4.5 and the total has ticked up slightly from an opening line of 49.5 to 50.5 at major sportsbooks.",
-                    "generated_at": "2026-09-18T08:48:06.892937+00:00",
-                    "odds_hash": "e63e75065d92c737",
-                    "model": "gemini-3.5-flash-lite"
-                  },
-                  "is_slot_pick": false
-                },
-                {
                   "id": "401872949",
                   "start_time": "2026-09-27T17:00Z",
                   "start_time_tbd": false,
@@ -3680,8 +3582,8 @@
                   "home_record": "0-1",
                   "away_team": "Carolina Panthers",
                   "away_abbr": "CAR",
-                  "away_record": "0-1",
-                  "matchup_score": 41.0,
+                  "away_record": "1-1",
+                  "matchup_score": 34.2,
                   "channel": "FOX",
                   "venue": "Huntington Bank Field",
                   "neutral_site": false,
@@ -3751,7 +3653,7 @@
                       }
                     }
                   },
-                  "matchup_rank": 7,
+                  "matchup_rank": 6,
                   "gemini_prediction": {
                     "winner": "Carolina Panthers",
                     "confidence": 61,
@@ -3770,48 +3672,48 @@
                   "is_slot_pick": false
                 },
                 {
-                  "id": "401872954",
+                  "id": "401872953",
                   "start_time": "2026-09-27T17:00Z",
                   "start_time_tbd": false,
-                  "home_team": "Detroit Lions",
-                  "home_abbr": "DET",
-                  "home_record": "1-1",
-                  "away_team": "New York Jets",
-                  "away_abbr": "NYJ",
-                  "away_record": "1-0",
-                  "matchup_score": 57.0,
+                  "home_team": "Buffalo Bills",
+                  "home_abbr": "BUF",
+                  "home_record": "2-0",
+                  "away_team": "Los Angeles Chargers",
+                  "away_abbr": "LAC",
+                  "away_record": "0-1",
+                  "matchup_score": 39.0,
                   "channel": "FOX",
-                  "venue": "Ford Field",
+                  "venue": "Highmark Stadium",
                   "neutral_site": false,
                   "odds": {
                     "draftkings": {
                       "spread": {
                         "home": {
-                          "line": -7.0,
+                          "line": -4.5,
                           "american": -110
                         },
                         "away": {
-                          "line": 7.0,
+                          "line": 4.5,
                           "american": -110
                         }
                       },
                       "moneyline": {
                         "home": {
                           "line": null,
-                          "american": -345
+                          "american": -225
                         },
                         "away": {
                           "line": null,
-                          "american": 275
+                          "american": 185
                         }
                       },
                       "total": {
                         "over": {
-                          "line": 48.5,
+                          "line": 49.5,
                           "american": -110
                         },
                         "under": {
-                          "line": 48.5,
+                          "line": 49.5,
                           "american": -110
                         }
                       }
@@ -3819,50 +3721,148 @@
                     "fanduel": {
                       "spread": {
                         "home": {
-                          "line": -7.5,
-                          "american": -104
+                          "line": -4.5,
+                          "american": -110
                         },
                         "away": {
-                          "line": 7.5,
-                          "american": -118
+                          "line": 4.5,
+                          "american": -110
                         }
                       },
                       "moneyline": {
                         "home": {
                           "line": null,
-                          "american": -375
+                          "american": -225
                         },
                         "away": {
                           "line": null,
-                          "american": 300
+                          "american": 188
                         }
                       },
                       "total": {
                         "over": {
-                          "line": 48.5,
-                          "american": -106
+                          "line": 50.5,
+                          "american": -118
                         },
                         "under": {
-                          "line": 48.5,
-                          "american": -114
+                          "line": 50.5,
+                          "american": -104
                         }
                       }
                     }
                   },
-                  "matchup_rank": 10,
+                  "matchup_rank": 8,
                   "gemini_prediction": {
-                    "winner": "Detroit Lions",
-                    "confidence": 78,
-                    "ats_pick": "New York Jets",
-                    "ats_confidence": 62,
+                    "winner": "Buffalo Bills",
+                    "confidence": 68,
+                    "ats_pick": "Los Angeles Chargers",
+                    "ats_confidence": 61,
                     "total_pick": "Over",
-                    "total_confidence": 65,
-                    "analysis": "The Detroit Lions return home to Ford Field holding a potent offensive attack that has overwhelmed opponents through the first two weeks of the 2026 season. New York Jets enter this Week 3 matchup with a resilient defense that should keep them competitive despite playing on the road. Detroit's high-powered offensive execution inside the red zone gives them a decisive edge to secure the outright victory. However, a spread of 7.5 points on FanDuel overrates the defensive gap between these two squads given New York's early-season defensive resiliency. The Jets possess enough offensive weapons to backdoor cover late and keep the final margin within a single possession.",
-                    "ou_analysis": "Both teams feature up-tempo offensive schemes that consistently rank near the top of the league in plays per minute through the early 2026 campaign. Detroit's explosive scoring capability combined with New York's necessity to throw from behind creates an ideal environment for consistent offensive production. Consequently, the game pace and efficiency will comfortably push the combined score past the posted 48.5 total.",
-                    "splits_and_direction": "Based on public betting tendencies, roughly 68 percent of the spread tickets and money are backing the home favorite Detroit Lions. The spread has ticked up slightly from an opening number of -7 to -7.5 at FanDuel, while the total has remained stable at 48.5 with heavy early action on the over.",
-                    "display_text": "Analysis: The Detroit Lions return home to Ford Field holding a potent offensive attack that has overwhelmed opponents through the first two weeks of the 2026 season. New York Jets enter this Week 3 matchup with a resilient defense that should keep them competitive despite playing on the road. Detroit's high-powered offensive execution inside the red zone gives them a decisive edge to secure the outright victory. However, a spread of 7.5 points on FanDuel overrates the defensive gap between these two squads given New York's early-season defensive resiliency. The Jets possess enough offensive weapons to backdoor cover late and keep the final margin within a single possession.\n\nOver Under: Both teams feature up-tempo offensive schemes that consistently rank near the top of the league in plays per minute through the early 2026 campaign. Detroit's explosive scoring capability combined with New York's necessity to throw from behind creates an ideal environment for consistent offensive production. Consequently, the game pace and efficiency will comfortably push the combined score past the posted 48.5 total.\n\nSplits: Based on public betting tendencies, roughly 68 percent of the spread tickets and money are backing the home favorite Detroit Lions. The spread has ticked up slightly from an opening number of -7 to -7.5 at FanDuel, while the total has remained stable at 48.5 with heavy early action on the over.",
-                    "generated_at": "2026-09-18T08:48:16.955788+00:00",
-                    "odds_hash": "aa36f8c1f60cf329",
+                    "total_confidence": 57,
+                    "analysis": "The Buffalo Bills return home for a critical early-season matchup relying on their high-powered offensive execution to dictate the tempo. Los Angeles Chargers have shown impressive resilience through the opening weeks, maintaining efficient offensive drives and solid defensive adjustments. While Buffalo holds the definitive home-field advantage and boasts a slightly more explosive scoring unit, the Chargers possess the offensive weaponry to keep this contest well within a single possession. Consequently, the visitors will leverage their balanced attack to stay competitive deep into the fourth quarter. Backing the home team to secure a narrow outright victory while the road team covers the 4.5-point spread represents the sharpest side of this matchup.",
+                    "ou_analysis": "Both teams operate at an above-average pace of play with dynamic quarterbacks capable of stretching the field efficiently. Favorable early-season weather conditions at Highmark Stadium will further support clean passing attacks and explosive scoring opportunities for both units. These factors combined push the projected final score past the consensus 50-point mark to hit the over.",
+                    "splits_and_direction": "Based on public betting tendencies, approximately 62 percent of spread bets are currently backing the home favorite, while the moneyline has seen steady action on Buffalo. The spread has held firm at -4.5 and the total has ticked up slightly from an opening line of 49.5 to 50.5 at major sportsbooks.",
+                    "display_text": "Analysis: The Buffalo Bills return home for a critical early-season matchup relying on their high-powered offensive execution to dictate the tempo. Los Angeles Chargers have shown impressive resilience through the opening weeks, maintaining efficient offensive drives and solid defensive adjustments. While Buffalo holds the definitive home-field advantage and boasts a slightly more explosive scoring unit, the Chargers possess the offensive weaponry to keep this contest well within a single possession. Consequently, the visitors will leverage their balanced attack to stay competitive deep into the fourth quarter. Backing the home team to secure a narrow outright victory while the road team covers the 4.5-point spread represents the sharpest side of this matchup.\n\nOver Under: Both teams operate at an above-average pace of play with dynamic quarterbacks capable of stretching the field efficiently. Favorable early-season weather conditions at Highmark Stadium will further support clean passing attacks and explosive scoring opportunities for both units. These factors combined push the projected final score past the consensus 50-point mark to hit the over.\n\nSplits: Based on public betting tendencies, approximately 62 percent of spread bets are currently backing the home favorite, while the moneyline has seen steady action on Buffalo. The spread has held firm at -4.5 and the total has ticked up slightly from an opening line of 49.5 to 50.5 at major sportsbooks.",
+                    "generated_at": "2026-09-18T08:48:06.892937+00:00",
+                    "odds_hash": "e63e75065d92c737",
+                    "model": "gemini-3.5-flash-lite"
+                  },
+                  "is_slot_pick": false
+                },
+                {
+                  "id": "401872955",
+                  "start_time": "2026-09-27T17:00Z",
+                  "start_time_tbd": false,
+                  "home_team": "Washington Commanders",
+                  "home_abbr": "WSH",
+                  "home_record": "0-1",
+                  "away_team": "Seattle Seahawks",
+                  "away_abbr": "SEA",
+                  "away_record": "1-0",
+                  "matchup_score": 45.0,
+                  "channel": "FOX",
+                  "venue": "Northwest Stadium",
+                  "neutral_site": false,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {
+                        "home": {
+                          "line": 2.5,
+                          "american": -110
+                        },
+                        "away": {
+                          "line": -2.5,
+                          "american": -110
+                        }
+                      },
+                      "moneyline": {
+                        "home": {
+                          "line": null,
+                          "american": 114
+                        },
+                        "away": {
+                          "line": null,
+                          "american": -135
+                        }
+                      },
+                      "total": {
+                        "over": {
+                          "line": 41.5,
+                          "american": -110
+                        },
+                        "under": {
+                          "line": 41.5,
+                          "american": -110
+                        }
+                      }
+                    },
+                    "fanduel": {
+                      "spread": {
+                        "home": {
+                          "line": 1.5,
+                          "american": -110
+                        },
+                        "away": {
+                          "line": -1.5,
+                          "american": -110
+                        }
+                      },
+                      "moneyline": {
+                        "home": {
+                          "line": null,
+                          "american": 102
+                        },
+                        "away": {
+                          "line": null,
+                          "american": -120
+                        }
+                      },
+                      "total": {
+                        "over": {
+                          "line": 42.5,
+                          "american": -105
+                        },
+                        "under": {
+                          "line": 42.5,
+                          "american": -115
+                        }
+                      }
+                    }
+                  },
+                  "matchup_rank": 9,
+                  "gemini_prediction": {
+                    "winner": "Seattle Seahawks",
+                    "confidence": 62,
+                    "ats_pick": "Seattle Seahawks",
+                    "ats_confidence": 60,
+                    "total_pick": "Over",
+                    "total_confidence": 55,
+                    "analysis": "The Seattle Seahawks enter Week 3 with a more cohesive offensive scheme that has steadily produced chunk plays through the air. Meanwhile, the Washington Commanders have struggled to establish consistent defensive stops, particularly in defending the intermediate passing game. Seattle's offensive line has provided adequate protection, allowing their playmakers to exploit single-coverage matchups on the outside. Washington's offense shows flashes of potential, but inconsistent execution stalls drives in crucial territory. Ultimately, the Seahawks possess the requisite firepower to secure a tight road victory and cover the modest spread.",
+                    "ou_analysis": "Both teams feature up-tempo offensive philosophies that prioritize quick snaps and aggressive play-calling on early downs. Defensive vulnerabilities in the secondary for both squads point toward a higher frequency of explosive passing plays. Consequently, the combined score should comfortably clear the low-40s threshold set by oddsmakers.",
+                    "splits_and_direction": "Approximately 58% of public bets are currently backing the Seattle Seahawks on the spread and moneyline, with the total seeing balanced two-way action. The spread has ticked up slightly from an opening line of 1.5 to 2.5 at DraftKings, while the total has fluctuated narrowly between 41.5 and 42.5 based on early sharp money.",
+                    "display_text": "Analysis: The Seattle Seahawks enter Week 3 with a more cohesive offensive scheme that has steadily produced chunk plays through the air. Meanwhile, the Washington Commanders have struggled to establish consistent defensive stops, particularly in defending the intermediate passing game. Seattle's offensive line has provided adequate protection, allowing their playmakers to exploit single-coverage matchups on the outside. Washington's offense shows flashes of potential, but inconsistent execution stalls drives in crucial territory. Ultimately, the Seahawks possess the requisite firepower to secure a tight road victory and cover the modest spread.\n\nOver Under: Both teams feature up-tempo offensive philosophies that prioritize quick snaps and aggressive play-calling on early downs. Defensive vulnerabilities in the secondary for both squads point toward a higher frequency of explosive passing plays. Consequently, the combined score should comfortably clear the low-40s threshold set by oddsmakers.\n\nSplits: Approximately 58% of public bets are currently backing the Seattle Seahawks on the spread and moneyline, with the total seeing balanced two-way action. The spread has ticked up slightly from an opening line of 1.5 to 2.5 at DraftKings, while the total has fluctuated narrowly between 41.5 and 42.5 based on early sharp money.",
+                    "generated_at": "2026-09-17T03:16:28.284177+00:00",
+                    "odds_hash": "e4444f9b7192f1c8",
                     "model": "gemini-3.5-flash-lite"
                   },
                   "is_slot_pick": false
@@ -3876,8 +3876,8 @@
                   "home_record": "0-1",
                   "away_team": "Houston Texans",
                   "away_abbr": "HOU",
-                  "away_record": "0-1",
-                  "matchup_score": 57.1,
+                  "away_record": "0-2",
+                  "matchup_score": 55.8,
                   "channel": "CBS",
                   "venue": "Lucas Oil Stadium",
                   "neutral_site": false,
@@ -3966,104 +3966,6 @@
                   "is_slot_pick": false
                 },
                 {
-                  "id": "401872955",
-                  "start_time": "2026-09-27T17:00Z",
-                  "start_time_tbd": false,
-                  "home_team": "Washington Commanders",
-                  "home_abbr": "WSH",
-                  "home_record": "0-1",
-                  "away_team": "Seattle Seahawks",
-                  "away_abbr": "SEA",
-                  "away_record": "1-0",
-                  "matchup_score": 57.1,
-                  "channel": "FOX",
-                  "venue": "Northwest Stadium",
-                  "neutral_site": false,
-                  "odds": {
-                    "draftkings": {
-                      "spread": {
-                        "home": {
-                          "line": 2.5,
-                          "american": -110
-                        },
-                        "away": {
-                          "line": -2.5,
-                          "american": -110
-                        }
-                      },
-                      "moneyline": {
-                        "home": {
-                          "line": null,
-                          "american": 114
-                        },
-                        "away": {
-                          "line": null,
-                          "american": -135
-                        }
-                      },
-                      "total": {
-                        "over": {
-                          "line": 41.5,
-                          "american": -110
-                        },
-                        "under": {
-                          "line": 41.5,
-                          "american": -110
-                        }
-                      }
-                    },
-                    "fanduel": {
-                      "spread": {
-                        "home": {
-                          "line": 1.5,
-                          "american": -110
-                        },
-                        "away": {
-                          "line": -1.5,
-                          "american": -110
-                        }
-                      },
-                      "moneyline": {
-                        "home": {
-                          "line": null,
-                          "american": 102
-                        },
-                        "away": {
-                          "line": null,
-                          "american": -120
-                        }
-                      },
-                      "total": {
-                        "over": {
-                          "line": 42.5,
-                          "american": -105
-                        },
-                        "under": {
-                          "line": 42.5,
-                          "american": -115
-                        }
-                      }
-                    }
-                  },
-                  "matchup_rank": 12,
-                  "gemini_prediction": {
-                    "winner": "Seattle Seahawks",
-                    "confidence": 62,
-                    "ats_pick": "Seattle Seahawks",
-                    "ats_confidence": 60,
-                    "total_pick": "Over",
-                    "total_confidence": 55,
-                    "analysis": "The Seattle Seahawks enter Week 3 with a more cohesive offensive scheme that has steadily produced chunk plays through the air. Meanwhile, the Washington Commanders have struggled to establish consistent defensive stops, particularly in defending the intermediate passing game. Seattle's offensive line has provided adequate protection, allowing their playmakers to exploit single-coverage matchups on the outside. Washington's offense shows flashes of potential, but inconsistent execution stalls drives in crucial territory. Ultimately, the Seahawks possess the requisite firepower to secure a tight road victory and cover the modest spread.",
-                    "ou_analysis": "Both teams feature up-tempo offensive philosophies that prioritize quick snaps and aggressive play-calling on early downs. Defensive vulnerabilities in the secondary for both squads point toward a higher frequency of explosive passing plays. Consequently, the combined score should comfortably clear the low-40s threshold set by oddsmakers.",
-                    "splits_and_direction": "Approximately 58% of public bets are currently backing the Seattle Seahawks on the spread and moneyline, with the total seeing balanced two-way action. The spread has ticked up slightly from an opening line of 1.5 to 2.5 at DraftKings, while the total has fluctuated narrowly between 41.5 and 42.5 based on early sharp money.",
-                    "display_text": "Analysis: The Seattle Seahawks enter Week 3 with a more cohesive offensive scheme that has steadily produced chunk plays through the air. Meanwhile, the Washington Commanders have struggled to establish consistent defensive stops, particularly in defending the intermediate passing game. Seattle's offensive line has provided adequate protection, allowing their playmakers to exploit single-coverage matchups on the outside. Washington's offense shows flashes of potential, but inconsistent execution stalls drives in crucial territory. Ultimately, the Seahawks possess the requisite firepower to secure a tight road victory and cover the modest spread.\n\nOver Under: Both teams feature up-tempo offensive philosophies that prioritize quick snaps and aggressive play-calling on early downs. Defensive vulnerabilities in the secondary for both squads point toward a higher frequency of explosive passing plays. Consequently, the combined score should comfortably clear the low-40s threshold set by oddsmakers.\n\nSplits: Approximately 58% of public bets are currently backing the Seattle Seahawks on the spread and moneyline, with the total seeing balanced two-way action. The spread has ticked up slightly from an opening line of 1.5 to 2.5 at DraftKings, while the total has fluctuated narrowly between 41.5 and 42.5 based on early sharp money.",
-                    "generated_at": "2026-09-17T03:16:28.284177+00:00",
-                    "odds_hash": "e4444f9b7192f1c8",
-                    "model": "gemini-3.5-flash-lite"
-                  },
-                  "is_slot_pick": false
-                },
-                {
                   "id": "401872956",
                   "start_time": "2026-09-27T17:00Z",
                   "start_time_tbd": false,
@@ -4072,8 +3974,8 @@
                   "home_record": "1-0",
                   "away_team": "Tennessee Titans",
                   "away_abbr": "TEN",
-                  "away_record": "0-1",
-                  "matchup_score": 68.9,
+                  "away_record": "0-2",
+                  "matchup_score": 62.4,
                   "channel": "CBS",
                   "venue": "MetLife Stadium",
                   "neutral_site": false,
@@ -4143,7 +4045,7 @@
                       }
                     }
                   },
-                  "matchup_rank": 14,
+                  "matchup_rank": 13,
                   "gemini_prediction": {
                     "winner": "New York Giants",
                     "confidence": 65,
@@ -4162,6 +4064,104 @@
                   "is_slot_pick": false
                 },
                 {
+                  "id": "401872954",
+                  "start_time": "2026-09-27T17:00Z",
+                  "start_time_tbd": false,
+                  "home_team": "Detroit Lions",
+                  "home_abbr": "DET",
+                  "home_record": "1-1",
+                  "away_team": "New York Jets",
+                  "away_abbr": "NYJ",
+                  "away_record": "1-1",
+                  "matchup_score": 65.0,
+                  "channel": "FOX",
+                  "venue": "Ford Field",
+                  "neutral_site": false,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {
+                        "home": {
+                          "line": -7.0,
+                          "american": -110
+                        },
+                        "away": {
+                          "line": 7.0,
+                          "american": -110
+                        }
+                      },
+                      "moneyline": {
+                        "home": {
+                          "line": null,
+                          "american": -345
+                        },
+                        "away": {
+                          "line": null,
+                          "american": 275
+                        }
+                      },
+                      "total": {
+                        "over": {
+                          "line": 48.5,
+                          "american": -110
+                        },
+                        "under": {
+                          "line": 48.5,
+                          "american": -110
+                        }
+                      }
+                    },
+                    "fanduel": {
+                      "spread": {
+                        "home": {
+                          "line": -7.5,
+                          "american": -104
+                        },
+                        "away": {
+                          "line": 7.5,
+                          "american": -118
+                        }
+                      },
+                      "moneyline": {
+                        "home": {
+                          "line": null,
+                          "american": -375
+                        },
+                        "away": {
+                          "line": null,
+                          "american": 300
+                        }
+                      },
+                      "total": {
+                        "over": {
+                          "line": 48.5,
+                          "american": -106
+                        },
+                        "under": {
+                          "line": 48.5,
+                          "american": -114
+                        }
+                      }
+                    }
+                  },
+                  "matchup_rank": 14,
+                  "gemini_prediction": {
+                    "winner": "Detroit Lions",
+                    "confidence": 78,
+                    "ats_pick": "New York Jets",
+                    "ats_confidence": 62,
+                    "total_pick": "Over",
+                    "total_confidence": 65,
+                    "analysis": "The Detroit Lions return home to Ford Field holding a potent offensive attack that has overwhelmed opponents through the first two weeks of the 2026 season. New York Jets enter this Week 3 matchup with a resilient defense that should keep them competitive despite playing on the road. Detroit's high-powered offensive execution inside the red zone gives them a decisive edge to secure the outright victory. However, a spread of 7.5 points on FanDuel overrates the defensive gap between these two squads given New York's early-season defensive resiliency. The Jets possess enough offensive weapons to backdoor cover late and keep the final margin within a single possession.",
+                    "ou_analysis": "Both teams feature up-tempo offensive schemes that consistently rank near the top of the league in plays per minute through the early 2026 campaign. Detroit's explosive scoring capability combined with New York's necessity to throw from behind creates an ideal environment for consistent offensive production. Consequently, the game pace and efficiency will comfortably push the combined score past the posted 48.5 total.",
+                    "splits_and_direction": "Based on public betting tendencies, roughly 68 percent of the spread tickets and money are backing the home favorite Detroit Lions. The spread has ticked up slightly from an opening number of -7 to -7.5 at FanDuel, while the total has remained stable at 48.5 with heavy early action on the over.",
+                    "display_text": "Analysis: The Detroit Lions return home to Ford Field holding a potent offensive attack that has overwhelmed opponents through the first two weeks of the 2026 season. New York Jets enter this Week 3 matchup with a resilient defense that should keep them competitive despite playing on the road. Detroit's high-powered offensive execution inside the red zone gives them a decisive edge to secure the outright victory. However, a spread of 7.5 points on FanDuel overrates the defensive gap between these two squads given New York's early-season defensive resiliency. The Jets possess enough offensive weapons to backdoor cover late and keep the final margin within a single possession.\n\nOver Under: Both teams feature up-tempo offensive schemes that consistently rank near the top of the league in plays per minute through the early 2026 campaign. Detroit's explosive scoring capability combined with New York's necessity to throw from behind creates an ideal environment for consistent offensive production. Consequently, the game pace and efficiency will comfortably push the combined score past the posted 48.5 total.\n\nSplits: Based on public betting tendencies, roughly 68 percent of the spread tickets and money are backing the home favorite Detroit Lions. The spread has ticked up slightly from an opening number of -7 to -7.5 at FanDuel, while the total has remained stable at 48.5 with heavy early action on the over.",
+                    "generated_at": "2026-09-18T08:48:16.955788+00:00",
+                    "odds_hash": "aa36f8c1f60cf329",
+                    "model": "gemini-3.5-flash-lite"
+                  },
+                  "is_slot_pick": false
+                },
+                {
                   "id": "401872952",
                   "start_time": "2026-09-27T17:00Z",
                   "start_time_tbd": false,
@@ -4171,7 +4171,7 @@
                   "away_team": "Kansas City Chiefs",
                   "away_abbr": "KC",
                   "away_record": "1-0",
-                  "matchup_score": 79.0,
+                  "matchup_score": 78.4,
                   "channel": "CBS",
                   "venue": "Hard Rock Stadium",
                   "neutral_site": false,
@@ -4263,107 +4263,9 @@
             },
             {
               "slot": "Afternoon",
-              "best_matchup_score": 22.0,
+              "best_matchup_score": 24.3,
               "pick_reason": "blended_score",
               "games": [
-                {
-                  "id": "401872960",
-                  "start_time": "2026-09-27T20:25Z",
-                  "start_time_tbd": false,
-                  "home_team": "Dallas Cowboys",
-                  "home_abbr": "DAL",
-                  "home_record": "0-1",
-                  "away_team": "Baltimore Ravens",
-                  "away_abbr": "BAL",
-                  "away_record": "1-0",
-                  "matchup_score": 22.0,
-                  "channel": "CBS",
-                  "venue": "Maracan\u00e3 Stadium",
-                  "neutral_site": true,
-                  "odds": {
-                    "draftkings": {
-                      "spread": {
-                        "home": {
-                          "line": 3.0,
-                          "american": -110
-                        },
-                        "away": {
-                          "line": -3.0,
-                          "american": -110
-                        }
-                      },
-                      "moneyline": {
-                        "home": {
-                          "line": null,
-                          "american": 130
-                        },
-                        "away": {
-                          "line": null,
-                          "american": -155
-                        }
-                      },
-                      "total": {
-                        "over": {
-                          "line": 52.5,
-                          "american": -110
-                        },
-                        "under": {
-                          "line": 52.5,
-                          "american": -110
-                        }
-                      }
-                    },
-                    "fanduel": {
-                      "spread": {
-                        "home": {
-                          "line": 3.5,
-                          "american": -118
-                        },
-                        "away": {
-                          "line": -3.5,
-                          "american": -104
-                        }
-                      },
-                      "moneyline": {
-                        "home": {
-                          "line": null,
-                          "american": 148
-                        },
-                        "away": {
-                          "line": null,
-                          "american": -176
-                        }
-                      },
-                      "total": {
-                        "over": {
-                          "line": 52.5,
-                          "american": -105
-                        },
-                        "under": {
-                          "line": 52.5,
-                          "american": -115
-                        }
-                      }
-                    }
-                  },
-                  "matchup_rank": 3,
-                  "gemini_prediction": {
-                    "winner": "Baltimore Ravens",
-                    "confidence": 76,
-                    "ats_pick": "Baltimore Ravens",
-                    "ats_confidence": 71,
-                    "total_pick": "Over",
-                    "total_confidence": 68,
-                    "analysis": "The Baltimore Ravens enter this Week 3 matchup showcasing a dynamic offensive attack that has consistently outgained opponents through the first two weeks of the 2026 season. Dallas has struggled defensively to contain mobile quarterbacks and elite ground games, which plays directly into Baltimore's offensive strengths. The Cowboys' secondary has shown vulnerability against top-tier wide receivers, creating crucial mismatch opportunities for the Ravens' passing game. Meanwhile, Baltimore's defense has generated timely turnovers and executed well in high-leverage red zone situations. Expect the Ravens to control the line of scrimmage and secure a comfortable road victory by more than a field goal.",
-                    "ou_analysis": "Both offenses have operated at a rapid tempo and demonstrated elite red-zone efficiency throughout the opening weeks of the 2026 campaign. Defensive injuries in the secondary for both squads further weaken their ability to stop explosive downfield passing plays. Consequently, this game projects as a high-scoring affair that comfortably surpasses the posted total of 52.5 points.",
-                    "splits_and_direction": "Based on public betting tendencies and current market movement, approximately 68% of spread bets and 72% of moneyline wagers are backing the visiting Baltimore Ravens. Meanwhile, 63% of the public is leaning toward the Over, causing the total to tick up slightly while the spread has adjusted from an opening field goal to 3.5 at FanDuel.",
-                    "display_text": "Analysis: The Baltimore Ravens enter this Week 3 matchup showcasing a dynamic offensive attack that has consistently outgained opponents through the first two weeks of the 2026 season. Dallas has struggled defensively to contain mobile quarterbacks and elite ground games, which plays directly into Baltimore's offensive strengths. The Cowboys' secondary has shown vulnerability against top-tier wide receivers, creating crucial mismatch opportunities for the Ravens' passing game. Meanwhile, Baltimore's defense has generated timely turnovers and executed well in high-leverage red zone situations. Expect the Ravens to control the line of scrimmage and secure a comfortable road victory by more than a field goal.\n\nOver Under: Both offenses have operated at a rapid tempo and demonstrated elite red-zone efficiency throughout the opening weeks of the 2026 campaign. Defensive injuries in the secondary for both squads further weaken their ability to stop explosive downfield passing plays. Consequently, this game projects as a high-scoring affair that comfortably surpasses the posted total of 52.5 points.\n\nSplits: Based on public betting tendencies and current market movement, approximately 68% of spread bets and 72% of moneyline wagers are backing the visiting Baltimore Ravens. Meanwhile, 63% of the public is leaning toward the Over, causing the total to tick up slightly while the spread has adjusted from an opening field goal to 3.5 at FanDuel.",
-                    "generated_at": "2026-09-17T03:17:08.006174+00:00",
-                    "odds_hash": "fe2bea21914b12a1",
-                    "model": "gemini-3.5-flash-lite"
-                  },
-                  "is_slot_pick": true
-                },
                 {
                   "id": "401872959",
                   "start_time": "2026-09-27T20:05Z",
@@ -4373,8 +4275,8 @@
                   "home_record": "0-1",
                   "away_team": "Minnesota Vikings",
                   "away_abbr": "MIN",
-                  "away_record": "1-0",
-                  "matchup_score": 37.1,
+                  "away_record": "2-0",
+                  "matchup_score": 24.3,
                   "channel": "FOX",
                   "venue": "Raymond James Stadium",
                   "neutral_site": false,
@@ -4444,7 +4346,7 @@
                       }
                     }
                   },
-                  "matchup_rank": 5,
+                  "matchup_rank": 4,
                   "gemini_prediction": {
                     "winner": "Tampa Bay Buccaneers",
                     "confidence": 62,
@@ -4460,7 +4362,7 @@
                     "odds_hash": "c3aeda12a7daf2f3",
                     "model": "gemini-3.5-flash-lite"
                   },
-                  "is_slot_pick": false
+                  "is_slot_pick": true
                 },
                 {
                   "id": "401872961",
@@ -4468,11 +4370,11 @@
                   "start_time_tbd": false,
                   "home_team": "New Orleans Saints",
                   "home_abbr": "NO",
-                  "home_record": "0-1",
+                  "home_record": "1-1",
                   "away_team": "Las Vegas Raiders",
                   "away_abbr": "LV",
                   "away_record": "1-0",
-                  "matchup_score": 44.6,
+                  "matchup_score": 25.6,
                   "channel": "CBS",
                   "venue": "Caesars Superdome",
                   "neutral_site": false,
@@ -4542,7 +4444,7 @@
                       }
                     }
                   },
-                  "matchup_rank": 8,
+                  "matchup_rank": 5,
                   "gemini_prediction": {
                     "winner": "New Orleans Saints",
                     "confidence": 62,
@@ -4556,6 +4458,104 @@
                     "display_text": "Analysis: The New Orleans Saints return home for this Week 3 matchup looking to establish consistency on both sides of the ball. Las Vegas has shown vulnerabilities in defending the intermediate passing game through the opening weeks of 2026. Playing inside the Superdome provides the Saints with a distinct home-field advantage that neutralizes hostile crowd noise. New Orleans executes a balanced offensive attack that should chew clock and wear down the opposing front seven. Ultimately, the Saints make fewer crucial mistakes down the stretch to secure a narrow victory.\n\nOver Under: Both offenses have relied heavily on methodical, ground-heavy drives rather than explosive downfield plays through the early part of the 2026 campaign. The indoor environment of the Superdome ensures optimal weather conditions, yet conservative playcalling keeps possessions lengthy and limits total scoring opportunities. Consequently, the game script points toward a lower-scoring affair that comfortably stays under the 45.5-point threshold.\n\nSplits: Based on public betting tendencies, approximately 58% of spread tickets are backing the home favorite, while the moneyline has seen moderate action leaning toward the Saints. The spread has remained stable at -3 across major sportsbooks, though the total has seen a slight downward tick from an opener of 45.5 down to 44.5 at FanDuel.",
                     "generated_at": "2026-09-17T22:47:25.926111+00:00",
                     "odds_hash": "37496df6f783c339",
+                    "model": "gemini-3.5-flash-lite"
+                  },
+                  "is_slot_pick": false
+                },
+                {
+                  "id": "401872960",
+                  "start_time": "2026-09-27T20:25Z",
+                  "start_time_tbd": false,
+                  "home_team": "Dallas Cowboys",
+                  "home_abbr": "DAL",
+                  "home_record": "0-1",
+                  "away_team": "Baltimore Ravens",
+                  "away_abbr": "BAL",
+                  "away_record": "1-1",
+                  "matchup_score": 37.7,
+                  "channel": "CBS",
+                  "venue": "Maracan\u00e3 Stadium",
+                  "neutral_site": true,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {
+                        "home": {
+                          "line": 3.0,
+                          "american": -110
+                        },
+                        "away": {
+                          "line": -3.0,
+                          "american": -110
+                        }
+                      },
+                      "moneyline": {
+                        "home": {
+                          "line": null,
+                          "american": 130
+                        },
+                        "away": {
+                          "line": null,
+                          "american": -155
+                        }
+                      },
+                      "total": {
+                        "over": {
+                          "line": 52.5,
+                          "american": -110
+                        },
+                        "under": {
+                          "line": 52.5,
+                          "american": -110
+                        }
+                      }
+                    },
+                    "fanduel": {
+                      "spread": {
+                        "home": {
+                          "line": 3.5,
+                          "american": -118
+                        },
+                        "away": {
+                          "line": -3.5,
+                          "american": -104
+                        }
+                      },
+                      "moneyline": {
+                        "home": {
+                          "line": null,
+                          "american": 148
+                        },
+                        "away": {
+                          "line": null,
+                          "american": -176
+                        }
+                      },
+                      "total": {
+                        "over": {
+                          "line": 52.5,
+                          "american": -105
+                        },
+                        "under": {
+                          "line": 52.5,
+                          "american": -115
+                        }
+                      }
+                    }
+                  },
+                  "matchup_rank": 7,
+                  "gemini_prediction": {
+                    "winner": "Baltimore Ravens",
+                    "confidence": 76,
+                    "ats_pick": "Baltimore Ravens",
+                    "ats_confidence": 71,
+                    "total_pick": "Over",
+                    "total_confidence": 68,
+                    "analysis": "The Baltimore Ravens enter this Week 3 matchup showcasing a dynamic offensive attack that has consistently outgained opponents through the first two weeks of the 2026 season. Dallas has struggled defensively to contain mobile quarterbacks and elite ground games, which plays directly into Baltimore's offensive strengths. The Cowboys' secondary has shown vulnerability against top-tier wide receivers, creating crucial mismatch opportunities for the Ravens' passing game. Meanwhile, Baltimore's defense has generated timely turnovers and executed well in high-leverage red zone situations. Expect the Ravens to control the line of scrimmage and secure a comfortable road victory by more than a field goal.",
+                    "ou_analysis": "Both offenses have operated at a rapid tempo and demonstrated elite red-zone efficiency throughout the opening weeks of the 2026 campaign. Defensive injuries in the secondary for both squads further weaken their ability to stop explosive downfield passing plays. Consequently, this game projects as a high-scoring affair that comfortably surpasses the posted total of 52.5 points.",
+                    "splits_and_direction": "Based on public betting tendencies and current market movement, approximately 68% of spread bets and 72% of moneyline wagers are backing the visiting Baltimore Ravens. Meanwhile, 63% of the public is leaning toward the Over, causing the total to tick up slightly while the spread has adjusted from an opening field goal to 3.5 at FanDuel.",
+                    "display_text": "Analysis: The Baltimore Ravens enter this Week 3 matchup showcasing a dynamic offensive attack that has consistently outgained opponents through the first two weeks of the 2026 season. Dallas has struggled defensively to contain mobile quarterbacks and elite ground games, which plays directly into Baltimore's offensive strengths. The Cowboys' secondary has shown vulnerability against top-tier wide receivers, creating crucial mismatch opportunities for the Ravens' passing game. Meanwhile, Baltimore's defense has generated timely turnovers and executed well in high-leverage red zone situations. Expect the Ravens to control the line of scrimmage and secure a comfortable road victory by more than a field goal.\n\nOver Under: Both offenses have operated at a rapid tempo and demonstrated elite red-zone efficiency throughout the opening weeks of the 2026 campaign. Defensive injuries in the secondary for both squads further weaken their ability to stop explosive downfield passing plays. Consequently, this game projects as a high-scoring affair that comfortably surpasses the posted total of 52.5 points.\n\nSplits: Based on public betting tendencies and current market movement, approximately 68% of spread bets and 72% of moneyline wagers are backing the visiting Baltimore Ravens. Meanwhile, 63% of the public is leaning toward the Over, causing the total to tick up slightly while the spread has adjusted from an opening field goal to 3.5 at FanDuel.",
+                    "generated_at": "2026-09-17T03:17:08.006174+00:00",
+                    "odds_hash": "fe2bea21914b12a1",
                     "model": "gemini-3.5-flash-lite"
                   },
                   "is_slot_pick": false
@@ -4640,7 +4640,7 @@
                       }
                     }
                   },
-                  "matchup_rank": 9,
+                  "matchup_rank": 10,
                   "gemini_prediction": {
                     "winner": "San Francisco 49ers",
                     "confidence": 80,
@@ -4745,7 +4745,7 @@
                       }
                     }
                   },
-                  "matchup_rank": 13,
+                  "matchup_rank": 12,
                   "gemini_prediction": {
                     "winner": "Los Angeles Rams",
                     "confidence": 63,
@@ -4774,7 +4774,7 @@
           "time_slots": [
             {
               "slot": "Prime Time",
-              "best_matchup_score": 0.0,
+              "best_matchup_score": 4.1,
               "pick_reason": "blended_score",
               "games": [
                 {
@@ -4783,11 +4783,11 @@
                   "start_time_tbd": false,
                   "home_team": "Chicago Bears",
                   "home_abbr": "CHI",
-                  "home_record": "1-0",
+                  "home_record": "1-1",
                   "away_team": "Philadelphia Eagles",
                   "away_abbr": "PHI",
-                  "away_record": "1-0",
-                  "matchup_score": 0.0,
+                  "away_record": "2-0",
+                  "matchup_score": 4.1,
                   "channel": "ESPN, ABC",
                   "venue": "Soldier Field",
                   "neutral_site": false,
