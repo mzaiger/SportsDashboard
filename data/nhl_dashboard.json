@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-20T22:16:07.424109+00:00",
+  "generated_at": "2026-09-21T03:04:20.616641+00:00",
   "season": 2026,
   "display_timezone": "America/Chicago",
   "weeks": [
@@ -390,7 +390,7 @@
           "time_slots": [
             {
               "slot": "Noon",
-              "best_matchup_score": 100.0,
+              "best_matchup_score": 50.0,
               "pick_reason": "combined_points",
               "games": [
                 {
@@ -403,7 +403,7 @@
                   "away_team": "New York Islanders",
                   "away_abbr": "NYI",
                   "away_record": null,
-                  "matchup_score": 100.0,
+                  "matchup_score": 50.0,
                   "channel": "MSGSN, NHL Net, MSG",
                   "venue": "Prudential Center",
                   "neutral_site": false,
@@ -419,14 +419,14 @@
                       "total": {}
                     }
                   },
-                  "matchup_rank": 6,
+                  "matchup_rank": 1,
                   "is_slot_pick": true
                 }
               ]
             },
             {
               "slot": "Afternoon",
-              "best_matchup_score": 46.2,
+              "best_matchup_score": 50.0,
               "pick_reason": "combined_points",
               "games": [
                 {
@@ -435,11 +435,11 @@
                   "start_time_tbd": false,
                   "home_team": "Anaheim Ducks",
                   "home_abbr": "ANA",
-                  "home_record": "0-0-0",
+                  "home_record": null,
                   "away_team": "San Jose Sharks",
                   "away_abbr": "SJ",
-                  "away_record": "0-0-0",
-                  "matchup_score": 46.2,
+                  "away_record": null,
+                  "matchup_score": 50.0,
                   "channel": "TBD",
                   "venue": "Honda Center",
                   "neutral_site": false,
@@ -464,11 +464,11 @@
                   "start_time_tbd": false,
                   "home_team": "Boston Bruins",
                   "home_abbr": "BOS",
-                  "home_record": "0-0-0",
+                  "home_record": null,
                   "away_team": "Washington Capitals",
                   "away_abbr": "WSH",
-                  "away_record": "0-0-0",
-                  "matchup_score": 76.9,
+                  "away_record": null,
+                  "matchup_score": 50.0,
                   "channel": "NESN+, MNMT2, MNMT, NHL Net",
                   "venue": "TD Garden",
                   "neutral_site": false,
@@ -484,7 +484,7 @@
                       "total": {}
                     }
                   },
-                  "matchup_rank": 4,
+                  "matchup_rank": 3,
                   "is_slot_pick": false
                 },
                 {
@@ -493,11 +493,11 @@
                   "start_time_tbd": false,
                   "home_team": "Tampa Bay Lightning",
                   "home_abbr": "TB",
-                  "home_record": "0-0-0",
+                  "home_record": null,
                   "away_team": "Nashville Predators",
                   "away_abbr": "NSH",
-                  "away_record": "0-0-0",
-                  "matchup_score": 100.0,
+                  "away_record": null,
+                  "matchup_score": 50.0,
                   "channel": "ESPN+, The Spot - MTN, Scripps Sports",
                   "venue": "Benchmark International Arena",
                   "neutral_site": false,
@@ -513,62 +513,35 @@
                       "total": {}
                     }
                   },
-                  "matchup_rank": 7,
+                  "matchup_rank": 4,
                   "is_slot_pick": false
                 }
               ]
             },
             {
               "slot": "Prime Time",
-              "best_matchup_score": 0.0,
+              "best_matchup_score": 50.0,
               "pick_reason": "combined_points",
               "games": [
                 {
-                  "id": "401879309",
-                  "start_time": "2026-09-21T00:00Z",
+                  "id": "401879364",
+                  "start_time": "2026-09-20T23:00Z",
                   "start_time_tbd": false,
-                  "home_team": "Calgary Flames",
-                  "home_abbr": "CGY",
-                  "home_record": "0-0-0",
-                  "away_team": "Seattle Kraken",
-                  "away_abbr": "SEA",
-                  "away_record": "1-0-0",
-                  "matchup_score": 0.0,
-                  "channel": "KONG, KHN, NHL Net",
-                  "venue": "Scotiabank Saddledome",
+                  "home_team": "Colorado Avalanche",
+                  "home_abbr": "COL",
+                  "home_record": null,
+                  "away_team": "Utah Mammoth",
+                  "away_abbr": "UTA",
+                  "away_record": null,
+                  "matchup_score": 50.0,
+                  "channel": "ESPN+, Utah 16",
+                  "venue": "Ball Arena",
                   "neutral_site": false,
                   "odds": {
                     "draftkings": {
-                      "spread": {
-                        "home": {
-                          "line": 1.5,
-                          "american": -218
-                        },
-                        "away": {
-                          "line": -1.5,
-                          "american": 180
-                        }
-                      },
-                      "moneyline": {
-                        "home": {
-                          "line": null,
-                          "american": 114
-                        },
-                        "away": {
-                          "line": null,
-                          "american": -135
-                        }
-                      },
-                      "total": {
-                        "over": {
-                          "line": 5.5,
-                          "american": -110
-                        },
-                        "under": {
-                          "line": 5.5,
-                          "american": -110
-                        }
-                      }
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
                     },
                     "fanduel": {
                       "spread": {},
@@ -576,22 +549,7 @@
                       "total": {}
                     }
                   },
-                  "matchup_rank": 1,
-                  "gemini_prediction": {
-                    "winner": "Seattle Kraken",
-                    "confidence": 55,
-                    "ats_pick": "Calgary Flames",
-                    "ats_confidence": 53,
-                    "total_pick": "Over",
-                    "total_confidence": 52,
-                    "analysis": "The Seattle Kraken travel to face the Calgary Flames in what promises to be a tightly contested matchup early in the 2026 season. Seattle holds a slight edge on the moneyline thanks to superior offensive efficiency in their opening fixtures. However, Calgary returns home where their defensive pairings have shown better structural discipline through the first week. The Flames' ability to capitalize on special teams gives them a strong chance to keep the game within a single margin. Consequently, taking the home team to cover the plus-spread offers optimal value given the projected closeness of the contest. Seattle ultimately pulls out a narrow victory, but Calgary does enough to secure the cover.",
-                    "ou_analysis": "Both teams have showcased aggressive forechecking strategies and high high-danger chance generation early this season. Goaltending performances across both squads have been inconsistent, leading to higher-than-average goals against per game. Given the current pacing metrics and defensive vulnerabilities, the combined score should surpass the 5.5 goal threshold.",
-                    "splits_and_direction": "Based on public tendencies and early betting action, approximately 58% of moneyline bets are backing the Seattle Kraken while 54% of spread bets favor the Calgary Flames. The spread has remained steady at +1.5 for the home side, whereas the moneyline has seen slight movement favoring Seattle, and the total has held firm at 5.5.",
-                    "display_text": "Analysis: The Seattle Kraken travel to face the Calgary Flames in what promises to be a tightly contested matchup early in the 2026 season. Seattle holds a slight edge on the moneyline thanks to superior offensive efficiency in their opening fixtures. However, Calgary returns home where their defensive pairings have shown better structural discipline through the first week. The Flames' ability to capitalize on special teams gives them a strong chance to keep the game within a single margin. Consequently, taking the home team to cover the plus-spread offers optimal value given the projected closeness of the contest. Seattle ultimately pulls out a narrow victory, but Calgary does enough to secure the cover.\n\nOver Under: Both teams have showcased aggressive forechecking strategies and high high-danger chance generation early this season. Goaltending performances across both squads have been inconsistent, leading to higher-than-average goals against per game. Given the current pacing metrics and defensive vulnerabilities, the combined score should surpass the 5.5 goal threshold.\n\nSplits: Based on public tendencies and early betting action, approximately 58% of moneyline bets are backing the Seattle Kraken while 54% of spread bets favor the Calgary Flames. The spread has remained steady at +1.5 for the home side, whereas the moneyline has seen slight movement favoring Seattle, and the total has held firm at 5.5.",
-                    "generated_at": "2026-09-07T02:39:16.028208+00:00",
-                    "odds_hash": "7d66b3b4d6a1009f",
-                    "model": "gemini-3.5-flash-lite"
-                  },
+                  "matchup_rank": 5,
                   "is_slot_pick": true
                 },
                 {
@@ -600,11 +558,11 @@
                   "start_time_tbd": false,
                   "home_team": "Florida Panthers",
                   "home_abbr": "FLA",
-                  "home_record": "0-0-0",
+                  "home_record": null,
                   "away_team": "Carolina Hurricanes",
                   "away_abbr": "CAR",
-                  "away_record": "0-0-0",
-                  "matchup_score": 53.8,
+                  "away_record": null,
+                  "matchup_score": 50.0,
                   "channel": "ESPN+, Scripps Sports",
                   "venue": "Amerant Bank Arena",
                   "neutral_site": false,
@@ -674,7 +632,6 @@
                       }
                     }
                   },
-                  "matchup_rank": 3,
                   "gemini_prediction": {
                     "winner": "Carolina Hurricanes",
                     "confidence": 62,
@@ -690,27 +647,55 @@
                     "odds_hash": "6097996fb24222c4",
                     "model": "gemini-3.5-flash-lite"
                   },
+                  "matchup_rank": 6,
                   "is_slot_pick": false
                 },
                 {
-                  "id": "401879364",
-                  "start_time": "2026-09-20T23:00Z",
+                  "id": "401879309",
+                  "start_time": "2026-09-21T00:00Z",
                   "start_time_tbd": false,
-                  "home_team": "Colorado Avalanche",
-                  "home_abbr": "COL",
-                  "home_record": "0-0-0",
-                  "away_team": "Utah Mammoth",
-                  "away_abbr": "UTA",
-                  "away_record": "0-0-0",
-                  "matchup_score": 92.3,
-                  "channel": "ESPN+, Utah 16",
-                  "venue": "Ball Arena",
+                  "home_team": "Calgary Flames",
+                  "home_abbr": "CGY",
+                  "home_record": null,
+                  "away_team": "Seattle Kraken",
+                  "away_abbr": "SEA",
+                  "away_record": null,
+                  "matchup_score": 50.0,
+                  "channel": "KONG, KHN, NHL Net",
+                  "venue": "Scotiabank Saddledome",
                   "neutral_site": false,
                   "odds": {
                     "draftkings": {
-                      "spread": {},
-                      "moneyline": {},
-                      "total": {}
+                      "spread": {
+                        "home": {
+                          "line": 1.5,
+                          "american": -218
+                        },
+                        "away": {
+                          "line": -1.5,
+                          "american": 180
+                        }
+                      },
+                      "moneyline": {
+                        "home": {
+                          "line": null,
+                          "american": 114
+                        },
+                        "away": {
+                          "line": null,
+                          "american": -135
+                        }
+                      },
+                      "total": {
+                        "over": {
+                          "line": 5.5,
+                          "american": -110
+                        },
+                        "under": {
+                          "line": 5.5,
+                          "american": -110
+                        }
+                      }
                     },
                     "fanduel": {
                       "spread": {},
@@ -718,7 +703,22 @@
                       "total": {}
                     }
                   },
-                  "matchup_rank": 5,
+                  "gemini_prediction": {
+                    "winner": "Seattle Kraken",
+                    "confidence": 55,
+                    "ats_pick": "Calgary Flames",
+                    "ats_confidence": 53,
+                    "total_pick": "Over",
+                    "total_confidence": 52,
+                    "analysis": "The Seattle Kraken travel to face the Calgary Flames in what promises to be a tightly contested matchup early in the 2026 season. Seattle holds a slight edge on the moneyline thanks to superior offensive efficiency in their opening fixtures. However, Calgary returns home where their defensive pairings have shown better structural discipline through the first week. The Flames' ability to capitalize on special teams gives them a strong chance to keep the game within a single margin. Consequently, taking the home team to cover the plus-spread offers optimal value given the projected closeness of the contest. Seattle ultimately pulls out a narrow victory, but Calgary does enough to secure the cover.",
+                    "ou_analysis": "Both teams have showcased aggressive forechecking strategies and high high-danger chance generation early this season. Goaltending performances across both squads have been inconsistent, leading to higher-than-average goals against per game. Given the current pacing metrics and defensive vulnerabilities, the combined score should surpass the 5.5 goal threshold.",
+                    "splits_and_direction": "Based on public tendencies and early betting action, approximately 58% of moneyline bets are backing the Seattle Kraken while 54% of spread bets favor the Calgary Flames. The spread has remained steady at +1.5 for the home side, whereas the moneyline has seen slight movement favoring Seattle, and the total has held firm at 5.5.",
+                    "display_text": "Analysis: The Seattle Kraken travel to face the Calgary Flames in what promises to be a tightly contested matchup early in the 2026 season. Seattle holds a slight edge on the moneyline thanks to superior offensive efficiency in their opening fixtures. However, Calgary returns home where their defensive pairings have shown better structural discipline through the first week. The Flames' ability to capitalize on special teams gives them a strong chance to keep the game within a single margin. Consequently, taking the home team to cover the plus-spread offers optimal value given the projected closeness of the contest. Seattle ultimately pulls out a narrow victory, but Calgary does enough to secure the cover.\n\nOver Under: Both teams have showcased aggressive forechecking strategies and high high-danger chance generation early this season. Goaltending performances across both squads have been inconsistent, leading to higher-than-average goals against per game. Given the current pacing metrics and defensive vulnerabilities, the combined score should surpass the 5.5 goal threshold.\n\nSplits: Based on public tendencies and early betting action, approximately 58% of moneyline bets are backing the Seattle Kraken while 54% of spread bets favor the Calgary Flames. The spread has remained steady at +1.5 for the home side, whereas the moneyline has seen slight movement favoring Seattle, and the total has held firm at 5.5.",
+                    "generated_at": "2026-09-07T02:39:16.028208+00:00",
+                    "odds_hash": "7d66b3b4d6a1009f",
+                    "model": "gemini-3.5-flash-lite"
+                  },
+                  "matchup_rank": 7,
                   "is_slot_pick": false
                 }
               ]
@@ -772,18 +772,18 @@
                   "is_slot_pick": true
                 },
                 {
-                  "id": "401886428",
+                  "id": "401878107",
                   "start_time": "2026-09-22T00:00Z",
                   "start_time_tbd": false,
-                  "home_team": "Dallas Stars",
-                  "home_abbr": "DAL",
-                  "home_record": "1-0-0",
-                  "away_team": "St. Louis Blues",
-                  "away_abbr": "STL",
-                  "away_record": "0-1-0",
-                  "matchup_score": 0.0,
-                  "channel": "ESPN+, Blues App",
-                  "venue": "American Airlines Center",
+                  "home_team": "Winnipeg Jets",
+                  "home_abbr": "WPG",
+                  "home_record": "0-1-0",
+                  "away_team": "Colorado Avalanche",
+                  "away_abbr": "COL",
+                  "away_record": "1-0-0",
+                  "matchup_score": 6.2,
+                  "channel": "TBD",
+                  "venue": "Canada Life Centre",
                   "neutral_site": false,
                   "odds": {
                     "draftkings": {
@@ -801,19 +801,19 @@
                   "is_slot_pick": false
                 },
                 {
-                  "id": "401881921",
-                  "start_time": "2026-09-21T23:00Z",
+                  "id": "401886428",
+                  "start_time": "2026-09-22T00:00Z",
                   "start_time_tbd": false,
-                  "home_team": "Montreal Canadiens",
-                  "home_abbr": "MTL",
-                  "home_record": "2-0-0",
-                  "away_team": "Ottawa Senators",
-                  "away_abbr": "OTT",
-                  "away_record": "0-0-0",
-                  "matchup_score": 27.3,
-                  "channel": "NHL Net",
-                  "venue": "Colisee Videotron",
-                  "neutral_site": true,
+                  "home_team": "Dallas Stars",
+                  "home_abbr": "DAL",
+                  "home_record": "1-0-0",
+                  "away_team": "St. Louis Blues",
+                  "away_abbr": "STL",
+                  "away_record": "0-1-0",
+                  "matchup_score": 6.2,
+                  "channel": "ESPN+, Blues App",
+                  "venue": "American Airlines Center",
+                  "neutral_site": false,
                   "odds": {
                     "draftkings": {
                       "spread": {},
@@ -830,19 +830,19 @@
                   "is_slot_pick": false
                 },
                 {
-                  "id": "401879645",
+                  "id": "401881921",
                   "start_time": "2026-09-21T23:00Z",
                   "start_time_tbd": false,
-                  "home_team": "New Jersey Devils",
-                  "home_abbr": "NJ",
-                  "home_record": "1-0-0",
-                  "away_team": "New York Rangers",
-                  "away_abbr": "NYR",
+                  "home_team": "Montreal Canadiens",
+                  "home_abbr": "MTL",
+                  "home_record": "2-0-0",
+                  "away_team": "Ottawa Senators",
+                  "away_abbr": "OTT",
                   "away_record": "0-0-0",
-                  "matchup_score": 36.4,
-                  "channel": "ESPN+, MSG, MSGSN",
-                  "venue": "Prudential Center",
-                  "neutral_site": false,
+                  "matchup_score": 31.2,
+                  "channel": "NHL Net",
+                  "venue": "Colisee Videotron",
+                  "neutral_site": true,
                   "odds": {
                     "draftkings": {
                       "spread": {},
@@ -859,18 +859,18 @@
                   "is_slot_pick": false
                 },
                 {
-                  "id": "401878107",
-                  "start_time": "2026-09-22T00:00Z",
+                  "id": "401879645",
+                  "start_time": "2026-09-21T23:00Z",
                   "start_time_tbd": false,
-                  "home_team": "Winnipeg Jets",
-                  "home_abbr": "WPG",
-                  "home_record": "0-1-0",
-                  "away_team": "Colorado Avalanche",
-                  "away_abbr": "COL",
+                  "home_team": "New Jersey Devils",
+                  "home_abbr": "NJ",
+                  "home_record": "1-0-0",
+                  "away_team": "New York Rangers",
+                  "away_abbr": "NYR",
                   "away_record": "0-0-0",
-                  "matchup_score": 36.4,
-                  "channel": "TBD",
-                  "venue": "Canada Life Centre",
+                  "matchup_score": 50.0,
+                  "channel": "ESPN+, MSG, MSGSN",
+                  "venue": "Prudential Center",
                   "neutral_site": false,
                   "odds": {
                     "draftkings": {
@@ -888,19 +888,19 @@
                   "is_slot_pick": false
                 },
                 {
-                  "id": "401879450",
+                  "id": "401879359",
                   "start_time": "2026-09-21T23:00Z",
                   "start_time_tbd": false,
-                  "home_team": "Columbus Blue Jackets",
-                  "home_abbr": "CBJ",
-                  "home_record": "0-0-0",
-                  "away_team": "Detroit Red Wings",
-                  "away_abbr": "DET",
+                  "home_team": "Washington Capitals",
+                  "home_abbr": "WSH",
+                  "home_record": "0-0-1",
+                  "away_team": "Philadelphia Flyers",
+                  "away_abbr": "PHI",
                   "away_record": "0-0-0",
-                  "matchup_score": 59.1,
-                  "channel": "TBD",
-                  "venue": "Nationwide Arena",
-                  "neutral_site": false,
+                  "matchup_score": 75.0,
+                  "channel": "ESPN+, MNMT, NBC Sports Phil",
+                  "venue": "Giant Center",
+                  "neutral_site": true,
                   "odds": {
                     "draftkings": {
                       "spread": {},
@@ -917,18 +917,18 @@
                   "is_slot_pick": false
                 },
                 {
-                  "id": "401879456",
+                  "id": "401879450",
                   "start_time": "2026-09-21T23:00Z",
                   "start_time_tbd": false,
-                  "home_team": "Pittsburgh Penguins",
-                  "home_abbr": "PIT",
+                  "home_team": "Columbus Blue Jackets",
+                  "home_abbr": "CBJ",
                   "home_record": "0-0-0",
-                  "away_team": "Buffalo Sabres",
-                  "away_abbr": "BUF",
+                  "away_team": "Detroit Red Wings",
+                  "away_abbr": "DET",
                   "away_record": "0-0-0",
-                  "matchup_score": 68.2,
-                  "channel": "ESPN+, MSGB",
-                  "venue": "PPG Paints Arena",
+                  "matchup_score": 81.2,
+                  "channel": "TBD",
+                  "venue": "Nationwide Arena",
                   "neutral_site": false,
                   "odds": {
                     "draftkings": {
@@ -946,19 +946,19 @@
                   "is_slot_pick": false
                 },
                 {
-                  "id": "401879359",
+                  "id": "401879456",
                   "start_time": "2026-09-21T23:00Z",
                   "start_time_tbd": false,
-                  "home_team": "Washington Capitals",
-                  "home_abbr": "WSH",
+                  "home_team": "Pittsburgh Penguins",
+                  "home_abbr": "PIT",
                   "home_record": "0-0-0",
-                  "away_team": "Philadelphia Flyers",
-                  "away_abbr": "PHI",
+                  "away_team": "Buffalo Sabres",
+                  "away_abbr": "BUF",
                   "away_record": "0-0-0",
                   "matchup_score": 100.0,
-                  "channel": "ESPN+, MNMT, NBC Sports Phil",
-                  "venue": "Giant Center",
-                  "neutral_site": true,
+                  "channel": "ESPN+, MSGB",
+                  "venue": "PPG Paints Arena",
+                  "neutral_site": false,
                   "odds": {
                     "draftkings": {
                       "spread": {},
