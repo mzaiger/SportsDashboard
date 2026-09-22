@@ -107,6 +107,33 @@ def load_previous_scores(path):
     }
 
 
+# ESPN status.type.name values that mean the game was voided rather than
+# actually played -- these still come back with state == "post" (and a
+# lingering 0-0 score from the two competitors), so without this check a
+# postponed/canceled game gets treated as a completed 0-0 final and shows
+# a green "0 - 0" score badge on the dashboard.
+VOID_STATUS_NAMES = {
+    "STATUS_POSTPONED",
+    "STATUS_CANCELED",
+    "STATUS_SUSPENDED",
+    "STATUS_FORFEIT",
+}
+
+
+def score_fields_for_status(status, home_score_raw, away_score_raw):
+    """Given an ESPN status.type dict and the raw home/away score strings,
+    return (home_score, away_score, status_label) with scores blanked out
+    for postponed/canceled/suspended games so they don't render as a fake
+    final score.
+    """
+    if status.get("name") in VOID_STATUS_NAMES:
+        return None, None, "postponed"
+    state = status.get("state")  # "pre" / "in" / "post"
+    home_score = int(home_score_raw) if home_score_raw is not None else None
+    away_score = int(away_score_raw) if away_score_raw is not None else None
+    return home_score, away_score, ("final" if state == "post" else "in_progress")
+
+
 def iter_games(dashboard):
     """Yield (week_number, game_dict) for every game in a dashboard payload."""
     if not dashboard:
@@ -270,12 +297,13 @@ def fetch_cfb_scores(dashboard, weeks_to_fetch=None):
                     f"a game that should already be final")
                 continue  # hasn't started -- nothing to overlay yet
 
-            home_score = home_c.get("score")
-            away_score = away_c.get("score")
+            home_score, away_score, game_status = score_fields_for_status(
+                status, home_c.get("score"), away_c.get("score")
+            )
             scores[str(game_id)] = {
-                "home_score": int(home_score) if home_score is not None else None,
-                "away_score": int(away_score) if away_score is not None else None,
-                "status": "final" if state == "post" else "in_progress",
+                "home_score": home_score,
+                "away_score": away_score,
+                "status": game_status,
                 "status_detail": status.get("shortDetail") or status.get("detail"),
             }
     return scores
@@ -333,12 +361,13 @@ def fetch_nfl_scores(dashboard, weeks_to_fetch=None):
             if state == "pre":
                 continue  # hasn't started -- nothing to overlay yet
 
-            home_score = home.get("score")
-            away_score = away.get("score")
+            home_score, away_score, game_status = score_fields_for_status(
+                status, home.get("score"), away.get("score")
+            )
             scores[str(game_id)] = {
-                "home_score": int(home_score) if home_score is not None else None,
-                "away_score": int(away_score) if away_score is not None else None,
-                "status": "final" if state == "post" else "in_progress",
+                "home_score": home_score,
+                "away_score": away_score,
+                "status": game_status,
                 "status_detail": status.get("shortDetail") or status.get("detail"),
             }
     return scores
@@ -400,12 +429,13 @@ def fetch_day_based_scores(dashboard, label, url, weeks_to_fetch=None, extra_par
             if state == "pre":
                 continue  # hasn't started -- nothing to overlay yet
 
-            home_score = home.get("score")
-            away_score = away.get("score")
+            home_score, away_score, game_status = score_fields_for_status(
+                status, home.get("score"), away.get("score")
+            )
             scores[str(game_id)] = {
-                "home_score": int(home_score) if home_score is not None else None,
-                "away_score": int(away_score) if away_score is not None else None,
-                "status": "final" if state == "post" else "in_progress",
+                "home_score": home_score,
+                "away_score": away_score,
+                "status": game_status,
                 "status_detail": status.get("shortDetail") or status.get("detail"),
             }
     return scores
