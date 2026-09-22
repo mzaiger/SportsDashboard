@@ -1,4 +1,4 @@
-# SCRIPT VERSION: 2026-09-22-real-date-param
+# SCRIPT VERSION: 2026-09-22-cursor-restart-and-log-fix
 """
 Shared utilities for the sports betting dashboards (CFB + NFL).
 
@@ -270,6 +270,7 @@ def fetch_all_odds(sharp_key, league, sportsbooks=("draftkings", "fanduel"),
     rows = []
     offset = 0
     cursor = None
+    restarts_left = 2  # bound how many times a cursor_expired can restart this request
     while True:
         params = {
             # SharpAPI's own example requests use the upper-case league
@@ -319,6 +320,7 @@ def fetch_all_odds(sharp_key, league, sportsbooks=("draftkings", "fanduel"),
             params["offset"] = offset
 
         payload = None
+        restarted = False
         attempt = 0
         while payload is None and attempt < MAX_PAGE_RETRIES:
             attempt += 1
@@ -342,6 +344,43 @@ def fetch_all_odds(sharp_key, league, sportsbooks=("draftkings", "fanduel"),
                 attempt -= 1  # doesn't count against the retry budget -- not a real failure
                 continue
 
+            if resp.status_code == 400 and cursor and restarts_left > 0:
+                # A real run hit this: a slow rate-limit wait (SharpAPI's
+                # own 429 backoff, up to ~55s here) left `cursor` stale by
+                # the time the next page request went out. SharpAPI's own
+                # error body says exactly what's wrong and how to fix it
+                # -- {"code": "cursor_expired", "restart": true,
+                # "message": "...restart pagination by dropping cursor=
+                # to re-fetch from the first page"} -- but this loop was
+                # just retrying the SAME expired cursor up to
+                # MAX_PAGE_RETRIES times (guaranteed to fail identically
+                # every time, since the cursor doesn't become valid again)
+                # and then giving up, silently losing every row past
+                # whatever page had already been collected. Follow the
+                # API's own instruction instead: drop the cursor and
+                # restart pagination for this whole request from page 1.
+                # Rows already collected are discarded rather than kept,
+                # since they're from a store generation SharpAPI says no
+                # longer exists -- mixing them with a fresh restart's rows
+                # risks stale/inconsistent duplicates. Bounded by
+                # restarts_left so a persistently-expiring cursor can't
+                # loop forever.
+                try:
+                    err_code = resp.json().get("error", {}).get("code")
+                except ValueError:
+                    err_code = None
+                if err_code == "cursor_expired":
+                    restarts_left -= 1
+                    log(f"  NOTE: pagination cursor expired ({len(rows)} row(s) collected so far "
+                        f"discarded) -- restarting this request from page 1 per SharpAPI's own "
+                        f"error response instead of retrying the same stale cursor "
+                        f"({restarts_left} restart(s) left).")
+                    rows = []
+                    offset = 0
+                    cursor = None
+                    restarted = True
+                    break  # out of the retry loop -- outer while True starts a fresh page 1
+
             try:
                 resp.raise_for_status()
                 payload = resp.json()
@@ -350,6 +389,9 @@ def fetch_all_odds(sharp_key, league, sportsbooks=("draftkings", "fanduel"),
                     f"{e} -- {resp.text[:300]}")
                 if attempt < MAX_PAGE_RETRIES:
                     time.sleep(1.5 * attempt)
+
+        if restarted:
+            continue  # go around the outer while True immediately, fresh page 1
 
         if payload is None:
             log(f"  WARNING: giving up on this odds page after {MAX_PAGE_RETRIES} attempts -- "
@@ -409,7 +451,25 @@ def _log_odds_breakdown(rows, sportsbooks=("draftkings", "fanduel"), markets=("s
     log(f"  odds rows by (sportsbook, market): {dict(counts)}")
     for book in sportsbooks:
         for market in markets:
-            if counts.get((book, market), 0) == 0:
+            # Compare through the alias table, not the literal requested
+            # string -- CFB's actual market_type is "point_spread" (not
+            # "spread"), MLB's is "run_line", NHL's is "puck_line". A
+            # request for market="spread" legitimately never gets a row
+            # literally tagged market_type "spread" back for those sports,
+            # so checking the literal string here was a false alarm: CFB
+            # logged "0 rows for (draftkings, spread)" on a real run even
+            # though 116 (draftkings, point_spread) rows -- the actual
+            # spread data -- were sitting right there in the same
+            # response and matched/displayed just fine downstream (see
+            # match_odds_for_game, which already resolves through
+            # _MARKET_ALIASES). Bucket both sides through the same table
+            # so this check means what it says.
+            bucket = _MARKET_ALIASES.get(market, market)
+            bucket_total = sum(
+                c for (b, mt), c in counts.items()
+                if b == book and _MARKET_ALIASES.get(mt, mt) == bucket
+            )
+            if bucket_total == 0:
                 log(f"  NOTE: 0 rows for ({book}, {market}) -- SharpAPI hasn't posted these yet, "
                     f"or (book, market) label differs from what we expect. Not a matching bug if "
                     f"the count is 0 here; something to check upstream if it's nonzero but games "
