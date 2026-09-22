@@ -1,4 +1,4 @@
-# SCRIPT VERSION: 2026-09-19-dk-abbreviation-fuzzy-match
+# SCRIPT VERSION: 2026-09-22-real-date-param
 """
 Shared utilities for the sports betting dashboards (CFB + NFL).
 
@@ -237,7 +237,10 @@ def fetch_all_odds(sharp_key, league, sportsbooks=("draftkings", "fanduel"),
     the request server-side means far fewer total rows/pages to page
     through, which is both faster and less exposed to any pagination edge
     case than asking for everything currently posted and filtering
-    client-side.
+    client-side. Every current caller passes date_from == date_to (a
+    single exact day); that case is sent to SharpAPI as its real "date"
+    param (see the "date" vs "date_from"/"date_to" note inline below --
+    the latter turned out to never be a real recognized param at all).
 
     Each individual page request gets up to MAX_PAGE_RETRIES attempts
     (short backoff between them) before giving up -- SharpAPI has been
@@ -278,10 +281,38 @@ def fetch_all_odds(sharp_key, league, sportsbooks=("draftkings", "fanduel"),
             "market": ",".join(markets),
             "limit": SHARPAPI_PAGE_LIMIT,
         }
-        if date_from:
-            params["date_from"] = date_from
-        if date_to:
-            params["date_to"] = date_to
+        if date_from and date_to and date_from == date_to:
+            # A real request to /odds confirmed via its own error body that
+            # "date_from"/"date_to" are NOT recognized params at all --
+            # SharpAPI's actual params are "date" (single day) and
+            # "date_range". SharpAPI used to silently ignore unrecognized
+            # params rather than reject them, which is almost certainly
+            # why every "single day" request was actually coming back with
+            # rows spanning several days (see match_odds_for_game's
+            # target_date docstring) -- the date_from/date_to filtering
+            # was never actually being applied, just silently dropped.
+            # SharpAPI has since started strictly validating params
+            # instead, turning that silent no-op into a hard 400 for every
+            # request this script makes. Every current caller always
+            # passes date_from == date_to (a single exact day -- CFB/NFL
+            # fetch one calendar day at a time too, not a real week-
+            # spanning range), so the fix is just to send the single-day
+            # "date" param instead.
+            params["date"] = date_from
+        elif date_from or date_to:
+            # No current caller actually hits this (every call site passes
+            # date_from == date_to), so rather than guess at "date_range"'s
+            # expected format and risk another 400, fall back to
+            # unfiltered and let match_odds_for_game's own event_start_time
+            # filtering (or the caller's own client-side date check) do
+            # the real narrowing -- correct but slower/more pages than a
+            # working server-side range filter would be.
+            log(f"  WARNING: fetch_all_odds got a real date range "
+                f"(date_from={date_from!r}, date_to={date_to!r}) -- "
+                f"SharpAPI's real range param is 'date_range' but its "
+                f"expected format hasn't been confirmed, so skipping "
+                f"server-side date filtering entirely for this request "
+                f"rather than risk another 400.")
         if cursor:
             params["cursor"] = cursor
         else:
