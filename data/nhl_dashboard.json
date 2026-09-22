@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-22T03:04:22.096962+00:00",
+  "generated_at": "2026-09-22T09:04:20.466301+00:00",
   "season": 2026,
   "display_timezone": "America/Chicago",
   "weeks": [
@@ -1297,7 +1297,151 @@
           ]
         }
       ]
+    },
+    {
+      "week": 20260923,
+      "total_games": 4,
+      "days": [
+        {
+          "date": "2026-09-23",
+          "weekday": "Wednesday",
+          "game_count": 4,
+          "is_preseason": true,
+          "time_slots": [
+            {
+              "slot": "Prime Time",
+              "best_matchup_score": 0.0,
+              "pick_reason": "combined_points",
+              "games": [
+                {
+                  "id": "401886429",
+                  "start_time": "2026-09-24T00:00Z",
+                  "start_time_tbd": false,
+                  "home_team": "Dallas Stars",
+                  "home_abbr": "DAL",
+                  "home_record": "2-0-0",
+                  "away_team": "Minnesota Wild",
+                  "away_abbr": "MIN",
+                  "away_record": "1-0-1",
+                  "matchup_score": 0.0,
+                  "channel": "TBD",
+                  "venue": "American Airlines Center",
+                  "neutral_site": false,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    },
+                    "fanduel": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    }
+                  },
+                  "matchup_rank": 1,
+                  "is_slot_pick": true
+                },
+                {
+                  "id": "401879650",
+                  "start_time": "2026-09-23T23:00Z",
+                  "start_time_tbd": false,
+                  "home_team": "Ottawa Senators",
+                  "home_abbr": "OTT",
+                  "home_record": "0-0-1",
+                  "away_team": "Toronto Maple Leafs",
+                  "away_abbr": "TOR",
+                  "away_record": "0-1-1",
+                  "matchup_score": 100.0,
+                  "channel": "NHL Net",
+                  "venue": "Canadian Tire Centre",
+                  "neutral_site": false,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    },
+                    "fanduel": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    }
+                  },
+                  "matchup_rank": 3,
+                  "is_slot_pick": false
+                },
+                {
+                  "id": "401886441",
+                  "start_time": "2026-09-23T23:00Z",
+                  "start_time_tbd": false,
+                  "home_team": "Toronto Maple Leafs",
+                  "home_abbr": "TOR",
+                  "home_record": "0-1-1",
+                  "away_team": "Ottawa Senators",
+                  "away_abbr": "OTT",
+                  "away_record": "0-0-1",
+                  "matchup_score": 100.0,
+                  "channel": "TBD",
+                  "venue": "Scotiabank Arena",
+                  "neutral_site": false,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    },
+                    "fanduel": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    }
+                  },
+                  "matchup_rank": 4,
+                  "is_slot_pick": false
+                }
+              ]
+            },
+            {
+              "slot": "Late Night",
+              "best_matchup_score": 80.0,
+              "pick_reason": "combined_points",
+              "games": [
+                {
+                  "id": "401879369",
+                  "start_time": "2026-09-24T02:00Z",
+                  "start_time_tbd": false,
+                  "home_team": "Anaheim Ducks",
+                  "home_abbr": "ANA",
+                  "home_record": "1-0-0",
+                  "away_team": "Los Angeles Kings",
+                  "away_abbr": "LA",
+                  "away_record": "0-1-0",
+                  "matchup_score": 80.0,
+                  "channel": "TBD",
+                  "venue": "Honda Center",
+                  "neutral_site": false,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    },
+                    "fanduel": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    }
+                  },
+                  "matchup_rank": 2,
+                  "is_slot_pick": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
-  "current_week": 20260921
+  "current_week": 20260922
 }
