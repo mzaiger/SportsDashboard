@@ -476,7 +476,23 @@ def _log_odds_breakdown(rows, sportsbooks=("draftkings", "fanduel"), markets=("s
                     f"still show no data for it.")
 
 
+# DraftKings abbreviates one team's city on some rows (confirmed in a real
+# NHL SharpAPI dump: "MTL Canadiens", "NJ Devils", "LA Kings", "SJ Sharks",
+# "CBJ Blue Jackets", "VGK Golden Knights"), which the fuzzy matcher can't
+# bridge (e.g. "la" vs "los angeles"). Exact full-string aliases only -- a
+# prefix rule like "la " -> "los angeles " would wrongly hit "La Salle" etc.
+_TEAM_NAME_ALIASES = {
+    "cbj blue jackets": "columbus blue jackets",
+    "la kings": "los angeles kings",
+    "mtl canadiens": "montreal canadiens",
+    "nj devils": "new jersey devils",
+    "sj sharks": "san jose sharks",
+    "vgk golden knights": "vegas golden knights",
+}
+
+
 def _normalize(name):
+    name = _TEAM_NAME_ALIASES.get(name.strip().lower(), name)
     return (
         name.lower()
         .replace("st.", "state")
