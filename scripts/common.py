@@ -836,6 +836,12 @@ def match_odds_for_game(home_team, away_team, odds_rows, team_cache, row_claims,
                     confirmed_main_total_line[book] = row["line"]
 
     for row in candidates:
+        # In-play prices (is_live) are never a pregame line: a live "Over 9.5"
+        # at +3000 late in a game was overwriting the real pregame Over 45.5
+        # (seen on Saints @ Ravens and Commanders @ Cowboys, NFL 9/20).
+        if row.get("is_live"):
+            continue
+
         row_id = row.get("id")
         if row_id is not None:
             prior_claim = row_claims.get(row_id)
@@ -974,6 +980,16 @@ def match_odds_for_game(home_team, away_team, odds_rows, team_cache, row_claims,
             "line": line_val,
             "american": row.get("odds_american"),
         }
+
+    # Safety net: over and under of one book must share the same line. If
+    # they don't, a stray alternate/other-state row slipped through -- drop
+    # that book's total rather than show an impossible pair.
+    for book in ("draftkings", "fanduel"):
+        tot = result[book]["total"]
+        if "over" in tot and "under" in tot and tot["over"]["line"] != tot["under"]["line"]:
+            log(f"  WARNING: {book} total over/under lines disagree "
+                f"({tot['over']['line']} vs {tot['under']['line']}) for {cache_key} -- dropping")
+            result[book]["total"] = {}
 
     team_cache[cache_key] = result
     return result
