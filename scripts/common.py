@@ -821,6 +821,7 @@ def match_odds_for_game(home_team, away_team, odds_rows, team_cache, row_claims,
     # alternate. A book with no confirmed main-line row at all falls back
     # to the old strict behavior for that book (nothing to mirror against).
     confirmed_main_abs_line = {}  # {book: abs(line)} -- spread
+    confirmed_main_spread_side = {}  # {(book, team_side): signed line} -- spread
     confirmed_main_total_line = {}  # {book: line} -- total (unsigned, over/under share the same number)
     for row in candidates:
         row_market = _MARKET_ALIASES.get(row.get("market_type"))
@@ -831,6 +832,9 @@ def match_odds_for_game(home_team, away_team, odds_rows, team_cache, row_claims,
             if row_market == "spread":
                 if book not in confirmed_main_abs_line:
                     confirmed_main_abs_line[book] = abs(row["line"])
+                _ms = row.get("team_side") or row.get("selection_type")
+                if _ms in ("home", "away"):
+                    confirmed_main_spread_side.setdefault((book, _ms), row["line"])
             else:
                 if book not in confirmed_main_total_line:
                     confirmed_main_total_line[book] = row["line"]
@@ -866,10 +870,18 @@ def match_odds_for_game(home_team, away_team, odds_rows, team_cache, row_claims,
         # this only applies to spread/total.
         if market == "spread":
             line = row.get("line")
+            # Must be the OTHER side of the confirmed main line with the
+            # opposite sign. Matching on magnitude alone let a same-sign
+            # alternate (e.g. the favorite's +1.5 at -430) overwrite the real
+            # -1.5 side, leaving both MLB run-line sides on +1.5 (93 FanDuel
+            # games).
+            _side = row.get("team_side") or row.get("selection_type")
+            _opp = "away" if _side == "home" else "home"
             mirrors_confirmed_main = (
                 line is not None
-                and book in confirmed_main_abs_line
-                and abs(line) == confirmed_main_abs_line[book]
+                and _side in ("home", "away")
+                and (book, _side) not in confirmed_main_spread_side
+                and confirmed_main_spread_side.get((book, _opp)) == -line
             )
 
             # 1. Explicitly drop known alternate lines -- unless it's
@@ -990,6 +1002,13 @@ def match_odds_for_game(home_team, away_team, odds_rows, team_cache, row_claims,
             log(f"  WARNING: {book} total over/under lines disagree "
                 f"({tot['over']['line']} vs {tot['under']['line']}) for {cache_key} -- dropping")
             result[book]["total"] = {}
+
+    for book in ("draftkings", "fanduel"):
+        sp = result[book]["spread"]
+        h, a = sp.get("home"), sp.get("away")
+        if h and a and h.get("line") is not None and a.get("line") is not None and h["line"] != -a["line"]:
+            log(f"  WARNING: {book} spread sides not mirrored ({h['line']} / {a['line']}) for {cache_key} -- dropping")
+            result[book]["spread"] = {}
 
     team_cache[cache_key] = result
     return result
