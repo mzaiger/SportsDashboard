@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-28T03:20:12.045286+00:00",
+  "generated_at": "2026-09-28T10:36:20.135070+00:00",
   "season": 2026,
   "display_timezone": "America/Chicago",
   "weeks": [
@@ -51359,7 +51359,440 @@
           "time_slots": []
         }
       ]
+    },
+    {
+      "week": 20260929,
+      "total_games": 4,
+      "days": [
+        {
+          "date": "2026-09-29",
+          "weekday": "Tuesday",
+          "game_count": 4,
+          "is_preseason": false,
+          "time_slots": [
+            {
+              "slot": "Noon",
+              "best_matchup_score": 0.0,
+              "pick_reason": "combined_wins",
+              "games": [
+                {
+                  "id": "401907965",
+                  "start_time": "2026-09-29T18:00Z",
+                  "start_time_tbd": false,
+                  "home_team": "Atlanta Braves",
+                  "home_abbr": "ATL",
+                  "home_record": "94-68",
+                  "home_pitcher": null,
+                  "away_team": "Philadelphia Phillies",
+                  "away_abbr": "PHI",
+                  "away_record": "88-74",
+                  "away_pitcher": null,
+                  "matchup_score": 0.0,
+                  "channel": "NBC",
+                  "venue": "Truist Park",
+                  "neutral_site": false,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {
+                        "away": {
+                          "line": 1.5,
+                          "american": -143
+                        },
+                        "home": {
+                          "line": -1.5,
+                          "american": 119
+                        }
+                      },
+                      "moneyline": {
+                        "home": {
+                          "line": null,
+                          "american": -200
+                        },
+                        "away": {
+                          "line": null,
+                          "american": 163
+                        }
+                      },
+                      "total": {
+                        "over": {
+                          "line": 6.5,
+                          "american": -122
+                        },
+                        "under": {
+                          "line": 6.5,
+                          "american": 102
+                        }
+                      }
+                    },
+                    "fanduel": {
+                      "spread": {
+                        "home": {
+                          "line": -1.5,
+                          "american": 115
+                        },
+                        "away": {
+                          "line": 1.5,
+                          "american": -138
+                        }
+                      },
+                      "moneyline": {
+                        "away": {
+                          "line": null,
+                          "american": 172
+                        },
+                        "home": {
+                          "line": null,
+                          "american": -205
+                        }
+                      },
+                      "total": {
+                        "under": {
+                          "line": 6.5,
+                          "american": 112
+                        },
+                        "over": {
+                          "line": 6.5,
+                          "american": -138
+                        }
+                      }
+                    }
+                  },
+                  "matchup_rank": 1,
+                  "gemini_prediction": {
+                    "winner": "Atlanta Braves",
+                    "confidence": 71,
+                    "ats_pick": "Philadelphia Phillies",
+                    "ats_confidence": 62,
+                    "total_pick": "Over",
+                    "total_confidence": 59,
+                    "analysis": "The Atlanta Braves hold a commanding home-field advantage backed by their strong performance throughout the 2026 season. Philadelphia struggles to consistently generate offense against elite tier pitching staffs when playing away from their home ballpark. While Atlanta is expected to secure the outright victory based on superior run differentials and depth, winning by multiple runs remains a difficult task. The Philadelphia Phillies have shown incredible resilience in close matchups, keeping the final margin tight enough to cover the run line. Therefore, Atlanta wins the game outright, but Philadelphia successfully covers the plus-1.5 spread.",
+                    "ou_analysis": "The low posted total of 6.5 runs fails to properly account for the offensive power both lineups possess in favorable late-September hitting conditions. Both teams feature top-tier sluggers capable of exploiting mistakes and turning high-leverage bullpen appearances into multi-run frames. Consequently, the game pace and recent scoring trends point directly toward the combined score clearing the over.",
+                    "splits_and_direction": "Public betting splits are heavily skewed toward the Atlanta Braves moneyline at approximately 68 percent of tickets, while the run line sees a balanced 50-50 split due to the enticing underdog odds. The moneyline has drifted slightly upward toward Atlanta from initial open, and the total has ticked upward reflecting early sharp action on the over.",
+                    "display_text": "Analysis: The Atlanta Braves hold a commanding home-field advantage backed by their strong performance throughout the 2026 season. Philadelphia struggles to consistently generate offense against elite tier pitching staffs when playing away from their home ballpark. While Atlanta is expected to secure the outright victory based on superior run differentials and depth, winning by multiple runs remains a difficult task. The Philadelphia Phillies have shown incredible resilience in close matchups, keeping the final margin tight enough to cover the run line. Therefore, Atlanta wins the game outright, but Philadelphia successfully covers the plus-1.5 spread.\n\nOver Under: The low posted total of 6.5 runs fails to properly account for the offensive power both lineups possess in favorable late-September hitting conditions. Both teams feature top-tier sluggers capable of exploiting mistakes and turning high-leverage bullpen appearances into multi-run frames. Consequently, the game pace and recent scoring trends point directly toward the combined score clearing the over.\n\nSplits: Public betting splits are heavily skewed toward the Atlanta Braves moneyline at approximately 68 percent of tickets, while the run line sees a balanced 50-50 split due to the enticing underdog odds. The moneyline has drifted slightly upward toward Atlanta from initial open, and the total has ticked upward reflecting early sharp action on the over.",
+                    "generated_at": "2026-09-28T10:35:50.272249+00:00",
+                    "odds_hash": "ae1ea629b070602f",
+                    "model": "gemini-3.5-flash-lite"
+                  },
+                  "is_slot_pick": true
+                }
+              ]
+            },
+            {
+              "slot": "Afternoon",
+              "best_matchup_score": 100.0,
+              "pick_reason": "combined_wins",
+              "games": [
+                {
+                  "id": "401907896",
+                  "start_time": "2026-09-29T21:00Z",
+                  "start_time_tbd": false,
+                  "home_team": "Houston Astros",
+                  "home_abbr": "HOU",
+                  "home_record": "81-81",
+                  "home_pitcher": null,
+                  "away_team": "Chicago White Sox",
+                  "away_abbr": "CHW",
+                  "away_record": "84-78",
+                  "away_pitcher": null,
+                  "matchup_score": 100.0,
+                  "channel": "Peacock, NBCSN",
+                  "venue": "Daikin Park",
+                  "neutral_site": false,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {
+                        "home": {
+                          "line": -1.5,
+                          "american": 158
+                        },
+                        "away": {
+                          "line": 1.5,
+                          "american": -193
+                        }
+                      },
+                      "moneyline": {
+                        "home": {
+                          "line": null,
+                          "american": -136
+                        },
+                        "away": {
+                          "line": null,
+                          "american": 113
+                        }
+                      },
+                      "total": {
+                        "under": {
+                          "line": 8.5,
+                          "american": -134
+                        },
+                        "over": {
+                          "line": 8.5,
+                          "american": 103
+                        }
+                      }
+                    },
+                    "fanduel": {
+                      "spread": {
+                        "away": {
+                          "line": 1.5,
+                          "american": -192
+                        },
+                        "home": {
+                          "line": -1.5,
+                          "american": 158
+                        }
+                      },
+                      "moneyline": {
+                        "home": {
+                          "line": null,
+                          "american": -134
+                        },
+                        "away": {
+                          "line": null,
+                          "american": 116
+                        }
+                      },
+                      "total": {
+                        "under": {
+                          "line": 8.5,
+                          "american": -122
+                        },
+                        "over": {
+                          "line": 8.5,
+                          "american": 100
+                        }
+                      }
+                    }
+                  },
+                  "matchup_rank": 4,
+                  "gemini_prediction": {
+                    "winner": "Houston Astros",
+                    "confidence": 63,
+                    "ats_pick": "Chicago White Sox",
+                    "ats_confidence": 55,
+                    "total_pick": "Under",
+                    "total_confidence": 58,
+                    "analysis": "The Houston Astros hold a distinct home-field advantage as they host the Chicago White Sox in this late-season matchup. Houston features a more balanced offensive attack and superior pitching depth down the stretch of the 2026 campaign. Chicago struggles to generate consistent run support on the road against quality pitching staffs. Although Houston should secure the outright victory, their recent tendency to win by narrow margins makes the run line a risky endeavor. Consequently, taking the White Sox to cover the plus-1.5 spread offers solid value in what projects to be a closely contested affair.",
+                    "ou_analysis": "Both starting rotations feature strong peripherals that suppress hard contact and limit opposing scoring opportunities. The spacious dimensions of the Houston ballpark historically create a pitcher-friendly environment that dampens home run totals. Given the conservative approach both lineups are likely to take late in the season, the combined score will stay under the 8.5 run threshold.",
+                    "splits_and_direction": "An estimated 68 percent of public bets are backing the Houston Astros on the moneyline and laying the 1.5 runs on the spread. The moneyline has ticked up slightly in favor of Houston while the total has inched downward from an opener of 9.0 to 8.5 due to early sharp action on the under.",
+                    "display_text": "Analysis: The Houston Astros hold a distinct home-field advantage as they host the Chicago White Sox in this late-season matchup. Houston features a more balanced offensive attack and superior pitching depth down the stretch of the 2026 campaign. Chicago struggles to generate consistent run support on the road against quality pitching staffs. Although Houston should secure the outright victory, their recent tendency to win by narrow margins makes the run line a risky endeavor. Consequently, taking the White Sox to cover the plus-1.5 spread offers solid value in what projects to be a closely contested affair.\n\nOver Under: Both starting rotations feature strong peripherals that suppress hard contact and limit opposing scoring opportunities. The spacious dimensions of the Houston ballpark historically create a pitcher-friendly environment that dampens home run totals. Given the conservative approach both lineups are likely to take late in the season, the combined score will stay under the 8.5 run threshold.\n\nSplits: An estimated 68 percent of public bets are backing the Houston Astros on the moneyline and laying the 1.5 runs on the spread. The moneyline has ticked up slightly in favor of Houston while the total has inched downward from an opener of 9.0 to 8.5 due to early sharp action on the under.",
+                    "generated_at": "2026-09-28T10:36:00.540470+00:00",
+                    "odds_hash": "3f4d4cda16b9512e",
+                    "model": "gemini-3.5-flash-lite"
+                  },
+                  "is_slot_pick": true
+                }
+              ]
+            },
+            {
+              "slot": "Prime Time",
+              "best_matchup_score": 22.2,
+              "pick_reason": "combined_wins",
+              "games": [
+                {
+                  "id": "401907924",
+                  "start_time": "2026-09-30T00:00Z",
+                  "start_time_tbd": false,
+                  "home_team": "New York Yankees",
+                  "home_abbr": "NYY",
+                  "home_record": "93-68",
+                  "home_pitcher": "C. Schlittler",
+                  "away_team": "Boston Red Sox",
+                  "away_abbr": "BOS",
+                  "away_record": "87-75",
+                  "away_pitcher": null,
+                  "matchup_score": 22.2,
+                  "channel": "NBC",
+                  "venue": "Yankee Stadium",
+                  "neutral_site": false,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {
+                        "away": {
+                          "line": 1.5,
+                          "american": -186
+                        },
+                        "home": {
+                          "line": -1.5,
+                          "american": 153
+                        }
+                      },
+                      "moneyline": {
+                        "away": {
+                          "line": null,
+                          "american": 127
+                        },
+                        "home": {
+                          "line": null,
+                          "american": -154
+                        }
+                      },
+                      "total": {
+                        "over": {
+                          "line": 6.5,
+                          "american": -112
+                        },
+                        "under": {
+                          "line": 6.5,
+                          "american": -108
+                        }
+                      }
+                    },
+                    "fanduel": {
+                      "spread": {
+                        "away": {
+                          "line": 1.5,
+                          "american": -182
+                        },
+                        "home": {
+                          "line": -1.5,
+                          "american": 150
+                        }
+                      },
+                      "moneyline": {
+                        "home": {
+                          "line": null,
+                          "american": -156
+                        },
+                        "away": {
+                          "line": null,
+                          "american": 132
+                        }
+                      },
+                      "total": {
+                        "under": {
+                          "line": 6.5,
+                          "american": 100
+                        },
+                        "over": {
+                          "line": 6.5,
+                          "american": -122
+                        }
+                      }
+                    }
+                  },
+                  "matchup_rank": 3,
+                  "gemini_prediction": {
+                    "winner": "New York Yankees",
+                    "confidence": 62,
+                    "ats_pick": "Boston Red Sox",
+                    "ats_confidence": 55,
+                    "total_pick": "Over",
+                    "total_confidence": 57,
+                    "analysis": "The New York Yankees hold home-field advantage and send C. Schlittler to the mound for this late-season crucial matchup. While the Boston Red Sox have not yet announced their starter, their resilient 2026 batting lineup has consistently kept them competitive on the road. Boston's offense should generate enough traffic against New York's pitching to keep the final margin within a single run. Consequently, even though the Yankees are projected to secure a narrow outright victory, they are unlikely to comfortably cover the 1.5-run spread. Expect a hard-fought divisional battle where the underdog Red Sox successfully stay within striking distance.",
+                    "ou_analysis": "Both clubs feature potent offensive weapons capable of capitalizing on any mistakes made by opposing pitchers late in the 2026 campaign. The relatively low posted total of 6.5 runs fails to fully account for the offensive capabilities present in both batting orders. Therefore, the combined score will surpass the number, pushing the game safely into Over territory.",
+                    "splits_and_direction": "estimated",
+                    "display_text": "Analysis: The New York Yankees hold home-field advantage and send C. Schlittler to the mound for this late-season crucial matchup. While the Boston Red Sox have not yet announced their starter, their resilient 2026 batting lineup has consistently kept them competitive on the road. Boston's offense should generate enough traffic against New York's pitching to keep the final margin within a single run. Consequently, even though the Yankees are projected to secure a narrow outright victory, they are unlikely to comfortably cover the 1.5-run spread. Expect a hard-fought divisional battle where the underdog Red Sox successfully stay within striking distance.\n\nOver Under: Both clubs feature potent offensive weapons capable of capitalizing on any mistakes made by opposing pitchers late in the 2026 campaign. The relatively low posted total of 6.5 runs fails to fully account for the offensive capabilities present in both batting orders. Therefore, the combined score will surpass the number, pushing the game safely into Over territory.\n\nSplits: estimated",
+                    "generated_at": "2026-09-28T10:36:10.331684+00:00",
+                    "odds_hash": "69899c3b1f5cf6a9",
+                    "model": "gemini-3.5-flash-lite"
+                  },
+                  "is_slot_pick": true
+                }
+              ]
+            },
+            {
+              "slot": "Late Night",
+              "best_matchup_score": 11.1,
+              "pick_reason": "combined_wins",
+              "games": [
+                {
+                  "id": "401907974",
+                  "start_time": "2026-09-30T02:00Z",
+                  "start_time_tbd": false,
+                  "home_team": "San Diego Padres",
+                  "home_abbr": "SD",
+                  "home_record": "91-71",
+                  "home_pitcher": "M. King",
+                  "away_team": "Chicago Cubs",
+                  "away_abbr": "CHC",
+                  "away_record": "89-73",
+                  "away_pitcher": null,
+                  "matchup_score": 11.1,
+                  "channel": "Peacock, NBCSN",
+                  "venue": "Petco Park",
+                  "neutral_site": false,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {},
+                      "moneyline": {
+                        "away": {
+                          "line": null,
+                          "american": 106
+                        },
+                        "home": {
+                          "line": null,
+                          "american": -127
+                        }
+                      },
+                      "total": {
+                        "over": {
+                          "line": 7.5,
+                          "american": 104
+                        },
+                        "under": {
+                          "line": 7.5,
+                          "american": -135
+                        }
+                      }
+                    },
+                    "fanduel": {
+                      "spread": {
+                        "away": {
+                          "line": 1.5,
+                          "american": -215
+                        },
+                        "home": {
+                          "line": -1.5,
+                          "american": 176
+                        }
+                      },
+                      "moneyline": {
+                        "away": {
+                          "line": null,
+                          "american": 108
+                        },
+                        "home": {
+                          "line": null,
+                          "american": -126
+                        }
+                      },
+                      "total": {
+                        "under": {
+                          "line": 7.5,
+                          "american": -115
+                        },
+                        "over": {
+                          "line": 7.5,
+                          "american": -105
+                        }
+                      }
+                    }
+                  },
+                  "matchup_rank": 2,
+                  "gemini_prediction": {
+                    "winner": "San Diego Padres",
+                    "confidence": 62,
+                    "ats_pick": "Chicago Cubs",
+                    "ats_confidence": 55,
+                    "total_pick": "Under",
+                    "total_confidence": 58,
+                    "analysis": "The San Diego Padres hold a home-field advantage backed by M. King anchoring the starting rotation for this late-September matchup. While the Chicago Cubs possess a competitive roster capable of keeping things tight, the Padres' overall execution at Petco Park gives them the edge to win outright. However, the narrow margin and strong pitching matchups suggest that the Cubs can easily keep the game within a single run if they don't pull off the upset. Consequently, taking the run line with the away team offers sound value against a heavily favored home squad. Expect a closely contested battle where San Diego ultimately edges out a tight victory, leaving the spread cover for Chicago.",
+                    "ou_analysis": "Petco Park naturally suppresses offensive production, creating an inherently pitcher-friendly environment for late-season games. M. King's strong performance profile on the mound further limits opposing scoring opportunities and suppresses overall game pace. Therefore, these factors combined point directly toward the final combined score falling below the posted line of 7.5 runs.",
+                    "splits_and_direction": "Based on current market tendencies, approximately 62% of public bets are backing the San Diego Padres on the moneyline and spread, while the total has seen moderate action leaning slightly toward the Under. The moneyline opened around Padres -120 and has ticked up to -127, whereas the total has remained relatively stable at 7.5 with minor juice adjustments.",
+                    "display_text": "Analysis: The San Diego Padres hold a home-field advantage backed by M. King anchoring the starting rotation for this late-September matchup. While the Chicago Cubs possess a competitive roster capable of keeping things tight, the Padres' overall execution at Petco Park gives them the edge to win outright. However, the narrow margin and strong pitching matchups suggest that the Cubs can easily keep the game within a single run if they don't pull off the upset. Consequently, taking the run line with the away team offers sound value against a heavily favored home squad. Expect a closely contested battle where San Diego ultimately edges out a tight victory, leaving the spread cover for Chicago.\n\nOver Under: Petco Park naturally suppresses offensive production, creating an inherently pitcher-friendly environment for late-season games. M. King's strong performance profile on the mound further limits opposing scoring opportunities and suppresses overall game pace. Therefore, these factors combined point directly toward the final combined score falling below the posted line of 7.5 runs.\n\nSplits: Based on current market tendencies, approximately 62% of public bets are backing the San Diego Padres on the moneyline and spread, while the total has seen moderate action leaning slightly toward the Under. The moneyline opened around Padres -120 and has ticked up to -127, whereas the total has remained relatively stable at 7.5 with minor juice adjustments.",
+                    "generated_at": "2026-09-28T10:36:19.983068+00:00",
+                    "odds_hash": "1f4c14c15dbfebe0",
+                    "model": "gemini-3.5-flash-lite"
+                  },
+                  "is_slot_pick": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
-  "current_week": 20260927
+  "current_week": 20260928
 }
