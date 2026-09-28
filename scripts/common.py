@@ -1019,6 +1019,27 @@ def match_odds_for_game(home_team, away_team, odds_rows, team_cache, row_claims,
 # old weeks -- picks can go back to week 1 forever)
 # ---------------------------------------------------------------------------
 
+def drop_mismatched_totals(odds, label=""):
+    """Blank any book's Over/Under total whose two sides disagree on the line.
+
+    A real two-way total has the same line on both sides. A pair like
+    Over 9.5 / Under 49.5 means an alternate or stale row got stitched to a
+    good one (e.g. by carry_forward_odds merging each side independently, or
+    by a bad pair frozen into a previous build's JSON). Mutates and returns
+    `odds`; a dropped total becomes {} (the same shape as "no total posted").
+    """
+    if not odds:
+        return odds
+    for book in ("draftkings", "fanduel"):
+        tot = (odds.get(book) or {}).get("total") or {}
+        o, u = tot.get("over"), tot.get("under")
+        if o and u and o.get("line") != u.get("line"):
+            log(f"  WARNING: {book} total over/under lines disagree "
+                f"({o.get('line')} vs {u.get('line')}) {label} -- dropping")
+            odds[book]["total"] = {}
+    return odds
+
+
 def load_existing_dashboard(path):
     """Read a previous build's output JSON, or None if it doesn't exist yet
     (first-ever run) or can't be parsed."""
@@ -1082,7 +1103,7 @@ def load_previous_odds_by_game(path):
                 for g in slot.get("games", []):
                     gid = g.get("id")
                     if gid is not None:
-                        lookup[gid] = g.get("odds")
+                        lookup[gid] = drop_mismatched_totals(g.get("odds"), f"(previous build, game {gid})")
     return lookup
 
 
@@ -1113,6 +1134,7 @@ def load_previous_game_entries(path):
                 for g in slot.get("games", []):
                     gid = g.get("id")
                     if gid is not None:
+                        drop_mismatched_totals(g.get("odds"), f"(previous build, game {gid})")
                         lookup[str(gid)] = g
     return lookup
 
@@ -1182,4 +1204,7 @@ def carry_forward_odds(new_odds, previous_odds):
                 merged[book]["total"][side] = new_total[side]
             elif old_total.get(side):
                 merged[book]["total"][side] = old_total[side]
-    return merged
+    # Each side above is carried forward independently, so a fresh Under can
+    # end up paired with a stale Over from a different line (Over 9.5 /
+    # Under 49.5). Blank any such pair rather than show an impossible total.
+    return drop_mismatched_totals(merged, "(after carry-forward)")
