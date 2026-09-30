@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-29T23:31:56.106728+00:00",
+  "generated_at": "2026-09-30T03:50:04.624243+00:00",
   "season": 2026,
   "display_timezone": "America/Chicago",
   "weeks": [
@@ -2405,7 +2405,7 @@
           "time_slots": [
             {
               "slot": "Afternoon",
-              "best_matchup_score": 0.0,
+              "best_matchup_score": 100.0,
               "pick_reason": "combined_points",
               "games": [
                 {
@@ -2414,11 +2414,11 @@
                   "start_time_tbd": false,
                   "home_team": "Carolina Hurricanes",
                   "home_abbr": "CAR",
-                  "home_record": "0-0-0",
+                  "home_record": null,
                   "away_team": "Florida Panthers",
                   "away_abbr": "FLA",
-                  "away_record": "0-0-0",
-                  "matchup_score": 0.0,
+                  "away_record": null,
+                  "matchup_score": 100.0,
                   "channel": "ESPN",
                   "venue": "Lenovo Center",
                   "neutral_site": false,
@@ -2503,124 +2503,26 @@
                     "odds_hash": "b8e2cbea7db2d420",
                     "model": "gemini-3.5-flash-lite"
                   },
-                  "matchup_rank": 1,
+                  "matchup_rank": 3,
                   "is_slot_pick": true
                 }
               ]
             },
             {
               "slot": "Prime Time",
-              "best_matchup_score": 14.3,
+              "best_matchup_score": 100.0,
               "pick_reason": "combined_points",
               "games": [
-                {
-                  "id": "401891774",
-                  "start_time": "2026-09-30T00:00Z",
-                  "start_time_tbd": false,
-                  "home_team": "Boston Bruins",
-                  "home_abbr": "BOS",
-                  "home_record": "0-0-0",
-                  "away_team": "New York Rangers",
-                  "away_abbr": "NYR",
-                  "away_record": "0-0-0",
-                  "matchup_score": 14.3,
-                  "channel": "ESPN",
-                  "venue": "TD Garden",
-                  "neutral_site": false,
-                  "odds": {
-                    "draftkings": {
-                      "spread": {
-                        "home": {
-                          "line": -1.5,
-                          "american": 215
-                        },
-                        "away": {
-                          "line": 1.5,
-                          "american": -265
-                        }
-                      },
-                      "moneyline": {
-                        "home": {
-                          "line": null,
-                          "american": -110
-                        },
-                        "away": {
-                          "line": null,
-                          "american": -110
-                        }
-                      },
-                      "total": {
-                        "over": {
-                          "line": 5.5,
-                          "american": -135
-                        },
-                        "under": {
-                          "line": 5.5,
-                          "american": 114
-                        }
-                      }
-                    },
-                    "fanduel": {
-                      "spread": {
-                        "home": {
-                          "line": -1.5,
-                          "american": 198
-                        },
-                        "away": {
-                          "line": 1.5,
-                          "american": -250
-                        }
-                      },
-                      "moneyline": {
-                        "home": {
-                          "line": null,
-                          "american": -110
-                        },
-                        "away": {
-                          "line": null,
-                          "american": -110
-                        }
-                      },
-                      "total": {
-                        "over": {
-                          "line": 5.5,
-                          "american": -128
-                        },
-                        "under": {
-                          "line": 5.5,
-                          "american": 104
-                        }
-                      }
-                    }
-                  },
-                  "matchup_rank": 2,
-                  "gemini_prediction": {
-                    "winner": "Boston Bruins",
-                    "confidence": 55,
-                    "ats_pick": "Boston Bruins",
-                    "ats_confidence": 53,
-                    "total_pick": "Over",
-                    "total_confidence": 56,
-                    "analysis": "The Boston Bruins hold home-ice advantage against the New York Rangers in this early-season 2026 matchup. Boston's offensive depth has shown better early form compared to the Rangers' inconsistent scoring output. New York has struggled to find consistent defensive pairings, which the Bruins' forecheck should exploit. Goaltending remains relatively even, making special teams the likely differentiator for the home side. Ultimately, the Bruins should secure a narrow victory to justify the slight market backing.",
-                    "ou_analysis": "Both teams feature aggressive neutral-zone transition styles that frequently lead to high-danger scoring chances. Early season special teams volatility and occasional defensive breakdowns point toward an elevated scoring environment. Therefore, the combined score should comfortably clear the 5.5 goal threshold to cash the over.",
-                    "splits_and_direction": "Based on standard public betting tendencies, roughly 55 percent of bets are backing the Bruins on the moneyline and spread, while the over is drawing about 60 percent of the total action. The spread has remained steady at 1.5, but the total has seen slight movement upward from an opening number of 5.5 with juiced over odds.",
-                    "display_text": "Analysis: The Boston Bruins hold home-ice advantage against the New York Rangers in this early-season 2026 matchup. Boston's offensive depth has shown better early form compared to the Rangers' inconsistent scoring output. New York has struggled to find consistent defensive pairings, which the Bruins' forecheck should exploit. Goaltending remains relatively even, making special teams the likely differentiator for the home side. Ultimately, the Bruins should secure a narrow victory to justify the slight market backing.\n\nOver Under: Both teams feature aggressive neutral-zone transition styles that frequently lead to high-danger scoring chances. Early season special teams volatility and occasional defensive breakdowns point toward an elevated scoring environment. Therefore, the combined score should comfortably clear the 5.5 goal threshold to cash the over.\n\nSplits: Based on standard public betting tendencies, roughly 55 percent of bets are backing the Bruins on the moneyline and spread, while the over is drawing about 60 percent of the total action. The spread has remained steady at 1.5, but the total has seen slight movement upward from an opening number of 5.5 with juiced over odds.",
-                    "generated_at": "2026-09-29T23:31:05.882565+00:00",
-                    "odds_hash": "8c44dc0da942cc47",
-                    "model": "gemini-3.5-flash-lite"
-                  },
-                  "is_slot_pick": true
-                },
                 {
                   "id": "401891827",
                   "start_time": "2026-09-29T23:00Z",
                   "start_time_tbd": false,
                   "home_team": "Toronto Maple Leafs",
                   "home_abbr": "TOR",
-                  "home_record": "0-0-0",
+                  "home_record": null,
                   "away_team": "Montreal Canadiens",
                   "away_abbr": "MTL",
-                  "away_record": "0-0-0",
+                  "away_record": null,
                   "matchup_score": 100.0,
                   "channel": "ESPN+",
                   "venue": "Scotiabank Arena",
@@ -2691,7 +2593,6 @@
                       }
                     }
                   },
-                  "matchup_rank": 5,
                   "gemini_prediction": {
                     "winner": "Toronto Maple Leafs",
                     "confidence": 55,
@@ -2707,13 +2608,112 @@
                     "odds_hash": "7bb83dc2f4402c32",
                     "model": "gemini-3.5-flash-lite"
                   },
+                  "matchup_rank": 4,
+                  "is_slot_pick": true
+                },
+                {
+                  "id": "401891774",
+                  "start_time": "2026-09-30T00:00Z",
+                  "start_time_tbd": false,
+                  "home_team": "Boston Bruins",
+                  "home_abbr": "BOS",
+                  "home_record": null,
+                  "away_team": "New York Rangers",
+                  "away_abbr": "NYR",
+                  "away_record": null,
+                  "matchup_score": 100.0,
+                  "channel": "ESPN",
+                  "venue": "TD Garden",
+                  "neutral_site": false,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {
+                        "home": {
+                          "line": -1.5,
+                          "american": 215
+                        },
+                        "away": {
+                          "line": 1.5,
+                          "american": -265
+                        }
+                      },
+                      "moneyline": {
+                        "home": {
+                          "line": null,
+                          "american": -110
+                        },
+                        "away": {
+                          "line": null,
+                          "american": -110
+                        }
+                      },
+                      "total": {
+                        "over": {
+                          "line": 5.5,
+                          "american": -135
+                        },
+                        "under": {
+                          "line": 5.5,
+                          "american": 114
+                        }
+                      }
+                    },
+                    "fanduel": {
+                      "spread": {
+                        "home": {
+                          "line": -1.5,
+                          "american": 198
+                        },
+                        "away": {
+                          "line": 1.5,
+                          "american": -250
+                        }
+                      },
+                      "moneyline": {
+                        "home": {
+                          "line": null,
+                          "american": -110
+                        },
+                        "away": {
+                          "line": null,
+                          "american": -110
+                        }
+                      },
+                      "total": {
+                        "over": {
+                          "line": 5.5,
+                          "american": -128
+                        },
+                        "under": {
+                          "line": 5.5,
+                          "american": 104
+                        }
+                      }
+                    }
+                  },
+                  "gemini_prediction": {
+                    "winner": "Boston Bruins",
+                    "confidence": 55,
+                    "ats_pick": "Boston Bruins",
+                    "ats_confidence": 53,
+                    "total_pick": "Over",
+                    "total_confidence": 56,
+                    "analysis": "The Boston Bruins hold home-ice advantage against the New York Rangers in this early-season 2026 matchup. Boston's offensive depth has shown better early form compared to the Rangers' inconsistent scoring output. New York has struggled to find consistent defensive pairings, which the Bruins' forecheck should exploit. Goaltending remains relatively even, making special teams the likely differentiator for the home side. Ultimately, the Bruins should secure a narrow victory to justify the slight market backing.",
+                    "ou_analysis": "Both teams feature aggressive neutral-zone transition styles that frequently lead to high-danger scoring chances. Early season special teams volatility and occasional defensive breakdowns point toward an elevated scoring environment. Therefore, the combined score should comfortably clear the 5.5 goal threshold to cash the over.",
+                    "splits_and_direction": "Based on standard public betting tendencies, roughly 55 percent of bets are backing the Bruins on the moneyline and spread, while the over is drawing about 60 percent of the total action. The spread has remained steady at 1.5, but the total has seen slight movement upward from an opening number of 5.5 with juiced over odds.",
+                    "display_text": "Analysis: The Boston Bruins hold home-ice advantage against the New York Rangers in this early-season 2026 matchup. Boston's offensive depth has shown better early form compared to the Rangers' inconsistent scoring output. New York has struggled to find consistent defensive pairings, which the Bruins' forecheck should exploit. Goaltending remains relatively even, making special teams the likely differentiator for the home side. Ultimately, the Bruins should secure a narrow victory to justify the slight market backing.\n\nOver Under: Both teams feature aggressive neutral-zone transition styles that frequently lead to high-danger scoring chances. Early season special teams volatility and occasional defensive breakdowns point toward an elevated scoring environment. Therefore, the combined score should comfortably clear the 5.5 goal threshold to cash the over.\n\nSplits: Based on standard public betting tendencies, roughly 55 percent of bets are backing the Bruins on the moneyline and spread, while the over is drawing about 60 percent of the total action. The spread has remained steady at 1.5, but the total has seen slight movement upward from an opening number of 5.5 with juiced over odds.",
+                    "generated_at": "2026-09-29T23:31:05.882565+00:00",
+                    "odds_hash": "8c44dc0da942cc47",
+                    "model": "gemini-3.5-flash-lite"
+                  },
+                  "matchup_rank": 5,
                   "is_slot_pick": false
                 }
               ]
             },
             {
               "slot": "Late Night",
-              "best_matchup_score": 85.7,
+              "best_matchup_score": 50.0,
               "pick_reason": "combined_points",
               "games": [
                 {
@@ -2726,7 +2726,7 @@
                   "away_team": "Vancouver Canucks",
                   "away_abbr": "VAN",
                   "away_record": "0-0-0",
-                  "matchup_score": 85.7,
+                  "matchup_score": 50.0,
                   "channel": "ESPN+",
                   "venue": "Rogers Place",
                   "neutral_site": false,
@@ -2796,7 +2796,6 @@
                       }
                     }
                   },
-                  "matchup_rank": 3,
                   "gemini_prediction": {
                     "winner": "Edmonton Oilers",
                     "confidence": 75,
@@ -2812,11 +2811,12 @@
                     "odds_hash": "6873768847e3bc55",
                     "model": "gemini-3.5-flash-lite"
                   },
+                  "matchup_rank": 1,
                   "is_slot_pick": true
                 },
                 {
                   "id": "401891775",
-                  "start_time": "2026-09-30T02:30Z",
+                  "start_time": "2026-09-30T02:45Z",
                   "start_time_tbd": false,
                   "home_team": "Vegas Golden Knights",
                   "home_abbr": "VGK",
@@ -2824,7 +2824,7 @@
                   "away_team": "Chicago Blackhawks",
                   "away_abbr": "CHI",
                   "away_record": "0-0-0",
-                  "matchup_score": 85.7,
+                  "matchup_score": 50.0,
                   "channel": "ESPN",
                   "venue": "T-Mobile Arena",
                   "neutral_site": false,
@@ -2894,7 +2894,6 @@
                       }
                     }
                   },
-                  "matchup_rank": 4,
                   "gemini_prediction": {
                     "winner": "Vegas Golden Knights",
                     "confidence": 78,
@@ -2910,6 +2909,7 @@
                     "odds_hash": "75c2c9e3f293103a",
                     "model": "gemini-3.5-flash-lite"
                   },
+                  "matchup_rank": 2,
                   "is_slot_pick": false
                 }
               ]
@@ -2930,9 +2930,107 @@
           "time_slots": [
             {
               "slot": "Prime Time",
-              "best_matchup_score": 100.0,
+              "best_matchup_score": 0.0,
               "pick_reason": "combined_points",
               "games": [
+                {
+                  "id": "401892431",
+                  "start_time": "2026-09-30T23:30Z",
+                  "start_time_tbd": false,
+                  "home_team": "Toronto Maple Leafs",
+                  "home_abbr": "TOR",
+                  "home_record": "0-1-0",
+                  "away_team": "New York Islanders",
+                  "away_abbr": "NYI",
+                  "away_record": "0-0-0",
+                  "matchup_score": 0.0,
+                  "channel": "ESPN+, MSGSN",
+                  "venue": "Scotiabank Arena",
+                  "neutral_site": false,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {
+                        "home": {
+                          "line": -1.5,
+                          "american": 195
+                        },
+                        "away": {
+                          "line": 1.5,
+                          "american": -238
+                        }
+                      },
+                      "moneyline": {
+                        "home": {
+                          "line": null,
+                          "american": -120
+                        },
+                        "away": {
+                          "line": null,
+                          "american": 100
+                        }
+                      },
+                      "total": {
+                        "over": {
+                          "line": 5.5,
+                          "american": -130
+                        },
+                        "under": {
+                          "line": 5.5,
+                          "american": 110
+                        }
+                      }
+                    },
+                    "fanduel": {
+                      "spread": {
+                        "home": {
+                          "line": -1.5,
+                          "american": 186
+                        },
+                        "away": {
+                          "line": 1.5,
+                          "american": -235
+                        }
+                      },
+                      "moneyline": {
+                        "home": {
+                          "line": null,
+                          "american": -120
+                        },
+                        "away": {
+                          "line": null,
+                          "american": 100
+                        }
+                      },
+                      "total": {
+                        "over": {
+                          "line": 6.5,
+                          "american": 114
+                        },
+                        "under": {
+                          "line": 6.5,
+                          "american": -140
+                        }
+                      }
+                    }
+                  },
+                  "matchup_rank": 1,
+                  "gemini_prediction": {
+                    "winner": "Toronto Maple Leafs",
+                    "confidence": 65,
+                    "ats_pick": "Toronto Maple Leafs",
+                    "ats_confidence": 58,
+                    "total_pick": "Under",
+                    "total_confidence": 60,
+                    "analysis": "The Toronto Maple Leafs enter this matchup with superior offensive efficiency and better special teams execution in the 2026 season. New York Islanders has struggled to generate consistent scoring opportunities on the road against elite defensive units. Toronto's goaltending has remained a stabilizing force, minimizing high-danger chances and keeping opponents at bay. The home-ice advantage heavily favors the Maple Leafs, who control the neutral zone and limit transition mistakes. Consequently, Toronto should secure a multi-goal victory to cover the spread.",
+                    "ou_analysis": "Both teams feature structured defensive schemes that limit rush chances and suppress high-danger scoring opportunities. Goaltending performances have been sharp, anchoring low-scoring games across recent weeks. Therefore, the combined final score is expected to fall short of the highest posted total, leaning toward the under.",
+                    "splits_and_direction": "Based on current public tendencies and odds movement, approximately 62 percent of spread bets and 58 percent of moneyline wagers are backing the Toronto Maple Leafs. The spread has remained steady at -1.5, while the moneyline has experienced slight upward movement toward Toronto, and the total has split between 5.5 and 6.5 across different sportsbooks.",
+                    "display_text": "Analysis: The Toronto Maple Leafs enter this matchup with superior offensive efficiency and better special teams execution in the 2026 season. New York Islanders has struggled to generate consistent scoring opportunities on the road against elite defensive units. Toronto's goaltending has remained a stabilizing force, minimizing high-danger chances and keeping opponents at bay. The home-ice advantage heavily favors the Maple Leafs, who control the neutral zone and limit transition mistakes. Consequently, Toronto should secure a multi-goal victory to cover the spread.\n\nOver Under: Both teams feature structured defensive schemes that limit rush chances and suppress high-danger scoring opportunities. Goaltending performances have been sharp, anchoring low-scoring games across recent weeks. Therefore, the combined final score is expected to fall short of the highest posted total, leaning toward the under.\n\nSplits: Based on current public tendencies and odds movement, approximately 62 percent of spread bets and 58 percent of moneyline wagers are backing the Toronto Maple Leafs. The spread has remained steady at -1.5, while the moneyline has experienced slight upward movement toward Toronto, and the total has split between 5.5 and 6.5 across different sportsbooks.",
+                    "generated_at": "2026-09-30T03:50:04.511159+00:00",
+                    "odds_hash": "afe9282f5a6f7ac7",
+                    "model": "gemini-3.5-flash-lite"
+                  },
+                  "is_slot_pick": true
+                },
                 {
                   "id": "401891821",
                   "start_time": "2026-09-30T23:30Z",
@@ -3013,7 +3111,7 @@
                       }
                     }
                   },
-                  "matchup_rank": 2,
+                  "matchup_rank": 3,
                   "gemini_prediction": {
                     "winner": "Philadelphia Flyers",
                     "confidence": 62,
@@ -3027,104 +3125,6 @@
                     "display_text": "Analysis: The Philadelphia Flyers hold home-ice advantage for this early-season matchup against the Pittsburgh Penguins. Philadelphia's current roster continuity has provided a slight edge in structural discipline through the first few games. Pittsburgh's offense has shown intermittent struggles to generate high-danger scoring chances at even strength. Consequently, the home side should control the tempo and capitalize on special teams opportunities. Expect the Flyers to secure a narrow victory by at least two goals to cover the puck line.\n\nOver Under: Both teams have exhibited tight defensive structures and reliable goaltending performances in the early 2026 campaign. The pace of play is expected to remain relatively slowed down as each squad prioritizes defensive responsibility. Therefore, the combined score will fall short of the market's high total of 6.5, pushing the result to the under.\n\nSplits: Given the limited data availability for this hybrid sport-schedule matchup, public betting splits are estimated at roughly 56 percent on the Philadelphia moneyline and 53 percent on the under based on the opening odds. Both the home moneyline and the total have experienced slight downward adjustments toward the under since opening at sportsbooks.",
                     "generated_at": "2026-09-29T23:31:35.681214+00:00",
                     "odds_hash": "ec1a740d3be7dfa0",
-                    "model": "gemini-3.5-flash-lite"
-                  },
-                  "is_slot_pick": true
-                },
-                {
-                  "id": "401892431",
-                  "start_time": "2026-09-30T23:30Z",
-                  "start_time_tbd": false,
-                  "home_team": "Toronto Maple Leafs",
-                  "home_abbr": "TOR",
-                  "home_record": "0-0-0",
-                  "away_team": "New York Islanders",
-                  "away_abbr": "NYI",
-                  "away_record": "0-0-0",
-                  "matchup_score": 100.0,
-                  "channel": "ESPN+, MSGSN",
-                  "venue": "Scotiabank Arena",
-                  "neutral_site": false,
-                  "odds": {
-                    "draftkings": {
-                      "spread": {
-                        "home": {
-                          "line": -1.5,
-                          "american": 195
-                        },
-                        "away": {
-                          "line": 1.5,
-                          "american": -238
-                        }
-                      },
-                      "moneyline": {
-                        "home": {
-                          "line": null,
-                          "american": -120
-                        },
-                        "away": {
-                          "line": null,
-                          "american": 100
-                        }
-                      },
-                      "total": {
-                        "over": {
-                          "line": 5.5,
-                          "american": -130
-                        },
-                        "under": {
-                          "line": 5.5,
-                          "american": 110
-                        }
-                      }
-                    },
-                    "fanduel": {
-                      "spread": {
-                        "home": {
-                          "line": -1.5,
-                          "american": 180
-                        },
-                        "away": {
-                          "line": 1.5,
-                          "american": -225
-                        }
-                      },
-                      "moneyline": {
-                        "home": {
-                          "line": null,
-                          "american": -126
-                        },
-                        "away": {
-                          "line": null,
-                          "american": 105
-                        }
-                      },
-                      "total": {
-                        "over": {
-                          "line": 6.5,
-                          "american": 106
-                        },
-                        "under": {
-                          "line": 6.5,
-                          "american": -130
-                        }
-                      }
-                    }
-                  },
-                  "matchup_rank": 3,
-                  "gemini_prediction": {
-                    "winner": "Toronto Maple Leafs",
-                    "confidence": 65,
-                    "ats_pick": "Toronto Maple Leafs",
-                    "ats_confidence": 60,
-                    "total_pick": "Under",
-                    "total_confidence": 58,
-                    "analysis": "The Toronto Maple Leafs enter this early-season matchup showing sharper offensive execution and superior special teams play compared to the New York Islanders. Toronto's top-line forwards have been capitalizing on high-danger scoring opportunities, generating sustainable pressure in the offensive zone. Meanwhile, New York has struggled to maintain consistent puck possession and has leaked high-danger chances in transition. Goaltending stability heavily favors the home side, as Toronto's netminder has posted stellar numbers in the crease. Consequently, the Maple Leafs should dictate the pace of play and secure a multi-goal victory on home ice.",
-                    "ou_analysis": "Both teams feature structured defensive schemes and disciplined penalty kills that limit opponents' rush chances significantly. Goaltender performance has been exceptionally strong on both sides, reducing the overall volume of converted high-danger opportunities. Therefore, the game flow suggests a tightly contested, low-scoring affair that comfortably stays under the higher FanDuel total of 6.5.",
-                    "splits_and_direction": "Approximately 58 percent of public bets are backing the Toronto Maple Leafs on the moneyline and spread, while the betting action on the total is split nearly evenly. The spread and moneyline have remained relatively stable since opening, whereas the total at FanDuel has ticked upward from 6.0 to 6.5 due to early over money.",
-                    "display_text": "Analysis: The Toronto Maple Leafs enter this early-season matchup showing sharper offensive execution and superior special teams play compared to the New York Islanders. Toronto's top-line forwards have been capitalizing on high-danger scoring opportunities, generating sustainable pressure in the offensive zone. Meanwhile, New York has struggled to maintain consistent puck possession and has leaked high-danger chances in transition. Goaltending stability heavily favors the home side, as Toronto's netminder has posted stellar numbers in the crease. Consequently, the Maple Leafs should dictate the pace of play and secure a multi-goal victory on home ice.\n\nOver Under: Both teams feature structured defensive schemes and disciplined penalty kills that limit opponents' rush chances significantly. Goaltender performance has been exceptionally strong on both sides, reducing the overall volume of converted high-danger opportunities. Therefore, the game flow suggests a tightly contested, low-scoring affair that comfortably stays under the higher FanDuel total of 6.5.\n\nSplits: Approximately 58 percent of public bets are backing the Toronto Maple Leafs on the moneyline and spread, while the betting action on the total is split nearly evenly. The spread and moneyline have remained relatively stable since opening, whereas the total at FanDuel has ticked upward from 6.0 to 6.5 due to early over money.",
-                    "generated_at": "2026-09-29T23:31:46.595577+00:00",
-                    "odds_hash": "d49aee820dd53b6a",
                     "model": "gemini-3.5-flash-lite"
                   },
                   "is_slot_pick": false
@@ -3216,7 +3216,7 @@
                       }
                     }
                   },
-                  "matchup_rank": 1,
+                  "matchup_rank": 2,
                   "gemini_prediction": {
                     "winner": "Colorado Avalanche",
                     "confidence": 65,
