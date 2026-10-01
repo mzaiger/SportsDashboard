@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-01T03:59:56.070133+00:00",
+  "generated_at": "2026-10-01T10:49:54.191222+00:00",
   "season": 2026,
   "display_timezone": "America/Chicago",
   "weeks": [
@@ -2930,7 +2930,7 @@
           "time_slots": [
             {
               "slot": "Prime Time",
-              "best_matchup_score": 100.0,
+              "best_matchup_score": 50.0,
               "pick_reason": "combined_points",
               "games": [
                 {
@@ -2943,7 +2943,7 @@
                   "away_team": "Pittsburgh Penguins",
                   "away_abbr": "PIT",
                   "away_record": null,
-                  "matchup_score": 100.0,
+                  "matchup_score": 50.0,
                   "channel": "TNT, truTV",
                   "venue": "Xfinity Mobile Arena",
                   "neutral_site": false,
@@ -3028,7 +3028,7 @@
                     "odds_hash": "7ab2ec9fb2a55716",
                     "model": "gemini-3.5-flash-lite"
                   },
-                  "matchup_rank": 2,
+                  "matchup_rank": 1,
                   "is_slot_pick": true
                 },
                 {
@@ -3041,7 +3041,7 @@
                   "away_team": "New York Islanders",
                   "away_abbr": "NYI",
                   "away_record": null,
-                  "matchup_score": 100.0,
+                  "matchup_score": 50.0,
                   "channel": "ESPN+, MSGSN",
                   "venue": "Scotiabank Arena",
                   "neutral_site": false,
@@ -3126,7 +3126,7 @@
                     "odds_hash": "72c06a4a77b41551",
                     "model": "gemini-3.5-flash-lite"
                   },
-                  "matchup_rank": 3,
+                  "matchup_rank": 2,
                   "is_slot_pick": false
                 }
               ]
@@ -3142,10 +3142,10 @@
                   "start_time_tbd": false,
                   "home_team": "Colorado Avalanche",
                   "home_abbr": "COL",
-                  "home_record": "0-0-0",
+                  "home_record": null,
                   "away_team": "Los Angeles Kings",
                   "away_abbr": "LA",
-                  "away_record": "0-0-0",
+                  "away_record": null,
                   "matchup_score": 50.0,
                   "channel": "TNT, truTV",
                   "venue": "Ball Arena",
@@ -3231,7 +3231,7 @@
                     "odds_hash": "8dfca627c9dc90a9",
                     "model": "gemini-3.5-flash-lite"
                   },
-                  "matchup_rank": 1,
+                  "matchup_rank": 3,
                   "is_slot_pick": true
                 }
               ]
@@ -3274,11 +3274,11 @@
                       "spread": {
                         "home": {
                           "line": -1.5,
-                          "american": 225
+                          "american": 220
                         },
                         "away": {
                           "line": 1.5,
-                          "american": -278
+                          "american": -270
                         }
                       },
                       "moneyline": {
@@ -3404,21 +3404,21 @@
                       "spread": {
                         "home": {
                           "line": -1.5,
-                          "american": 146
+                          "american": 140
                         },
                         "away": {
                           "line": 1.5,
-                          "american": -176
+                          "american": -172
                         }
                       },
                       "moneyline": {
                         "home": {
                           "line": null,
-                          "american": -170
+                          "american": -172
                         },
                         "away": {
                           "line": null,
-                          "american": 140
+                          "american": 142
                         }
                       },
                       "total": {
@@ -3437,16 +3437,16 @@
                   "gemini_prediction": {
                     "winner": "New Jersey Devils",
                     "confidence": 65,
-                    "ats_pick": "New Jersey Devils",
-                    "ats_confidence": 58,
-                    "total_pick": "Over",
-                    "total_confidence": 60,
-                    "analysis": "The New Jersey Devils enter this matchup with stronger underlying metrics and more consistent offensive execution than the Philadelphia Flyers. Philadelphia has struggled to generate sustained pressure during even-strength play over the current campaign. New Jersey's goaltending and special teams performance provide a distinct edge in narrowing tight contests. Playing on home ice further solidifies the Devils' advantage in controlling the pace of the game. Consequently, New Jersey is expected to secure the victory and cover the 1.5-goal spread.",
-                    "ou_analysis": "Both teams feature aggressive forechecking structures and high-volume shooting tendencies that drive up the overall pace of play. Special teams units on both sides have shown vulnerabilities recently, which should lead to multiple power-play conversion opportunities. Considering these factors alongside current goaltending metrics, the combined score is well-positioned to eclipse the 5.5-goal threshold.",
-                    "splits_and_direction": "Based on public betting tendencies, roughly 62 percent of spread and moneyline wagers are backing the visiting Philadelphia Flyers as underdogs, while the total sees heavy action on the over. The home spread has held steady at -1.5 with slight juice adjustments, while the total has ticked upward from its opening number due to early public volume.",
-                    "display_text": "Analysis: The New Jersey Devils enter this matchup with stronger underlying metrics and more consistent offensive execution than the Philadelphia Flyers. Philadelphia has struggled to generate sustained pressure during even-strength play over the current campaign. New Jersey's goaltending and special teams performance provide a distinct edge in narrowing tight contests. Playing on home ice further solidifies the Devils' advantage in controlling the pace of the game. Consequently, New Jersey is expected to secure the victory and cover the 1.5-goal spread.\n\nOver Under: Both teams feature aggressive forechecking structures and high-volume shooting tendencies that drive up the overall pace of play. Special teams units on both sides have shown vulnerabilities recently, which should lead to multiple power-play conversion opportunities. Considering these factors alongside current goaltending metrics, the combined score is well-positioned to eclipse the 5.5-goal threshold.\n\nSplits: Based on public betting tendencies, roughly 62 percent of spread and moneyline wagers are backing the visiting Philadelphia Flyers as underdogs, while the total sees heavy action on the over. The home spread has held steady at -1.5 with slight juice adjustments, while the total has ticked upward from its opening number due to early public volume.",
-                    "generated_at": "2026-10-01T03:59:15.720213+00:00",
-                    "odds_hash": "e65e76b5ff8c6284",
+                    "ats_pick": "Philadelphia Flyers",
+                    "ats_confidence": 60,
+                    "total_pick": "Under",
+                    "total_confidence": 58,
+                    "analysis": "The New Jersey Devils enter this contest with solid structural play on home ice during the 2026 campaign. Philadelphia has shown resilience on the road this season, keeping games tightly contested despite inferior offensive metrics. New Jersey's goaltending has consistently stifled opponents, allowing them to edge out low-scoring victories. While the Devils are favored to win outright, the Flyers' defensive grit makes a multi-goal margin unlikely. Therefore, the home side secures the victory, but the away team covers the puck line.",
+                    "ou_analysis": "Both teams feature structured defensive systems and strong goaltending performances that limit high-danger scoring chances. The pace of play tends to slow down significantly when these two opponents clash due to neutral-zone trapping. Consequently, the combined score stays safely below the posted total of 5.5.",
+                    "splits_and_direction": "Public betting splits are heavily leaning toward the New Jersey Devils on both the moneyline and the puck line. The betting lines have experienced slight movement toward New Jersey and the under since opening.",
+                    "display_text": "Analysis: The New Jersey Devils enter this contest with solid structural play on home ice during the 2026 campaign. Philadelphia has shown resilience on the road this season, keeping games tightly contested despite inferior offensive metrics. New Jersey's goaltending has consistently stifled opponents, allowing them to edge out low-scoring victories. While the Devils are favored to win outright, the Flyers' defensive grit makes a multi-goal margin unlikely. Therefore, the home side secures the victory, but the away team covers the puck line.\n\nOver Under: Both teams feature structured defensive systems and strong goaltending performances that limit high-danger scoring chances. The pace of play tends to slow down significantly when these two opponents clash due to neutral-zone trapping. Consequently, the combined score stays safely below the posted total of 5.5.\n\nSplits: Public betting splits are heavily leaning toward the New Jersey Devils on both the moneyline and the puck line. The betting lines have experienced slight movement toward New Jersey and the under since opening.",
+                    "generated_at": "2026-10-01T10:49:03.594035+00:00",
+                    "odds_hash": "f2e50af4a9a1db66",
                     "model": "gemini-3.5-flash-lite"
                   },
                   "is_slot_pick": false
@@ -3568,11 +3568,11 @@
                       "spread": {
                         "home": {
                           "line": -1.5,
-                          "american": 124
+                          "american": 120
                         },
                         "away": {
                           "line": 1.5,
-                          "american": -148
+                          "american": -142
                         }
                       },
                       "moneyline": {
@@ -3588,11 +3588,11 @@
                       "total": {
                         "over": {
                           "line": 5.5,
-                          "american": -130
+                          "american": -135
                         },
                         "under": {
                           "line": 5.5,
-                          "american": 110
+                          "american": 114
                         }
                       }
                     },
@@ -3632,17 +3632,17 @@
                   "matchup_rank": 6,
                   "gemini_prediction": {
                     "winner": "Utah Mammoth",
-                    "confidence": 62,
+                    "confidence": 68,
                     "ats_pick": "Utah Mammoth",
-                    "ats_confidence": 58,
+                    "ats_confidence": 65,
                     "total_pick": "Over",
-                    "total_confidence": 55,
-                    "analysis": "The Utah Mammoth enter this matchup showing solid current-season form and hold the distinct home-field advantage. Chicago Blackhawks have struggled to find consistent offensive rhythm on the road throughout the 2026 campaign. Utah's defensive unit matches up favorably against Chicago's primary scoring threats. Backing the home team to secure a multi-run victory is supported by their superior recent metrics. Therefore, Utah wins outright and successfully covers the small spread.",
-                    "ou_analysis": "Both squads feature aggressive approaches that should drive an up-tempo game flow tonight. The current scoring environment favors a slightly elevated offensive output relative to the modest 5.5 baseline. Based on estimated early-season pitching matchups and offensive efficiencies, this matchup comfortably clears the posted line.",
-                    "splits_and_direction": "Based on public tendencies and the current odds, approximately 62 percent of spread bets and 65 percent of moneyline bets are currently backing the home Utah Mammoth. The spread has remained steady at -1.5 while the total has ticked slightly upward toward the over side.",
-                    "display_text": "Analysis: The Utah Mammoth enter this matchup showing solid current-season form and hold the distinct home-field advantage. Chicago Blackhawks have struggled to find consistent offensive rhythm on the road throughout the 2026 campaign. Utah's defensive unit matches up favorably against Chicago's primary scoring threats. Backing the home team to secure a multi-run victory is supported by their superior recent metrics. Therefore, Utah wins outright and successfully covers the small spread.\n\nOver Under: Both squads feature aggressive approaches that should drive an up-tempo game flow tonight. The current scoring environment favors a slightly elevated offensive output relative to the modest 5.5 baseline. Based on estimated early-season pitching matchups and offensive efficiencies, this matchup comfortably clears the posted line.\n\nSplits: Based on public tendencies and the current odds, approximately 62 percent of spread bets and 65 percent of moneyline bets are currently backing the home Utah Mammoth. The spread has remained steady at -1.5 while the total has ticked slightly upward toward the over side.",
-                    "generated_at": "2026-09-30T23:35:24.642756+00:00",
-                    "odds_hash": "bb79008335288507",
+                    "total_confidence": 60,
+                    "analysis": "The Utah Mammoth enter this matchup holding superior current-season metrics and a more reliable roster execution. Their recent form showcases consistent offensive production that should pressure the Chicago Blackhawks from the opening whistle. Chicago struggles to maintain defensive discipline on the road, which plays directly into Utah's aggressive style. Consequently, Utah's offense will generate enough separation to secure the victory inside regulation. Backing the home side to cover the 1.5 spread reflects their steady ability to close out games.",
+                    "ou_analysis": "Both teams feature high-paced offensive schemes that naturally lend themselves to an elevated scoring environment. Current pitching and defensive vulnerabilities on both sides point toward multiple multi-run innings throughout the contest. Therefore, these offensive dynamics strongly support the total sailing over the 5.5 mark.",
+                    "splits_and_direction": "Based on public tendencies, approximately 62 percent of bets on the spread and moneyline are backing the home favorite Utah Mammoth. Meanwhile, the spread and total have both remained relatively stable since opening with slight juice adjustments toward the over.",
+                    "display_text": "Analysis: The Utah Mammoth enter this matchup holding superior current-season metrics and a more reliable roster execution. Their recent form showcases consistent offensive production that should pressure the Chicago Blackhawks from the opening whistle. Chicago struggles to maintain defensive discipline on the road, which plays directly into Utah's aggressive style. Consequently, Utah's offense will generate enough separation to secure the victory inside regulation. Backing the home side to cover the 1.5 spread reflects their steady ability to close out games.\n\nOver Under: Both teams feature high-paced offensive schemes that naturally lend themselves to an elevated scoring environment. Current pitching and defensive vulnerabilities on both sides point toward multiple multi-run innings throughout the contest. Therefore, these offensive dynamics strongly support the total sailing over the 5.5 mark.\n\nSplits: Based on public tendencies, approximately 62 percent of bets on the spread and moneyline are backing the home favorite Utah Mammoth. Meanwhile, the spread and total have both remained relatively stable since opening with slight juice adjustments toward the over.",
+                    "generated_at": "2026-10-01T10:49:13.906998+00:00",
+                    "odds_hash": "9887d93e8e4f1596",
                     "model": "gemini-3.5-flash-lite"
                   },
                   "is_slot_pick": false
@@ -3977,11 +3977,11 @@
                       "moneyline": {
                         "home": {
                           "line": null,
-                          "american": 120
+                          "american": 124
                         },
                         "away": {
                           "line": null,
-                          "american": -142
+                          "american": -148
                         }
                       },
                       "total": {
@@ -4036,12 +4036,12 @@
                     "ats_confidence": 58,
                     "total_pick": "Under",
                     "total_confidence": 55,
-                    "analysis": "The Florida Panthers enter this early-season matchup with a slight edge in overall roster depth and offensive execution compared to the San Jose Sharks. Florida's high-volume shooting and solid defensive structure give them the upper hand in controlling the game's tempo. However, playing on the road in San Jose always presents a challenge against a gritty home squad eager to prove themselves. The Panthers should manage to secure a narrow victory, largely driven by special teams efficiency and timely goal-scoring. Despite the outright win for the visitors, San Jose's tenacity at home makes them a strong candidate to keep the final margin within a single goal.",
-                    "ou_analysis": "Both teams have shown structured defensive tendencies and disciplined goaltending in the early stages of the 2026 campaign, limiting high-danger scoring chances. The pace is expected to be methodical as each side prioritizes puck management over high-risk offensive rushes. Consequently, the low-scoring nature of their recent performances points toward the final combined score falling beneath the posted line of 6.5.",
-                    "splits_and_direction": "Estimated betting splits show roughly 62 percent of public wagers backing the Florida Panthers on the moneyline and spread due to their stronger profile. The spread has remained steady at +1.5 for the home team, while the moneyline has shifted slightly in favor of the away side, and the total has held firm at 6.5 with a slight juicing toward the under.",
-                    "display_text": "Analysis: The Florida Panthers enter this early-season matchup with a slight edge in overall roster depth and offensive execution compared to the San Jose Sharks. Florida's high-volume shooting and solid defensive structure give them the upper hand in controlling the game's tempo. However, playing on the road in San Jose always presents a challenge against a gritty home squad eager to prove themselves. The Panthers should manage to secure a narrow victory, largely driven by special teams efficiency and timely goal-scoring. Despite the outright win for the visitors, San Jose's tenacity at home makes them a strong candidate to keep the final margin within a single goal.\n\nOver Under: Both teams have shown structured defensive tendencies and disciplined goaltending in the early stages of the 2026 campaign, limiting high-danger scoring chances. The pace is expected to be methodical as each side prioritizes puck management over high-risk offensive rushes. Consequently, the low-scoring nature of their recent performances points toward the final combined score falling beneath the posted line of 6.5.\n\nSplits: Estimated betting splits show roughly 62 percent of public wagers backing the Florida Panthers on the moneyline and spread due to their stronger profile. The spread has remained steady at +1.5 for the home team, while the moneyline has shifted slightly in favor of the away side, and the total has held firm at 6.5 with a slight juicing toward the under.",
-                    "generated_at": "2026-10-01T03:59:55.953753+00:00",
-                    "odds_hash": "7d9771ea68233790",
+                    "analysis": "The Florida Panthers enter this matchup with superior puck possession metrics and stronger special teams efficiency early in the 2026 season. San Jose has struggled defensively, allowing high danger scoring chances at an alarming rate during their opening stretch of games. However, home ice advantage helps the Sharks keep the scoreline close enough to justify taking the puckline underdog. Florida's depth forwards should ultimately wear down San Jose's defensive core in the third period to secure a narrow victory. Expect the Panthers to shade a close contest rather than a blowout, making the home spread the prudent side for ATS bettors.",
+                    "ou_analysis": "Both teams have exhibited methodical neutral-zone structures that limit rush chances and suppress overall game pace. Goaltending metrics for both squads indicate strong early season save percentages that will curb high-scoring outbursts. Consequently, the low-scoring trends and defensive emphasis point toward the game staying under the posted line of 6.5 goals.",
+                    "splits_and_direction": "Based on public betting tendencies, approximately 62 percent of spread and moneyline wagers are backing the road favorite Florida Panthers, while the total is seeing roughly 55 percent of action on the under. The away moneyline has slightly shortened from -140 to -148, and the total has remained stable at 6.5 while seeing juice shift toward the under at -120.",
+                    "display_text": "Analysis: The Florida Panthers enter this matchup with superior puck possession metrics and stronger special teams efficiency early in the 2026 season. San Jose has struggled defensively, allowing high danger scoring chances at an alarming rate during their opening stretch of games. However, home ice advantage helps the Sharks keep the scoreline close enough to justify taking the puckline underdog. Florida's depth forwards should ultimately wear down San Jose's defensive core in the third period to secure a narrow victory. Expect the Panthers to shade a close contest rather than a blowout, making the home spread the prudent side for ATS bettors.\n\nOver Under: Both teams have exhibited methodical neutral-zone structures that limit rush chances and suppress overall game pace. Goaltending metrics for both squads indicate strong early season save percentages that will curb high-scoring outbursts. Consequently, the low-scoring trends and defensive emphasis point toward the game staying under the posted line of 6.5 goals.\n\nSplits: Based on public betting tendencies, approximately 62 percent of spread and moneyline wagers are backing the road favorite Florida Panthers, while the total is seeing roughly 55 percent of action on the under. The away moneyline has slightly shortened from -140 to -148, and the total has remained stable at 6.5 while seeing juice shift toward the under at -120.",
+                    "generated_at": "2026-10-01T10:49:24.046376+00:00",
+                    "odds_hash": "ddeece1bfb4eacaa",
                     "model": "gemini-3.5-flash-lite"
                   },
                   "is_slot_pick": false
@@ -4051,7 +4051,306 @@
           ]
         }
       ]
+    },
+    {
+      "week": 20261002,
+      "total_games": 5,
+      "days": [
+        {
+          "date": "2026-10-02",
+          "weekday": "Friday",
+          "game_count": 5,
+          "is_preseason": false,
+          "time_slots": [
+            {
+              "slot": "Prime Time",
+              "best_matchup_score": 57.1,
+              "pick_reason": "combined_points",
+              "games": [
+                {
+                  "id": "401891803",
+                  "start_time": "2026-10-02T22:30Z",
+                  "start_time_tbd": false,
+                  "home_team": "Detroit Red Wings",
+                  "home_abbr": "DET",
+                  "home_record": "0-0-0",
+                  "away_team": "New York Rangers",
+                  "away_abbr": "NYR",
+                  "away_record": "0-1-0",
+                  "matchup_score": 57.1,
+                  "channel": "TNT, truTV",
+                  "venue": "Little Caesars Arena",
+                  "neutral_site": false,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {
+                        "away": {
+                          "line": 1.5,
+                          "american": -218
+                        },
+                        "home": {
+                          "line": -1.5,
+                          "american": 180
+                        }
+                      },
+                      "moneyline": {
+                        "home": {
+                          "line": null,
+                          "american": -142
+                        },
+                        "away": {
+                          "line": null,
+                          "american": 120
+                        }
+                      },
+                      "total": {
+                        "over": {
+                          "line": 6.5,
+                          "american": 114
+                        },
+                        "under": {
+                          "line": 6.5,
+                          "american": -135
+                        }
+                      }
+                    },
+                    "fanduel": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    }
+                  },
+                  "matchup_rank": 2,
+                  "gemini_prediction": {
+                    "winner": "Detroit Red Wings",
+                    "confidence": 60,
+                    "ats_pick": "Detroit Red Wings",
+                    "ats_confidence": 58,
+                    "total_pick": "Under",
+                    "total_confidence": 55,
+                    "analysis": "The Detroit Red Wings host the New York Rangers in an intriguing cross-conference matchup shaped by early 2026 campaign trends. Detroit enters this game with a slightly more cohesive defensive structure that should limit New York's primary scoring threats. Home-ice advantage provides a tangible boost for the Red Wings as they execute their forecheck efficiently. New York will keep it close thanks to strong special teams play, but Detroit's ability to capitalize on late-game opportunities gives them the edge. Ultimately, the Red Wings secure a narrow victory that successfully covers the slim 1.5-goal spread.",
+                    "ou_analysis": "Both teams feature structured defensive schemes and reliable goaltending that tend to suppress high-scoring outbursts. The pace of play in recent outings suggests a tightly contested affair with limited high-danger chances at even strength. Considering the juice on the under at -135, the expected game script points toward a lower-scoring battle.",
+                    "splits_and_direction": "Based on public betting tendencies, approximately 58% of moneyline bets and 55% of spread action are currently backing the Detroit Red Wings. The home spread and moneyline have both held relatively steady since opening, while the total has seen slight downward movement toward the under.",
+                    "display_text": "Analysis: The Detroit Red Wings host the New York Rangers in an intriguing cross-conference matchup shaped by early 2026 campaign trends. Detroit enters this game with a slightly more cohesive defensive structure that should limit New York's primary scoring threats. Home-ice advantage provides a tangible boost for the Red Wings as they execute their forecheck efficiently. New York will keep it close thanks to strong special teams play, but Detroit's ability to capitalize on late-game opportunities gives them the edge. Ultimately, the Red Wings secure a narrow victory that successfully covers the slim 1.5-goal spread.\n\nOver Under: Both teams feature structured defensive schemes and reliable goaltending that tend to suppress high-scoring outbursts. The pace of play in recent outings suggests a tightly contested affair with limited high-danger chances at even strength. Considering the juice on the under at -135, the expected game script points toward a lower-scoring battle.\n\nSplits: Based on public betting tendencies, approximately 58% of moneyline bets and 55% of spread action are currently backing the Detroit Red Wings. The home spread and moneyline have both held relatively steady since opening, while the total has seen slight downward movement toward the under.",
+                    "generated_at": "2026-10-01T10:49:33.991091+00:00",
+                    "odds_hash": "803cea9090afab76",
+                    "model": "gemini-3.5-flash-lite"
+                  },
+                  "is_slot_pick": true
+                },
+                {
+                  "id": "401891831",
+                  "start_time": "2026-10-03T00:00Z",
+                  "start_time_tbd": false,
+                  "home_team": "Winnipeg Jets",
+                  "home_abbr": "WPG",
+                  "home_record": "0-0-0",
+                  "away_team": "Boston Bruins",
+                  "away_abbr": "BOS",
+                  "away_record": "1-0-0",
+                  "matchup_score": 57.1,
+                  "channel": "ESPN+, NESN",
+                  "venue": "Canada Life Centre",
+                  "neutral_site": false,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {
+                        "away": {
+                          "line": 1.5,
+                          "american": -270
+                        },
+                        "home": {
+                          "line": -1.5,
+                          "american": 220
+                        }
+                      },
+                      "moneyline": {
+                        "away": {
+                          "line": null,
+                          "american": -112
+                        },
+                        "home": {
+                          "line": null,
+                          "american": -108
+                        }
+                      },
+                      "total": {
+                        "over": {
+                          "line": 5.5,
+                          "american": -135
+                        },
+                        "under": {
+                          "line": 5.5,
+                          "american": 114
+                        }
+                      }
+                    },
+                    "fanduel": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    }
+                  },
+                  "matchup_rank": 3,
+                  "gemini_prediction": {
+                    "winner": "Winnipeg Jets",
+                    "confidence": 55,
+                    "ats_pick": "Winnipeg Jets",
+                    "ats_confidence": 53,
+                    "total_pick": "Over",
+                    "total_confidence": 60,
+                    "analysis": "This matchup features two evenly matched squads competing early in the 2026 season. The Winnipeg Jets hold slight structural advantages when playing on their home ice. Boston Bruins have shown vulnerability defensively during key stretches of recent matches. Winnipeg utilizes quick transitional play to create consistent high-danger scoring opportunities. Ultimately, the Jets secure a narrow victory to satisfy the home spread.",
+                    "ou_analysis": "Both teams maintain high-tempo offensive approaches that naturally elevate overall game pace. Defensive lapses and early-season special teams adjustments create an environment ripe for multiple goals. Consequently, the combined score comfortably surpasses the posted total of 5.5.",
+                    "splits_and_direction": "Based on public betting tendencies, roughly 58 percent of spread tickets are backing the home team, while moneyline action is split almost evenly near the pick'em odds. The total has seen heavy early movement toward the over, pushing the juice to -135 from its opening position.",
+                    "display_text": "Analysis: This matchup features two evenly matched squads competing early in the 2026 season. The Winnipeg Jets hold slight structural advantages when playing on their home ice. Boston Bruins have shown vulnerability defensively during key stretches of recent matches. Winnipeg utilizes quick transitional play to create consistent high-danger scoring opportunities. Ultimately, the Jets secure a narrow victory to satisfy the home spread.\n\nOver Under: Both teams maintain high-tempo offensive approaches that naturally elevate overall game pace. Defensive lapses and early-season special teams adjustments create an environment ripe for multiple goals. Consequently, the combined score comfortably surpasses the posted total of 5.5.\n\nSplits: Based on public betting tendencies, roughly 58 percent of spread tickets are backing the home team, while moneyline action is split almost evenly near the pick'em odds. The total has seen heavy early movement toward the over, pushing the juice to -135 from its opening position.",
+                    "generated_at": "2026-10-01T10:49:43.675182+00:00",
+                    "odds_hash": "22fb74d08d7815a3",
+                    "model": "gemini-3.5-flash-lite"
+                  },
+                  "is_slot_pick": false
+                },
+                {
+                  "id": "401892432",
+                  "start_time": "2026-10-02T23:00Z",
+                  "start_time_tbd": false,
+                  "home_team": "Carolina Hurricanes",
+                  "home_abbr": "CAR",
+                  "home_record": "0-0-1",
+                  "away_team": "Washington Capitals",
+                  "away_abbr": "WSH",
+                  "away_record": "0-0-0",
+                  "matchup_score": 71.4,
+                  "channel": "ESPN+, MNMT, CARNHL",
+                  "venue": "Lenovo Center",
+                  "neutral_site": false,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    },
+                    "fanduel": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    }
+                  },
+                  "matchup_rank": 4,
+                  "is_slot_pick": false
+                },
+                {
+                  "id": "401891782",
+                  "start_time": "2026-10-03T01:00Z",
+                  "start_time_tbd": false,
+                  "home_team": "Dallas Stars",
+                  "home_abbr": "DAL",
+                  "home_record": "0-0-0",
+                  "away_team": "St. Louis Blues",
+                  "away_abbr": "STL",
+                  "away_record": "0-0-0",
+                  "matchup_score": 100.0,
+                  "channel": "TNT, truTV",
+                  "venue": "American Airlines Center",
+                  "neutral_site": false,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {
+                        "away": {
+                          "line": 1.5,
+                          "american": -142
+                        },
+                        "home": {
+                          "line": -1.5,
+                          "american": 120
+                        }
+                      },
+                      "moneyline": {
+                        "home": {
+                          "line": null,
+                          "american": -205
+                        },
+                        "away": {
+                          "line": null,
+                          "american": 170
+                        }
+                      },
+                      "total": {
+                        "under": {
+                          "line": 5.5,
+                          "american": -105
+                        },
+                        "over": {
+                          "line": 5.5,
+                          "american": -115
+                        }
+                      }
+                    },
+                    "fanduel": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    }
+                  },
+                  "matchup_rank": 5,
+                  "gemini_prediction": {
+                    "winner": "Dallas Stars",
+                    "confidence": 68,
+                    "ats_pick": "Dallas Stars",
+                    "ats_confidence": 62,
+                    "total_pick": "Over",
+                    "total_confidence": 59,
+                    "analysis": "The Dallas Stars enter this matchup displaying superior offensive efficiency and consistent goaltending through the early 2026 campaign. St. Louis has struggled to generate consistent scoring depth on the road, putting immense pressure on their defensive pairings. Dallas holds a distinct territorial advantage, driving play effectively at five-on-five while capitalizing on opponent penalties. Furthermore, the Stars' home-ice performance has been remarkably stout, giving them the edge needed to dictate the tempo of the contest. Consequently, Dallas should secure a multi-goal victory and successfully cover the 1.5 puck line.",
+                    "ou_analysis": "Both teams possess high-powered forward groups capable of converting high-danger scoring chances at an elite rate. Special teams play should feature prominently, as both squads surrender adequate power-play opportunities that will likely translate to multiple extra-attacker goals. Given the rapid pace of play and aggressive forechecking systems employed by both coaching staffs, this game is poised to exceed the 5.5 goal threshold.",
+                    "splits_and_direction": "Based on early public tendencies, roughly 68 percent of spread and moneyline bets are backing the home favorite Dallas Stars, while 62 percent of total wagers are leaning toward the over. The home spread has held steady at -1.5 and the total remains at 5.5 since opening, though the moneyline has slightly ticked up toward Dallas reflecting sharp action.",
+                    "display_text": "Analysis: The Dallas Stars enter this matchup displaying superior offensive efficiency and consistent goaltending through the early 2026 campaign. St. Louis has struggled to generate consistent scoring depth on the road, putting immense pressure on their defensive pairings. Dallas holds a distinct territorial advantage, driving play effectively at five-on-five while capitalizing on opponent penalties. Furthermore, the Stars' home-ice performance has been remarkably stout, giving them the edge needed to dictate the tempo of the contest. Consequently, Dallas should secure a multi-goal victory and successfully cover the 1.5 puck line.\n\nOver Under: Both teams possess high-powered forward groups capable of converting high-danger scoring chances at an elite rate. Special teams play should feature prominently, as both squads surrender adequate power-play opportunities that will likely translate to multiple extra-attacker goals. Given the rapid pace of play and aggressive forechecking systems employed by both coaching staffs, this game is poised to exceed the 5.5 goal threshold.\n\nSplits: Based on early public tendencies, roughly 68 percent of spread and moneyline bets are backing the home favorite Dallas Stars, while 62 percent of total wagers are leaning toward the over. The home spread has held steady at -1.5 and the total remains at 5.5 since opening, though the moneyline has slightly ticked up toward Dallas reflecting sharp action.",
+                    "generated_at": "2026-10-01T10:49:54.073420+00:00",
+                    "odds_hash": "5bad49d0381994ac",
+                    "model": "gemini-3.5-flash-lite"
+                  },
+                  "is_slot_pick": false
+                }
+              ]
+            },
+            {
+              "slot": "Late Night",
+              "best_matchup_score": 0.0,
+              "pick_reason": "combined_points",
+              "games": [
+                {
+                  "id": "401892433",
+                  "start_time": "2026-10-03T02:00Z",
+                  "start_time_tbd": false,
+                  "home_team": "Vegas Golden Knights",
+                  "home_abbr": "VGK",
+                  "home_record": "1-0-0",
+                  "away_team": "Anaheim Ducks",
+                  "away_abbr": "ANA",
+                  "away_record": "0-0-0",
+                  "matchup_score": 0.0,
+                  "channel": "ESPN+, Scripps Sports, KCOP, Prime Video (Local)",
+                  "venue": "T-Mobile Arena",
+                  "neutral_site": false,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    },
+                    "fanduel": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    }
+                  },
+                  "matchup_rank": 1,
+                  "is_slot_pick": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
-  "current_week": 20260930
+  "current_week": 20261001
 }
