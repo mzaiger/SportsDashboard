@@ -4,8 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Sports Dashboard - Accuracy</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="assets/img/favicon-accuracy.svg">
+<link rel="preload" href="assets/fonts/instrument-sans-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/big-shoulders-display-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
 <style>
   :root{
     --bg: #0a0d10;
@@ -86,7 +87,7 @@
       radial-gradient(ellipse at top, var(--bg-top-glow) 0%, var(--bg) 55%),
       repeating-linear-gradient(90deg, var(--grid-line-color) 0 1px, transparent 1px 64px);
     color:var(--chalk);
-    font-family:'JetBrains Mono', monospace;
+    font-family:var(--font-body);
     min-height:100vh;
     padding-bottom:4rem;
   }
@@ -114,7 +115,7 @@
   }
   .nav-links{display:flex; gap:1.25rem; align-items:center; order:1;}
   .site-nav a{
-    font-family:'Oswald',sans-serif; font-weight:600; font-size:0.68rem;
+    font-family:var(--font-display); font-weight:600; font-size:0.68rem;
     text-transform:uppercase; letter-spacing:0.04em;
     color:var(--dim); text-decoration:none;
     padding:0.3rem 0; border-bottom:2px solid transparent;
@@ -127,7 +128,7 @@
     order:5; margin-left:auto;
   }
   .theme-toggle .theme-btn{
-    font-family:'Oswald',sans-serif; font-weight:600; font-size:0.68rem;
+    font-family:var(--font-display); font-weight:600; font-size:0.68rem;
     display:flex; align-items:center; justify-content:center;
     background:transparent; border:none; border-radius:6px;
     padding:0.1rem 0.22rem; cursor:pointer; transition:all 0.12s ease;
@@ -142,7 +143,7 @@
     flex:1 1 auto; order:2; margin-left:auto;
   }
   .filter-pill{
-    font-family:'Oswald',sans-serif; font-weight:600; font-size:0.68rem;
+    font-family:var(--font-display); font-weight:600; font-size:0.68rem;
     text-transform:uppercase; letter-spacing:0.04em;
     color:var(--toggle-text); background:var(--toggle-bg); border:1px solid var(--toggle-border); border-radius:6px;
     padding:0.1rem 0.22rem; cursor:pointer; transition:all 0.12s ease;
@@ -159,7 +160,7 @@
     display:flex; gap:0.2rem; background:var(--toggle-bg); border-radius:6px; padding:0.1rem;
   }
   .conf-type-btn{
-    font-family:'Oswald',sans-serif; font-weight:600; font-size:0.68rem;
+    font-family:var(--font-display); font-weight:600; font-size:0.68rem;
     text-transform:uppercase; letter-spacing:0.03em;
     color:var(--toggle-text); background:transparent; border:none; border-radius:5px;
     padding:0.1rem 0.22rem; cursor:pointer; transition:all 0.12s ease;
@@ -168,12 +169,12 @@
   .conf-type-btn.active{background:var(--gold); color:var(--on-solid);}
   .filter-conf{display:flex; align-items:center; gap:0.35rem;}
   .filter-conf label{
-    font-family:'Oswald',sans-serif; font-weight:600; font-size:0.68rem;
+    font-family:var(--font-display); font-weight:600; font-size:0.68rem;
     text-transform:uppercase; letter-spacing:0.03em; color:var(--toggle-text);
   }
   .filter-conf select{
     background:var(--toggle-bg); color:var(--chalk); border:none;
-    border-radius:5px; padding:0.18rem 0.4rem; font-family:'JetBrains Mono',monospace;
+    border-radius:5px; padding:0.18rem 0.4rem; font-family:var(--font-body);
     font-size:0.68rem; cursor:pointer;
   }
 
@@ -222,7 +223,7 @@
   }
   .hero-inner{max-width:1180px;margin:0 auto;position:relative;}
   .eyebrow{
-    font-family:'Oswald',sans-serif;
+    font-family:var(--font-display);
     text-transform:uppercase;
     letter-spacing:0.22em;
     font-size:0.72rem;
@@ -230,7 +231,7 @@
     font-weight:600;
   }
   h1{
-    font-family:'Oswald',sans-serif;
+    font-family:var(--font-display);
     font-weight:700;
     font-size:clamp(0.68rem, 1.7vw, 1.05rem);
     margin:0.35rem 0 0.5rem;
@@ -273,7 +274,7 @@
     position:relative;
   }
   .big-stat-col .label{
-    font-family:'Oswald',sans-serif; font-weight:600; font-size:0.68rem;
+    font-family:var(--font-display); font-weight:600; font-size:0.68rem;
     text-transform:uppercase; letter-spacing:0.06em; color:var(--dim);
   }
   .filter-note{
@@ -283,7 +284,7 @@
   }
   th .filter-note{ margin-top:0.15rem; font-size:0.62rem; }
   .big-stat-col .pct{
-    font-family:'Oswald',sans-serif; font-weight:700; font-size:2.6rem;
+    font-family:var(--font-display); font-weight:700; font-size:2.6rem;
     color:var(--purple); line-height:1.1; margin-top:0.35rem;
   }
   .big-stat-col .frac{
@@ -307,7 +308,7 @@
     margin:2rem 0 2.5rem;
   }
   .breakdown h2{
-    font-family:'Oswald',sans-serif; font-weight:700; font-size:1.1rem;
+    font-family:var(--font-display); font-weight:700; font-size:1.1rem;
     text-transform:uppercase; letter-spacing:0.04em; margin:0 0 0.75rem;
   }
   table.breakdown-table{
@@ -320,12 +321,12 @@
     font-size:0.85rem;
   }
   table.breakdown-table th{
-    font-family:'Oswald',sans-serif; font-weight:600; font-size:0.72rem;
+    font-family:var(--font-display); font-weight:600; font-size:0.72rem;
     text-transform:uppercase; letter-spacing:0.04em; color:var(--dim);
   }
   table.breakdown-table tr:last-child td{border-bottom:none;}
   table.breakdown-table td.sport-name{
-    font-family:'Oswald',sans-serif; font-weight:700; letter-spacing:0.03em;
+    font-family:var(--font-display); font-weight:700; letter-spacing:0.03em;
   }
   table.breakdown-table td.pct-cell{color:var(--purple); font-weight:600;}
   table.breakdown-table td.pct-cell .cell-frac{
@@ -349,12 +350,13 @@
     border-top:1px solid var(--line);
   }
 </style>
+<link rel="stylesheet" href="assets/theme.css">
 </head>
-<body>
+<body data-sport="accuracy">
 
 <div class="nav-bar">
 <nav class="site-nav">
-  <button type="button" class="hamburger-btn" id="hamburgerBtn" aria-label="Menu" aria-expanded="false">&#9776;</button>
+  <button type="button" class="hamburger-btn" id="hamburgerBtn" aria-label="Menu" aria-expanded="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
   <div class="nav-links" id="navLinks">
     <a href="index.html">NCAAF</a>
     <a href="ncaamb.html">NCAAMB</a>
@@ -404,15 +406,15 @@
     </div>
   </div>
   <div class="theme-toggle" role="group" aria-label="Color theme">
-    <button type="button" class="theme-btn" data-theme="dark" aria-label="Dark theme">☾</button>
-    <button type="button" class="theme-btn" data-theme="light" aria-label="Light theme">☀</button>
+    <button type="button" class="theme-btn" data-theme="dark" aria-label="Dark theme"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9z"/></svg></button>
+    <button type="button" class="theme-btn" data-theme="light" aria-label="Light theme"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></button>
   </div>
 </nav>
 </div>
 
-<div class="hero">
+<div class="hero hero--accuracy">
   <div class="hero-inner">
-    <div class="eyebrow">All-Time &middot; Every Prediction</div>
+    <div class="eyebrow">Every graded prediction, all time</div>
     <h1>Gemini Accuracy</h1>
     <div class="meta-row">
       <span>Every graded prediction Gemini has ever made across NCAAF, NCAAMB, NFL, MLB, NBA, and NHL &mdash; not just the games you picked.</span>
@@ -515,21 +517,9 @@
 </main>
 
 <footer>
-  "Closed" means the game is final. For Gemini's numbers, a push (spread margin lands exactly on the line)
-  doesn't count toward or against ATS accuracy. The Confidence filter checks Gemini's own confidence score for
-  the selected market (or either market, on "Both") &mdash; it only affects Gemini's numbers, never "My
-  Accuracy" (a bet you made is graded the same regardless of how confident Gemini was). "Best Matchups"
-  restricts both to each time slot's single top-ranked matchup, and applies to both Gemini's and your own
-  numbers. "Open" games are picks/predictions made on a game that hasn't finished yet. Every week ever
-  built is included here, not just the current board. "Winnings" treats every graded pick/prediction as a
-  flat $10 bet. For Gemini, that's hypothetical (a $10 bet on whatever Gemini predicted) and honors Best
-  Matchups, Confidence, and the ML/ATS/Both toggle exactly like Gemini's accuracy numbers do. For "My"
-  winnings, it's your own real picks priced at the odds locked in when you made them, and &mdash; like My
-  Accuracy &mdash; is affected by Best Matchups only, never by Confidence or the ML/ATS/Both toggle, since
-  what a bet pays doesn't depend on how confident Gemini was or which column it's displayed under.
-  <br><br>
-  &#9790; / &#9728; in the nav switches this site between dark and light color themes &mdash; your choice is
-  remembered on this device and used on every page from then on.
+  <p>Closed means the game is final. A push (the margin lands exactly on the line) counts for or against nobody's ATS record. Every week ever built is included, not just the current board.</p>
+  <p>Confidence only filters Gemini's numbers and never affects My Accuracy. Best Matchups limits both to each time slot's top-ranked game. Open means the game hasn't finished yet.</p>
+  <p>Winnings assume a flat $10 on every graded pick. For Gemini that is hypothetical and follows the same filters as its accuracy. For you it uses the odds locked in when you picked, and only Best Matchups applies. Your light or dark choice is saved on this device.</p>
 </footer>
 
 <script src="picks-store.js"></script>

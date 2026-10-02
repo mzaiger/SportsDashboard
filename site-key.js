@@ -8,73 +8,53 @@
   const STYLE = `
     #keyFabBtn{
       position:fixed; right:1rem; bottom:1rem; z-index:400;
-      font-family:'Oswald',sans-serif; font-weight:600; font-size:0.62rem;
-      text-transform:uppercase; letter-spacing:0.04em;
-      color:#e8ecef; background:#12161b; border:1px solid #2a323a;
-      border-radius:999px; padding:0.28rem 0.55rem; cursor:pointer;
-      box-shadow:0 4px 12px -6px rgba(0,0,0,0.6);
-      display:flex; align-items:center; gap:0.25rem;
+      font-family:var(--font-body,system-ui,sans-serif); font-weight:600; font-size:0.78rem;
+      color:var(--chalk,#eaeef8); background:var(--bg-panel,#141b2e); border:1px solid var(--line,#263150);
+      border-radius:999px; padding:0.4rem 0.8rem; cursor:pointer;
+      box-shadow:0 10px 24px -12px var(--nav-shadow,rgba(0,0,0,0.6));
+      display:flex; align-items:center; gap:0.4rem;
     }
-    #keyFabBtn:hover{border-color:#e0a63c; color:#e0a63c;}
-    #keyFabBtn .key-fab-icon{font-size:0.72rem;}
+    #keyFabBtn:hover{border-color:var(--turf-bright,var(--gold,#f4b942)); color:var(--turf-bright,var(--gold,#f4b942));}
+    #keyFabBtn svg{width:0.95rem; height:0.95rem; fill:none; stroke:currentColor; stroke-width:1.8; stroke-linecap:round; stroke-linejoin:round;}
     #keyModalOverlay{
       display:none; position:fixed; inset:0; z-index:500;
-      background:rgba(4,6,8,0.72);
+      background:rgba(6,9,20,0.7);
+      -webkit-backdrop-filter:blur(4px); backdrop-filter:blur(4px);
       align-items:center; justify-content:center; padding:1.25rem;
     }
     #keyModalOverlay.open{display:flex;}
     #keyModal{
       width:100%; max-width:34rem; max-height:85vh; overflow-y:auto;
-      background:#12161b; border:1px solid #2a323a; border-radius:12px;
-      padding:1.5rem 1.5rem 1.25rem; font-family:'JetBrains Mono',monospace;
-      color:#e8ecef;
+      background:var(--bg-panel,#141b2e); border:1px solid var(--line,#263150); border-radius:16px;
+      padding:1.5rem 1.5rem 1.25rem; font-family:var(--font-body,system-ui,sans-serif);
+      color:var(--chalk,#eaeef8);
     }
     #keyModal h2{
-      font-family:'Oswald',sans-serif; font-weight:700; font-size:1.15rem;
-      margin:0 0 0.9rem; text-transform:uppercase; letter-spacing:0.03em;
-      color:#e0a63c; display:flex; align-items:center; justify-content:space-between;
+      font-family:var(--font-display,'Arial Narrow',sans-serif); font-weight:800; font-size:1.4rem;
+      margin:0 0 0.9rem; letter-spacing:0.01em;
+      color:var(--chalk,#eaeef8); display:flex; align-items:center; justify-content:space-between;
       gap:1rem;
     }
     #keyModalClose{
-      background:transparent; border:1px solid #2a323a; color:#8a95a1;
-      border-radius:6px; font-size:0.85rem; padding:0.15rem 0.55rem; cursor:pointer;
-      font-family:'JetBrains Mono',monospace;
+      background:transparent; border:1px solid var(--line,#263150); color:var(--dim,#93a0bf);
+      border-radius:8px; font-size:0.82rem; padding:0.25rem 0.7rem; cursor:pointer;
+      font-family:var(--font-body,system-ui,sans-serif);
     }
-    #keyModalClose:hover{color:#e8ecef; border-color:#e8ecef;}
+    #keyModalClose:hover{color:var(--chalk,#eaeef8); border-color:var(--chalk,#eaeef8);}
     #keyModal dl{margin:0 0 1.1rem;}
     #keyModal dt{
-      font-family:'Oswald',sans-serif; font-weight:700; font-size:0.85rem;
-      color:#43c179; display:inline-block; min-width:3.4rem;
+      font-family:var(--font-body,system-ui,sans-serif); font-weight:700; font-size:0.85rem;
+      color:var(--turf-bright,var(--gold,#f4b942)); display:inline-block; min-width:3.4rem;
     }
-    #keyModal dd{margin:0 0 0.45rem; display:inline; color:#c3cad1; font-size:0.85rem;}
+    #keyModal dd{margin:0 0 0.45rem; display:inline; color:var(--dim,#93a0bf); font-size:0.85rem; line-height:1.5;}
     #keyModal .key-row{margin-bottom:0.2rem;}
     #keyModal .key-note{
-      font-size:0.78rem; color:#e8ecef; line-height:1.5;
-      border-top:1px dashed #2a323a; padding-top:0.9rem; margin-top:0.2rem;
+      font-size:0.8rem; color:var(--chalk,#eaeef8); line-height:1.55;
+      border-top:1px solid var(--line,#263150); padding-top:0.9rem; margin-top:0.2rem;
       margin-bottom:0.9rem;
     }
-
-    /* Light-theme overrides -- the page toggles body.light-theme, so the
-       key widget (otherwise fully self-contained/hardcoded above) mirrors
-       that here rather than staying dark all the time. */
-    body.light-theme #keyFabBtn{
-      color:#12161b; background:#f3f5f7; border-color:#aab1b8;
-    }
-    body.light-theme #keyFabBtn:hover{border-color:#1f9cd8; color:#1f9cd8;}
-    body.light-theme #keyModal{
-      background:#f3f5f7; border-color:#aab1b8; color:#12161b;
-    }
-    body.light-theme #keyModal h2{color:#1f9cd8;}
-    body.light-theme #keyModalClose{
-      background:transparent; border-color:#aab1b8; color:#5b6570;
-    }
-    body.light-theme #keyModalClose:hover{color:#12161b; border-color:#12161b;}
-    body.light-theme #keyModal dt{color:#1f8a0e;}
-    body.light-theme #keyModal dd{color:#33393f;}
-    body.light-theme #keyModal .key-note{
-      color:#12161b; border-top-color:#d7dde2;
-    }
   `;
+
 
   function injectStyle() {
     const s = document.createElement('style');
@@ -91,7 +71,7 @@
           <button type="button" id="keyModalClose" aria-label="Close">Close &times;</button>
         </h2>
         <dl>
-          <div class="key-row"><dt>☾ / ☀</dt><dd>Theme toggle -- the moon switches to dark mode, the sun switches to light mode.</dd></div>
+          <div class="key-row"><dt>Theme</dt><dd>The moon switches to dark mode and the sun switches to light mode.</dd></div>
           <div class="key-row"><dt>ML</dt><dd>Money Line -- bet on which team wins outright, no spread involved.</dd></div>
           <div class="key-row"><dt>ATS</dt><dd>Against The Spread -- bet on a team to cover the posted point spread.</dd></div>
           <div class="key-row"><dt>O/U</dt><dd>Over/Under (Total) -- bet on whether the two teams' combined final score goes over or under a posted number, regardless of who wins.</dd></div>
@@ -132,7 +112,7 @@
     const btn = document.createElement('button');
     btn.type = 'button';
     btn.id = 'keyFabBtn';
-    btn.innerHTML = '<span class="key-fab-icon">&#128273;</span> Key';
+    btn.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="8" cy="15" r="4"/><path d="M10.8 12.2L21 2M16 7l3 3M14 9l2 2"/></svg> Key';
     btn.addEventListener('click', openModal);
     document.body.appendChild(btn);
   }

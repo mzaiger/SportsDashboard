@@ -583,7 +583,7 @@ function renderPickToolbar(sport, g, gScore) {
     const oddsAttr = encodeURIComponent(JSON.stringify(oddsFor(o.market, o.side)));
     const lockedSuffix = active ? formatLockedLine(relevantPick) : '';
 
-    return `<button type="button" class="pick-btn${active ? ' active' : ''}" data-sport="${sport}" data-game="${g.id}" data-market="${o.market}" data-side="${o.side}" data-odds="${oddsAttr}" data-start="${g.start_time_tbd ? '' : (g.start_time || '')}"${locked ? ' disabled' : ''}>${active ? '\u2605 ' : ''}${o.label}${lockedSuffix}</button>`;
+    return `<button type="button" class="pick-btn${active ? ' active' : ''}" data-sport="${sport}" data-game="${g.id}" data-market="${o.market}" data-side="${o.side}" data-odds="${oddsAttr}" data-start="${g.start_time_tbd ? '' : (g.start_time || '')}"${locked ? ' disabled' : ''}>${active ? '<svg class="i-star" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.8l2.5 5.4 5.9.7-4.4 4 1.2 5.8L10 14.8 4.8 17.7 6 11.9 1.6 7.9l5.9-.7z"/></svg>' : ''}${o.label}${lockedSuffix}</button>`;
   }).join('');
 
   // Both payout lines stack when both a main pick AND a total pick are
@@ -1012,7 +1012,7 @@ function renderGeminiBlock(g, sport) {
   }
 
   return `<button type="button" class="gemini-toggle${isOpen ? ' open' : ''}" aria-expanded="${isOpen}" data-gemini-key="${key}">
-    <span class="gemini-toggle-icon">&#10024;</span>
+    <span class="gemini-toggle-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l1.9 6.1L20 10l-6.1 1.9L12 18l-1.9-6.1L4 10l6.1-1.9z"/><path d="M19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8z"/></svg></span>
     <span class="gemini-toggle-main">Gemini Prediction Summary${genAtStr ? ` (${genAtStr})` : ''}</span>
     <span class="gemini-toggle-trailing">
       <span class="gemini-picks-summary">
@@ -1020,7 +1020,7 @@ function renderGeminiBlock(g, sport) {
         ${p.ats_pick ? `<span class="gemini-toggle-ats"><span class="gemini-pick-spacer"></span><span class="gemini-pick-label">ATS (${atsConf}):</span><span class="gemini-pick-team">${p.ats_pick}</span></span>` : ''}
         ${p.total_pick ? `<span class="gemini-toggle-ou"><span class="gemini-pick-spacer"></span><span class="gemini-pick-label">O/U (${ouConf}):</span><span class="gemini-pick-team">${p.total_pick}</span></span>` : ''}
       </span>
-      <span class="gemini-caret">▾</span>
+      <span class="gemini-caret"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></span>
     </span>
   </button>
   <div class="gemini-panel"${isOpen ? '' : ' hidden'}>
@@ -1078,16 +1078,71 @@ function getEffectiveViewMode() {
   return window.matchMedia(VIEW_MODE_DESKTOP_BREAKPOINT).matches ? 'rows' : 'tiles';
 }
 
+let rowsForcedOff = false;
+
 function applyViewMode(mode) {
-  document.body.classList.toggle('row-view', mode === 'rows');
+  const shown = rowsForcedOff ? 'tiles' : mode;
+  document.body.classList.toggle('row-view', shown === 'rows');
+  document.body.classList.toggle('rows-unavailable', rowsForcedOff);
   document.querySelectorAll('.view-toggle .view-btn').forEach(btn => {
-    btn.classList.toggle('active', btn.dataset.mode === mode);
+    btn.classList.toggle('active', btn.dataset.mode === shown);
+    if (btn.dataset.mode === 'rows') {
+      btn.disabled = rowsForcedOff;
+      btn.title = rowsForcedOff ? 'Rows view needs a wider screen' : '';
+    }
   });
 }
 
 function setViewMode(mode) {
+  if (rowsForcedOff && mode === 'rows') return;
   localStorage.setItem(VIEW_MODE_KEY, mode);
   applyViewMode(mode);
+}
+
+/*
+ * Rows view puts a whole game (teams, odds, Gemini summary) on one line.
+ * When the current screen width can't fit that without anything wrapping or
+ * scrolling sideways, Rows is switched off: the page shows Tiles and the
+ * Rows button is disabled. The stored Tiles/Rows choice is left alone, so
+ * Rows comes back by itself once the window is wide enough again.
+ */
+function rowsViewFits() {
+  if (window.innerWidth <= 900) return false;
+  const body = document.body;
+  const had = body.classList.contains('row-view');
+  if (!had) body.classList.add('row-view');
+  let fits = true;
+  // "Same line" = every element's vertical span overlaps the first one's, so a
+  // taller logo or a two-line name next to a one-line name isn't mistaken for a
+  // wrap; a wrapped item sits entirely below the others.
+  const sameLine = els => {
+    const rs = els.filter(e => e && e.offsetParent !== null).map(e => e.getBoundingClientRect());
+    if (rs.length < 2) return true;
+    const first = rs[0];
+    return rs.every(r => r.top < first.bottom - 2 && r.bottom > first.top + 2);
+  };
+  const cards = document.querySelectorAll('.card');
+  for (const c of cards) {
+    if (c.offsetParent === null) continue;
+    if (c.scrollWidth > c.clientWidth + 1) { fits = false; break; }
+    if (!sameLine([...c.querySelectorAll('.matchup .team')])) { fits = false; break; }
+    const tg = c.querySelector('.gemini-toggle');
+    if (tg) {
+      const kids = [...tg.children, ...tg.querySelectorAll('.gemini-picks-summary > *, .gemini-toggle-trailing > *')];
+      const labels = kids.filter(k => k.offsetParent !== null && getComputedStyle(k).display !== 'contents');
+      if (!sameLine(labels)) { fits = false; break; }
+    }
+  }
+  if (!had) body.classList.remove('row-view');
+  return fits;
+}
+
+function refreshRowsFit() {
+  const forced = !rowsViewFits();
+  if (forced !== rowsForcedOff) {
+    rowsForcedOff = forced;
+    applyViewMode(getEffectiveViewMode());
+  }
 }
 
 // Call once per page, after the nav (with its .view-toggle buttons) is in
@@ -1102,6 +1157,15 @@ function initViewToggle() {
   window.matchMedia(VIEW_MODE_DESKTOP_BREAKPOINT).addEventListener('change', () => {
     if (!getStoredViewMode()) applyViewMode(getEffectiveViewMode());
   });
+  // Re-check whether Rows fits on resize, after the board (re)renders, and
+  // once web fonts and logos have loaded and changed text widths.
+  let t = null;
+  const schedule = () => { clearTimeout(t); t = setTimeout(refreshRowsFit, 120); };
+  window.addEventListener('resize', schedule);
+  window.addEventListener('load', schedule);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(schedule);
+  new MutationObserver(schedule).observe(document.body, { childList: true, subtree: true });
+  schedule();
 }
 
 /*
@@ -1893,5 +1957,5 @@ function teamScoreBadge(score, status) {
 // while a game is in progress, or '' once it's final (or hasn't started).
 function renderLiveStatusLine(scoreEntry) {
   if (!scoreEntry || scoreEntry.status !== 'in_progress') return '';
-  return `<div class="score-status-line"><span class="live-dot"></span>LIVE${scoreEntry.status_detail ? ' \u00b7 ' + scoreEntry.status_detail : ''}</div>`;
+  return `<div class="score-status-line"><span class="live-dot"></span>Live${scoreEntry.status_detail ? ' \u2013 ' + scoreEntry.status_detail : ''}</div>`;
 }
