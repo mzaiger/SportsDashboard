@@ -425,3 +425,10 @@ body[data-sport="export"] .export-card{border-radius:12px;}
 body[data-sport="export"] .export-card .card-title{font-size:1.15rem; font-weight:800;}
 body[data-sport="export"] .export-btn{font-family:var(--font-body); text-transform:none; letter-spacing:0; font-weight:700; font-size:0.84rem; border-radius:8px;}
 body[data-sport="export"] .export-btn.picks-btn{background:var(--turf-bright);}
+
+/* Best Matchup banner: star and text share one line in Rows view too */
+body.row-view .pick-banner{display:block; line-height:1.25; text-align:center; white-space:nowrap;}
+body.row-view .pick-banner .i-star{display:inline-block; vertical-align:-0.12em;}
+
+/* AP rank badge: keep its own height instead of stretching down to the record */
+.team .rank{align-self:center; height:fit-content; line-height:1.3; margin-right:0.1rem;}
