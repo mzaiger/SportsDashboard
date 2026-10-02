@@ -1,0 +1,427 @@
+/* ==========================================================================
+   Sports Dashboard -- shared look
+   Loaded AFTER each page's inline <style>, so it only re-skins things
+   (fonts, colors, radii, shadows, hero art). Grid/flex structure, paddings
+   and column widths stay exactly as each page defines them.
+   Fonts are self-hosted in assets/fonts (no Google Fonts request).
+   ========================================================================== */
+
+@font-face{
+  font-family:'Big Shoulders Display'; font-style:normal; font-weight:100 900; font-display:swap;
+  src:url(fonts/big-shoulders-display-latin-wght-normal.woff2) format('woff2');
+  unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+@font-face{
+  font-family:'Big Shoulders Display'; font-style:normal; font-weight:100 900; font-display:swap;
+  src:url(fonts/big-shoulders-display-latin-ext-wght-normal.woff2) format('woff2');
+  unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;
+}
+@font-face{
+  font-family:'Instrument Sans'; font-style:normal; font-weight:400 700; font-display:swap;
+  src:url(fonts/instrument-sans-latin-wght-normal.woff2) format('woff2');
+  unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+@font-face{
+  font-family:'Instrument Sans'; font-style:normal; font-weight:400 700; font-display:swap;
+  src:url(fonts/instrument-sans-latin-ext-wght-normal.woff2) format('woff2');
+  unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;
+}
+
+/* ---------- Tokens: dark (default) ---------- */
+:root{
+  --font-display:'Big Shoulders Display','Bahnschrift Condensed','Arial Narrow',sans-serif;
+  --font-body:'Instrument Sans',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+
+  --bg:#0d1322;
+  --bg-panel:#141b2e;
+  --bg-panel2:#1b2440;
+  --bg-panel3:#1c1836;
+  --line:#263150;
+  --chalk:#eaeef8;
+  --dim:#93a0bf;
+  --gold:#f4b942;            --gold-rgb:244,185,66;
+  --pick-yellow:#ffc93c;     --pick-yellow-rgb:255,201,60;
+  --dk-green:#4fd64a;
+  --fd-blue:#3aa0ff;
+  --loss-red:#ff6b6b;
+  --pill-bg:#0a0f1c;
+  --card-hover-border:#3a486c;
+  --empty-cell:#40507a;
+  --strong-text:#ffffff;
+  --bg-top-glow:#16203a;
+  --grid-line-color:transparent;
+  --nav-shadow:rgba(2,6,20,0.6);
+  --purple:#b59cff;          --purple-rgb:181,156,255;
+  --purple-deep:#8f6bff;     --purple-deep-rgb:143,107,255;
+  --purple-soft:#cdbdff;
+  --toggle-bg:#192138;
+  --toggle-border:#2b3758;
+  --toggle-text:#93a0bf;
+  --on-solid:#0a0f1c;
+
+  --turf:#5a8dff; --turf-bright:#8db1ff; --turf-rgb:90,141,255;
+  --card-shadow:inset 0 1px 0 rgba(255,255,255,0.04);
+  --win-green:#4be08a;
+  --live-red:#ff6a61;
+}
+
+/* ---------- Tokens: light ---------- */
+body.light-theme{
+  --bg:#f5f7fc;
+  --bg-panel:#ffffff;
+  --bg-panel2:#eef1f9;
+  --bg-panel3:#f4f0ff;
+  --line:#dce2f0;
+  --chalk:#131b2e;
+  --dim:#586380;
+  --gold:#1d85cc;            --gold-rgb:29,133,204;
+  --pick-yellow:#5eb3ea;     --pick-yellow-rgb:94,179,234;
+  --dk-green:#1c8a1f;
+  --fd-blue:#0e68c2;
+  --loss-red:#c93a3a;
+  --pill-bg:#eaeef7;
+  --card-hover-border:#b4bfd8;
+  --empty-cell:#c4cbdc;
+  --strong-text:#131b2e;
+  --bg-top-glow:#eaf0fb;
+  --nav-shadow:rgba(30,45,90,0.14);
+  --purple:#7547d6;          --purple-rgb:117,71,214;
+  --purple-deep:#6a3fd0;     --purple-deep-rgb:106,63,208;
+  --purple-soft:#6a3fd0;
+  --toggle-bg:#e4e9f4;
+  --toggle-border:#b7c0d6;
+  --toggle-text:#586380;
+  --on-solid:#ffffff;
+  --card-shadow:0 1px 2px rgba(30,45,90,0.07);
+  --win-green:#16883f;
+  --live-red:#d63b32;
+}
+
+/* ---------- Per-sport accents ---------- */
+body[data-sport="nfl"]    {--turf:#5a8dff; --turf-bright:#8db1ff; --turf-rgb:90,141,255;}
+body[data-sport="ncaaf"]  {--turf:#3dd68c; --turf-bright:#6be6aa; --turf-rgb:61,214,140;}
+body[data-sport="mlb"]    {--turf:#ff8a4c; --turf-bright:#ffa877; --turf-rgb:255,138,76;}
+body[data-sport="nba"]    {--turf:#ff5fa2; --turf-bright:#ff8fbd; --turf-rgb:255,95,162;}
+body[data-sport="nhl"]    {--turf:#35d0e6; --turf-bright:#7be3f2; --turf-rgb:53,208,230;}
+body[data-sport="ncaamb"] {--turf:#b9e34b; --turf-bright:#d3f26f; --turf-rgb:185,227,75;}
+body[data-sport="picks"]  {--turf:#f4b942; --turf-bright:#f7cb6b; --turf-rgb:244,185,66;}
+body[data-sport="accuracy"]{--turf:#a58bff; --turf-bright:#c0aeff; --turf-rgb:165,139,255;}
+body[data-sport="export"] {--turf:#6fd3c4; --turf-bright:#9ae6da; --turf-rgb:111,211,196;}
+
+body.light-theme[data-sport="nfl"]    {--turf:#2b5fe0; --turf-bright:#2753cf; --turf-rgb:43,95,224;}
+body.light-theme[data-sport="ncaaf"]  {--turf:#138a55; --turf-bright:#0f7a4a; --turf-rgb:19,138,85;}
+body.light-theme[data-sport="mlb"]    {--turf:#d4561a; --turf-bright:#bf4a12; --turf-rgb:212,86,26;}
+body.light-theme[data-sport="nba"]    {--turf:#d1317a; --turf-bright:#bb2a6c; --turf-rgb:209,49,122;}
+body.light-theme[data-sport="nhl"]    {--turf:#0f8ba0; --turf-bright:#0b7a8d; --turf-rgb:15,139,160;}
+body.light-theme[data-sport="ncaamb"] {--turf:#6e8f0a; --turf-bright:#5f7d08; --turf-rgb:110,143,10;}
+body.light-theme[data-sport="picks"]  {--turf:#b27a0c; --turf-bright:#9c6a08; --turf-rgb:178,122,12;}
+body.light-theme[data-sport="accuracy"]{--turf:#6a3fd0; --turf-bright:#5b32bd; --turf-rgb:106,63,208;}
+body.light-theme[data-sport="export"] {--turf:#16806f; --turf-bright:#106b5c; --turf-rgb:22,128,111;}
+
+/* Picks page colors each section by sport */
+.cfb-theme   {--turf:#3dd68c; --turf-bright:#6be6aa; --turf-rgb:61,214,140;}
+.nfl-theme   {--turf:#5a8dff; --turf-bright:#8db1ff; --turf-rgb:90,141,255;}
+.mlb-theme   {--turf:#ff8a4c; --turf-bright:#ffa877; --turf-rgb:255,138,76;}
+.nba-theme   {--turf:#ff5fa2; --turf-bright:#ff8fbd; --turf-rgb:255,95,162;}
+.ncaamb-theme{--turf:#b9e34b; --turf-bright:#d3f26f; --turf-rgb:185,227,75;}
+.nhl-theme   {--turf:#35d0e6; --turf-bright:#7be3f2; --turf-rgb:53,208,230;}
+body.light-theme .cfb-theme   {--turf:#138a55; --turf-bright:#0f7a4a; --turf-rgb:19,138,85;}
+body.light-theme .nfl-theme   {--turf:#2b5fe0; --turf-bright:#2753cf; --turf-rgb:43,95,224;}
+body.light-theme .mlb-theme   {--turf:#d4561a; --turf-bright:#bf4a12; --turf-rgb:212,86,26;}
+body.light-theme .nba-theme   {--turf:#d1317a; --turf-bright:#bb2a6c; --turf-rgb:209,49,122;}
+body.light-theme .ncaamb-theme{--turf:#6e8f0a; --turf-bright:#5f7d08; --turf-rgb:110,143,10;}
+body.light-theme .nhl-theme   {--turf:#0f8ba0; --turf-bright:#0b7a8d; --turf-rgb:15,139,160;}
+
+/* ---------- Page ---------- */
+body{
+  font-family:var(--font-body);
+  -webkit-font-smoothing:antialiased;
+  background:
+    radial-gradient(1000px 380px at 88% -60px, rgba(var(--turf-rgb,120,140,200),0.16), transparent 70%),
+    var(--bg);
+}
+body.light-theme{
+  background:
+    radial-gradient(1000px 380px at 88% -60px, rgba(var(--turf-rgb,120,140,200),0.10), transparent 70%),
+    var(--bg);
+}
+
+/* Odds, scores and counts: figures line up in columns */
+table.odds, .odds td, .pill-count, .score-badge, .team-score, .payout-summary,
+.gemini-conf, .gemini-panel-row, .week-count, .slot-count, .count, .date{
+  font-variant-numeric:tabular-nums;
+}
+
+/* ---------- Nav ---------- */
+.nav-bar{
+  background:color-mix(in srgb, var(--bg) 86%, transparent);
+  -webkit-backdrop-filter:blur(14px); backdrop-filter:blur(14px);
+}
+.site-nav a,
+.status-pill, .view-toggle .view-btn, .filter-pill, .conf-type-btn,
+.filter-conf label, .theme-toggle .theme-btn{
+  font-family:var(--font-body); font-weight:600;
+  text-transform:none; letter-spacing:0;
+}
+.site-nav a{font-size:0.78rem;}
+.status-pill, .view-toggle .view-btn, .filter-pill, .conf-type-btn, .filter-conf label{font-size:0.74rem;}
+.pill-count{font-family:var(--font-body); font-weight:500;}
+.filter-conf select{font-family:var(--font-body); font-size:0.74rem;}
+.hamburger-btn{border-radius:8px;}
+.status-pill, .filter-pill{border-radius:8px;}
+.view-toggle, .theme-toggle, .filter-conf-group{border-radius:10px;}
+.view-toggle .view-btn, .conf-type-btn{border-radius:7px;}
+.theme-toggle .theme-btn{border-radius:7px; color:var(--toggle-text);}
+.theme-toggle .theme-btn[data-theme="dark"], .theme-toggle .theme-btn[data-theme="light"]{color:var(--toggle-text);}
+.theme-toggle .theme-btn.active{background:var(--turf,var(--gold)); color:var(--on-solid);}
+.theme-toggle .theme-btn svg, .hamburger-btn svg{width:0.95rem; height:0.95rem; display:block; fill:none; stroke:currentColor; stroke-width:1.9; stroke-linecap:round; stroke-linejoin:round;}
+.hamburger-btn svg{width:1.1rem; height:1.1rem;}
+.status-pill.active, .filter-pill.active, .view-toggle .view-btn.active, .conf-type-btn.active{color:var(--on-solid);}
+
+/* ---------- Hero ---------- */
+.hero{border-bottom:1px solid var(--line); background:var(--bg);}
+.hero::before{
+  background:
+    linear-gradient(90deg, var(--bg) 0%, color-mix(in srgb, var(--bg) 78%, transparent) 36%, transparent 78%),
+    var(--hero-art, none) right center / cover no-repeat;
+}
+.hero--nfl{--hero-art:url(img/hero-nfl.svg);}
+.hero--ncaaf{--hero-art:url(img/hero-ncaaf.svg);}
+.hero--mlb{--hero-art:url(img/hero-mlb.svg);}
+.hero--nba{--hero-art:url(img/hero-nba.svg);}
+.hero--nhl{--hero-art:url(img/hero-nhl.svg);}
+.hero--ncaamb{--hero-art:url(img/hero-ncaamb.svg);}
+.hero--picks{--hero-art:url(img/hero-picks.svg);}
+.hero--accuracy{--hero-art:url(img/hero-accuracy.svg);}
+.hero--export{--hero-art:url(img/hero-export.svg);}
+.eyebrow{
+  font-family:var(--font-body); text-transform:none; letter-spacing:0;
+  font-size:0.8rem; font-weight:600; color:var(--turf-bright);
+}
+h1{font-family:var(--font-display); letter-spacing:0; font-weight:800;}
+@media (min-width:761px){ h1{font-size:clamp(1.2rem, 2.4vw, 1.75rem);} }
+.meta-row{font-size:0.82rem;}
+
+/* ---------- Section headings ---------- */
+.week-heading{border-bottom-style:solid;}
+.week-heading .week-name{letter-spacing:0.02em; font-weight:800;}
+.day-heading .weekday{letter-spacing:0.01em; font-weight:800;}
+.slot-heading .slot-name{
+  text-transform:none; letter-spacing:0.01em; font-weight:700; font-size:1.1rem;
+}
+.slot-heading .slot-icon{display:inline-flex; align-items:center; color:var(--turf-bright);}
+.slot-heading .slot-icon svg{width:1rem; height:1rem; fill:none; stroke:currentColor; stroke-width:1.8; stroke-linecap:round; stroke-linejoin:round;}
+.preseason-tag{font-family:var(--font-body);}
+
+/* ---------- Cards ---------- */
+.card{
+  border-radius:14px; background:var(--bg-panel); box-shadow:var(--card-shadow);
+}
+.card:hover{transform:none; border-color:var(--card-hover-border);}
+.card.close-game{box-shadow:var(--card-shadow), 0 0 0 1px rgba(var(--gold-rgb),0.12);}
+.card.slot-pick{box-shadow:0 0 0 1px rgba(var(--pick-yellow-rgb),0.22), 0 14px 30px -18px rgba(var(--pick-yellow-rgb),0.5);}
+.pick-banner{
+  font-family:var(--font-body); font-weight:700; font-size:0.72rem;
+  text-transform:none; letter-spacing:0.01em; border-radius:12px 12px 0 0;
+}
+.slot-regional-link .i-map{width:0.95em; height:0.95em; fill:none; stroke:currentColor; stroke-width:1.8; stroke-linecap:round; stroke-linejoin:round; vertical-align:-0.15em; margin-right:0.3em;}
+.pick-btn .i-star{margin-right:0.25em;}
+.i-star{width:0.95em; height:0.95em; fill:currentColor; vertical-align:-0.13em; margin-right:0.3em;}
+
+.score-badge{
+  font-family:var(--font-body); font-weight:600; font-size:0.72rem;
+  text-transform:none; letter-spacing:0;
+  color:var(--turf-bright); border-color:rgba(var(--turf-rgb),0.4);
+}
+.channel-pill{font-family:var(--font-body); font-weight:600; font-size:0.72rem; letter-spacing:0; border-radius:7px;}
+.matchup{font-family:var(--font-display); font-weight:700; letter-spacing:0.01em;}
+.team-name{font-size:1.05rem;}
+.team-record, .team-pitcher{font-family:var(--font-body); font-weight:500; letter-spacing:0;}
+.team-record{font-size:0.7rem;}
+.team-pitcher{font-size:0.74rem;}
+.at{font-family:var(--font-body);}
+.rank{font-family:var(--font-body); border-radius:5px;}
+.team-score{font-family:var(--font-display); font-weight:800;}
+.team-score.live{color:var(--live-red);}
+.team-score.final{color:var(--win-green);}
+.score-status-line{font-family:var(--font-body); color:var(--live-red); letter-spacing:0;}
+.live-dot{background:var(--live-red);}
+
+table.odds th{
+  font-family:var(--font-body); text-transform:none; letter-spacing:0;
+  font-size:0.68rem; font-weight:500;
+}
+.book{font-family:var(--font-body); font-weight:700; letter-spacing:0.02em;}
+.book.dk{color:var(--dk-green);} .book.fd{color:var(--fd-blue);}
+.odds td.hit{color:var(--win-green); background:rgba(75,224,138,0.16);}
+.odds td.miss{background:rgba(255,107,107,0.15);}
+body.light-theme .odds td.hit{background:rgba(22,136,63,0.12);}
+body.light-theme .odds td.miss{background:rgba(201,58,58,0.10);}
+.odds td.picked, .odds td.hit, .odds td.miss{border-radius:6px;}
+
+.pick-btn{font-family:var(--font-body); font-weight:600; border-radius:8px;}
+.payout-summary{font-family:var(--font-body);}
+
+.gemini-toggle{
+  font-family:var(--font-body); font-weight:600; font-size:0.74rem; border-radius:10px;
+}
+.gemini-toggle-icon{display:inline-flex; align-items:center; color:var(--purple);}
+.gemini-toggle-icon svg{width:0.95rem; height:0.95rem; fill:currentColor;}
+.gemini-caret{display:inline-flex; align-items:center;}
+.gemini-caret svg{width:0.8rem; height:0.8rem; fill:none; stroke:currentColor; stroke-width:2.2; stroke-linecap:round; stroke-linejoin:round;}
+.gemini-conf{font-family:var(--font-body);}
+.gemini-panel{border-radius:10px;}
+.gemini-pick-label, .gemini-pick-team{font-family:var(--font-body); font-size:0.78rem;}
+.gemini-analysis{font-family:var(--font-body);}
+
+/* ---------- Footer: short notes ---------- */
+footer{
+  font-family:var(--font-body); font-size:0.8rem; line-height:1.6; color:var(--dim);
+}
+footer p{margin:0 0 0.7rem; max-width:80ch;}
+footer p:last-child{margin-bottom:0;}
+footer a{color:var(--turf-bright);}
+
+/* ---------- Reduced motion ---------- */
+@media (prefers-reduced-motion: reduce){
+  .live-dot{animation:none;}
+  *{transition-duration:0.01ms !important;}
+}
+
+/* ---------- Team logos: as tall as the name + record block ---------- */
+.team{align-items:stretch;}
+.team-logo{
+  flex:none; align-self:stretch; height:auto; width:auto;
+  aspect-ratio:1 / 1; max-height:2.6rem; min-width:1.7rem;
+  object-fit:contain; display:block;
+}
+.team .team-name-wrap{justify-content:center;}
+.rank + .team-logo{margin-left:0;}
+@media (max-width:480px){
+  .team{gap:0.3rem;}
+  .team-name{font-size:clamp(0.74rem, 3.4vw, 0.98rem);}
+  .team-score{font-size:clamp(0.9rem, 4vw, 1.1rem);}
+}
+
+/* ---------- Rows button when the screen is too narrow for it ---------- */
+.view-toggle .view-btn:disabled{opacity:0.38; cursor:not-allowed; pointer-events:none;}
+
+/* ---------- Phone nav: always exactly two lines ----------
+   Line 1: menu, Open/Closed/All, Tiles/Rows, theme.
+   Line 2: Best Matchups + confidence filter.
+   Everything scales from one font size, ~9.6px at 300px wide, ~10.9px at
+   350px, and the current 12.2px from 400px up. */
+@media (max-width:760px){
+  .site-nav{
+    --nav-fs:clamp(9px, calc(9px + (100vw - 300px) * 0.031), 12.2px);
+    font-size:var(--nav-fs);
+    padding:0.7rem clamp(0.45rem, 2.4vw, 1rem); gap:0.35em; row-gap:0.5em;
+    flex-wrap:wrap; align-items:center;
+  }
+  .site-nav .hamburger-btn{padding:0.28em 0.5em; line-height:1;}
+  .site-nav .hamburger-btn svg{width:1.5em; height:1.5em;}
+  .site-nav .status-pills, .site-nav .view-toggle, .site-nav .theme-toggle{flex:0 0 auto; white-space:nowrap;}
+  .site-nav .status-pills{gap:0.15em;}
+  .site-nav .status-pill, .site-nav .view-toggle .view-btn, .site-nav .filter-pill,
+  .site-nav .conf-type-btn, .site-nav .filter-conf label{
+    font-size:1em; padding:0.2em 0.38em; white-space:nowrap;
+  }
+  .site-nav .status-pill{gap:0.3em;}
+  .site-nav .view-toggle{padding:0.15em; gap:0.15em; margin-left:0;}
+  .site-nav .theme-toggle{padding:0.15em; margin-left:0;}
+  .site-nav .theme-toggle .theme-btn{width:1.9em; height:1.9em; font-size:1em; display:flex; align-items:center; justify-content:center;}
+  .site-nav .theme-toggle .theme-btn svg{width:1.15em; height:1.15em;}
+  .site-nav .filter-bar-inner{
+    flex:1 1 100%; flex-wrap:nowrap; gap:0.35em; justify-content:flex-start; order:5; min-width:0;
+  }
+  .site-nav .filter-conf-group{flex:0 1 auto; min-width:0; gap:0.3em; padding:0.12em 0.25em; flex-wrap:nowrap;}
+  .site-nav .conf-type-toggle{gap:0.1em; padding:0.1em;}
+  .site-nav .filter-conf{display:flex; align-items:center; gap:0.3em; white-space:nowrap;}
+  .site-nav .filter-conf select{font-size:1em; padding:0.12em 0.15em;}
+  .site-nav .filter-conf label{padding:0;}
+}
+@media (max-width:340px){
+  .site-nav .status-pill .pill-count{display:none;}
+}
+
+/* ---------- Very narrow phones (down to 300px): odds table + page padding shrink so nothing scrolls sideways ---------- */
+@media (max-width:380px){
+  main{padding-left:0.6rem; padding-right:0.6rem;}
+  .card{padding-left:0.55rem; padding-right:0.55rem;}
+  table.odds{font-size:0.66rem;}
+  table.odds th{font-size:0.58rem; padding-left:0.1rem; padding-right:0.1rem;}
+  table.odds td{padding-left:0.1rem; padding-right:0.1rem;}
+  table.odds td, table.odds th{min-width:0;}
+  .pick-btn{font-size:0.66rem; padding-left:0.25rem; padding-right:0.25rem;}
+}
+@media (max-width:340px){
+  table.odds{font-size:0.58rem;}
+  table.odds th{font-size:0.5rem; letter-spacing:0;}
+  .num-am{font-size:0.56rem;}
+  .book{font-size:0.6rem;}
+  table.odds th:first-child, table.odds td:first-child{width:1.2rem;}
+  .card{padding-left:0.4rem; padding-right:0.4rem;}
+  main{padding-left:0.4rem; padding-right:0.4rem;}
+}
+@media (max-width:400px){
+  .grid{grid-template-columns:minmax(0,1fr);}
+}
+
+/* Desktop nav: slightly tighter gaps so the whole bar fits on one line in Tiles view too */
+@media (min-width:761px){
+  .site-nav{gap:0.4rem;}
+  .nav-links{gap:1rem;}
+  .filter-bar-inner{gap:0.4rem;}
+  .filter-conf-group{gap:0.35rem;}
+  .status-pills{gap:0.05rem;}
+}
+
+/* Tiles: Gemini summary rows -- label | pick, no collisions */
+body:not(.row-view) .gemini-picks-summary{
+  grid-template-columns:minmax(0,1fr) auto minmax(0,2fr);
+  column-gap:0.55rem;
+}
+@media (max-width:480px){
+  .team-name{font-size:clamp(0.66rem, 2.9vw, 0.95rem);}
+  .team-logo{max-height:2.3rem; min-width:1.5rem;}
+  .matchup{gap:0.3rem;}
+}
+
+/* Rows view: a team name never wraps (if it can't fit, the page falls back to Tiles) */
+body.row-view .team-name{white-space:nowrap;}
+.at{margin:0 0.35rem;}
+
+/* ---------- Picks: sport sub-labels read as small accent chips; cards keep the shared style ---------- */
+.sport-subheading{border-bottom:none; padding-bottom:0; margin-bottom:0.55rem; display:flex; align-items:center; gap:0.5rem;}
+.sport-subheading .sport-subname{
+  font-family:var(--font-body); font-weight:700; font-size:0.72rem; letter-spacing:0.02em; text-transform:none;
+  color:var(--turf-bright); background:rgba(var(--turf-rgb),0.14);
+  border:1px solid rgba(var(--turf-rgb),0.35); border-radius:999px; padding:0.12rem 0.6rem;
+}
+.sport-subheading .sport-subcount{font-family:var(--font-body); font-size:0.72rem;}
+.sport-subgroup .card{border-color:var(--line);}
+.sport-subgroup .card .score-badge{color:var(--turf-bright); border-color:rgba(var(--turf-rgb),0.4);}
+
+/* ---------- Accuracy + Export (own markup): same tokens, readable labels ---------- */
+body[data-sport="accuracy"] .big-stat-col .label,
+body[data-sport="accuracy"] table.breakdown-table th,
+body[data-sport="accuracy"] .breakdown h2{
+  font-family:var(--font-body); text-transform:none; letter-spacing:0; font-weight:600;
+}
+body[data-sport="accuracy"] .big-stat-col .label{font-size:0.78rem; color:var(--dim);}
+body[data-sport="accuracy"] table.breakdown-table th{font-size:0.76rem;}
+body[data-sport="accuracy"] .breakdown h2{font-family:var(--font-display); font-size:1.25rem; font-weight:800; letter-spacing:0.01em; color:var(--chalk);}
+body[data-sport="accuracy"] .big-stat-col .value, body[data-sport="accuracy"] .big-stat-col .big{font-variant-numeric:tabular-nums;}
+
+body[data-sport="export"] .format-picker span{font-family:var(--font-body); text-transform:none; letter-spacing:0; font-size:0.8rem; font-weight:600;}
+body[data-sport="export"] .format-btn{font-family:var(--font-body); text-transform:none; letter-spacing:0; font-weight:600; font-size:0.8rem; border-radius:7px;}
+body[data-sport="export"] .format-toggle{border-radius:10px;}
+body[data-sport="export"] .format-btn.active{background:var(--turf); color:var(--on-solid);}
+body[data-sport="export"] section.export-group{border-radius:16px;}
+body[data-sport="export"] section.export-group h2{font-family:var(--font-display); text-transform:none; letter-spacing:0.01em; font-size:1.3rem; font-weight:800; color:var(--chalk);}
+body[data-sport="export"] section.export-group p{font-size:0.86rem;}
+body[data-sport="export"] .export-cards{display:grid; grid-template-columns:repeat(auto-fit, minmax(150px, 1fr));}
+body[data-sport="export"] .export-card{border-radius:12px;}
+body[data-sport="export"] .export-card .card-title{font-size:1.15rem; font-weight:800;}
+body[data-sport="export"] .export-btn{font-family:var(--font-body); text-transform:none; letter-spacing:0; font-weight:700; font-size:0.84rem; border-radius:8px;}
+body[data-sport="export"] .export-btn.picks-btn{background:var(--turf-bright);}
