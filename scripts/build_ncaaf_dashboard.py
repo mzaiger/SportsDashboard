@@ -797,9 +797,11 @@ def build_week(year, week, season_type, sharp_key, channels, gemini_key=None, ra
             "home_team": home_team,
             "home_rank": home_rank,
             "home_record": home_record or "0-0",
+            "home_logo": home["team"].get("logo"),
             "away_team": away_team,
             "away_rank": away_rank,
             "away_record": away_record or "0-0",
+            "away_logo": away["team"].get("logo"),
             "matchup_score": None,  # filled in below, once every game's components are known
             "channel": outlet or "Not on Main TV",
             "venue": comp.get("venue", {}).get("fullName"),

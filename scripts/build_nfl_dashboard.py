@@ -757,9 +757,11 @@ def build_week(year, week, season_type, sharp_key, gemini_key=None, previous_odd
             "home_team": home_team,
             "home_abbr": home["team"].get("abbreviation"),
             "home_record": home_record,
+            "home_logo": home["team"].get("logo"),
             "away_team": away_team,
             "away_abbr": away["team"].get("abbreviation"),
             "away_record": away_record,
+            "away_logo": away["team"].get("logo"),
             "matchup_score": None,  # filled in below, once every team's win rank is known
             "channel": outlet,
             "venue": comp.get("venue", {}).get("fullName"),
