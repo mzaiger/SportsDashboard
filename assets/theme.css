@@ -460,9 +460,90 @@ body:not(.row-view) .gemini-picks-summary{
   body:not(.row-view) .team{gap:0.3rem;}
 }
 
-/* Tiles: score drops under the name when there isn't room beside it, so names keep their two rows */
-body:not(.row-view) .team-name-line{flex-wrap:wrap; column-gap:0.4rem; row-gap:0;}
-body:not(.row-view) .team-name{flex:0 1 auto; min-width:0;}
 
-/* Tiles: logo size is capped so a wrapped name can't make the logo (and the column) balloon */
-body:not(.row-view) .team-logo{max-height:2.7rem; max-width:2.7rem; min-width:1.4rem;}
+
+/* ---------- Tiles: more room for team names ---------- */
+/* Less side padding on the tile, and the matchup row pushes out a bit further still */
+body:not(.row-view) .card{padding-left:0.75rem; padding-right:0.75rem;}
+body:not(.row-view) .matchup{margin-left:-0.3rem; margin-right:-0.3rem;}
+@media (max-width:400px){
+  body:not(.row-view) .card{padding-left:0.55rem; padding-right:0.55rem;}
+  body:not(.row-view) .matchup{margin-left:-0.2rem; margin-right:-0.2rem;}
+}
+
+/* Tiles: logo + name on the first row; record (and MLB pitcher) drop to a row below that
+   starts under the logo and runs the full width to the end of the name */
+body:not(.row-view) .team{
+  display:inline-grid; grid-template-columns:auto minmax(0,1fr);
+  column-gap:0.35rem; row-gap:0.1rem; align-items:center; text-align:left;
+}
+body:not(.row-view) .team-name-wrap{display:contents;}
+body:not(.row-view) .team-logo{grid-column:1; grid-row:1; align-self:stretch; max-height:2.7rem;}
+body:not(.row-view) .team-name-line{grid-column:2; grid-row:1; align-self:center; min-width:0;}
+body:not(.row-view) .team-record,
+body:not(.row-view) .team-pitcher{grid-column:1 / -1; text-align:left; line-height:1.2;}
+
+
+
+
+/* ==========================================================================
+   Tiles: team block = 3 columns (logo | name | score) on row 1,
+   rank + record on row 2, pitcher on row 3. Rows view is untouched.
+   ========================================================================== */
+body:not(.row-view) .matchup{
+  display:grid; grid-template-columns:auto auto auto; justify-content:center;
+  align-items:start; column-gap:0.2rem;
+}
+body:not(.row-view) .matchup .at{align-self:center; margin:0; padding:0;}
+body:not(.row-view) .matchup .team{
+  --name-fs:0.98rem;
+  display:grid; grid-template-columns:auto minmax(min-content,1fr) auto;
+  column-gap:0; row-gap:0.12rem; align-items:center; text-align:left;
+  justify-self:stretch; min-width:0; max-width:100%; width:auto;
+}
+@media (max-width:340px){ body:not(.row-view) .matchup .team{--name-fs:0.86rem;} }
+body:not(.row-view) .team-name-wrap, body:not(.row-view) .team-name-line{display:contents;}
+
+/* Row 1 */
+body:not(.row-view) .matchup .team-logo{
+  grid-column:1; grid-row:1; align-self:center; justify-self:start;
+  width:calc(var(--name-fs) * 2.1); height:calc(var(--name-fs) * 2.1);   /* two name lines, always */
+  min-width:0; max-width:none; max-height:none; aspect-ratio:1 / 1;
+  margin-right:0.35rem; object-fit:contain;
+}
+body:not(.row-view) .matchup .team-name{
+  grid-column:2; grid-row:1; align-self:center; min-width:0;
+  font-size:var(--name-fs); line-height:1.05;
+}
+body:not(.row-view) .matchup .team-score{
+  grid-column:3; grid-row:1; align-self:center; margin-left:0.35rem;
+}
+/* Row 2: rank (under the logo), then record; no rank -> record starts under the logo */
+body:not(.row-view) .matchup .rank{
+  grid-column:1; grid-row:2; align-self:center; justify-self:start; margin:0 0.35rem 0 0;
+}
+body:not(.row-view) .matchup .team-record{
+  grid-column:2 / -1; grid-row:2; align-self:center; text-align:left;
+}
+body:not(.row-view) .matchup .team:not(:has(.rank)) .team-record{grid-column:1 / -1;}
+/* Row 3 */
+body:not(.row-view) .matchup .team-pitcher{
+  grid-column:1 / -1; grid-row:3; text-align:left; line-height:1.2;
+}
+
+/* Logos that vanish on dark backgrounds sit on a white circle */
+.team-logo.logo-white{
+  background:#fff; border-radius:50%; padding:0.14em; box-sizing:border-box;
+  box-shadow:0 0 0 1px rgba(255,255,255,0.35);
+}
+
+/* Odds: same weight before and after a game is graded, easy to read on a phone */
+table.odds td, table.odds td .num, table.odds td .num-am{font-weight:700;}
+table.odds td .num-am{font-size:0.74rem;}
+
+/* Gemini summary (Tiles): all three lines start at the same x, indented a bit */
+body:not(.row-view) .gemini-picks-summary{
+  grid-template-columns:1.6rem max-content minmax(0,1fr);
+  column-gap:0.5rem;
+}
+body:not(.row-view) .gemini-pick-label{text-align:left;}
