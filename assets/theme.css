@@ -603,3 +603,7 @@ body:not(.row-view) .matchup .team:has(.team-pitcher) .team-record{grid-column:1
 /* Gemini prediction summary: 10% larger than the original sizes (0.7rem -> 0.77rem, 0.75rem -> 0.825rem) */
 .gemini-toggle{font-size:0.77rem;}
 .gemini-pick-label, .gemini-pick-team{font-size:0.825rem;}
+
+/* Gemini summary: title line 5% smaller than before; the ML / ATS / O-U picks keep their size */
+.gemini-toggle-main{font-size:0.7315rem;}
+.gemini-toggle-trailing{font-size:0.77rem;}
