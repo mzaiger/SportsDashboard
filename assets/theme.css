@@ -599,3 +599,7 @@ body:not(.row-view) .matchup .team:has(.team-pitcher) .team-record{grid-column:1
   body:not(.row-view) .pick-btn{font-size:0.75rem;}
   body:not(.row-view) .subline{font-size:0.78rem;}
 }
+
+/* Gemini prediction summary: 10% larger than the original sizes (0.7rem -> 0.77rem, 0.75rem -> 0.825rem) */
+.gemini-toggle{font-size:0.77rem;}
+.gemini-pick-label, .gemini-pick-team{font-size:0.825rem;}
