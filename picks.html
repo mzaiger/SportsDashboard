@@ -1021,6 +1021,9 @@ function splitTeamName(name, location) {
   return [words.slice(0, -1).join(' '), words[words.length - 1]];
 }
 
+// Logos that get lost on the dark background are drawn on a white circle.
+const LOGO_ON_WHITE = new Set(['Penn State Nittany Lions','Iowa Hawkeyes','Ohio State Buckeyes','Texas A&M Aggies','Cincinnati Bearcats','Utah State Aggies','Wake Forest Demon Deacons','Kansas State Wildcats','Michigan State Spartans','Nevada Wolf Pack','Nevada Wolfpack','New York Giants','New York Jets','Los Angeles Rams','Carolina Panthers','San Diego Padres','New York Yankees','Colorado Rockies','Detroit Tigers','Kansas City Royals','Minnesota Twins','Oakland Athletics','Athletics','Washington Capitals','Tampa Bay Lightning','Toronto Maple Leafs','Dallas Stars','Utah Jazz','California Golden Bears','Virginia Cavaliers','Charlotte 49ers','Rice Owls','Baylor Bears','TCU Horned Frogs','West Virginia Mountaineers','New Mexico State Aggies','Toledo Rockets','San Diego State Aztecs']);
+
 function teamNameBlock(name, record, scoreBadge, pitcher, logo, location) {
   // Pitcher and record each get their own line (pitcher directly under
   // the team name, record under that) instead of being crammed onto one
@@ -1030,7 +1033,7 @@ function teamNameBlock(name, record, scoreBadge, pitcher, logo, location) {
   const recordHtml = record ? `<span class="team-record">${record}</span>` : '';
   const [nameTop, nameBottom] = splitTeamName(name, location);
   const nameHtml = nameBottom ? `<span class="tn-loc">${nameTop}</span> <span class="tn-mascot">${nameBottom}</span>` : nameTop;
-  const logoHtml = logo ? `<img class="team-logo" src="${logo}" alt="" loading="lazy" decoding="async" onerror="this.remove()">` : '';
+  const logoHtml = logo ? `<img class="team-logo${LOGO_ON_WHITE.has(name) ? ' logo-white' : ''}" src="${logo}" alt="" loading="lazy" decoding="async" onerror="this.remove()">` : '';
   return `${logoHtml}<span class="team-name-wrap"><span class="team-name-line"><span class="team-name">${nameHtml}</span>${scoreBadge || ''}</span>${pitcherHtml}${recordHtml}</span>`;
 }
 
