@@ -496,12 +496,12 @@ body:not(.row-view) .matchup{
 }
 body:not(.row-view) .matchup .at{align-self:center; margin:0; padding:0;}
 body:not(.row-view) .matchup .team{
-  --name-fs:0.98rem;
+  --name-fs:calc(0.98rem + 2pt - 0.05rem);
   display:grid; grid-template-columns:auto minmax(min-content,1fr) auto;
   column-gap:0; row-gap:0.12rem; align-items:center; text-align:left;
   justify-self:stretch; min-width:0; max-width:100%; width:auto;
 }
-@media (max-width:340px){ body:not(.row-view) .matchup .team{--name-fs:0.86rem;} }
+@media (max-width:340px){ body:not(.row-view) .matchup .team{--name-fs:calc(0.86rem + 2pt - 0.05rem);} }
 body:not(.row-view) .team-name-wrap, body:not(.row-view) .team-name-line{display:contents;}
 
 /* Row 1 */
@@ -547,3 +547,38 @@ body:not(.row-view) .gemini-picks-summary{
   column-gap:0.5rem;
 }
 body:not(.row-view) .gemini-pick-label{text-align:left;}
+
+
+/* ---------- Stadium on one row, its city / state directly beneath (no gap), next to the date + time ---------- */
+.subline .venue{display:inline-flex; flex-direction:column; align-items:center; line-height:1.15; text-align:center;}
+.subline .venue-name, .subline .venue-city{display:block; margin:0; padding:0;}
+body:not(.row-view) .subline{flex-wrap:wrap; align-items:center; column-gap:0.8rem; row-gap:0;}
+body:not(.row-view) .subline > span:first-child{white-space:nowrap;}
+/* Rows view keeps the one-line "Stadium (City, ST)" */
+body.row-view .subline .venue{flex-direction:row; gap:0.25em;}
+body.row-view .subline .venue-city::before{content:'(';}
+body.row-view .subline .venue-city::after{content:')';}
+
+/* Narrow screens: date/time and the two-row stadium shrink a little so they stay side by side */
+@media (max-width:430px){
+  body:not(.row-view) .subline{font-size:0.7rem; column-gap:0.55rem;}
+}
+@media (max-width:360px){
+  body:not(.row-view) .subline{font-size:0.62rem; column-gap:0.4rem;}
+}
+
+/* Very narrow phones: slightly smaller team text and tighter score gap so long names + a score still fit */
+@media (max-width:320px){
+  body:not(.row-view) .matchup .team{--name-fs:calc(0.86rem + 1pt - 0.05rem);}
+  body:not(.row-view) .matchup .team-score{margin-left:0.2rem;}
+  body:not(.row-view) .matchup .team-logo{margin-right:0.25rem;}
+}
+
+
+/* MLB tiles: probable pitcher on row 2, record on row 3 */
+body:not(.row-view) .matchup .team:has(.team-pitcher) .team-pitcher{grid-column:1 / -1; grid-row:2;}
+body:not(.row-view) .matchup .team:has(.team-pitcher) .team-record{grid-column:1 / -1; grid-row:3;}
+
+/* Date/time and stadium: tops line up (time sits level with the stadium name, city hangs below) */
+body:not(.row-view) .subline{align-items:flex-start;}
+.subline > span, .subline .venue{line-height:1.15;}
