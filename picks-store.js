@@ -1022,11 +1022,11 @@ function renderGeminiBlock(g, sport) {
   if (p.generated_at) {
     const genAt = new Date(p.generated_at);
     if (!isNaN(genAt)) {
-      genAtStr = genAt.toLocaleString('en-US', {
-        timeZone: DISPLAY_TZ,
-        month: 'short', day: 'numeric',
-        hour: 'numeric', minute: '2-digit', timeZoneName: 'short'
-      });
+      // Date and time are formatted separately and joined with a comma, so
+      // browsers that would otherwise insert "at" ("Oct 1 at 6:40 PM") don't.
+      const gDate = genAt.toLocaleDateString('en-US', { timeZone: DISPLAY_TZ, month: 'short', day: 'numeric' });
+      const gTime = genAt.toLocaleTimeString('en-US', { timeZone: DISPLAY_TZ, hour: 'numeric', minute: '2-digit', timeZoneName: 'short' });
+      genAtStr = `${gDate}, ${gTime}`;
     }
   }
 
