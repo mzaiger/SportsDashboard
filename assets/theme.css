@@ -263,7 +263,7 @@ body.light-theme .odds td.miss{background:rgba(201,58,58,0.10);}
 .payout-summary{font-family:var(--font-body);}
 
 .gemini-toggle{
-  font-family:var(--font-body); font-weight:600; font-size:0.74rem; border-radius:10px;
+  font-family:var(--font-body); font-weight:600; border-radius:10px;
 }
 .gemini-toggle-icon{display:inline-flex; align-items:center; color:var(--purple);}
 .gemini-toggle-icon svg{width:0.95rem; height:0.95rem; fill:currentColor;}
@@ -271,7 +271,7 @@ body.light-theme .odds td.miss{background:rgba(201,58,58,0.10);}
 .gemini-caret svg{width:0.8rem; height:0.8rem; fill:none; stroke:currentColor; stroke-width:2.2; stroke-linecap:round; stroke-linejoin:round;}
 .gemini-conf{font-family:var(--font-body);}
 .gemini-panel{border-radius:10px;}
-.gemini-pick-label, .gemini-pick-team{font-family:var(--font-body); font-size:0.78rem;}
+.gemini-pick-label, .gemini-pick-team{font-family:var(--font-body);}
 .gemini-analysis{font-family:var(--font-body);}
 
 /* ---------- Footer: short notes ---------- */
@@ -549,23 +549,18 @@ body:not(.row-view) .gemini-picks-summary{
 body:not(.row-view) .gemini-pick-label{text-align:left;}
 
 
-/* ---------- Stadium on one row, its city / state directly beneath (no gap), next to the date + time ---------- */
-.subline .venue{display:inline-flex; flex-direction:column; align-items:center; line-height:1.15; text-align:center;}
-.subline .venue-name, .subline .venue-city{display:block; margin:0; padding:0;}
-body:not(.row-view) .subline{flex-wrap:wrap; align-items:center; column-gap:0.8rem; row-gap:0;}
+/* ---------- Date + time on one line, "Stadium (City, ST)" on the line beneath it (half-line gap) ---------- */
+.subline > span, .subline .venue{line-height:1.15;}
+.subline .venue{display:inline-flex; flex-direction:row; flex-wrap:wrap; justify-content:center; gap:0 0.25em; text-align:center;}
+.subline .venue-name, .subline .venue-city{display:inline; margin:0; padding:0;}
+.subline .venue-city{white-space:nowrap;}
+.subline .venue-city::before{content:'(';}
+.subline .venue-city::after{content:')';}
+body:not(.row-view) .subline{
+  flex-direction:column; flex-wrap:nowrap; align-items:center; justify-content:flex-start;
+  row-gap:0.29em; column-gap:0;      /* ~ quarter of a line between the date and the venue */
+}
 body:not(.row-view) .subline > span:first-child{white-space:nowrap;}
-/* Rows view keeps the one-line "Stadium (City, ST)" */
-body.row-view .subline .venue{flex-direction:row; gap:0.25em;}
-body.row-view .subline .venue-city::before{content:'(';}
-body.row-view .subline .venue-city::after{content:')';}
-
-/* Narrow screens: date/time and the two-row stadium shrink a little so they stay side by side */
-@media (max-width:430px){
-  body:not(.row-view) .subline{font-size:0.7rem; column-gap:0.55rem;}
-}
-@media (max-width:360px){
-  body:not(.row-view) .subline{font-size:0.62rem; column-gap:0.4rem;}
-}
 
 /* Very narrow phones: slightly smaller team text and tighter score gap so long names + a score still fit */
 @media (max-width:320px){
@@ -579,6 +574,28 @@ body.row-view .subline .venue-city::after{content:')';}
 body:not(.row-view) .matchup .team:has(.team-pitcher) .team-pitcher{grid-column:1 / -1; grid-row:2;}
 body:not(.row-view) .matchup .team:has(.team-pitcher) .team-record{grid-column:1 / -1; grid-row:3;}
 
-/* Date/time and stadium: tops line up (time sits level with the stadium name, city hangs below) */
-body:not(.row-view) .subline{align-items:flex-start;}
-.subline > span, .subline .venue{line-height:1.15;}
+
+
+/* ==========================================================================
+   Phones only (<= 600px, Tiles): odds, pick buttons, date and venue are 25% larger.
+   Desktop and tablet sizes are unchanged.
+   ========================================================================== */
+@media (max-width:600px){
+  body:not(.row-view) table.odds{font-size:0.975rem;}
+  body:not(.row-view) table.odds td .num-am{font-size:0.925rem;}
+  body:not(.row-view) .book{font-size:0.9rem;}
+  body:not(.row-view) .pick-btn{font-size:0.85rem;}
+  body:not(.row-view) .subline{font-size:0.94rem;}
+}
+@media (max-width:380px){
+  body:not(.row-view) table.odds{font-size:0.825rem;}
+  body:not(.row-view) .pick-btn{font-size:0.825rem;}
+  body:not(.row-view) .subline{font-size:0.86rem;}
+}
+@media (max-width:340px){
+  body:not(.row-view) table.odds{font-size:0.725rem;}
+  body:not(.row-view) table.odds td .num-am{font-size:0.7rem;}
+  body:not(.row-view) .book{font-size:0.75rem;}
+  body:not(.row-view) .pick-btn{font-size:0.75rem;}
+  body:not(.row-view) .subline{font-size:0.78rem;}
+}
