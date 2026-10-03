@@ -965,7 +965,7 @@ function renderGame(g) {
     </div>
     <div class="subline">
       <span>${kickoffTime(g.start_time, g.start_time_tbd)}</span>
-      <span>${g.venue || ''}${g.venue && g.venue_location ? ' (' + g.venue_location + ')' : ''}</span>
+      <span class="venue"><span class="venue-name">${g.venue || ''}</span>${g.venue && g.venue_location ? '<span class="venue-city">' + g.venue_location + '</span>' : ''}</span>
       ${renderLiveStatusLine(gScore)}
     </div>
     ${oddsBlock}
