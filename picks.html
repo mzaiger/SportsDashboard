@@ -1002,22 +1002,45 @@ function rankBadge(rank) {
   return rank ? `<span class="rank">#${rank}</span> ` : '';
 }
 
-function teamNameBlock(name, record, scoreBadge, pitcher, logo) {
+const MULTI_WORD_MASCOTS = new Set(['Red Wings','Blue Jackets','Maple Leafs','Golden Knights','Trail Blazers','Blue Jays','Red Sox','White Sox','Crimson Tide','Fighting Irish','Golden Gophers','Scarlet Knights','Blue Devils','Tar Heels','Demon Deacons','Yellow Jackets','Horned Frogs','Red Raiders','Sun Devils','Nittany Lions','Golden Eagles','Green Wave','Blue Hens','Mean Green','Black Knights','Golden Flashes','Thundering Herd','Rainbow Warriors','Fighting Illini','Red Wolves','Blue Raiders','Golden Hurricane','Wolf Pack','Fighting Hawks','Mountain Hawks','Golden Bears','Red Storm','Blue Jays','Fighting Camels','Delta Devils','Ragin Cajuns','Runnin Rebels','Golden Panthers','Big Green','Crimson Hawks','Seminoles']);
+
+// "Green Bay Packers" -> ['Green Bay', 'Packers'] so tiles can show the
+// city / school on one row and the nickname on the next. Uses ESPN's
+// `location` field when the data has it; otherwise falls back to treating
+// the last word (or a known two-word nickname) as the nickname.
+function splitTeamName(name, location) {
+  if (!name) return ['', ''];
+  if (location && name.length > location.length + 1 && name.startsWith(location + ' ')) {
+    return [location, name.slice(location.length + 1)];
+  }
+  const words = name.split(' ');
+  if (words.length < 2) return [name, ''];
+  if (words.length > 2 && MULTI_WORD_MASCOTS.has(words.slice(-2).join(' '))) {
+    return [words.slice(0, -2).join(' '), words.slice(-2).join(' ')];
+  }
+  return [words.slice(0, -1).join(' '), words[words.length - 1]];
+}
+
+function teamNameBlock(name, record, scoreBadge, pitcher, logo, location) {
   // Pitcher and record each get their own line (pitcher directly under
   // the team name, record under that) instead of being crammed onto one
   // line together separated by a dot -- long pitcher names + a W-L/ERA
   // record was overflowing a single line.
   const pitcherHtml = pitcher ? `<span class="team-pitcher">${pitcher}</span>` : '';
   const recordHtml = record ? `<span class="team-record">${record}</span>` : '';
+  const [nameTop, nameBottom] = splitTeamName(name, location);
+  const nameHtml = nameBottom ? `<span class="tn-loc">${nameTop}</span> <span class="tn-mascot">${nameBottom}</span>` : nameTop;
   const logoHtml = logo ? `<img class="team-logo" src="${logo}" alt="" loading="lazy" decoding="async" onerror="this.remove()">` : '';
-  return `${logoHtml}<span class="team-name-wrap"><span class="team-name-line"><span class="team-name">${name}</span>${scoreBadge || ''}</span>${pitcherHtml}${recordHtml}</span>`;
+  return `${logoHtml}<span class="team-name-wrap"><span class="team-name-line"><span class="team-name">${nameHtml}</span>${scoreBadge || ''}</span>${pitcherHtml}${recordHtml}</span>`;
 }
 
 function kickoffTime(iso, tbd) {
   if (tbd) return 'Time TBD';
   try {
     const d = new Date(iso);
-    return d.toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit', timeZoneName: 'short' });
+    const day = d.toLocaleDateString('en-US', { timeZone: DISPLAY_TZ, weekday: 'short', month: 'short', day: 'numeric' });
+    const time = d.toLocaleTimeString('en-US', { timeZone: DISPLAY_TZ, hour: 'numeric', minute: '2-digit', timeZoneName: 'short' });
+    return `${day} &middot; ${time}`;
   } catch (e) { return ''; }
 }
 
@@ -1098,11 +1121,11 @@ function renderGame(sport, g) {
 
 
   const awayLabel = (sport === 'cfb' || sport === 'ncaamb')
-    ? `${rankBadge(g.away_rank)}${teamNameBlock(g.away_team, g.away_record, teamScoreBadge(gScore?.away_score, gScore?.status), undefined, g.away_logo)}`
-    : teamNameBlock(g.away_team, g.away_record, teamScoreBadge(gScore?.away_score, gScore?.status), sport === 'mlb' ? g.away_pitcher : undefined, g.away_logo);
+    ? `${rankBadge(g.away_rank)}${teamNameBlock(g.away_team, g.away_record, teamScoreBadge(gScore?.away_score, gScore?.status), undefined, g.away_logo, g.away_location)}`
+    : teamNameBlock(g.away_team, g.away_record, teamScoreBadge(gScore?.away_score, gScore?.status), sport === 'mlb' ? g.away_pitcher : undefined, g.away_logo, g.away_location);
   const homeLabel = (sport === 'cfb' || sport === 'ncaamb')
-    ? `${rankBadge(g.home_rank)}${teamNameBlock(g.home_team, g.home_record, teamScoreBadge(gScore?.home_score, gScore?.status), undefined, g.home_logo)}`
-    : teamNameBlock(g.home_team, g.home_record, teamScoreBadge(gScore?.home_score, gScore?.status), sport === 'mlb' ? g.home_pitcher : undefined, g.home_logo);
+    ? `${rankBadge(g.home_rank)}${teamNameBlock(g.home_team, g.home_record, teamScoreBadge(gScore?.home_score, gScore?.status), undefined, g.home_logo, g.home_location)}`
+    : teamNameBlock(g.home_team, g.home_record, teamScoreBadge(gScore?.home_score, gScore?.status), sport === 'mlb' ? g.home_pitcher : undefined, g.home_logo, g.home_location);
 
   const cardClasses = isSlotPick ? 'your-pick slot-banner' : '';
 
@@ -1120,7 +1143,7 @@ function renderGame(sport, g) {
     </div>
     <div class="subline">
       <span>${kickoffTime(g.start_time, g.start_time_tbd)}</span>
-      <span>${g.venue || ''}</span>
+      <span>${g.venue || ''}${g.venue && g.venue_location ? ' (' + g.venue_location + ')' : ''}</span>
       ${renderLiveStatusLine(gScore)}
     </div>
     ${oddsBlock}
@@ -1365,5 +1388,6 @@ initHamburgerMenu();
 init();
 </script>
 <script src="site-key.js"></script>
+<script src="assets/nav-fit.js"></script>
 </body>
 </html>

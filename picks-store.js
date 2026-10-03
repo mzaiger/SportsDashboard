@@ -14,6 +14,24 @@
  */
 
 /*
+ * Time zone used for every game time and "updated" stamp on the site: the
+ * visitor's own zone, read from the browser (no location permission, nothing
+ * is asked). If the browser doesn't report a usable zone -- or reports plain
+ * UTC, which is what privacy modes and headless browsers say -- fall back to
+ * Central time.
+ */
+const DISPLAY_TZ = (() => {
+  const FALLBACK = 'America/Chicago';
+  try {
+    const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;
+    if (!tz || /^(UTC|Etc\/UTC|Etc\/GMT|GMT|Etc\/Universal|Zulu)$/i.test(tz)) return FALLBACK;
+    new Intl.DateTimeFormat('en-US', { timeZone: tz });  // throws if the zone isn't valid
+    return tz;
+  } catch (e) { return FALLBACK; }
+})();
+
+
+/*
  * Week label formatting, shared by nfl.html and picks.html.
  *
  * ESPN numbers NFL preseason weeks 1-4 the same as it numbers regular
@@ -1005,6 +1023,7 @@ function renderGeminiBlock(g, sport) {
     const genAt = new Date(p.generated_at);
     if (!isNaN(genAt)) {
       genAtStr = genAt.toLocaleString('en-US', {
+        timeZone: DISPLAY_TZ,
         month: 'short', day: 'numeric',
         hour: 'numeric', minute: '2-digit', timeZoneName: 'short'
       });
