@@ -299,8 +299,6 @@ footer a{color:var(--turf-bright);}
 .rank + .team-logo{margin-left:0;}
 @media (max-width:480px){
   .team{gap:0.3rem;}
-  .team-name{font-size:clamp(0.74rem, 3.4vw, 0.98rem);}
-  .team-score{font-size:clamp(0.9rem, 4vw, 1.1rem);}
 }
 
 /* ---------- Rows button when the screen is too narrow for it ---------- */
@@ -376,14 +374,7 @@ footer a{color:var(--turf-bright);}
   .status-pills{gap:0.05rem;}
 }
 
-/* Tiles: Gemini summary rows -- label | pick, no collisions */
-body:not(.row-view) .gemini-picks-summary{
-  grid-template-columns:minmax(0,1fr) auto minmax(0,2fr);
-  column-gap:0.55rem;
-}
 @media (max-width:480px){
-  .team-name{font-size:clamp(0.66rem, 2.9vw, 0.95rem);}
-  .team-logo{max-height:2.3rem; min-width:1.5rem;}
   .matchup{gap:0.3rem;}
 }
 
@@ -432,3 +423,46 @@ body.row-view .pick-banner .i-star{display:inline-block; vertical-align:-0.12em;
 
 /* AP rank badge: keep its own height instead of stretching down to the record */
 .team .rank{align-self:center; height:fit-content; line-height:1.3; margin-right:0.1rem;}
+
+
+/* ---------- Tiles: city / school on row 1, nickname on row 2 ---------- */
+.team-name .tn-loc, .team-name .tn-mascot{display:block;}
+body.row-view .team-name .tn-loc, body.row-view .team-name .tn-mascot{display:inline;}
+body:not(.row-view) .team-name{line-height:1.05;}
+body:not(.row-view) .team-logo{max-height:3.3rem;}
+body:not(.row-view) .team-name-line{align-items:flex-start;}
+
+/* Tiles: both teams share the row (equal halves around the @) and may shrink */
+body:not(.row-view) .matchup{
+  display:grid; grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);
+  align-items:center; column-gap:0.35rem; justify-content:stretch;
+}
+body:not(.row-view) .matchup .team{min-width:0; justify-self:center; max-width:100%;}
+body:not(.row-view) .matchup .team-name-wrap{min-width:0;}
+@media (max-width:340px){
+  body:not(.row-view) .team-name{font-size:0.86rem;}
+  body:not(.row-view) .team-logo{max-height:2.7rem; min-width:1.3rem;}
+}
+
+/* Tiles: Gemini pick rows -- small indent, label right-aligned, pick beside it */
+body:not(.row-view) .gemini-picks-summary{
+  grid-template-columns:0.4rem max-content minmax(0,1fr);
+  column-gap:0.45rem;
+}
+
+/* Desktop header on one line (assets/nav-fit.js adds .nav-one-line and shrinks it to fit) */
+@media (min-width:931px){
+  .site-nav.nav-one-line, .site-nav.nav-one-line .filter-bar-inner{flex-wrap:nowrap;}
+  .site-nav.nav-one-line > *{flex-shrink:0; white-space:nowrap;}
+}
+@media (max-width:480px){
+  body:not(.row-view) .team-logo{max-height:2.7rem; min-width:1.4rem;}
+  body:not(.row-view) .team{gap:0.3rem;}
+}
+
+/* Tiles: score drops under the name when there isn't room beside it, so names keep their two rows */
+body:not(.row-view) .team-name-line{flex-wrap:wrap; column-gap:0.4rem; row-gap:0;}
+body:not(.row-view) .team-name{flex:0 1 auto; min-width:0;}
+
+/* Tiles: logo size is capped so a wrapped name can't make the logo (and the column) balloon */
+body:not(.row-view) .team-logo{max-height:2.7rem; max-width:2.7rem; min-width:1.4rem;}
