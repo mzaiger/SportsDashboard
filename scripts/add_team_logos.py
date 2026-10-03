@@ -1,4 +1,5 @@
-"""Fill in home_logo / away_logo on every game in data/*_dashboard.json.
+"""Fill in home_logo / away_logo (plus home_location / away_location, the city or
+school part of a team name) on every game in data/*_dashboard.json.
 
 New games already get their logo straight from ESPN's scoreboard payload (see
 the build_*_dashboard.py scripts). This pass covers older games that were
@@ -33,8 +34,8 @@ def fetch_logos(path, extra):
                 logos = team.get("logos") or []
                 href = logos[0].get("href") if logos else None
                 for key in (team.get("displayName"), team.get("name")):
-                    if key and href:
-                        out.setdefault(key, href)
+                    if key:
+                        out.setdefault(key, (href, team.get("location")))
     return out
 
 def walk_games(node):
@@ -59,20 +60,21 @@ def main():
             continue
         with open(file, encoding="utf-8") as fh:
             data = json.load(fh)
-        # also reuse any logo already stored on a game for the same team
+        # also reuse anything already stored on a game for the same team
         known = dict(logos)
         for g in walk_games(data):
             for side in ("home", "away"):
                 if g.get(f"{side}_logo"):
-                    known.setdefault(g[f"{side}_team"], g[f"{side}_logo"])
+                    known.setdefault(g[f"{side}_team"], (g[f"{side}_logo"], g.get(f"{side}_location")))
         filled = 0
         for g in walk_games(data):
             for side in ("home", "away"):
-                if not g.get(f"{side}_logo"):
-                    url = known.get(g.get(f"{side}_team"))
-                    if url:
-                        g[f"{side}_logo"] = url
-                        filled += 1
+                url, loc = known.get(g.get(f"{side}_team"), (None, None))
+                if url and not g.get(f"{side}_logo"):
+                    g[f"{side}_logo"] = url
+                    filled += 1
+                if loc and not g.get(f"{side}_location"):
+                    g[f"{side}_location"] = loc
         with open(file, "w", encoding="utf-8") as fh:
             json.dump(data, fh, indent=2, ensure_ascii=False)
         print(f"  {key}: filled {filled} missing logos")

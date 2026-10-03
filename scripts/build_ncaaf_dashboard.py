@@ -798,13 +798,22 @@ def build_week(year, week, season_type, sharp_key, channels, gemini_key=None, ra
             "home_rank": home_rank,
             "home_record": home_record or "0-0",
             "home_logo": home["team"].get("logo"),
+            "home_location": home["team"].get("location"),
             "away_team": away_team,
             "away_rank": away_rank,
             "away_record": away_record or "0-0",
             "away_logo": away["team"].get("logo"),
+            "away_location": away["team"].get("location"),
             "matchup_score": None,  # filled in below, once every game's components are known
             "channel": outlet or "Not on Main TV",
             "venue": comp.get("venue", {}).get("fullName"),
+            "venue_location": ", ".join(
+                x for x in (
+                    ((comp.get("venue") or {}).get("address") or {}).get("city"),
+                    ((comp.get("venue") or {}).get("address") or {}).get("state")
+                    or ((comp.get("venue") or {}).get("address") or {}).get("country"),
+                ) if x
+            ) or None,
             "neutral_site": comp.get("neutralSite", False),
             "odds": odds,
             "is_nebraska": is_nebraska,
