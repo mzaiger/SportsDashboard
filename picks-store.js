@@ -1964,10 +1964,12 @@ async function fetchScores(sport) {
 }
 
 // Returns the small score badge to place right next to a team's name in
-// the matchup title, or '' if this game has no score yet. Colored green
+// the matchup title (an invisible placeholder if this game has no score yet). Colored green
 // once final, red while live (no color once the game hasn't started).
 function teamScoreBadge(score, status) {
-  if (score === null || score === undefined) return '';
+  // No score yet -> keep an invisible badge of the same size so the layout
+  // doesn't shift when the score shows up.
+  if (score === null || score === undefined) return ' <span class="team-score score-empty" aria-hidden="true">00</span>';
   const cls = status === 'final' ? 'final' : status === 'in_progress' ? 'live' : '';
   return ` <span class="team-score ${cls}">${score}</span>`;
 }

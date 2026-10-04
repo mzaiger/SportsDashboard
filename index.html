@@ -857,7 +857,9 @@ function oddsCell(entry) {
 }
 
 function rankBadge(rank) {
-  return rank ? `<span class="rank">#${rank}</span> ` : '';
+  // No rank -> keep an invisible badge of the same size so the logo/name/record
+  // columns don't shift between ranked and unranked teams.
+  return rank ? `<span class="rank">#${rank}</span> ` : '<span class="rank rank-empty" aria-hidden="true">#00</span> ';
 }
 
 const MULTI_WORD_MASCOTS = new Set(['Red Wings','Blue Jackets','Maple Leafs','Golden Knights','Trail Blazers','Blue Jays','Red Sox','White Sox','Crimson Tide','Fighting Irish','Golden Gophers','Scarlet Knights','Blue Devils','Tar Heels','Demon Deacons','Yellow Jackets','Horned Frogs','Red Raiders','Sun Devils','Nittany Lions','Golden Eagles','Green Wave','Blue Hens','Mean Green','Black Knights','Golden Flashes','Thundering Herd','Rainbow Warriors','Fighting Illini','Red Wolves','Blue Raiders','Golden Hurricane','Wolf Pack','Fighting Hawks','Mountain Hawks','Golden Bears','Red Storm','Blue Jays','Fighting Camels','Delta Devils','Ragin Cajuns','Runnin Rebels','Golden Panthers','Big Green','Crimson Hawks','Seminoles']);
