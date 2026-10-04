@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-03T22:41:33.711786+00:00",
+  "generated_at": "2026-10-04T04:03:09.076340+00:00",
   "season": 2026,
   "display_timezone": "America/Chicago",
   "weeks": [
@@ -55109,7 +55109,6 @@
                       }
                     }
                   },
-                  "matchup_rank": 2,
                   "gemini_prediction": {
                     "winner": "Milwaukee Brewers",
                     "confidence": 68,
@@ -55125,6 +55124,7 @@
                     "odds_hash": "eb15ce2cb1b18c73",
                     "model": "gemini-3.5-flash-lite"
                   },
+                  "matchup_rank": 2,
                   "is_slot_pick": true
                 },
                 {
@@ -55214,7 +55214,6 @@
                       }
                     }
                   },
-                  "matchup_rank": 3,
                   "gemini_prediction": {
                     "winner": "Tampa Bay Rays",
                     "confidence": 62,
@@ -55230,6 +55229,7 @@
                     "odds_hash": "512f7963e35a23e2",
                     "model": "gemini-3.5-flash-lite"
                   },
+                  "matchup_rank": 3,
                   "is_slot_pick": false
                 }
               ]
@@ -55319,17 +55319,86 @@
                   "neutral_site": false,
                   "odds": {
                     "draftkings": {
-                      "spread": {},
-                      "moneyline": {},
-                      "total": {}
+                      "spread": {
+                        "home": {
+                          "line": -1.5,
+                          "american": 150
+                        },
+                        "away": {
+                          "line": 1.5,
+                          "american": -182
+                        }
+                      },
+                      "moneyline": {
+                        "home": {
+                          "line": null,
+                          "american": -147
+                        },
+                        "away": {
+                          "line": null,
+                          "american": 122
+                        }
+                      },
+                      "total": {
+                        "over": {
+                          "line": 7,
+                          "american": -116
+                        },
+                        "under": {
+                          "line": 7,
+                          "american": -104
+                        }
+                      }
                     },
                     "fanduel": {
-                      "spread": {},
-                      "moneyline": {},
-                      "total": {}
+                      "spread": {
+                        "home": {
+                          "line": -1.5,
+                          "american": 150
+                        },
+                        "away": {
+                          "line": 1.5,
+                          "american": -184
+                        }
+                      },
+                      "moneyline": {
+                        "home": {
+                          "line": null,
+                          "american": -148
+                        },
+                        "away": {
+                          "line": null,
+                          "american": 126
+                        }
+                      },
+                      "total": {
+                        "over": {
+                          "line": 7.5,
+                          "american": 114
+                        },
+                        "under": {
+                          "line": 7.5,
+                          "american": -140
+                        }
+                      }
                     }
                   },
                   "matchup_rank": 2,
+                  "gemini_prediction": {
+                    "winner": "Los Angeles Dodgers",
+                    "confidence": 62,
+                    "ats_pick": "Atlanta Braves",
+                    "ats_confidence": 55,
+                    "total_pick": "Under",
+                    "total_confidence": 58,
+                    "analysis": "The Los Angeles Dodgers hold a distinct home-field advantage and send Blake Snell to the mound for this crucial matchup. Snell's 2026 campaign has been characterized by elite strikeout metrics and suppressing hard contact, which stabilizes the pitching front. While the Atlanta Braves' offense is formidable, winning outright on the road against top-tier pitching remains a significant hurdle. However, the Braves have enough depth in their lineup to keep the final score within a single run. Therefore, the Dodgers secure the victory, but the Braves successfully cover the spread.",
+                    "ou_analysis": "Blake Snell's presence on the mound coupled with October pitching intensity creates a suppressed scoring environment at Dodger Stadium. Both bullshpens have demonstrated high-leverage execution over the course of the 2026 season, limiting late-inning offensive surges. Consequently, the game total stays under the posted line of 7.5 runs.",
+                    "splits_and_direction": "Public betting splits are heavily favoring the Dodgers moneyline at roughly 65 percent, while the spread action is more balanced with 55 percent backing the Braves to cover. The moneyline has ticked up slightly toward Los Angeles, and the total has seen a slight downward tick from the opening numbers based on sharp under money.",
+                    "display_text": "Analysis: The Los Angeles Dodgers hold a distinct home-field advantage and send Blake Snell to the mound for this crucial matchup. Snell's 2026 campaign has been characterized by elite strikeout metrics and suppressing hard contact, which stabilizes the pitching front. While the Atlanta Braves' offense is formidable, winning outright on the road against top-tier pitching remains a significant hurdle. However, the Braves have enough depth in their lineup to keep the final score within a single run. Therefore, the Dodgers secure the victory, but the Braves successfully cover the spread.\n\nOver Under: Blake Snell's presence on the mound coupled with October pitching intensity creates a suppressed scoring environment at Dodger Stadium. Both bullshpens have demonstrated high-leverage execution over the course of the 2026 season, limiting late-inning offensive surges. Consequently, the game total stays under the posted line of 7.5 runs.\n\nSplits: Public betting splits are heavily favoring the Dodgers moneyline at roughly 65 percent, while the spread action is more balanced with 55 percent backing the Braves to cover. The moneyline has ticked up slightly toward Los Angeles, and the total has seen a slight downward tick from the opening numbers based on sharp under money.",
+                    "generated_at": "2026-10-04T04:03:08.947439+00:00",
+                    "odds_hash": "015892c54f8bd111",
+                    "model": "gemini-3.5-flash-lite"
+                  },
                   "is_slot_pick": true
                 }
               ]
