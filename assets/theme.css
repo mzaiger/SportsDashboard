@@ -607,3 +607,12 @@ body:not(.row-view) .matchup .team:has(.team-pitcher) .team-record{grid-column:1
 /* Gemini summary: title line 5% smaller than before; the ML / ATS / O-U picks keep their size */
 .gemini-toggle-main{font-size:0.7315rem;}
 .gemini-toggle-trailing{font-size:0.77rem;}
+
+
+/* ---------- Reserved space for AP rank + team score ----------
+   Both are always in the markup (invisible placeholders when empty), so the
+   logo / name / record columns keep the same size whether or not a team has a
+   rank or a score yet. */
+.rank-empty, .score-empty{visibility:hidden;}
+.team-score{display:inline-block; min-width:2ch; text-align:right;}
+body[data-sport="nba"] .team-score, body[data-sport="ncaamb"] .team-score, body[data-sport="picks"] .team-score{min-width:3ch;}
