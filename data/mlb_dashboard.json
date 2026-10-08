@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-08T00:21:14.929529+00:00",
+  "generated_at": "2026-10-08T05:35:03.453904+00:00",
   "season": 2026,
   "display_timezone": "America/Chicago",
   "weeks": [
@@ -56264,7 +56264,6 @@
                       }
                     }
                   },
-                  "matchup_rank": 3,
                   "gemini_prediction": {
                     "winner": "New York Yankees",
                     "confidence": 68,
@@ -56280,6 +56279,7 @@
                     "odds_hash": "e81259b2bdc54202",
                     "model": "gemini-3.5-flash-lite"
                   },
+                  "matchup_rank": 3,
                   "is_slot_pick": false
                 }
               ]
@@ -56376,7 +56376,6 @@
                       }
                     }
                   },
-                  "matchup_rank": 2,
                   "gemini_prediction": {
                     "winner": "San Diego Padres",
                     "confidence": 56,
@@ -56392,6 +56391,7 @@
                     "odds_hash": "53ef018c7640dc7c",
                     "model": "gemini-3.5-flash-lite"
                   },
+                  "matchup_rank": 2,
                   "is_slot_pick": true
                 }
               ]
@@ -56402,36 +56402,36 @@
     },
     {
       "week": 20261008,
-      "total_games": 2,
+      "total_games": 1,
       "days": [
         {
           "date": "2026-10-08",
           "weekday": "Thursday",
-          "game_count": 2,
+          "game_count": 1,
           "is_preseason": false,
           "time_slots": [
             {
-              "slot": "Afternoon",
-              "best_matchup_score": 100.0,
+              "slot": "Prime Time",
+              "best_matchup_score": 50.0,
               "pick_reason": "combined_wins",
               "games": [
                 {
                   "id": "401907993",
-                  "start_time": "2026-10-08T21:00Z",
+                  "start_time": "2026-10-09T00:00Z",
                   "start_time_tbd": false,
                   "home_team": "Chicago White Sox",
                   "home_abbr": "CHW",
                   "home_record": "84-78",
                   "home_logo": "https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/chw.png",
                   "home_location": "Chicago",
-                  "home_pitcher": null,
+                  "home_pitcher": "H. Smith (0-0, 0.00)",
                   "away_team": "Cleveland Guardians",
                   "away_abbr": "CLE",
                   "away_record": "85-77",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/cle.png",
                   "away_location": "Cleveland",
                   "away_pitcher": "P. Messick (0-1, 4.15)",
-                  "matchup_score": 100.0,
+                  "matchup_score": 50.0,
                   "channel": "TBS, truTV",
                   "venue": "Rate Field",
                   "venue_location": "Chicago, Illinois",
@@ -56440,7 +56440,16 @@
                     "draftkings": {
                       "spread": {},
                       "moneyline": {},
-                      "total": {}
+                      "total": {
+                        "over": {
+                          "line": 7.5,
+                          "american": 101
+                        },
+                        "under": {
+                          "line": 7.5,
+                          "american": -122
+                        }
+                      }
                     },
                     "fanduel": {
                       "spread": {
@@ -56466,74 +56475,31 @@
                       "total": {
                         "over": {
                           "line": 7.5,
-                          "american": -106
+                          "american": -104
                         },
                         "under": {
                           "line": 7.5,
-                          "american": -114
+                          "american": -118
                         }
                       }
                     }
                   },
-                  "matchup_rank": 2,
+                  "matchup_rank": 1,
                   "gemini_prediction": {
                     "winner": "Cleveland Guardians",
                     "confidence": 62,
-                    "ats_pick": "Chicago White Sox",
+                    "ats_pick": "Cleveland Guardians",
                     "ats_confidence": 58,
                     "total_pick": "Under",
                     "total_confidence": 55,
-                    "analysis": "The Cleveland Guardians enter this matchup with superior 2026 overall roster depth and more reliable pitching metrics than their division rivals. P. Messick takes the mound for Cleveland seeking to rebound from a minor early-season misstep while anchoring a disciplined rotation. The Chicago White Sox continue to struggle with consistency at the plate and lack deep bullpen support in late innings. Although Cleveland holds the edge to win outright, Chicago's home underdog status provides just enough defensive grit to keep the final margin within 1.5 runs. Consequently, the Guardians secure a narrow victory while the White Sox successfully cover the spread.",
-                    "ou_analysis": "The game features a moderate total of 7.5 runs backed by pitching-friendly park factors and sluggish seasonal batting averages for both clubs. P. Messick's ground-ball tendencies combined with Chicago's low run-production rate point toward a suppressed offensive environment. Therefore, the combined final score comfortably falls beneath the posted line.",
-                    "splits_and_direction": "Based on public tendencies, approximately 65 percent of moneyline bets are favoring the Cleveland Guardians as road favorites, while roughly 60 percent of spread action backs the Chicago White Sox plus the runs. Since odds were just recently posted without prior historical movement available in this data snapshot, both the moneyline and total remain steady at their initial openings.",
-                    "display_text": "Analysis: The Cleveland Guardians enter this matchup with superior 2026 overall roster depth and more reliable pitching metrics than their division rivals. P. Messick takes the mound for Cleveland seeking to rebound from a minor early-season misstep while anchoring a disciplined rotation. The Chicago White Sox continue to struggle with consistency at the plate and lack deep bullpen support in late innings. Although Cleveland holds the edge to win outright, Chicago's home underdog status provides just enough defensive grit to keep the final margin within 1.5 runs. Consequently, the Guardians secure a narrow victory while the White Sox successfully cover the spread.\n\nOver Under: The game features a moderate total of 7.5 runs backed by pitching-friendly park factors and sluggish seasonal batting averages for both clubs. P. Messick's ground-ball tendencies combined with Chicago's low run-production rate point toward a suppressed offensive environment. Therefore, the combined final score comfortably falls beneath the posted line.\n\nSplits: Based on public tendencies, approximately 65 percent of moneyline bets are favoring the Cleveland Guardians as road favorites, while roughly 60 percent of spread action backs the Chicago White Sox plus the runs. Since odds were just recently posted without prior historical movement available in this data snapshot, both the moneyline and total remain steady at their initial openings.",
-                    "generated_at": "2026-10-08T00:21:14.788756+00:00",
-                    "odds_hash": "fbc512d9d7864977",
+                    "analysis": "The Cleveland Guardians enter this matchup with superior 2026 overall performance compared to the Chicago White Sox. P. Messick takes the mound for Cleveland seeking to rebound from an early decision despite maintaining a solid 4.15 ERA. Chicago counters with H. Smith, whose 0.00 ERA lacks a deep sample size to fully trust against an established lineup. Cleveland's offense possesses the depth needed to generate timely runs against Chicago's bullpen and starter. Consequently, the Guardians are well-positioned to secure an outright victory and cover the 1.5 run line.",
+                    "ou_analysis": "Both starting pitchers feature profiles that point toward suppressed scoring in this early-October contest. The chilly evening weather environment in Chicago further dampens fly ball distances and offensive output. Therefore, the combined final score is projected to stay safely under the posted 7.5 total.",
+                    "splits_and_direction": "Public betting splits show approximately 65 percent of moneyline and spread wagers backing the visiting Cleveland Guardians as road favorites. The spread and moneyline have held relatively steady with minor adjustments toward Cleveland, while the total has ticked down slightly from its opening number.",
+                    "display_text": "Analysis: The Cleveland Guardians enter this matchup with superior 2026 overall performance compared to the Chicago White Sox. P. Messick takes the mound for Cleveland seeking to rebound from an early decision despite maintaining a solid 4.15 ERA. Chicago counters with H. Smith, whose 0.00 ERA lacks a deep sample size to fully trust against an established lineup. Cleveland's offense possesses the depth needed to generate timely runs against Chicago's bullpen and starter. Consequently, the Guardians are well-positioned to secure an outright victory and cover the 1.5 run line.\n\nOver Under: Both starting pitchers feature profiles that point toward suppressed scoring in this early-October contest. The chilly evening weather environment in Chicago further dampens fly ball distances and offensive output. Therefore, the combined final score is projected to stay safely under the posted 7.5 total.\n\nSplits: Public betting splits show approximately 65 percent of moneyline and spread wagers backing the visiting Cleveland Guardians as road favorites. The spread and moneyline have held relatively steady with minor adjustments toward Cleveland, while the total has ticked down slightly from its opening number.",
+                    "generated_at": "2026-10-08T05:35:02.957915+00:00",
+                    "odds_hash": "9597cab05f5f4646",
                     "model": "gemini-3.5-flash-lite"
                   },
-                  "is_slot_pick": true
-                }
-              ]
-            },
-            {
-              "slot": "Prime Time",
-              "best_matchup_score": 0.0,
-              "pick_reason": "combined_wins",
-              "games": [
-                {
-                  "id": "401907988",
-                  "start_time": "2026-10-09T00:00Z",
-                  "start_time_tbd": false,
-                  "home_team": "New York Yankees",
-                  "home_abbr": "NYY",
-                  "home_record": "93-68",
-                  "home_logo": "https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/nyy.png",
-                  "home_location": "New York",
-                  "home_pitcher": "C. Rodon",
-                  "away_team": "Tampa Bay Rays",
-                  "away_abbr": "TB",
-                  "away_record": "98-64",
-                  "away_logo": "https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/tb.png",
-                  "away_location": "Tampa Bay",
-                  "away_pitcher": null,
-                  "matchup_score": 0.0,
-                  "channel": "TBS, truTV",
-                  "venue": "Yankee Stadium",
-                  "venue_location": "Bronx, New York",
-                  "neutral_site": false,
-                  "odds": {
-                    "draftkings": {
-                      "spread": {},
-                      "moneyline": {},
-                      "total": {}
-                    },
-                    "fanduel": {
-                      "spread": {},
-                      "moneyline": {},
-                      "total": {}
-                    }
-                  },
-                  "matchup_rank": 1,
                   "is_slot_pick": true
                 }
               ]
@@ -56541,7 +56507,20 @@
           ]
         }
       ]
+    },
+    {
+      "week": 20261009,
+      "total_games": 0,
+      "days": [
+        {
+          "date": "2026-10-09",
+          "weekday": "Friday",
+          "game_count": 0,
+          "is_preseason": false,
+          "time_slots": []
+        }
+      ]
     }
   ],
-  "current_week": 20261007
+  "current_week": 20261008
 }
