@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# SCRIPT VERSION: 2026-09-18-mlb-date-aware-odds-match
+# SCRIPT VERSION: 2026-10-08-ignore-future-kickoffs-in-grace
 """
 NCAAMB (Division I men's college basketball) Betting Dashboard builder.
 
@@ -243,8 +243,13 @@ def latest_kickoff_overall(existing_data):
     """The single latest game start time (UTC) among EVERY game currently
     stored, across every day -- used to anchor the off-season grace
     period on the actual last game played (the title game), not on
-    whatever day happens to be labeled highest."""
+    whatever day happens to be labeled highest. Kickoffs in the FUTURE
+    are ignored: once the board has previewed next season's opener, those
+    preview games are stored too, and counting them would make the grace
+    period look active forever (now < future kickoff + grace), pinning
+    'today' to the real date instead of the season's opening night."""
     latest = None
+    now_utc = datetime.now(timezone.utc)
     for w in (existing_data or {}).get("weeks", []):
         for day in w.get("days", []):
             for slot in day.get("time_slots", []):
@@ -255,6 +260,8 @@ def latest_kickoff_overall(existing_data):
                     try:
                         kickoff = datetime.fromisoformat(raw.replace("Z", "+00:00"))
                     except ValueError:
+                        continue
+                    if kickoff > now_utc:
                         continue
                     if latest is None or kickoff > latest:
                         latest = kickoff

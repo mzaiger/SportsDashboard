@@ -517,7 +517,11 @@ def latest_kickoff_overall(existing_data):
     grace period on the actual last game played (the national
     championship), not on whichever stored week happens to have the
     highest number."""
+    # Future kickoffs are ignored: once the board has previewed next season,
+    # those games are stored too, and counting them would keep the grace
+    # period active forever (now < future kickoff + grace).
     latest = None
+    now_utc = datetime.now(timezone.utc)
     for w in (existing_data or {}).get("weeks", []):
         for day in w.get("days", []):
             for slot in day.get("time_slots", []):
@@ -528,6 +532,8 @@ def latest_kickoff_overall(existing_data):
                     try:
                         kickoff = datetime.fromisoformat(raw.replace("Z", "+00:00"))
                     except ValueError:
+                        continue
+                    if kickoff > now_utc:
                         continue
                     if latest is None or kickoff > latest:
                         latest = kickoff
