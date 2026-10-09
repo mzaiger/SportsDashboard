@@ -473,6 +473,18 @@ def resolve_current(existing_data, forced_season_type=None, effective_today=None
     floor_week = earliest_unelapsed_stored_week(existing_data)
     if floor_week is not None and espn_week < floor_week - 1:
         fallback_week = floor_week - 1
+        # Never let this fallback pull current BACK behind what an earlier
+        # run already advanced to. Without this max(), a bogus ESPN answer
+        # on a no-game day (seen: week 1, from the missing-week default)
+        # hit this branch first and returned floor-1, bypassing the
+        # anti-regression check just below -- so Thursday showed weeks 5-6
+        # and Friday dropped back to 4-5.
+        _stored_cw = (existing_data or {}).get("current_week")
+        if (_stored_cw is not None and (existing_data or {}).get("season_type") == season_type
+                and _stored_cw > fallback_week):
+            log(f"  NOTE: ESPN reports week {espn_week} as current (floor says {fallback_week}), but we already "
+                f"advanced to week {_stored_cw} on a previous run -- keeping {_stored_cw} instead of regressing.")
+            return _stored_cw, season_type
         log(f"  NOTE: ESPN reports week {espn_week} as current, but week {floor_week} is "
             f"already built with games still ahead of us -- using week {fallback_week} "
             f"instead so both show.")
