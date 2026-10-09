@@ -1,4 +1,4 @@
-# SCRIPT VERSION: 2026-09-22-cursor-restart-and-log-fix
+# SCRIPT VERSION: 2026-10-08-main-line-first-exact-markets
 """
 Shared utilities for the sports betting dashboards (CFB + NFL).
 
@@ -212,8 +212,9 @@ def _rate_limit_wait_seconds(header_value, default=5, max_wait=120):
 MAX_PAGE_RETRIES = 3
 
 
-def fetch_all_odds(sharp_key, league, sportsbooks=("draftkings", "fanduel"),
-                    markets=("spread", "moneyline"), date_from=None, date_to=None):
+def _fetch_all_odds_once(sharp_key, league, sportsbooks=("draftkings", "fanduel"),
+                         markets=("spread", "moneyline"), date_from=None, date_to=None,
+                         is_main_line=False, event_id=None):
     """Pull every odds row for the given league(s)/books/markets, following
     pagination.
 
@@ -258,9 +259,9 @@ def fetch_all_odds(sharp_key, league, sportsbooks=("draftkings", "fanduel"),
     if len(leagues) > 1:
         all_rows = []
         for lg in leagues:
-            lg_rows = fetch_all_odds(sharp_key, lg, sportsbooks=sportsbooks,
-                                      markets=markets, date_from=date_from,
-                                      date_to=date_to)
+            lg_rows = _fetch_all_odds_once(sharp_key, lg, sportsbooks=sportsbooks,
+                                           markets=markets, date_from=date_from,
+                                           date_to=date_to, is_main_line=is_main_line, event_id=event_id)
             all_rows.extend(lg_rows)
         log(f"  {len(all_rows)} odds row(s) combined across {len(leagues)} "
             f"leagues ({', '.join(leagues)})")
@@ -282,7 +283,12 @@ def fetch_all_odds(sharp_key, league, sportsbooks=("draftkings", "fanduel"),
             "market": ",".join(markets),
             "limit": SHARPAPI_PAGE_LIMIT,
         }
-        if date_from and date_to and date_from == date_to:
+        if event_id:
+            # Single-event request (used to fill gaps left by the
+            # main-lines-only fast path). Verified against the live API
+            # 2026-10-08: scopes the response to just that event.
+            params["event_id"] = event_id
+        elif date_from and date_to and date_from == date_to:
             # A real request to /odds confirmed via its own error body that
             # "date_from"/"date_to" are NOT recognized params at all --
             # SharpAPI's actual params are "date" (single day) and
@@ -300,7 +306,7 @@ def fetch_all_odds(sharp_key, league, sportsbooks=("draftkings", "fanduel"),
             # spanning range), so the fix is just to send the single-day
             # "date" param instead.
             params["date"] = date_from
-        elif date_from or date_to:
+        elif (date_from or date_to) and not event_id:
             # No current caller actually hits this (every call site passes
             # date_from == date_to), so rather than guess at "date_range"'s
             # expected format and risk another 400, fall back to
@@ -314,6 +320,10 @@ def fetch_all_odds(sharp_key, league, sportsbooks=("draftkings", "fanduel"),
                 f"expected format hasn't been confirmed, so skipping "
                 f"server-side date filtering entirely for this request "
                 f"rather than risk another 400.")
+        if is_main_line:
+            # Server-side "main lines only" filter (drops alternate lines,
+            # which are ~95% of the rows). See fetch_all_odds() below.
+            params["is_main_line"] = "true"
         if cursor:
             params["cursor"] = cursor
         else:
@@ -426,6 +436,121 @@ def fetch_all_odds(sharp_key, league, sportsbooks=("draftkings", "fanduel"),
 
     _log_odds_breakdown(rows, sportsbooks, markets)
     return rows
+
+
+def _main_line_gaps(rows):
+    """Spread/total groups in a main-lines-only result that are missing a
+    side. Returns [(event_id, league, sportsbook, market_type), ...].
+
+    Verified against the live API (2026-10-08): is_main_line=true drops the
+    underdog's mirrored spread row on some games (SharpAPI flags it
+    is_main_line=False / is_alternate_line=True), and the matcher needs both
+    sides. Only spread/total are checked: one-sided moneylines are normal
+    (books omit the favorite on blowouts) and a full fetch has the same
+    absence. Live (in-play) rows are ignored, like the matcher does."""
+    groups = {}
+    for r in rows:
+        if r.get("is_live"):
+            continue
+        kind = _MARKET_ALIASES.get(r.get("market_type"))
+        if kind in ("spread", "total"):
+            key = (r.get("event_id"), r.get("league"), r.get("sportsbook"), r.get("market_type"), kind)
+            groups.setdefault(key, []).append(r)
+    gaps = []
+    for (event_id, league, book, mtype, kind), grp in groups.items():
+        if kind == "spread":
+            lines = [r.get("line") for r in grp if r.get("line") is not None]
+            ok = any(a == -b for i, a in enumerate(lines) for b in lines[i + 1:])
+        else:
+            sides = {}
+            for r in grp:
+                side = r.get("selection_type")
+                if side not in ("over", "under"):
+                    m = _TOTAL_SELECTION_RE.match((r.get("selection") or "").strip())
+                    side = m.group(1).lower() if m else None
+                if side and r.get("line") is not None:
+                    sides.setdefault(side, set()).add(r["line"])
+            ok = bool(sides.get("over") and sides.get("under") and sides["over"] & sides["under"])
+        if not ok:
+            gaps.append((event_id, league, book, mtype))
+    return gaps
+
+
+MAX_GAP_EVENTS = 25  # past this, one full-day fetch is cheaper than per-event requests
+
+
+def fetch_all_odds(sharp_key, league, sportsbooks=("draftkings", "fanduel"),
+                    markets=("spread", "moneyline"), date_from=None, date_to=None):
+    """Public entry point. Three tiers, cheapest first:
+
+      1. Main-lines-only request (is_main_line=true): ~9 pages instead of
+         100+ for a CFB day, since alternate lines are ~95% of the rows and
+         SharpAPI's free tier is ~12 req/min.
+      2. Gap fill: for any game/book/market where that result is missing a
+         side of a spread or total, request just that event (event_id=...,
+         no main-line filter) and merge its rows in. That returns exactly
+         what the full fetch would have for that event.
+      3. Full fetch, if tier 1 returns nothing (e.g. the param is rejected),
+         a gap request fails or isn't scoped to the requested event, or
+         there are more than MAX_GAP_EVENTS gaps.
+
+    So the worst case is the old behavior plus a few cheap pages, never a
+    board with a missing side. SHARPAPI_MAIN_LINE_FIRST=0 skips tiers 1-2.
+    Every decision is logged."""
+    def full():
+        return _fetch_all_odds_once(sharp_key, league, sportsbooks=sportsbooks, markets=markets,
+                                    date_from=date_from, date_to=date_to)
+
+    if os.environ.get("SHARPAPI_MAIN_LINE_FIRST", "1") == "0":
+        return full()
+
+    # "spread" is a category alias that also matches 1st-half and per-quarter
+    # spreads (~45% of the rows in a main-lines-only CFB pull, none of which
+    # the dashboard uses). The exact full-game type "point_spread" drops them
+    # (verified 2026-10-08: 1,669 -> 1,085 rows, 9 -> 6 pages). Single-league
+    # requests only: a multi-league request (NFL preseason variants) might
+    # name the market differently, and an empty league wouldn't trigger the
+    # fallback. MLB/NHL already request exact types (run_line/puck_line).
+    main_markets = markets
+    if isinstance(league, str):
+        main_markets = tuple("point_spread" if m == "spread" else m for m in markets)
+    rows = _fetch_all_odds_once(sharp_key, league, sportsbooks=sportsbooks, markets=main_markets,
+                                date_from=date_from, date_to=date_to, is_main_line=True)
+    if not rows:
+        log("  Main-lines-only fetch returned no rows -- falling back to the full fetch.")
+        return full()
+
+    gaps = _main_line_gaps(rows)
+    if not gaps:
+        log(f"  Main-lines-only fetch complete ({len(rows)} rows) -- skipping the full alt-line fetch.")
+        return rows
+
+    # (event, league, market_type) -> books missing a side
+    events = {}
+    for event_id, lg, book, mtype in gaps:
+        events.setdefault((event_id, lg), {"books": set(), "markets": set()})
+        events[(event_id, lg)]["books"].add(book)
+        events[(event_id, lg)]["markets"].add(mtype)
+    if len(events) > MAX_GAP_EVENTS:
+        log(f"  Main-lines-only fetch has gaps on {len(events)} events (> {MAX_GAP_EVENTS}) -- falling back to the full fetch.")
+        return full()
+
+    log(f"  Main-lines-only fetch ({len(rows)} rows) is missing a side on {len(events)} event(s) -- "
+        f"requesting just those events.")
+    have = {r.get("id") for r in rows}
+    extra = []
+    for (event_id, lg), need in sorted(events.items(), key=lambda kv: str(kv[0])):
+        got = _fetch_all_odds_once(sharp_key, lg or league, sportsbooks=tuple(sorted(need["books"])),
+                                   markets=tuple(sorted(need["markets"])), event_id=event_id)
+        if not got or any(r.get("event_id") != event_id for r in got):
+            log(f"  Gap request for {event_id} failed or wasn't scoped to that event -- falling back to the full fetch.")
+            return full()
+        new = [r for r in got if r.get("id") not in have]
+        have.update(r.get("id") for r in new)
+        extra.extend(new)
+        log(f"    {event_id}: +{len(new)} rows ({', '.join(sorted(need['books']))})")
+    log(f"  Gap fill added {len(extra)} rows -> {len(rows) + len(extra)} total (instead of a full-day fetch).")
+    return rows + extra
 
 
 def _log_odds_breakdown(rows, sportsbooks=("draftkings", "fanduel"), markets=("spread", "moneyline")):

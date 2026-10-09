@@ -701,12 +701,38 @@ def build_week(year, week, season_type, sharp_key, channels, gemini_key=None, ra
             game_dates.add(datetime.fromisoformat(raw.replace("Z", "+00:00")).strftime("%Y-%m-%d"))
         except ValueError:
             continue
+    # Per-date list of the games that will actually make the board (main
+    # channel, or Nebraska), so a date can be skipped entirely once every
+    # one of them has kicked off. Started games have their odds frozen from
+    # the previous build anyway (see already_started below), so a fresh
+    # fetch for that date would only burn SharpAPI's rate limit -- a single
+    # CFB day is ~100 pages of mostly alternate lines (~9 min at 12 req/min).
+    board_ids_by_date = {}
+    for event in events:
+        raw = event.get("date")
+        comps = event.get("competitions") or []
+        if not raw or not comps:
+            continue
+        try:
+            ev_date = datetime.fromisoformat(raw.replace("Z", "+00:00")).strftime("%Y-%m-%d")
+        except ValueError:
+            continue
+        names = {c["team"].get("displayName") for c in comps[0].get("competitors", []) if c.get("team")}
+        if on_main_channel(event, channels) or NEBRASKA_TEAM in names:
+            board_ids_by_date.setdefault(ev_date, []).append(str(event.get("id")))
+
     odds_rows = []
     for d in sorted(game_dates):
+        ids_today = board_ids_by_date.get(d, [])
+        if started_game_ids and ids_today and all(
+                i in started_game_ids and i in (previous_entries_by_id or {}) for i in ids_today):
+            log(f"  Skipping odds fetch for {d}: all {len(ids_today)} board game(s) already started -- "
+                f"odds stay frozen from the previous build.")
+            continue
         day_rows = fetch_all_odds(sharp_key, league="ncaaf", markets=("spread", "moneyline", "total_points"),
                                    date_from=d, date_to=d)
         odds_rows.extend(day_rows)
-    log(f"  {len(odds_rows)} odds rows returned across {len(game_dates)} day(s)")
+    log(f"  {len(odds_rows)} odds rows returned across {len(game_dates)} day(s) with games")
     team_cache = {}
     row_claims = {}
 

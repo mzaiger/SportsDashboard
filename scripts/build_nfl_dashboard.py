@@ -681,8 +681,28 @@ def build_week(year, week, season_type, sharp_key, gemini_key=None, previous_odd
             game_dates.add(datetime.fromisoformat(raw.replace("Z", "+00:00")).strftime("%Y-%m-%d"))
         except ValueError:
             continue
+    # Skip a date's fetch once every game on it has kicked off and has a
+    # prior entry to freeze from -- started games keep the previous build's
+    # odds anyway, so refetching only burns SharpAPI's rate limit.
+    _prev = previous_entries_by_id or {}
+    ids_by_date = {}
+    for event in events:
+        raw = event.get("date")
+        if not raw:
+            continue
+        try:
+            ev_date = datetime.fromisoformat(raw.replace("Z", "+00:00")).strftime("%Y-%m-%d")
+        except ValueError:
+            continue
+        ids_by_date.setdefault(ev_date, []).append(str(event.get("id")))
+
     odds_rows = []
     for d in sorted(game_dates):
+        ids_today = ids_by_date.get(d, [])
+        if started_game_ids and ids_today and all(i in started_game_ids and i in _prev for i in ids_today):
+            log(f"  Skipping odds fetch for {d}: all {len(ids_today)} game(s) already started -- "
+                f"odds stay frozen from the previous build.")
+            continue
         day_rows = fetch_all_odds(sharp_key, league=leagues, markets=("spread", "moneyline", "total_points"),
                                    date_from=d, date_to=d)
         odds_rows.extend(day_rows)

@@ -392,8 +392,26 @@ def build_day(day, sharp_key, gemini_key=None, previous_odds_by_id=None,
 
     log("Fetching DraftKings/FanDuel NBA odds from SharpAPI...")
     day_str = day.isoformat()
-    odds_rows = fetch_all_odds(sharp_key, league="nba", markets=("spread", "moneyline", "total_points"),
-                                date_from=day_str, date_to=day_str)
+    # Skip the SharpAPI fetch once every game on this day has kicked off AND
+    # has a prior entry to freeze from: started games keep the previous
+    # build's odds anyway (see already_started below), so a fresh fetch would
+    # only burn the rate limit (~100 pages of mostly alternate lines per day
+    # at 12 req/min). Any game not yet started -- or without a prior entry --
+    # keeps the normal fetch.
+    _prev = previous_entries_by_id or {}
+    _board_ids = []
+    for event in events:
+        if not event.get("competitions"):
+            continue
+        _board_ids.append(str(event.get("id")))
+    _all_frozen = bool(_board_ids) and bool(started_game_ids) and all(
+        i in started_game_ids and i in _prev for i in _board_ids)
+    if _all_frozen:
+        log(f"  Skipping odds fetch: all {len(_board_ids)} game(s) already started -- odds stay frozen from the previous build.")
+        odds_rows = []
+    else:
+        odds_rows = fetch_all_odds(sharp_key, league="nba", markets=("spread", "moneyline", "total_points"),
+                                    date_from=day_str, date_to=day_str)
     log(f"  {len(odds_rows)} odds rows returned")
     team_cache = {}
     row_claims = {}
