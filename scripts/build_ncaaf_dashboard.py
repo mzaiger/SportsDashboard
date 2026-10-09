@@ -108,6 +108,26 @@ MAIN_CHANNELS = {"ABC", "CBS", "NBC", "FOX", "ESPN", "ESPN2", "FS1", "CW"}
 # spread relative to anything else in that window.
 NEBRASKA_TEAM = "Nebraska"
 
+
+def is_nebraska_team(team):
+    """True if an ESPN `team` object (or a bare name string) is Nebraska.
+
+    ESPN's displayName is "Nebraska Cornhuskers" (mascot included), so an
+    exact `"Nebraska" in (home_team, away_team)` tuple/set test NEVER
+    matched -- the always-on-the-board override silently never fired and
+    Nebraska only showed up when ESPN happened to list a main channel.
+    Match on the school `location` ("Nebraska") first, then fall back to
+    the name starting with "Nebraska " so e.g. Omaha doesn't match.
+    """
+    if isinstance(team, str):
+        name = team.strip()
+        return name == NEBRASKA_TEAM or name.startswith(NEBRASKA_TEAM + " ")
+    if not team:
+        return False
+    if (team.get("location") or "").strip() == NEBRASKA_TEAM:
+        return True
+    return is_nebraska_team(team.get("displayName") or "")
+
 # A team with no AP-poll ranking gets this value -- one worse than the
 # worst possible AP Top 25 rank -- so it never outranks a team that's
 # actually ranked. Kept separate from win-rank's own "unranked" value
@@ -180,7 +200,7 @@ def broadcast_names(event):
 def broadcast_label(event):
     """Display string for a game's TV pill -- ", " instead of "/" between
     multiple networks (matches NFL/MLB's broadcast_label)."""
-    names = broadcast_names(event)
+    names = [_canonical_channel(n) for n in broadcast_names(event)]
     return ", ".join(names) if names else None
 
 
@@ -209,8 +229,35 @@ def _channel_tokens(names):
     return tokens
 
 
+# Alternate spellings ESPN uses for the same network. Matching used to be an
+# exact, case-sensitive string compare, so any variant ("Fox", "FOX Sports",
+# "FOX Broadcasting") silently dropped the game from the board -- Fox games
+# disappear from the saved data after week 4, which is what that looks like.
+_CHANNEL_ALIASES = {
+    "FOX SPORTS": "FOX", "FOX BROADCASTING": "FOX", "FOX NETWORK": "FOX",
+    "FOX BROADCASTING COMPANY": "FOX", "FOX SPORTS 1": "FS1",
+    "ESPN 2": "ESPN2", "THE CW": "CW", "CW NETWORK": "CW",
+}
+
+
+def _norm_channel(tok):
+    t = " ".join((tok or "").upper().split())
+    return _CHANNEL_ALIASES.get(t, t)
+
+
+def _canonical_channel(tok):
+    """MAIN_CHANNELS' own spelling if tok matches one, else tok unchanged
+    (so ESPN's "Fox" displays as "FOX", same as earlier weeks)."""
+    n = _norm_channel(tok)
+    for c in MAIN_CHANNELS:
+        if _norm_channel(c) == n:
+            return c
+    return tok
+
+
 def on_main_channel(event, channels):
-    return any(tok in channels for tok in _channel_tokens(broadcast_names(event)))
+    wanted = {_norm_channel(c) for c in channels}
+    return any(_norm_channel(tok) in wanted for tok in _channel_tokens(broadcast_names(event)))
 
 
 def _parse_espn_record(competitor):
@@ -729,8 +776,8 @@ def build_week(year, week, season_type, sharp_key, channels, gemini_key=None, ra
             ev_date = datetime.fromisoformat(raw.replace("Z", "+00:00")).strftime("%Y-%m-%d")
         except ValueError:
             continue
-        names = {c["team"].get("displayName") for c in comps[0].get("competitors", []) if c.get("team")}
-        if on_main_channel(event, channels) or NEBRASKA_TEAM in names:
+        has_nebraska = any(is_nebraska_team(c.get("team")) for c in comps[0].get("competitors", []))
+        if on_main_channel(event, channels) or has_nebraska:
             board_ids_by_date.setdefault(ev_date, []).append(str(event.get("id")))
 
     odds_rows = []
@@ -783,7 +830,7 @@ def build_week(year, week, season_type, sharp_key, channels, gemini_key=None, ra
         away_match_name = away["team"].get("location") or away_team
         home_id = home["team"].get("id")
         away_id = away["team"].get("id")
-        is_nebraska = NEBRASKA_TEAM in (home_team or "", away_team or "")
+        is_nebraska = is_nebraska_team(home["team"]) or is_nebraska_team(away["team"])
 
         outlet = broadcast_label(event)
         main_channel = on_main_channel(event, channels)

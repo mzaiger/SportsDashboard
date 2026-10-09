@@ -342,7 +342,7 @@ def broadcast_names(event):
 def broadcast_label(event):
     """Display string for a game's TV pill -- ", " instead of "/" between
     multiple networks (matches NFL/NBA/MLB's broadcast_label)."""
-    names = broadcast_names(event)
+    names = [_canonical_channel(n) for n in broadcast_names(event)]
     return ", ".join(names) if names else None
 
 
@@ -370,8 +370,36 @@ def _channel_tokens(names):
     return tokens
 
 
+# ESPN's spelling/case for a network can differ from the tokens in
+# MAIN_CHANNELS ("Fox" vs "FOX", "USA Net" vs "USA", "TruTV" vs "truTV").
+# An exact, case-sensitive compare silently dropped those games from the
+# board, so channels are compared normalized (case/whitespace-insensitive,
+# plus known aliases) and shown with the MAIN_CHANNELS spelling.
+_CHANNEL_ALIASES = {
+    "FOX SPORTS": "FOX", "FOX BROADCASTING": "FOX", "FOX NETWORK": "FOX",
+    "FOX BROADCASTING COMPANY": "FOX", "FOX SPORTS 1": "FS1",
+    "ESPN 2": "ESPN2", "USA NET": "USA", "USA NETWORK": "USA",
+    "CBS SPORTS NETWORK": "CBSSN",
+}
+
+
+def _norm_channel(tok):
+    t = " ".join((tok or "").upper().split())
+    return _CHANNEL_ALIASES.get(t, t)
+
+
+def _canonical_channel(tok):
+    """MAIN_CHANNELS' own spelling if tok matches one, else tok unchanged."""
+    n = _norm_channel(tok)
+    for c in MAIN_CHANNELS:
+        if _norm_channel(c) == n:
+            return c
+    return tok
+
+
 def on_main_channel(event):
-    return any(tok in MAIN_CHANNELS for tok in _channel_tokens(broadcast_names(event)))
+    wanted = {_norm_channel(c) for c in MAIN_CHANNELS}
+    return any(_norm_channel(tok) in wanted for tok in _channel_tokens(broadcast_names(event)))
 
 
 def _parse_espn_record(competitor):
