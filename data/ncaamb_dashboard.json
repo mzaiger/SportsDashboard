@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-09T20:39:43.479447+00:00",
+  "generated_at": "2026-10-09T21:15:04.986100+00:00",
   "season": 2026,
   "main_channels": [
     "ABC",
@@ -115,13 +115,55 @@
     },
     {
       "week": 20261101,
-      "total_games": 0,
+      "total_games": 1,
       "days": [
         {
           "date": "2026-11-01",
           "weekday": "Sunday",
-          "game_count": 0,
-          "time_slots": []
+          "game_count": 1,
+          "time_slots": [
+            {
+              "slot": "Morning",
+              "best_matchup_score": 50.0,
+              "pick_reason": "ap_wins_spread",
+              "games": [
+                {
+                  "id": "401920982",
+                  "start_time": "2026-11-01T14:30Z",
+                  "start_time_tbd": false,
+                  "home_team": "Villanova Wildcats",
+                  "home_rank": null,
+                  "home_record": "0-0",
+                  "home_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/222.png",
+                  "home_location": "Villanova",
+                  "away_team": "Notre Dame Fighting Irish",
+                  "away_rank": null,
+                  "away_record": "0-0",
+                  "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/87.png",
+                  "away_location": "Notre Dame",
+                  "matchup_score": 50.0,
+                  "channel": "FOX",
+                  "venue": "Palazzo dello Sport",
+                  "venue_location": "Rome, Italy",
+                  "neutral_site": true,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    },
+                    "fanduel": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    }
+                  },
+                  "matchup_rank": 1,
+                  "is_slot_pick": true
+                }
+              ]
+            }
+          ]
         }
       ]
     },

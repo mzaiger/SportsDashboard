@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-09T20:36:05.635158+00:00",
+  "generated_at": "2026-10-09T21:13:18.378371+00:00",
   "season": 2026,
   "season_type": 2,
   "main_channels": [
@@ -12029,7 +12029,7 @@
     },
     {
       "week": 6,
-      "total_games": 26,
+      "total_games": 29,
       "days": [
         {
           "date": "2026-10-06",
@@ -12038,7 +12038,7 @@
           "time_slots": [
             {
               "slot": "Prime Time",
-              "best_matchup_score": 75.0,
+              "best_matchup_score": 75.6,
               "pick_reason": "watchability",
               "games": [
                 {
@@ -12055,7 +12055,7 @@
                   "away_record": "1-4",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2572.png",
                   "away_location": "Southern Miss",
-                  "matchup_score": 75.0,
+                  "matchup_score": 75.6,
                   "channel": "ESPN2",
                   "venue": "Veterans Memorial Stadium (AL)",
                   "venue_location": "Troy, AL",
@@ -12142,7 +12142,7 @@
                     "odds_hash": "39c3023787055db6",
                     "model": "gemini-3.5-flash-lite"
                   },
-                  "matchup_rank": 22,
+                  "matchup_rank": 25,
                   "is_slot_pick": true
                 }
               ]
@@ -12156,7 +12156,7 @@
           "time_slots": [
             {
               "slot": "Prime Time",
-              "best_matchup_score": 92.3,
+              "best_matchup_score": 92.9,
               "pick_reason": "watchability",
               "games": [
                 {
@@ -12173,7 +12173,7 @@
                   "away_record": "2-4",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/166.png",
                   "away_location": "New Mexico State",
-                  "matchup_score": 92.3,
+                  "matchup_score": 92.9,
                   "channel": "ESPN2",
                   "venue": "Pitbull Stadium",
                   "venue_location": "Miami, FL",
@@ -12191,7 +12191,7 @@
                     }
                   },
                   "is_nebraska": false,
-                  "matchup_rank": 26,
+                  "matchup_rank": 29,
                   "is_slot_pick": true
                 }
               ]
@@ -12205,7 +12205,7 @@
           "time_slots": [
             {
               "slot": "Prime Time",
-              "best_matchup_score": 60.5,
+              "best_matchup_score": 61.3,
               "pick_reason": "watchability",
               "games": [
                 {
@@ -12222,7 +12222,7 @@
                   "away_record": "4-2",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/58.png",
                   "away_location": "South Florida",
-                  "matchup_score": 60.5,
+                  "matchup_score": 61.3,
                   "channel": "ESPN",
                   "venue": "Alamodome",
                   "venue_location": "San Antonio, TX",
@@ -12309,7 +12309,7 @@
                     "odds_hash": "34ce1148b783d2e9",
                     "model": "gemini-3.5-flash-lite"
                   },
-                  "matchup_rank": 14,
+                  "matchup_rank": 17,
                   "is_slot_pick": true
                 },
                 {
@@ -12326,7 +12326,7 @@
                   "away_record": "4-2",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/6.png",
                   "away_location": "South Alabama",
-                  "matchup_score": 67.8,
+                  "matchup_score": 68.5,
                   "channel": "ESPN2",
                   "venue": "Centennial Bank Stadium",
                   "venue_location": "Jonesboro, AR",
@@ -12413,7 +12413,7 @@
                     "odds_hash": "6dcf49edb2c358a0",
                     "model": "gemini-3.5-flash-lite"
                   },
-                  "matchup_rank": 17,
+                  "matchup_rank": 20,
                   "is_slot_pick": false
                 }
               ]
@@ -12423,13 +12423,117 @@
         {
           "date": "2026-10-09",
           "weekday": "Friday",
-          "game_count": 3,
+          "game_count": 4,
           "time_slots": [
             {
               "slot": "Prime Time",
-              "best_matchup_score": 69.9,
+              "best_matchup_score": 58.3,
               "pick_reason": "watchability",
               "games": [
+                {
+                  "id": "401858487",
+                  "start_time": "2026-10-10T01:00Z",
+                  "start_time_tbd": false,
+                  "home_team": "Washington Huskies",
+                  "home_rank": null,
+                  "home_record": "3-2",
+                  "home_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/264.png",
+                  "home_location": "Washington",
+                  "away_team": "Iowa Hawkeyes",
+                  "away_rank": 20,
+                  "away_record": "4-1",
+                  "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2294.png",
+                  "away_location": "Iowa",
+                  "matchup_score": 58.3,
+                  "channel": "FOX",
+                  "venue": "Husky Stadium",
+                  "venue_location": "Seattle, WA",
+                  "neutral_site": false,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {
+                        "away": {
+                          "line": 3.0,
+                          "american": -118
+                        },
+                        "home": {
+                          "line": -3.0,
+                          "american": -102
+                        }
+                      },
+                      "moneyline": {
+                        "away": {
+                          "line": null,
+                          "american": 124
+                        },
+                        "home": {
+                          "line": null,
+                          "american": -148
+                        }
+                      },
+                      "total": {
+                        "over": {
+                          "line": 41.5,
+                          "american": -108
+                        },
+                        "under": {
+                          "line": 41.5,
+                          "american": -112
+                        }
+                      }
+                    },
+                    "fanduel": {
+                      "spread": {
+                        "home": {
+                          "line": -2.5,
+                          "american": -122
+                        },
+                        "away": {
+                          "line": 2.5,
+                          "american": 100
+                        }
+                      },
+                      "moneyline": {
+                        "home": {
+                          "line": null,
+                          "american": -152
+                        },
+                        "away": {
+                          "line": null,
+                          "american": 126
+                        }
+                      },
+                      "total": {
+                        "over": {
+                          "line": 41.5,
+                          "american": -105
+                        },
+                        "under": {
+                          "line": 41.5,
+                          "american": -115
+                        }
+                      }
+                    }
+                  },
+                  "is_nebraska": false,
+                  "matchup_rank": 12,
+                  "gemini_prediction": {
+                    "winner": "Washington Huskies",
+                    "confidence": 62,
+                    "ats_pick": "Washington Huskies",
+                    "ats_confidence": 58,
+                    "total_pick": "Under",
+                    "total_confidence": 65,
+                    "analysis": "The Washington Huskies return home with a more efficient offensive scheme that should consistently test the stout Iowa defense. Iowa continues to struggle with sustaining long drives due to limited production in the passing game this season. Playing in Seattle provides Washington with a significant crowd advantage that often neutralizes opposing offensive adjustments. The Hawkeyes will keep it close through strong defensive stops and field position battles. However, the Huskies possess enough late-game execution to secure a narrow victory and cover the short home spread.",
+                    "ou_analysis": "Both teams feature conservative offensive playcalling philosophies and prioritize field position over high-risk aerial attacks. Iowa games consistently trend toward low-scoring defensive struggles due to their inability to generate explosive plays. Consequently, the low total of 41.5 points still offers enough breathing room for the under to cash safely.",
+                    "splits_and_direction": "Based on early betting trends, approximately 58 percent of spread tickets are backing Washington at home while the moneyline has seen moderate action lean toward the Huskies. The spread has ticked down slightly from -3 to -2.5 at FanDuel while the total has remained steady at 41.5 points across major sportsbooks.",
+                    "display_text": "Analysis: The Washington Huskies return home with a more efficient offensive scheme that should consistently test the stout Iowa defense. Iowa continues to struggle with sustaining long drives due to limited production in the passing game this season. Playing in Seattle provides Washington with a significant crowd advantage that often neutralizes opposing offensive adjustments. The Hawkeyes will keep it close through strong defensive stops and field position battles. However, the Huskies possess enough late-game execution to secure a narrow victory and cover the short home spread.\n\nOver Under: Both teams feature conservative offensive playcalling philosophies and prioritize field position over high-risk aerial attacks. Iowa games consistently trend toward low-scoring defensive struggles due to their inability to generate explosive plays. Consequently, the low total of 41.5 points still offers enough breathing room for the under to cash safely.\n\nSplits: Based on early betting trends, approximately 58 percent of spread tickets are backing Washington at home while the moneyline has seen moderate action lean toward the Huskies. The spread has ticked down slightly from -3 to -2.5 at FanDuel while the total has remained steady at 41.5 points across major sportsbooks.",
+                    "generated_at": "2026-10-09T21:10:14.687370+00:00",
+                    "odds_hash": "7fcbb61e19e467a0",
+                    "model": "gemini-3.5-flash-lite"
+                  },
+                  "is_slot_pick": true
+                },
                 {
                   "id": "401858254",
                   "start_time": "2026-10-09T23:00Z",
@@ -12444,7 +12548,7 @@
                   "away_record": "3-2",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/52.png",
                   "away_location": "Florida State",
-                  "matchup_score": 69.9,
+                  "matchup_score": 70.7,
                   "channel": "ESPN",
                   "venue": "L&N Federal Credit Union Stadium",
                   "venue_location": "Louisville, KY",
@@ -12486,37 +12590,37 @@
                       "spread": {
                         "home": {
                           "line": -3.5,
-                          "american": -112
+                          "american": -115
                         },
                         "away": {
                           "line": 3.5,
-                          "american": -108
+                          "american": -105
                         }
                       },
                       "moneyline": {
                         "home": {
                           "line": null,
-                          "american": -178
+                          "american": -188
                         },
                         "away": {
                           "line": null,
-                          "american": 146
+                          "american": 155
                         }
                       },
                       "total": {
                         "over": {
                           "line": 59.5,
-                          "american": -128
+                          "american": -122
                         },
                         "under": {
                           "line": 59.5,
-                          "american": 100
+                          "american": -104
                         }
                       }
                     }
                   },
                   "is_nebraska": false,
-                  "matchup_rank": 20,
+                  "matchup_rank": 23,
                   "gemini_prediction": {
                     "winner": "Louisville Cardinals",
                     "confidence": 68,
@@ -12524,15 +12628,15 @@
                     "ats_confidence": 62,
                     "total_pick": "Over",
                     "total_confidence": 65,
-                    "analysis": "The Louisville Cardinals enter this week 6 matchup displaying exceptional offensive consistency that has overwhelmed opponents through the first portion of the 2026 season. Florida State has struggled to establish defensive cohesion, particularly in the secondary, leaving them vulnerable to explosive passing attacks. Louisville's offensive line has provided clean pockets, allowing their quarterback to execute the game plan with high efficiency. Furthermore, the Cardinals' defensive front has excelled at generating pressure, which should disrupt the Seminoles' rhythm early. Louisville will control the tempo at home and secure a victory that comfortably clears the current number.",
-                    "ou_analysis": "Both teams operate at an up-tempo pace and heavily favor passing schemes that frequently stop the clock and extend possessions. The defensive metrics for both squads suggest persistent vulnerabilities against big plays in the secondary. Given these offensive capabilities and porous defenses, this game projects as a high-scoring conference showdown. Therefore, the combined final score will easily surpass the posted total of 59.5 points.",
-                    "splits_and_direction": "Based on early public tendencies and available betting metrics, approximately 58% of bets are backing the home favorite Louisville on the spread and moneyline while 55% lean toward the over. The spread has moved slightly from an opening line of -3 to -3.5, and the total has ticked up from an opening number of 58.5 to 59.5 due to heavy early action on the over.",
-                    "display_text": "Analysis: The Louisville Cardinals enter this week 6 matchup displaying exceptional offensive consistency that has overwhelmed opponents through the first portion of the 2026 season. Florida State has struggled to establish defensive cohesion, particularly in the secondary, leaving them vulnerable to explosive passing attacks. Louisville's offensive line has provided clean pockets, allowing their quarterback to execute the game plan with high efficiency. Furthermore, the Cardinals' defensive front has excelled at generating pressure, which should disrupt the Seminoles' rhythm early. Louisville will control the tempo at home and secure a victory that comfortably clears the current number.\n\nOver Under: Both teams operate at an up-tempo pace and heavily favor passing schemes that frequently stop the clock and extend possessions. The defensive metrics for both squads suggest persistent vulnerabilities against big plays in the secondary. Given these offensive capabilities and porous defenses, this game projects as a high-scoring conference showdown. Therefore, the combined final score will easily surpass the posted total of 59.5 points.\n\nSplits: Based on early public tendencies and available betting metrics, approximately 58% of bets are backing the home favorite Louisville on the spread and moneyline while 55% lean toward the over. The spread has moved slightly from an opening line of -3 to -3.5, and the total has ticked up from an opening number of 58.5 to 59.5 due to heavy early action on the over.",
-                    "generated_at": "2026-10-09T20:30:07.651648+00:00",
-                    "odds_hash": "31fa797b9af0ee92",
+                    "analysis": "The Louisville Cardinals enter this week 6 matchup displaying a potent offensive scheme that consistently stretches opposing defenses downfield. Florida State has struggled to find consistency on defense, particularly in the secondary, where they have allowed big plays through the air. Louisville's home-field advantage at Cardinal Stadium provides a notable boost for an already high-flying attack. Although the Seminoles possess enough offensive weapons to keep the game competitive for stretches, their defensive breakdowns will prove costly. Consequently, the Cardinals should control the tempo and pull away late to cover the 3.5-point spread.",
+                    "ou_analysis": "Both teams operate at an above-average offensive pace, prioritizing quick snaps and explosive downfield passing plays that naturally inflate scoring totals. Louisville's defensive vulnerabilities combined with Florida State's desperate need to air it out will lead to frequent red-zone trips throughout the contest. Given these aggressive stylistic matchups and the low-to-mid 50s defensive struggles, the combined score will comfortably surpass the posted line of 59.5 points.",
+                    "splits_and_direction": "Based on public tendencies and the current odds, approximately 62% of spread and moneyline bets are backing the home favorite Louisville, while 55% of the action on the total leans toward the Over. The spread has moved slightly from an opening line of Louisville -3 to -3.5, and the total has ticked up from 58.5 to 59.5 due to heavy early Over money.",
+                    "display_text": "Analysis: The Louisville Cardinals enter this week 6 matchup displaying a potent offensive scheme that consistently stretches opposing defenses downfield. Florida State has struggled to find consistency on defense, particularly in the secondary, where they have allowed big plays through the air. Louisville's home-field advantage at Cardinal Stadium provides a notable boost for an already high-flying attack. Although the Seminoles possess enough offensive weapons to keep the game competitive for stretches, their defensive breakdowns will prove costly. Consequently, the Cardinals should control the tempo and pull away late to cover the 3.5-point spread.\n\nOver Under: Both teams operate at an above-average offensive pace, prioritizing quick snaps and explosive downfield passing plays that naturally inflate scoring totals. Louisville's defensive vulnerabilities combined with Florida State's desperate need to air it out will lead to frequent red-zone trips throughout the contest. Given these aggressive stylistic matchups and the low-to-mid 50s defensive struggles, the combined score will comfortably surpass the posted line of 59.5 points.\n\nSplits: Based on public tendencies and the current odds, approximately 62% of spread and moneyline bets are backing the home favorite Louisville, while 55% of the action on the total leans toward the Over. The spread has moved slightly from an opening line of Louisville -3 to -3.5, and the total has ticked up from 58.5 to 59.5 due to heavy early Over money.",
+                    "generated_at": "2026-10-09T21:10:04.827731+00:00",
+                    "odds_hash": "5d389d1816e5cee3",
                     "model": "gemini-3.5-flash-lite"
                   },
-                  "is_slot_pick": true
+                  "is_slot_pick": false
                 },
                 {
                   "id": "401860922",
@@ -12620,7 +12724,7 @@
                     }
                   },
                   "is_nebraska": false,
-                  "matchup_rank": 23,
+                  "matchup_rank": 26,
                   "gemini_prediction": {
                     "winner": "Utah State Aggies",
                     "confidence": 61,
@@ -12642,7 +12746,7 @@
             },
             {
               "slot": "Late Night",
-              "best_matchup_score": 52.8,
+              "best_matchup_score": 53.6,
               "pick_reason": "watchability",
               "games": [
                 {
@@ -12659,7 +12763,7 @@
                   "away_record": "3-2",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/66.png",
                   "away_location": "Iowa State",
-                  "matchup_score": 52.8,
+                  "matchup_score": 53.6,
                   "channel": "ESPN",
                   "venue": "LaVell Edwards Stadium",
                   "venue_location": "Provo, UT",
@@ -12700,51 +12804,51 @@
                     "fanduel": {
                       "spread": {
                         "home": {
-                          "line": -10.5,
-                          "american": -120
+                          "line": -11.5,
+                          "american": -105
                         },
                         "away": {
-                          "line": 10.5,
-                          "american": -106
+                          "line": 11.5,
+                          "american": -115
                         }
                       },
                       "moneyline": {
                         "home": {
                           "line": null,
-                          "american": -480
+                          "american": -465
                         },
                         "away": {
                           "line": null,
-                          "american": 360
+                          "american": 350
                         }
                       },
                       "total": {
                         "over": {
-                          "line": 45.5,
-                          "american": -122
+                          "line": 46.5,
+                          "american": -108
                         },
                         "under": {
-                          "line": 45.5,
-                          "american": -104
+                          "line": 46.5,
+                          "american": -112
                         }
                       }
                     }
                   },
                   "is_nebraska": false,
-                  "matchup_rank": 5,
+                  "matchup_rank": 7,
                   "gemini_prediction": {
                     "winner": "BYU Cougars",
-                    "confidence": 82,
+                    "confidence": 78,
                     "ats_pick": "BYU Cougars",
-                    "ats_confidence": 75,
-                    "total_pick": "Over",
+                    "ats_confidence": 70,
+                    "total_pick": "Under",
                     "total_confidence": 65,
-                    "analysis": "The BYU Cougars have showcased an elite offensive scheme throughout the 2026 college football season, consistently outperforming opponents with high-efficiency passing and a sturdy rushing attack. Iowa State has struggled to establish defensive consistency against top-tier Big 12 competition, particularly when defending explosive vertical routes. Playing in Provo provides a tremendous home-field advantage that disrupts opposing offensive play-calling and communication. The Cougars' offensive line should control the line of scrimmage, allowing them to sustain long drives and wear down the Cyclones' front seven. Consequently, BYU will secure a decisive victory and comfortably cover the double-digit spread.",
-                    "ou_analysis": "Both teams feature up-tempo offensive philosophies that generate significant snap counts and rapid possessions throughout regulation. BYU's dynamic scoring capability combined with Iowa State's defensive vulnerabilities points toward a higher-scoring affair than the oddsmakers anticipate. Therefore, the combined final score will safely surpass the 45.5-point total.",
-                    "splits_and_direction": "Based on current public tendencies and opening odds, approximately 68 percent of spread bets and 75 percent of moneyline wagers are backing the heavily favored BYU Cougars at home. The point spread has moved slightly upward from an opening line of -9.5 to -10.5, while the total has ticked down marginally from 46.0 to 45.5 amid modest sharp action on the under.",
-                    "display_text": "Analysis: The BYU Cougars have showcased an elite offensive scheme throughout the 2026 college football season, consistently outperforming opponents with high-efficiency passing and a sturdy rushing attack. Iowa State has struggled to establish defensive consistency against top-tier Big 12 competition, particularly when defending explosive vertical routes. Playing in Provo provides a tremendous home-field advantage that disrupts opposing offensive play-calling and communication. The Cougars' offensive line should control the line of scrimmage, allowing them to sustain long drives and wear down the Cyclones' front seven. Consequently, BYU will secure a decisive victory and comfortably cover the double-digit spread.\n\nOver Under: Both teams feature up-tempo offensive philosophies that generate significant snap counts and rapid possessions throughout regulation. BYU's dynamic scoring capability combined with Iowa State's defensive vulnerabilities points toward a higher-scoring affair than the oddsmakers anticipate. Therefore, the combined final score will safely surpass the 45.5-point total.\n\nSplits: Based on current public tendencies and opening odds, approximately 68 percent of spread bets and 75 percent of moneyline wagers are backing the heavily favored BYU Cougars at home. The point spread has moved slightly upward from an opening line of -9.5 to -10.5, while the total has ticked down marginally from 46.0 to 45.5 amid modest sharp action on the under.",
-                    "generated_at": "2026-10-09T20:30:27.399785+00:00",
-                    "odds_hash": "9206c5f00c3de1be",
+                    "analysis": "The BYU Cougars enter week 6 with an explosive offense and a suffocating defense that has dominated every opponent on their 2026 schedule so far. Iowa State has struggled to find any consistency on the offensive side of the ball, routinely stalling out in opposing territory due to subpar quarterback play and poor offensive line protection. Playing in Provo provides a tremendous home-field advantage that the Cyclones will find nearly impossible to overcome against a disciplined Cougars squad. BYU's balanced rushing and passing attack will continually wear down the Iowa State front seven as the game progresses into the second half. Consequently, the Cougars will easily control the line of scrimmage to secure a comfortable victory well beyond the double-digit spread.",
+                    "ou_analysis": "Both teams feature strong defensive units that limit explosive plays and prioritize red-zone execution over high-risk downfield throws. BYU's deliberate offensive pace combined with Iowa State's ineptitude on third downs will significantly restrict the total number of possessions in this matchup. Therefore, the game will comfortably fall short of the mid-40s posted total as the defenses dictate the tempo from start to finish.",
+                    "splits_and_direction": "Based on public tendencies toward the home favorite, approximately 68% of spread bets and 75% of moneyline wagers are backing the BYU Cougars, while the total is seeing roughly 55% of action on the under. Reflecting this heavy one-way public money, the spread has ticked up slightly from an opener of -10.5 to -11.5 at FanDuel while the total has ticked down slightly from 45.5 to 46.5.",
+                    "display_text": "Analysis: The BYU Cougars enter week 6 with an explosive offense and a suffocating defense that has dominated every opponent on their 2026 schedule so far. Iowa State has struggled to find any consistency on the offensive side of the ball, routinely stalling out in opposing territory due to subpar quarterback play and poor offensive line protection. Playing in Provo provides a tremendous home-field advantage that the Cyclones will find nearly impossible to overcome against a disciplined Cougars squad. BYU's balanced rushing and passing attack will continually wear down the Iowa State front seven as the game progresses into the second half. Consequently, the Cougars will easily control the line of scrimmage to secure a comfortable victory well beyond the double-digit spread.\n\nOver Under: Both teams feature strong defensive units that limit explosive plays and prioritize red-zone execution over high-risk downfield throws. BYU's deliberate offensive pace combined with Iowa State's ineptitude on third downs will significantly restrict the total number of possessions in this matchup. Therefore, the game will comfortably fall short of the mid-40s posted total as the defenses dictate the tempo from start to finish.\n\nSplits: Based on public tendencies toward the home favorite, approximately 68% of spread bets and 75% of moneyline wagers are backing the BYU Cougars, while the total is seeing roughly 55% of action on the under. Reflecting this heavy one-way public money, the spread has ticked up slightly from an opener of -10.5 to -11.5 at FanDuel while the total has ticked down slightly from 45.5 to 46.5.",
+                    "generated_at": "2026-10-09T21:10:25.133272+00:00",
+                    "odds_hash": "e12803c9e95ef8ac",
                     "model": "gemini-3.5-flash-lite"
                   },
                   "is_slot_pick": true
@@ -12756,13 +12860,117 @@
         {
           "date": "2026-10-10",
           "weekday": "Saturday",
-          "game_count": 19,
+          "game_count": 21,
           "time_slots": [
             {
               "slot": "Noon",
-              "best_matchup_score": 52.9,
-              "pick_reason": "watchability",
+              "best_matchup_score": 40.5,
+              "pick_reason": "nebraska",
               "games": [
+                {
+                  "id": "401858481",
+                  "start_time": "2026-10-10T16:00Z",
+                  "start_time_tbd": false,
+                  "home_team": "Nebraska Cornhuskers",
+                  "home_rank": null,
+                  "home_record": "5-0",
+                  "home_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/158.png",
+                  "home_location": "Nebraska",
+                  "away_team": "Indiana Hoosiers",
+                  "away_rank": 7,
+                  "away_record": "5-0",
+                  "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/84.png",
+                  "away_location": "Indiana",
+                  "matchup_score": 40.5,
+                  "channel": "FOX",
+                  "venue": "Memorial Stadium (Lincoln, NE)",
+                  "venue_location": "Lincoln, NE",
+                  "neutral_site": false,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {
+                        "home": {
+                          "line": 7.5,
+                          "american": -105
+                        },
+                        "away": {
+                          "line": -7.5,
+                          "american": -115
+                        }
+                      },
+                      "moneyline": {
+                        "away": {
+                          "line": null,
+                          "american": -325
+                        },
+                        "home": {
+                          "line": null,
+                          "american": 260
+                        }
+                      },
+                      "total": {
+                        "over": {
+                          "line": 47.5,
+                          "american": -115
+                        },
+                        "under": {
+                          "line": 47.5,
+                          "american": -105
+                        }
+                      }
+                    },
+                    "fanduel": {
+                      "spread": {
+                        "away": {
+                          "line": -7.5,
+                          "american": -110
+                        },
+                        "home": {
+                          "line": 7.5,
+                          "american": -110
+                        }
+                      },
+                      "moneyline": {
+                        "home": {
+                          "line": null,
+                          "american": 245
+                        },
+                        "away": {
+                          "line": null,
+                          "american": -310
+                        }
+                      },
+                      "total": {
+                        "under": {
+                          "line": 47.5,
+                          "american": -104
+                        },
+                        "over": {
+                          "line": 47.5,
+                          "american": -122
+                        }
+                      }
+                    }
+                  },
+                  "is_nebraska": true,
+                  "matchup_rank": 3,
+                  "gemini_prediction": {
+                    "winner": "Indiana Hoosiers",
+                    "confidence": 82,
+                    "ats_pick": "Nebraska Cornhuskers",
+                    "ats_confidence": 60,
+                    "total_pick": "Over",
+                    "total_confidence": 65,
+                    "analysis": "The Indiana Hoosiers enter this week six matchup playing exceptionally efficient football on both sides of the ball throughout the 2026 season. Nebraska has shown flashes of resilience at home, keeping games closer than anticipated against tough conference opponents. However, Indiana's explosive offensive scheme will consistently test the Cornhuskers' secondary throughout four quarters of play. While the Hoosiers should ultimately secure the outright victory due to superior roster depth, the sizable 7.5-point spread gives Nebraska enough cushion. Expect a hard-fought contest where Indiana wins by a touchdown rather than pulling away decisively.",
+                    "ou_analysis": "Both teams feature up-tempo offensive philosophies that consistently generate high snap counts and quick possessions during the 2026 campaign. Defensive lapses in the secondary for both squads point toward several explosive scoring plays developing over the course of the game. Consequently, these combined offensive metrics easily push the final score past the relatively modest 47.5-point total.",
+                    "splits_and_direction": "Based on public tendencies, approximately 68% of bets are backing the heavy road favorite Indiana on the moneyline and spread, while the over is drawing roughly 55% of the total action. Both the spread and total have remained relatively steady since opening, with minor juice shifts toward the Indiana side and the over.",
+                    "display_text": "Analysis: The Indiana Hoosiers enter this week six matchup playing exceptionally efficient football on both sides of the ball throughout the 2026 season. Nebraska has shown flashes of resilience at home, keeping games closer than anticipated against tough conference opponents. However, Indiana's explosive offensive scheme will consistently test the Cornhuskers' secondary throughout four quarters of play. While the Hoosiers should ultimately secure the outright victory due to superior roster depth, the sizable 7.5-point spread gives Nebraska enough cushion. Expect a hard-fought contest where Indiana wins by a touchdown rather than pulling away decisively.\n\nOver Under: Both teams feature up-tempo offensive philosophies that consistently generate high snap counts and quick possessions during the 2026 campaign. Defensive lapses in the secondary for both squads point toward several explosive scoring plays developing over the course of the game. Consequently, these combined offensive metrics easily push the final score past the relatively modest 47.5-point total.\n\nSplits: Based on public tendencies, approximately 68% of bets are backing the heavy road favorite Indiana on the moneyline and spread, while the over is drawing roughly 55% of the total action. Both the spread and total have remained relatively steady since opening, with minor juice shifts toward the Indiana side and the over.",
+                    "generated_at": "2026-10-09T21:10:34.966907+00:00",
+                    "odds_hash": "eb022ca14a2234e1",
+                    "model": "gemini-3.5-flash-lite"
+                  },
+                  "is_slot_pick": true
+                },
                 {
                   "id": "401856716",
                   "start_time": "2026-10-10T16:00Z",
@@ -12777,7 +12985,7 @@
                   "away_record": "3-2",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/245.png",
                   "away_location": "Texas A&M",
-                  "matchup_score": 52.9,
+                  "matchup_score": 53.5,
                   "channel": "ABC",
                   "venue": "Memorial Stadium",
                   "venue_location": "Columbia, MO",
@@ -12865,7 +13073,7 @@
                     "odds_hash": "b3a4b5aa12a8dbd1",
                     "model": "gemini-3.5-flash-lite"
                   },
-                  "is_slot_pick": true
+                  "is_slot_pick": false
                 },
                 {
                   "id": "401858256",
@@ -12881,7 +13089,7 @@
                   "away_record": "2-2",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/153.png",
                   "away_location": "North Carolina",
-                  "matchup_score": 59.3,
+                  "matchup_score": 60.0,
                   "channel": "ESPN",
                   "venue": "Acrisure Stadium",
                   "venue_location": "Pittsburgh, PA",
@@ -12953,7 +13161,7 @@
                     }
                   },
                   "is_nebraska": false,
-                  "matchup_rank": 11,
+                  "matchup_rank": 14,
                   "gemini_prediction": {
                     "winner": "Pittsburgh Panthers",
                     "confidence": 71,
@@ -12985,7 +13193,7 @@
                   "away_record": "4-1",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/154.png",
                   "away_location": "Wake Forest",
-                  "matchup_score": 59.8,
+                  "matchup_score": 60.5,
                   "channel": "CW",
                   "venue": "Carter-Finley Stadium",
                   "venue_location": "Raleigh, NC",
@@ -13030,8 +13238,8 @@
                           "american": -120
                         },
                         "away": {
-                          "line": null,
-                          "american": -138
+                          "line": -3.5,
+                          "american": -102
                         }
                       },
                       "moneyline": {
@@ -13057,7 +13265,7 @@
                     }
                   },
                   "is_nebraska": false,
-                  "matchup_rank": 12,
+                  "matchup_rank": 15,
                   "gemini_prediction": {
                     "winner": "Wake Forest Demon Deacons",
                     "confidence": 65,
@@ -13089,7 +13297,7 @@
                   "away_record": "3-2",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2116.png",
                   "away_location": "UCF",
-                  "matchup_score": 61.3,
+                  "matchup_score": 62.3,
                   "channel": "ESPN2",
                   "venue": "Boone Pickens Stadium",
                   "venue_location": "Stillwater, OK",
@@ -13130,8 +13338,8 @@
                     "fanduel": {
                       "spread": {
                         "home": {
-                          "line": null,
-                          "american": -4500
+                          "line": -10.5,
+                          "american": -105
                         },
                         "away": {
                           "line": 10.5,
@@ -13161,20 +13369,20 @@
                     }
                   },
                   "is_nebraska": false,
-                  "matchup_rank": 15,
+                  "matchup_rank": 18,
                   "gemini_prediction": {
                     "winner": "Oklahoma State Cowboys",
                     "confidence": 78,
                     "ats_pick": "Oklahoma State Cowboys",
-                    "ats_confidence": 70,
+                    "ats_confidence": 65,
                     "total_pick": "Over",
-                    "total_confidence": 65,
-                    "analysis": "Oklahoma State enters this 2026 conference matchup boasting a significantly more balanced and explosive offensive attack than UCF. The Cowboys have consistently executed in the red zone and controlled line-of-scrimmage battles against similar defensive fronts this season. UCF has struggled to maintain defensive consistency on the road, frequently giving up big plays in the secondary. Furthermore, Oklahoma State's home-field advantage should provide the necessary energy to build a commanding multi-score lead. Expect the Cowboys to dictate the tempo early and comfortably cover the double-digit spread.",
-                    "ou_analysis": "Both teams feature up-tempo offensive schemes that average well over seventy plays per game, naturally pushing the pace into high-scoring territory. Defensive vulnerabilities on both sides, particularly in defending the vertical passing game, point toward an offensive-friendly environment. Consequently, the combined score should comfortably exceed the 53.5-point threshold.",
-                    "splits_and_direction": "Based on public betting tendencies, approximately 62% of spread bets and 70% of moneyline wagers are backing the favored Oklahoma State Cowboys at home. The spread has moved slightly upward from an opening of -9.5 to -10.5, while the total has ticked down marginally from 54.5 to 53.5 despite heavy public leanings toward the over.",
-                    "display_text": "Analysis: Oklahoma State enters this 2026 conference matchup boasting a significantly more balanced and explosive offensive attack than UCF. The Cowboys have consistently executed in the red zone and controlled line-of-scrimmage battles against similar defensive fronts this season. UCF has struggled to maintain defensive consistency on the road, frequently giving up big plays in the secondary. Furthermore, Oklahoma State's home-field advantage should provide the necessary energy to build a commanding multi-score lead. Expect the Cowboys to dictate the tempo early and comfortably cover the double-digit spread.\n\nOver Under: Both teams feature up-tempo offensive schemes that average well over seventy plays per game, naturally pushing the pace into high-scoring territory. Defensive vulnerabilities on both sides, particularly in defending the vertical passing game, point toward an offensive-friendly environment. Consequently, the combined score should comfortably exceed the 53.5-point threshold.\n\nSplits: Based on public betting tendencies, approximately 62% of spread bets and 70% of moneyline wagers are backing the favored Oklahoma State Cowboys at home. The spread has moved slightly upward from an opening of -9.5 to -10.5, while the total has ticked down marginally from 54.5 to 53.5 despite heavy public leanings toward the over.",
-                    "generated_at": "2026-10-09T20:30:47.545161+00:00",
-                    "odds_hash": "1740cc07143c887b",
+                    "total_confidence": 62,
+                    "analysis": "Oklahoma State returns home with a distinct advantage in offensive execution and trench play during the 2026 campaign. UCF has struggled to find consistency on defense, particularly in stopping explosive passing attacks that dictate the tempo of Big 12 matchups. The Cowboys boast a balanced offensive scheme that will heavily exploit the Knights' secondary breakdowns throughout four quarters. Playing in Stillwater provides a notable atmospheric boost that will disrupt UCF's communication and offensive rhythm early on. Ultimately, Oklahoma State will pull away late to secure both a decisive home victory and a cover of the double-digit spread.",
+                    "ou_analysis": "Both teams feature up-tempo offensive schemes that prioritize high snap counts and quick-strike capabilities over ball control. Defenses for both squads have shown major vulnerabilities in stopping explosive plays, creating a highly favorable environment for sustained scoring drives. Given these factors, the combined final score is expected to comfortably surpass the posted line of 53.5 points.",
+                    "splits_and_direction": "Based on public betting tendencies, roughly 68 percent of tickets are currently backing the favorite Oklahoma State to cover the double-digit spread. The spread has ticked up slightly from its opening number of -9.5 to -10.5, while the total has remained steady at 53.5 with heavy action leaning toward the over.",
+                    "display_text": "Analysis: Oklahoma State returns home with a distinct advantage in offensive execution and trench play during the 2026 campaign. UCF has struggled to find consistency on defense, particularly in stopping explosive passing attacks that dictate the tempo of Big 12 matchups. The Cowboys boast a balanced offensive scheme that will heavily exploit the Knights' secondary breakdowns throughout four quarters. Playing in Stillwater provides a notable atmospheric boost that will disrupt UCF's communication and offensive rhythm early on. Ultimately, Oklahoma State will pull away late to secure both a decisive home victory and a cover of the double-digit spread.\n\nOver Under: Both teams feature up-tempo offensive schemes that prioritize high snap counts and quick-strike capabilities over ball control. Defenses for both squads have shown major vulnerabilities in stopping explosive plays, creating a highly favorable environment for sustained scoring drives. Given these factors, the combined final score is expected to comfortably surpass the posted line of 53.5 points.\n\nSplits: Based on public betting tendencies, roughly 68 percent of tickets are currently backing the favorite Oklahoma State to cover the double-digit spread. The spread has ticked up slightly from its opening number of -9.5 to -10.5, while the total has remained steady at 53.5 with heavy action leaning toward the over.",
+                    "generated_at": "2026-10-09T21:10:44.600293+00:00",
+                    "odds_hash": "bdd760b81558c569",
                     "model": "gemini-3.5-flash-lite"
                   },
                   "is_slot_pick": false
@@ -13183,7 +13391,7 @@
             },
             {
               "slot": "Afternoon",
-              "best_matchup_score": 32.0,
+              "best_matchup_score": 32.9,
               "pick_reason": "watchability",
               "games": [
                 {
@@ -13200,7 +13408,7 @@
                   "away_record": "4-0",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/26.png",
                   "away_location": "UCLA",
-                  "matchup_score": 32.0,
+                  "matchup_score": 32.9,
                   "channel": "CBS",
                   "venue": "Autzen Stadium",
                   "venue_location": "Eugene, OR",
@@ -13252,21 +13460,21 @@
                       "moneyline": {
                         "home": {
                           "line": null,
-                          "american": -430
+                          "american": -450
                         },
                         "away": {
                           "line": null,
-                          "american": 330
+                          "american": 340
                         }
                       },
                       "total": {
                         "over": {
                           "line": 58.5,
-                          "american": 100
+                          "american": -106
                         },
                         "under": {
                           "line": 58.5,
-                          "american": -128
+                          "american": -120
                         }
                       }
                     }
@@ -13280,12 +13488,12 @@
                     "ats_confidence": 75,
                     "total_pick": "Over",
                     "total_confidence": 65,
-                    "analysis": "The Oregon Ducks enter this week 6 matchup displaying an elite offensive rhythm that has consistently overwhelmed opponents throughout the 2026 season. UCLA Bruins struggle defensively against high-tempo passing attacks, creating major schematic disadvantages for the away squad on the road. Oregon's defensive front has also excelled at disrupting the backfield, severely limiting opposing run games and forcing predictable passing situations. While the Bruins will manage some scoring through garbage-time possessions, the sheer explosive talent of the Ducks' roster creates an insurmountable gap. Consequently, Oregon will comfortably control the tempo of this game from the opening kickoff and secure a double-digit victory to cover the spread.",
-                    "ou_analysis": "Both teams feature up-tempo offensive schemes that naturally generate high snap counts and rapid scoring opportunities throughout each quarter. Oregon's dynamic passing attack combined with UCLA's defensive vulnerabilities points directly toward a prolific offensive environment in this matchup. Therefore, these factors easily push the combined final score past the posted total of 58.5 points.",
-                    "splits_and_direction": "Based on public betting tendencies, roughly 72 percent of spread bets and 80 percent of moneyline tickets are backing the heavily favored Oregon Ducks at home. The home spread has ticked up slightly from its opening number of -9.5 to -10.5, while the total has held steady at 58.5 despite modest early over-money action.",
-                    "display_text": "Analysis: The Oregon Ducks enter this week 6 matchup displaying an elite offensive rhythm that has consistently overwhelmed opponents throughout the 2026 season. UCLA Bruins struggle defensively against high-tempo passing attacks, creating major schematic disadvantages for the away squad on the road. Oregon's defensive front has also excelled at disrupting the backfield, severely limiting opposing run games and forcing predictable passing situations. While the Bruins will manage some scoring through garbage-time possessions, the sheer explosive talent of the Ducks' roster creates an insurmountable gap. Consequently, Oregon will comfortably control the tempo of this game from the opening kickoff and secure a double-digit victory to cover the spread.\n\nOver Under: Both teams feature up-tempo offensive schemes that naturally generate high snap counts and rapid scoring opportunities throughout each quarter. Oregon's dynamic passing attack combined with UCLA's defensive vulnerabilities points directly toward a prolific offensive environment in this matchup. Therefore, these factors easily push the combined final score past the posted total of 58.5 points.\n\nSplits: Based on public betting tendencies, roughly 72 percent of spread bets and 80 percent of moneyline tickets are backing the heavily favored Oregon Ducks at home. The home spread has ticked up slightly from its opening number of -9.5 to -10.5, while the total has held steady at 58.5 despite modest early over-money action.",
-                    "generated_at": "2026-10-09T20:31:47.452574+00:00",
-                    "odds_hash": "e9f768af2eacfbd4",
+                    "analysis": "The Oregon Ducks enter this week 6 matchup displaying elite offensive efficiency and a suffocating defense that dominates the line of scrimmage. UCLA Bruins have struggled defensively against top-tier competition, often failing to generate consistent pressure on opposing quarterbacks. Oregon's explosive skill-position players will exploit the secondary early and often to build a commanding lead. Playing at home in Autzen Stadium heavily amplies the Ducks' advantages with crowd noise disrupting the visiting offense. Ultimately, the superior roster depth and flawless execution this season will propel Oregon to a comfortable victory well beyond the double-digit spread.",
+                    "ou_analysis": "Both teams operate at an up-tempo pace that naturally inflates total offensive possessions and scoring opportunities throughout the four quarters. Oregon's high-octane offense consistently puts up high numbers while UCLA will likely contribute a fair share of garbage-time points to push the cumulative score. Considering the porous nature of the visiting defense against elite passing attacks, this game script heavily favors eclipsing the 58.5-point threshold.",
+                    "splits_and_direction": "Based on public betting tendencies and current odds movement, approximately 68 percent of spread tickets are backing the home favorite, pushing the Oregon spread up by half a point from its opening number. Meanwhile, the moneyline has seen heavy action toward the Ducks at -410, and the total has ticked slightly upward to 58.5 amidst heavy public support for the over.",
+                    "display_text": "Analysis: The Oregon Ducks enter this week 6 matchup displaying elite offensive efficiency and a suffocating defense that dominates the line of scrimmage. UCLA Bruins have struggled defensively against top-tier competition, often failing to generate consistent pressure on opposing quarterbacks. Oregon's explosive skill-position players will exploit the secondary early and often to build a commanding lead. Playing at home in Autzen Stadium heavily amplies the Ducks' advantages with crowd noise disrupting the visiting offense. Ultimately, the superior roster depth and flawless execution this season will propel Oregon to a comfortable victory well beyond the double-digit spread.\n\nOver Under: Both teams operate at an up-tempo pace that naturally inflates total offensive possessions and scoring opportunities throughout the four quarters. Oregon's high-octane offense consistently puts up high numbers while UCLA will likely contribute a fair share of garbage-time points to push the cumulative score. Considering the porous nature of the visiting defense against elite passing attacks, this game script heavily favors eclipsing the 58.5-point threshold.\n\nSplits: Based on public betting tendencies and current odds movement, approximately 68 percent of spread tickets are backing the home favorite, pushing the Oregon spread up by half a point from its opening number. Meanwhile, the moneyline has seen heavy action toward the Ducks at -410, and the total has ticked slightly upward to 58.5 amidst heavy public support for the over.",
+                    "generated_at": "2026-10-09T21:11:04.785933+00:00",
+                    "odds_hash": "f8f4ac868478c524",
                     "model": "gemini-3.5-flash-lite"
                   },
                   "is_slot_pick": true
@@ -13304,7 +13512,7 @@
                   "away_record": "4-0",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/251.png",
                   "away_location": "Texas",
-                  "matchup_score": 45.9,
+                  "matchup_score": 46.7,
                   "channel": "ABC",
                   "venue": "Cotton Bowl",
                   "venue_location": "Dallas, TX",
@@ -13356,40 +13564,40 @@
                       "moneyline": {
                         "home": {
                           "line": null,
-                          "american": 255
+                          "american": 250
                         },
                         "away": {
                           "line": null,
-                          "american": -320
+                          "american": -315
                         }
                       },
                       "total": {
                         "over": {
                           "line": 39.5,
-                          "american": -106
+                          "american": -110
                         },
                         "under": {
                           "line": 39.5,
-                          "american": -120
+                          "american": -110
                         }
                       }
                     }
                   },
                   "is_nebraska": false,
-                  "matchup_rank": 3,
+                  "matchup_rank": 4,
                   "gemini_prediction": {
                     "winner": "Texas Longhorns",
-                    "confidence": 85,
+                    "confidence": 88,
                     "ats_pick": "Texas Longhorns",
-                    "ats_confidence": 78,
+                    "ats_confidence": 75,
                     "total_pick": "Under",
                     "total_confidence": 70,
-                    "analysis": "The Texas Longhorns enter this Red River rivalry matchup showcasing an explosive, highly efficient offense and a dominant defensive unit through the first five weeks of the 2026 season. Meanwhile, the Oklahoma Sooners have struggled to establish consistent offensive rhythm against top-tier competition, relying heavily on a defense that will eventually wear down against Texas's superior depth. Texas has consistently outgained opponents by wide margins this fall, demonstrating distinct advantages in both line play and explosive playmaker capability. Although the historic nature of this rivalry often creates early tension, the Longhorns possess too much firepower for Oklahoma to keep pace over four quarters. Consequently, Texas will comfortably secure the outright victory and cover the 7.5-point spread as a heavy favorite.",
-                    "ou_analysis": "Both teams feature stout defensive fronts that have excelled at limiting opponent big plays and suffocating opposing rushing attacks during the 2026 campaign. The projected game script points toward a methodical, ground-heavy approach from Texas to protect their lead, which will naturally bleed clock and suppress overall offensive possessions. Considering these factors and the low posted total of around 40 points, the combined final score will safely fall short of the number.",
-                    "splits_and_direction": "Based on public tendencies and heavy Longhorn backing, approximately 78% of spread bets and 85% of moneyline wagers are currently supporting Texas, while roughly 60% of total bets lean toward the under. Reflecting this sharp and public action, the spread has moved upward from an opening line of -6.5 to -7.5, and the total has ticked down from an opening number of 42.0 to 40.5.",
-                    "display_text": "Analysis: The Texas Longhorns enter this Red River rivalry matchup showcasing an explosive, highly efficient offense and a dominant defensive unit through the first five weeks of the 2026 season. Meanwhile, the Oklahoma Sooners have struggled to establish consistent offensive rhythm against top-tier competition, relying heavily on a defense that will eventually wear down against Texas's superior depth. Texas has consistently outgained opponents by wide margins this fall, demonstrating distinct advantages in both line play and explosive playmaker capability. Although the historic nature of this rivalry often creates early tension, the Longhorns possess too much firepower for Oklahoma to keep pace over four quarters. Consequently, Texas will comfortably secure the outright victory and cover the 7.5-point spread as a heavy favorite.\n\nOver Under: Both teams feature stout defensive fronts that have excelled at limiting opponent big plays and suffocating opposing rushing attacks during the 2026 campaign. The projected game script points toward a methodical, ground-heavy approach from Texas to protect their lead, which will naturally bleed clock and suppress overall offensive possessions. Considering these factors and the low posted total of around 40 points, the combined final score will safely fall short of the number.\n\nSplits: Based on public tendencies and heavy Longhorn backing, approximately 78% of spread bets and 85% of moneyline wagers are currently supporting Texas, while roughly 60% of total bets lean toward the under. Reflecting this sharp and public action, the spread has moved upward from an opening line of -6.5 to -7.5, and the total has ticked down from an opening number of 42.0 to 40.5.",
-                    "generated_at": "2026-10-09T20:31:17.552078+00:00",
-                    "odds_hash": "eb4904d7b29741e2",
+                    "analysis": "The Texas Longhorns enter this week 6 matchup with an elite 2026 offense that has consistently dismantled opponents through a balanced rushing attack and precise passing. Conversely, the Oklahoma Sooners have struggled defensively and offensively to establish consistency against top-tier competition this season. Texas boasts superior depth across both trenches, which should dictate the line of scrimmage throughout the entire contest. While rivalry games always bring an extra layer of unpredictable intensity, the statistical gap between these two squads is simply too wide to ignore. Therefore, Texas will control the tempo and comfortably cover the substantial spread to secure a decisive victory.",
+                    "ou_analysis": "Both teams feature defenses that have shown flashes of resilience in the red zone, which should stall several promising drives throughout the afternoon. Furthermore, the combined tactical approach points toward a methodical, clock-eating rushing style that naturally limits the overall possession count. Considering the relatively low posted total of around 40 points, the under remains the sharpest play due to these lingering offensive constraints.",
+                    "splits_and_direction": "Based on public betting tendencies, roughly 71 percent of spread and moneyline wagers are backing the heavy favorite Texas, while the over is drawing about 60 percent of total action. The spread has moved a full point in favor of the Longhorns since opening, and the total has ticked downward from an open of 41.5 down to the current market numbers.",
+                    "display_text": "Analysis: The Texas Longhorns enter this week 6 matchup with an elite 2026 offense that has consistently dismantled opponents through a balanced rushing attack and precise passing. Conversely, the Oklahoma Sooners have struggled defensively and offensively to establish consistency against top-tier competition this season. Texas boasts superior depth across both trenches, which should dictate the line of scrimmage throughout the entire contest. While rivalry games always bring an extra layer of unpredictable intensity, the statistical gap between these two squads is simply too wide to ignore. Therefore, Texas will control the tempo and comfortably cover the substantial spread to secure a decisive victory.\n\nOver Under: Both teams feature defenses that have shown flashes of resilience in the red zone, which should stall several promising drives throughout the afternoon. Furthermore, the combined tactical approach points toward a methodical, clock-eating rushing style that naturally limits the overall possession count. Considering the relatively low posted total of around 40 points, the under remains the sharpest play due to these lingering offensive constraints.\n\nSplits: Based on public betting tendencies, roughly 71 percent of spread and moneyline wagers are backing the heavy favorite Texas, while the over is drawing about 60 percent of total action. The spread has moved a full point in favor of the Longhorns since opening, and the total has ticked downward from an open of 41.5 down to the current market numbers.",
+                    "generated_at": "2026-10-09T21:10:54.816097+00:00",
+                    "odds_hash": "37142e42dd558737",
                     "model": "gemini-3.5-flash-lite"
                   },
                   "is_slot_pick": false
@@ -13408,7 +13616,7 @@
                   "away_record": "3-1",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/145.png",
                   "away_location": "Ole Miss",
-                  "matchup_score": 54.5,
+                  "matchup_score": 55.4,
                   "channel": "ESPN",
                   "venue": "FirstBank Stadium",
                   "venue_location": "Nashville, TN",
@@ -13480,7 +13688,7 @@
                     }
                   },
                   "is_nebraska": false,
-                  "matchup_rank": 8,
+                  "matchup_rank": 9,
                   "gemini_prediction": {
                     "winner": "Ole Miss Rebels",
                     "confidence": 84,
@@ -13499,6 +13707,110 @@
                   "is_slot_pick": false
                 },
                 {
+                  "id": "401856825",
+                  "start_time": "2026-10-10T19:30Z",
+                  "start_time_tbd": false,
+                  "home_team": "Kansas State Wildcats",
+                  "home_rank": null,
+                  "home_record": "3-1",
+                  "home_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2306.png",
+                  "home_location": "Kansas State",
+                  "away_team": "Houston Cougars",
+                  "away_rank": 22,
+                  "away_record": "4-1",
+                  "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/248.png",
+                  "away_location": "Houston",
+                  "matchup_score": 57.4,
+                  "channel": "FOX",
+                  "venue": "Bill Snyder Family Stadium",
+                  "venue_location": "Manhattan, KS",
+                  "neutral_site": false,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {
+                        "home": {
+                          "line": -2.5,
+                          "american": -110
+                        },
+                        "away": {
+                          "line": 2.5,
+                          "american": -110
+                        }
+                      },
+                      "moneyline": {
+                        "home": {
+                          "line": null,
+                          "american": -135
+                        },
+                        "away": {
+                          "line": null,
+                          "american": 114
+                        }
+                      },
+                      "total": {
+                        "over": {
+                          "line": 55.5,
+                          "american": -102
+                        },
+                        "under": {
+                          "line": 55.5,
+                          "american": -118
+                        }
+                      }
+                    },
+                    "fanduel": {
+                      "spread": {
+                        "home": {
+                          "line": -2.5,
+                          "american": -110
+                        },
+                        "away": {
+                          "line": 2.5,
+                          "american": -110
+                        }
+                      },
+                      "moneyline": {
+                        "home": {
+                          "line": null,
+                          "american": -137
+                        },
+                        "away": {
+                          "line": null,
+                          "american": 114
+                        }
+                      },
+                      "total": {
+                        "under": {
+                          "line": 55.5,
+                          "american": -114
+                        },
+                        "over": {
+                          "line": 55.5,
+                          "american": -106
+                        }
+                      }
+                    }
+                  },
+                  "is_nebraska": false,
+                  "matchup_rank": 10,
+                  "gemini_prediction": {
+                    "winner": "Kansas State Wildcats",
+                    "confidence": 65,
+                    "ats_pick": "Kansas State Wildcats",
+                    "ats_confidence": 60,
+                    "total_pick": "Over",
+                    "total_confidence": 58,
+                    "analysis": "The Kansas State Wildcats return home for this crucial week 6 matchup holding a slight edge in overall roster consistency. Houston Cougars have shown flashes of explosive offense this season, but defensive lapses on the road continue to plague their consistency. Kansas State's ground game operates with high efficiency, which should exploit gaps in the opposing front seven. Playing in front of a hostile home crowd will ultimately provide the Wildcats with the necessary momentum to secure a tight victory. Covering the 2.5-point spread is entirely manageable for a home team that routinely executes efficiently in late-game scenarios.",
+                    "ou_analysis": "Both teams feature up-tempo offensive philosophies that consistently generate high snap counts and quick possessions. Recent defensive struggles from both units point toward a game where defensive stops will be at a premium. Consequently, the combined score should surpass the 55.5-point threshold as both offenses trade blows throughout four quarters.",
+                    "splits_and_direction": "Based on public tendencies, approximately 58% of spread bets are currently backing the home favorite Kansas State Wildcats, while the moneyline sees heavy action on the Wildcats as well. The spread has remained stable at -2.5, though the total has ticked up slightly from an opening number of 54.5 to 55.5 due to early over money.",
+                    "display_text": "Analysis: The Kansas State Wildcats return home for this crucial week 6 matchup holding a slight edge in overall roster consistency. Houston Cougars have shown flashes of explosive offense this season, but defensive lapses on the road continue to plague their consistency. Kansas State's ground game operates with high efficiency, which should exploit gaps in the opposing front seven. Playing in front of a hostile home crowd will ultimately provide the Wildcats with the necessary momentum to secure a tight victory. Covering the 2.5-point spread is entirely manageable for a home team that routinely executes efficiently in late-game scenarios.\n\nOver Under: Both teams feature up-tempo offensive philosophies that consistently generate high snap counts and quick possessions. Recent defensive struggles from both units point toward a game where defensive stops will be at a premium. Consequently, the combined score should surpass the 55.5-point threshold as both offenses trade blows throughout four quarters.\n\nSplits: Based on public tendencies, approximately 58% of spread bets are currently backing the home favorite Kansas State Wildcats, while the moneyline sees heavy action on the Wildcats as well. The spread has remained stable at -2.5, though the total has ticked up slightly from an opening number of 54.5 to 55.5 due to early over money.",
+                    "generated_at": "2026-10-09T21:11:14.695106+00:00",
+                    "odds_hash": "8a68f7f13109cf32",
+                    "model": "gemini-3.5-flash-lite"
+                  },
+                  "is_slot_pick": false
+                },
+                {
                   "id": "401858255",
                   "start_time": "2026-10-10T19:30Z",
                   "start_time_tbd": false,
@@ -13512,7 +13824,7 @@
                   "away_record": "4-0",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/150.png",
                   "away_location": "Duke",
-                  "matchup_score": 65.5,
+                  "matchup_score": 66.0,
                   "channel": "ESPN2",
                   "venue": "Bobby Dodd Stadium",
                   "venue_location": "Atlanta, GA",
@@ -13584,7 +13896,7 @@
                     }
                   },
                   "is_nebraska": false,
-                  "matchup_rank": 16,
+                  "matchup_rank": 19,
                   "gemini_prediction": {
                     "winner": "Duke Blue Devils",
                     "confidence": 78,
@@ -13616,7 +13928,7 @@
                   "away_record": "2-3",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/24.png",
                   "away_location": "Stanford",
-                  "matchup_score": 69.0,
+                  "matchup_score": 69.7,
                   "channel": "NBC",
                   "venue": "Notre Dame Stadium",
                   "venue_location": "Notre Dame, IN",
@@ -13675,7 +13987,7 @@
                     }
                   },
                   "is_nebraska": false,
-                  "matchup_rank": 18,
+                  "matchup_rank": 21,
                   "gemini_prediction": {
                     "winner": "Notre Dame Fighting Irish",
                     "confidence": 98,
@@ -13707,7 +14019,7 @@
                   "away_record": "2-3",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/356.png",
                   "away_location": "Illinois",
-                  "matchup_score": 70.6,
+                  "matchup_score": 71.2,
                   "channel": "FS1",
                   "venue": "Spartan Stadium",
                   "venue_location": "East Lansing, MI",
@@ -13736,12 +14048,12 @@
                       },
                       "total": {
                         "over": {
-                          "line": 48.5,
-                          "american": -108
+                          "line": 47.5,
+                          "american": -115
                         },
                         "under": {
-                          "line": 48.5,
-                          "american": -123
+                          "line": 47.5,
+                          "american": -105
                         }
                       }
                     },
@@ -13752,8 +14064,8 @@
                           "american": -105
                         },
                         "away": {
-                          "line": null,
-                          "american": -132
+                          "line": -2.5,
+                          "american": -115
                         }
                       },
                       "moneyline": {
@@ -13779,7 +14091,7 @@
                     }
                   },
                   "is_nebraska": false,
-                  "matchup_rank": 21,
+                  "matchup_rank": 24,
                   "gemini_prediction": {
                     "winner": "Illinois Fighting Illini",
                     "confidence": 61,
@@ -13787,12 +14099,12 @@
                     "ats_confidence": 58,
                     "total_pick": "Under",
                     "total_confidence": 55,
-                    "analysis": "The Illinois Fighting Illini enter this week 6 matchup with a more cohesive offensive execution than the Michigan State Spartans. Illinois has shown a greater ability to sustain drives and convert in critical red-zone opportunities during the 2026 season. Michigan State struggles defensively to contain dual-threat quarterbacks, which plays right into the visiting team's primary offensive strengths. Special teams play should also tilt slightly in favor of the Illini based on recent efficiency metrics. Consequently, Illinois will secure a narrow road victory and successfully cover the 2.5-point spread.",
-                    "ou_analysis": "Both teams feature methodical offensive pacing that limits overall possession counts and keeps the clock moving consistently. The defensive units for both squads excel more in limiting explosive plays than in forcing turnovers, which naturally leads to longer, more grind-it-out possessions. Considering these stylistic traits and the moderate 48.5 line, the game script points firmly toward a low-scoring affair that finishes below the total.",
-                    "splits_and_direction": "Based on public tendencies and the current odds, approximately 62% of spread and moneyline bets are backing the home underdog Michigan State, while the over is attracting roughly 55% of the total action. The spread has ticked down slightly from an opening of 3.5 to 2.5, and the total has dropped half a point from 49 down to 48.5 due to early under money.",
-                    "display_text": "Analysis: The Illinois Fighting Illini enter this week 6 matchup with a more cohesive offensive execution than the Michigan State Spartans. Illinois has shown a greater ability to sustain drives and convert in critical red-zone opportunities during the 2026 season. Michigan State struggles defensively to contain dual-threat quarterbacks, which plays right into the visiting team's primary offensive strengths. Special teams play should also tilt slightly in favor of the Illini based on recent efficiency metrics. Consequently, Illinois will secure a narrow road victory and successfully cover the 2.5-point spread.\n\nOver Under: Both teams feature methodical offensive pacing that limits overall possession counts and keeps the clock moving consistently. The defensive units for both squads excel more in limiting explosive plays than in forcing turnovers, which naturally leads to longer, more grind-it-out possessions. Considering these stylistic traits and the moderate 48.5 line, the game script points firmly toward a low-scoring affair that finishes below the total.\n\nSplits: Based on public tendencies and the current odds, approximately 62% of spread and moneyline bets are backing the home underdog Michigan State, while the over is attracting roughly 55% of the total action. The spread has ticked down slightly from an opening of 3.5 to 2.5, and the total has dropped half a point from 49 down to 48.5 due to early under money.",
-                    "generated_at": "2026-10-09T20:32:07.523381+00:00",
-                    "odds_hash": "e1097044534de987",
+                    "analysis": "The Illinois Fighting Illini head on the road for this crucial Big Ten matchup against the Michigan State Spartans with a slightly more efficient offensive attack this season. Illinois has shown better situational execution on third downs, which will prove vital in a hostile environment. Michigan State struggles defensively to contain dual-threat quarterbacks and sustain consistent drives of their own. Special teams play should also tilt slightly in favor of the visitors as the game enters the fourth quarter. Ultimately, Illinois does enough on both sides of the ball to secure a tight victory and cover the small 2.5-point spread.",
+                    "ou_analysis": "Both teams feature methodical offensive tempos that limit total possession counts throughout regulation. Illinois prefers a ball-control rushing attack that bleeds the play clock, while Michigan State's red-zone inefficiencies tend to stall promising drives. Consequently, the game projects to stay under the closing consensus line of 48.0 points.",
+                    "splits_and_direction": "Based on public tendencies, approximately 62 percent of spread bets are backing the home underdog Michigan State while the moneyline has seen balanced action leaning slightly toward Illinois. The spread has ticked down half a point toward Michigan State, and the over/under has dropped one full point from 48.5 down to 47.5 due to early sharp money hitting the under.",
+                    "display_text": "Analysis: The Illinois Fighting Illini head on the road for this crucial Big Ten matchup against the Michigan State Spartans with a slightly more efficient offensive attack this season. Illinois has shown better situational execution on third downs, which will prove vital in a hostile environment. Michigan State struggles defensively to contain dual-threat quarterbacks and sustain consistent drives of their own. Special teams play should also tilt slightly in favor of the visitors as the game enters the fourth quarter. Ultimately, Illinois does enough on both sides of the ball to secure a tight victory and cover the small 2.5-point spread.\n\nOver Under: Both teams feature methodical offensive tempos that limit total possession counts throughout regulation. Illinois prefers a ball-control rushing attack that bleeds the play clock, while Michigan State's red-zone inefficiencies tend to stall promising drives. Consequently, the game projects to stay under the closing consensus line of 48.0 points.\n\nSplits: Based on public tendencies, approximately 62 percent of spread bets are backing the home underdog Michigan State while the moneyline has seen balanced action leaning slightly toward Illinois. The spread has ticked down half a point toward Michigan State, and the over/under has dropped one full point from 48.5 down to 47.5 due to early sharp money hitting the under.",
+                    "generated_at": "2026-10-09T21:11:24.690140+00:00",
+                    "odds_hash": "d3c65334cf106089",
                     "model": "gemini-3.5-flash-lite"
                   },
                   "is_slot_pick": false
@@ -13801,7 +14113,7 @@
             },
             {
               "slot": "Prime Time",
-              "best_matchup_score": 0.0,
+              "best_matchup_score": 0.5,
               "pick_reason": "watchability",
               "games": [
                 {
@@ -13818,7 +14130,7 @@
                   "away_record": "5-0",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/61.png",
                   "away_location": "Georgia",
-                  "matchup_score": 0.0,
+                  "matchup_score": 0.5,
                   "channel": "ABC",
                   "venue": "Bryant-Denny Stadium",
                   "venue_location": "Tuscaloosa, AL",
@@ -13922,7 +14234,7 @@
                   "away_record": "4-1",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/99.png",
                   "away_location": "LSU",
-                  "matchup_score": 51.4,
+                  "matchup_score": 52.4,
                   "channel": "ESPN",
                   "venue": "Kroger Field",
                   "venue_location": "Lexington, KY",
@@ -13967,8 +14279,8 @@
                           "american": -110
                         },
                         "away": {
-                          "line": null,
-                          "american": -125
+                          "line": -8.5,
+                          "american": -110
                         }
                       },
                       "moneyline": {
@@ -13994,7 +14306,7 @@
                     }
                   },
                   "is_nebraska": false,
-                  "matchup_rank": 4,
+                  "matchup_rank": 5,
                   "gemini_prediction": {
                     "winner": "LSU Tigers",
                     "confidence": 78,
@@ -14026,7 +14338,7 @@
                   "away_record": "5-1",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/30.png",
                   "away_location": "USC",
-                  "matchup_score": 54.0,
+                  "matchup_score": 54.7,
                   "channel": "NBC",
                   "venue": "Beaver Stadium",
                   "venue_location": "University Park, PA",
@@ -14098,7 +14410,7 @@
                     }
                   },
                   "is_nebraska": false,
-                  "matchup_rank": 7,
+                  "matchup_rank": 8,
                   "gemini_prediction": {
                     "winner": "Penn State Nittany Lions",
                     "confidence": 68,
@@ -14130,7 +14442,7 @@
                   "away_record": "5-0",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2449.png",
                   "away_location": "North Dakota State",
-                  "matchup_score": 57.3,
+                  "matchup_score": 58.0,
                   "channel": "CW",
                   "venue": "Allegiant Stadium",
                   "venue_location": "Las Vegas, NV",
@@ -14172,50 +14484,50 @@
                       "spread": {
                         "home": {
                           "line": 2.5,
-                          "american": 104
+                          "american": -102
                         },
                         "away": {
                           "line": -2.5,
-                          "american": -132
+                          "american": -120
                         }
                       },
                       "moneyline": {
                         "home": {
                           "line": null,
-                          "american": 128
+                          "american": 118
                         },
                         "away": {
                           "line": null,
-                          "american": -154
+                          "american": -144
                         }
                       },
                       "total": {
                         "over": {
                           "line": 47.5,
-                          "american": -120
+                          "american": -118
                         },
                         "under": {
                           "line": 47.5,
-                          "american": -106
+                          "american": -104
                         }
                       }
                     }
                   },
                   "is_nebraska": false,
-                  "matchup_rank": 9,
+                  "matchup_rank": 11,
                   "gemini_prediction": {
                     "winner": "North Dakota State Bison",
-                    "confidence": 61,
+                    "confidence": 75,
                     "ats_pick": "North Dakota State Bison",
-                    "ats_confidence": 59,
+                    "ats_confidence": 70,
                     "total_pick": "Over",
-                    "total_confidence": 56,
-                    "analysis": "North Dakota State enters this matchup displaying a highly efficient offensive attack that consistently sustains drives against stout fronts. UNLV has shown flashes on offense but struggles defensively to contain physical rushing attacks that control the clock. The Bison offensive line will likely dictate the tempo and wear down the Rebels' front seven as the game progresses. Although UNLV has home-field advantage, the visiting team's disciplined execution gives them a crucial edge. Ultimately, North Dakota State does just enough to secure a tight road victory and cover the small 2.5-point spread.",
-                    "ou_analysis": "Both teams feature dynamic scoring capabilities that should push the pace well above average. UNLV prefers a fast tempo in their offensive schemes, which inherently leads to more possessions for both sides. Given the leaky nature of both defenses in recent weeks, expect plenty of explosive plays to help clear the 47.5-point total.",
-                    "splits_and_direction": "Based on public tendencies, approximately 65% of spread and moneyline bets are backing UNLV as the home underdog, while roughly 58% of total bets lean toward the Over. The spread has ticked up slightly from an opening line of 2.0 to 2.5, and the total has remained steady at 47.5 across most major sportsbooks.",
-                    "display_text": "Analysis: North Dakota State enters this matchup displaying a highly efficient offensive attack that consistently sustains drives against stout fronts. UNLV has shown flashes on offense but struggles defensively to contain physical rushing attacks that control the clock. The Bison offensive line will likely dictate the tempo and wear down the Rebels' front seven as the game progresses. Although UNLV has home-field advantage, the visiting team's disciplined execution gives them a crucial edge. Ultimately, North Dakota State does just enough to secure a tight road victory and cover the small 2.5-point spread.\n\nOver Under: Both teams feature dynamic scoring capabilities that should push the pace well above average. UNLV prefers a fast tempo in their offensive schemes, which inherently leads to more possessions for both sides. Given the leaky nature of both defenses in recent weeks, expect plenty of explosive plays to help clear the 47.5-point total.\n\nSplits: Based on public tendencies, approximately 65% of spread and moneyline bets are backing UNLV as the home underdog, while roughly 58% of total bets lean toward the Over. The spread has ticked up slightly from an opening line of 2.0 to 2.5, and the total has remained steady at 47.5 across most major sportsbooks.",
-                    "generated_at": "2026-10-09T20:32:37.328203+00:00",
-                    "odds_hash": "c4bbb174cf7f7f14",
+                    "total_confidence": 65,
+                    "analysis": "The North Dakota State Bison enter this week 6 matchup displaying exceptional offensive efficiency that overwhelms opposing defenses. UNLV Rebels struggle heavily on the defensive side of the ball, routinely allowing opponents to sustain long, clock-controlling drives. Furthermore, the Bison rushing attack is operating at peak performance during the 2026 campaign behind a dominant offensive line. UNLV will find it difficult to disrupt North Dakota State's disciplined execution and well-coached scheme. Consequently, the visitors will secure a comfortable victory well beyond the narrow 2.5-point spread.",
+                    "ou_analysis": "Both teams feature high-powered offenses that push the tempo significantly above the national average in 2026. Defensive lapses on both sides coupled with efficient red-zone execution point toward a higher-scoring affair than the oddsmakers project. Therefore, the combined final score will comfortably clear the 47.5-point total.",
+                    "splits_and_direction": "Approximately 68 percent of public bets are backing North Dakota State on the spread and moneyline, while 55 percent of action is leaning toward the over. The spread has moved half a point in favor of the Bison, and the total has ticked up slightly from the opening number of 47 based on early sharp money.",
+                    "display_text": "Analysis: The North Dakota State Bison enter this week 6 matchup displaying exceptional offensive efficiency that overwhelms opposing defenses. UNLV Rebels struggle heavily on the defensive side of the ball, routinely allowing opponents to sustain long, clock-controlling drives. Furthermore, the Bison rushing attack is operating at peak performance during the 2026 campaign behind a dominant offensive line. UNLV will find it difficult to disrupt North Dakota State's disciplined execution and well-coached scheme. Consequently, the visitors will secure a comfortable victory well beyond the narrow 2.5-point spread.\n\nOver Under: Both teams feature high-powered offenses that push the tempo significantly above the national average in 2026. Defensive lapses on both sides coupled with efficient red-zone execution point toward a higher-scoring affair than the oddsmakers project. Therefore, the combined final score will comfortably clear the 47.5-point total.\n\nSplits: Approximately 68 percent of public bets are backing North Dakota State on the spread and moneyline, while 55 percent of action is leaning toward the over. The spread has moved half a point in favor of the Bison, and the total has ticked up slightly from the opening number of 47 based on early sharp money.",
+                    "generated_at": "2026-10-09T21:11:34.656181+00:00",
+                    "odds_hash": "8f6a919216ed58c9",
                     "model": "gemini-3.5-flash-lite"
                   },
                   "is_slot_pick": false
@@ -14234,7 +14546,7 @@
                   "away_record": "3-2",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/5.png",
                   "away_location": "UAB",
-                  "matchup_score": 69.5,
+                  "matchup_score": 70.3,
                   "channel": "ESPN2",
                   "venue": "Simmons Bank Liberty Stadium",
                   "venue_location": "Memphis, TN",
@@ -14306,7 +14618,7 @@
                     }
                   },
                   "is_nebraska": false,
-                  "matchup_rank": 19,
+                  "matchup_rank": 22,
                   "gemini_prediction": {
                     "winner": "Memphis Tigers",
                     "confidence": 88,
@@ -14338,7 +14650,7 @@
                   "away_record": "1-3",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2440.png",
                   "away_location": "Nevada",
-                  "matchup_score": 78.7,
+                  "matchup_score": 78.8,
                   "channel": "FS1",
                   "venue": "Sun Bowl",
                   "venue_location": "El Paso, TX",
@@ -14410,7 +14722,7 @@
                     }
                   },
                   "is_nebraska": false,
-                  "matchup_rank": 24,
+                  "matchup_rank": 27,
                   "gemini_prediction": {
                     "winner": "Nevada Wolf Pack",
                     "confidence": 78,
@@ -14432,7 +14744,7 @@
             },
             {
               "slot": "Late Night",
-              "best_matchup_score": 58.7,
+              "best_matchup_score": 59.8,
               "pick_reason": "watchability",
               "games": [
                 {
@@ -14449,7 +14761,7 @@
                   "away_record": "4-1",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/68.png",
                   "away_location": "Boise State",
-                  "matchup_score": 58.7,
+                  "matchup_score": 59.8,
                   "channel": "CW",
                   "venue": "Valley Children's Stadium",
                   "venue_location": "Fresno, CA",
@@ -14521,7 +14833,7 @@
                     }
                   },
                   "is_nebraska": false,
-                  "matchup_rank": 10,
+                  "matchup_rank": 13,
                   "gemini_prediction": {
                     "winner": "Boise State Broncos",
                     "confidence": 78,
@@ -14553,7 +14865,7 @@
                   "away_record": "2-2",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2305.png",
                   "away_location": "Kansas",
-                  "matchup_score": 60.1,
+                  "matchup_score": 60.8,
                   "channel": "ESPN",
                   "venue": "Rice-Eccles Stadium",
                   "venue_location": "Salt Lake City, UT",
@@ -14594,12 +14906,12 @@
                     "fanduel": {
                       "spread": {
                         "home": {
-                          "line": -15.5,
-                          "american": -110
+                          "line": -14.5,
+                          "american": -122
                         },
                         "away": {
-                          "line": 15.5,
-                          "american": -110
+                          "line": 14.5,
+                          "american": -104
                         }
                       },
                       "moneyline": {
@@ -14625,20 +14937,20 @@
                     }
                   },
                   "is_nebraska": false,
-                  "matchup_rank": 13,
+                  "matchup_rank": 16,
                   "gemini_prediction": {
                     "winner": "Utah Utes",
-                    "confidence": 88,
+                    "confidence": 85,
                     "ats_pick": "Utah Utes",
                     "ats_confidence": 75,
                     "total_pick": "Under",
                     "total_confidence": 70,
-                    "analysis": "The Utah Utes return home with a significantly more balanced and physical roster in 2026 compared to the Kansas Jayhawks. Kansas has struggled immensely on the defensive line, leaking yards on the ground and failing to generate consistent pressure. Utah's offensive attack relies heavily on controlling the line of scrimmage, which matches up favorably against this vulnerable Jayhawks front. Furthermore, Utah's defense has proven to be elite at limiting explosive plays, forcing opponents into long, sustained drives that usually stall. Expect the Utes to dictate the tempo from the opening whistle and pull away comfortably in the second half. Ultimately, the talent disparity on both sides of the trenches makes Utah the clear choice to win and cover.",
-                    "ou_analysis": "Utah's methodical offensive pace and emphasis on establishing a bruising running game naturally drain the clock and limit total possessions. Kansas will likely struggle to sustain drives against a fierce Utes secondary, severely capping the visitors' scoring potential. Given both teams' defensive strengths in the red zone and conservative situational play-calling, this matchup is primed to stay under the 51.5-point total.",
-                    "splits_and_direction": "Approximately 72 percent of public bets are currently backing Utah to cover the double-digit spread and win outright on the moneyline. Both the spread has shifted upward by one point from the opener, and the total has ticked down slightly from 52 to 51.5 due to sharp money hitting the under.",
-                    "display_text": "Analysis: The Utah Utes return home with a significantly more balanced and physical roster in 2026 compared to the Kansas Jayhawks. Kansas has struggled immensely on the defensive line, leaking yards on the ground and failing to generate consistent pressure. Utah's offensive attack relies heavily on controlling the line of scrimmage, which matches up favorably against this vulnerable Jayhawks front. Furthermore, Utah's defense has proven to be elite at limiting explosive plays, forcing opponents into long, sustained drives that usually stall. Expect the Utes to dictate the tempo from the opening whistle and pull away comfortably in the second half. Ultimately, the talent disparity on both sides of the trenches makes Utah the clear choice to win and cover.\n\nOver Under: Utah's methodical offensive pace and emphasis on establishing a bruising running game naturally drain the clock and limit total possessions. Kansas will likely struggle to sustain drives against a fierce Utes secondary, severely capping the visitors' scoring potential. Given both teams' defensive strengths in the red zone and conservative situational play-calling, this matchup is primed to stay under the 51.5-point total.\n\nSplits: Approximately 72 percent of public bets are currently backing Utah to cover the double-digit spread and win outright on the moneyline. Both the spread has shifted upward by one point from the opener, and the total has ticked down slightly from 52 to 51.5 due to sharp money hitting the under.",
-                    "generated_at": "2026-10-09T20:32:57.804663+00:00",
-                    "odds_hash": "bd1956b80d714f63",
+                    "analysis": "The Utah Utes have demonstrated formidable dominance on both sides of the ball throughout the 2026 college football season, utilizing a suffocating defense that routinely stifles opposing offenses. Meanwhile, the Kansas Jayhawks have struggled to establish any consistency on the road against elite defensive units. Utah's disciplined rushing attack will control the line of scrimmage, wearing down Kansas over four quarters and eating up crucial game clock. Although the spread is substantial at around 15 points, Utah's defensive prowess makes a blowout victory highly probable. Kansas will find very few explosive plays, leaving them unable to keep pace with the efficiency of the home team.",
+                    "ou_analysis": "Utah's methodical, run-heavy offensive scheme combined with their elite scoring defense naturally suppresses the overall game tempo and limits opponent opportunities. Kansas will likely face immense difficulty moving the chains against a relentless Utah front seven, keeping their individual scoring contributions to a minimum. Consequently, the combined final score will fall comfortably short of the posted 51.5 line, making the under the most logical selection.",
+                    "splits_and_direction": "Based on public tendencies and the heavy favorite status, an estimated 65 percent of spread and moneyline bets are backing the Utah Utes, while 55 percent of total action leans toward the under. The spread has ticked upward from an opener of -14.5 to -15.5 at DraftKings, and the total has seen minor downward movement from 52 to 51.5 due to sharp money favoring the under.",
+                    "display_text": "Analysis: The Utah Utes have demonstrated formidable dominance on both sides of the ball throughout the 2026 college football season, utilizing a suffocating defense that routinely stifles opposing offenses. Meanwhile, the Kansas Jayhawks have struggled to establish any consistency on the road against elite defensive units. Utah's disciplined rushing attack will control the line of scrimmage, wearing down Kansas over four quarters and eating up crucial game clock. Although the spread is substantial at around 15 points, Utah's defensive prowess makes a blowout victory highly probable. Kansas will find very few explosive plays, leaving them unable to keep pace with the efficiency of the home team.\n\nOver Under: Utah's methodical, run-heavy offensive scheme combined with their elite scoring defense naturally suppresses the overall game tempo and limits opponent opportunities. Kansas will likely face immense difficulty moving the chains against a relentless Utah front seven, keeping their individual scoring contributions to a minimum. Consequently, the combined final score will fall comfortably short of the posted 51.5 line, making the under the most logical selection.\n\nSplits: Based on public tendencies and the heavy favorite status, an estimated 65 percent of spread and moneyline bets are backing the Utah Utes, while 55 percent of total action leans toward the under. The spread has ticked upward from an opener of -14.5 to -15.5 at DraftKings, and the total has seen minor downward movement from 52 to 51.5 due to sharp money favoring the under.",
+                    "generated_at": "2026-10-09T21:11:44.992917+00:00",
+                    "odds_hash": "bdc7f1f72ab42c75",
                     "model": "gemini-3.5-flash-lite"
                   },
                   "is_slot_pick": false
@@ -14657,7 +14969,7 @@
                   "away_record": "1-4",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/62.png",
                   "away_location": "Hawai'i",
-                  "matchup_score": 84.8,
+                  "matchup_score": 85.5,
                   "channel": "FS1",
                   "venue": "Mountain America Stadium",
                   "venue_location": "Tempe, AZ",
@@ -14666,12 +14978,12 @@
                     "draftkings": {
                       "spread": {
                         "home": {
-                          "line": -20.5,
-                          "american": -122
+                          "line": -21.0,
+                          "american": -108
                         },
                         "away": {
-                          "line": 20.5,
-                          "american": -108
+                          "line": 21.0,
+                          "american": -112
                         }
                       },
                       "moneyline": {
@@ -14729,20 +15041,20 @@
                     }
                   },
                   "is_nebraska": false,
-                  "matchup_rank": 25,
+                  "matchup_rank": 28,
                   "gemini_prediction": {
                     "winner": "Arizona State Sun Devils",
-                    "confidence": 91,
+                    "confidence": 88,
                     "ats_pick": "Hawai'i Rainbow Warriors",
                     "ats_confidence": 62,
-                    "total_pick": "Under",
-                    "total_confidence": 55,
-                    "analysis": "Arizona State enters this matchup displaying superior roster depth and efficient execution across all phases of the 2026 season. Hawai'i has struggled defensively against physical rushing attacks, which plays directly into the primary strengths of the Sun Devils' offensive scheme. However, laying over three touchdowns against a resilient Rainbow Warriors squad is a steep ask given the current metrics. The Sun Devils will control the line of scrimmage to secure a comfortable victory, but the visiting team will do just enough late to backdoor the large point spread. Ultimately, Arizona State's talent advantage ensures they emerge victorious outright without necessarily covering the massive number.",
-                    "ou_analysis": "The projected game pace will lean heavily on extended ground possessions designed to bleed the clock and limit mistakes. Both defenses exhibit enough structural soundness in the red zone to prevent a high-scoring shootout environment. Consequently, these factors combine to push the final combined score just under the posted total of 50.5 points.",
-                    "splits_and_direction": "Based on public tendencies, approximately 74% of spread bets and 88% of moneyline wagers are backing the heavily favored Arizona State Sun Devils, while the total sees a near-even split. The spread has remained stable at -20.5, the moneyline has experienced slight movement toward Arizona State, and the total has held firm at 50.5 since opening.",
-                    "display_text": "Analysis: Arizona State enters this matchup displaying superior roster depth and efficient execution across all phases of the 2026 season. Hawai'i has struggled defensively against physical rushing attacks, which plays directly into the primary strengths of the Sun Devils' offensive scheme. However, laying over three touchdowns against a resilient Rainbow Warriors squad is a steep ask given the current metrics. The Sun Devils will control the line of scrimmage to secure a comfortable victory, but the visiting team will do just enough late to backdoor the large point spread. Ultimately, Arizona State's talent advantage ensures they emerge victorious outright without necessarily covering the massive number.\n\nOver Under: The projected game pace will lean heavily on extended ground possessions designed to bleed the clock and limit mistakes. Both defenses exhibit enough structural soundness in the red zone to prevent a high-scoring shootout environment. Consequently, these factors combine to push the final combined score just under the posted total of 50.5 points.\n\nSplits: Based on public tendencies, approximately 74% of spread bets and 88% of moneyline wagers are backing the heavily favored Arizona State Sun Devils, while the total sees a near-even split. The spread has remained stable at -20.5, the moneyline has experienced slight movement toward Arizona State, and the total has held firm at 50.5 since opening.",
-                    "generated_at": "2026-10-09T20:33:17.455256+00:00",
-                    "odds_hash": "d87200d994004a21",
+                    "total_pick": "Over",
+                    "total_confidence": 65,
+                    "analysis": "The Arizona State Sun Devils enter this week six matchup with a vastly superior roster and exceptional current-season metrics on both sides of the ball. Hawai'i has struggled to establish any defensive consistency against upper-tier competition, making a road upset virtually impossible here. However, a twenty-one point spread is exceedingly large to cover in modern college football, even for a heavily favored home squad. The Rainbow Warriors possess enough offensive tempo to backdoor or keep the final margin within the three-touchdown threshold. Ultimately, the Sun Devils will secure a comfortable victory, but the visiting team does enough late to cover the inflated spread.",
+                    "ou_analysis": "Pace of play for both programs favors an up-tempo offensive approach that should consistently stress opposing secondaries. The scoring environment points toward steady production, as Arizona State will convert regular red-zone opportunities while Hawai'i contributes through garbage-time passing. Consequently, these combined offensive outputs will easily push the final score past the fifty-point threshold.",
+                    "splits_and_direction": "Based on public tendencies, approximately seventy-five percent of bets are backing Arizona State to cover the big spread and heavily leaning toward the home moneyline, while the total sees a balanced split. The spread has moved slightly upward from an opening of twenty to twenty-one at DraftKings, and the total has remained stable at fifty point five.",
+                    "display_text": "Analysis: The Arizona State Sun Devils enter this week six matchup with a vastly superior roster and exceptional current-season metrics on both sides of the ball. Hawai'i has struggled to establish any defensive consistency against upper-tier competition, making a road upset virtually impossible here. However, a twenty-one point spread is exceedingly large to cover in modern college football, even for a heavily favored home squad. The Rainbow Warriors possess enough offensive tempo to backdoor or keep the final margin within the three-touchdown threshold. Ultimately, the Sun Devils will secure a comfortable victory, but the visiting team does enough late to cover the inflated spread.\n\nOver Under: Pace of play for both programs favors an up-tempo offensive approach that should consistently stress opposing secondaries. The scoring environment points toward steady production, as Arizona State will convert regular red-zone opportunities while Hawai'i contributes through garbage-time passing. Consequently, these combined offensive outputs will easily push the final score past the fifty-point threshold.\n\nSplits: Based on public tendencies, approximately seventy-five percent of bets are backing Arizona State to cover the big spread and heavily leaning toward the home moneyline, while the total sees a balanced split. The spread has moved slightly upward from an opening of twenty to twenty-one at DraftKings, and the total has remained stable at fifty point five.",
+                    "generated_at": "2026-10-09T21:11:54.581518+00:00",
+                    "odds_hash": "ec0adb35ec7da51e",
                     "model": "gemini-3.5-flash-lite"
                   },
                   "is_slot_pick": false
@@ -14755,7 +15067,7 @@
     },
     {
       "week": 7,
-      "total_games": 15,
+      "total_games": 20,
       "days": [
         {
           "date": "2026-10-14",
@@ -14764,7 +15076,7 @@
           "time_slots": [
             {
               "slot": "Prime Time",
-              "best_matchup_score": 99.4,
+              "best_matchup_score": 99.6,
               "pick_reason": "watchability",
               "games": [
                 {
@@ -14781,7 +15093,7 @@
                   "away_record": "2-4",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/98.png",
                   "away_location": "Western Kentucky",
-                  "matchup_score": 99.4,
+                  "matchup_score": 99.6,
                   "channel": "ESPN2",
                   "venue": "Elliott T. Bowers Stadium",
                   "venue_location": "Huntsville, TX",
@@ -14799,7 +15111,7 @@
                     }
                   },
                   "is_nebraska": false,
-                  "matchup_rank": 14,
+                  "matchup_rank": 19,
                   "is_slot_pick": true
                 }
               ]
@@ -14813,7 +15125,7 @@
           "time_slots": [
             {
               "slot": "Prime Time",
-              "best_matchup_score": 87.5,
+              "best_matchup_score": 88.8,
               "pick_reason": "watchability",
               "games": [
                 {
@@ -14830,7 +15142,7 @@
                   "away_record": "2-2",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/151.png",
                   "away_location": "East Carolina",
-                  "matchup_score": 87.5,
+                  "matchup_score": 88.8,
                   "channel": "ESPN",
                   "venue": "Protective Stadium",
                   "venue_location": "Birmingham, AL",
@@ -14848,7 +15160,7 @@
                     }
                   },
                   "is_nebraska": false,
-                  "matchup_rank": 9,
+                  "matchup_rank": 13,
                   "is_slot_pick": true
                 },
                 {
@@ -14865,7 +15177,7 @@
                   "away_record": "2-3",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/290.png",
                   "away_location": "Georgia Southern",
-                  "matchup_score": 98.9,
+                  "matchup_score": 99.1,
                   "channel": "ESPN2",
                   "venue": "S.B. Ballard Stadium",
                   "venue_location": "Norfolk, VA",
@@ -14883,7 +15195,7 @@
                     }
                   },
                   "is_nebraska": false,
-                  "matchup_rank": 13,
+                  "matchup_rank": 18,
                   "is_slot_pick": false
                 }
               ]
@@ -14893,11 +15205,11 @@
         {
           "date": "2026-10-16",
           "weekday": "Friday",
-          "game_count": 2,
+          "game_count": 4,
           "time_slots": [
             {
               "slot": "Prime Time",
-              "best_matchup_score": 85.2,
+              "best_matchup_score": 85.3,
               "pick_reason": "watchability",
               "games": [
                 {
@@ -14914,7 +15226,7 @@
                   "away_record": "4-1",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/235.png",
                   "away_location": "Memphis",
-                  "matchup_score": 85.2,
+                  "matchup_score": 85.3,
                   "channel": "ESPN",
                   "venue": "Yulman Stadium",
                   "venue_location": "New Orleans, LA",
@@ -14932,8 +15244,43 @@
                     }
                   },
                   "is_nebraska": false,
-                  "matchup_rank": 7,
+                  "matchup_rank": 11,
                   "is_slot_pick": true
+                },
+                {
+                  "id": "401858493",
+                  "start_time": "2026-10-17T00:00Z",
+                  "start_time_tbd": false,
+                  "home_team": "Purdue Boilermakers",
+                  "home_rank": null,
+                  "home_record": "2-3",
+                  "home_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2509.png",
+                  "home_location": "Purdue",
+                  "away_team": "Washington Huskies",
+                  "away_rank": null,
+                  "away_record": "3-2",
+                  "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/264.png",
+                  "away_location": "Washington",
+                  "matchup_score": 90.9,
+                  "channel": "FOX",
+                  "venue": "Ross-Ade Stadium",
+                  "venue_location": "West Lafayette, IN",
+                  "neutral_site": false,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    },
+                    "fanduel": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    }
+                  },
+                  "is_nebraska": false,
+                  "matchup_rank": 15,
+                  "is_slot_pick": false
                 },
                 {
                   "id": "401869844",
@@ -14949,7 +15296,7 @@
                   "away_record": "3-1",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2026.png",
                   "away_location": "App State",
-                  "matchup_score": 92.0,
+                  "matchup_score": 92.2,
                   "channel": "ESPN2",
                   "venue": "Brooks Stadium (SC)",
                   "venue_location": "Conway, SC",
@@ -14967,8 +15314,50 @@
                     }
                   },
                   "is_nebraska": false,
-                  "matchup_rank": 12,
+                  "matchup_rank": 17,
                   "is_slot_pick": false
+                }
+              ]
+            },
+            {
+              "slot": "Late Night",
+              "best_matchup_score": 67.8,
+              "pick_reason": "nebraska",
+              "games": [
+                {
+                  "id": "401858492",
+                  "start_time": "2026-10-17T04:00Z",
+                  "start_time_tbd": false,
+                  "home_team": "Oregon Ducks",
+                  "home_rank": 13,
+                  "home_record": "3-1",
+                  "home_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2483.png",
+                  "home_location": "Oregon",
+                  "away_team": "Nebraska Cornhuskers",
+                  "away_rank": null,
+                  "away_record": "5-0",
+                  "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/158.png",
+                  "away_location": "Nebraska",
+                  "matchup_score": 67.8,
+                  "channel": "Not on Main TV",
+                  "venue": "Autzen Stadium",
+                  "venue_location": "Eugene, OR",
+                  "neutral_site": false,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    },
+                    "fanduel": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    }
+                  },
+                  "is_nebraska": true,
+                  "matchup_rank": 6,
+                  "is_slot_pick": true
                 }
               ]
             }
@@ -14977,13 +15366,117 @@
         {
           "date": "2026-10-17",
           "weekday": "Saturday",
-          "game_count": 10,
+          "game_count": 13,
           "time_slots": [
             {
               "slot": "Noon",
-              "best_matchup_score": 70.3,
+              "best_matchup_score": 1.2,
               "pick_reason": "watchability",
               "games": [
+                {
+                  "id": "401858488",
+                  "start_time": "2026-10-17T16:00Z",
+                  "start_time_tbd": false,
+                  "home_team": "Indiana Hoosiers",
+                  "home_rank": 7,
+                  "home_record": "5-0",
+                  "home_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/84.png",
+                  "home_location": "Indiana",
+                  "away_team": "Ohio State Buckeyes",
+                  "away_rank": 5,
+                  "away_record": "4-1",
+                  "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/194.png",
+                  "away_location": "Ohio State",
+                  "matchup_score": 1.2,
+                  "channel": "FOX",
+                  "venue": "Memorial Stadium (Bloomington, IN)",
+                  "venue_location": "Bloomington, IN",
+                  "neutral_site": false,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {
+                        "away": {
+                          "line": -2.5,
+                          "american": -115
+                        },
+                        "home": {
+                          "line": 2.5,
+                          "american": -105
+                        }
+                      },
+                      "moneyline": {
+                        "away": {
+                          "line": null,
+                          "american": -142
+                        },
+                        "home": {
+                          "line": null,
+                          "american": 120
+                        }
+                      },
+                      "total": {
+                        "over": {
+                          "line": 48.5,
+                          "american": -110
+                        },
+                        "under": {
+                          "line": 48.5,
+                          "american": -110
+                        }
+                      }
+                    },
+                    "fanduel": {
+                      "spread": {
+                        "home": {
+                          "line": 3.5,
+                          "american": -134
+                        },
+                        "away": {
+                          "line": -3.5,
+                          "american": 112
+                        }
+                      },
+                      "moneyline": {
+                        "away": {
+                          "line": null,
+                          "american": -140
+                        },
+                        "home": {
+                          "line": null,
+                          "american": 116
+                        }
+                      },
+                      "total": {
+                        "over": {
+                          "line": 49.5,
+                          "american": -110
+                        },
+                        "under": {
+                          "line": 49.5,
+                          "american": -110
+                        }
+                      }
+                    }
+                  },
+                  "is_nebraska": false,
+                  "matchup_rank": 1,
+                  "gemini_prediction": {
+                    "winner": "Ohio State Buckeyes",
+                    "confidence": 78,
+                    "ats_pick": "Indiana Hoosiers",
+                    "ats_confidence": 65,
+                    "total_pick": "Over",
+                    "total_confidence": 62,
+                    "analysis": "Ohio State enters this week 7 matchup boasting an elite roster with high-level efficiency on both sides of the ball this 2026 season. Indiana has proven to be a surprisingly formidable home team, utilizing explosive offensive schemes to stay competitive against top competition. While the Buckeyes possess the overall talent advantage to secure the outright victory, the Hoosiers have shown enough grit to keep the margin close. Therefore, expecting a hard-fought battle where the favored visitor wins by a narrow field goal or less makes the home underdog the smart pick against the spread. Ultimately, Ohio State's depth will prevail in the fourth quarter to seal the win.",
+                    "ou_analysis": "Both teams feature up-tempo offenses that consistently rank near the top of the conference in plays per minute and red-zone conversion efficiency. The defensive units have shown vulnerabilities against explosive passing attacks, creating a high-scoring environment throughout this 2026 campaign. Consequently, the combined final score is expected to comfortably surpass the posted line of 48.5 to 49.5 points.",
+                    "splits_and_direction": "Based on public tendencies, approximately 68% of spread bets are currently backing the favorite Ohio State, while the moneyline sees heavy action on the Buckeyes as well. The spread has moved slightly from an opener of 3.0 up to 3.5 at FanDuel, and the total has ticked upward by a full point from 48.5 to 49.5 due to heavy over-action.",
+                    "display_text": "Analysis: Ohio State enters this week 7 matchup boasting an elite roster with high-level efficiency on both sides of the ball this 2026 season. Indiana has proven to be a surprisingly formidable home team, utilizing explosive offensive schemes to stay competitive against top competition. While the Buckeyes possess the overall talent advantage to secure the outright victory, the Hoosiers have shown enough grit to keep the margin close. Therefore, expecting a hard-fought battle where the favored visitor wins by a narrow field goal or less makes the home underdog the smart pick against the spread. Ultimately, Ohio State's depth will prevail in the fourth quarter to seal the win.\n\nOver Under: Both teams feature up-tempo offenses that consistently rank near the top of the conference in plays per minute and red-zone conversion efficiency. The defensive units have shown vulnerabilities against explosive passing attacks, creating a high-scoring environment throughout this 2026 campaign. Consequently, the combined final score is expected to comfortably surpass the posted line of 48.5 to 49.5 points.\n\nSplits: Based on public tendencies, approximately 68% of spread bets are currently backing the favorite Ohio State, while the moneyline sees heavy action on the Buckeyes as well. The spread has moved slightly from an opener of 3.0 up to 3.5 at FanDuel, and the total has ticked upward by a full point from 48.5 to 49.5 due to heavy over-action.",
+                    "generated_at": "2026-10-09T21:13:08.285501+00:00",
+                    "odds_hash": "eb4ec3dea8882c6e",
+                    "model": "gemini-3.5-flash-lite"
+                  },
+                  "is_slot_pick": true
+                },
                 {
                   "id": "401856830",
                   "start_time": "2026-10-17T16:00Z",
@@ -14998,7 +15491,7 @@
                   "away_record": "2-2",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2305.png",
                   "away_location": "Kansas",
-                  "matchup_score": 70.3,
+                  "matchup_score": 72.8,
                   "channel": "FS1",
                   "venue": "Bill Snyder Family Stadium",
                   "venue_location": "Manhattan, KS",
@@ -15043,7 +15536,7 @@
                     }
                   },
                   "is_nebraska": false,
-                  "matchup_rank": 4,
+                  "matchup_rank": 8,
                   "gemini_prediction": {
                     "winner": "Kansas State Wildcats",
                     "confidence": 78,
@@ -15059,41 +15552,6 @@
                     "odds_hash": "b826d97cb0662868",
                     "model": "gemini-3.5-flash-lite"
                   },
-                  "is_slot_pick": true
-                },
-                {
-                  "id": "401858268",
-                  "start_time": "2026-10-17T16:00Z",
-                  "start_time_tbd": false,
-                  "home_team": "SMU Mustangs",
-                  "home_rank": 24,
-                  "home_record": "4-1",
-                  "home_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2567.png",
-                  "home_location": "SMU",
-                  "away_team": "Virginia Cavaliers",
-                  "away_rank": null,
-                  "away_record": "3-2",
-                  "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/258.png",
-                  "away_location": "Virginia",
-                  "matchup_score": 82.2,
-                  "channel": "CW",
-                  "venue": "Gerald J. Ford Stadium",
-                  "venue_location": "Dallas, TX",
-                  "neutral_site": false,
-                  "odds": {
-                    "draftkings": {
-                      "spread": {},
-                      "moneyline": {},
-                      "total": {}
-                    },
-                    "fanduel": {
-                      "spread": {},
-                      "moneyline": {},
-                      "total": {}
-                    }
-                  },
-                  "is_nebraska": false,
-                  "matchup_rank": 5,
                   "is_slot_pick": false
                 },
                 {
@@ -15110,7 +15568,7 @@
                   "away_record": "5-0",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/221.png",
                   "away_location": "Pittsburgh",
-                  "matchup_score": 82.4,
+                  "matchup_score": 82.3,
                   "channel": "ESPN2",
                   "venue": "Alumni Stadium (Chestnut Hill, MA)",
                   "venue_location": "Chestnut Hill, MA",
@@ -15128,14 +15586,49 @@
                     }
                   },
                   "is_nebraska": false,
-                  "matchup_rank": 6,
+                  "matchup_rank": 9,
+                  "is_slot_pick": false
+                },
+                {
+                  "id": "401858268",
+                  "start_time": "2026-10-17T16:00Z",
+                  "start_time_tbd": false,
+                  "home_team": "SMU Mustangs",
+                  "home_rank": 24,
+                  "home_record": "4-1",
+                  "home_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2567.png",
+                  "home_location": "SMU",
+                  "away_team": "Virginia Cavaliers",
+                  "away_rank": null,
+                  "away_record": "3-2",
+                  "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/258.png",
+                  "away_location": "Virginia",
+                  "matchup_score": 82.8,
+                  "channel": "CW",
+                  "venue": "Gerald J. Ford Stadium",
+                  "venue_location": "Dallas, TX",
+                  "neutral_site": false,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    },
+                    "fanduel": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    }
+                  },
+                  "is_nebraska": false,
+                  "matchup_rank": 10,
                   "is_slot_pick": false
                 }
               ]
             },
             {
               "slot": "Afternoon",
-              "best_matchup_score": 57.4,
+              "best_matchup_score": 60.7,
               "pick_reason": "watchability",
               "games": [
                 {
@@ -15152,7 +15645,7 @@
                   "away_record": "2-2",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/153.png",
                   "away_location": "North Carolina",
-                  "matchup_score": 57.4,
+                  "matchup_score": 60.7,
                   "channel": "ESPN2",
                   "venue": "Wallace Wade Stadium",
                   "venue_location": "Durham, NC",
@@ -15197,7 +15690,7 @@
                     }
                   },
                   "is_nebraska": false,
-                  "matchup_rank": 2,
+                  "matchup_rank": 4,
                   "gemini_prediction": {
                     "winner": "Duke Blue Devils",
                     "confidence": 68,
@@ -15214,6 +15707,41 @@
                     "model": "gemini-3.5-flash-lite"
                   },
                   "is_slot_pick": true
+                },
+                {
+                  "id": "401856828",
+                  "start_time": "2026-10-17T19:30Z",
+                  "start_time_tbd": false,
+                  "home_team": "Texas Tech Red Raiders",
+                  "home_rank": 11,
+                  "home_record": "5-0",
+                  "home_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2641.png",
+                  "home_location": "Texas Tech",
+                  "away_team": "Arizona State Sun Devils",
+                  "away_rank": null,
+                  "away_record": "2-2",
+                  "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/9.png",
+                  "away_location": "Arizona State",
+                  "matchup_score": 71.8,
+                  "channel": "FOX",
+                  "venue": "Galaxy Stadium",
+                  "venue_location": "Lubbock, TX",
+                  "neutral_site": false,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    },
+                    "fanduel": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    }
+                  },
+                  "is_nebraska": false,
+                  "matchup_rank": 7,
+                  "is_slot_pick": false
                 },
                 {
                   "id": "401864522",
@@ -15247,14 +15775,14 @@
                     }
                   },
                   "is_nebraska": false,
-                  "matchup_rank": 15,
+                  "matchup_rank": 20,
                   "is_slot_pick": false
                 }
               ]
             },
             {
               "slot": "Prime Time",
-              "best_matchup_score": 13.3,
+              "best_matchup_score": 14.7,
               "pick_reason": "watchability",
               "games": [
                 {
@@ -15271,7 +15799,7 @@
                   "away_record": "5-0",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/87.png",
                   "away_location": "Notre Dame",
-                  "matchup_score": 13.3,
+                  "matchup_score": 14.7,
                   "channel": "ABC",
                   "venue": "LaVell Edwards Stadium",
                   "venue_location": "Provo, UT",
@@ -15343,7 +15871,7 @@
                     }
                   },
                   "is_nebraska": false,
-                  "matchup_rank": 1,
+                  "matchup_rank": 2,
                   "gemini_prediction": {
                     "winner": "Notre Dame Fighting Irish",
                     "confidence": 88,
@@ -15357,6 +15885,110 @@
                     "display_text": "Analysis: The Notre Dame Fighting Irish enter this week 7 matchup with an undefeated 2026 record, boasting a formidable roster and elite defensive performance. BYU has shown resilience at home this season, but their offensive efficiency metrics suggest they will struggle to crack the vaunted Fighting Irish secondary. Notre Dame's offensive attack remains methodical and balanced, controlling the clock and limiting mistakes in hostile territory. While the Fighting Irish should secure a comfortable victory outright, laying nearly two touchdowns on the road presents a distinct challenge. Therefore, the BYU Cougars possess enough defensive grit to keep the final margin within the double-digit spread.\n\nOver Under: Both teams feature methodical offensive tempos and rely heavily on strong defensive fronts to dictate game flow. Expected autumn conditions in Provo, combined with Notre Dame's penchant for bleeding the clock with a run-heavy scheme, point toward a lower-scoring affair. Consequently, the game total should fall short of the 47.5 to 48.5 consensus lines.\n\nSplits: Approximately 68% of public bets are backing Notre Dame on the spread and moneyline, while 55% of early action favors the under. The spread has moved up slightly from an opening line of 11.5 to around 13.5 in favor of the Fighting Irish, and the total has ticked downward from 49.5 to 47.5 due to sharp money hitting the under.",
                     "generated_at": "2026-10-09T15:01:07.855606+00:00",
                     "odds_hash": "67819f5ac2038bb1",
+                    "model": "gemini-3.5-flash-lite"
+                  },
+                  "is_slot_pick": false
+                },
+                {
+                  "id": "401856831",
+                  "start_time": "2026-10-17T23:30Z",
+                  "start_time_tbd": false,
+                  "home_team": "Houston Cougars",
+                  "home_rank": 22,
+                  "home_record": "4-1",
+                  "home_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/248.png",
+                  "home_location": "Houston",
+                  "away_team": "Oklahoma State Cowboys",
+                  "away_rank": 18,
+                  "away_record": "3-1",
+                  "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/197.png",
+                  "away_location": "Oklahoma State",
+                  "matchup_score": 30.2,
+                  "channel": "FOX",
+                  "venue": "TDECU Stadium",
+                  "venue_location": "Houston, TX",
+                  "neutral_site": false,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {
+                        "home": {
+                          "line": -3.5,
+                          "american": -110
+                        },
+                        "away": {
+                          "line": 3.5,
+                          "american": -110
+                        }
+                      },
+                      "moneyline": {
+                        "home": {
+                          "line": null,
+                          "american": -162
+                        },
+                        "away": {
+                          "line": null,
+                          "american": 136
+                        }
+                      },
+                      "total": {
+                        "under": {
+                          "line": 57.5,
+                          "american": -110
+                        },
+                        "over": {
+                          "line": 57.5,
+                          "american": -110
+                        }
+                      }
+                    },
+                    "fanduel": {
+                      "spread": {
+                        "home": {
+                          "line": -3.5,
+                          "american": 100
+                        },
+                        "away": {
+                          "line": 3.5,
+                          "american": -122
+                        }
+                      },
+                      "moneyline": {
+                        "away": {
+                          "line": null,
+                          "american": 128
+                        },
+                        "home": {
+                          "line": null,
+                          "american": -154
+                        }
+                      },
+                      "total": {
+                        "under": {
+                          "line": 57.5,
+                          "american": -114
+                        },
+                        "over": {
+                          "line": 57.5,
+                          "american": -106
+                        }
+                      }
+                    }
+                  },
+                  "is_nebraska": false,
+                  "matchup_rank": 3,
+                  "gemini_prediction": {
+                    "winner": "Houston Cougars",
+                    "confidence": 62,
+                    "ats_pick": "Houston Cougars",
+                    "ats_confidence": 60,
+                    "total_pick": "Over",
+                    "total_confidence": 55,
+                    "analysis": "The Houston Cougars enter this Week 7 matchup with sharper offensive execution than the Oklahoma State Cowboys. Oklahoma State has struggled to find consistency on defense, allowing opponents to sustain drives and exploit the secondary. Houston's home-field advantage provides a crucial boost in what projects to be a tightly contested conference battle. The Cougars' offensive line has done a better job protecting the quarterback and creating running lanes compared to the Cowboys' units. Ultimately, Houston does just enough late in the game to pull away and cover the 3.5-point spread.",
+                    "ou_analysis": "Both teams feature up-tempo offensive philosophies that prioritize quick snaps and high possession counts. Defensive lapses on both sides throughout the 2026 campaign suggest that neither unit will consistently stop the opponent in the red zone. Consequently, the combined score should comfortably surpass the posted line of 57.5 points.",
+                    "splits_and_direction": "Based on public betting tendencies, approximately 58% of the spread bets are backing the home favorite Houston Cougars while 42% take the points with Oklahoma State. The spread has remained relatively stable at -3.5, though moneyline action has slightly ticked up toward Houston since opening.",
+                    "display_text": "Analysis: The Houston Cougars enter this Week 7 matchup with sharper offensive execution than the Oklahoma State Cowboys. Oklahoma State has struggled to find consistency on defense, allowing opponents to sustain drives and exploit the secondary. Houston's home-field advantage provides a crucial boost in what projects to be a tightly contested conference battle. The Cougars' offensive line has done a better job protecting the quarterback and creating running lanes compared to the Cowboys' units. Ultimately, Houston does just enough late in the game to pull away and cover the 3.5-point spread.\n\nOver Under: Both teams feature up-tempo offensive philosophies that prioritize quick snaps and high possession counts. Defensive lapses on both sides throughout the 2026 campaign suggest that neither unit will consistently stop the opponent in the red zone. Consequently, the combined score should comfortably surpass the posted line of 57.5 points.\n\nSplits: Based on public betting tendencies, approximately 58% of the spread bets are backing the home favorite Houston Cougars while 42% take the points with Oklahoma State. The spread has remained relatively stable at -3.5, though moneyline action has slightly ticked up toward Houston since opening.",
+                    "generated_at": "2026-10-09T21:13:18.199937+00:00",
+                    "odds_hash": "16baf2bb6eb3eb99",
                     "model": "gemini-3.5-flash-lite"
                   },
                   "is_slot_pick": true
@@ -15375,7 +16007,7 @@
                   "away_record": "3-2",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/52.png",
                   "away_location": "Florida State",
-                  "matchup_score": 63.7,
+                  "matchup_score": 63.8,
                   "channel": "ESPN",
                   "venue": "Hard Rock Stadium",
                   "venue_location": "Miami Gardens, FL",
@@ -15447,7 +16079,7 @@
                     }
                   },
                   "is_nebraska": false,
-                  "matchup_rank": 3,
+                  "matchup_rank": 5,
                   "gemini_prediction": {
                     "winner": "Miami Hurricanes",
                     "confidence": 88,
@@ -15479,7 +16111,7 @@
                   "away_record": "2-3",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2628.png",
                   "away_location": "TCU",
-                  "matchup_score": 86.9,
+                  "matchup_score": 87.5,
                   "channel": "FS1",
                   "venue": "McLane Stadium",
                   "venue_location": "Waco, TX",
@@ -15497,7 +16129,7 @@
                     }
                   },
                   "is_nebraska": false,
-                  "matchup_rank": 8,
+                  "matchup_rank": 12,
                   "is_slot_pick": false
                 },
                 {
@@ -15514,7 +16146,7 @@
                   "away_record": "2-3",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/8.png",
                   "away_location": "Arkansas",
-                  "matchup_score": 90.9,
+                  "matchup_score": 91.8,
                   "channel": "ESPN2",
                   "venue": "FirstBank Stadium",
                   "venue_location": "Nashville, TN",
@@ -15532,14 +16164,14 @@
                     }
                   },
                   "is_nebraska": false,
-                  "matchup_rank": 11,
+                  "matchup_rank": 16,
                   "is_slot_pick": false
                 }
               ]
             },
             {
               "slot": "Late Night",
-              "best_matchup_score": 90.3,
+              "best_matchup_score": 89.7,
               "pick_reason": "watchability",
               "games": [
                 {
@@ -15556,7 +16188,7 @@
                   "away_record": "4-1",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/167.png",
                   "away_location": "New Mexico",
-                  "matchup_score": 90.3,
+                  "matchup_score": 89.7,
                   "channel": "FS1",
                   "venue": "Clarence T.C. Ching Athletics Complex",
                   "venue_location": "Honolulu, HI",
@@ -15574,7 +16206,7 @@
                     }
                   },
                   "is_nebraska": false,
-                  "matchup_rank": 10,
+                  "matchup_rank": 14,
                   "is_slot_pick": true
                 }
               ]
