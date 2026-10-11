@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-11T17:20:39.692797+00:00",
+  "generated_at": "2026-10-11T23:32:18.185770+00:00",
   "season": 2026,
   "display_timezone": "America/Chicago",
   "weeks": [
@@ -2018,9 +2018,112 @@
             },
             {
               "slot": "Prime Time",
-              "best_matchup_score": 46.4,
+              "best_matchup_score": 50.0,
               "pick_reason": "spread_and_wins",
               "games": [
+                {
+                  "id": "401908941",
+                  "start_time": "2026-10-12T01:00Z",
+                  "start_time_tbd": false,
+                  "home_team": "Denver Nuggets",
+                  "home_abbr": "DEN",
+                  "home_record": "1-1",
+                  "home_logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/den.png",
+                  "home_location": "Denver",
+                  "away_team": "Chicago Bulls",
+                  "away_abbr": "CHI",
+                  "away_record": "1-1",
+                  "away_logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/chi.png",
+                  "away_location": "Chicago",
+                  "matchup_score": 50.0,
+                  "channel": "ESPN",
+                  "venue": "Ball Arena",
+                  "venue_location": "Denver, CO",
+                  "neutral_site": false,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {
+                        "home": {
+                          "line": -7.5,
+                          "american": -110
+                        },
+                        "away": {
+                          "line": 7.5,
+                          "american": -110
+                        }
+                      },
+                      "moneyline": {
+                        "home": {
+                          "line": null,
+                          "american": -258
+                        },
+                        "away": {
+                          "line": null,
+                          "american": 210
+                        }
+                      },
+                      "total": {
+                        "over": {
+                          "line": 234.5,
+                          "american": -110
+                        },
+                        "under": {
+                          "line": 234.5,
+                          "american": -120
+                        }
+                      }
+                    },
+                    "fanduel": {
+                      "spread": {
+                        "home": {
+                          "line": -7.5,
+                          "american": -110
+                        },
+                        "away": {
+                          "line": 7.5,
+                          "american": -110
+                        }
+                      },
+                      "moneyline": {
+                        "home": {
+                          "line": null,
+                          "american": -265
+                        },
+                        "away": {
+                          "line": null,
+                          "american": 210
+                        }
+                      },
+                      "total": {
+                        "over": {
+                          "line": 234.5,
+                          "american": -105
+                        },
+                        "under": {
+                          "line": 234.5,
+                          "american": -115
+                        }
+                      }
+                    }
+                  },
+                  "matchup_rank": 2,
+                  "gemini_prediction": {
+                    "winner": "Denver Nuggets",
+                    "confidence": 78,
+                    "ats_pick": "Denver Nuggets",
+                    "ats_confidence": 65,
+                    "total_pick": "Over",
+                    "total_confidence": 62,
+                    "analysis": "The Denver Nuggets showcase superior offensive execution and home-court advantage at the start of the 2026 NBA season. Denver's primary rotation is fully healthy and performing at an elite efficiency level compared to their opponents. Chicago struggles to defend opposing elite frontcourts, creating favorable mismatches all night long. The Bulls also lack the secondary scoring punch needed to keep pace when the Nuggets make their standard third-quarter runs. Consequently, Denver will control the tempo and comfortably cover the 7.5-point spread.",
+                    "ou_analysis": "Both teams feature fast-paced offensive schemes that routinely generate high possession counts in early-season matchups. Denver's proficient perimeter shooting combined with Chicago's porous transition defense points toward an elevated scoring environment. Therefore, the combined final score will safely surpass the posted 234.5 total.",
+                    "splits_and_direction": "Based on public tendencies, approximately 68 percent of spread bets and 75 percent of moneyline wagers are backing the heavily favored home team. The point spread has held steady at 7.5 while the total has ticked down slightly from an opening number of 235.0 to 234.5 due to early sharp under money.",
+                    "display_text": "Analysis: The Denver Nuggets showcase superior offensive execution and home-court advantage at the start of the 2026 NBA season. Denver's primary rotation is fully healthy and performing at an elite efficiency level compared to their opponents. Chicago struggles to defend opposing elite frontcourts, creating favorable mismatches all night long. The Bulls also lack the secondary scoring punch needed to keep pace when the Nuggets make their standard third-quarter runs. Consequently, Denver will control the tempo and comfortably cover the 7.5-point spread.\n\nOver Under: Both teams feature fast-paced offensive schemes that routinely generate high possession counts in early-season matchups. Denver's proficient perimeter shooting combined with Chicago's porous transition defense points toward an elevated scoring environment. Therefore, the combined final score will safely surpass the posted 234.5 total.\n\nSplits: Based on public tendencies, approximately 68 percent of spread bets and 75 percent of moneyline wagers are backing the heavily favored home team. The point spread has held steady at 7.5 while the total has ticked down slightly from an opening number of 235.0 to 234.5 due to early sharp under money.",
+                    "generated_at": "2026-10-11T23:32:17.455706+00:00",
+                    "odds_hash": "4f15e28cf36ef7db",
+                    "model": "gemini-3.5-flash-lite"
+                  },
+                  "is_slot_pick": true
+                },
                 {
                   "id": "401898401",
                   "start_time": "2026-10-11T22:30Z",
@@ -2035,7 +2138,7 @@
                   "away_record": "1-0",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/orl.png",
                   "away_location": "Orlando",
-                  "matchup_score": 46.4,
+                  "matchup_score": 51.4,
                   "channel": "ESPN",
                   "venue": "Rocket Arena",
                   "venue_location": "Cleveland, OH",
@@ -2106,7 +2209,6 @@
                       }
                     }
                   },
-                  "matchup_rank": 2,
                   "gemini_prediction": {
                     "winner": "Cleveland Cavaliers",
                     "confidence": 68,
@@ -2122,109 +2224,7 @@
                     "odds_hash": "72cccdf2b916cf46",
                     "model": "gemini-3.5-flash-lite"
                   },
-                  "is_slot_pick": true
-                },
-                {
-                  "id": "401908941",
-                  "start_time": "2026-10-12T01:00Z",
-                  "start_time_tbd": false,
-                  "home_team": "Denver Nuggets",
-                  "home_abbr": "DEN",
-                  "home_record": "1-1",
-                  "home_logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/den.png",
-                  "home_location": "Denver",
-                  "away_team": "Chicago Bulls",
-                  "away_abbr": "CHI",
-                  "away_record": "1-1",
-                  "away_logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/chi.png",
-                  "away_location": "Chicago",
-                  "matchup_score": 50.0,
-                  "channel": "ESPN",
-                  "venue": "Ball Arena",
-                  "venue_location": "Denver, CO",
-                  "neutral_site": false,
-                  "odds": {
-                    "draftkings": {
-                      "spread": {
-                        "home": {
-                          "line": -8.5,
-                          "american": -112
-                        },
-                        "away": {
-                          "line": 8.5,
-                          "american": -108
-                        }
-                      },
-                      "moneyline": {
-                        "home": {
-                          "line": null,
-                          "american": -325
-                        },
-                        "away": {
-                          "line": null,
-                          "american": 260
-                        }
-                      },
-                      "total": {
-                        "over": {
-                          "line": 233.5,
-                          "american": -110
-                        },
-                        "under": {
-                          "line": 233.5,
-                          "american": -110
-                        }
-                      }
-                    },
-                    "fanduel": {
-                      "spread": {
-                        "home": {
-                          "line": -8.5,
-                          "american": -114
-                        },
-                        "away": {
-                          "line": 8.5,
-                          "american": -106
-                        }
-                      },
-                      "moneyline": {
-                        "home": {
-                          "line": null,
-                          "american": -310
-                        },
-                        "away": {
-                          "line": null,
-                          "american": 240
-                        }
-                      },
-                      "total": {
-                        "over": {
-                          "line": 233.5,
-                          "american": -110
-                        },
-                        "under": {
-                          "line": 233.5,
-                          "american": -114
-                        }
-                      }
-                    }
-                  },
                   "matchup_rank": 3,
-                  "gemini_prediction": {
-                    "winner": "Denver Nuggets",
-                    "confidence": 85,
-                    "ats_pick": "Chicago Bulls",
-                    "ats_confidence": 62,
-                    "total_pick": "Over",
-                    "total_confidence": 59,
-                    "analysis": "The Denver Nuggets possess superior offensive execution and home-court advantage that will secure an outright victory in this matchup. However, giving up 8.5 points against a resilient Chicago Bulls squad is a tall order early in the season. Chicago's perimeter scoring keeps them well within striking distance of covering the large spread. The Bulls will capitalize on Denver's occasional defensive lapses to maintain a competitive margin throughout four quarters. Ultimately, Denver wins the game, but Chicago safely covers the 8.5-point spread.",
-                    "ou_analysis": "Both teams feature high-paced offensive schemes that frequently push the ball in transition and exploit defensive mismatches. Given the roster talents and early-season shooting efficiency, the scoring environment points toward a brisk, high-scoring affair. Consequently, the combined final score will push past the posted total of 233.5 points to hit the Over.",
-                    "splits_and_direction": "Based on public betting tendencies, approximately 68% of spread bets are backing the home favorite Denver while 32% take the Chicago points, and similar heavy action has landed on the Nuggets moneyline. The point spread has remained steady at -8.5, while the total has ticked up slightly from an opening number of 232.5 to 233.5 due to early sharp action on the Over.",
-                    "display_text": "Analysis: The Denver Nuggets possess superior offensive execution and home-court advantage that will secure an outright victory in this matchup. However, giving up 8.5 points against a resilient Chicago Bulls squad is a tall order early in the season. Chicago's perimeter scoring keeps them well within striking distance of covering the large spread. The Bulls will capitalize on Denver's occasional defensive lapses to maintain a competitive margin throughout four quarters. Ultimately, Denver wins the game, but Chicago safely covers the 8.5-point spread.\n\nOver Under: Both teams feature high-paced offensive schemes that frequently push the ball in transition and exploit defensive mismatches. Given the roster talents and early-season shooting efficiency, the scoring environment points toward a brisk, high-scoring affair. Consequently, the combined final score will push past the posted total of 233.5 points to hit the Over.\n\nSplits: Based on public betting tendencies, approximately 68% of spread bets are backing the home favorite Denver while 32% take the Chicago points, and similar heavy action has landed on the Nuggets moneyline. The point spread has remained steady at -8.5, while the total has ticked up slightly from an opening number of 232.5 to 233.5 due to early sharp action on the Over.",
-                    "generated_at": "2026-10-11T17:20:38.128157+00:00",
-                    "odds_hash": "b4655c1e3a7f94bc",
-                    "model": "gemini-3.5-flash-lite"
-                  },
                   "is_slot_pick": false
                 },
                 {
@@ -2241,7 +2241,7 @@
                   "away_record": "1-1",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mil.png",
                   "away_location": "Milwaukee",
-                  "matchup_score": 66.7,
+                  "matchup_score": 70.0,
                   "channel": "TBD",
                   "venue": "Spectrum Center",
                   "venue_location": "Charlotte, NC",
@@ -2312,7 +2312,6 @@
                       }
                     }
                   },
-                  "matchup_rank": 4,
                   "gemini_prediction": {
                     "winner": "Charlotte Hornets",
                     "confidence": 62,
@@ -2328,6 +2327,7 @@
                     "odds_hash": "6bcf26fb243149a6",
                     "model": "gemini-3.5-flash-lite"
                   },
+                  "matchup_rank": 4,
                   "is_slot_pick": false
                 }
               ]
