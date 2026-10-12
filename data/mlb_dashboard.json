@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-11T23:32:14.900874+00:00",
+  "generated_at": "2026-10-12T04:04:58.159586+00:00",
   "season": 2026,
   "display_timezone": "America/Chicago",
   "weeks": [
@@ -56697,7 +56697,7 @@
                   "away_location": "Los Angeles",
                   "away_pitcher": "T. Skubal (1-0, 1.50)",
                   "matchup_score": 50.0,
-                  "channel": "Fox, FS1",
+                  "channel": "Fox",
                   "venue": "American Family Field",
                   "venue_location": "Milwaukee, Wisconsin",
                   "neutral_site": false,
@@ -56767,7 +56767,6 @@
                       }
                     }
                   },
-                  "matchup_rank": 1,
                   "gemini_prediction": {
                     "winner": "Los Angeles Dodgers",
                     "confidence": 62,
@@ -56783,6 +56782,7 @@
                     "odds_hash": "6d39377eb4121442",
                     "model": "gemini-3.5-flash-lite"
                   },
+                  "matchup_rank": 1,
                   "is_slot_pick": true
                 }
               ]
@@ -56829,17 +56829,86 @@
                   "neutral_site": false,
                   "odds": {
                     "draftkings": {
-                      "spread": {},
-                      "moneyline": {},
-                      "total": {}
+                      "spread": {
+                        "home": {
+                          "line": 1.5,
+                          "american": -163
+                        },
+                        "away": {
+                          "line": -1.5,
+                          "american": 134
+                        }
+                      },
+                      "moneyline": {
+                        "home": {
+                          "line": null,
+                          "american": 113
+                        },
+                        "away": {
+                          "line": null,
+                          "american": -136
+                        }
+                      },
+                      "total": {
+                        "over": {
+                          "line": 7,
+                          "american": 100
+                        },
+                        "under": {
+                          "line": 7,
+                          "american": -120
+                        }
+                      }
                     },
                     "fanduel": {
-                      "spread": {},
-                      "moneyline": {},
-                      "total": {}
+                      "spread": {
+                        "home": {
+                          "line": 1.5,
+                          "american": -176
+                        },
+                        "away": {
+                          "line": -1.5,
+                          "american": 146
+                        }
+                      },
+                      "moneyline": {
+                        "home": {
+                          "line": null,
+                          "american": 108
+                        },
+                        "away": {
+                          "line": null,
+                          "american": -126
+                        }
+                      },
+                      "total": {
+                        "over": {
+                          "line": 6.5,
+                          "american": -124
+                        },
+                        "under": {
+                          "line": 6.5,
+                          "american": 102
+                        }
+                      }
                     }
                   },
                   "matchup_rank": 1,
+                  "gemini_prediction": {
+                    "winner": "Los Angeles Dodgers",
+                    "confidence": 64,
+                    "ats_pick": "Milwaukee Brewers",
+                    "ats_confidence": 60,
+                    "total_pick": "Under",
+                    "total_confidence": 62,
+                    "analysis": "Yoshinobu Yamamoto enters this matchup showcasing exceptional 2026 form with a sparkling 1.29 ERA and a 1-0 record that highlights his dominant postseason composure. The Los Angeles Dodgers boast a potent lineup that consistently generates high-leverage plate appearances against right-handed pitching. Meanwhile, L. Henderson counters with a stellar 1.80 ERA, proving he can lock down elite lineups in high-stakes environments. While the Dodgers' depth makes them the rightful favorite to pull off the outright win on the road, Milwaukee's pitching keeps the game tightly contested. Consequently, the Brewers are well-positioned to keep the final margin within 1.5 runs to cover the spread.",
+                    "ou_analysis": "Both starting pitchers carry sub-2.00 ERAs into this contest, pointing toward a suffocating pitching duel from the opening frame. The 6.5 to 7 run totals reflect an expectation of high-efficiency pitching and subdued offensive output in a crisp playoff environment. Given Yamamoto and Henderson's current-season mastery, the under is the most logical play for this low-scoring affair.",
+                    "splits_and_direction": "Based on public tendencies, approximately 62 percent of moneyline bets are backing the Los Angeles Dodgers, while roughly 58 percent of spread bets lean toward the Milwaukee Brewers plus the runs. The moneyline has ticked up slightly in favor of the Dodgers, whereas the total has seen minor downward pressure toward 6.5 across major sportsbooks.",
+                    "display_text": "Analysis: Yoshinobu Yamamoto enters this matchup showcasing exceptional 2026 form with a sparkling 1.29 ERA and a 1-0 record that highlights his dominant postseason composure. The Los Angeles Dodgers boast a potent lineup that consistently generates high-leverage plate appearances against right-handed pitching. Meanwhile, L. Henderson counters with a stellar 1.80 ERA, proving he can lock down elite lineups in high-stakes environments. While the Dodgers' depth makes them the rightful favorite to pull off the outright win on the road, Milwaukee's pitching keeps the game tightly contested. Consequently, the Brewers are well-positioned to keep the final margin within 1.5 runs to cover the spread.\n\nOver Under: Both starting pitchers carry sub-2.00 ERAs into this contest, pointing toward a suffocating pitching duel from the opening frame. The 6.5 to 7 run totals reflect an expectation of high-efficiency pitching and subdued offensive output in a crisp playoff environment. Given Yamamoto and Henderson's current-season mastery, the under is the most logical play for this low-scoring affair.\n\nSplits: Based on public tendencies, approximately 62 percent of moneyline bets are backing the Los Angeles Dodgers, while roughly 58 percent of spread bets lean toward the Milwaukee Brewers plus the runs. The moneyline has ticked up slightly in favor of the Dodgers, whereas the total has seen minor downward pressure toward 6.5 across major sportsbooks.",
+                    "generated_at": "2026-10-12T04:04:47.895117+00:00",
+                    "odds_hash": "6ae97e67a64ac76d",
+                    "model": "gemini-3.5-flash-lite"
+                  },
                   "is_slot_pick": true
                 }
               ]
@@ -56875,31 +56944,31 @@
                       "spread": {
                         "home": {
                           "line": -1.5,
-                          "american": 131
+                          "american": 130
                         },
                         "away": {
                           "line": 1.5,
-                          "american": -158
+                          "american": -157
                         }
                       },
                       "moneyline": {
                         "home": {
                           "line": null,
-                          "american": -171
+                          "american": -172
                         },
                         "away": {
                           "line": null,
-                          "american": 141
+                          "american": 142
                         }
                       },
                       "total": {
                         "over": {
                           "line": 6.5,
-                          "american": -125
+                          "american": -120
                         },
                         "under": {
                           "line": 6.5,
-                          "american": 103
+                          "american": 100
                         }
                       }
                     },
@@ -56907,11 +56976,11 @@
                       "spread": {
                         "home": {
                           "line": -1.5,
-                          "american": 142
+                          "american": 134
                         },
                         "away": {
                           "line": 1.5,
-                          "american": -172
+                          "american": -162
                         }
                       },
                       "moneyline": {
@@ -56941,15 +57010,15 @@
                     "winner": "Tampa Bay Rays",
                     "confidence": 63,
                     "ats_pick": "Cleveland Guardians",
-                    "ats_confidence": 58,
+                    "ats_confidence": 57,
                     "total_pick": "Under",
                     "total_confidence": 60,
-                    "analysis": "The Tampa Bay Rays hold a distinct home-field advantage and send D. Rasmussen to the mound with a pristine 0.00 ERA on the 2026 season. Cleveland's F. Griffin has pitched admirably well with a 3.38 ERA, keeping the Guardians competitive in most of his appearances. However, the Rays' lineup provides enough consistent run production to edge out a close victory at Tropicana Field. Because this pitching matchup is exceptionally strong on both sides, the game is expected to be tightly contested throughout. Consequently, while the Rays should secure the outright win, the Guardians are well-positioned to keep the margin within a single run and cover the spread.",
-                    "ou_analysis": "Both D. Rasmussen and F. Griffin feature exceptional early-season ERAs and strong peripheral metrics that heavily favor pitching execution. The low posted total of 6.5 accurately reflects a pitcher's duel in a controlled environment where offensive opportunities will be scarce. Therefore, the combined final score is projected to stay safely under the line.",
-                    "splits_and_direction": "Based on public betting tendencies, roughly 68 percent of moneyline bets are backing the home Rays, while the spread has seen heavy action toward the underdog Guardians. Both the moneyline and spread have remained relatively stable since opening, while the total of 6.5 has ticked slightly toward the Over due to early public interest.",
-                    "display_text": "Analysis: The Tampa Bay Rays hold a distinct home-field advantage and send D. Rasmussen to the mound with a pristine 0.00 ERA on the 2026 season. Cleveland's F. Griffin has pitched admirably well with a 3.38 ERA, keeping the Guardians competitive in most of his appearances. However, the Rays' lineup provides enough consistent run production to edge out a close victory at Tropicana Field. Because this pitching matchup is exceptionally strong on both sides, the game is expected to be tightly contested throughout. Consequently, while the Rays should secure the outright win, the Guardians are well-positioned to keep the margin within a single run and cover the spread.\n\nOver Under: Both D. Rasmussen and F. Griffin feature exceptional early-season ERAs and strong peripheral metrics that heavily favor pitching execution. The low posted total of 6.5 accurately reflects a pitcher's duel in a controlled environment where offensive opportunities will be scarce. Therefore, the combined final score is projected to stay safely under the line.\n\nSplits: Based on public betting tendencies, roughly 68 percent of moneyline bets are backing the home Rays, while the spread has seen heavy action toward the underdog Guardians. Both the moneyline and spread have remained relatively stable since opening, while the total of 6.5 has ticked slightly toward the Over due to early public interest.",
-                    "generated_at": "2026-10-11T23:32:14.749900+00:00",
-                    "odds_hash": "e531559701ebce57",
+                    "analysis": "The Tampa Bay Rays send D. Rasmussen to the mound holding a pristine 0.00 ERA to anchor their postseason rotation. Cleveland counters with F. Griffin, who has pitched well this season but faces a tough task against a disciplined Tampa Bay lineup. Rasmussen's ability to suppress runs at home gives the Rays a clear tactical advantage in the matchup. However, the Guardians have shown resilience throughout the 2006 season and possess the bullpen depth to keep the game tight. Consequently, while the Rays should secure the outright victory, the Guardians have enough grit to keep the margin within a single run and cover the spread.",
+                    "ou_analysis": "Both starting pitchers enter this matchup in exceptional early-season form, severely limiting opponent opportunities through sharp command and high ground-ball rates. The spacious home ballpark environment in Tampa Bay naturally suppresses heavy power hitting while aiding outfield defense. These factors combine to suggest a tightly contested, low-scoring affair that comfortably stays under the 6.5 run total.",
+                    "splits_and_direction": "Based on market trends and the pitching matchup, approximately 62 percent of public bets are currently backing the Tampa Bay Rays on the moneyline and spread, while action on the total leans slightly toward the Under. The moneyline has ticked up slightly in favor of Tampa Bay, and the total has remained steady at 6.5 despite minor juice adjustments.",
+                    "display_text": "Analysis: The Tampa Bay Rays send D. Rasmussen to the mound holding a pristine 0.00 ERA to anchor their postseason rotation. Cleveland counters with F. Griffin, who has pitched well this season but faces a tough task against a disciplined Tampa Bay lineup. Rasmussen's ability to suppress runs at home gives the Rays a clear tactical advantage in the matchup. However, the Guardians have shown resilience throughout the 2006 season and possess the bullpen depth to keep the game tight. Consequently, while the Rays should secure the outright victory, the Guardians have enough grit to keep the margin within a single run and cover the spread.\n\nOver Under: Both starting pitchers enter this matchup in exceptional early-season form, severely limiting opponent opportunities through sharp command and high ground-ball rates. The spacious home ballpark environment in Tampa Bay naturally suppresses heavy power hitting while aiding outfield defense. These factors combine to suggest a tightly contested, low-scoring affair that comfortably stays under the 6.5 run total.\n\nSplits: Based on market trends and the pitching matchup, approximately 62 percent of public bets are currently backing the Tampa Bay Rays on the moneyline and spread, while action on the total leans slightly toward the Under. The moneyline has ticked up slightly in favor of Tampa Bay, and the total has remained steady at 6.5 despite minor juice adjustments.",
+                    "generated_at": "2026-10-12T04:04:57.889693+00:00",
+                    "odds_hash": "c63561cf8c794f9f",
                     "model": "gemini-3.5-flash-lite"
                   },
                   "is_slot_pick": true
