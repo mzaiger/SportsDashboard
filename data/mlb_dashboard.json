@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-12T20:56:04.030086+00:00",
+  "generated_at": "2026-10-13T05:13:43.179936+00:00",
   "season": 2026,
   "display_timezone": "America/Chicago",
   "weeks": [
@@ -56893,7 +56893,6 @@
                       }
                     }
                   },
-                  "matchup_rank": 1,
                   "gemini_prediction": {
                     "winner": "Los Angeles Dodgers",
                     "confidence": 65,
@@ -56909,6 +56908,7 @@
                     "odds_hash": "7fc73999717fac7b",
                     "model": "gemini-3.5-flash-lite"
                   },
+                  "matchup_rank": 1,
                   "is_slot_pick": true
                 }
               ]
@@ -57005,7 +57005,6 @@
                       }
                     }
                   },
-                  "matchup_rank": 2,
                   "gemini_prediction": {
                     "winner": "Tampa Bay Rays",
                     "confidence": 65,
@@ -57021,6 +57020,7 @@
                     "odds_hash": "88f75a735d5d051b",
                     "model": "gemini-3.5-flash-lite"
                   },
+                  "matchup_rank": 2,
                   "is_slot_pick": true
                 }
               ]
@@ -57059,7 +57059,7 @@
                   "away_record": "85-77",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/cle.png",
                   "away_location": "Cleveland",
-                  "away_pitcher": null,
+                  "away_pitcher": "P. Messick (0-1, 5.40)",
                   "matchup_score": 50.0,
                   "channel": "TBS, truTV",
                   "venue": "Tropicana Field",
@@ -57067,17 +57067,212 @@
                   "neutral_site": false,
                   "odds": {
                     "draftkings": {
-                      "spread": {},
-                      "moneyline": {},
-                      "total": {}
+                      "spread": {
+                        "home": {
+                          "line": -1.5,
+                          "american": 163
+                        },
+                        "away": {
+                          "line": 1.5,
+                          "american": -199
+                        }
+                      },
+                      "moneyline": {
+                        "home": {
+                          "line": null,
+                          "american": -137
+                        },
+                        "away": {
+                          "line": null,
+                          "american": 114
+                        }
+                      },
+                      "total": {
+                        "over": {
+                          "line": 6.5,
+                          "american": -132
+                        },
+                        "under": {
+                          "line": 6.5,
+                          "american": 102
+                        }
+                      }
                     },
                     "fanduel": {
-                      "spread": {},
-                      "moneyline": {},
-                      "total": {}
+                      "spread": {
+                        "home": {
+                          "line": -1.5,
+                          "american": 172
+                        },
+                        "away": {
+                          "line": 1.5,
+                          "american": -210
+                        }
+                      },
+                      "moneyline": {
+                        "home": {
+                          "line": null,
+                          "american": -134
+                        },
+                        "away": {
+                          "line": null,
+                          "american": 116
+                        }
+                      },
+                      "total": {
+                        "over": {
+                          "line": 6.5,
+                          "american": -122
+                        },
+                        "under": {
+                          "line": 6.5,
+                          "american": 100
+                        }
+                      }
                     }
                   },
                   "matchup_rank": 1,
+                  "gemini_prediction": {
+                    "winner": "Tampa Bay Rays",
+                    "confidence": 62,
+                    "ats_pick": "Cleveland Guardians",
+                    "ats_confidence": 55,
+                    "total_pick": "Under",
+                    "total_confidence": 58,
+                    "analysis": "The Tampa Bay Rays send out F. Peralta, who has anchored a strong 1.93 ERA this season and provides a significant advantage on the mound. Cleveland counters with P. Messick, whose 5.40 ERA suggests vulnerability against a disciplined Tampa Bay batting order. While the Rays are favored to win the game outright, laying 1.5 runs is risky given the pitching matchup and postseason volatility. Cleveland's bullpen should keep things close enough to cover the run line even if they fall short of a victory. Therefore, the Guardians are the prudent choice to keep the final margin within a single run.",
+                    "ou_analysis": "Peralta's dominant 1.93 ERA combined with high-stakes postseason pitching sets a tone of containment for both offenses. The low total of 6.5 reflects expectations of a tightly contested game where scoring opportunities will be at a premium. Consequently, the under is well-positioned to hit as strong pitching suppresses the run environment.",
+                    "splits_and_direction": "Approximately 58 percent of the moneyline bets are currently backing the Tampa Bay Rays, while 55 percent of spread bets lean toward the Cleveland Guardians as underdogs. The moneyline has ticked up slightly toward Tampa Bay, and the total has remained stable at 6.5 with heavy juice on the over.",
+                    "display_text": "Analysis: The Tampa Bay Rays send out F. Peralta, who has anchored a strong 1.93 ERA this season and provides a significant advantage on the mound. Cleveland counters with P. Messick, whose 5.40 ERA suggests vulnerability against a disciplined Tampa Bay batting order. While the Rays are favored to win the game outright, laying 1.5 runs is risky given the pitching matchup and postseason volatility. Cleveland's bullpen should keep things close enough to cover the run line even if they fall short of a victory. Therefore, the Guardians are the prudent choice to keep the final margin within a single run.\n\nOver Under: Peralta's dominant 1.93 ERA combined with high-stakes postseason pitching sets a tone of containment for both offenses. The low total of 6.5 reflects expectations of a tightly contested game where scoring opportunities will be at a premium. Consequently, the under is well-positioned to hit as strong pitching suppresses the run environment.\n\nSplits: Approximately 58 percent of the moneyline bets are currently backing the Tampa Bay Rays, while 55 percent of spread bets lean toward the Cleveland Guardians as underdogs. The moneyline has ticked up slightly toward Tampa Bay, and the total has remained stable at 6.5 with heavy juice on the over.",
+                    "generated_at": "2026-10-13T05:13:33.335813+00:00",
+                    "odds_hash": "0f17ee23d5205ee7",
+                    "model": "gemini-3.5-flash-lite"
+                  },
+                  "is_slot_pick": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": 20261014,
+      "total_games": 1,
+      "days": [
+        {
+          "date": "2026-10-14",
+          "weekday": "Wednesday",
+          "game_count": 1,
+          "is_preseason": false,
+          "time_slots": [
+            {
+              "slot": "Prime Time",
+              "best_matchup_score": 50.0,
+              "pick_reason": "combined_wins",
+              "games": [
+                {
+                  "id": "401908032",
+                  "start_time": "2026-10-15T00:00Z",
+                  "start_time_tbd": false,
+                  "home_team": "Los Angeles Dodgers",
+                  "home_abbr": "LAD",
+                  "home_record": "100-62",
+                  "home_logo": "https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/lad.png",
+                  "home_location": "Los Angeles",
+                  "home_pitcher": null,
+                  "away_team": "Milwaukee Brewers",
+                  "away_abbr": "MIL",
+                  "away_record": "103-59",
+                  "away_logo": "https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/mil.png",
+                  "away_location": "Milwaukee",
+                  "away_pitcher": "R. Gasser (0-0, 2.25)",
+                  "matchup_score": 50.0,
+                  "channel": "FS1",
+                  "venue": "Dodger Stadium",
+                  "venue_location": "Los Angeles, California",
+                  "neutral_site": false,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {
+                        "away": {
+                          "line": 1.5,
+                          "american": -156
+                        },
+                        "home": {
+                          "line": -1.5,
+                          "american": 129
+                        }
+                      },
+                      "moneyline": {
+                        "home": {
+                          "line": null,
+                          "american": -175
+                        },
+                        "away": {
+                          "line": null,
+                          "american": 144
+                        }
+                      },
+                      "total": {
+                        "under": {
+                          "line": 7.5,
+                          "american": -112
+                        },
+                        "over": {
+                          "line": 7.5,
+                          "american": -108
+                        }
+                      }
+                    },
+                    "fanduel": {
+                      "spread": {
+                        "away": {
+                          "line": 1.5,
+                          "american": -154
+                        },
+                        "home": {
+                          "line": -1.5,
+                          "american": 128
+                        }
+                      },
+                      "moneyline": {
+                        "away": {
+                          "line": null,
+                          "american": 150
+                        },
+                        "home": {
+                          "line": null,
+                          "american": -178
+                        }
+                      },
+                      "total": {
+                        "over": {
+                          "line": 7.5,
+                          "american": 100
+                        },
+                        "under": {
+                          "line": 7.5,
+                          "american": -122
+                        }
+                      }
+                    }
+                  },
+                  "matchup_rank": 1,
+                  "gemini_prediction": {
+                    "winner": "Los Angeles Dodgers",
+                    "confidence": 65,
+                    "ats_pick": "Milwaukee Brewers",
+                    "ats_confidence": 60,
+                    "total_pick": "Under",
+                    "total_confidence": 58,
+                    "analysis": "The Los Angeles Dodgers hold home-field advantage and a potent 2026 roster capable of taking down tough pitching matchups. Milwaukee counters with Robert Gasser on the mound, who has pitched to a strong 2.25 ERA this season and keeps games close. While the Dodgers are favored heavily on the moneyline at -175, their offense may struggle to pull away by multiple runs against Gasser's sharp execution. Consequently, the Milwaukee Brewers offer value to cover the +1.5 run spread by keeping the margin tight. Los Angeles ultimately finds a way to win outright late in the game, but it will be a narrow victory.",
+                    "ou_analysis": "Robert Gasser's sub-3.00 ERA sets a strong tone for limiting opposing offense in a playoff-caliber atmosphere. Both clubs feature disciplined pitching staffs and strategic bullpen usage that suppress high-scoring outbursts. Therefore, the combined final score stays under the posted total of 7.5 runs.",
+                    "splits_and_direction": "Based on public betting tendencies, approximately 68 percent of spread and moneyline bets are backing the favored Dodgers, while roughly 55 percent of total wagers lean toward the under. The home spread and moneyline have both ticked slightly upward toward Los Angeles since opening, while the total has remained steady at 7.5.",
+                    "display_text": "Analysis: The Los Angeles Dodgers hold home-field advantage and a potent 2026 roster capable of taking down tough pitching matchups. Milwaukee counters with Robert Gasser on the mound, who has pitched to a strong 2.25 ERA this season and keeps games close. While the Dodgers are favored heavily on the moneyline at -175, their offense may struggle to pull away by multiple runs against Gasser's sharp execution. Consequently, the Milwaukee Brewers offer value to cover the +1.5 run spread by keeping the margin tight. Los Angeles ultimately finds a way to win outright late in the game, but it will be a narrow victory.\n\nOver Under: Robert Gasser's sub-3.00 ERA sets a strong tone for limiting opposing offense in a playoff-caliber atmosphere. Both clubs feature disciplined pitching staffs and strategic bullpen usage that suppress high-scoring outbursts. Therefore, the combined final score stays under the posted total of 7.5 runs.\n\nSplits: Based on public betting tendencies, approximately 68 percent of spread and moneyline bets are backing the favored Dodgers, while roughly 55 percent of total wagers lean toward the under. The home spread and moneyline have both ticked slightly upward toward Los Angeles since opening, while the total has remained steady at 7.5.",
+                    "generated_at": "2026-10-13T05:13:43.025220+00:00",
+                    "odds_hash": "0f0494f55dd84c96",
+                    "model": "gemini-3.5-flash-lite"
+                  },
                   "is_slot_pick": true
                 }
               ]
@@ -57087,5 +57282,5 @@
       ]
     }
   ],
-  "current_week": 20261012
+  "current_week": 20261013
 }
