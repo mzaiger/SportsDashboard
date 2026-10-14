@@ -12,9 +12,12 @@ on:
     #   { "event_type": "trigger-scores-pull" }
     types: [trigger-scores-pull]
 
+# Own lock, separate from the dashboard build. Scores only write
+# data/scores.json, so they never need to wait for the long dashboard run.
+# (A newer pending run replaces an older pending one, which is fine here.)
 concurrency:
-  group: shared-repo-lock
-  cancel-in-progress: false    
+  group: fetch-scores
+  cancel-in-progress: false
 
 permissions:
   contents: write
@@ -42,5 +45,14 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add data/scores.json
-          git diff --staged --quiet || git commit -m "Update live scores [automated]"
-          git push
+          git diff --staged --quiet && exit 0
+          git commit -m "Update live scores [automated]"
+          # The dashboard build may have pushed while we were fetching.
+          # Rebase on top of it and retry instead of failing.
+          for i in 1 2 3 4 5; do
+            git pull --rebase origin "$GITHUB_REF_NAME" && git push && exit 0
+            git rebase --abort 2>/dev/null || true
+            sleep $((i * 5))
+          done
+          echo "Push failed after 5 attempts" >&2
+          exit 1
