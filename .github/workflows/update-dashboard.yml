@@ -9,8 +9,10 @@ on:
     - cron: "0 */4 * * *"
   workflow_dispatch: {}  # lets you trigger a manual run from the Actions tab
 
+# Own lock, separate from fetch-scores. The two jobs write different files,
+# so they can run side by side; the retrying push below handles the race.
 concurrency:
-  group: shared-repo-lock
+  group: update-dashboard
   cancel-in-progress: false
 
 permissions:
@@ -80,5 +82,14 @@ jobs:
           if [ -f data/gemini_predictions_cache.json ]; then
             git add data/gemini_predictions_cache.json
           fi
-          git diff --staged --quiet || git commit -m "Update dashboard data [automated]"
-          git push
+          git diff --staged --quiet && exit 0
+          git commit -m "Update dashboard data [automated]"
+          # fetch-scores may have pushed during this (long) build.
+          # Rebase on top of it and retry instead of failing.
+          for i in 1 2 3 4 5; do
+            git pull --rebase origin "$GITHUB_REF_NAME" && git push && exit 0
+            git rebase --abort 2>/dev/null || true
+            sleep $((i * 5))
+          done
+          echo "Push failed after 5 attempts" >&2
+          exit 1
