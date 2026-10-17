@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-16T22:36:06.231044+00:00",
+  "generated_at": "2026-10-17T02:49:35.492954+00:00",
   "season": 2026,
   "display_timezone": "America/Chicago",
   "weeks": [
@@ -57621,7 +57621,6 @@
                       }
                     }
                   },
-                  "matchup_rank": 1,
                   "gemini_prediction": {
                     "winner": "Tampa Bay Rays",
                     "confidence": 56,
@@ -57637,6 +57636,7 @@
                     "odds_hash": "0068e44a93849d50",
                     "model": "gemini-3.5-flash-lite"
                   },
+                  "matchup_rank": 1,
                   "is_slot_pick": true
                 }
               ]
@@ -57669,13 +57669,13 @@
                   "home_record": "85-77",
                   "home_logo": "https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/cle.png",
                   "home_location": "Cleveland",
-                  "home_pitcher": null,
+                  "home_pitcher": "S. Armstrong (0-0, 0.00)",
                   "away_team": "Tampa Bay Rays",
                   "away_abbr": "TB",
                   "away_record": "98-64",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/tb.png",
                   "away_location": "Tampa Bay",
-                  "away_pitcher": null,
+                  "away_pitcher": "N. Martinez (0-0, 4.91)",
                   "matchup_score": 50.0,
                   "channel": "TBS, truTV",
                   "venue": "Progressive Field",
@@ -57683,17 +57683,86 @@
                   "neutral_site": false,
                   "odds": {
                     "draftkings": {
-                      "spread": {},
-                      "moneyline": {},
-                      "total": {}
+                      "spread": {
+                        "home": {
+                          "line": 1.5,
+                          "american": -188
+                        },
+                        "away": {
+                          "line": -1.5,
+                          "american": 154
+                        }
+                      },
+                      "moneyline": {
+                        "home": {
+                          "line": null,
+                          "american": -103
+                        },
+                        "away": {
+                          "line": null,
+                          "american": -117
+                        }
+                      },
+                      "total": {
+                        "over": {
+                          "line": 5.5,
+                          "american": -181
+                        },
+                        "under": {
+                          "line": 5.5,
+                          "american": 138
+                        }
+                      }
                     },
                     "fanduel": {
-                      "spread": {},
-                      "moneyline": {},
-                      "total": {}
+                      "spread": {
+                        "home": {
+                          "line": 1.5,
+                          "american": -210
+                        },
+                        "away": {
+                          "line": -1.5,
+                          "american": 172
+                        }
+                      },
+                      "moneyline": {
+                        "home": {
+                          "line": null,
+                          "american": -104
+                        },
+                        "away": {
+                          "line": null,
+                          "american": -112
+                        }
+                      },
+                      "total": {
+                        "over": {
+                          "line": 6.5,
+                          "american": -112
+                        },
+                        "under": {
+                          "line": 6.5,
+                          "american": -108
+                        }
+                      }
                     }
                   },
                   "matchup_rank": 1,
+                  "gemini_prediction": {
+                    "winner": "Tampa Bay Rays",
+                    "confidence": 54,
+                    "ats_pick": "Cleveland Guardians",
+                    "ats_confidence": 56,
+                    "total_pick": "Over",
+                    "total_confidence": 58,
+                    "analysis": "The Tampa Bay Rays travel to face the Cleveland Guardians in a closely contested 2026 matchup featuring starting pitchers N. Martinez and S. Armstrong. Martinez enters with a 4.91 ERA, indicating potential vulnerability against a disciplined Cleveland lineup at home. Armstrong has shown better early form with a 0.00 ERA, though a small sample size leaves room for regression against Tampa Bay's hitters. Market odds reflect a near pick'em scenario, highlighting how evenly matched these two rosters are performing this season. Ultimately, the Rays hold a slight edge in bullpen depth to grind out a narrow road victory. However, that tight margin makes the Guardians a strong play to cover the +1.5 run spread.",
+                    "ou_analysis": "The low posted total of 6.5 accounts for both starting pitchers keeping initial frames quiet, but Martinez's higher ERA opens the door for middle-inning scoring. Both bullfights have shown fatigue in late-season action, which typically drives up the run expectancy in high-leverage innings. Given the favourable hitting conditions and bullpen usage patterns, the game has enough offensive upside to clear the number.",
+                    "splits_and_direction": "Public betting splits are currently estimated at roughly 54% of moneyline wagers backing the visiting Rays, while the spread splits lean heavily toward the Guardians plus the runs due to the tight odds. The moneyline has drifted slightly toward Tampa Bay from opening numbers, and the total has climbed from 5.5 to 6.5 at FanDuel as early sharp action hit the over.",
+                    "display_text": "Analysis: The Tampa Bay Rays travel to face the Cleveland Guardians in a closely contested 2026 matchup featuring starting pitchers N. Martinez and S. Armstrong. Martinez enters with a 4.91 ERA, indicating potential vulnerability against a disciplined Cleveland lineup at home. Armstrong has shown better early form with a 0.00 ERA, though a small sample size leaves room for regression against Tampa Bay's hitters. Market odds reflect a near pick'em scenario, highlighting how evenly matched these two rosters are performing this season. Ultimately, the Rays hold a slight edge in bullpen depth to grind out a narrow road victory. However, that tight margin makes the Guardians a strong play to cover the +1.5 run spread.\n\nOver Under: The low posted total of 6.5 accounts for both starting pitchers keeping initial frames quiet, but Martinez's higher ERA opens the door for middle-inning scoring. Both bullfights have shown fatigue in late-season action, which typically drives up the run expectancy in high-leverage innings. Given the favourable hitting conditions and bullpen usage patterns, the game has enough offensive upside to clear the number.\n\nSplits: Public betting splits are currently estimated at roughly 54% of moneyline wagers backing the visiting Rays, while the spread splits lean heavily toward the Guardians plus the runs due to the tight odds. The moneyline has drifted slightly toward Tampa Bay from opening numbers, and the total has climbed from 5.5 to 6.5 at FanDuel as early sharp action hit the over.",
+                    "generated_at": "2026-10-17T02:49:35.325208+00:00",
+                    "odds_hash": "f211d64103db7ec9",
+                    "model": "gemini-3.5-flash-lite"
+                  },
                   "is_slot_pick": true
                 }
               ]
