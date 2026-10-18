@@ -413,6 +413,17 @@ def build_win_rank_lookup(team_records):
 # Main build -- one calendar day at a time
 # ---------------------------------------------------------------------------
 
+def _has_odds(entry):
+    """True if a saved game entry actually holds at least one posted line.
+    Used so a started game with EMPTY saved odds is not frozen forever."""
+    o = (entry or {}).get("odds") or {}
+    return any(
+        (o.get(book) or {}).get(market)
+        for book in ("draftkings", "fanduel")
+        for market in ("spread", "moneyline", "total")
+    )
+
+
 def build_day(day, sharp_key, gemini_key=None, previous_odds_by_id=None,
               previous_entries_by_id=None, started_game_ids=None):
     """Build a single day's worth of games. Returns a "week"-shaped dict
@@ -455,7 +466,7 @@ def build_day(day, sharp_key, gemini_key=None, previous_odds_by_id=None,
             continue
         _board_ids.append(str(event.get("id")))
     _all_frozen = bool(_board_ids) and bool(started_game_ids) and all(
-        i in started_game_ids and i in _prev for i in _board_ids)
+        i in started_game_ids and _has_odds(_prev.get(i)) for i in _board_ids)
     if _all_frozen:
         log(f"  Skipping odds fetch: all {len(_board_ids)} game(s) already started -- odds stay frozen from the previous build.")
         odds_rows = []
@@ -522,7 +533,7 @@ def build_day(day, sharp_key, gemini_key=None, previous_odds_by_id=None,
         # re-fetching/re-matching/re-calling: an in-game line moves
         # constantly and doesn't reflect the pregame market the pick/
         # prediction was actually made against.
-        if already_started and previous_entry is not None:
+        if already_started and _has_odds(previous_entry):
             odds = previous_entry.get("odds") or {}
             frozen_prediction_skip_ids.add(gid_str)
         else:
