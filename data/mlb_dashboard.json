@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-18T02:45:14.518821+00:00",
+  "generated_at": "2026-10-18T08:34:30.798811+00:00",
   "season": 2026,
   "display_timezone": "America/Chicago",
   "weeks": [
@@ -57675,7 +57675,7 @@
                   "away_record": "98-64",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/tb.png",
                   "away_location": "Tampa Bay",
-                  "away_pitcher": "N. Martinez (0-0, 4.91)",
+                  "away_pitcher": "N. Martinez (1-0, 3.00)",
                   "matchup_score": 50.0,
                   "channel": "TBS, truTV",
                   "venue": "Progressive Field",
@@ -57795,13 +57795,13 @@
                   "home_record": "85-77",
                   "home_logo": "https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/cle.png",
                   "home_location": "Cleveland",
-                  "home_pitcher": null,
+                  "home_pitcher": "P. Messick (0-2, 3.09)",
                   "away_team": "Tampa Bay Rays",
                   "away_abbr": "TB",
                   "away_record": "98-64",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/tb.png",
                   "away_location": "Tampa Bay",
-                  "away_pitcher": null,
+                  "away_pitcher": "D. Rasmussen (1-0, 1.29)",
                   "matchup_score": 50.0,
                   "channel": "TBS, truTV",
                   "venue": "Progressive Field",
@@ -57827,7 +57827,64 @@
           ]
         }
       ]
+    },
+    {
+      "week": 20261019,
+      "total_games": 1,
+      "days": [
+        {
+          "date": "2026-10-19",
+          "weekday": "Monday",
+          "game_count": 1,
+          "is_preseason": false,
+          "time_slots": [
+            {
+              "slot": "Prime Time",
+              "best_matchup_score": 50.0,
+              "pick_reason": "combined_wins",
+              "games": [
+                {
+                  "id": "401908028",
+                  "start_time": "2026-10-20T00:00Z",
+                  "start_time_tbd": false,
+                  "home_team": "Tampa Bay Rays",
+                  "home_abbr": "TB",
+                  "home_record": "98-64",
+                  "home_logo": "https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/tb.png",
+                  "home_location": "Tampa Bay",
+                  "home_pitcher": null,
+                  "away_team": "Cleveland Guardians",
+                  "away_abbr": "CLE",
+                  "away_record": "85-77",
+                  "away_logo": "https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/cle.png",
+                  "away_location": "Cleveland",
+                  "away_pitcher": null,
+                  "matchup_score": 50.0,
+                  "channel": "TBS, truTV",
+                  "venue": "Tropicana Field",
+                  "venue_location": "St. Petersburg, Florida",
+                  "neutral_site": false,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    },
+                    "fanduel": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    }
+                  },
+                  "matchup_rank": 1,
+                  "is_slot_pick": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
-  "current_week": 20261017
+  "current_week": 20261018
 }
