@@ -911,7 +911,7 @@
 <div class="hero hero--picks">
   <div class="hero-inner">
     <div class="eyebrow">Your saved picks</div>
-    <h1>My Picks</h1>
+    <h1 id="pageTitle">Loading picks&hellip;</h1>
     <div class="stat-badges-title">My Week's Stats (Wednesday through Tuesday)</div>
     <div class="stat-badges">
       <div class="stat-badge">
@@ -1441,6 +1441,7 @@ async function init() {
 
     const scoresList = await Promise.all(SPORT_ORDER.map(sp => fetchScores(sp)));
     SCORES = Object.fromEntries(SPORT_ORDER.map((sp, i) => [sp, scoresList[i]]));
+    document.getElementById('pageTitle').textContent = 'My Picks';
 
     if (SPORT_ORDER.every(sp => !DATA[sp])) {
       statusEl.style.display = 'block';
@@ -1462,6 +1463,7 @@ async function init() {
     setInterval(renderBoard, 60000);
   } catch (err) {
     statusEl.style.display = 'block';
+    document.getElementById('pageTitle').textContent = 'My Picks';
     statusEl.textContent = `Something went wrong loading your picks (${err.message}).`;
   }
 }
