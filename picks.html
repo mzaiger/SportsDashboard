@@ -554,6 +554,12 @@
   .sport-subheading .sport-subcount{color:var(--dim); font-size:0.72rem;}
 
   .day-block{margin-top:2rem;}
+  .lazy-sentinel{
+    text-align:center; padding:2rem 0 1rem; min-height:3rem;
+    font-family:var(--font-display); font-weight:600; font-size:0.68rem;
+    text-transform:uppercase; letter-spacing:0.04em; color:var(--dim);
+  }
+  .lazy-sentinel[hidden]{display:none;}
   .day-heading{
     display:flex; align-items:baseline; gap:0.75rem;
     padding-bottom:0.5rem; margin-bottom:1rem;
@@ -943,6 +949,7 @@
 </div>
 
 <main id="sections"></main>
+<div class="lazy-sentinel" id="lazySentinel" hidden>Loading more picks…</div>
 
 <div class="status" id="statusMsg" style="display:none;"></div>
 
@@ -1310,12 +1317,84 @@ function renderBoard() {
 
   if (!dayGroups.length) {
     sectionsEl.innerHTML = '';
+    lazyDayGroups = [];
+    lazyRenderedDays = 0;
+    updateLazySentinel();
     statusEl.style.display = 'block';
     statusEl.textContent = "No picks yet. Head to NCAAF, NFL, MLB, NBA, NCAAMB, or NHL, pick a spread or moneyline on any game, and it'll show up here.";
     return;
   }
   statusEl.style.display = 'none';
-  sectionsEl.innerHTML = dayGroups.map(renderUnifiedDay).join('');
+  lazyDayGroups = dayGroups;
+  renderLazyDays();
+}
+
+// ---- Lazy loading ---------------------------------------------------------
+// Only the newest days are rendered up front; the rest are appended in
+// batches as the sentinel under the list scrolls near the viewport. The
+// stat circles above are still computed from the FULL filtered data (see
+// renderBoard), so lazy loading only affects how many cards are in the DOM.
+// lazyPickTarget survives re-renders (pick clicks, the 60s refresh, filter
+// changes) so already-loaded days don't collapse back to the first batch.
+const LAZY_BATCH_PICKS = 12;
+let lazyPickTarget = LAZY_BATCH_PICKS;
+let lazyDayGroups = [];
+let lazyRenderedDays = 0;
+let lazyObserver = null;
+
+function dayPickCount(dg) {
+  return dg.slots.reduce((n, s) => n + s.sports.reduce((m, sp) => m + sp.games.length, 0), 0);
+}
+
+// Whole days at a time: keep adding days until at least `target` picks.
+function daysForTarget(dayGroups, target) {
+  let picks = 0, days = 0;
+  while (days < dayGroups.length && picks < target) {
+    picks += dayPickCount(dayGroups[days]);
+    days++;
+  }
+  return days;
+}
+
+function renderLazyDays() {
+  const sectionsEl = document.getElementById('sections');
+  lazyRenderedDays = ('IntersectionObserver' in window)
+    ? daysForTarget(lazyDayGroups, lazyPickTarget)
+    : lazyDayGroups.length;
+  sectionsEl.innerHTML = lazyDayGroups.slice(0, lazyRenderedDays).map(renderUnifiedDay).join('');
+  updateLazySentinel();
+}
+
+function updateLazySentinel() {
+  const sentinel = document.getElementById('lazySentinel');
+  if (!sentinel) return;
+  const more = lazyRenderedDays < lazyDayGroups.length;
+  sentinel.hidden = !more;
+  if (!lazyObserver && more) {
+    lazyObserver = new IntersectionObserver(entries => {
+      if (entries.some(e => e.isIntersecting)) loadMoreDays();
+    }, { rootMargin: '600px 0px' });
+  }
+  if (lazyObserver) {
+    // unobserve + observe forces a fresh callback, so if the sentinel is
+    // still on screen after a batch (tall display) the next batch loads too.
+    lazyObserver.unobserve(sentinel);
+    if (more) lazyObserver.observe(sentinel);
+  }
+}
+
+function loadMoreDays() {
+  if (lazyRenderedDays >= lazyDayGroups.length) return;
+  const sectionsEl = document.getElementById('sections');
+  const prev = lazyRenderedDays;
+  lazyPickTarget += LAZY_BATCH_PICKS;
+  lazyRenderedDays = Math.max(prev + 1, daysForTarget(lazyDayGroups, lazyPickTarget));
+  // Append only the new days so existing cards (open Gemini blocks, etc.)
+  // aren't torn down. Click handlers are delegated on #sections, so the new
+  // cards work without re-attaching anything.
+  sectionsEl.insertAdjacentHTML('beforeend',
+    lazyDayGroups.slice(prev, lazyRenderedDays).map(renderUnifiedDay).join(''));
+  updateLazySentinel();
 }
 
 // Wires the "Clear All Picks" button under the 4 stat circles to the
