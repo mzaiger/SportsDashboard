@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-18T22:15:50.372552+00:00",
+  "generated_at": "2026-10-19T03:05:16.401422+00:00",
   "season": 2026,
   "display_timezone": "America/Chicago",
   "weeks": [
@@ -57912,7 +57912,7 @@
                   "home_record": "98-64",
                   "home_logo": "https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/tb.png",
                   "home_location": "Tampa Bay",
-                  "home_pitcher": null,
+                  "home_pitcher": "F. Peralta (1-0, 0.79)",
                   "away_team": "Cleveland Guardians",
                   "away_abbr": "CLE",
                   "away_record": "85-77",
@@ -57926,17 +57926,86 @@
                   "neutral_site": false,
                   "odds": {
                     "draftkings": {
-                      "spread": {},
-                      "moneyline": {},
-                      "total": {}
+                      "spread": {
+                        "home": {
+                          "line": -1.5,
+                          "american": 161
+                        },
+                        "away": {
+                          "line": 1.5,
+                          "american": -196
+                        }
+                      },
+                      "moneyline": {
+                        "home": {
+                          "line": null,
+                          "american": -147
+                        },
+                        "away": {
+                          "line": null,
+                          "american": 122
+                        }
+                      },
+                      "total": {
+                        "over": {
+                          "line": 6.5,
+                          "american": -114
+                        },
+                        "under": {
+                          "line": 6.5,
+                          "american": -106
+                        }
+                      }
                     },
                     "fanduel": {
-                      "spread": {},
-                      "moneyline": {},
-                      "total": {}
+                      "spread": {
+                        "home": {
+                          "line": -1.5,
+                          "american": 172
+                        },
+                        "away": {
+                          "line": 1.5,
+                          "american": -210
+                        }
+                      },
+                      "moneyline": {
+                        "home": {
+                          "line": null,
+                          "american": -138
+                        },
+                        "away": {
+                          "line": null,
+                          "american": 118
+                        }
+                      },
+                      "total": {
+                        "over": {
+                          "line": 6.5,
+                          "american": -110
+                        },
+                        "under": {
+                          "line": 6.5,
+                          "american": -110
+                        }
+                      }
                     }
                   },
                   "matchup_rank": 1,
+                  "gemini_prediction": {
+                    "winner": "Tampa Bay Rays",
+                    "confidence": 65,
+                    "ats_pick": "Cleveland Guardians",
+                    "ats_confidence": 58,
+                    "total_pick": "Under",
+                    "total_confidence": 62,
+                    "analysis": "The Tampa Bay Rays hold a distinct starting pitching advantage with F. Peralta anchoring the mound following an exceptional 2026 campaign. Cleveland's offense has struggled to generate consistent power against elite right-handed pitching throughout the current season. While the Rays are expected to secure the victory outright at home, their modest offensive output typically prevents them from blowing opponents out. Consequently, the Cleveland Guardians offer strong value to keep the margin close and cover the 1.5-run spread. Expect a tightly contested game where Tampa Bay edges it out late by a narrow margin.",
+                    "ou_analysis": "With F. Peralta pitching brilliantly and boasting a sub-1.00 ERA in 2026, run production will be at an absolute premium for both batting orders. Both the Tampa Bay Rays and the Cleveland Guardians feature pitching staffs and bullpen arms that suppress scoring effectively in high-leverage late-inning scenarios. Therefore, the low total of 6.5 runs is still too high for two defensively sound teams playing in a high-stakes October environment, pointing directly to the under.",
+                    "splits_and_direction": "Based on public betting tendencies, roughly 68% of moneyline wagers are backing the favored Tampa Bay Rays at home while 55% of spread action leans toward the underdog Cleveland Guardians. The moneyline has ticked up slightly in favor of Tampa Bay, while the total has held steady at 6.5 runs with heavy juice shifting toward the under.",
+                    "display_text": "Analysis: The Tampa Bay Rays hold a distinct starting pitching advantage with F. Peralta anchoring the mound following an exceptional 2026 campaign. Cleveland's offense has struggled to generate consistent power against elite right-handed pitching throughout the current season. While the Rays are expected to secure the victory outright at home, their modest offensive output typically prevents them from blowing opponents out. Consequently, the Cleveland Guardians offer strong value to keep the margin close and cover the 1.5-run spread. Expect a tightly contested game where Tampa Bay edges it out late by a narrow margin.\n\nOver Under: With F. Peralta pitching brilliantly and boasting a sub-1.00 ERA in 2026, run production will be at an absolute premium for both batting orders. Both the Tampa Bay Rays and the Cleveland Guardians feature pitching staffs and bullpen arms that suppress scoring effectively in high-leverage late-inning scenarios. Therefore, the low total of 6.5 runs is still too high for two defensively sound teams playing in a high-stakes October environment, pointing directly to the under.\n\nSplits: Based on public betting tendencies, roughly 68% of moneyline wagers are backing the favored Tampa Bay Rays at home while 55% of spread action leans toward the underdog Cleveland Guardians. The moneyline has ticked up slightly in favor of Tampa Bay, while the total has held steady at 6.5 runs with heavy juice shifting toward the under.",
+                    "generated_at": "2026-10-19T03:05:16.236537+00:00",
+                    "odds_hash": "8847cd946162cb15",
+                    "model": "gemini-3.5-flash-lite"
+                  },
                   "is_slot_pick": true
                 }
               ]
