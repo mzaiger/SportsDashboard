@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-21T03:08:36.526534+00:00",
+  "generated_at": "2026-10-21T09:12:07.298851+00:00",
   "season": 2026,
   "display_timezone": "America/Chicago",
   "weeks": [
@@ -17665,112 +17665,9 @@
           "time_slots": [
             {
               "slot": "Prime Time",
-              "best_matchup_score": 0.0,
+              "best_matchup_score": 50.0,
               "pick_reason": "combined_points",
               "games": [
-                {
-                  "id": "401892546",
-                  "start_time": "2026-10-21T01:00Z",
-                  "start_time_tbd": false,
-                  "home_team": "Edmonton Oilers",
-                  "home_abbr": "EDM",
-                  "home_record": "6-1-1",
-                  "home_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/edm.png",
-                  "home_location": "Edmonton",
-                  "away_team": "Minnesota Wild",
-                  "away_abbr": "MIN",
-                  "away_record": "6-2-1",
-                  "away_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/min.png",
-                  "away_location": "Minnesota",
-                  "matchup_score": 0.0,
-                  "channel": "ESPN+, MINNHL",
-                  "venue": "Rogers Place",
-                  "venue_location": "Edmonton, AB",
-                  "neutral_site": false,
-                  "odds": {
-                    "draftkings": {
-                      "spread": {
-                        "home": {
-                          "line": -1.5,
-                          "american": 185
-                        },
-                        "away": {
-                          "line": 1.5,
-                          "american": -225
-                        }
-                      },
-                      "moneyline": {
-                        "home": {
-                          "line": null,
-                          "american": -135
-                        },
-                        "away": {
-                          "line": null,
-                          "american": 114
-                        }
-                      },
-                      "total": {
-                        "over": {
-                          "line": 6.5,
-                          "american": 100
-                        },
-                        "under": {
-                          "line": 6.5,
-                          "american": -120
-                        }
-                      }
-                    },
-                    "fanduel": {
-                      "spread": {
-                        "home": {
-                          "line": -1.5,
-                          "american": 176
-                        },
-                        "away": {
-                          "line": 1.5,
-                          "american": -215
-                        }
-                      },
-                      "moneyline": {
-                        "home": {
-                          "line": null,
-                          "american": -140
-                        },
-                        "away": {
-                          "line": null,
-                          "american": 116
-                        }
-                      },
-                      "total": {
-                        "over": {
-                          "line": 6.5,
-                          "american": 102
-                        },
-                        "under": {
-                          "line": 6.5,
-                          "american": -124
-                        }
-                      }
-                    }
-                  },
-                  "gemini_prediction": {
-                    "winner": "Edmonton Oilers",
-                    "confidence": 58,
-                    "ats_pick": "Edmonton Oilers",
-                    "ats_confidence": 55,
-                    "total_pick": "Under",
-                    "total_confidence": 56,
-                    "analysis": "Even though this prompt bizarrely mixes up NHL teams for a college football week, we must evaluate the current 2026 performance of the Edmonton Oilers and Minnesota Wild. The Edmonton Oilers possess a more potent top-six offensive core that consistently pressures opposing defenses in the current 2026 campaign. Minnesota struggles to generate consistent secondary scoring on the road against elite Western Conference opponents. Goaltending stability down the stretch heavily favors the Edmonton side in this matchup. Therefore, Edmonton should secure a narrow victory on home ice.",
-                    "ou_analysis": "Both teams feature structured defensive schemes that limit high-danger scoring chances at 5-on-5. Solid recent goaltending performances from both franchises further suppress the expected goal expectancy for this matchup. Consequently, the game pace and defensive discipline will keep the combined final score below the 6.5 threshold.",
-                    "splits_and_direction": "Based on public tendencies, approximately 62 percent of spread and moneyline bets are backing the Edmonton Oilers, while 58 percent of total wagers lean toward the Over. The home spread has held steady at -1.5 while the moneyline slightly drifted toward Edmonton, and the total ticked down from an opening number of 6.5 with heavier juice favoring the Under.",
-                    "display_text": "Analysis: Even though this prompt bizarrely mixes up NHL teams for a college football week, we must evaluate the current 2026 performance of the Edmonton Oilers and Minnesota Wild. The Edmonton Oilers possess a more potent top-six offensive core that consistently pressures opposing defenses in the current 2026 campaign. Minnesota struggles to generate consistent secondary scoring on the road against elite Western Conference opponents. Goaltending stability down the stretch heavily favors the Edmonton side in this matchup. Therefore, Edmonton should secure a narrow victory on home ice.\n\nOver Under: Both teams feature structured defensive schemes that limit high-danger scoring chances at 5-on-5. Solid recent goaltending performances from both franchises further suppress the expected goal expectancy for this matchup. Consequently, the game pace and defensive discipline will keep the combined final score below the 6.5 threshold.\n\nSplits: Based on public tendencies, approximately 62 percent of spread and moneyline bets are backing the Edmonton Oilers, while 58 percent of total wagers lean toward the Over. The home spread has held steady at -1.5 while the moneyline slightly drifted toward Edmonton, and the total ticked down from an opening number of 6.5 with heavier juice favoring the Under.",
-                    "generated_at": "2026-10-20T23:04:14.096019+00:00",
-                    "odds_hash": "b789d279807b8d19",
-                    "model": "gemini-3.5-flash-lite"
-                  },
-                  "matchup_rank": 1,
-                  "is_slot_pick": true
-                },
                 {
                   "id": "401892539",
                   "start_time": "2026-10-20T23:00Z",
@@ -17785,7 +17682,7 @@
                   "away_record": null,
                   "away_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/sj.png",
                   "away_location": "San Jose",
-                  "matchup_score": 100.0,
+                  "matchup_score": 50.0,
                   "channel": "ESPN+, NBC Sports BA",
                   "venue": "Bell Centre",
                   "venue_location": "Montreal, QC",
@@ -17871,8 +17768,8 @@
                     "odds_hash": "180dcf3c9b4e6b43",
                     "model": "gemini-3.5-flash-lite"
                   },
-                  "matchup_rank": 4,
-                  "is_slot_pick": false
+                  "matchup_rank": 1,
+                  "is_slot_pick": true
                 },
                 {
                   "id": "401892540",
@@ -17888,7 +17785,7 @@
                   "away_record": null,
                   "away_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/col.png",
                   "away_location": "Colorado",
-                  "matchup_score": 100.0,
+                  "matchup_score": 50.0,
                   "channel": "ESPN+, MSG, MSG2, Altitude Sports, KTVD-TV (My20)",
                   "venue": "Prudential Center",
                   "venue_location": "Newark, NJ",
@@ -17974,7 +17871,7 @@
                     "odds_hash": "6584256a55ee3cf7",
                     "model": "gemini-3.5-flash-lite"
                   },
-                  "matchup_rank": 5,
+                  "matchup_rank": 2,
                   "is_slot_pick": false
                 },
                 {
@@ -17991,7 +17888,7 @@
                   "away_record": null,
                   "away_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/ana.png",
                   "away_location": "Anaheim",
-                  "matchup_score": 100.0,
+                  "matchup_score": 50.0,
                   "channel": "ESPN+, MSGSN, KCOP, Prime Video (Local), Fox 11 Plus",
                   "venue": "UBS Arena",
                   "venue_location": "Elmont, NY",
@@ -18077,7 +17974,7 @@
                     "odds_hash": "476f77c5fb2b3930",
                     "model": "gemini-3.5-flash-lite"
                   },
-                  "matchup_rank": 6,
+                  "matchup_rank": 3,
                   "is_slot_pick": false
                 },
                 {
@@ -18094,7 +17991,7 @@
                   "away_record": null,
                   "away_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/la.png",
                   "away_location": "Los Angeles",
-                  "matchup_score": 100.0,
+                  "matchup_score": 50.0,
                   "channel": "ESPN+, MNMT, ABTV",
                   "venue": "Capital One Arena",
                   "venue_location": "Washington, DC",
@@ -18180,7 +18077,7 @@
                     "odds_hash": "d9719d13ea1c15ec",
                     "model": "gemini-3.5-flash-lite"
                   },
-                  "matchup_rank": 7,
+                  "matchup_rank": 4,
                   "is_slot_pick": false
                 },
                 {
@@ -18197,7 +18094,7 @@
                   "away_record": null,
                   "away_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/tor.png",
                   "away_location": "Toronto",
-                  "matchup_score": 100.0,
+                  "matchup_score": 50.0,
                   "channel": "ESPN+, CBJNHL",
                   "venue": "Nationwide Arena",
                   "venue_location": "Columbus, OH",
@@ -18283,7 +18180,7 @@
                     "odds_hash": "a39ba15be4b8095c",
                     "model": "gemini-3.5-flash-lite"
                   },
-                  "matchup_rank": 8,
+                  "matchup_rank": 5,
                   "is_slot_pick": false
                 },
                 {
@@ -18300,7 +18197,7 @@
                   "away_record": null,
                   "away_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/wpg.png",
                   "away_location": "Winnipeg",
-                  "matchup_score": 100.0,
+                  "matchup_score": 50.0,
                   "channel": "ESPN+, Blues App, BN+",
                   "venue": "Enterprise Center",
                   "venue_location": "St. Louis, MO",
@@ -18386,7 +18283,7 @@
                     "odds_hash": "fe900f01117505ab",
                     "model": "gemini-3.5-flash-lite"
                   },
-                  "matchup_rank": 9,
+                  "matchup_rank": 6,
                   "is_slot_pick": false
                 },
                 {
@@ -18403,7 +18300,7 @@
                   "away_record": null,
                   "away_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/bos.png",
                   "away_location": "Boston",
-                  "matchup_score": 100.0,
+                  "matchup_score": 50.0,
                   "channel": "ESPN",
                   "venue": "American Airlines Center",
                   "venue_location": "Dallas, TX",
@@ -18489,7 +18386,110 @@
                     "odds_hash": "8ff33b8f2a5bc6f8",
                     "model": "gemini-3.5-flash-lite"
                   },
-                  "matchup_rank": 10,
+                  "matchup_rank": 7,
+                  "is_slot_pick": false
+                },
+                {
+                  "id": "401892546",
+                  "start_time": "2026-10-21T01:00Z",
+                  "start_time_tbd": false,
+                  "home_team": "Edmonton Oilers",
+                  "home_abbr": "EDM",
+                  "home_record": null,
+                  "home_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/edm.png",
+                  "home_location": "Edmonton",
+                  "away_team": "Minnesota Wild",
+                  "away_abbr": "MIN",
+                  "away_record": null,
+                  "away_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/min.png",
+                  "away_location": "Minnesota",
+                  "matchup_score": 50.0,
+                  "channel": "ESPN+, MINNHL",
+                  "venue": "Rogers Place",
+                  "venue_location": "Edmonton, AB",
+                  "neutral_site": false,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {
+                        "home": {
+                          "line": -1.5,
+                          "american": 185
+                        },
+                        "away": {
+                          "line": 1.5,
+                          "american": -225
+                        }
+                      },
+                      "moneyline": {
+                        "home": {
+                          "line": null,
+                          "american": -135
+                        },
+                        "away": {
+                          "line": null,
+                          "american": 114
+                        }
+                      },
+                      "total": {
+                        "over": {
+                          "line": 6.5,
+                          "american": 100
+                        },
+                        "under": {
+                          "line": 6.5,
+                          "american": -120
+                        }
+                      }
+                    },
+                    "fanduel": {
+                      "spread": {
+                        "home": {
+                          "line": -1.5,
+                          "american": 176
+                        },
+                        "away": {
+                          "line": 1.5,
+                          "american": -215
+                        }
+                      },
+                      "moneyline": {
+                        "home": {
+                          "line": null,
+                          "american": -140
+                        },
+                        "away": {
+                          "line": null,
+                          "american": 116
+                        }
+                      },
+                      "total": {
+                        "over": {
+                          "line": 6.5,
+                          "american": 102
+                        },
+                        "under": {
+                          "line": 6.5,
+                          "american": -124
+                        }
+                      }
+                    }
+                  },
+                  "gemini_prediction": {
+                    "winner": "Edmonton Oilers",
+                    "confidence": 58,
+                    "ats_pick": "Edmonton Oilers",
+                    "ats_confidence": 55,
+                    "total_pick": "Under",
+                    "total_confidence": 56,
+                    "analysis": "Even though this prompt bizarrely mixes up NHL teams for a college football week, we must evaluate the current 2026 performance of the Edmonton Oilers and Minnesota Wild. The Edmonton Oilers possess a more potent top-six offensive core that consistently pressures opposing defenses in the current 2026 campaign. Minnesota struggles to generate consistent secondary scoring on the road against elite Western Conference opponents. Goaltending stability down the stretch heavily favors the Edmonton side in this matchup. Therefore, Edmonton should secure a narrow victory on home ice.",
+                    "ou_analysis": "Both teams feature structured defensive schemes that limit high-danger scoring chances at 5-on-5. Solid recent goaltending performances from both franchises further suppress the expected goal expectancy for this matchup. Consequently, the game pace and defensive discipline will keep the combined final score below the 6.5 threshold.",
+                    "splits_and_direction": "Based on public tendencies, approximately 62 percent of spread and moneyline bets are backing the Edmonton Oilers, while 58 percent of total wagers lean toward the Over. The home spread has held steady at -1.5 while the moneyline slightly drifted toward Edmonton, and the total ticked down from an opening number of 6.5 with heavier juice favoring the Under.",
+                    "display_text": "Analysis: Even though this prompt bizarrely mixes up NHL teams for a college football week, we must evaluate the current 2026 performance of the Edmonton Oilers and Minnesota Wild. The Edmonton Oilers possess a more potent top-six offensive core that consistently pressures opposing defenses in the current 2026 campaign. Minnesota struggles to generate consistent secondary scoring on the road against elite Western Conference opponents. Goaltending stability down the stretch heavily favors the Edmonton side in this matchup. Therefore, Edmonton should secure a narrow victory on home ice.\n\nOver Under: Both teams feature structured defensive schemes that limit high-danger scoring chances at 5-on-5. Solid recent goaltending performances from both franchises further suppress the expected goal expectancy for this matchup. Consequently, the game pace and defensive discipline will keep the combined final score below the 6.5 threshold.\n\nSplits: Based on public tendencies, approximately 62 percent of spread and moneyline bets are backing the Edmonton Oilers, while 58 percent of total wagers lean toward the Over. The home spread has held steady at -1.5 while the moneyline slightly drifted toward Edmonton, and the total ticked down from an opening number of 6.5 with heavier juice favoring the Under.",
+                    "generated_at": "2026-10-20T23:04:14.096019+00:00",
+                    "odds_hash": "b789d279807b8d19",
+                    "model": "gemini-3.5-flash-lite"
+                  },
+                  "matchup_rank": 8,
                   "is_slot_pick": false
                 },
                 {
@@ -18498,15 +18498,15 @@
                   "start_time_tbd": false,
                   "home_team": "Seattle Kraken",
                   "home_abbr": "SEA",
-                  "home_record": "5-3-1",
+                  "home_record": null,
                   "home_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/sea.png",
                   "home_location": "Seattle",
                   "away_team": "Detroit Red Wings",
                   "away_abbr": "DET",
-                  "away_record": "3-3-2",
+                  "away_record": null,
                   "away_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/det.png",
                   "away_location": "Detroit",
-                  "matchup_score": 100.0,
+                  "matchup_score": 50.0,
                   "channel": "ESPN+, DSN, KONG, KHN, Prime Video (Local)",
                   "venue": "Climate Pledge Arena",
                   "venue_location": "Seattle, WA",
@@ -18592,134 +18592,31 @@
                     "odds_hash": "09884c430e715e83",
                     "model": "gemini-3.5-flash-lite"
                   },
-                  "matchup_rank": 11,
+                  "matchup_rank": 9,
                   "is_slot_pick": false
                 }
               ]
             },
             {
               "slot": "Late Night",
-              "best_matchup_score": 0.0,
+              "best_matchup_score": 50.0,
               "pick_reason": "combined_points",
               "games": [
-                {
-                  "id": "401892549",
-                  "start_time": "2026-10-21T02:45Z",
-                  "start_time_tbd": false,
-                  "home_team": "Vegas Golden Knights",
-                  "home_abbr": "VGK",
-                  "home_record": "8-2-0",
-                  "home_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/vgk.png",
-                  "home_location": "Vegas",
-                  "away_team": "Tampa Bay Lightning",
-                  "away_abbr": "TB",
-                  "away_record": "6-2-0",
-                  "away_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/tb.png",
-                  "away_location": "Tampa Bay",
-                  "matchup_score": 0.0,
-                  "channel": "ESPN",
-                  "venue": "T-Mobile Arena",
-                  "venue_location": "Las Vegas, NV",
-                  "neutral_site": false,
-                  "odds": {
-                    "draftkings": {
-                      "spread": {
-                        "home": {
-                          "line": -1.5,
-                          "american": 220
-                        },
-                        "away": {
-                          "line": 1.5,
-                          "american": -270
-                        }
-                      },
-                      "moneyline": {
-                        "home": {
-                          "line": null,
-                          "american": -115
-                        },
-                        "away": {
-                          "line": null,
-                          "american": -105
-                        }
-                      },
-                      "total": {
-                        "over": {
-                          "line": 6.5,
-                          "american": 102
-                        },
-                        "under": {
-                          "line": 6.5,
-                          "american": -122
-                        }
-                      }
-                    },
-                    "fanduel": {
-                      "spread": {
-                        "home": {
-                          "line": -1.5,
-                          "american": 205
-                        },
-                        "away": {
-                          "line": 1.5,
-                          "american": -260
-                        }
-                      },
-                      "moneyline": {
-                        "home": {
-                          "line": null,
-                          "american": -110
-                        },
-                        "away": {
-                          "line": null,
-                          "american": -110
-                        }
-                      },
-                      "total": {
-                        "over": {
-                          "line": 6.5,
-                          "american": 104
-                        },
-                        "under": {
-                          "line": 6.5,
-                          "american": -128
-                        }
-                      }
-                    }
-                  },
-                  "gemini_prediction": {
-                    "winner": "Vegas Golden Knights",
-                    "confidence": 55,
-                    "ats_pick": "Vegas Golden Knights",
-                    "ats_confidence": 52,
-                    "total_pick": "Under",
-                    "total_confidence": 56,
-                    "analysis": "The Vegas Golden Knights return to their home ice with a notable early-season tactical advantage in shot suppression. Tampa Bay Lightning enters this matchup with an inconsistent penalty kill that could prove costly against a disciplined Vegas forecheck. Goaltending performance heavily favors the Golden Knights based on current 2026 save-percentage metrics and high-danger save efficiency. While the Lightning possess dangerous rush offense capabilities, they struggle to sustain zone time against structured defensive systems. Vegas should exploit these matchup nuances to secure a narrow victory on home ice.",
-                    "ou_analysis": "Both teams feature strong early-season defensive structures and reliable goaltending tandems that limit high-danger scoring chances at even strength. The pace of play is expected to be methodical, with each side prioritizing neutral zone containment over high-risk offensive rushes. Consequently, this tactical approach and solid net-minding point toward a lower-scoring affair that stays comfortably beneath the posted line.",
-                    "splits_and_direction": "Based on public tendencies, approximately 58 percent of spread bets and 62 percent of moneyline bets are currently backing the home Vegas Golden Knights, while 55 percent of total wagers lean toward the Under. The spread has ticked up slightly toward Vegas from the opening number, and the total has remained stable at 6.5 with juiced Under odds.",
-                    "display_text": "Analysis: The Vegas Golden Knights return to their home ice with a notable early-season tactical advantage in shot suppression. Tampa Bay Lightning enters this matchup with an inconsistent penalty kill that could prove costly against a disciplined Vegas forecheck. Goaltending performance heavily favors the Golden Knights based on current 2026 save-percentage metrics and high-danger save efficiency. While the Lightning possess dangerous rush offense capabilities, they struggle to sustain zone time against structured defensive systems. Vegas should exploit these matchup nuances to secure a narrow victory on home ice.\n\nOver Under: Both teams feature strong early-season defensive structures and reliable goaltending tandems that limit high-danger scoring chances at even strength. The pace of play is expected to be methodical, with each side prioritizing neutral zone containment over high-risk offensive rushes. Consequently, this tactical approach and solid net-minding point toward a lower-scoring affair that stays comfortably beneath the posted line.\n\nSplits: Based on public tendencies, approximately 58 percent of spread bets and 62 percent of moneyline bets are currently backing the home Vegas Golden Knights, while 55 percent of total wagers lean toward the Under. The spread has ticked up slightly toward Vegas from the opening number, and the total has remained stable at 6.5 with juiced Under odds.",
-                    "generated_at": "2026-10-20T23:04:43.960732+00:00",
-                    "odds_hash": "3c5ab1d820ed911b",
-                    "model": "gemini-3.5-flash-lite"
-                  },
-                  "matchup_rank": 2,
-                  "is_slot_pick": true
-                },
                 {
                   "id": "401892548",
                   "start_time": "2026-10-21T02:00Z",
                   "start_time_tbd": false,
                   "home_team": "Vancouver Canucks",
                   "home_abbr": "VAN",
-                  "home_record": "2-7-1",
+                  "home_record": null,
                   "home_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/van.png",
                   "home_location": "Vancouver",
                   "away_team": "Carolina Hurricanes",
                   "away_abbr": "CAR",
-                  "away_record": "7-2-1",
+                  "away_record": null,
                   "away_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/car.png",
                   "away_location": "Carolina",
-                  "matchup_score": 71.4,
+                  "matchup_score": 50.0,
                   "channel": "ESPN+, CARNHL",
                   "venue": "Rogers Arena",
                   "venue_location": "Vancouver, BC",
@@ -18805,7 +18702,110 @@
                     "odds_hash": "e0bc52f4775ec023",
                     "model": "gemini-3.5-flash-lite"
                   },
-                  "matchup_rank": 3,
+                  "matchup_rank": 10,
+                  "is_slot_pick": true
+                },
+                {
+                  "id": "401892549",
+                  "start_time": "2026-10-21T02:45Z",
+                  "start_time_tbd": false,
+                  "home_team": "Vegas Golden Knights",
+                  "home_abbr": "VGK",
+                  "home_record": null,
+                  "home_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/vgk.png",
+                  "home_location": "Vegas",
+                  "away_team": "Tampa Bay Lightning",
+                  "away_abbr": "TB",
+                  "away_record": null,
+                  "away_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/tb.png",
+                  "away_location": "Tampa Bay",
+                  "matchup_score": 50.0,
+                  "channel": "ESPN",
+                  "venue": "T-Mobile Arena",
+                  "venue_location": "Las Vegas, NV",
+                  "neutral_site": false,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {
+                        "home": {
+                          "line": -1.5,
+                          "american": 220
+                        },
+                        "away": {
+                          "line": 1.5,
+                          "american": -270
+                        }
+                      },
+                      "moneyline": {
+                        "home": {
+                          "line": null,
+                          "american": -115
+                        },
+                        "away": {
+                          "line": null,
+                          "american": -105
+                        }
+                      },
+                      "total": {
+                        "over": {
+                          "line": 6.5,
+                          "american": 102
+                        },
+                        "under": {
+                          "line": 6.5,
+                          "american": -122
+                        }
+                      }
+                    },
+                    "fanduel": {
+                      "spread": {
+                        "home": {
+                          "line": -1.5,
+                          "american": 205
+                        },
+                        "away": {
+                          "line": 1.5,
+                          "american": -260
+                        }
+                      },
+                      "moneyline": {
+                        "home": {
+                          "line": null,
+                          "american": -110
+                        },
+                        "away": {
+                          "line": null,
+                          "american": -110
+                        }
+                      },
+                      "total": {
+                        "over": {
+                          "line": 6.5,
+                          "american": 104
+                        },
+                        "under": {
+                          "line": 6.5,
+                          "american": -128
+                        }
+                      }
+                    }
+                  },
+                  "gemini_prediction": {
+                    "winner": "Vegas Golden Knights",
+                    "confidence": 55,
+                    "ats_pick": "Vegas Golden Knights",
+                    "ats_confidence": 52,
+                    "total_pick": "Under",
+                    "total_confidence": 56,
+                    "analysis": "The Vegas Golden Knights return to their home ice with a notable early-season tactical advantage in shot suppression. Tampa Bay Lightning enters this matchup with an inconsistent penalty kill that could prove costly against a disciplined Vegas forecheck. Goaltending performance heavily favors the Golden Knights based on current 2026 save-percentage metrics and high-danger save efficiency. While the Lightning possess dangerous rush offense capabilities, they struggle to sustain zone time against structured defensive systems. Vegas should exploit these matchup nuances to secure a narrow victory on home ice.",
+                    "ou_analysis": "Both teams feature strong early-season defensive structures and reliable goaltending tandems that limit high-danger scoring chances at even strength. The pace of play is expected to be methodical, with each side prioritizing neutral zone containment over high-risk offensive rushes. Consequently, this tactical approach and solid net-minding point toward a lower-scoring affair that stays comfortably beneath the posted line.",
+                    "splits_and_direction": "Based on public tendencies, approximately 58 percent of spread bets and 62 percent of moneyline bets are currently backing the home Vegas Golden Knights, while 55 percent of total wagers lean toward the Under. The spread has ticked up slightly toward Vegas from the opening number, and the total has remained stable at 6.5 with juiced Under odds.",
+                    "display_text": "Analysis: The Vegas Golden Knights return to their home ice with a notable early-season tactical advantage in shot suppression. Tampa Bay Lightning enters this matchup with an inconsistent penalty kill that could prove costly against a disciplined Vegas forecheck. Goaltending performance heavily favors the Golden Knights based on current 2026 save-percentage metrics and high-danger save efficiency. While the Lightning possess dangerous rush offense capabilities, they struggle to sustain zone time against structured defensive systems. Vegas should exploit these matchup nuances to secure a narrow victory on home ice.\n\nOver Under: Both teams feature strong early-season defensive structures and reliable goaltending tandems that limit high-danger scoring chances at even strength. The pace of play is expected to be methodical, with each side prioritizing neutral zone containment over high-risk offensive rushes. Consequently, this tactical approach and solid net-minding point toward a lower-scoring affair that stays comfortably beneath the posted line.\n\nSplits: Based on public tendencies, approximately 58 percent of spread bets and 62 percent of moneyline bets are currently backing the home Vegas Golden Knights, while 55 percent of total wagers lean toward the Under. The spread has ticked up slightly toward Vegas from the opening number, and the total has remained stable at 6.5 with juiced Under odds.",
+                    "generated_at": "2026-10-20T23:04:43.960732+00:00",
+                    "odds_hash": "3c5ab1d820ed911b",
+                    "model": "gemini-3.5-flash-lite"
+                  },
+                  "matchup_rank": 11,
                   "is_slot_pick": false
                 }
               ]
@@ -18853,11 +18853,11 @@
                       "spread": {
                         "home": {
                           "line": -1.5,
-                          "american": 225
+                          "american": 235
                         },
                         "away": {
                           "line": 1.5,
-                          "american": -278
+                          "american": -290
                         }
                       },
                       "moneyline": {
@@ -19040,7 +19040,443 @@
           ]
         }
       ]
+    },
+    {
+      "week": 20261022,
+      "total_games": 12,
+      "days": [
+        {
+          "date": "2026-10-22",
+          "weekday": "Thursday",
+          "game_count": 12,
+          "is_preseason": false,
+          "time_slots": [
+            {
+              "slot": "Prime Time",
+              "best_matchup_score": 0.0,
+              "pick_reason": "combined_points",
+              "games": [
+                {
+                  "id": "401892561",
+                  "start_time": "2026-10-23T01:00Z",
+                  "start_time_tbd": false,
+                  "home_team": "Edmonton Oilers",
+                  "home_abbr": "EDM",
+                  "home_record": "7-1-1",
+                  "home_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/edm.png",
+                  "home_location": "Edmonton",
+                  "away_team": "Carolina Hurricanes",
+                  "away_abbr": "CAR",
+                  "away_record": "8-2-1",
+                  "away_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/car.png",
+                  "away_location": "Carolina",
+                  "matchup_score": 0.0,
+                  "channel": "ESPN+, CARNHL",
+                  "venue": "Rogers Place",
+                  "venue_location": "Edmonton, AB",
+                  "neutral_site": false,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    },
+                    "fanduel": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    }
+                  },
+                  "matchup_rank": 1,
+                  "is_slot_pick": true
+                },
+                {
+                  "id": "401892552",
+                  "start_time": "2026-10-22T23:00Z",
+                  "start_time_tbd": false,
+                  "home_team": "Boston Bruins",
+                  "home_abbr": "BOS",
+                  "home_record": "7-2-1",
+                  "home_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/bos.png",
+                  "home_location": "Boston",
+                  "away_team": "Nashville Predators",
+                  "away_abbr": "NSH",
+                  "away_record": "3-2-3",
+                  "away_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/nsh.png",
+                  "away_location": "Nashville",
+                  "matchup_score": 33.3,
+                  "channel": "ESPN+, Scripps Sports, NESN",
+                  "venue": "TD Garden",
+                  "venue_location": "Boston, MA",
+                  "neutral_site": false,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    },
+                    "fanduel": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    }
+                  },
+                  "matchup_rank": 2,
+                  "is_slot_pick": false
+                },
+                {
+                  "id": "401892558",
+                  "start_time": "2026-10-23T00:00Z",
+                  "start_time_tbd": false,
+                  "home_team": "St. Louis Blues",
+                  "home_abbr": "STL",
+                  "home_record": "4-4-1",
+                  "home_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/stl.png",
+                  "home_location": "St. Louis",
+                  "away_team": "Vegas Golden Knights",
+                  "away_abbr": "VGK",
+                  "away_record": "8-3-0",
+                  "away_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/vgk.png",
+                  "away_location": "Vegas",
+                  "matchup_score": 51.3,
+                  "channel": "ESPN+, Scripps Sports, Blues App, BN+",
+                  "venue": "Enterprise Center",
+                  "venue_location": "St. Louis, MO",
+                  "neutral_site": false,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    },
+                    "fanduel": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    }
+                  },
+                  "matchup_rank": 4,
+                  "is_slot_pick": false
+                },
+                {
+                  "id": "401892553",
+                  "start_time": "2026-10-22T23:00Z",
+                  "start_time_tbd": false,
+                  "home_team": "Toronto Maple Leafs",
+                  "home_abbr": "TOR",
+                  "home_record": "5-4-2",
+                  "home_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/tor.png",
+                  "home_location": "Toronto",
+                  "away_team": "New York Rangers",
+                  "away_abbr": "NYR",
+                  "away_record": "7-3-1",
+                  "away_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/nyr.png",
+                  "away_location": "New York",
+                  "matchup_score": 53.8,
+                  "channel": "ESPN+, MSG",
+                  "venue": "Scotiabank Arena",
+                  "venue_location": "Toronto, ON",
+                  "neutral_site": false,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    },
+                    "fanduel": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    }
+                  },
+                  "matchup_rank": 5,
+                  "is_slot_pick": false
+                },
+                {
+                  "id": "401892554",
+                  "start_time": "2026-10-22T23:00Z",
+                  "start_time_tbd": false,
+                  "home_team": "Ottawa Senators",
+                  "home_abbr": "OTT",
+                  "home_record": "6-3-0",
+                  "home_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/ott.png",
+                  "home_location": "Ottawa",
+                  "away_team": "San Jose Sharks",
+                  "away_abbr": "SJ",
+                  "away_record": "5-4-1",
+                  "away_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/sj.png",
+                  "away_location": "San Jose",
+                  "matchup_score": 56.4,
+                  "channel": "ESPN+, NBC Sports BA",
+                  "venue": "Canadian Tire Centre",
+                  "venue_location": "Ottawa, ON",
+                  "neutral_site": false,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    },
+                    "fanduel": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    }
+                  },
+                  "matchup_rank": 6,
+                  "is_slot_pick": false
+                },
+                {
+                  "id": "401892559",
+                  "start_time": "2026-10-23T00:00Z",
+                  "start_time_tbd": false,
+                  "home_team": "Dallas Stars",
+                  "home_abbr": "DAL",
+                  "home_record": "5-3-1",
+                  "home_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/dal.png",
+                  "home_location": "Dallas",
+                  "away_team": "Winnipeg Jets",
+                  "away_abbr": "WPG",
+                  "away_record": "4-3-2",
+                  "away_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/wpg.png",
+                  "away_location": "Winnipeg",
+                  "matchup_score": 59.0,
+                  "channel": "ESPN+, KDFW 4, Prime Video (Local)",
+                  "venue": "American Airlines Center",
+                  "venue_location": "Dallas, TX",
+                  "neutral_site": false,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    },
+                    "fanduel": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    }
+                  },
+                  "matchup_rank": 7,
+                  "is_slot_pick": false
+                },
+                {
+                  "id": "401892560",
+                  "start_time": "2026-10-23T01:00Z",
+                  "start_time_tbd": false,
+                  "home_team": "Calgary Flames",
+                  "home_abbr": "CGY",
+                  "home_record": "2-6-0",
+                  "home_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/cgy.png",
+                  "home_location": "Calgary",
+                  "away_team": "Minnesota Wild",
+                  "away_abbr": "MIN",
+                  "away_record": "6-2-2",
+                  "away_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/min.png",
+                  "away_location": "Minnesota",
+                  "matchup_score": 64.1,
+                  "channel": "ESPN+, MINNHL",
+                  "venue": "Scotiabank Saddledome",
+                  "venue_location": "Calgary, AB",
+                  "neutral_site": false,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    },
+                    "fanduel": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    }
+                  },
+                  "matchup_rank": 8,
+                  "is_slot_pick": false
+                },
+                {
+                  "id": "401892556",
+                  "start_time": "2026-10-22T23:00Z",
+                  "start_time_tbd": false,
+                  "home_team": "Pittsburgh Penguins",
+                  "home_abbr": "PIT",
+                  "home_record": "3-6-1",
+                  "home_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/pit.png",
+                  "home_location": "Pittsburgh",
+                  "away_team": "Florida Panthers",
+                  "away_abbr": "FLA",
+                  "away_record": "5-2-2",
+                  "away_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/fla.png",
+                  "away_location": "Florida",
+                  "matchup_score": 66.7,
+                  "channel": "ESPN+, Scripps Sports",
+                  "venue": "PPG Paints Arena",
+                  "venue_location": "Pittsburgh, PA",
+                  "neutral_site": false,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    },
+                    "fanduel": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    }
+                  },
+                  "matchup_rank": 9,
+                  "is_slot_pick": false
+                },
+                {
+                  "id": "401892555",
+                  "start_time": "2026-10-22T23:00Z",
+                  "start_time_tbd": false,
+                  "home_team": "New Jersey Devils",
+                  "home_abbr": "NJ",
+                  "home_record": "5-4-0",
+                  "home_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/nj.png",
+                  "home_location": "New Jersey",
+                  "away_team": "Anaheim Ducks",
+                  "away_abbr": "ANA",
+                  "away_record": "4-5-0",
+                  "away_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/ana.png",
+                  "away_location": "Anaheim",
+                  "matchup_score": 79.5,
+                  "channel": "ESPN+, MSGSN, KCOP, Prime Video (Local)",
+                  "venue": "Prudential Center",
+                  "venue_location": "Newark, NJ",
+                  "neutral_site": false,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    },
+                    "fanduel": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    }
+                  },
+                  "matchup_rank": 10,
+                  "is_slot_pick": false
+                },
+                {
+                  "id": "401892557",
+                  "start_time": "2026-10-22T23:30Z",
+                  "start_time_tbd": false,
+                  "home_team": "New York Islanders",
+                  "home_abbr": "NYI",
+                  "home_record": "5-3-1",
+                  "home_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/nyi.png",
+                  "home_location": "New York",
+                  "away_team": "Los Angeles Kings",
+                  "away_abbr": "LA",
+                  "away_record": "1-4-2",
+                  "away_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/la.png",
+                  "away_location": "Los Angeles",
+                  "matchup_score": 79.5,
+                  "channel": "Disney+, ESPN+, Hulu",
+                  "venue": "UBS Arena",
+                  "venue_location": "Elmont, NY",
+                  "neutral_site": false,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    },
+                    "fanduel": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    }
+                  },
+                  "matchup_rank": 11,
+                  "is_slot_pick": false
+                }
+              ]
+            },
+            {
+              "slot": "Late Night",
+              "best_matchup_score": 33.3,
+              "pick_reason": "combined_points",
+              "games": [
+                {
+                  "id": "401892562",
+                  "start_time": "2026-10-23T02:00Z",
+                  "start_time_tbd": false,
+                  "home_team": "Seattle Kraken",
+                  "home_abbr": "SEA",
+                  "home_record": "6-3-1",
+                  "home_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/sea.png",
+                  "home_location": "Seattle",
+                  "away_team": "Utah Mammoth",
+                  "away_abbr": "UTA",
+                  "away_record": "7-3-0",
+                  "away_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/uta.png",
+                  "away_location": "Utah",
+                  "matchup_score": 33.3,
+                  "channel": "Disney+, ESPN+, Hulu",
+                  "venue": "Climate Pledge Arena",
+                  "venue_location": "Seattle, WA",
+                  "neutral_site": false,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    },
+                    "fanduel": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    }
+                  },
+                  "matchup_rank": 3,
+                  "is_slot_pick": true
+                },
+                {
+                  "id": "401892563",
+                  "start_time": "2026-10-23T02:00Z",
+                  "start_time_tbd": false,
+                  "home_team": "Vancouver Canucks",
+                  "home_abbr": "VAN",
+                  "home_record": "2-8-1",
+                  "home_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/van.png",
+                  "home_location": "Vancouver",
+                  "away_team": "Detroit Red Wings",
+                  "away_abbr": "DET",
+                  "away_record": "3-3-3",
+                  "away_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/det.png",
+                  "away_location": "Detroit",
+                  "matchup_score": 100.0,
+                  "channel": "ESPN+, DSN",
+                  "venue": "Rogers Arena",
+                  "venue_location": "Vancouver, BC",
+                  "neutral_site": false,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    },
+                    "fanduel": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    }
+                  },
+                  "matchup_rank": 12,
+                  "is_slot_pick": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
-  "current_week": 20261020
+  "current_week": 20261021
 }
