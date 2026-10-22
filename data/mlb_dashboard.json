@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-22T03:12:45.911163+00:00",
+  "generated_at": "2026-10-22T09:14:56.597956+00:00",
   "season": 2026,
   "display_timezone": "America/Chicago",
   "weeks": [
@@ -58052,7 +58052,133 @@
           "time_slots": []
         }
       ]
+    },
+    {
+      "week": 20261023,
+      "total_games": 1,
+      "days": [
+        {
+          "date": "2026-10-23",
+          "weekday": "Friday",
+          "game_count": 1,
+          "is_preseason": false,
+          "time_slots": [
+            {
+              "slot": "Prime Time",
+              "best_matchup_score": 50.0,
+              "pick_reason": "combined_wins",
+              "games": [
+                {
+                  "id": "401908042",
+                  "start_time": "2026-10-24T00:00Z",
+                  "start_time_tbd": false,
+                  "home_team": "Milwaukee Brewers",
+                  "home_abbr": "MIL",
+                  "home_record": "103-59",
+                  "home_logo": "https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/mil.png",
+                  "home_location": "Milwaukee",
+                  "home_pitcher": "J. Misiorowski (0-0, 3.24)",
+                  "away_team": "Tampa Bay Rays",
+                  "away_abbr": "TB",
+                  "away_record": "98-64",
+                  "away_logo": "https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/tb.png",
+                  "away_location": "Tampa Bay",
+                  "away_pitcher": null,
+                  "matchup_score": 50.0,
+                  "channel": "Fox",
+                  "venue": "American Family Field",
+                  "venue_location": "Milwaukee, Wisconsin",
+                  "neutral_site": false,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {
+                        "home": {
+                          "line": -1.5,
+                          "american": 149
+                        },
+                        "away": {
+                          "line": 1.5,
+                          "american": -181
+                        }
+                      },
+                      "moneyline": {
+                        "away": {
+                          "line": null,
+                          "american": 133
+                        },
+                        "home": {
+                          "line": null,
+                          "american": -161
+                        }
+                      },
+                      "total": {
+                        "under": {
+                          "line": 6.5,
+                          "american": -136
+                        },
+                        "over": {
+                          "line": 6.5,
+                          "american": 105
+                        }
+                      }
+                    },
+                    "fanduel": {
+                      "spread": {
+                        "away": {
+                          "line": 1.5,
+                          "american": -178
+                        },
+                        "home": {
+                          "line": -1.5,
+                          "american": 146
+                        }
+                      },
+                      "moneyline": {
+                        "home": {
+                          "line": null,
+                          "american": -158
+                        },
+                        "away": {
+                          "line": null,
+                          "american": 134
+                        }
+                      },
+                      "total": {
+                        "over": {
+                          "line": 6.5,
+                          "american": 106
+                        },
+                        "under": {
+                          "line": 6.5,
+                          "american": -130
+                        }
+                      }
+                    }
+                  },
+                  "matchup_rank": 1,
+                  "gemini_prediction": {
+                    "winner": "Milwaukee Brewers",
+                    "confidence": 62,
+                    "ats_pick": "Tampa Bay Rays",
+                    "ats_confidence": 55,
+                    "total_pick": "Under",
+                    "total_confidence": 60,
+                    "analysis": "The Milwaukee Brewers hold a distinct home-field advantage with J. Misiorowski toeing the rubber following a solid 3.24 ERA campaign. Tampa Bay enters this matchup with gritty resilience, capable of keeping the score within striking distance despite lacking an officially announced starter at this juncture. Misiorowski's ability to suppress opposing bats at home should tilt a tight contest in the Brewers' favor by a narrow margin. However, the 1.5-run spread remains too wide given the offensive volatility of both ballclubs in late-season play. Therefore, the Rays are well-positioned to cover the run line even if Milwaukee secures the outright win.",
+                    "ou_analysis": "The low 6.5 total reflects J. Misiorowski's strong pitching metrics and the overall crisp defensive alignment of both squads in this matchup. With chilly autumn weather conditions expected in Milwaukee, fly balls should die out quickly and suppress extra-base hits. Consequently, the game projects to stay under the 6.5 run threshold in a low-scoring duel.",
+                    "splits_and_direction": "Public betting splits are estimated at roughly 62% of wagers backing the Brewers on the moneyline and spread due to home field, while the total has seen moderate action leaning toward the under. Both the moneyline and the total have held relatively steady with slight upward pressure on the Milwaukee price since opening.",
+                    "display_text": "Analysis: The Milwaukee Brewers hold a distinct home-field advantage with J. Misiorowski toeing the rubber following a solid 3.24 ERA campaign. Tampa Bay enters this matchup with gritty resilience, capable of keeping the score within striking distance despite lacking an officially announced starter at this juncture. Misiorowski's ability to suppress opposing bats at home should tilt a tight contest in the Brewers' favor by a narrow margin. However, the 1.5-run spread remains too wide given the offensive volatility of both ballclubs in late-season play. Therefore, the Rays are well-positioned to cover the run line even if Milwaukee secures the outright win.\n\nOver Under: The low 6.5 total reflects J. Misiorowski's strong pitching metrics and the overall crisp defensive alignment of both squads in this matchup. With chilly autumn weather conditions expected in Milwaukee, fly balls should die out quickly and suppress extra-base hits. Consequently, the game projects to stay under the 6.5 run threshold in a low-scoring duel.\n\nSplits: Public betting splits are estimated at roughly 62% of wagers backing the Brewers on the moneyline and spread due to home field, while the total has seen moderate action leaning toward the under. Both the moneyline and the total have held relatively steady with slight upward pressure on the Milwaukee price since opening.",
+                    "generated_at": "2026-10-22T09:14:56.406514+00:00",
+                    "odds_hash": "160adb9da652efb4",
+                    "model": "gemini-3.5-flash-lite"
+                  },
+                  "is_slot_pick": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
-  "current_week": 20261021
+  "current_week": 20261022
 }
