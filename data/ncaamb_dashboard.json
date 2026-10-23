@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-23T16:28:36.188104+00:00",
+  "generated_at": "2026-10-23T23:01:37.911198+00:00",
   "season": 2026,
   "main_channels": [
     "ABC",
@@ -148,9 +148,36 @@
                   "neutral_site": true,
                   "odds": {
                     "draftkings": {
-                      "spread": {},
-                      "moneyline": {},
-                      "total": {}
+                      "spread": {
+                        "home": {
+                          "line": -7.5,
+                          "american": -110
+                        },
+                        "away": {
+                          "line": 7.5,
+                          "american": -110
+                        }
+                      },
+                      "moneyline": {
+                        "home": {
+                          "line": null,
+                          "american": -305
+                        },
+                        "away": {
+                          "line": null,
+                          "american": 245
+                        }
+                      },
+                      "total": {
+                        "over": {
+                          "line": 149.5,
+                          "american": -110
+                        },
+                        "under": {
+                          "line": 149.5,
+                          "american": -110
+                        }
+                      }
                     },
                     "fanduel": {
                       "spread": {},
@@ -159,6 +186,21 @@
                     }
                   },
                   "matchup_rank": 1,
+                  "gemini_prediction": {
+                    "winner": "Villanova Wildcats",
+                    "confidence": 78,
+                    "ats_pick": "Villanova Wildcats",
+                    "ats_confidence": 70,
+                    "total_pick": "Over",
+                    "total_confidence": 65,
+                    "analysis": "Villanova enters this early-season matchup showing superior offensive fluidity and efficiency compared to Notre Dame. The Wildcats possess a distinct advantage in perimeter shooting and ball movement that should consistently break down the Fighting Irish defense. Notre Dame will struggle to match Villanova's scoring depth across a full forty minutes of regulation play. Furthermore, Villanova's home-court advantage at the Finneran Pavilion creates a hostile environment that heavily favors the hosts. Consequently, the Wildcats will control the tempo and secure a comfortable victory well beyond the modest spread.",
+                    "ou_analysis": "Both teams feature up-tempo offensive philosophies that emphasize quick transition opportunities and high-volume perimeter shooting. Early season defensive lapses and unfamiliarity between rotations should yield plenty of open looks for both squads. Therefore, the combined final score will comfortably eclipse the posted 149.5 total as efficiency outperforms defensive resistance.",
+                    "splits_and_direction": "Based on public betting tendencies, approximately 68 percent of spread tickets and 74 percent of moneyline bets are backing the Villanova Wildcats at home. The home spread has moved from an opening number of -6.5 up to -7.5, while the total has ticked up slightly from 148.5 to 149.5 due to heavy early action on the over.",
+                    "display_text": "Analysis: Villanova enters this early-season matchup showing superior offensive fluidity and efficiency compared to Notre Dame. The Wildcats possess a distinct advantage in perimeter shooting and ball movement that should consistently break down the Fighting Irish defense. Notre Dame will struggle to match Villanova's scoring depth across a full forty minutes of regulation play. Furthermore, Villanova's home-court advantage at the Finneran Pavilion creates a hostile environment that heavily favors the hosts. Consequently, the Wildcats will control the tempo and secure a comfortable victory well beyond the modest spread.\n\nOver Under: Both teams feature up-tempo offensive philosophies that emphasize quick transition opportunities and high-volume perimeter shooting. Early season defensive lapses and unfamiliarity between rotations should yield plenty of open looks for both squads. Therefore, the combined final score will comfortably eclipse the posted 149.5 total as efficiency outperforms defensive resistance.\n\nSplits: Based on public betting tendencies, approximately 68 percent of spread tickets and 74 percent of moneyline bets are backing the Villanova Wildcats at home. The home spread has moved from an opening number of -6.5 up to -7.5, while the total has ticked up slightly from 148.5 to 149.5 due to heavy early action on the over.",
+                    "generated_at": "2026-10-23T23:01:37.209578+00:00",
+                    "odds_hash": "80cb4b1af1939f31",
+                    "model": "gemini-3.5-flash-lite"
+                  },
                   "is_slot_pick": true
                 }
               ]
