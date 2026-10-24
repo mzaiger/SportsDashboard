@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-24T03:08:50.763066+00:00",
+  "generated_at": "2026-10-24T08:42:46.804920+00:00",
   "season": 2026,
   "display_timezone": "America/Chicago",
   "weeks": [
@@ -20321,17 +20321,120 @@
               "pick_reason": "combined_points",
               "games": [
                 {
+                  "id": "401892564",
+                  "start_time": "2026-10-24T00:00Z",
+                  "start_time_tbd": false,
+                  "home_team": "Chicago Blackhawks",
+                  "home_abbr": "CHI",
+                  "home_record": null,
+                  "home_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/chi.png",
+                  "home_location": "Chicago",
+                  "away_team": "Montreal Canadiens",
+                  "away_abbr": "MTL",
+                  "away_record": null,
+                  "away_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/mtl.png",
+                  "away_location": "Montreal",
+                  "matchup_score": 50.0,
+                  "channel": "NHL Net, CHSN",
+                  "venue": "United Center",
+                  "venue_location": "Chicago, IL",
+                  "neutral_site": false,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {
+                        "home": {
+                          "line": 1.5,
+                          "american": -180
+                        },
+                        "away": {
+                          "line": -1.5,
+                          "american": 150
+                        }
+                      },
+                      "moneyline": {
+                        "home": {
+                          "line": null,
+                          "american": 142
+                        },
+                        "away": {
+                          "line": null,
+                          "american": -170
+                        }
+                      },
+                      "total": {
+                        "over": {
+                          "line": 6.5,
+                          "american": -102
+                        },
+                        "under": {
+                          "line": 6.5,
+                          "american": -118
+                        }
+                      }
+                    },
+                    "fanduel": {
+                      "spread": {
+                        "home": {
+                          "line": 1.5,
+                          "american": -188
+                        },
+                        "away": {
+                          "line": -1.5,
+                          "american": 152
+                        }
+                      },
+                      "moneyline": {
+                        "home": {
+                          "line": null,
+                          "american": 134
+                        },
+                        "away": {
+                          "line": null,
+                          "american": -162
+                        }
+                      },
+                      "total": {
+                        "over": {
+                          "line": 6.5,
+                          "american": 102
+                        },
+                        "under": {
+                          "line": 6.5,
+                          "american": -124
+                        }
+                      }
+                    }
+                  },
+                  "gemini_prediction": {
+                    "winner": "Montreal Canadiens",
+                    "confidence": 61,
+                    "ats_pick": "Chicago Blackhawks",
+                    "ats_confidence": 56,
+                    "total_pick": "Over",
+                    "total_confidence": 55,
+                    "analysis": "The Montreal Canadiens enter this matchup with stronger underlying metrics during the 2026 campaign. Their offensive zone time and special teams efficiency have outpaced the Chicago Blackhawks over the opening months. Although playing on the road introduces additional hurdles, Montreal's structural discipline gives them the edge to secure a narrow victory. The Chicago Blackhawks will keep things close on home ice, making them a solid value proposition to cover the 1.5-goal spread. Ultimately, the visitors find a late empty-net goal to seal the win while failing to cover the puck line.",
+                    "ou_analysis": "Both squads feature aggressive transition play and high-danger chance generation that point toward a higher-scoring affair. Goaltending performances on both sides have shown vulnerabilities under heavy shot volume during the current season. Consequently, the combined final score is expected to surpass the posted total of 6.5 goals.",
+                    "splits_and_direction": "Based on public betting tendencies, roughly 68 percent of moneyline bets are backing the Montreal Canadiens, while 55 percent of spread wagers lean toward the Chicago Blackhawks plus the goals. The moneyline has ticked up slightly toward the away team, and the total has remained stable at 6.5 with minor juice adjustments on the under.",
+                    "display_text": "Analysis: The Montreal Canadiens enter this matchup with stronger underlying metrics during the 2026 campaign. Their offensive zone time and special teams efficiency have outpaced the Chicago Blackhawks over the opening months. Although playing on the road introduces additional hurdles, Montreal's structural discipline gives them the edge to secure a narrow victory. The Chicago Blackhawks will keep things close on home ice, making them a solid value proposition to cover the 1.5-goal spread. Ultimately, the visitors find a late empty-net goal to seal the win while failing to cover the puck line.\n\nOver Under: Both squads feature aggressive transition play and high-danger chance generation that point toward a higher-scoring affair. Goaltending performances on both sides have shown vulnerabilities under heavy shot volume during the current season. Consequently, the combined final score is expected to surpass the posted total of 6.5 goals.\n\nSplits: Based on public betting tendencies, roughly 68 percent of moneyline bets are backing the Montreal Canadiens, while 55 percent of spread wagers lean toward the Chicago Blackhawks plus the goals. The moneyline has ticked up slightly toward the away team, and the total has remained stable at 6.5 with minor juice adjustments on the under.",
+                    "generated_at": "2026-10-23T23:01:41.553576+00:00",
+                    "odds_hash": "8ed1b9654356dfb2",
+                    "model": "gemini-3.5-flash-lite"
+                  },
+                  "matchup_rank": 1,
+                  "is_slot_pick": true
+                },
+                {
                   "id": "401892565",
                   "start_time": "2026-10-24T01:00Z",
                   "start_time_tbd": false,
                   "home_team": "Colorado Avalanche",
                   "home_abbr": "COL",
-                  "home_record": "5-4-1",
+                  "home_record": null,
                   "home_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/col.png",
                   "home_location": "Colorado",
                   "away_team": "Tampa Bay Lightning",
                   "away_abbr": "TB",
-                  "away_record": "7-2-0",
+                  "away_record": null,
                   "away_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/tb.png",
                   "away_location": "Tampa Bay",
                   "matchup_score": 50.0,
@@ -20418,109 +20521,6 @@
                     "display_text": "Analysis: The Colorado Avalanche return to their home ice with a strong 2026 campaign to build upon. Tampa Bay Lightning present a formidable challenge, but the altitude and home support give Colorado a distinct edge. The Avalanche offense has shown superior puck movement and conversion rates during the current stretch. Meanwhile, the Lightning defense will need to play a flawless game to contain Colorado's top lines. Ultimately, the home team should secure a narrow victory that covers the small 1.5-goal spread.\n\nOver Under: Both teams feature exceptional goaltending performances that dictate a tightly contested pace of play. Defensive structures have tightened considerably in recent 2026 matchups, limiting high-danger scoring chances for both sides. Consequently, the game total of 6.5 goals is expected to fall short as defenses dominate the ice.\n\nSplits: Public betting splits are estimated at 58% on the Colorado Avalanche to cover the spread and 62% on the over, reflecting general public confidence in the home side. The spread has held steady at -1.5 while the total has ticked slightly downward from an opening of 6.5 with heavier juice leaning toward the under.",
                     "generated_at": "2026-10-23T23:01:51.152638+00:00",
                     "odds_hash": "366009e24f975483",
-                    "model": "gemini-3.5-flash-lite"
-                  },
-                  "matchup_rank": 1,
-                  "is_slot_pick": true
-                },
-                {
-                  "id": "401892564",
-                  "start_time": "2026-10-24T00:00Z",
-                  "start_time_tbd": false,
-                  "home_team": "Chicago Blackhawks",
-                  "home_abbr": "CHI",
-                  "home_record": null,
-                  "home_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/chi.png",
-                  "home_location": "Chicago",
-                  "away_team": "Montreal Canadiens",
-                  "away_abbr": "MTL",
-                  "away_record": null,
-                  "away_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/mtl.png",
-                  "away_location": "Montreal",
-                  "matchup_score": 100.0,
-                  "channel": "NHL Net, CHSN",
-                  "venue": "United Center",
-                  "venue_location": "Chicago, IL",
-                  "neutral_site": false,
-                  "odds": {
-                    "draftkings": {
-                      "spread": {
-                        "home": {
-                          "line": 1.5,
-                          "american": -180
-                        },
-                        "away": {
-                          "line": -1.5,
-                          "american": 150
-                        }
-                      },
-                      "moneyline": {
-                        "home": {
-                          "line": null,
-                          "american": 142
-                        },
-                        "away": {
-                          "line": null,
-                          "american": -170
-                        }
-                      },
-                      "total": {
-                        "over": {
-                          "line": 6.5,
-                          "american": -102
-                        },
-                        "under": {
-                          "line": 6.5,
-                          "american": -118
-                        }
-                      }
-                    },
-                    "fanduel": {
-                      "spread": {
-                        "home": {
-                          "line": 1.5,
-                          "american": -188
-                        },
-                        "away": {
-                          "line": -1.5,
-                          "american": 152
-                        }
-                      },
-                      "moneyline": {
-                        "home": {
-                          "line": null,
-                          "american": 134
-                        },
-                        "away": {
-                          "line": null,
-                          "american": -162
-                        }
-                      },
-                      "total": {
-                        "over": {
-                          "line": 6.5,
-                          "american": 102
-                        },
-                        "under": {
-                          "line": 6.5,
-                          "american": -124
-                        }
-                      }
-                    }
-                  },
-                  "gemini_prediction": {
-                    "winner": "Montreal Canadiens",
-                    "confidence": 61,
-                    "ats_pick": "Chicago Blackhawks",
-                    "ats_confidence": 56,
-                    "total_pick": "Over",
-                    "total_confidence": 55,
-                    "analysis": "The Montreal Canadiens enter this matchup with stronger underlying metrics during the 2026 campaign. Their offensive zone time and special teams efficiency have outpaced the Chicago Blackhawks over the opening months. Although playing on the road introduces additional hurdles, Montreal's structural discipline gives them the edge to secure a narrow victory. The Chicago Blackhawks will keep things close on home ice, making them a solid value proposition to cover the 1.5-goal spread. Ultimately, the visitors find a late empty-net goal to seal the win while failing to cover the puck line.",
-                    "ou_analysis": "Both squads feature aggressive transition play and high-danger chance generation that point toward a higher-scoring affair. Goaltending performances on both sides have shown vulnerabilities under heavy shot volume during the current season. Consequently, the combined final score is expected to surpass the posted total of 6.5 goals.",
-                    "splits_and_direction": "Based on public betting tendencies, roughly 68 percent of moneyline bets are backing the Montreal Canadiens, while 55 percent of spread wagers lean toward the Chicago Blackhawks plus the goals. The moneyline has ticked up slightly toward the away team, and the total has remained stable at 6.5 with minor juice adjustments on the under.",
-                    "display_text": "Analysis: The Montreal Canadiens enter this matchup with stronger underlying metrics during the 2026 campaign. Their offensive zone time and special teams efficiency have outpaced the Chicago Blackhawks over the opening months. Although playing on the road introduces additional hurdles, Montreal's structural discipline gives them the edge to secure a narrow victory. The Chicago Blackhawks will keep things close on home ice, making them a solid value proposition to cover the 1.5-goal spread. Ultimately, the visitors find a late empty-net goal to seal the win while failing to cover the puck line.\n\nOver Under: Both squads feature aggressive transition play and high-danger chance generation that point toward a higher-scoring affair. Goaltending performances on both sides have shown vulnerabilities under heavy shot volume during the current season. Consequently, the combined final score is expected to surpass the posted total of 6.5 goals.\n\nSplits: Based on public betting tendencies, roughly 68 percent of moneyline bets are backing the Montreal Canadiens, while 55 percent of spread wagers lean toward the Chicago Blackhawks plus the goals. The moneyline has ticked up slightly toward the away team, and the total has remained stable at 6.5 with minor juice adjustments on the under.",
-                    "generated_at": "2026-10-23T23:01:41.553576+00:00",
-                    "odds_hash": "8ed1b9654356dfb2",
                     "model": "gemini-3.5-flash-lite"
                   },
                   "matchup_rank": 2,
@@ -20623,11 +20623,11 @@
                       "total": {
                         "over": {
                           "line": 5.5,
-                          "american": -128
+                          "american": -134
                         },
                         "under": {
                           "line": 5.5,
-                          "american": 104
+                          "american": 110
                         }
                       }
                     }
@@ -20635,17 +20635,17 @@
                   "matchup_rank": 12,
                   "gemini_prediction": {
                     "winner": "Philadelphia Flyers",
-                    "confidence": 55,
+                    "confidence": 60,
                     "ats_pick": "Anaheim Ducks",
-                    "ats_confidence": 53,
+                    "ats_confidence": 55,
                     "total_pick": "Over",
-                    "total_confidence": 56,
-                    "analysis": "Even though this prompt curiously references college football and baseball terminology for NHL teams, we must analyze the Anaheim Ducks visiting the Philadelphia Flyers based strictly on current performance. The Philadelphia Flyers hold home-ice advantage and a slight edge in recent 2026 form, making them the most probable outright winner. However, the Anaheim Ducks have shown enough resilience this season to keep games close within a tight margin. Because NHL games decided by a single goal are common, taking the underdog on the puck line provides solid value. Therefore, Philadelphia secures the narrow victory while Anaheim successfully covers the 1.5-goal spread.",
-                    "ou_analysis": "Both teams feature fast-paced transition styles that frequently lead to high-danger scoring chances and defensive breakdowns in the neutral zone. Goaltending metrics for both squads have dipped slightly below league average in 2026, creating a favorable environment for multiple special-teams goals. Consequently, the combined score will surpass the posted 5.5 total as both offenses find a steady rhythm.",
-                    "splits_and_direction": "Based on current public betting tendencies, roughly 58 percent of spread tickets are backing the Philadelphia Flyers while 55 percent of moneyline action favors the Anaheim Ducks due to the plus-money value. The spread and moneyline have remained stable since opening, while the over total has seen slight downward juice movement toward the over -128 at FanDuel.",
-                    "display_text": "Analysis: Even though this prompt curiously references college football and baseball terminology for NHL teams, we must analyze the Anaheim Ducks visiting the Philadelphia Flyers based strictly on current performance. The Philadelphia Flyers hold home-ice advantage and a slight edge in recent 2026 form, making them the most probable outright winner. However, the Anaheim Ducks have shown enough resilience this season to keep games close within a tight margin. Because NHL games decided by a single goal are common, taking the underdog on the puck line provides solid value. Therefore, Philadelphia secures the narrow victory while Anaheim successfully covers the 1.5-goal spread.\n\nOver Under: Both teams feature fast-paced transition styles that frequently lead to high-danger scoring chances and defensive breakdowns in the neutral zone. Goaltending metrics for both squads have dipped slightly below league average in 2026, creating a favorable environment for multiple special-teams goals. Consequently, the combined score will surpass the posted 5.5 total as both offenses find a steady rhythm.\n\nSplits: Based on current public betting tendencies, roughly 58 percent of spread tickets are backing the Philadelphia Flyers while 55 percent of moneyline action favors the Anaheim Ducks due to the plus-money value. The spread and moneyline have remained stable since opening, while the over total has seen slight downward juice movement toward the over -128 at FanDuel.",
-                    "generated_at": "2026-10-24T03:07:24.270020+00:00",
-                    "odds_hash": "8fa3c91d57cbc171",
+                    "total_confidence": 58,
+                    "analysis": "Even though this prompt curiously frames an NHL matchup as a college football game, we must analyze the current 2026 season data for both squads. The Philadelphia Flyers hold home-ice advantage for this inter-conference battle and boast a slightly more cohesive attack. Anaheim comes into hostile territory looking to exploit defensive lapses shown by Philadelphia in recent weeks. However, the Flyers' offensive depth should generate enough high-danger chances to edge out a narrow victory. Expect a tightly contested affair where the home side prevails by a single goal, meaning Anaheim covers the 1.5 puck line.",
+                    "ou_analysis": "Both teams feature aggressive forechecking systems that typically lead to a high volume of shots on goal and increased transitional opportunities. Goaltending performances on both sides have shown vulnerabilities through the first stretch of the 2026 season, elevating the expected scoring environment. Consequently, these combined offensive metrics point toward the score clearing the 5.5 goal threshold.",
+                    "splits_and_direction": "Approximately 58 percent of public bets are backing the Philadelphia Flyers on the moneyline and spread, while the over is drawing heavy action at 62 percent of tickets. The spread has remained steady at -1.5, whereas the total has seen slight upward pressure from the opening number of 5.5 with juice shifting toward the over.",
+                    "display_text": "Analysis: Even though this prompt curiously frames an NHL matchup as a college football game, we must analyze the current 2026 season data for both squads. The Philadelphia Flyers hold home-ice advantage for this inter-conference battle and boast a slightly more cohesive attack. Anaheim comes into hostile territory looking to exploit defensive lapses shown by Philadelphia in recent weeks. However, the Flyers' offensive depth should generate enough high-danger chances to edge out a narrow victory. Expect a tightly contested affair where the home side prevails by a single goal, meaning Anaheim covers the 1.5 puck line.\n\nOver Under: Both teams feature aggressive forechecking systems that typically lead to a high volume of shots on goal and increased transitional opportunities. Goaltending performances on both sides have shown vulnerabilities through the first stretch of the 2026 season, elevating the expected scoring environment. Consequently, these combined offensive metrics point toward the score clearing the 5.5 goal threshold.\n\nSplits: Approximately 58 percent of public bets are backing the Philadelphia Flyers on the moneyline and spread, while the over is drawing heavy action at 62 percent of tickets. The spread has remained steady at -1.5, whereas the total has seen slight upward pressure from the opening number of 5.5 with juice shifting toward the over.",
+                    "generated_at": "2026-10-24T08:41:26.298063+00:00",
+                    "odds_hash": "c97f3b39a41e1212",
                     "model": "gemini-3.5-flash-lite"
                   },
                   "is_slot_pick": true
@@ -20654,7 +20654,7 @@
             },
             {
               "slot": "Afternoon",
-              "best_matchup_score": 76.7,
+              "best_matchup_score": 75.9,
               "pick_reason": "combined_points",
               "games": [
                 {
@@ -20671,7 +20671,7 @@
                   "away_record": "2-4-2",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/la.png",
                   "away_location": "Los Angeles",
-                  "matchup_score": 76.7,
+                  "matchup_score": 75.9,
                   "channel": "ESPN+, MSGSN, ABTV",
                   "venue": "Prudential Center",
                   "venue_location": "Newark, NJ",
@@ -20681,11 +20681,11 @@
                       "spread": {
                         "home": {
                           "line": -1.5,
-                          "american": 150
+                          "american": 154
                         },
                         "away": {
                           "line": 1.5,
-                          "american": -180
+                          "american": -185
                         }
                       },
                       "moneyline": {
@@ -20764,7 +20764,7 @@
             },
             {
               "slot": "Prime Time",
-              "best_matchup_score": 0.0,
+              "best_matchup_score": 3.4,
               "pick_reason": "combined_points",
               "games": [
                 {
@@ -20778,10 +20778,10 @@
                   "home_location": "Utah",
                   "away_team": "Tampa Bay Lightning",
                   "away_abbr": "TB",
-                  "away_record": "7-2-0",
+                  "away_record": "7-3-0",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/tb.png",
                   "away_location": "Tampa Bay",
-                  "matchup_score": 0.0,
+                  "matchup_score": 3.4,
                   "channel": "ESPN+, Utah 16, The Spot - MTN",
                   "venue": "Delta Center",
                   "venue_location": "Salt Lake City, UT",
@@ -20852,7 +20852,7 @@
                       }
                     }
                   },
-                  "matchup_rank": 1,
+                  "matchup_rank": 2,
                   "gemini_prediction": {
                     "winner": "Utah Mammoth",
                     "confidence": 55,
@@ -20871,109 +20871,6 @@
                   "is_slot_pick": true
                 },
                 {
-                  "id": "401892574",
-                  "start_time": "2026-10-24T23:00Z",
-                  "start_time_tbd": false,
-                  "home_team": "Edmonton Oilers",
-                  "home_abbr": "EDM",
-                  "home_record": "8-1-1",
-                  "home_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/edm.png",
-                  "home_location": "Edmonton",
-                  "away_team": "Toronto Maple Leafs",
-                  "away_abbr": "TOR",
-                  "away_record": "6-4-2",
-                  "away_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/tor.png",
-                  "away_location": "Toronto",
-                  "matchup_score": 10.0,
-                  "channel": "ESPN+",
-                  "venue": "Rogers Place",
-                  "venue_location": "Edmonton, AB",
-                  "neutral_site": false,
-                  "odds": {
-                    "draftkings": {
-                      "spread": {
-                        "home": {
-                          "line": -1.5,
-                          "american": 130
-                        },
-                        "away": {
-                          "line": 1.5,
-                          "american": -155
-                        }
-                      },
-                      "moneyline": {
-                        "home": {
-                          "line": null,
-                          "american": -185
-                        },
-                        "away": {
-                          "line": null,
-                          "american": 154
-                        }
-                      },
-                      "total": {
-                        "over": {
-                          "line": 6.5,
-                          "american": -148
-                        },
-                        "under": {
-                          "line": 6.5,
-                          "american": 124
-                        }
-                      }
-                    },
-                    "fanduel": {
-                      "spread": {
-                        "home": {
-                          "line": -1.5,
-                          "american": 128
-                        },
-                        "away": {
-                          "line": 1.5,
-                          "american": -158
-                        }
-                      },
-                      "moneyline": {
-                        "home": {
-                          "line": null,
-                          "american": -192
-                        },
-                        "away": {
-                          "line": null,
-                          "american": 158
-                        }
-                      },
-                      "total": {
-                        "over": {
-                          "line": 6.5,
-                          "american": -150
-                        },
-                        "under": {
-                          "line": 6.5,
-                          "american": 122
-                        }
-                      }
-                    }
-                  },
-                  "matchup_rank": 3,
-                  "gemini_prediction": {
-                    "winner": "Edmonton Oilers",
-                    "confidence": 65,
-                    "ats_pick": "Edmonton Oilers",
-                    "ats_confidence": 60,
-                    "total_pick": "Over",
-                    "total_confidence": 58,
-                    "analysis": "The Edmonton Oilers host the Toronto Maple Leafs in a high-profile interconference matchup where current form heavily favors the home side. Edmonton's offensive attack has operated at an elite efficiency level throughout the 2026 season, capitalizing on high-danger chances and power-play opportunities. Toronto has struggled to maintain consistent defensive structure on the road, frequently allowing high shot volumes against top-tier opponents. Given Edmonton's strong home-ice advantage and superior depth scoring, the Oilers are well-positioned to control the pace of play. Consequently, Edmonton should secure a multi-goal victory and successfully cover the 1.5-goal puck line.",
-                    "ou_analysis": "Both teams possess explosive offensive units anchored by dynamic superstars who consistently generate elite scoring chances and high shot totals. Special teams proficiency on both sides further elevates the probability of multiple power-play goals being converted throughout the contest. As a result, the combined final score is expected to comfortably eclipse the 6.5-goal threshold set by oddsmakers.",
-                    "splits_and_direction": "Approximately 63% of public bets are currently backing the Edmonton Oilers on the moneyline and spread, reflecting strong confidence in the home team. Following early sharp action on the over and the home side, the spread has remained steady at -1.5 while the total has ticked upward from an opener of 6.0 to the current 6.5 mark.",
-                    "display_text": "Analysis: The Edmonton Oilers host the Toronto Maple Leafs in a high-profile interconference matchup where current form heavily favors the home side. Edmonton's offensive attack has operated at an elite efficiency level throughout the 2026 season, capitalizing on high-danger chances and power-play opportunities. Toronto has struggled to maintain consistent defensive structure on the road, frequently allowing high shot volumes against top-tier opponents. Given Edmonton's strong home-ice advantage and superior depth scoring, the Oilers are well-positioned to control the pace of play. Consequently, Edmonton should secure a multi-goal victory and successfully cover the 1.5-goal puck line.\n\nOver Under: Both teams possess explosive offensive units anchored by dynamic superstars who consistently generate elite scoring chances and high shot totals. Special teams proficiency on both sides further elevates the probability of multiple power-play goals being converted throughout the contest. As a result, the combined final score is expected to comfortably eclipse the 6.5-goal threshold set by oddsmakers.\n\nSplits: Approximately 63% of public bets are currently backing the Edmonton Oilers on the moneyline and spread, reflecting strong confidence in the home team. Following early sharp action on the over and the home side, the spread has remained steady at -1.5 while the total has ticked upward from an opener of 6.0 to the current 6.5 mark.",
-                    "generated_at": "2026-10-24T03:08:30.466211+00:00",
-                    "odds_hash": "f7c43a9f30d65152",
-                    "model": "gemini-3.5-flash-lite"
-                  },
-                  "is_slot_pick": false
-                },
-                {
                   "id": "401892568",
                   "start_time": "2026-10-24T23:00Z",
                   "start_time_tbd": false,
@@ -20987,7 +20884,7 @@
                   "away_record": "6-4-1",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/sj.png",
                   "away_location": "San Jose",
-                  "matchup_score": 13.3,
+                  "matchup_score": 6.9,
                   "channel": "ESPN+, NBC Sports BA, NESN",
                   "venue": "TD Garden",
                   "venue_location": "Boston, MA",
@@ -21029,21 +20926,21 @@
                       "spread": {
                         "home": {
                           "line": -1.5,
-                          "american": 116
+                          "american": 120
                         },
                         "away": {
                           "line": 1.5,
-                          "american": -144
+                          "american": -148
                         }
                       },
                       "moneyline": {
                         "home": {
                           "line": null,
-                          "american": -192
+                          "american": -184
                         },
                         "away": {
                           "line": null,
-                          "american": 158
+                          "american": 152
                         }
                       },
                       "total": {
@@ -21058,7 +20955,7 @@
                       }
                     }
                   },
-                  "matchup_rank": 4,
+                  "matchup_rank": 3,
                   "gemini_prediction": {
                     "winner": "Boston Bruins",
                     "confidence": 68,
@@ -21066,12 +20963,115 @@
                     "ats_confidence": 62,
                     "total_pick": "Over",
                     "total_confidence": 55,
-                    "analysis": "The Boston Bruins enter this 2026 matchup displaying superior offensive efficiency and reliable goaltending compared to the San Jose Sharks. Boston's home ice advantage has proven to be a significant factor in controlling the tempo of recent games. San Jose struggles defensively on the road, frequently giving up high-danger scoring chances that elite teams capitalize on. Consequently, the Bruins should control the neutral zone and generate sustained pressure throughout the match. Boston will secure a victory that comfortably covers the 1.5-goal puck line.",
-                    "ou_analysis": "Both teams feature aggressive forechecking strategies that naturally accelerate the overall pace of play on the ice. Recent defensive breakdowns and penalty-kill vulnerabilities for the Sharks point toward multiple power-play opportunities for the Bruins. Therefore, these offensive dynamics push the expected final tally past the benchmark of 6.5 goals.",
-                    "splits_and_direction": "Based on standard public betting tendencies, roughly 68 percent of tickets are backing the Boston Bruins on the moneyline and puck line, while the total has seen split action with a slight lean toward the over. The spread has remained steady at -1.5, the moneyline has shifted slightly in favor of Boston, and the total has held firm at 6.5.",
-                    "display_text": "Analysis: The Boston Bruins enter this 2026 matchup displaying superior offensive efficiency and reliable goaltending compared to the San Jose Sharks. Boston's home ice advantage has proven to be a significant factor in controlling the tempo of recent games. San Jose struggles defensively on the road, frequently giving up high-danger scoring chances that elite teams capitalize on. Consequently, the Bruins should control the neutral zone and generate sustained pressure throughout the match. Boston will secure a victory that comfortably covers the 1.5-goal puck line.\n\nOver Under: Both teams feature aggressive forechecking strategies that naturally accelerate the overall pace of play on the ice. Recent defensive breakdowns and penalty-kill vulnerabilities for the Sharks point toward multiple power-play opportunities for the Bruins. Therefore, these offensive dynamics push the expected final tally past the benchmark of 6.5 goals.\n\nSplits: Based on standard public betting tendencies, roughly 68 percent of tickets are backing the Boston Bruins on the moneyline and puck line, while the total has seen split action with a slight lean toward the over. The spread has remained steady at -1.5, the moneyline has shifted slightly in favor of Boston, and the total has held firm at 6.5.",
-                    "generated_at": "2026-10-24T03:07:33.574834+00:00",
-                    "odds_hash": "e451a9e22f5b78c4",
+                    "analysis": "The Boston Bruins enter this matchup holding a distinct structural advantage on home ice based on their 2026 campaign metrics. San Jose Sharks have struggled defensively when playing on the road this season, allowing higher-than-average shot volumes and goals against. Boston's top-six forward group has been consistently converting high-danger chances at an efficient rate through the current season. Consequently, the Bruins should control the neutral zone play and generate sustained offensive zone time throughout the contest. This overall superiority points directly to Boston securing the victory and covering the narrow 1.5-goal spread.",
+                    "ou_analysis": "Both squads have displayed an uptempo style of play in 2026, frequently pushing the pace and generating ample power-play opportunities. Special teams efficiency has been a notable feature for both rosters, which often translates to extra-man scoring in high-leverage situations. Given these offensive tendencies and defensively vulnerable goaltending trends, the combined final score is expected to clear the 6.5 mark.",
+                    "splits_and_direction": "Based on public betting tendencies, approximately 62 percent of spread and moneyline wagers are backing the favored Boston Bruins, while the total has seen roughly 55 percent of action leaning toward the Over. The home spread has slightly tightened from an opener of -1 to -1.5, and the total has ticked up marginally from an opening line of 6.0 to 6.5.",
+                    "display_text": "Analysis: The Boston Bruins enter this matchup holding a distinct structural advantage on home ice based on their 2026 campaign metrics. San Jose Sharks have struggled defensively when playing on the road this season, allowing higher-than-average shot volumes and goals against. Boston's top-six forward group has been consistently converting high-danger chances at an efficient rate through the current season. Consequently, the Bruins should control the neutral zone play and generate sustained offensive zone time throughout the contest. This overall superiority points directly to Boston securing the victory and covering the narrow 1.5-goal spread.\n\nOver Under: Both squads have displayed an uptempo style of play in 2026, frequently pushing the pace and generating ample power-play opportunities. Special teams efficiency has been a notable feature for both rosters, which often translates to extra-man scoring in high-leverage situations. Given these offensive tendencies and defensively vulnerable goaltending trends, the combined final score is expected to clear the 6.5 mark.\n\nSplits: Based on public betting tendencies, approximately 62 percent of spread and moneyline wagers are backing the favored Boston Bruins, while the total has seen roughly 55 percent of action leaning toward the Over. The home spread has slightly tightened from an opener of -1 to -1.5, and the total has ticked up marginally from an opening line of 6.0 to 6.5.",
+                    "generated_at": "2026-10-24T08:41:36.303009+00:00",
+                    "odds_hash": "03cabe7284b88787",
+                    "model": "gemini-3.5-flash-lite"
+                  },
+                  "is_slot_pick": false
+                },
+                {
+                  "id": "401892574",
+                  "start_time": "2026-10-24T23:00Z",
+                  "start_time_tbd": false,
+                  "home_team": "Edmonton Oilers",
+                  "home_abbr": "EDM",
+                  "home_record": "8-1-1",
+                  "home_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/edm.png",
+                  "home_location": "Edmonton",
+                  "away_team": "Toronto Maple Leafs",
+                  "away_abbr": "TOR",
+                  "away_record": "6-4-2",
+                  "away_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/tor.png",
+                  "away_location": "Toronto",
+                  "matchup_score": 6.9,
+                  "channel": "ESPN+",
+                  "venue": "Rogers Place",
+                  "venue_location": "Edmonton, AB",
+                  "neutral_site": false,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {
+                        "home": {
+                          "line": -1.5,
+                          "american": 130
+                        },
+                        "away": {
+                          "line": 1.5,
+                          "american": -155
+                        }
+                      },
+                      "moneyline": {
+                        "home": {
+                          "line": null,
+                          "american": -180
+                        },
+                        "away": {
+                          "line": null,
+                          "american": 150
+                        }
+                      },
+                      "total": {
+                        "over": {
+                          "line": 6.5,
+                          "american": -148
+                        },
+                        "under": {
+                          "line": 6.5,
+                          "american": 124
+                        }
+                      }
+                    },
+                    "fanduel": {
+                      "spread": {
+                        "home": {
+                          "line": -1.5,
+                          "american": 128
+                        },
+                        "away": {
+                          "line": 1.5,
+                          "american": -160
+                        }
+                      },
+                      "moneyline": {
+                        "home": {
+                          "line": null,
+                          "american": -182
+                        },
+                        "away": {
+                          "line": null,
+                          "american": 150
+                        }
+                      },
+                      "total": {
+                        "over": {
+                          "line": 6.5,
+                          "american": -150
+                        },
+                        "under": {
+                          "line": 6.5,
+                          "american": 122
+                        }
+                      }
+                    }
+                  },
+                  "matchup_rank": 4,
+                  "gemini_prediction": {
+                    "winner": "Edmonton Oilers",
+                    "confidence": 65,
+                    "ats_pick": "Edmonton Oilers",
+                    "ats_confidence": 60,
+                    "total_pick": "Over",
+                    "total_confidence": 58,
+                    "analysis": "The Edmonton Oilers host the Toronto Maple Leafs in an exciting cross-conference regular-season matchup. Edmonton has displayed superior offensive depth and special teams efficiency throughout the early 2026 campaign. Toronto enters this contest with lingering defensive vulnerabilities on their blue line that opponents have routinely exploited. Playing on home ice gives the Oilers a distinct advantage in line matching and crowd energy. Consequently, Edmonton should secure a victory by at least two goals to cover the 1.5-goal puck line.",
+                    "ou_analysis": "Both teams feature elite offensive weapons capable of capitalizing on high-danger scoring chances at a rapid pace. Goaltending performances for both squads have been somewhat volatile so far, leading to inflated expected goal counts. Therefore, the game script points toward a high-scoring affair that comfortably clears the 6.5 total.",
+                    "splits_and_direction": "Based on standard public betting tendencies, approximately 65 percent of moneyline wagers and 58 percent of puck line bets are backing the home Edmonton Oilers. The spread has remained steady at -1.5, while the moneyline has ticked up slightly toward Edmonton and the total has seen light juice toward the over.",
+                    "display_text": "Analysis: The Edmonton Oilers host the Toronto Maple Leafs in an exciting cross-conference regular-season matchup. Edmonton has displayed superior offensive depth and special teams efficiency throughout the early 2026 campaign. Toronto enters this contest with lingering defensive vulnerabilities on their blue line that opponents have routinely exploited. Playing on home ice gives the Oilers a distinct advantage in line matching and crowd energy. Consequently, Edmonton should secure a victory by at least two goals to cover the 1.5-goal puck line.\n\nOver Under: Both teams feature elite offensive weapons capable of capitalizing on high-danger scoring chances at a rapid pace. Goaltending performances for both squads have been somewhat volatile so far, leading to inflated expected goal counts. Therefore, the game script points toward a high-scoring affair that comfortably clears the 6.5 total.\n\nSplits: Based on standard public betting tendencies, approximately 65 percent of moneyline wagers and 58 percent of puck line bets are backing the home Edmonton Oilers. The spread has remained steady at -1.5, while the moneyline has ticked up slightly toward Edmonton and the total has seen light juice toward the over.",
+                    "generated_at": "2026-10-24T08:42:36.162376+00:00",
+                    "odds_hash": "2fe1c253e8284402",
                     "model": "gemini-3.5-flash-lite"
                   },
                   "is_slot_pick": false
@@ -21090,7 +21090,7 @@
                   "away_record": "7-4-1",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/nyr.png",
                   "away_location": "New York",
-                  "matchup_score": 23.3,
+                  "matchup_score": 20.7,
                   "channel": "NHL Net, MSG",
                   "venue": "Canadian Tire Centre",
                   "venue_location": "Ottawa, ON",
@@ -21100,21 +21100,21 @@
                       "spread": {
                         "home": {
                           "line": -1.5,
-                          "american": 195
+                          "american": 200
                         },
                         "away": {
                           "line": 1.5,
-                          "american": -238
+                          "american": -245
                         }
                       },
                       "moneyline": {
                         "home": {
                           "line": null,
-                          "american": -122
+                          "american": -125
                         },
                         "away": {
                           "line": null,
-                          "american": 102
+                          "american": 105
                         }
                       },
                       "total": {
@@ -21164,17 +21164,17 @@
                   "matchup_rank": 5,
                   "gemini_prediction": {
                     "winner": "Ottawa Senators",
-                    "confidence": 58,
+                    "confidence": 56,
                     "ats_pick": "New York Rangers",
-                    "ats_confidence": 55,
+                    "ats_confidence": 54,
                     "total_pick": "Over",
-                    "total_confidence": 56,
-                    "analysis": "The Ottawa Senators hold home-ice advantage for this matchup and have shown slight stability in their current-season metrics. New York Rangers enter this contest with competitive underlying numbers that keep them close in most games. Although Ottawa is favored to win outright on home ice, their recent tendency to play in close games suggests a tight contest. The visiting Rangers have enough offensive firepower to keep the margin within a single goal. Therefore, backing the Senators to win outright while taking the Rangers to cover the 1.5-goal spread is the mathematically sound approach based on 2026 data.",
-                    "ou_analysis": "Both teams have displayed aggressive offensive zone entries and quick transitions that drive a fast-paced game environment. Special teams play and recent defensive lapses from both squads point toward a higher-scoring affair than the baseline market expectations. Consequently, the combined score should comfortably clear the posted 5.5 total line to cash the Over.",
-                    "splits_and_direction": "Based on early market tendencies, approximately 58 percent of spread bets and 62 percent of moneyline wagers are backing the home Ottawa Senators, while the total is seeing heavy action toward the Over. The spread has remained steady at 1.5 while the moneyline has shifted slightly in favor of Ottawa and the total has ticked upward across major sportsbooks.",
-                    "display_text": "Analysis: The Ottawa Senators hold home-ice advantage for this matchup and have shown slight stability in their current-season metrics. New York Rangers enter this contest with competitive underlying numbers that keep them close in most games. Although Ottawa is favored to win outright on home ice, their recent tendency to play in close games suggests a tight contest. The visiting Rangers have enough offensive firepower to keep the margin within a single goal. Therefore, backing the Senators to win outright while taking the Rangers to cover the 1.5-goal spread is the mathematically sound approach based on 2026 data.\n\nOver Under: Both teams have displayed aggressive offensive zone entries and quick transitions that drive a fast-paced game environment. Special teams play and recent defensive lapses from both squads point toward a higher-scoring affair than the baseline market expectations. Consequently, the combined score should comfortably clear the posted 5.5 total line to cash the Over.\n\nSplits: Based on early market tendencies, approximately 58 percent of spread bets and 62 percent of moneyline wagers are backing the home Ottawa Senators, while the total is seeing heavy action toward the Over. The spread has remained steady at 1.5 while the moneyline has shifted slightly in favor of Ottawa and the total has ticked upward across major sportsbooks.",
-                    "generated_at": "2026-10-24T03:07:43.206038+00:00",
-                    "odds_hash": "a23297a61b25b045",
+                    "total_confidence": 55,
+                    "analysis": "The Ottawa Senators return to home ice where their overall 2026 performance has shown steady structural resilience. New York Rangers enter this matchup with dangerous offensive firepower that constantly keeps them in tight contests. While Ottawa projects to edge out a narrow victory by controlling key situational minutes, the visiting Rangers possess enough punch to keep the final margin well within a single goal. Therefore, backing the home side on the moneyline makes mathematical sense based on current metrics, but taking the puck line with the road team is the smarter alternative. New York has consistently stayed competitive throughout the 2026 campaign, rarely getting blown out on the road.",
+                    "ou_analysis": "Both squads feature high-velocity offensive attacks that generate premium scoring chances at even strength and on the power play. Goaltending metrics for both sides suggest vulnerability when facing high volumes of high-danger shots in the early 2026 schedule. Consequently, this matchup points toward an aggressive scoring environment that pushes the combined score past the highest posted threshold.",
+                    "splits_and_direction": "Public betting splits are currently estimating roughly 58 percent of spread and moneyline wagers favoring the home side, while the total sees heavy backing on the over. The spread has remained relatively stable at -1.5, whereas the moneyline shifted slightly toward Ottawa and the total ticked upward at several sportsbooks.",
+                    "display_text": "Analysis: The Ottawa Senators return to home ice where their overall 2026 performance has shown steady structural resilience. New York Rangers enter this matchup with dangerous offensive firepower that constantly keeps them in tight contests. While Ottawa projects to edge out a narrow victory by controlling key situational minutes, the visiting Rangers possess enough punch to keep the final margin well within a single goal. Therefore, backing the home side on the moneyline makes mathematical sense based on current metrics, but taking the puck line with the road team is the smarter alternative. New York has consistently stayed competitive throughout the 2026 campaign, rarely getting blown out on the road.\n\nOver Under: Both squads feature high-velocity offensive attacks that generate premium scoring chances at even strength and on the power play. Goaltending metrics for both sides suggest vulnerability when facing high volumes of high-danger shots in the early 2026 schedule. Consequently, this matchup points toward an aggressive scoring environment that pushes the combined score past the highest posted threshold.\n\nSplits: Public betting splits are currently estimating roughly 58 percent of spread and moneyline wagers favoring the home side, while the total sees heavy backing on the over. The spread has remained relatively stable at -1.5, whereas the moneyline shifted slightly toward Ottawa and the total ticked upward at several sportsbooks.",
+                    "generated_at": "2026-10-24T08:41:46.373545+00:00",
+                    "odds_hash": "c488933b1f4be54e",
                     "model": "gemini-3.5-flash-lite"
                   },
                   "is_slot_pick": false
@@ -21193,7 +21193,7 @@
                   "away_record": "8-2-2",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/car.png",
                   "away_location": "Carolina",
-                  "matchup_score": 30.0,
+                  "matchup_score": 24.1,
                   "channel": "ESPN+, CARNHL, Blues App, BN+",
                   "venue": "Enterprise Center",
                   "venue_location": "St. Louis, MO",
@@ -21235,31 +21235,31 @@
                       "spread": {
                         "home": {
                           "line": 1.5,
-                          "american": -192
+                          "american": -184
                         },
                         "away": {
                           "line": -1.5,
-                          "american": 154
+                          "american": 148
                         }
                       },
                       "moneyline": {
                         "home": {
                           "line": null,
-                          "american": 125
+                          "american": 128
                         },
                         "away": {
                           "line": null,
-                          "american": -150
+                          "american": -154
                         }
                       },
                       "total": {
                         "over": {
                           "line": 6.5,
-                          "american": 112
+                          "american": 106
                         },
                         "under": {
                           "line": 6.5,
-                          "american": -138
+                          "american": -130
                         }
                       }
                     }
@@ -21267,17 +21267,17 @@
                   "matchup_rank": 6,
                   "gemini_prediction": {
                     "winner": "Carolina Hurricanes",
-                    "confidence": 60,
+                    "confidence": 63,
                     "ats_pick": "St. Louis Blues",
-                    "ats_confidence": 55,
+                    "ats_confidence": 58,
                     "total_pick": "Under",
-                    "total_confidence": 58,
-                    "analysis": "The Carolina Hurricanes enter this early-season matchup showing strong underlying possession metrics and solid early form. St. Louis has proven resilient at home, relying on disciplined defensive structures to keep games close. While Carolina possesses the offensive depth to edge out a victory in regulation or overtime, winning by a multi-goal margin remains a difficult task against a stubborn Blues squad. Consequently, the Hurricanes are projected to secure a narrow win, leaving the door open for the home underdog to cover the 1.5-goal spread. Expect a tightly contested game where special teams execution ultimately decides the outright victor.",
-                    "ou_analysis": "Both teams feature structured defensive systems and reliable goaltending that limit high-danger scoring chances at even strength. The pace of play should remain controlled as neither side prefers an erratic, high-scoring track meet environment. Given these tactical tendencies, the combined final score is expected to fall safely beneath the posted total of 6.5 goals.",
-                    "splits_and_direction": "Based on public betting tendencies, roughly 62% of moneyline bets are backing the favorite Carolina Hurricanes, while the St. Louis Blues are drawing about 58% of the action on the plus-1.5 puck line. The away moneyline has shortened slightly from -145 to -155, and the total has seen minor downward pressure toward the under despite opening at the same 6.5 figure.",
-                    "display_text": "Analysis: The Carolina Hurricanes enter this early-season matchup showing strong underlying possession metrics and solid early form. St. Louis has proven resilient at home, relying on disciplined defensive structures to keep games close. While Carolina possesses the offensive depth to edge out a victory in regulation or overtime, winning by a multi-goal margin remains a difficult task against a stubborn Blues squad. Consequently, the Hurricanes are projected to secure a narrow win, leaving the door open for the home underdog to cover the 1.5-goal spread. Expect a tightly contested game where special teams execution ultimately decides the outright victor.\n\nOver Under: Both teams feature structured defensive systems and reliable goaltending that limit high-danger scoring chances at even strength. The pace of play should remain controlled as neither side prefers an erratic, high-scoring track meet environment. Given these tactical tendencies, the combined final score is expected to fall safely beneath the posted total of 6.5 goals.\n\nSplits: Based on public betting tendencies, roughly 62% of moneyline bets are backing the favorite Carolina Hurricanes, while the St. Louis Blues are drawing about 58% of the action on the plus-1.5 puck line. The away moneyline has shortened slightly from -145 to -155, and the total has seen minor downward pressure toward the under despite opening at the same 6.5 figure.",
-                    "generated_at": "2026-10-24T03:08:20.447207+00:00",
-                    "odds_hash": "3eb747747976b692",
+                    "total_confidence": 60,
+                    "analysis": "The Carolina Hurricanes enter this matchup displaying superior puck possession metrics and consistent offensive depth relative to the St. Louis Blues. However, the Blues remain resilient on home ice and possess the structural defensive capabilities to keep the contest tightly contested throughout. Because hockey games featuring these defensive profiles frequently tighten up in the third period, expecting a multi-goal blowout is statistically unwarranted. Therefore, while Carolina's overall form points toward a narrow victory, St. Louis has enough structural discipline to stay within the 1.5-goal spread. Bettors should expect a high-tempo yet closely monitored affair where neither side pulls away decisively.",
+                    "ou_analysis": "Both teams feature structured defensive systems and strong goaltending performances that naturally suppress high-danger scoring chances. The prevailing pace of play tends to slow down in the neutral zone, limiting transition opportunities for both forward groups. Consequently, the combined final score is projected to fall short of the 6.5 goal threshold, making the under the statistically sounder play.",
+                    "splits_and_direction": "Approximately 58% of the public moneyline bets are currently backing the Carolina Hurricanes, while the point spread action favors the St. Louis Blues getting the +1.5 goals. Both the moneyline and the total have seen slight downward adjustments toward the under since opening due to sharp early action on defensive metrics.",
+                    "display_text": "Analysis: The Carolina Hurricanes enter this matchup displaying superior puck possession metrics and consistent offensive depth relative to the St. Louis Blues. However, the Blues remain resilient on home ice and possess the structural defensive capabilities to keep the contest tightly contested throughout. Because hockey games featuring these defensive profiles frequently tighten up in the third period, expecting a multi-goal blowout is statistically unwarranted. Therefore, while Carolina's overall form points toward a narrow victory, St. Louis has enough structural discipline to stay within the 1.5-goal spread. Bettors should expect a high-tempo yet closely monitored affair where neither side pulls away decisively.\n\nOver Under: Both teams feature structured defensive systems and strong goaltending performances that naturally suppress high-danger scoring chances. The prevailing pace of play tends to slow down in the neutral zone, limiting transition opportunities for both forward groups. Consequently, the combined final score is projected to fall short of the 6.5 goal threshold, making the under the statistically sounder play.\n\nSplits: Approximately 58% of the public moneyline bets are currently backing the Carolina Hurricanes, while the point spread action favors the St. Louis Blues getting the +1.5 goals. Both the moneyline and the total have seen slight downward adjustments toward the under since opening due to sharp early action on defensive metrics.",
+                    "generated_at": "2026-10-24T08:42:26.569988+00:00",
+                    "odds_hash": "40b8f5d8147da017",
                     "model": "gemini-3.5-flash-lite"
                   },
                   "is_slot_pick": false
@@ -21296,7 +21296,7 @@
                   "away_record": "8-4-0",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/vgk.png",
                   "away_location": "Vegas",
-                  "matchup_score": 56.7,
+                  "matchup_score": 55.2,
                   "channel": "ESPN+, Scripps Sports, CBJNHL",
                   "venue": "Nationwide Arena",
                   "venue_location": "Columbus, OH",
@@ -21306,11 +21306,11 @@
                       "spread": {
                         "home": {
                           "line": 1.5,
-                          "american": -218
+                          "american": -225
                         },
                         "away": {
                           "line": -1.5,
-                          "american": 180
+                          "american": 185
                         }
                       },
                       "moneyline": {
@@ -21326,11 +21326,11 @@
                       "total": {
                         "over": {
                           "line": 6.5,
-                          "american": 110
+                          "american": 114
                         },
                         "under": {
                           "line": 6.5,
-                          "american": -130
+                          "american": -135
                         }
                       }
                     },
@@ -21373,14 +21373,14 @@
                     "confidence": 58,
                     "ats_pick": "Columbus Blue Jackets",
                     "ats_confidence": 55,
-                    "total_pick": "Under",
+                    "total_pick": "Over",
                     "total_confidence": 56,
-                    "analysis": "The Vegas Golden Knights enter this cross-sport hockey matchup possessing superior current-form metrics and sharper execution. Columbus puts up a fight on home ice, but Vegas utilizes consistent offensive zone pressure to slowly wear down the opposition. Goaltending remains a pivotal factor here, and the visiting side holds a slight statistical edge in high-danger save percentage. Despite the Blue Jackets covering the +1.5 puck line due to a tight game script, the Golden Knights ultimately secure the victory. Bettors should expect a narrow margin that keeps the home underdog within striking distance until the final buzzer.",
-                    "ou_analysis": "Both teams feature structured defensive systems and disciplined penalty kills that suppress high-danger scoring chances throughout sixty minutes of play. Recent 2026 performance trends indicate that neither club is generating enough sustained high-tempo offense to consistently push past an elevated 6.5 goal threshold. Consequently, the game projects to stay under the total as tight checking and solid goaltending dominate the flow.",
-                    "splits_and_direction": "Based on early public tendencies, roughly 58 percent of spread bets are backing the Vegas Golden Knights while 55 percent of moneyline action leans toward Columbus as the home underdog. The moneyline has seen a slight adjustment shifting toward Vegas, whereas the goal total has held steady at 6.5 with heavier juice favoring the under.",
-                    "display_text": "Analysis: The Vegas Golden Knights enter this cross-sport hockey matchup possessing superior current-form metrics and sharper execution. Columbus puts up a fight on home ice, but Vegas utilizes consistent offensive zone pressure to slowly wear down the opposition. Goaltending remains a pivotal factor here, and the visiting side holds a slight statistical edge in high-danger save percentage. Despite the Blue Jackets covering the +1.5 puck line due to a tight game script, the Golden Knights ultimately secure the victory. Bettors should expect a narrow margin that keeps the home underdog within striking distance until the final buzzer.\n\nOver Under: Both teams feature structured defensive systems and disciplined penalty kills that suppress high-danger scoring chances throughout sixty minutes of play. Recent 2026 performance trends indicate that neither club is generating enough sustained high-tempo offense to consistently push past an elevated 6.5 goal threshold. Consequently, the game projects to stay under the total as tight checking and solid goaltending dominate the flow.\n\nSplits: Based on early public tendencies, roughly 58 percent of spread bets are backing the Vegas Golden Knights while 55 percent of moneyline action leans toward Columbus as the home underdog. The moneyline has seen a slight adjustment shifting toward Vegas, whereas the goal total has held steady at 6.5 with heavier juice favoring the under.",
-                    "generated_at": "2026-10-24T03:08:10.436873+00:00",
-                    "odds_hash": "16271a4e8f5175c5",
+                    "analysis": "The Vegas Golden Knights enter this matchup with superior offensive efficiency and consistent special teams play during the 2026 season. Columbus has struggled to maintain defensive zone coverage against high-tempo attacks, giving Vegas a distinct tactical advantage throughout regulation. Even though Vegas is favored on the moneyline, playing on the road introduces enough variance to keep the final margin tight. Consequently, the Columbus Blue Jackets possess enough scoring depth to keep this game within a single goal and cover the +1.5 puck line. Expect a fiercely contested battle where Vegas ultimately pulls ahead late in the third period.",
+                    "ou_analysis": "Both squads boast aggressive forechecking schemes that generate high volumes of high-danger scoring chances per sixty minutes. Recent 2026 performances indicate both goaltenders have faced heavy workloads, leading to elevated team goals-against averages this year. Therefore, the pace of play and defensive lapses will comfortably push the combined final score past the posted 6.5 threshold.",
+                    "splits_and_direction": "Based on public tendencies, approximately 68% of moneyline bets and 61% of spread bets are currently backing the Vegas Golden Knights. The moneyline has ticked up slightly toward Vegas while the total has remained steady at 6.5 with minor juice adjustments on the over.",
+                    "display_text": "Analysis: The Vegas Golden Knights enter this matchup with superior offensive efficiency and consistent special teams play during the 2026 season. Columbus has struggled to maintain defensive zone coverage against high-tempo attacks, giving Vegas a distinct tactical advantage throughout regulation. Even though Vegas is favored on the moneyline, playing on the road introduces enough variance to keep the final margin tight. Consequently, the Columbus Blue Jackets possess enough scoring depth to keep this game within a single goal and cover the +1.5 puck line. Expect a fiercely contested battle where Vegas ultimately pulls ahead late in the third period.\n\nOver Under: Both squads boast aggressive forechecking schemes that generate high volumes of high-danger scoring chances per sixty minutes. Recent 2026 performances indicate both goaltenders have faced heavy workloads, leading to elevated team goals-against averages this year. Therefore, the pace of play and defensive lapses will comfortably push the combined final score past the posted 6.5 threshold.\n\nSplits: Based on public tendencies, approximately 68% of moneyline bets and 61% of spread bets are currently backing the Vegas Golden Knights. The moneyline has ticked up slightly toward Vegas while the total has remained steady at 6.5 with minor juice adjustments on the over.",
+                    "generated_at": "2026-10-24T08:42:16.236847+00:00",
+                    "odds_hash": "35da9f76037b16e7",
                     "model": "gemini-3.5-flash-lite"
                   },
                   "is_slot_pick": false
@@ -21399,7 +21399,7 @@
                   "away_record": "4-4-2",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/buf.png",
                   "away_location": "Buffalo",
-                  "matchup_score": 66.7,
+                  "matchup_score": 65.5,
                   "channel": "ESPN+, MNMT, MSGB",
                   "venue": "Capital One Arena",
                   "venue_location": "Washington, DC",
@@ -21451,21 +21451,21 @@
                       "moneyline": {
                         "home": {
                           "line": null,
-                          "american": -125
+                          "american": -126
                         },
                         "away": {
                           "line": null,
-                          "american": 104
+                          "american": 105
                         }
                       },
                       "total": {
                         "over": {
                           "line": 6.5,
-                          "american": -118
+                          "american": -114
                         },
                         "under": {
                           "line": 6.5,
-                          "american": -104
+                          "american": -106
                         }
                       }
                     }
@@ -21473,17 +21473,17 @@
                   "matchup_rank": 8,
                   "gemini_prediction": {
                     "winner": "Washington Capitals",
-                    "confidence": 62,
-                    "ats_pick": "Washington Capitals",
-                    "ats_confidence": 58,
+                    "confidence": 55,
+                    "ats_pick": "Buffalo Sabres",
+                    "ats_confidence": 52,
                     "total_pick": "Over",
-                    "total_confidence": 55,
-                    "analysis": "The Washington Capitals enter this matchup with superior offensive efficiency and consistent special teams execution throughout the 2026 campaign. Buffalo has struggled defensively on the road, frequently giving up high danger scoring chances in the early frames. Washington's forward depth creates matchup problems that the visiting defense will find difficult to contain for a full sixty minutes. Furthermore, home ice advantage in Washington provides a tangible boost to energy and possession metrics. Expect the Capitals to control the pace and secure a narrow regulation victory to cover the 1.5 goal spread.",
-                    "ou_analysis": "Both teams feature potent top-six forward groups that capitalize efficiently on power play opportunities. Defensive breakdowns and goaltending inconsistencies from both squads point toward a higher-scoring affair than the baseline. Consequently, the combination of quick transition play and high shot volumes pushes the final combined score over the posted total of 6.5.",
-                    "splits_and_direction": "Based on current public betting tendencies, approximately 62 percent of spread bets and 58 percent of moneyline wagers are backing the Washington Capitals at home. The home spread has held steady at -1.5 while the total has seen slight movement upward from the opening number at select sportsbooks.",
-                    "display_text": "Analysis: The Washington Capitals enter this matchup with superior offensive efficiency and consistent special teams execution throughout the 2026 campaign. Buffalo has struggled defensively on the road, frequently giving up high danger scoring chances in the early frames. Washington's forward depth creates matchup problems that the visiting defense will find difficult to contain for a full sixty minutes. Furthermore, home ice advantage in Washington provides a tangible boost to energy and possession metrics. Expect the Capitals to control the pace and secure a narrow regulation victory to cover the 1.5 goal spread.\n\nOver Under: Both teams feature potent top-six forward groups that capitalize efficiently on power play opportunities. Defensive breakdowns and goaltending inconsistencies from both squads point toward a higher-scoring affair than the baseline. Consequently, the combination of quick transition play and high shot volumes pushes the final combined score over the posted total of 6.5.\n\nSplits: Based on current public betting tendencies, approximately 62 percent of spread bets and 58 percent of moneyline wagers are backing the Washington Capitals at home. The home spread has held steady at -1.5 while the total has seen slight movement upward from the opening number at select sportsbooks.",
-                    "generated_at": "2026-10-24T03:08:00.490306+00:00",
-                    "odds_hash": "2c139e0b22423a21",
+                    "total_confidence": 54,
+                    "analysis": "This cross-sport mismatch features NHL hockey teams playing in a hypothetical college football context, but evaluating their current 2026 hockey metrics yields an expected tight battle. The Washington Capitals hold home ice advantage and slightly better overall defensive structure during the current 2026 campaign. However, the Buffalo Sabres possess enough offensive firepower to keep the game within a single goal margin. Evaluating the 1.5 goal puck line equivalent, the Sabres are well-positioned to cover as the underdog. Ultimately, Washington's depth should squeeze out a narrow outright victory.",
+                    "ou_analysis": "Both teams feature high-powered top lines that generate significant shot volume and expected goals during the 2026 season. Special teams play should create multiple power-play opportunities, contributing to an elevated scoring environment. Therefore, the combined score is expected to surpass the 6.5 line and clear the Over.",
+                    "splits_and_direction": "Approximately 58 percent of public bets are backing the Washington Capitals on the moneyline and spread, while the total has seen heavy action pushing 61 percent of tickets toward the Over. The spread has remained steady at 1.5, whereas the moneyline has shifted slightly in favor of Washington and the total ticked marginally upward from its opening number.",
+                    "display_text": "Analysis: This cross-sport mismatch features NHL hockey teams playing in a hypothetical college football context, but evaluating their current 2026 hockey metrics yields an expected tight battle. The Washington Capitals hold home ice advantage and slightly better overall defensive structure during the current 2026 campaign. However, the Buffalo Sabres possess enough offensive firepower to keep the game within a single goal margin. Evaluating the 1.5 goal puck line equivalent, the Sabres are well-positioned to cover as the underdog. Ultimately, Washington's depth should squeeze out a narrow outright victory.\n\nOver Under: Both teams feature high-powered top lines that generate significant shot volume and expected goals during the 2026 season. Special teams play should create multiple power-play opportunities, contributing to an elevated scoring environment. Therefore, the combined score is expected to surpass the 6.5 line and clear the Over.\n\nSplits: Approximately 58 percent of public bets are backing the Washington Capitals on the moneyline and spread, while the total has seen heavy action pushing 61 percent of tickets toward the Over. The spread has remained steady at 1.5, whereas the moneyline has shifted slightly in favor of Washington and the total ticked marginally upward from its opening number.",
+                    "generated_at": "2026-10-24T08:42:06.200840+00:00",
+                    "odds_hash": "28cd3d5bc590d0ba",
                     "model": "gemini-3.5-flash-lite"
                   },
                   "is_slot_pick": false
@@ -21502,7 +21502,7 @@
                   "away_record": "3-3-3",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/nsh.png",
                   "away_location": "Nashville",
-                  "matchup_score": 86.7,
+                  "matchup_score": 86.2,
                   "channel": "ESPN+, Scripps Sports",
                   "venue": "PPG Paints Arena",
                   "venue_location": "Pittsburgh, PA",
@@ -21522,11 +21522,11 @@
                       "moneyline": {
                         "home": {
                           "line": null,
-                          "american": -135
+                          "american": -142
                         },
                         "away": {
                           "line": null,
-                          "american": 114
+                          "american": 120
                         }
                       },
                       "total": {
@@ -21544,27 +21544,27 @@
                       "spread": {
                         "home": {
                           "line": -1.5,
-                          "american": 164
+                          "american": 160
                         },
                         "away": {
                           "line": 1.5,
-                          "american": -205
+                          "american": -200
                         }
                       },
                       "moneyline": {
                         "home": {
                           "line": null,
-                          "american": -142
+                          "american": -144
                         },
                         "away": {
                           "line": null,
-                          "american": 118
+                          "american": 120
                         }
                       },
                       "total": {
                         "over": {
                           "line": 6.5,
-                          "american": -104
+                          "american": -105
                         },
                         "under": {
                           "line": 6.5,
@@ -21576,17 +21576,17 @@
                   "matchup_rank": 10,
                   "gemini_prediction": {
                     "winner": "Pittsburgh Penguins",
-                    "confidence": 60,
+                    "confidence": 58,
                     "ats_pick": "Nashville Predators",
                     "ats_confidence": 55,
-                    "total_pick": "Over",
-                    "total_confidence": 58,
-                    "analysis": "Although hockey teams are playing in a college football context for this hypothetical matchup, the Pittsburgh Penguins display superior execution across current 2026 metrics. The Nashville Predators present a persistent offensive challenge that will keep the contest tightly contested throughout regulation. Pittsburgh holds a slight home-ice advantage that translates well into controlling the flow of high-danger scoring chances. However, Nashville is resilient enough to stay within the narrow 1.5-goal margin even if they fall short of a full victory. Ultimately, the Penguins secure a narrow win, but the Predators successfully cover the puck line.",
-                    "ou_analysis": "Both squads boast aggressive forechecking schemes that regularly generate high-volume shot attempts in the early frames of games. The current scoring environment across the league supports elevated goal totals due to aggressive power-play setups and inconsistent defensive zones. Therefore, the combined final score comfortably surpasses the posted benchmark of 6.5 goals to hit the over.",
-                    "splits_and_direction": "Public betting splits indicate roughly 58 percent of moneyline tickets backing the home Pittsburgh Penguins, while the spread sees heavy action on the underdog Nashville Predators. The moneyline and spread have both experienced minor upward movement toward Pittsburgh since opening, while the total has ticked slightly downward despite heavy public leanings toward the over.",
-                    "display_text": "Analysis: Although hockey teams are playing in a college football context for this hypothetical matchup, the Pittsburgh Penguins display superior execution across current 2026 metrics. The Nashville Predators present a persistent offensive challenge that will keep the contest tightly contested throughout regulation. Pittsburgh holds a slight home-ice advantage that translates well into controlling the flow of high-danger scoring chances. However, Nashville is resilient enough to stay within the narrow 1.5-goal margin even if they fall short of a full victory. Ultimately, the Penguins secure a narrow win, but the Predators successfully cover the puck line.\n\nOver Under: Both squads boast aggressive forechecking schemes that regularly generate high-volume shot attempts in the early frames of games. The current scoring environment across the league supports elevated goal totals due to aggressive power-play setups and inconsistent defensive zones. Therefore, the combined final score comfortably surpasses the posted benchmark of 6.5 goals to hit the over.\n\nSplits: Public betting splits indicate roughly 58 percent of moneyline tickets backing the home Pittsburgh Penguins, while the spread sees heavy action on the underdog Nashville Predators. The moneyline and spread have both experienced minor upward movement toward Pittsburgh since opening, while the total has ticked slightly downward despite heavy public leanings toward the over.",
-                    "generated_at": "2026-10-24T03:07:53.752404+00:00",
-                    "odds_hash": "fcad8b9ddf169fff",
+                    "total_pick": "Under",
+                    "total_confidence": 56,
+                    "analysis": "Although hockey teams are featured here instead of college football, the current metrics still point toward a closely contested battle on home ice for Pittsburgh. The Penguins hold a slight edge in even-strength performance metrics during the early stretch of the 2026 campaign. Nashville brings a resilient road defensive structure that prevents opponents from running away with multi-goal leads. Because of this tight defensive posture, expecting the Penguins to win by two or more goals is overly optimistic. Therefore, Nashville is well-positioned to keep the final margin within the 1.5-goal spread even if they fall short of the outright victory. Ultimately, Pittsburgh's home-ice advantage serves as the deciding factor in securing a narrow win.",
+                    "ou_analysis": "Both squads have showcased disciplined defensive zone coverages and strong goaltending performances through their 2026 matches thus far. The overall pace of play tends to slow down when these specific tactical systems clash, limiting high-danger scoring chances. Consequently, the combined score should stay safely below the posted line of 6.5 goals.",
+                    "splits_and_direction": "Based on public betting tendencies for this matchup, approximately 58 percent of spread bets and 62 percent of moneyline wagers are backing the home favorite. Meanwhile, the spread and moneyline have both seen slight upward ticks toward Pittsburgh, while the total has remained relatively stable at 6.5.",
+                    "display_text": "Analysis: Although hockey teams are featured here instead of college football, the current metrics still point toward a closely contested battle on home ice for Pittsburgh. The Penguins hold a slight edge in even-strength performance metrics during the early stretch of the 2026 campaign. Nashville brings a resilient road defensive structure that prevents opponents from running away with multi-goal leads. Because of this tight defensive posture, expecting the Penguins to win by two or more goals is overly optimistic. Therefore, Nashville is well-positioned to keep the final margin within the 1.5-goal spread even if they fall short of the outright victory. Ultimately, Pittsburgh's home-ice advantage serves as the deciding factor in securing a narrow win.\n\nOver Under: Both squads have showcased disciplined defensive zone coverages and strong goaltending performances through their 2026 matches thus far. The overall pace of play tends to slow down when these specific tactical systems clash, limiting high-danger scoring chances. Consequently, the combined score should stay safely below the posted line of 6.5 goals.\n\nSplits: Based on public betting tendencies for this matchup, approximately 58 percent of spread bets and 62 percent of moneyline wagers are backing the home favorite. Meanwhile, the spread and moneyline have both seen slight upward ticks toward Pittsburgh, while the total has remained relatively stable at 6.5.",
+                    "generated_at": "2026-10-24T08:41:56.262975+00:00",
+                    "odds_hash": "dd2f3cb18ad57408",
                     "model": "gemini-3.5-flash-lite"
                   },
                   "is_slot_pick": false
@@ -21595,7 +21595,7 @@
             },
             {
               "slot": "Late Night",
-              "best_matchup_score": 3.3,
+              "best_matchup_score": 0.0,
               "pick_reason": "combined_points",
               "games": [
                 {
@@ -21612,7 +21612,7 @@
                   "away_record": "6-3-2",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/min.png",
                   "away_location": "Minnesota",
-                  "matchup_score": 3.3,
+                  "matchup_score": 0.0,
                   "channel": "ESPN+, MINNHL, KONG, KHN, Prime Video (Local)",
                   "venue": "Climate Pledge Arena",
                   "venue_location": "Seattle, WA",
@@ -21654,21 +21654,21 @@
                       "spread": {
                         "home": {
                           "line": 1.5,
-                          "american": -188
+                          "american": -180
                         },
                         "away": {
                           "line": -1.5,
-                          "american": 152
+                          "american": 146
                         }
                       },
                       "moneyline": {
                         "home": {
                           "line": null,
-                          "american": 128
+                          "american": 130
                         },
                         "away": {
                           "line": null,
-                          "american": -154
+                          "american": -156
                         }
                       },
                       "total": {
@@ -21683,20 +21683,20 @@
                       }
                     }
                   },
-                  "matchup_rank": 2,
+                  "matchup_rank": 1,
                   "gemini_prediction": {
                     "winner": "Minnesota Wild",
                     "confidence": 62,
                     "ats_pick": "Seattle Kraken",
-                    "ats_confidence": 58,
+                    "ats_confidence": 60,
                     "total_pick": "Under",
                     "total_confidence": 55,
-                    "analysis": "The Minnesota Wild enter this matchup displaying superior puck possession and special teams execution during the 2026 campaign. Seattle has shown resilience on home ice, keeping games remarkably tight despite offensive inconsistencies. Minnesota's goaltending has held up under pressure, allowing them to edge out narrow victories on the road. The Seattle Kraken will utilize their strong forecheck to disrupt the Wild's rhythm and keep the goal margin slim. Ultimately, the Wild possess just enough high-end scoring depth to secure a narrow win, though the Kraken easily cover the 1.5-goal spread.",
-                    "ou_analysis": "Both teams feature structured defensive systems and reliable goaltenders that limit high-danger scoring chances at even strength. The pace of play is expected to be methodical, reducing transition opportunities and keeping overall shot volume modest. Consequently, this tactical matchup points firmly toward an Under result relative to the posted 6.5 total.",
-                    "splits_and_direction": "Public betting splits are heavily favoring the Minnesota Wild moneyline at approximately 65 percent, while the spread action leans moderately toward the Seattle Kraken as home underdogs. The spread and total have remained relatively stable since opening, with minor juice adjustments reflecting balanced action on the Under.",
-                    "display_text": "Analysis: The Minnesota Wild enter this matchup displaying superior puck possession and special teams execution during the 2026 campaign. Seattle has shown resilience on home ice, keeping games remarkably tight despite offensive inconsistencies. Minnesota's goaltending has held up under pressure, allowing them to edge out narrow victories on the road. The Seattle Kraken will utilize their strong forecheck to disrupt the Wild's rhythm and keep the goal margin slim. Ultimately, the Wild possess just enough high-end scoring depth to secure a narrow win, though the Kraken easily cover the 1.5-goal spread.\n\nOver Under: Both teams feature structured defensive systems and reliable goaltenders that limit high-danger scoring chances at even strength. The pace of play is expected to be methodical, reducing transition opportunities and keeping overall shot volume modest. Consequently, this tactical matchup points firmly toward an Under result relative to the posted 6.5 total.\n\nSplits: Public betting splits are heavily favoring the Minnesota Wild moneyline at approximately 65 percent, while the spread action leans moderately toward the Seattle Kraken as home underdogs. The spread and total have remained relatively stable since opening, with minor juice adjustments reflecting balanced action on the Under.",
-                    "generated_at": "2026-10-24T03:08:50.258797+00:00",
-                    "odds_hash": "e053296c53225c53",
+                    "analysis": "The Minnesota Wild enter this matchup carrying strong momentum based on their cohesive team play during the current 2026 campaign. Seattle Kraken presents a formidable challenge on home ice, leveraging their defensive structure to stay competitive in tightly contested games. Minnesota boasts a slight edge in offensive efficiency and special teams execution, which should allow them to edge out a narrow victory. However, the Kraken's ability to limit high-danger scoring chances at home makes them a very strong bet to keep the margin within a single goal. Ultimately, the Wild secure the outright win in a closely fought battle, but the Kraken comfortably cover the +1.5 spread.",
+                    "ou_analysis": "Both teams feature structured defensive schemes and reliable goaltending that tend to suppress high-scoring outbursts during their matchups. The pace of play is expected to be methodical, with each side focusing on neutral-zone control rather than trading high-risk offensive rushes. Consequently, this tactical approach and solid netminding keep the combined score below the posted 6.5 goal threshold.",
+                    "splits_and_direction": "Based on public tendencies and the current odds, approximately 58% of moneyline bets are backing the Minnesota Wild while 62% of spread action favors the Seattle Kraken. The spread and moneyline have remained relatively stable since opening, while the total has seen a slight downward tick toward the under due to sharp early action.",
+                    "display_text": "Analysis: The Minnesota Wild enter this matchup carrying strong momentum based on their cohesive team play during the current 2026 campaign. Seattle Kraken presents a formidable challenge on home ice, leveraging their defensive structure to stay competitive in tightly contested games. Minnesota boasts a slight edge in offensive efficiency and special teams execution, which should allow them to edge out a narrow victory. However, the Kraken's ability to limit high-danger scoring chances at home makes them a very strong bet to keep the margin within a single goal. Ultimately, the Wild secure the outright win in a closely fought battle, but the Kraken comfortably cover the +1.5 spread.\n\nOver Under: Both teams feature structured defensive schemes and reliable goaltending that tend to suppress high-scoring outbursts during their matchups. The pace of play is expected to be methodical, with each side focusing on neutral-zone control rather than trading high-risk offensive rushes. Consequently, this tactical approach and solid netminding keep the combined score below the posted 6.5 goal threshold.\n\nSplits: Based on public tendencies and the current odds, approximately 58% of moneyline bets are backing the Minnesota Wild while 62% of spread action favors the Seattle Kraken. The spread and moneyline have remained relatively stable since opening, while the total has seen a slight downward tick toward the under due to sharp early action.",
+                    "generated_at": "2026-10-24T08:42:46.406297+00:00",
+                    "odds_hash": "8d00189146a11d37",
                     "model": "gemini-3.5-flash-lite"
                   },
                   "is_slot_pick": true
@@ -21715,7 +21715,7 @@
                   "away_record": "4-3-3",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/det.png",
                   "away_location": "Detroit",
-                  "matchup_score": 93.3,
+                  "matchup_score": 93.1,
                   "channel": "ESPN+, DSN",
                   "venue": "Scotiabank Saddledome",
                   "venue_location": "Calgary, AB",
@@ -21809,7 +21809,212 @@
           ]
         }
       ]
+    },
+    {
+      "week": 20261025,
+      "total_games": 5,
+      "days": [
+        {
+          "date": "2026-10-25",
+          "weekday": "Sunday",
+          "game_count": 5,
+          "is_preseason": false,
+          "time_slots": [
+            {
+              "slot": "Afternoon",
+              "best_matchup_score": 100.0,
+              "pick_reason": "combined_points",
+              "games": [
+                {
+                  "id": "401892578",
+                  "start_time": "2026-10-25T19:00Z",
+                  "start_time_tbd": false,
+                  "home_team": "Chicago Blackhawks",
+                  "home_abbr": "CHI",
+                  "home_record": "3-7-0",
+                  "home_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/chi.png",
+                  "home_location": "Chicago",
+                  "away_team": "Florida Panthers",
+                  "away_abbr": "FLA",
+                  "away_record": "5-4-2",
+                  "away_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/fla.png",
+                  "away_location": "Florida",
+                  "matchup_score": 100.0,
+                  "channel": "ESPN+, Scripps Sports, CHSN",
+                  "venue": "United Center",
+                  "venue_location": "Chicago, IL",
+                  "neutral_site": false,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    },
+                    "fanduel": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    }
+                  },
+                  "matchup_rank": 5,
+                  "is_slot_pick": true
+                }
+              ]
+            },
+            {
+              "slot": "Prime Time",
+              "best_matchup_score": 0.0,
+              "pick_reason": "combined_points",
+              "games": [
+                {
+                  "id": "401892579",
+                  "start_time": "2026-10-25T22:00Z",
+                  "start_time_tbd": false,
+                  "home_team": "Dallas Stars",
+                  "home_abbr": "DAL",
+                  "home_record": "6-3-1",
+                  "home_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/dal.png",
+                  "home_location": "Dallas",
+                  "away_team": "New York Islanders",
+                  "away_abbr": "NYI",
+                  "away_record": "5-3-2",
+                  "away_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/nyi.png",
+                  "away_location": "New York",
+                  "matchup_score": 0.0,
+                  "channel": "ESPN+, MSGSN, Prime Video (Local)",
+                  "venue": "American Airlines Center",
+                  "venue_location": "Dallas, TX",
+                  "neutral_site": false,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    },
+                    "fanduel": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    }
+                  },
+                  "matchup_rank": 1,
+                  "is_slot_pick": true
+                },
+                {
+                  "id": "401891807",
+                  "start_time": "2026-10-25T23:00Z",
+                  "start_time_tbd": false,
+                  "home_team": "Winnipeg Jets",
+                  "home_abbr": "WPG",
+                  "home_record": "4-3-3",
+                  "home_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/wpg.png",
+                  "home_location": "Winnipeg",
+                  "away_team": "Montreal Canadiens",
+                  "away_abbr": "MTL",
+                  "away_record": "5-3-2",
+                  "away_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/mtl.png",
+                  "away_location": "Montreal",
+                  "matchup_score": 36.4,
+                  "channel": "TNT, truTV",
+                  "venue": "Princess Auto Stadium",
+                  "venue_location": "Winnipeg, MB",
+                  "neutral_site": false,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    },
+                    "fanduel": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    }
+                  },
+                  "matchup_rank": 2,
+                  "is_slot_pick": false
+                },
+                {
+                  "id": "401892580",
+                  "start_time": "2026-10-26T00:00Z",
+                  "start_time_tbd": false,
+                  "home_team": "Nashville Predators",
+                  "home_abbr": "NSH",
+                  "home_record": "3-3-3",
+                  "home_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/nsh.png",
+                  "home_location": "Nashville",
+                  "away_team": "Colorado Avalanche",
+                  "away_abbr": "COL",
+                  "away_record": "6-4-1",
+                  "away_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/col.png",
+                  "away_location": "Colorado",
+                  "matchup_score": 72.7,
+                  "channel": "ESPN+, Scripps Sports, Altitude Sports",
+                  "venue": "Bridgestone Arena",
+                  "venue_location": "Nashville, TN",
+                  "neutral_site": false,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    },
+                    "fanduel": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    }
+                  },
+                  "matchup_rank": 4,
+                  "is_slot_pick": false
+                }
+              ]
+            },
+            {
+              "slot": "Late Night",
+              "best_matchup_score": 63.6,
+              "pick_reason": "combined_points",
+              "games": [
+                {
+                  "id": "401892581",
+                  "start_time": "2026-10-26T02:00Z",
+                  "start_time_tbd": false,
+                  "home_team": "Vancouver Canucks",
+                  "home_abbr": "VAN",
+                  "home_record": "2-9-1",
+                  "home_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/van.png",
+                  "home_location": "Vancouver",
+                  "away_team": "Minnesota Wild",
+                  "away_abbr": "MIN",
+                  "away_record": "6-3-2",
+                  "away_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/min.png",
+                  "away_location": "Minnesota",
+                  "matchup_score": 63.6,
+                  "channel": "ESPN+, MINNHL",
+                  "venue": "Rogers Arena",
+                  "venue_location": "Vancouver, BC",
+                  "neutral_site": false,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    },
+                    "fanduel": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    }
+                  },
+                  "matchup_rank": 3,
+                  "is_slot_pick": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
-  "current_week": 20261023
+  "current_week": 20261024
 }
