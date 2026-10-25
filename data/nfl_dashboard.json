@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-25T18:46:46.553957+00:00",
+  "generated_at": "2026-10-25T22:23:02.589862+00:00",
   "season": 2026,
   "season_type": 2,
   "display_timezone": "America/Chicago",
@@ -9942,7 +9942,7 @@
           "time_slots": [
             {
               "slot": "Prime Time",
-              "best_matchup_score": 1.5,
+              "best_matchup_score": 0.0,
               "pick_reason": "blended_score",
               "games": [
                 {
@@ -9959,7 +9959,7 @@
                   "away_record": "4-3",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ne.png",
                   "away_location": "New England",
-                  "matchup_score": 1.5,
+                  "matchup_score": 0.0,
                   "channel": "Prime Video",
                   "venue": "Soldier Field",
                   "venue_location": "Chicago, IL",
@@ -10045,7 +10045,7 @@
                     "odds_hash": "7db16f5560b305bc",
                     "model": "gemini-3.5-flash-lite"
                   },
-                  "matchup_rank": 3,
+                  "matchup_rank": 1,
                   "is_slot_pick": true
                 }
               ]
@@ -10059,7 +10059,7 @@
           "time_slots": [
             {
               "slot": "Morning",
-              "best_matchup_score": 25.4,
+              "best_matchup_score": 24.8,
               "pick_reason": "blended_score",
               "games": [
                 {
@@ -10076,7 +10076,7 @@
                   "away_record": "5-2",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/pit.png",
                   "away_location": "Pittsburgh",
-                  "matchup_score": 25.4,
+                  "matchup_score": 24.8,
                   "channel": "NFL Net",
                   "venue": "Stade de France",
                   "venue_location": "Saint-Denis, France",
@@ -10162,14 +10162,14 @@
                     "odds_hash": "ac84cb2316f26945",
                     "model": "gemini-3.5-flash-lite"
                   },
-                  "matchup_rank": 8,
+                  "matchup_rank": 7,
                   "is_slot_pick": true
                 }
               ]
             },
             {
               "slot": "Noon",
-              "best_matchup_score": 0.0,
+              "best_matchup_score": 2.9,
               "pick_reason": "blended_score",
               "games": [
                 {
@@ -10178,15 +10178,15 @@
                   "start_time_tbd": false,
                   "home_team": "Baltimore Ravens",
                   "home_abbr": "BAL",
-                  "home_record": "4-2",
+                  "home_record": "4-3",
                   "home_logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/bal.png",
                   "home_location": "Baltimore",
                   "away_team": "Cincinnati Bengals",
                   "away_abbr": "CIN",
-                  "away_record": "3-2",
+                  "away_record": "4-2",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/cin.png",
                   "away_location": "Cincinnati",
-                  "matchup_score": 0.0,
+                  "matchup_score": 2.9,
                   "channel": "CBS",
                   "venue": "M&T Bank Stadium",
                   "venue_location": "Baltimore, MD",
@@ -10272,7 +10272,7 @@
                     "odds_hash": "ff82d2fd9c8a554f",
                     "model": "gemini-3.5-flash-lite"
                   },
-                  "matchup_rank": 1,
+                  "matchup_rank": 3,
                   "is_slot_pick": true
                 },
                 {
@@ -10281,15 +10281,15 @@
                   "start_time_tbd": false,
                   "home_team": "Atlanta Falcons",
                   "home_abbr": "ATL",
-                  "home_record": "2-4",
+                  "home_record": "3-4",
                   "home_logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/atl.png",
                   "home_location": "Atlanta",
                   "away_team": "San Francisco 49ers",
                   "away_abbr": "SF",
-                  "away_record": "6-0",
+                  "away_record": "6-1",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/sf.png",
                   "away_location": "San Francisco",
-                  "matchup_score": 2.9,
+                  "matchup_score": 4.3,
                   "channel": "Fox",
                   "venue": "Mercedes-Benz Stadium",
                   "venue_location": "Atlanta, GA",
@@ -10384,15 +10384,15 @@
                   "start_time_tbd": false,
                   "home_team": "Tennessee Titans",
                   "home_abbr": "TEN",
-                  "home_record": "1-5",
+                  "home_record": "1-6",
                   "home_logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ten.png",
                   "home_location": "Tennessee",
                   "away_team": "Cleveland Browns",
                   "away_abbr": "CLE",
-                  "away_record": "4-2",
+                  "away_record": "5-2",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/cle.png",
                   "away_location": "Cleveland",
-                  "matchup_score": 25.0,
+                  "matchup_score": 22.9,
                   "channel": "CBS",
                   "venue": "Nissan Stadium",
                   "venue_location": "Nashville, TN",
@@ -10478,110 +10478,7 @@
                     "odds_hash": "c4cb674903926152",
                     "model": "gemini-3.5-flash-lite"
                   },
-                  "matchup_rank": 7,
-                  "is_slot_pick": false
-                },
-                {
-                  "id": "401873018",
-                  "start_time": "2026-10-25T17:00Z",
-                  "start_time_tbd": false,
-                  "home_team": "Carolina Panthers",
-                  "home_abbr": "CAR",
-                  "home_record": "3-2",
-                  "home_logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/car.png",
-                  "home_location": "Carolina",
-                  "away_team": "Tampa Bay Buccaneers",
-                  "away_abbr": "TB",
-                  "away_record": "1-5",
-                  "away_logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/tb.png",
-                  "away_location": "Tampa Bay",
-                  "matchup_score": 31.1,
-                  "channel": "Fox",
-                  "venue": "Bank of America Stadium",
-                  "venue_location": "Charlotte, NC",
-                  "neutral_site": false,
-                  "odds": {
-                    "draftkings": {
-                      "spread": {
-                        "home": {
-                          "line": -3.0,
-                          "american": -110
-                        },
-                        "away": {
-                          "line": 3.0,
-                          "american": -110
-                        }
-                      },
-                      "moneyline": {
-                        "home": {
-                          "line": null,
-                          "american": -166
-                        },
-                        "away": {
-                          "line": null,
-                          "american": 140
-                        }
-                      },
-                      "total": {
-                        "over": {
-                          "line": 44.5,
-                          "american": -108
-                        },
-                        "under": {
-                          "line": 44.5,
-                          "american": -112
-                        }
-                      }
-                    },
-                    "fanduel": {
-                      "spread": {
-                        "home": {
-                          "line": -2.5,
-                          "american": -122
-                        },
-                        "away": {
-                          "line": 2.5,
-                          "american": 100
-                        }
-                      },
-                      "moneyline": {
-                        "home": {
-                          "line": null,
-                          "american": -158
-                        },
-                        "away": {
-                          "line": null,
-                          "american": 134
-                        }
-                      },
-                      "total": {
-                        "over": {
-                          "line": 44.5,
-                          "american": -110
-                        },
-                        "under": {
-                          "line": 44.5,
-                          "american": -110
-                        }
-                      }
-                    }
-                  },
-                  "gemini_prediction": {
-                    "winner": "Tampa Bay Buccaneers",
-                    "confidence": 62,
-                    "ats_pick": "Tampa Bay Buccaneers",
-                    "ats_confidence": 60,
-                    "total_pick": "Over",
-                    "total_confidence": 55,
-                    "analysis": "The Tampa Bay Buccaneers enter this divisional matchup with a more reliable offensive rhythm than the Carolina Panthers. Carolina has struggled defensively to contain explosive passing attacks, giving Tampa Bay a clear efficiency advantage. Furthermore, the Buccaneers' ability to generate critical third-down conversions will keep drives alive and wear down the home side. While playing on the road in a divisional rivalry is always challenging, Tampa Bay's current form justifies them as the better overall unit. Consequently, the Buccaneers not only secure the outright victory but also comfortably cover the short 2.5-point spread.",
-                    "ou_analysis": "Both teams feature fast-paced offensive schemes that heavily utilize quick throws to exploit secondary mismatches. The defensive deficiencies on both sides point toward a higher-scoring affair than what the low-40s number implies. Therefore, the combination of efficient red-zone execution and porous coverages pushes the final combined score Over the posted total.",
-                    "splits_and_direction": "Based on public tendencies, approximately 58% of bets are backing the Carolina Panthers on the spread while the moneyline remains heavily split. The spread has moved down from an opening number of -3 to -2.5 at FanDuel, and the total has remained stable at 44.5.",
-                    "display_text": "Analysis: The Tampa Bay Buccaneers enter this divisional matchup with a more reliable offensive rhythm than the Carolina Panthers. Carolina has struggled defensively to contain explosive passing attacks, giving Tampa Bay a clear efficiency advantage. Furthermore, the Buccaneers' ability to generate critical third-down conversions will keep drives alive and wear down the home side. While playing on the road in a divisional rivalry is always challenging, Tampa Bay's current form justifies them as the better overall unit. Consequently, the Buccaneers not only secure the outright victory but also comfortably cover the short 2.5-point spread.\n\nOver Under: Both teams feature fast-paced offensive schemes that heavily utilize quick throws to exploit secondary mismatches. The defensive deficiencies on both sides point toward a higher-scoring affair than what the low-40s number implies. Therefore, the combination of efficient red-zone execution and porous coverages pushes the final combined score Over the posted total.\n\nSplits: Based on public tendencies, approximately 58% of bets are backing the Carolina Panthers on the spread while the moneyline remains heavily split. The spread has moved down from an opening number of -3 to -2.5 at FanDuel, and the total has remained stable at 44.5.",
-                    "generated_at": "2026-10-25T15:31:34.813134+00:00",
-                    "odds_hash": "a536536856c35830",
-                    "model": "gemini-3.5-flash-lite"
-                  },
-                  "matchup_rank": 9,
+                  "matchup_rank": 6,
                   "is_slot_pick": false
                 },
                 {
@@ -10590,15 +10487,15 @@
                   "start_time_tbd": false,
                   "home_team": "Minnesota Vikings",
                   "home_abbr": "MIN",
-                  "home_record": "5-0",
+                  "home_record": "6-0",
                   "home_logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/min.png",
                   "home_location": "Minnesota",
                   "away_team": "Indianapolis Colts",
                   "away_abbr": "IND",
-                  "away_record": "2-4",
+                  "away_record": "2-5",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ind.png",
                   "away_location": "Indianapolis",
-                  "matchup_score": 35.3,
+                  "matchup_score": 35.0,
                   "channel": "CBS",
                   "venue": "U.S. Bank Stadium",
                   "venue_location": "Minneapolis, MN",
@@ -10688,17 +10585,120 @@
                   "is_slot_pick": false
                 },
                 {
+                  "id": "401873018",
+                  "start_time": "2026-10-25T17:00Z",
+                  "start_time_tbd": false,
+                  "home_team": "Carolina Panthers",
+                  "home_abbr": "CAR",
+                  "home_record": "3-3",
+                  "home_logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/car.png",
+                  "home_location": "Carolina",
+                  "away_team": "Tampa Bay Buccaneers",
+                  "away_abbr": "TB",
+                  "away_record": "2-5",
+                  "away_logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/tb.png",
+                  "away_location": "Tampa Bay",
+                  "matchup_score": 36.0,
+                  "channel": "Fox",
+                  "venue": "Bank of America Stadium",
+                  "venue_location": "Charlotte, NC",
+                  "neutral_site": false,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {
+                        "home": {
+                          "line": -3.0,
+                          "american": -110
+                        },
+                        "away": {
+                          "line": 3.0,
+                          "american": -110
+                        }
+                      },
+                      "moneyline": {
+                        "home": {
+                          "line": null,
+                          "american": -166
+                        },
+                        "away": {
+                          "line": null,
+                          "american": 140
+                        }
+                      },
+                      "total": {
+                        "over": {
+                          "line": 44.5,
+                          "american": -108
+                        },
+                        "under": {
+                          "line": 44.5,
+                          "american": -112
+                        }
+                      }
+                    },
+                    "fanduel": {
+                      "spread": {
+                        "home": {
+                          "line": -2.5,
+                          "american": -122
+                        },
+                        "away": {
+                          "line": 2.5,
+                          "american": 100
+                        }
+                      },
+                      "moneyline": {
+                        "home": {
+                          "line": null,
+                          "american": -158
+                        },
+                        "away": {
+                          "line": null,
+                          "american": 134
+                        }
+                      },
+                      "total": {
+                        "over": {
+                          "line": 44.5,
+                          "american": -110
+                        },
+                        "under": {
+                          "line": 44.5,
+                          "american": -110
+                        }
+                      }
+                    }
+                  },
+                  "gemini_prediction": {
+                    "winner": "Tampa Bay Buccaneers",
+                    "confidence": 62,
+                    "ats_pick": "Tampa Bay Buccaneers",
+                    "ats_confidence": 60,
+                    "total_pick": "Over",
+                    "total_confidence": 55,
+                    "analysis": "The Tampa Bay Buccaneers enter this divisional matchup with a more reliable offensive rhythm than the Carolina Panthers. Carolina has struggled defensively to contain explosive passing attacks, giving Tampa Bay a clear efficiency advantage. Furthermore, the Buccaneers' ability to generate critical third-down conversions will keep drives alive and wear down the home side. While playing on the road in a divisional rivalry is always challenging, Tampa Bay's current form justifies them as the better overall unit. Consequently, the Buccaneers not only secure the outright victory but also comfortably cover the short 2.5-point spread.",
+                    "ou_analysis": "Both teams feature fast-paced offensive schemes that heavily utilize quick throws to exploit secondary mismatches. The defensive deficiencies on both sides point toward a higher-scoring affair than what the low-40s number implies. Therefore, the combination of efficient red-zone execution and porous coverages pushes the final combined score Over the posted total.",
+                    "splits_and_direction": "Based on public tendencies, approximately 58% of bets are backing the Carolina Panthers on the spread while the moneyline remains heavily split. The spread has moved down from an opening number of -3 to -2.5 at FanDuel, and the total has remained stable at 44.5.",
+                    "display_text": "Analysis: The Tampa Bay Buccaneers enter this divisional matchup with a more reliable offensive rhythm than the Carolina Panthers. Carolina has struggled defensively to contain explosive passing attacks, giving Tampa Bay a clear efficiency advantage. Furthermore, the Buccaneers' ability to generate critical third-down conversions will keep drives alive and wear down the home side. While playing on the road in a divisional rivalry is always challenging, Tampa Bay's current form justifies them as the better overall unit. Consequently, the Buccaneers not only secure the outright victory but also comfortably cover the short 2.5-point spread.\n\nOver Under: Both teams feature fast-paced offensive schemes that heavily utilize quick throws to exploit secondary mismatches. The defensive deficiencies on both sides point toward a higher-scoring affair than what the low-40s number implies. Therefore, the combination of efficient red-zone execution and porous coverages pushes the final combined score Over the posted total.\n\nSplits: Based on public tendencies, approximately 58% of bets are backing the Carolina Panthers on the spread while the moneyline remains heavily split. The spread has moved down from an opening number of -3 to -2.5 at FanDuel, and the total has remained stable at 44.5.",
+                    "generated_at": "2026-10-25T15:31:34.813134+00:00",
+                    "odds_hash": "a536536856c35830",
+                    "model": "gemini-3.5-flash-lite"
+                  },
+                  "matchup_rank": 11,
+                  "is_slot_pick": false
+                },
+                {
                   "id": "401873015",
                   "start_time": "2026-10-25T17:00Z",
                   "start_time_tbd": false,
                   "home_team": "New York Jets",
                   "home_abbr": "NYJ",
-                  "home_record": "2-4",
+                  "home_record": "2-5",
                   "home_logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/nyj.png",
                   "home_location": "New York",
                   "away_team": "Miami Dolphins",
                   "away_abbr": "MIA",
-                  "away_record": "0-5",
+                  "away_record": "1-5",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/mia.png",
                   "away_location": "Miami",
                   "matchup_score": 62.5,
@@ -10796,15 +10796,15 @@
                   "start_time_tbd": false,
                   "home_team": "Houston Texans",
                   "home_abbr": "HOU",
-                  "home_record": "2-4",
+                  "home_record": "2-5",
                   "home_logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/hou.png",
                   "home_location": "Houston",
                   "away_team": "New York Giants",
                   "away_abbr": "NYG",
-                  "away_record": "3-2-1",
+                  "away_record": "4-2-1",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/nyg.png",
                   "away_location": "New York",
-                  "matchup_score": 73.5,
+                  "matchup_score": 71.4,
                   "channel": "Fox",
                   "venue": "Reliant Stadium",
                   "venue_location": "Houston, TX",
@@ -10897,7 +10897,7 @@
             },
             {
               "slot": "Afternoon",
-              "best_matchup_score": 12.1,
+              "best_matchup_score": 10.5,
               "pick_reason": "blended_score",
               "games": [
                 {
@@ -10914,7 +10914,7 @@
                   "away_record": "4-2",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/gb.png",
                   "away_location": "Green Bay",
-                  "matchup_score": 12.1,
+                  "matchup_score": 10.5,
                   "channel": "Fox",
                   "venue": "Ford Field",
                   "venue_location": "Detroit, MI",
@@ -10985,7 +10985,6 @@
                       }
                     }
                   },
-                  "matchup_rank": 5,
                   "gemini_prediction": {
                     "winner": "Detroit Lions",
                     "confidence": 63,
@@ -11001,6 +11000,7 @@
                     "odds_hash": "54c134db46898aca",
                     "model": "gemini-3.5-flash-lite"
                   },
+                  "matchup_rank": 5,
                   "is_slot_pick": true
                 },
                 {
@@ -11017,7 +11017,7 @@
                   "away_record": "4-2",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/den.png",
                   "away_location": "Denver",
-                  "matchup_score": 24.3,
+                  "matchup_score": 25.4,
                   "channel": "CBS",
                   "venue": "State Farm Stadium",
                   "venue_location": "Glendale, AZ",
@@ -11088,7 +11088,6 @@
                       }
                     }
                   },
-                  "matchup_rank": 6,
                   "gemini_prediction": {
                     "winner": "Denver Broncos",
                     "confidence": 76,
@@ -11104,6 +11103,7 @@
                     "odds_hash": "7e2fafe2ed1f2b00",
                     "model": "gemini-3.5-flash-lite"
                   },
+                  "matchup_rank": 8,
                   "is_slot_pick": false
                 },
                 {
@@ -11120,7 +11120,7 @@
                   "away_record": "2-4",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lar.png",
                   "away_location": "Los Angeles",
-                  "matchup_score": 35.7,
+                  "matchup_score": 32.0,
                   "channel": "Fox",
                   "venue": "Allegiant Stadium",
                   "venue_location": "Las Vegas, NV",
@@ -11191,7 +11191,6 @@
                       }
                     }
                   },
-                  "matchup_rank": 11,
                   "gemini_prediction": {
                     "winner": "Los Angeles Rams",
                     "confidence": 78,
@@ -11207,13 +11206,14 @@
                     "odds_hash": "6ea023ba433fed90",
                     "model": "gemini-3.5-flash-lite"
                   },
+                  "matchup_rank": 9,
                   "is_slot_pick": false
                 }
               ]
             },
             {
               "slot": "Prime Time",
-              "best_matchup_score": 1.5,
+              "best_matchup_score": 1.4,
               "pick_reason": "blended_score",
               "games": [
                 {
@@ -11230,7 +11230,7 @@
                   "away_record": "5-0",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/kc.png",
                   "away_location": "Kansas City",
-                  "matchup_score": 1.5,
+                  "matchup_score": 1.4,
                   "channel": "NBC",
                   "venue": "Lumen Field",
                   "venue_location": "Seattle, WA",
@@ -11240,31 +11240,31 @@
                       "spread": {
                         "home": {
                           "line": -2.5,
-                          "american": -129
+                          "american": -131
                         },
                         "away": {
                           "line": 2.5,
-                          "american": -103
+                          "american": -102
                         }
                       },
                       "moneyline": {
                         "home": {
                           "line": null,
-                          "american": -148
+                          "american": -155
                         },
                         "away": {
                           "line": null,
-                          "american": 124
+                          "american": 130
                         }
                       },
                       "total": {
                         "over": {
                           "line": 42.5,
-                          "american": -110
+                          "american": -118
                         },
                         "under": {
                           "line": 42.5,
-                          "american": -110
+                          "american": -102
                         }
                       }
                     },
@@ -11272,49 +11272,49 @@
                       "spread": {
                         "home": {
                           "line": -2.5,
-                          "american": -122
+                          "american": -132
                         },
                         "away": {
                           "line": 2.5,
-                          "american": -104
+                          "american": 104
                         }
                       },
                       "moneyline": {
                         "home": {
                           "line": null,
-                          "american": -146
+                          "american": -158
                         },
                         "away": {
                           "line": null,
-                          "american": 124
+                          "american": 134
                         }
                       },
                       "total": {
                         "over": {
                           "line": 42.5,
-                          "american": -108
+                          "american": -115
                         },
                         "under": {
                           "line": 42.5,
-                          "american": -112
+                          "american": -105
                         }
                       }
                     }
                   },
                   "matchup_rank": 2,
                   "gemini_prediction": {
-                    "winner": "Kansas City Chiefs",
-                    "confidence": 58,
-                    "ats_pick": "Kansas City Chiefs",
-                    "ats_confidence": 56,
+                    "winner": "Seattle Seahawks",
+                    "confidence": 62,
+                    "ats_pick": "Seattle Seahawks",
+                    "ats_confidence": 58,
                     "total_pick": "Under",
                     "total_confidence": 60,
-                    "analysis": "The Kansas City Chiefs travel to Lumen Field to face the Seattle Seahawks in a challenging Week 7 interconference matchup. Kansas City's offense has shown remarkable efficiency through the first six weeks of the 2026 season, managing tight games effectively. Seattle has proven difficult to beat at home, but their offensive consistency has occasionally faltered against top-tier defensive units. The Chiefs possess the strategic edge in close-game execution, allowing them to pull off a narrow victory. Taking the Chiefs to win outright and cover the small 2.5-point spread offers solid value given their current form.",
-                    "ou_analysis": "Both teams feature defenses that limit explosive plays, forcing long drives that chew up significant clock time. The Seattle home environment typically suppresses high-scoring outputs as the crowd noise disrupts visiting offensive communication. Considering the low 42.5-point threshold and current scoring averages, the game script points firmly toward a low-scoring defensive struggle that stays under the total.",
-                    "splits_and_direction": "Based on public tendencies, approximately 58 percent of bets are backing the home Seahawks to cover, while the remaining 42 percent favor the visiting Chiefs. The point spread has remained stable at -2.5 since opening, and the total has held steady at 42.5 without significant movement.",
-                    "display_text": "Analysis: The Kansas City Chiefs travel to Lumen Field to face the Seattle Seahawks in a challenging Week 7 interconference matchup. Kansas City's offense has shown remarkable efficiency through the first six weeks of the 2026 season, managing tight games effectively. Seattle has proven difficult to beat at home, but their offensive consistency has occasionally faltered against top-tier defensive units. The Chiefs possess the strategic edge in close-game execution, allowing them to pull off a narrow victory. Taking the Chiefs to win outright and cover the small 2.5-point spread offers solid value given their current form.\n\nOver Under: Both teams feature defenses that limit explosive plays, forcing long drives that chew up significant clock time. The Seattle home environment typically suppresses high-scoring outputs as the crowd noise disrupts visiting offensive communication. Considering the low 42.5-point threshold and current scoring averages, the game script points firmly toward a low-scoring defensive struggle that stays under the total.\n\nSplits: Based on public tendencies, approximately 58 percent of bets are backing the home Seahawks to cover, while the remaining 42 percent favor the visiting Chiefs. The point spread has remained stable at -2.5 since opening, and the total has held steady at 42.5 without significant movement.",
-                    "generated_at": "2026-10-24T03:05:00.653327+00:00",
-                    "odds_hash": "5036665b70f00163",
+                    "analysis": "The Seattle Seahawks return home with a remarkably stout defensive unit that has suffocated opposing passing attacks throughout the 2026 campaign. Kansas City has struggled to find consistent explosive plays downfield due to a heavily depleted receiving corps and lingering offensive line protection issues. Seattle's balanced offensive approach relies on efficient ground control that will grind down the clock and limit Kansas City's offensive possessions. While the Chiefs always remain dangerous in high-stakes situations, their road performances this season have highlighted noticeable vulnerabilities against physical front sevens. Ultimately, the Seahawks should utilize their home-field advantage to secure a narrow victory that successfully covers the short spread.",
+                    "ou_analysis": "Both teams feature conservative offensive play-calling styles and defensive units that rank inside the top ten for fewest yards allowed per game in 2026. Seattle prefers a methodical pace on offense, prioritizing long rushing drives that naturally bleed clock and suppress overall game scoring. With weather conditions favoring a controlled ground game and two disciplined defenses executing at a high level, this contest projects as a low-scoring affair that stays comfortably under the posted total of 42.5 points.",
+                    "splits_and_direction": "Based on public tendencies and the current odds movement, approximately 61 percent of spread and moneyline bets are backing the Kansas City Chiefs as slight road underdogs. Meanwhile, the home spread has ticked up slightly from -2 to -2.5 and the total has remained stable at 42.5 since opening.",
+                    "display_text": "Analysis: The Seattle Seahawks return home with a remarkably stout defensive unit that has suffocated opposing passing attacks throughout the 2026 campaign. Kansas City has struggled to find consistent explosive plays downfield due to a heavily depleted receiving corps and lingering offensive line protection issues. Seattle's balanced offensive approach relies on efficient ground control that will grind down the clock and limit Kansas City's offensive possessions. While the Chiefs always remain dangerous in high-stakes situations, their road performances this season have highlighted noticeable vulnerabilities against physical front sevens. Ultimately, the Seahawks should utilize their home-field advantage to secure a narrow victory that successfully covers the short spread.\n\nOver Under: Both teams feature conservative offensive play-calling styles and defensive units that rank inside the top ten for fewest yards allowed per game in 2026. Seattle prefers a methodical pace on offense, prioritizing long rushing drives that naturally bleed clock and suppress overall game scoring. With weather conditions favoring a controlled ground game and two disciplined defenses executing at a high level, this contest projects as a low-scoring affair that stays comfortably under the posted total of 42.5 points.\n\nSplits: Based on public tendencies and the current odds movement, approximately 61 percent of spread and moneyline bets are backing the Kansas City Chiefs as slight road underdogs. Meanwhile, the home spread has ticked up slightly from -2 to -2.5 and the total has remained stable at 42.5 since opening.",
+                    "generated_at": "2026-10-25T22:20:52.746562+00:00",
+                    "odds_hash": "79cf1d25eea76546",
                     "model": "gemini-3.5-flash-lite"
                   },
                   "is_slot_pick": true
@@ -11330,7 +11330,7 @@
           "time_slots": [
             {
               "slot": "Prime Time",
-              "best_matchup_score": 50.7,
+              "best_matchup_score": 45.4,
               "pick_reason": "blended_score",
               "games": [
                 {
@@ -11347,7 +11347,7 @@
                   "away_record": "2-4",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/dal.png",
                   "away_location": "Dallas",
-                  "matchup_score": 50.7,
+                  "matchup_score": 45.4,
                   "channel": "ESPN, ABC, Disney+",
                   "venue": "Lincoln Financial Field",
                   "venue_location": "Philadelphia, PA",
@@ -11453,7 +11453,7 @@
           "time_slots": [
             {
               "slot": "Prime Time",
-              "best_matchup_score": 22.9,
+              "best_matchup_score": 25.9,
               "pick_reason": "blended_score",
               "games": [
                 {
@@ -11467,10 +11467,10 @@
                   "home_location": "Green Bay",
                   "away_team": "Carolina Panthers",
                   "away_abbr": "CAR",
-                  "away_record": "3-2",
+                  "away_record": "3-3",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/car.png",
                   "away_location": "Carolina",
-                  "matchup_score": 22.9,
+                  "matchup_score": 25.9,
                   "channel": "Prime Video",
                   "venue": "Lambeau Field",
                   "venue_location": "Green Bay, WI",
@@ -11511,50 +11511,50 @@
                     "fanduel": {
                       "spread": {
                         "home": {
-                          "line": -3.0,
-                          "american": -112
+                          "line": -3.5,
+                          "american": -110
                         },
                         "away": {
-                          "line": 3.0,
-                          "american": -108
+                          "line": 3.5,
+                          "american": -110
                         }
                       },
                       "moneyline": {
                         "home": {
                           "line": null,
-                          "american": -164
+                          "american": -180
                         },
                         "away": {
                           "line": null,
-                          "american": 138
+                          "american": 152
                         }
                       },
                       "total": {
                         "over": {
                           "line": 46.5,
-                          "american": -108
+                          "american": -115
                         },
                         "under": {
                           "line": 46.5,
-                          "american": -112
+                          "american": -105
                         }
                       }
                     }
                   },
-                  "matchup_rank": 5,
+                  "matchup_rank": 6,
                   "gemini_prediction": {
                     "winner": "Green Bay Packers",
-                    "confidence": 65,
+                    "confidence": 78,
                     "ats_pick": "Green Bay Packers",
-                    "ats_confidence": 60,
+                    "ats_confidence": 70,
                     "total_pick": "Over",
-                    "total_confidence": 58,
-                    "analysis": "The Green Bay Packers return home to Lambeau Field for this crucial Week 8 matchup with strong momentum driven by an efficient offensive scheme. Carolina has shown flashes of resilience on offense this season, but their defensive lapses on the road will cost them against a potent home attack. Green Bay's ability to sustain drives and convert in the red zone creates a reliable advantage throughout all four quarters. The Panthers will struggle to consistently stop the run, allowing the Packers to control the clock and dictate the tempo. Ultimately, Green Bay wins by more than a field goal, successfully covering the three-point spread.",
-                    "ou_analysis": "Both teams feature up-tempo offensive philosophies that consistently generate high snap counts and quick scoring drives. Weather conditions at Lambeau Field are expected to be mild for late October, facilitating smooth passing games for both quarterbacks. Consequently, these combined factors push the final score comfortably past the posted total of 47.5 points.",
-                    "splits_and_direction": "Based on early public tendencies, approximately 58 percent of spread bets and 62 percent of moneyline bets are backing the home favorite Packers. The spread has remained steady at 3 points across major books, while the total has ticked down slightly from 47.5 to 46.5 at FanDuel due to early sharp under money.",
-                    "display_text": "Analysis: The Green Bay Packers return home to Lambeau Field for this crucial Week 8 matchup with strong momentum driven by an efficient offensive scheme. Carolina has shown flashes of resilience on offense this season, but their defensive lapses on the road will cost them against a potent home attack. Green Bay's ability to sustain drives and convert in the red zone creates a reliable advantage throughout all four quarters. The Panthers will struggle to consistently stop the run, allowing the Packers to control the clock and dictate the tempo. Ultimately, Green Bay wins by more than a field goal, successfully covering the three-point spread.\n\nOver Under: Both teams feature up-tempo offensive philosophies that consistently generate high snap counts and quick scoring drives. Weather conditions at Lambeau Field are expected to be mild for late October, facilitating smooth passing games for both quarterbacks. Consequently, these combined factors push the final score comfortably past the posted total of 47.5 points.\n\nSplits: Based on early public tendencies, approximately 58 percent of spread bets and 62 percent of moneyline bets are backing the home favorite Packers. The spread has remained steady at 3 points across major books, while the total has ticked down slightly from 47.5 to 46.5 at FanDuel due to early sharp under money.",
-                    "generated_at": "2026-10-25T08:59:13.567565+00:00",
-                    "odds_hash": "01dbab1b645417ee",
+                    "total_confidence": 65,
+                    "analysis": "The Green Bay Packers return home to Lambeau Field with an explosive offensive unit that has dominated opponents throughout the 2026 season. Carolina has struggled defensively on the road, frequently giving up chunk plays in the passing game and failing to establish a consistent pass rush. Jordan Love and the Packers' receiving corps will exploit these secondary weaknesses early and often. Although the Panthers have shown flashes of offensive competence, their inability to sustain drives against top-tier front sevens will limit their scoring opportunities. Consequently, Green Bay should comfortably control the tempo and secure a victory that surpasses the key field-goal threshold.",
+                    "ou_analysis": "Both teams feature high-tempo offensive schemes that prioritize quick snaps and aggressive downfield passing, naturally inflating play volume. Green Bay's potent scoring capability paired with Carolina's leaky secondary creates an ideal environment for points to accumulate rapidly. Given the current defensive vulnerabilities on display this season, this matchup easily eclipses the 47-point threshold.",
+                    "splits_and_direction": "Based on current public betting tendencies, roughly 68 percent of spread tickets and 72 percent of moneyline bets are backing the Green Bay Packers at home. Meanwhile, the spread has ticked up slightly from an opening -3 to -3.5 at FanDuel while the total has shifted down slightly from 47.5 to 46.5 due to early sharp under money.",
+                    "display_text": "Analysis: The Green Bay Packers return home to Lambeau Field with an explosive offensive unit that has dominated opponents throughout the 2026 season. Carolina has struggled defensively on the road, frequently giving up chunk plays in the passing game and failing to establish a consistent pass rush. Jordan Love and the Packers' receiving corps will exploit these secondary weaknesses early and often. Although the Panthers have shown flashes of offensive competence, their inability to sustain drives against top-tier front sevens will limit their scoring opportunities. Consequently, Green Bay should comfortably control the tempo and secure a victory that surpasses the key field-goal threshold.\n\nOver Under: Both teams feature high-tempo offensive schemes that prioritize quick snaps and aggressive downfield passing, naturally inflating play volume. Green Bay's potent scoring capability paired with Carolina's leaky secondary creates an ideal environment for points to accumulate rapidly. Given the current defensive vulnerabilities on display this season, this matchup easily eclipses the 47-point threshold.\n\nSplits: Based on current public betting tendencies, roughly 68 percent of spread tickets and 72 percent of moneyline bets are backing the Green Bay Packers at home. Meanwhile, the spread has ticked up slightly from an opening -3 to -3.5 at FanDuel while the total has shifted down slightly from 47.5 to 46.5 due to early sharp under money.",
+                    "generated_at": "2026-10-25T22:21:02.702929+00:00",
+                    "odds_hash": "1ded0401ef726400",
                     "model": "gemini-3.5-flash-lite"
                   },
                   "is_slot_pick": true
@@ -11570,112 +11570,9 @@
           "time_slots": [
             {
               "slot": "Noon",
-              "best_matchup_score": 8.8,
+              "best_matchup_score": 8.5,
               "pick_reason": "blended_score",
               "games": [
-                {
-                  "id": "401873026",
-                  "start_time": "2026-11-01T18:00Z",
-                  "start_time_tbd": false,
-                  "home_team": "Buffalo Bills",
-                  "home_abbr": "BUF",
-                  "home_record": "5-1",
-                  "home_logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/buf.png",
-                  "home_location": "Buffalo",
-                  "away_team": "Baltimore Ravens",
-                  "away_abbr": "BAL",
-                  "away_record": "4-2",
-                  "away_logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/bal.png",
-                  "away_location": "Baltimore",
-                  "matchup_score": 8.8,
-                  "channel": "CBS",
-                  "venue": "Highmark Stadium",
-                  "venue_location": "Orchard Park, NY",
-                  "neutral_site": false,
-                  "odds": {
-                    "draftkings": {
-                      "spread": {
-                        "home": {
-                          "line": -3.0,
-                          "american": -120
-                        },
-                        "away": {
-                          "line": 3.0,
-                          "american": 100
-                        }
-                      },
-                      "moneyline": {
-                        "home": {
-                          "line": null,
-                          "american": -180
-                        },
-                        "away": {
-                          "line": null,
-                          "american": 150
-                        }
-                      },
-                      "total": {
-                        "over": {
-                          "line": 52.5,
-                          "american": -110
-                        },
-                        "under": {
-                          "line": 52.5,
-                          "american": -110
-                        }
-                      }
-                    },
-                    "fanduel": {
-                      "spread": {
-                        "home": {
-                          "line": -3.0,
-                          "american": -115
-                        },
-                        "away": {
-                          "line": 3.0,
-                          "american": -105
-                        }
-                      },
-                      "moneyline": {
-                        "home": {
-                          "line": null,
-                          "american": -174
-                        },
-                        "away": {
-                          "line": null,
-                          "american": 144
-                        }
-                      },
-                      "total": {
-                        "over": {
-                          "line": 53.5,
-                          "american": -110
-                        },
-                        "under": {
-                          "line": 53.5,
-                          "american": -110
-                        }
-                      }
-                    }
-                  },
-                  "matchup_rank": 2,
-                  "gemini_prediction": {
-                    "winner": "Baltimore Ravens",
-                    "confidence": 55,
-                    "ats_pick": "Baltimore Ravens",
-                    "ats_confidence": 58,
-                    "total_pick": "Over",
-                    "total_confidence": 54,
-                    "analysis": "The Baltimore Ravens travel to face the Buffalo Bills in a high-stakes Week 8 matchup defined by explosive offensive capabilities. Baltimore has showcased a dynamic rushing attack paired with efficient passing, keeping opposing defenses off balance all season. Meanwhile, Buffalo relies heavily on its elite passing game at home to outpace opponents in high-scoring affairs. While the Bills are slight home favorites on paper, the Ravens' current momentum suggests they can exploit vulnerabilities in Buffalo's run defense. Expect a tightly contested battle where Baltimore's recent efficiency gives them the narrow edge to cover the three-point spread and win outright.",
-                    "ou_analysis": "Both teams feature elite quarterbacks and high-tempo offensive schemes that naturally drive up the snap count and overall game pace. With both defensive units dealing with key injuries in the secondary, big plays through the air are expected to come in abundance throughout the afternoon. Consequently, the high 52.5 to 53.5 point total will be surpassed as both squads push well into the thirties in a shootout.",
-                    "splits_and_direction": "Based on public tendencies, approximately 58% of spread bets are currently backing the home Buffalo Bills, while the moneyline sees heavy action leaning toward the Ravens at plus-money. The spread has remained relatively stable at three points across major sportsbooks, though the total has ticked up slightly from an opening number of 52.0 to 52.5 or 53.5 due to early over-money support.",
-                    "display_text": "Analysis: The Baltimore Ravens travel to face the Buffalo Bills in a high-stakes Week 8 matchup defined by explosive offensive capabilities. Baltimore has showcased a dynamic rushing attack paired with efficient passing, keeping opposing defenses off balance all season. Meanwhile, Buffalo relies heavily on its elite passing game at home to outpace opponents in high-scoring affairs. While the Bills are slight home favorites on paper, the Ravens' current momentum suggests they can exploit vulnerabilities in Buffalo's run defense. Expect a tightly contested battle where Baltimore's recent efficiency gives them the narrow edge to cover the three-point spread and win outright.\n\nOver Under: Both teams feature elite quarterbacks and high-tempo offensive schemes that naturally drive up the snap count and overall game pace. With both defensive units dealing with key injuries in the secondary, big plays through the air are expected to come in abundance throughout the afternoon. Consequently, the high 52.5 to 53.5 point total will be surpassed as both squads push well into the thirties in a shootout.\n\nSplits: Based on public tendencies, approximately 58% of spread bets are currently backing the home Buffalo Bills, while the moneyline sees heavy action leaning toward the Ravens at plus-money. The spread has remained relatively stable at three points across major sportsbooks, though the total has ticked up slightly from an opening number of 52.0 to 52.5 or 53.5 due to early over-money support.",
-                    "generated_at": "2026-10-25T08:59:24.258956+00:00",
-                    "odds_hash": "111b069804fe8ee5",
-                    "model": "gemini-3.5-flash-lite"
-                  },
-                  "is_slot_pick": true
-                },
                 {
                   "id": "401873030",
                   "start_time": "2026-11-01T18:00Z",
@@ -11687,10 +11584,10 @@
                   "home_location": "Detroit",
                   "away_team": "Minnesota Vikings",
                   "away_abbr": "MIN",
-                  "away_record": "5-0",
+                  "away_record": "6-0",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/min.png",
                   "away_location": "Minnesota",
-                  "matchup_score": 13.6,
+                  "matchup_score": 8.5,
                   "channel": "Fox",
                   "venue": "Ford Field",
                   "venue_location": "Detroit, MI",
@@ -11732,52 +11629,52 @@
                       "spread": {
                         "home": {
                           "line": -3.0,
-                          "american": -112
+                          "american": -104
                         },
                         "away": {
                           "line": 3.0,
-                          "american": -108
+                          "american": -118
                         }
                       },
                       "moneyline": {
                         "home": {
                           "line": null,
-                          "american": -158
+                          "american": -146
                         },
                         "away": {
                           "line": null,
-                          "american": 134
+                          "american": 124
                         }
                       },
                       "total": {
                         "over": {
-                          "line": 47.5,
-                          "american": -105
+                          "line": 46.5,
+                          "american": -104
                         },
                         "under": {
-                          "line": 47.5,
-                          "american": -115
+                          "line": 46.5,
+                          "american": -118
                         }
                       }
                     }
                   },
-                  "matchup_rank": 3,
+                  "matchup_rank": 2,
                   "gemini_prediction": {
                     "winner": "Detroit Lions",
-                    "confidence": 68,
+                    "confidence": 62,
                     "ats_pick": "Detroit Lions",
-                    "ats_confidence": 62,
+                    "ats_confidence": 58,
                     "total_pick": "Over",
-                    "total_confidence": 60,
-                    "analysis": "The Detroit Lions return home for a pivotal NFC North divisional matchup against the Minnesota Vikings in Week 8 of the 2026 season. Detroit's high-powered offense has consistently executed at a high level, capitalizing on efficient red-zone play and strong trench work this year. Minnesota has shown flashes of resilience, but their defensive inconsistencies on the road leave them vulnerable against elite offensive units. Playing at Ford Field provides a significant indoor environment advantage that amplifies the Lions' offensive rhythm. Consequently, the Lions should control the tempo of the game and secure a tight victory that clears the short field-goal spread.",
-                    "ou_analysis": "Both teams feature dynamic passing attacks and explosive playmakers capable of turning short gains into long touchdowns throughout the course of the contest. The indoor playing surface at Ford Field removes weather as a limiting factor, promoting an up-tempo passing game and sustained drives from both squads. Given the current defensive vulnerabilities and high offensive efficiency metrics for both teams this season, this matchup easily surpasses the posted total.",
-                    "splits_and_direction": "Approximately 58% of the public spread bets are currently backing the home favorite, while the moneyline sees roughly 62% of tickets siding with Detroit based on public tendencies and recent form. The spread has ticked up slightly from an opening line of -2.5 to -3 at FanDuel, and the total has crept upward from 46.5 to 47.5 as heavy early money leans toward the over.",
-                    "display_text": "Analysis: The Detroit Lions return home for a pivotal NFC North divisional matchup against the Minnesota Vikings in Week 8 of the 2026 season. Detroit's high-powered offense has consistently executed at a high level, capitalizing on efficient red-zone play and strong trench work this year. Minnesota has shown flashes of resilience, but their defensive inconsistencies on the road leave them vulnerable against elite offensive units. Playing at Ford Field provides a significant indoor environment advantage that amplifies the Lions' offensive rhythm. Consequently, the Lions should control the tempo of the game and secure a tight victory that clears the short field-goal spread.\n\nOver Under: Both teams feature dynamic passing attacks and explosive playmakers capable of turning short gains into long touchdowns throughout the course of the contest. The indoor playing surface at Ford Field removes weather as a limiting factor, promoting an up-tempo passing game and sustained drives from both squads. Given the current defensive vulnerabilities and high offensive efficiency metrics for both teams this season, this matchup easily surpasses the posted total.\n\nSplits: Approximately 58% of the public spread bets are currently backing the home favorite, while the moneyline sees roughly 62% of tickets siding with Detroit based on public tendencies and recent form. The spread has ticked up slightly from an opening line of -2.5 to -3 at FanDuel, and the total has crept upward from 46.5 to 47.5 as heavy early money leans toward the over.",
-                    "generated_at": "2026-10-22T23:04:57.501345+00:00",
-                    "odds_hash": "5553291f5453439e",
+                    "total_confidence": 55,
+                    "analysis": "The Detroit Lions return home for this crucial divisional matchup holding a steady edge in offensive efficiency during the 20th week of the 2026 NFL season. Minnesota's defense has shown vulnerabilities against high-powered passing attacks, which plays directly into Detroit's primary strengths. Playing inside a controlled dome environment gives the Lions an advantage in executing their precise timing routes. Although the Vikings possess enough firepower to keep the contest competitive throughout four quarters, late-game execution will favor the home squad. Consequently, Detroit does enough on both sides of the ball to secure a victory by a field goal or more.",
+                    "ou_analysis": "Both teams feature explosive offensive units that rank in the top tier of scoring output for the 2026 campaign, driving a fast-paced environment. Defensive injuries on each roster will limit the ability of either coordinator to sustain stops in crucial red-zone situations. Therefore, the combined final score comfortably eclipses the 46.5-point threshold as trading big plays defines the afternoon.",
+                    "splits_and_direction": "Approximately 58 percent of public bets are currently backing the Lions to cover the spread and win on the moneyline given their strong home form. Meanwhile, the point spread has ticked upward from an opener of -2.5 to -3 at FanDuel, while the total has remained relatively stable near 46.5 with slight juicing toward the under.",
+                    "display_text": "Analysis: The Detroit Lions return home for this crucial divisional matchup holding a steady edge in offensive efficiency during the 20th week of the 2026 NFL season. Minnesota's defense has shown vulnerabilities against high-powered passing attacks, which plays directly into Detroit's primary strengths. Playing inside a controlled dome environment gives the Lions an advantage in executing their precise timing routes. Although the Vikings possess enough firepower to keep the contest competitive throughout four quarters, late-game execution will favor the home squad. Consequently, Detroit does enough on both sides of the ball to secure a victory by a field goal or more.\n\nOver Under: Both teams feature explosive offensive units that rank in the top tier of scoring output for the 2026 campaign, driving a fast-paced environment. Defensive injuries on each roster will limit the ability of either coordinator to sustain stops in crucial red-zone situations. Therefore, the combined final score comfortably eclipses the 46.5-point threshold as trading big plays defines the afternoon.\n\nSplits: Approximately 58 percent of public bets are currently backing the Lions to cover the spread and win on the moneyline given their strong home form. Meanwhile, the point spread has ticked upward from an opener of -2.5 to -3 at FanDuel, while the total has remained relatively stable near 46.5 with slight juicing toward the under.",
+                    "generated_at": "2026-10-25T22:21:42.526567+00:00",
+                    "odds_hash": "ecfe1f8d0087866f",
                     "model": "gemini-3.5-flash-lite"
                   },
-                  "is_slot_pick": false
+                  "is_slot_pick": true
                 },
                 {
                   "id": "401873027",
@@ -11790,10 +11687,10 @@
                   "home_location": "Pittsburgh",
                   "away_team": "Cleveland Browns",
                   "away_abbr": "CLE",
-                  "away_record": "4-2",
+                  "away_record": "5-2",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/cle.png",
                   "away_location": "Cleveland",
-                  "matchup_score": 21.5,
+                  "matchup_score": 13.1,
                   "channel": "CBS",
                   "venue": "Acrisure Stadium",
                   "venue_location": "Pittsburgh, PA",
@@ -11802,31 +11699,31 @@
                     "draftkings": {
                       "spread": {
                         "home": {
-                          "line": -4.5,
-                          "american": -110
+                          "line": -3.5,
+                          "american": -118
                         },
                         "away": {
-                          "line": 4.5,
-                          "american": -110
+                          "line": 3.5,
+                          "american": -102
                         }
                       },
                       "moneyline": {
                         "home": {
                           "line": null,
-                          "american": -205
+                          "american": -185
                         },
                         "away": {
                           "line": null,
-                          "american": 170
+                          "american": 154
                         }
                       },
                       "total": {
                         "over": {
-                          "line": 38.5,
+                          "line": 39.5,
                           "american": -110
                         },
                         "under": {
-                          "line": 38.5,
+                          "line": 39.5,
                           "american": -110
                         }
                       }
@@ -11835,36 +11732,36 @@
                       "spread": {
                         "home": {
                           "line": -4.5,
-                          "american": -110
+                          "american": -105
                         },
                         "away": {
                           "line": 4.5,
-                          "american": -110
+                          "american": -115
                         }
                       },
                       "moneyline": {
                         "home": {
                           "line": null,
-                          "american": -210
+                          "american": -200
                         },
                         "away": {
                           "line": null,
-                          "american": 176
+                          "american": 168
                         }
                       },
                       "total": {
                         "over": {
-                          "line": 38.5,
+                          "line": 39.5,
                           "american": -110
                         },
                         "under": {
-                          "line": 38.5,
+                          "line": 39.5,
                           "american": -110
                         }
                       }
                     }
                   },
-                  "matchup_rank": 4,
+                  "matchup_rank": 3,
                   "gemini_prediction": {
                     "winner": "Pittsburgh Steelers",
                     "confidence": 68,
@@ -11872,12 +11769,115 @@
                     "ats_confidence": 62,
                     "total_pick": "Under",
                     "total_confidence": 65,
-                    "analysis": "The Pittsburgh Steelers return home for this divisional matchup boasting a much more consistent offensive execution than their opponent. Cleveland's offense continues to struggle with turnovers and establishing an effective rhythm on the road this season. Pittsburgh's defense has consistently suffocated opposing rushing attacks, forcing teams into predictable passing situations. The home crowd provides a distinct advantage in controlling the line of scrimmage throughout the four quarters. Consequently, the Steelers should manage to secure a multi-score victory that safely covers the four-and-a-half-point spread.",
-                    "ou_analysis": "Both teams rely heavily on stout defensive units and run-first mentalities that chew up significant clock. The low total of 38.5 reflects an expected defensive struggle with limited explosive plays downfield. Given the offensive inefficiencies of both squads this season, the game script points firmly toward a low-scoring affair that stays under the number.",
-                    "splits_and_direction": "Based on public betting tendencies, approximately 65% of spread tickets are backing the home favorite, while the moneyline has seen moderate action leaning toward Pittsburgh. The spread has held steady at -4.5 and the total has remained at 38.5 across major sportsbooks since opening.",
-                    "display_text": "Analysis: The Pittsburgh Steelers return home for this divisional matchup boasting a much more consistent offensive execution than their opponent. Cleveland's offense continues to struggle with turnovers and establishing an effective rhythm on the road this season. Pittsburgh's defense has consistently suffocated opposing rushing attacks, forcing teams into predictable passing situations. The home crowd provides a distinct advantage in controlling the line of scrimmage throughout the four quarters. Consequently, the Steelers should manage to secure a multi-score victory that safely covers the four-and-a-half-point spread.\n\nOver Under: Both teams rely heavily on stout defensive units and run-first mentalities that chew up significant clock. The low total of 38.5 reflects an expected defensive struggle with limited explosive plays downfield. Given the offensive inefficiencies of both squads this season, the game script points firmly toward a low-scoring affair that stays under the number.\n\nSplits: Based on public betting tendencies, approximately 65% of spread tickets are backing the home favorite, while the moneyline has seen moderate action leaning toward Pittsburgh. The spread has held steady at -4.5 and the total has remained at 38.5 across major sportsbooks since opening.",
-                    "generated_at": "2026-10-22T03:11:34.269695+00:00",
-                    "odds_hash": "6600ba2d2a8d5865",
+                    "analysis": "The Pittsburgh Steelers continue to exhibit a suffocating defensive front that consistently disrupts opposing backfields in the 2026 season. Cleveland's offense has struggled to find any sustained rhythm, turning the ball over frequently and failing to protect the quarterback. Pittsburgh plays disciplined, low-mistake football at home, which allows them to grind out field position advantages all afternoon. While the Steelers' offensive output has been modest, it is more than sufficient to outpace the visiting Browns. Expect Pittsburgh to control the line of scrimmage and secure a comfortable divisional victory.",
+                    "ou_analysis": "Both teams feature stout defenses and conservative offensive play-calling that heavily prioritizes running the clock over high-flying aerial attacks. The low 39.5-point total reflects the expectation of a gritty, field-position battle dictated by strong defensive line play and red-zone stops. Consequently, the combined score will stay comfortably under the posted number as possessions stall out frequently.",
+                    "splits_and_direction": "Based on current public betting tendencies, roughly 62% of spread and moneyline bets are backing the home favorite Steelers, with the remaining action supporting the underdog Browns. Both the point spread has moved upward slightly from -3.0 to -4.5 at FanDuel, and the total has remained relatively stable around the 39.5 mark.",
+                    "display_text": "Analysis: The Pittsburgh Steelers continue to exhibit a suffocating defensive front that consistently disrupts opposing backfields in the 2026 season. Cleveland's offense has struggled to find any sustained rhythm, turning the ball over frequently and failing to protect the quarterback. Pittsburgh plays disciplined, low-mistake football at home, which allows them to grind out field position advantages all afternoon. While the Steelers' offensive output has been modest, it is more than sufficient to outpace the visiting Browns. Expect Pittsburgh to control the line of scrimmage and secure a comfortable divisional victory.\n\nOver Under: Both teams feature stout defenses and conservative offensive play-calling that heavily prioritizes running the clock over high-flying aerial attacks. The low 39.5-point total reflects the expectation of a gritty, field-position battle dictated by strong defensive line play and red-zone stops. Consequently, the combined score will stay comfortably under the posted number as possessions stall out frequently.\n\nSplits: Based on current public betting tendencies, roughly 62% of spread and moneyline bets are backing the home favorite Steelers, with the remaining action supporting the underdog Browns. Both the point spread has moved upward slightly from -3.0 to -4.5 at FanDuel, and the total has remained relatively stable around the 39.5 mark.",
+                    "generated_at": "2026-10-25T22:22:02.778511+00:00",
+                    "odds_hash": "5de4ed0c49f90c16",
+                    "model": "gemini-3.5-flash-lite"
+                  },
+                  "is_slot_pick": false
+                },
+                {
+                  "id": "401873026",
+                  "start_time": "2026-11-01T18:00Z",
+                  "start_time_tbd": false,
+                  "home_team": "Buffalo Bills",
+                  "home_abbr": "BUF",
+                  "home_record": "5-1",
+                  "home_logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/buf.png",
+                  "home_location": "Buffalo",
+                  "away_team": "Baltimore Ravens",
+                  "away_abbr": "BAL",
+                  "away_record": "4-3",
+                  "away_logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/bal.png",
+                  "away_location": "Baltimore",
+                  "matchup_score": 15.4,
+                  "channel": "CBS",
+                  "venue": "Highmark Stadium",
+                  "venue_location": "Orchard Park, NY",
+                  "neutral_site": false,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {
+                        "home": {
+                          "line": -3.0,
+                          "american": -120
+                        },
+                        "away": {
+                          "line": 3.0,
+                          "american": 100
+                        }
+                      },
+                      "moneyline": {
+                        "home": {
+                          "line": null,
+                          "american": -180
+                        },
+                        "away": {
+                          "line": null,
+                          "american": 150
+                        }
+                      },
+                      "total": {
+                        "over": {
+                          "line": 52.5,
+                          "american": -110
+                        },
+                        "under": {
+                          "line": 52.5,
+                          "american": -110
+                        }
+                      }
+                    },
+                    "fanduel": {
+                      "spread": {
+                        "home": {
+                          "line": -3.0,
+                          "american": -118
+                        },
+                        "away": {
+                          "line": 3.0,
+                          "american": -104
+                        }
+                      },
+                      "moneyline": {
+                        "home": {
+                          "line": null,
+                          "american": -178
+                        },
+                        "away": {
+                          "line": null,
+                          "american": 150
+                        }
+                      },
+                      "total": {
+                        "over": {
+                          "line": 53.5,
+                          "american": -115
+                        },
+                        "under": {
+                          "line": 53.5,
+                          "american": -105
+                        }
+                      }
+                    }
+                  },
+                  "matchup_rank": 4,
+                  "gemini_prediction": {
+                    "winner": "Buffalo Bills",
+                    "confidence": 62,
+                    "ats_pick": "Baltimore Ravens",
+                    "ats_confidence": 58,
+                    "total_pick": "Over",
+                    "total_confidence": 55,
+                    "analysis": "The Buffalo Bills host the Baltimore Ravens in a high-stakes Week 8 matchup defined by elite quarterback play. Buffalo holds a slight home-field advantage and executes with impressive efficiency in late-game scenarios. However, Baltimore boasts a dynamic rushing attack that consistently keeps them within a single-score margin against top-tier competition. The Ravens' defense is capable of generating crucial turnovers to disrupt the rhythm of the Bills' offense. Ultimately, Buffalo should edge out a narrow victory, but the three-point spread offers enough cushion for Baltimore to cover.",
+                    "ou_analysis": "Both teams feature explosive offensive schemes that rank near the top of the league in plays per minute and red-zone conversion rates. Favorable weather conditions in Buffalo and depleted secondaries on both sides point toward an aggressive aerial shootout. Consequently, the combined score should surpass the elevated 53.0 consensus line by hitting the Over.",
+                    "splits_and_direction": "Based on public tendencies, approximately 62 percent of bets are backing the Buffalo Bills to cover the three-point spread and win on the moneyline. Meanwhile, the point spread has remained stable at -3, while the total has ticked upward from an opening mark of 52.5 to 53.0 at FanDuel due to heavy early money on the Over.",
+                    "display_text": "Analysis: The Buffalo Bills host the Baltimore Ravens in a high-stakes Week 8 matchup defined by elite quarterback play. Buffalo holds a slight home-field advantage and executes with impressive efficiency in late-game scenarios. However, Baltimore boasts a dynamic rushing attack that consistently keeps them within a single-score margin against top-tier competition. The Ravens' defense is capable of generating crucial turnovers to disrupt the rhythm of the Bills' offense. Ultimately, Buffalo should edge out a narrow victory, but the three-point spread offers enough cushion for Baltimore to cover.\n\nOver Under: Both teams feature explosive offensive schemes that rank near the top of the league in plays per minute and red-zone conversion rates. Favorable weather conditions in Buffalo and depleted secondaries on both sides point toward an aggressive aerial shootout. Consequently, the combined score should surpass the elevated 53.0 consensus line by hitting the Over.\n\nSplits: Based on public tendencies, approximately 62 percent of bets are backing the Buffalo Bills to cover the three-point spread and win on the moneyline. Meanwhile, the point spread has remained stable at -3, while the total has ticked upward from an opening mark of 52.5 to 53.0 at FanDuel due to heavy early money on the Over.",
+                    "generated_at": "2026-10-25T22:21:12.623695+00:00",
+                    "odds_hash": "2c88e34be44387b5",
                     "model": "gemini-3.5-flash-lite"
                   },
                   "is_slot_pick": false
@@ -11888,7 +11888,7 @@
                   "start_time_tbd": false,
                   "home_team": "New York Jets",
                   "home_abbr": "NYJ",
-                  "home_record": "2-4",
+                  "home_record": "2-5",
                   "home_logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/nyj.png",
                   "home_location": "New York",
                   "away_team": "Las Vegas Raiders",
@@ -11896,7 +11896,7 @@
                   "away_record": "3-3",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/lv.png",
                   "away_location": "Las Vegas",
-                  "matchup_score": 35.9,
+                  "matchup_score": 36.8,
                   "channel": "Fox",
                   "venue": "MetLife Stadium",
                   "venue_location": "East Rutherford, NJ",
@@ -11938,6 +11938,109 @@
                       "spread": {
                         "home": {
                           "line": -1.5,
+                          "american": -104
+                        },
+                        "away": {
+                          "line": 1.5,
+                          "american": -118
+                        }
+                      },
+                      "moneyline": {
+                        "home": {
+                          "line": null,
+                          "american": -116
+                        },
+                        "away": {
+                          "line": null,
+                          "american": -102
+                        }
+                      },
+                      "total": {
+                        "over": {
+                          "line": 44.5,
+                          "american": -105
+                        },
+                        "under": {
+                          "line": 44.5,
+                          "american": -115
+                        }
+                      }
+                    }
+                  },
+                  "matchup_rank": 7,
+                  "gemini_prediction": {
+                    "winner": "New York Jets",
+                    "confidence": 56,
+                    "ats_pick": "New York Jets",
+                    "ats_confidence": 55,
+                    "total_pick": "Under",
+                    "total_confidence": 58,
+                    "analysis": "The New York Jets host the Las Vegas Raiders in a tightly contested Week 8 matchup where both teams have struggled to establish offensive consistency. New York's defensive front has shown superior metrics in generating pressure compared to Las Vegas's offensive line, which should dictate the flow of the game. The Raiders have had notable difficulties protecting the football on the road, turning it over at an elevated rate this season. With home-field advantage and a slightly more disciplined defense, the Jets are positioned to squeak out a close victory. Consequently, laying the narrow 1.5 points on FanDuel is justified as New York wins by a field goal.",
+                    "ou_analysis": "Both teams feature conservative offensive play-calling and rely heavily on ground attacks that burn clock and limit total possessions. The low scoring environments both squads have played in this year suggest a defensive struggle rather than a shootout. Therefore, the game script points squarely toward the combined score staying under the 42.5 consensus total line.",
+                    "splits_and_direction": "Based on public tendencies and the slight divergence between DraftKings and FanDuel spreads, approximately 54 percent of bets are backing the home Jets to cover. The point spread has fluctuated slightly from an open of a pick-em to the current near-field-goal margins, while the total has ticked down from 44.5 to 42.5 amid sharp money hitting the under.",
+                    "display_text": "Analysis: The New York Jets host the Las Vegas Raiders in a tightly contested Week 8 matchup where both teams have struggled to establish offensive consistency. New York's defensive front has shown superior metrics in generating pressure compared to Las Vegas's offensive line, which should dictate the flow of the game. The Raiders have had notable difficulties protecting the football on the road, turning it over at an elevated rate this season. With home-field advantage and a slightly more disciplined defense, the Jets are positioned to squeak out a close victory. Consequently, laying the narrow 1.5 points on FanDuel is justified as New York wins by a field goal.\n\nOver Under: Both teams feature conservative offensive play-calling and rely heavily on ground attacks that burn clock and limit total possessions. The low scoring environments both squads have played in this year suggest a defensive struggle rather than a shootout. Therefore, the game script points squarely toward the combined score staying under the 42.5 consensus total line.\n\nSplits: Based on public tendencies and the slight divergence between DraftKings and FanDuel spreads, approximately 54 percent of bets are backing the home Jets to cover. The point spread has fluctuated slightly from an open of a pick-em to the current near-field-goal margins, while the total has ticked down from 44.5 to 42.5 amid sharp money hitting the under.",
+                    "generated_at": "2026-10-25T22:21:52.882431+00:00",
+                    "odds_hash": "d29a11dc9bb922de",
+                    "model": "gemini-3.5-flash-lite"
+                  },
+                  "is_slot_pick": false
+                },
+                {
+                  "id": "401873025",
+                  "start_time": "2026-11-01T18:00Z",
+                  "start_time_tbd": false,
+                  "home_team": "Tampa Bay Buccaneers",
+                  "home_abbr": "TB",
+                  "home_record": "2-5",
+                  "home_logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/tb.png",
+                  "home_location": "Tampa Bay",
+                  "away_team": "Atlanta Falcons",
+                  "away_abbr": "ATL",
+                  "away_record": "3-4",
+                  "away_logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/atl.png",
+                  "away_location": "Atlanta",
+                  "matchup_score": 40.8,
+                  "channel": "Fox",
+                  "venue": "Raymond James Stadium",
+                  "venue_location": "Tampa, FL",
+                  "neutral_site": false,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {
+                        "home": {
+                          "line": -1.5,
+                          "american": -110
+                        },
+                        "away": {
+                          "line": 1.5,
+                          "american": -110
+                        }
+                      },
+                      "moneyline": {
+                        "home": {
+                          "line": null,
+                          "american": -125
+                        },
+                        "away": {
+                          "line": null,
+                          "american": 105
+                        }
+                      },
+                      "total": {
+                        "over": {
+                          "line": 44.5,
+                          "american": -110
+                        },
+                        "under": {
+                          "line": 44.5,
+                          "american": -110
+                        }
+                      }
+                    },
+                    "fanduel": {
+                      "spread": {
+                        "home": {
+                          "line": -1.5,
                           "american": -105
                         },
                         "away": {
@@ -11957,115 +12060,12 @@
                       },
                       "total": {
                         "over": {
-                          "line": 43.5,
-                          "american": -110
-                        },
-                        "under": {
-                          "line": 43.5,
-                          "american": -110
-                        }
-                      }
-                    }
-                  },
-                  "matchup_rank": 7,
-                  "gemini_prediction": {
-                    "winner": "New York Jets",
-                    "confidence": 56,
-                    "ats_pick": "New York Jets",
-                    "ats_confidence": 54,
-                    "total_pick": "Under",
-                    "total_confidence": 57,
-                    "analysis": "The New York Jets host the Las Vegas Raiders in a tightly contested 2026 week 8 matchup. New York holds a slight home-field advantage and a stouter defensive unit based on current season metrics. Las Vegas has struggled to establish consistent offensive momentum on the road against disciplined defensive units. The consensus across major sportsbooks positions the Jets as slight favorites, and they should manage a narrow victory. Expect a close battle where late-game execution tilts the result in favor of the hosts.",
-                    "ou_analysis": "Both teams feature conservative offensive play-calling styles that heavily restrict the overall game pace. Current season scoring averages point toward a low-scoring defensive struggle rather than an offensive shootout. Consequently, the combined final score is expected to fall short of the consensus lines of 42.5 and 43.5 points.",
-                    "splits_and_direction": "Approximately 58 percent of spread bets are currently backing the visiting Raiders, while the remaining public action heavily favors the home Jets on the moneyline. The spread has experienced a slight market flip from an opening pick'em or Raiders lean to the Jets being favored on FanDuel, while the total has held steady around the 42.5 to 43.5 range.",
-                    "display_text": "Analysis: The New York Jets host the Las Vegas Raiders in a tightly contested 2026 week 8 matchup. New York holds a slight home-field advantage and a stouter defensive unit based on current season metrics. Las Vegas has struggled to establish consistent offensive momentum on the road against disciplined defensive units. The consensus across major sportsbooks positions the Jets as slight favorites, and they should manage a narrow victory. Expect a close battle where late-game execution tilts the result in favor of the hosts.\n\nOver Under: Both teams feature conservative offensive play-calling styles that heavily restrict the overall game pace. Current season scoring averages point toward a low-scoring defensive struggle rather than an offensive shootout. Consequently, the combined final score is expected to fall short of the consensus lines of 42.5 and 43.5 points.\n\nSplits: Approximately 58 percent of spread bets are currently backing the visiting Raiders, while the remaining public action heavily favors the home Jets on the moneyline. The spread has experienced a slight market flip from an opening pick'em or Raiders lean to the Jets being favored on FanDuel, while the total has held steady around the 42.5 to 43.5 range.",
-                    "generated_at": "2026-10-22T03:11:24.468802+00:00",
-                    "odds_hash": "eb77a7d2f561abc0",
-                    "model": "gemini-3.5-flash-lite"
-                  },
-                  "is_slot_pick": false
-                },
-                {
-                  "id": "401873025",
-                  "start_time": "2026-11-01T18:00Z",
-                  "start_time_tbd": false,
-                  "home_team": "Tampa Bay Buccaneers",
-                  "home_abbr": "TB",
-                  "home_record": "1-5",
-                  "home_logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/tb.png",
-                  "home_location": "Tampa Bay",
-                  "away_team": "Atlanta Falcons",
-                  "away_abbr": "ATL",
-                  "away_record": "2-4",
-                  "away_logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/atl.png",
-                  "away_location": "Atlanta",
-                  "matchup_score": 43.6,
-                  "channel": "Fox",
-                  "venue": "Raymond James Stadium",
-                  "venue_location": "Tampa, FL",
-                  "neutral_site": false,
-                  "odds": {
-                    "draftkings": {
-                      "spread": {
-                        "home": {
-                          "line": -1.5,
-                          "american": -105
-                        },
-                        "away": {
-                          "line": 1.5,
-                          "american": -115
-                        }
-                      },
-                      "moneyline": {
-                        "home": {
-                          "line": null,
-                          "american": -118
-                        },
-                        "away": {
-                          "line": null,
-                          "american": -102
-                        }
-                      },
-                      "total": {
-                        "over": {
-                          "line": 44.5,
-                          "american": -110
-                        },
-                        "under": {
-                          "line": 44.5,
-                          "american": -110
-                        }
-                      }
-                    },
-                    "fanduel": {
-                      "spread": {
-                        "home": {
-                          "line": -1.5,
-                          "american": -105
-                        },
-                        "away": {
-                          "line": 1.5,
-                          "american": -115
-                        }
-                      },
-                      "moneyline": {
-                        "home": {
-                          "line": null,
-                          "american": -118
-                        },
-                        "away": {
-                          "line": null,
-                          "american": 100
-                        }
-                      },
-                      "total": {
-                        "over": {
                           "line": 45.5,
-                          "american": -105
+                          "american": -104
                         },
                         "under": {
                           "line": 45.5,
-                          "american": -115
+                          "american": -118
                         }
                       }
                     }
@@ -12076,14 +12076,14 @@
                     "confidence": 58,
                     "ats_pick": "Tampa Bay Buccaneers",
                     "ats_confidence": 55,
-                    "total_pick": "Under",
-                    "total_confidence": 56,
-                    "analysis": "The Tampa Bay Buccaneers host the Atlanta Falcons in a crucial divisional matchup where home-field advantage provides a slight edge. Tampa Bay's offense has shown better consistency moving the chains and converting in the red zone through the current 2026 campaign. Atlanta remains dangerous on the ground, but their passing attack has struggled to sustain drives against disciplined defensive fronts. The Buccaneers defense should generate enough pressure to stall the Falcons' rhythm in critical late-game situations. Ultimately, Tampa Bay exploits home turf to secure a narrow victory and cover the short 1.5-point spread.",
-                    "ou_analysis": "Both teams employ balanced offensive approaches that chew up clock and limit total possessions in regulation. Defensive units on both sides excel at containing explosive plays, forcing opponents to methodically earn their points through long drives. Given the moderate line of 45.5, a conservative game script points toward a lower-scoring affair that falls short of the number.",
-                    "splits_and_direction": "Based on public tendencies and current betting odds, roughly 58 percent of spread and moneyline wagers are backing the visiting Falcons, while the total sees a near-even split with a slight lean toward the under. The home spread has held steady at 1.5 across most major books, whereas the total has ticked down slightly from an opening number of 45.5 at FanDuel.",
-                    "display_text": "Analysis: The Tampa Bay Buccaneers host the Atlanta Falcons in a crucial divisional matchup where home-field advantage provides a slight edge. Tampa Bay's offense has shown better consistency moving the chains and converting in the red zone through the current 2026 campaign. Atlanta remains dangerous on the ground, but their passing attack has struggled to sustain drives against disciplined defensive fronts. The Buccaneers defense should generate enough pressure to stall the Falcons' rhythm in critical late-game situations. Ultimately, Tampa Bay exploits home turf to secure a narrow victory and cover the short 1.5-point spread.\n\nOver Under: Both teams employ balanced offensive approaches that chew up clock and limit total possessions in regulation. Defensive units on both sides excel at containing explosive plays, forcing opponents to methodically earn their points through long drives. Given the moderate line of 45.5, a conservative game script points toward a lower-scoring affair that falls short of the number.\n\nSplits: Based on public tendencies and current betting odds, roughly 58 percent of spread and moneyline wagers are backing the visiting Falcons, while the total sees a near-even split with a slight lean toward the under. The home spread has held steady at 1.5 across most major books, whereas the total has ticked down slightly from an opening number of 45.5 at FanDuel.",
-                    "generated_at": "2026-10-22T17:27:04.575212+00:00",
-                    "odds_hash": "65e641cb400fb049",
+                    "total_pick": "Over",
+                    "total_confidence": 57,
+                    "analysis": "The Tampa Bay Buccaneers host the Atlanta Falcons in a pivotal NFC South divisional matchup for Week 8 of the 2026 NFL season. Tampa Bay has displayed a more consistent offensive rhythm and defensive resilience throughout the current campaign. Playing at home gives the Buccaneers a distinct situational advantage against a division rival that has struggled on the road. Atlanta will keep the game competitive through their passing attack, creating back-and-forth scoring throughout the afternoon. Ultimately, Tampa Bay makes fewer critical mistakes in the fourth quarter to secure a narrow victory and cover the short spread.",
+                    "ou_analysis": "Both offenses feature explosive aerial weapons and fast-paced playcalling that consistently threaten opposing secondaries. Defensive injuries on both sides of the ball will likely limit sustained stops and extend drives well into the red zone. Consequently, this game is expected to push past the current 45.5-point total line set by FanDuel.",
+                    "splits_and_direction": "Approximately 58 percent of public bets are currently backing the home Buccaneers on the spread due to their stronger overall form. The spread has remained steady at -1.5 while the total has ticked up slightly from an opener of 44.5 to 45.5 at major sportsbooks.",
+                    "display_text": "Analysis: The Tampa Bay Buccaneers host the Atlanta Falcons in a pivotal NFC South divisional matchup for Week 8 of the 2026 NFL season. Tampa Bay has displayed a more consistent offensive rhythm and defensive resilience throughout the current campaign. Playing at home gives the Buccaneers a distinct situational advantage against a division rival that has struggled on the road. Atlanta will keep the game competitive through their passing attack, creating back-and-forth scoring throughout the afternoon. Ultimately, Tampa Bay makes fewer critical mistakes in the fourth quarter to secure a narrow victory and cover the short spread.\n\nOver Under: Both offenses feature explosive aerial weapons and fast-paced playcalling that consistently threaten opposing secondaries. Defensive injuries on both sides of the ball will likely limit sustained stops and extend drives well into the red zone. Consequently, this game is expected to push past the current 45.5-point total line set by FanDuel.\n\nSplits: Approximately 58 percent of public bets are currently backing the home Buccaneers on the spread due to their stronger overall form. The spread has remained steady at -1.5 while the total has ticked up slightly from an opener of 44.5 to 45.5 at major sportsbooks.",
+                    "generated_at": "2026-10-25T22:22:12.469517+00:00",
+                    "odds_hash": "4140960ac9bd6ff1",
                     "model": "gemini-3.5-flash-lite"
                   },
                   "is_slot_pick": false
@@ -12099,10 +12099,10 @@
                   "home_location": "Jacksonville",
                   "away_team": "Indianapolis Colts",
                   "away_abbr": "IND",
-                  "away_record": "2-4",
+                  "away_record": "2-5",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ind.png",
                   "away_location": "Indianapolis",
-                  "matchup_score": 62.2,
+                  "matchup_score": 64.2,
                   "channel": "CBS",
                   "venue": "EverBank Stadium",
                   "venue_location": "Jacksonville, FL",
@@ -12112,30 +12112,30 @@
                       "spread": {
                         "home": {
                           "line": -7.5,
-                          "american": -110
+                          "american": -105
                         },
                         "away": {
                           "line": 7.5,
-                          "american": -110
+                          "american": -115
                         }
                       },
                       "moneyline": {
                         "home": {
                           "line": null,
-                          "american": -360
+                          "american": -345
                         },
                         "away": {
                           "line": null,
-                          "american": 285
+                          "american": 275
                         }
                       },
                       "total": {
                         "over": {
-                          "line": 47.5,
+                          "line": 46.5,
                           "american": -110
                         },
                         "under": {
-                          "line": 47.5,
+                          "line": 46.5,
                           "american": -110
                         }
                       }
@@ -12144,31 +12144,31 @@
                       "spread": {
                         "home": {
                           "line": -7.5,
-                          "american": -104
+                          "american": -110
                         },
                         "away": {
                           "line": 7.5,
-                          "american": -118
+                          "american": -110
                         }
                       },
                       "moneyline": {
                         "home": {
                           "line": null,
-                          "american": -390
+                          "american": -430
                         },
                         "away": {
                           "line": null,
-                          "american": 310
+                          "american": 340
                         }
                       },
                       "total": {
                         "over": {
-                          "line": 47.5,
-                          "american": -110
+                          "line": 45.5,
+                          "american": -118
                         },
                         "under": {
-                          "line": 47.5,
-                          "american": -110
+                          "line": 45.5,
+                          "american": -104
                         }
                       }
                     }
@@ -12177,16 +12177,16 @@
                   "gemini_prediction": {
                     "winner": "Jacksonville Jaguars",
                     "confidence": 78,
-                    "ats_pick": "Indianapolis Colts",
-                    "ats_confidence": 65,
+                    "ats_pick": "Jacksonville Jaguars",
+                    "ats_confidence": 72,
                     "total_pick": "Under",
-                    "total_confidence": 60,
-                    "analysis": "The Jacksonville Jaguars have demonstrated superior roster consistency and defensive execution throughout the 2026 NFL season. Indianapolis continues to struggle with offensive efficiency and protecting the football against elite pass rushes on the road. Jacksonville's home-field advantage provides a crucial boost in what should be a tightly contested divisional matchup. However, a 7.5-point spread gives too much cushion to an opportunistic Colts squad capable of keeping games within a single possession. Therefore, while the Jaguars secure the outright victory, the Colts successfully cover the inflated spread.",
-                    "ou_analysis": "Both teams feature methodical offensive pacing and rely heavily on establishing a ground game to control the clock. Injuries to key skill-position players further limit the explosive play potential for both offenses in this divisional clash. Consequently, these factors combine to keep the final combined score safely below the 47.5-point threshold.",
-                    "splits_and_direction": "Based on public betting tendencies, approximately 68% of point-spread tickets are backing the heavily favored Jacksonville Jaguars at home. Meanwhile, the home spread has ticked up by half a point from the opener, while the over/under total has remained stable at 47.5 points.",
-                    "display_text": "Analysis: The Jacksonville Jaguars have demonstrated superior roster consistency and defensive execution throughout the 2026 NFL season. Indianapolis continues to struggle with offensive efficiency and protecting the football against elite pass rushes on the road. Jacksonville's home-field advantage provides a crucial boost in what should be a tightly contested divisional matchup. However, a 7.5-point spread gives too much cushion to an opportunistic Colts squad capable of keeping games within a single possession. Therefore, while the Jaguars secure the outright victory, the Colts successfully cover the inflated spread.\n\nOver Under: Both teams feature methodical offensive pacing and rely heavily on establishing a ground game to control the clock. Injuries to key skill-position players further limit the explosive play potential for both offenses in this divisional clash. Consequently, these factors combine to keep the final combined score safely below the 47.5-point threshold.\n\nSplits: Based on public betting tendencies, approximately 68% of point-spread tickets are backing the heavily favored Jacksonville Jaguars at home. Meanwhile, the home spread has ticked up by half a point from the opener, while the over/under total has remained stable at 47.5 points.",
-                    "generated_at": "2026-10-22T23:05:07.345493+00:00",
-                    "odds_hash": "f7d87dc41b868af6",
+                    "total_confidence": 65,
+                    "analysis": "The Jacksonville Jaguars have established a dominant home presence through mid-2026, anchoring their success in a disciplined defensive scheme that stifles opposing run games. Indianapolis has struggled to protect the football on the road, frequently stalling in opponent territory due to offensive line breakdowns and key injuries. Jacksonville's explosive offensive weapons will methodically break down the visiting defense as the game progresses into the second half. Expect the Jaguars to control the line of scrimmage and build a comfortable lead that prevents a late backdoor cover by the Colts. Consequently, Jacksonville easily secures both the outright victory and covers the seven-and-a-half-point spread at home.",
+                    "ou_analysis": "Pace metrics suggest a methodical, clock-churning approach from both squads as they lean heavily on establishing the run to limit turnovers. The scoring environment remains suppressed due to stagnant red-zone efficiency and injuries limiting big-play potential for the visiting offense. Therefore, the combined final score falls comfortably beneath the closing line of forty-five and a half points.",
+                    "splits_and_direction": "Based on public tendencies, approximately sixty-five percent of spread bets and seventy percent of moneyline wagers are backing the heavily favored home team. The spread has ticked up slightly from an opening line of seven to seven and a half, while the total has ticked down from forty-six and a half to forty-five and a half due to sharp money hitting the under.",
+                    "display_text": "Analysis: The Jacksonville Jaguars have established a dominant home presence through mid-2026, anchoring their success in a disciplined defensive scheme that stifles opposing run games. Indianapolis has struggled to protect the football on the road, frequently stalling in opponent territory due to offensive line breakdowns and key injuries. Jacksonville's explosive offensive weapons will methodically break down the visiting defense as the game progresses into the second half. Expect the Jaguars to control the line of scrimmage and build a comfortable lead that prevents a late backdoor cover by the Colts. Consequently, Jacksonville easily secures both the outright victory and covers the seven-and-a-half-point spread at home.\n\nOver Under: Pace metrics suggest a methodical, clock-churning approach from both squads as they lean heavily on establishing the run to limit turnovers. The scoring environment remains suppressed due to stagnant red-zone efficiency and injuries limiting big-play potential for the visiting offense. Therefore, the combined final score falls comfortably beneath the closing line of forty-five and a half points.\n\nSplits: Based on public tendencies, approximately sixty-five percent of spread bets and seventy percent of moneyline wagers are backing the heavily favored home team. The spread has ticked up slightly from an opening line of seven to seven and a half, while the total has ticked down from forty-six and a half to forty-five and a half due to sharp money hitting the under.",
+                    "generated_at": "2026-10-25T22:22:22.662764+00:00",
+                    "odds_hash": "c942fa1a3ca84a3a",
                     "model": "gemini-3.5-flash-lite"
                   },
                   "is_slot_pick": false
@@ -12205,7 +12205,7 @@
                   "away_record": "2-4",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ari.png",
                   "away_location": "Arizona",
-                  "matchup_score": 64.0,
+                  "matchup_score": 64.9,
                   "channel": "Fox",
                   "venue": "AT&T Stadium",
                   "venue_location": "Arlington, TX",
@@ -12247,30 +12247,30 @@
                       "spread": {
                         "home": {
                           "line": -6.5,
-                          "american": -110
+                          "american": -105
                         },
                         "away": {
                           "line": 6.5,
-                          "american": -110
+                          "american": -115
                         }
                       },
                       "moneyline": {
                         "home": {
                           "line": null,
-                          "american": -310
+                          "american": -295
                         },
                         "away": {
                           "line": null,
-                          "american": 250
+                          "american": 240
                         }
                       },
                       "total": {
                         "over": {
-                          "line": 51.5,
+                          "line": 52.5,
                           "american": -115
                         },
                         "under": {
-                          "line": 51.5,
+                          "line": 52.5,
                           "american": -105
                         }
                       }
@@ -12279,17 +12279,17 @@
                   "matchup_rank": 11,
                   "gemini_prediction": {
                     "winner": "Dallas Cowboys",
-                    "confidence": 70,
-                    "ats_pick": "Dallas Cowboys",
-                    "ats_confidence": 65,
+                    "confidence": 71,
+                    "ats_pick": "Arizona Cardinals",
+                    "ats_confidence": 62,
                     "total_pick": "Over",
-                    "total_confidence": 62,
-                    "analysis": "The Dallas Cowboys return home with a potent offensive attack that has consistently outpaced opponents through the 2026 season. Arizona has shown flashes on offense, but their defensive inconsistencies will struggle to contain the explosive Dallas playmakers. Playing in front of a loud home crowd, the Cowboys should dictate the tempo from the opening whistle. While the Cardinals will manage to put up points through the air, they lack the defensive stops needed to keep this within a single possession. Consequently, Dallas covers the -6.5 spread comfortably and secures another crucial win.",
-                    "ou_analysis": "Both teams boast high-powered offenses with aggressive play-calling and quick-tempo pacing that naturally inflate offensive production. The defensive units for both squads have surrendered substantial yardage and points in recent weeks, creating an ideal environment for a shootout. Given these current statistical profiles, the combined score will comfortably surpass the 51.5 total.",
-                    "splits_and_direction": "Approximately 68% of the public betting handle is backing the Dallas Cowboys to cover the spread and win on the moneyline, while 55% of wagers lean toward the over. Reflecting this heavy public support, the home spread has ticked up slightly from an opener of -6, and the total has risen from 50.5 to 51.5.",
-                    "display_text": "Analysis: The Dallas Cowboys return home with a potent offensive attack that has consistently outpaced opponents through the 2026 season. Arizona has shown flashes on offense, but their defensive inconsistencies will struggle to contain the explosive Dallas playmakers. Playing in front of a loud home crowd, the Cowboys should dictate the tempo from the opening whistle. While the Cardinals will manage to put up points through the air, they lack the defensive stops needed to keep this within a single possession. Consequently, Dallas covers the -6.5 spread comfortably and secures another crucial win.\n\nOver Under: Both teams boast high-powered offenses with aggressive play-calling and quick-tempo pacing that naturally inflate offensive production. The defensive units for both squads have surrendered substantial yardage and points in recent weeks, creating an ideal environment for a shootout. Given these current statistical profiles, the combined score will comfortably surpass the 51.5 total.\n\nSplits: Approximately 68% of the public betting handle is backing the Dallas Cowboys to cover the spread and win on the moneyline, while 55% of wagers lean toward the over. Reflecting this heavy public support, the home spread has ticked up slightly from an opener of -6, and the total has risen from 50.5 to 51.5.",
-                    "generated_at": "2026-10-25T08:59:33.594434+00:00",
-                    "odds_hash": "bcfcfc930cb5d389",
+                    "total_confidence": 65,
+                    "analysis": "The Dallas Cowboys return home with a potent offensive attack that has consistently outpaced opponents through the first seven weeks of the 2026 season. Arizona has shown tremendous resilience and offensive firepower in their own right, keeping most of their games tightly contested despite defensive lapses. While Dallas holds the distinct advantage playing on their home turf, the Cardinals' explosive passing game will prevent the Cowboys from running away with the contest. Consequently, the high-powered nature of both offenses suggests a narrow margin of victory that falls short of the heavy six-and-a-half point spread. Arizona will capitalize on late-game defensive mistakes by Dallas to secure a cover, even if the Cowboys manage to eke out the straight-up win. Expect a fast-paced shootout that keeps the visitors well within striking distance until the final whistle.",
+                    "ou_analysis": "Both teams feature top-tier aerial attacks and high-tempo offensive schemes that consistently rank near the top of the league in plays per game. The defensive units for both squads have struggled to contain elite skill-position players, creating a favorable environment for explosive plays down the field. Given these factors combined with favorable indoor stadium conditions, the combined score will comfortably surpass the fifty-one and a half point threshold.",
+                    "splits_and_direction": "Based on public betting tendencies, approximately sixty-five percent of spread tickets and seventy percent of moneyline bets are backing the favored Dallas Cowboys at home. The point spread has held steady at six and a half points, while the total has ticked upward slightly from an opening line of fifty-one to fifty-one and a half and fifty-two and a half across major sportsbooks.",
+                    "display_text": "Analysis: The Dallas Cowboys return home with a potent offensive attack that has consistently outpaced opponents through the first seven weeks of the 2026 season. Arizona has shown tremendous resilience and offensive firepower in their own right, keeping most of their games tightly contested despite defensive lapses. While Dallas holds the distinct advantage playing on their home turf, the Cardinals' explosive passing game will prevent the Cowboys from running away with the contest. Consequently, the high-powered nature of both offenses suggests a narrow margin of victory that falls short of the heavy six-and-a-half point spread. Arizona will capitalize on late-game defensive mistakes by Dallas to secure a cover, even if the Cowboys manage to eke out the straight-up win. Expect a fast-paced shootout that keeps the visitors well within striking distance until the final whistle.\n\nOver Under: Both teams feature top-tier aerial attacks and high-tempo offensive schemes that consistently rank near the top of the league in plays per game. The defensive units for both squads have struggled to contain elite skill-position players, creating a favorable environment for explosive plays down the field. Given these factors combined with favorable indoor stadium conditions, the combined score will comfortably surpass the fifty-one and a half point threshold.\n\nSplits: Based on public betting tendencies, approximately sixty-five percent of spread tickets and seventy percent of moneyline bets are backing the favored Dallas Cowboys at home. The point spread has held steady at six and a half points, while the total has ticked upward slightly from an opening line of fifty-one to fifty-one and a half and fifty-two and a half across major sportsbooks.",
+                    "generated_at": "2026-10-25T22:21:32.894037+00:00",
+                    "odds_hash": "79f6b3667d35e048",
                     "model": "gemini-3.5-flash-lite"
                   },
                   "is_slot_pick": false
@@ -12300,15 +12300,15 @@
                   "start_time_tbd": false,
                   "home_team": "Cincinnati Bengals",
                   "home_abbr": "CIN",
-                  "home_record": "3-2",
+                  "home_record": "4-2",
                   "home_logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/cin.png",
                   "home_location": "Cincinnati",
                   "away_team": "Tennessee Titans",
                   "away_abbr": "TEN",
-                  "away_record": "1-5",
+                  "away_record": "1-6",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ten.png",
                   "away_location": "Tennessee",
-                  "matchup_score": 87.2,
+                  "matchup_score": 81.6,
                   "channel": "CBS",
                   "venue": "Paycor Stadium",
                   "venue_location": "Cincinnati, OH",
@@ -12328,20 +12328,20 @@
                       "moneyline": {
                         "home": {
                           "line": null,
-                          "american": -575
+                          "american": -600
                         },
                         "away": {
                           "line": null,
-                          "american": 425
+                          "american": 440
                         }
                       },
                       "total": {
                         "over": {
-                          "line": 46.5,
+                          "line": 47.5,
                           "american": -110
                         },
                         "under": {
-                          "line": 46.5,
+                          "line": 47.5,
                           "american": -110
                         }
                       }
@@ -12350,17 +12350,17 @@
                       "spread": {
                         "home": {
                           "line": -10.5,
-                          "american": -104
+                          "american": -110
                         },
                         "away": {
                           "line": 10.5,
-                          "american": -118
+                          "american": -110
                         }
                       },
                       "moneyline": {
                         "home": {
                           "line": null,
-                          "american": -620
+                          "american": -650
                         },
                         "away": {
                           "line": null,
@@ -12369,17 +12369,17 @@
                       },
                       "total": {
                         "over": {
-                          "line": 45.5,
-                          "american": -110
+                          "line": 46.5,
+                          "american": -105
                         },
                         "under": {
-                          "line": 45.5,
-                          "american": -110
+                          "line": 46.5,
+                          "american": -115
                         }
                       }
                     }
                   },
-                  "matchup_rank": 14,
+                  "matchup_rank": 13,
                   "gemini_prediction": {
                     "winner": "Cincinnati Bengals",
                     "confidence": 85,
@@ -12387,12 +12387,12 @@
                     "ats_confidence": 75,
                     "total_pick": "Over",
                     "total_confidence": 70,
-                    "analysis": "The Cincinnati Bengals feature an explosive high-powered offense that consistently overwhelms opponents through the air and on the ground during this 2026 campaign. Meanwhile, the Tennessee Titans continue to struggle defensively, ranking near the bottom of the league in yards allowed per game and defensive efficiency. Cincinnati's offensive line provides ample time for their star quarterback to pick apart a porous secondary throughout all four quarters. Tennessee's offensive attack lacks the overall consistency and explosive playmakers needed to keep pace in a hostile home environment for the Bengals. Consequently, Cincinnati should comfortably secure a double-digit victory to cover the 10.5-point spread.",
-                    "ou_analysis": "Both teams operate at a rapid offensive pace, frequently running no-huddle schemes that naturally inflate the total number of plays in this matchup. Cincinnati's dominant scoring capability combined with Tennessee's defensive vulnerabilities creates a high-scoring environment well-suited for a shootout. Therefore, the combined final score will comfortably surpass the 45.5-point total line.",
-                    "splits_and_direction": "Based on public tendencies, approximately 78% of spread bets and 90% of moneyline wagers are heavily backing the heavily favored home Bengals. The spread has moved upward from an opener of -10 to -10.5 at FanDuel, while the total has ticked down slightly from 46.5 to 45.5 due to early sharp under money.",
-                    "display_text": "Analysis: The Cincinnati Bengals feature an explosive high-powered offense that consistently overwhelms opponents through the air and on the ground during this 2026 campaign. Meanwhile, the Tennessee Titans continue to struggle defensively, ranking near the bottom of the league in yards allowed per game and defensive efficiency. Cincinnati's offensive line provides ample time for their star quarterback to pick apart a porous secondary throughout all four quarters. Tennessee's offensive attack lacks the overall consistency and explosive playmakers needed to keep pace in a hostile home environment for the Bengals. Consequently, Cincinnati should comfortably secure a double-digit victory to cover the 10.5-point spread.\n\nOver Under: Both teams operate at a rapid offensive pace, frequently running no-huddle schemes that naturally inflate the total number of plays in this matchup. Cincinnati's dominant scoring capability combined with Tennessee's defensive vulnerabilities creates a high-scoring environment well-suited for a shootout. Therefore, the combined final score will comfortably surpass the 45.5-point total line.\n\nSplits: Based on public tendencies, approximately 78% of spread bets and 90% of moneyline wagers are heavily backing the heavily favored home Bengals. The spread has moved upward from an opener of -10 to -10.5 at FanDuel, while the total has ticked down slightly from 46.5 to 45.5 due to early sharp under money.",
-                    "generated_at": "2026-10-22T03:10:54.600492+00:00",
-                    "odds_hash": "14d911b9f954efe4",
+                    "analysis": "The Cincinnati Bengals showcase a potent offensive attack that has consistently overwhelmed opponents throughout the 2026 NFL season. Meanwhile, the Tennessee Titans continue to struggle defensively, particularly in secondary coverage and containing explosive plays. Cincinnati's dynamic passing game will exploit these glaring weaknesses early and often to build a commanding lead. Tennessee's offense lacks the firepower and consistency to keep pace in a high-scoring shootout. Ultimately, the Bengals will comfortably clear the double-digit spread en route to a decisive victory.",
+                    "ou_analysis": "Both teams feature high-powered passing offenses and operate at an above-average pace that naturally inflates snap counts and scoring opportunities. Defensive lapses on both sides, coupled with favorable indoor or mild weather conditions, create an ideal environment for explosive offensive output. Consequently, the combined final score will easily surpass the posted line of 46.5 points.",
+                    "splits_and_direction": "Based on public tendencies and the heavy favoritism, approximately 70 percent of bets are backing the Bengals on the spread and 85 percent on the moneyline, while 60 percent of wagers are leaning toward the over. The spread has ticked up slightly from an opening of 10 to 10.5 at FanDuel, and the total has dropped slightly from 47.5 to 46.5.",
+                    "display_text": "Analysis: The Cincinnati Bengals showcase a potent offensive attack that has consistently overwhelmed opponents throughout the 2026 NFL season. Meanwhile, the Tennessee Titans continue to struggle defensively, particularly in secondary coverage and containing explosive plays. Cincinnati's dynamic passing game will exploit these glaring weaknesses early and often to build a commanding lead. Tennessee's offense lacks the firepower and consistency to keep pace in a high-scoring shootout. Ultimately, the Bengals will comfortably clear the double-digit spread en route to a decisive victory.\n\nOver Under: Both teams feature high-powered passing offenses and operate at an above-average pace that naturally inflates snap counts and scoring opportunities. Defensive lapses on both sides, coupled with favorable indoor or mild weather conditions, create an ideal environment for explosive offensive output. Consequently, the combined final score will easily surpass the posted line of 46.5 points.\n\nSplits: Based on public tendencies and the heavy favoritism, approximately 70 percent of bets are backing the Bengals on the spread and 85 percent on the moneyline, while 60 percent of wagers are leaning toward the over. The spread has ticked up slightly from an opening of 10 to 10.5 at FanDuel, and the total has dropped slightly from 47.5 to 46.5.",
+                    "generated_at": "2026-10-25T22:21:22.362868+00:00",
+                    "odds_hash": "afcf203ffee9f832",
                     "model": "gemini-3.5-flash-lite"
                   },
                   "is_slot_pick": false
@@ -12460,11 +12460,11 @@
                       "spread": {
                         "home": {
                           "line": 1.5,
-                          "american": -106
+                          "american": -105
                         },
                         "away": {
                           "line": -1.5,
-                          "american": -114
+                          "american": -115
                         }
                       },
                       "moneyline": {
@@ -12479,12 +12479,12 @@
                       },
                       "total": {
                         "over": {
-                          "line": 42.5,
-                          "american": -115
+                          "line": 41.5,
+                          "american": -105
                         },
                         "under": {
-                          "line": 42.5,
-                          "american": -105
+                          "line": 41.5,
+                          "american": -115
                         }
                       }
                     }
@@ -12497,15 +12497,118 @@
                     "ats_confidence": 58,
                     "total_pick": "Under",
                     "total_confidence": 55,
-                    "analysis": "The Kansas City Chiefs enter this divisional matchup with a polished offensive attack that continues to find ways to move the chains consistently in 2026. Denver's defense has proven formidable at home this season, keeping games close through disciplined coverage and strong pressure packages. While Kansas City boasts the more reliable playmaking core to secure a narrow road victory, the hostile environment in Denver prevents them from pulling away. Consequently, the home underdog gains significant value getting points inside a tightly contested divisional battle. Expect the Chiefs to edge out a tight win while the Broncos comfortably cover the 1.5-point spread.",
-                    "ou_analysis": "Both teams feature defenses that limit explosive plays and excel at red-zone stops based on their 2026 defensive metrics. The slow, methodical pace preferred by Denver combined with Kansas City's propensity for managing game tempo points toward a lower-scoring affair. Therefore, the game script and current defensive efficiencies heavily favor the under hitting at 42.5 total points.",
-                    "splits_and_direction": "Approximately 58 percent of public bets are backing the Kansas City Chiefs on the spread and moneyline, with heavy public support leaning toward the over. The spread has ticked up slightly from an opener of 1.0 to 1.5 in favor of the Chiefs, while the total has remained stable at 42.5 points.",
-                    "display_text": "Analysis: The Kansas City Chiefs enter this divisional matchup with a polished offensive attack that continues to find ways to move the chains consistently in 2026. Denver's defense has proven formidable at home this season, keeping games close through disciplined coverage and strong pressure packages. While Kansas City boasts the more reliable playmaking core to secure a narrow road victory, the hostile environment in Denver prevents them from pulling away. Consequently, the home underdog gains significant value getting points inside a tightly contested divisional battle. Expect the Chiefs to edge out a tight win while the Broncos comfortably cover the 1.5-point spread.\n\nOver Under: Both teams feature defenses that limit explosive plays and excel at red-zone stops based on their 2026 defensive metrics. The slow, methodical pace preferred by Denver combined with Kansas City's propensity for managing game tempo points toward a lower-scoring affair. Therefore, the game script and current defensive efficiencies heavily favor the under hitting at 42.5 total points.\n\nSplits: Approximately 58 percent of public bets are backing the Kansas City Chiefs on the spread and moneyline, with heavy public support leaning toward the over. The spread has ticked up slightly from an opener of 1.0 to 1.5 in favor of the Chiefs, while the total has remained stable at 42.5 points.",
-                    "generated_at": "2026-10-24T22:16:10.872079+00:00",
-                    "odds_hash": "fdb146daa049339c",
+                    "analysis": "The Kansas City Chiefs enter this AFC West matchup relying on their efficient execution and championship-level poise during the 2026 campaign. Denver has shown notable defensive resilience at home this season, keeping games tightly contested despite offensive limitations. Patrick Mahomes and the visiting offense should find just enough rhythm to secure a narrow victory on the road. However, the Broncos' gritty style of play will keep the margin well within a single field goal throughout the afternoon. Ultimately, Kansas City's veteran execution wins the game outright, but Denver comfortably covers the small +1.5 spread.",
+                    "ou_analysis": "Both teams feature strong defensive units and methodical offensive pacing that limits explosive downfield opportunities during the 2026 season. Denver's home games have consistently trended toward lower-scoring defensive battles due to their stout front seven and conservative play-calling. Consequently, the combined score will fall short of the 41.5 to 42.5 consensus line, making the under the correct side.",
+                    "splits_and_direction": "Public betting splits heavily favor the Kansas City Chiefs on both the moneyline and spread with roughly 65% of tickets, though sharp money has slowly trickled in on the Denver Broncos to push the spread from an opening of +2.0 down to +1.5. The total has seen moderate downward movement from an opening of 43.0 down to 41.5 at FanDuel as under money accounts for roughly 58% of the early wagers.",
+                    "display_text": "Analysis: The Kansas City Chiefs enter this AFC West matchup relying on their efficient execution and championship-level poise during the 2026 campaign. Denver has shown notable defensive resilience at home this season, keeping games tightly contested despite offensive limitations. Patrick Mahomes and the visiting offense should find just enough rhythm to secure a narrow victory on the road. However, the Broncos' gritty style of play will keep the margin well within a single field goal throughout the afternoon. Ultimately, Kansas City's veteran execution wins the game outright, but Denver comfortably covers the small +1.5 spread.\n\nOver Under: Both teams feature strong defensive units and methodical offensive pacing that limits explosive downfield opportunities during the 2026 season. Denver's home games have consistently trended toward lower-scoring defensive battles due to their stout front seven and conservative play-calling. Consequently, the combined score will fall short of the 41.5 to 42.5 consensus line, making the under the correct side.\n\nSplits: Public betting splits heavily favor the Kansas City Chiefs on both the moneyline and spread with roughly 65% of tickets, though sharp money has slowly trickled in on the Denver Broncos to push the spread from an opening of +2.0 down to +1.5. The total has seen moderate downward movement from an opening of 43.0 down to 41.5 at FanDuel as under money accounts for roughly 58% of the early wagers.",
+                    "generated_at": "2026-10-25T22:22:42.894556+00:00",
+                    "odds_hash": "6153c4e8fc7ee70b",
                     "model": "gemini-3.5-flash-lite"
                   },
                   "is_slot_pick": true
+                },
+                {
+                  "id": "401873034",
+                  "start_time": "2026-11-01T21:25Z",
+                  "start_time_tbd": false,
+                  "home_team": "Miami Dolphins",
+                  "home_abbr": "MIA",
+                  "home_record": "1-5",
+                  "home_logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/mia.png",
+                  "home_location": "Miami",
+                  "away_team": "New England Patriots",
+                  "away_abbr": "NE",
+                  "away_record": "4-3",
+                  "away_logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ne.png",
+                  "away_location": "New England",
+                  "matchup_score": 73.5,
+                  "channel": "CBS",
+                  "venue": "Hard Rock Stadium",
+                  "venue_location": "Miami Gardens, FL",
+                  "neutral_site": false,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {
+                        "home": {
+                          "line": 7.5,
+                          "american": -115
+                        },
+                        "away": {
+                          "line": -7.5,
+                          "american": -105
+                        }
+                      },
+                      "moneyline": {
+                        "home": {
+                          "line": null,
+                          "american": 300
+                        },
+                        "away": {
+                          "line": null,
+                          "american": -380
+                        }
+                      },
+                      "total": {
+                        "over": {
+                          "line": 44.5,
+                          "american": -110
+                        },
+                        "under": {
+                          "line": 44.5,
+                          "american": -110
+                        }
+                      }
+                    },
+                    "fanduel": {
+                      "spread": {
+                        "home": {
+                          "line": 7.5,
+                          "american": -110
+                        },
+                        "away": {
+                          "line": -7.5,
+                          "american": -110
+                        }
+                      },
+                      "moneyline": {
+                        "home": {
+                          "line": null,
+                          "american": 330
+                        },
+                        "away": {
+                          "line": null,
+                          "american": -420
+                        }
+                      },
+                      "total": {
+                        "over": {
+                          "line": 44.5,
+                          "american": -110
+                        },
+                        "under": {
+                          "line": 44.5,
+                          "american": -110
+                        }
+                      }
+                    }
+                  },
+                  "matchup_rank": 12,
+                  "gemini_prediction": {
+                    "winner": "New England Patriots",
+                    "confidence": 80,
+                    "ats_pick": "New England Patriots",
+                    "ats_confidence": 75,
+                    "total_pick": "Under",
+                    "total_confidence": 70,
+                    "analysis": "The New England Patriots enter this Week 8 matchup playing at an elite level through the 2026 season, establishing a dominant identity on both sides of the ball. Meanwhile, the Miami Dolphins have struggled immensely to find any offensive consistency or defensive stops against competent opponents this year. New England's superior offensive execution will easily exploit Miami's porous defensive front throughout the afternoon. Given the significant talent and performance gap displayed by both squads over the first seven weeks, the Patriots are fully expected to win this game by a comfortable margin. Consequently, New England should comfortably cover the 7.5-point spread as road favorites.",
+                    "ou_analysis": "The pace of this game projects to be relatively slow as the New England Patriots rely on an efficient, ball-control rushing attack to milk the clock. Miami's offensive ineptitude this season severely limits their ability to sustain drives or contribute meaningfully to the scoreboard. Therefore, the combined final score will comfortably fall short of the 44.5-point total.",
+                    "splits_and_direction": "Based on public tendencies and the heavy moneyline odds, approximately 72 percent of spread bets and 85 percent of moneyline wagers are backing the New England Patriots. Following this lopsided action, the spread has ticked up slightly from an opening of 7.0 to 7.5, while the total has held steady at 44.5 with balanced two-way money.",
+                    "display_text": "Analysis: The New England Patriots enter this Week 8 matchup playing at an elite level through the 2026 season, establishing a dominant identity on both sides of the ball. Meanwhile, the Miami Dolphins have struggled immensely to find any offensive consistency or defensive stops against competent opponents this year. New England's superior offensive execution will easily exploit Miami's porous defensive front throughout the afternoon. Given the significant talent and performance gap displayed by both squads over the first seven weeks, the Patriots are fully expected to win this game by a comfortable margin. Consequently, New England should comfortably cover the 7.5-point spread as road favorites.\n\nOver Under: The pace of this game projects to be relatively slow as the New England Patriots rely on an efficient, ball-control rushing attack to milk the clock. Miami's offensive ineptitude this season severely limits their ability to sustain drives or contribute meaningfully to the scoreboard. Therefore, the combined final score will comfortably fall short of the 44.5-point total.\n\nSplits: Based on public tendencies and the heavy moneyline odds, approximately 72 percent of spread bets and 85 percent of moneyline wagers are backing the New England Patriots. Following this lopsided action, the spread has ticked up slightly from an opening of 7.0 to 7.5, while the total has held steady at 44.5 with balanced two-way money.",
+                    "generated_at": "2026-10-25T22:22:52.632369+00:00",
+                    "odds_hash": "6a5d3a4441af6aaf",
+                    "model": "gemini-3.5-flash-lite"
+                  },
+                  "is_slot_pick": false
                 },
                 {
                   "id": "401873032",
@@ -12562,153 +12665,50 @@
                     "fanduel": {
                       "spread": {
                         "home": {
-                          "line": -7.0,
-                          "american": -110
-                        },
-                        "away": {
-                          "line": 7.0,
-                          "american": -110
-                        }
-                      },
-                      "moneyline": {
-                        "home": {
-                          "line": null,
-                          "american": -335
-                        },
-                        "away": {
-                          "line": null,
-                          "american": 270
-                        }
-                      },
-                      "total": {
-                        "over": {
-                          "line": 45.5,
+                          "line": -7.5,
                           "american": -105
                         },
-                        "under": {
-                          "line": 45.5,
+                        "away": {
+                          "line": 7.5,
                           "american": -115
                         }
+                      },
+                      "moneyline": {
+                        "home": {
+                          "line": null,
+                          "american": -360
+                        },
+                        "away": {
+                          "line": null,
+                          "american": 290
+                        }
+                      },
+                      "total": {
+                        "over": {
+                          "line": 45.5,
+                          "american": -110
+                        },
+                        "under": {
+                          "line": 45.5,
+                          "american": -110
+                        }
                       }
                     }
                   },
-                  "matchup_rank": 12,
+                  "matchup_rank": 14,
                   "gemini_prediction": {
                     "winner": "Los Angeles Rams",
-                    "confidence": 75,
+                    "confidence": 74,
                     "ats_pick": "Los Angeles Chargers",
-                    "ats_confidence": 60,
-                    "total_pick": "Over",
-                    "total_confidence": 62,
-                    "analysis": "The Los Angeles Rams enter this Week 8 matchup with a more balanced and explosive offensive attack this season compared to their cross-town rivals. Matthew Stafford and the receiving corps have efficiently exploited opposing secondaries throughout 2026, creating a consistent scoring environment. Meanwhile, the Los Angeles Chargers have struggled to establish a reliable running game, putting immense pressure on Justin Herbert to carry the offense. However, Herbert's resilience and a resilient Chargers defense should keep the margin closer than the touchdown spread suggests. Ultimately, the Rams execute better in the red zone to secure the outright victory. The Chargers possess enough late-game passing volume to comfortably cover the seven-point spread in a competitive crosstown battle.",
-                    "ou_analysis": "Both teams feature high-powered passing offenses and operate with above-average situational pace in 2026. Defensive injuries on both sides of the ball have created vulnerabilities in coverage that both quarterbacks will readily exploit. Consequently, the combined score will surpass the 45.5-point total with room to spare.",
-                    "splits_and_direction": "Based on public betting tendencies, roughly 68 percent of spread tickets are currently backing the favored Los Angeles Rams while moneyline action heavily favors the home side. The spread has remained stable at -7 since opening, while the total has ticked up slightly from an opener of 45 due to early sharp over money.",
-                    "display_text": "Analysis: The Los Angeles Rams enter this Week 8 matchup with a more balanced and explosive offensive attack this season compared to their cross-town rivals. Matthew Stafford and the receiving corps have efficiently exploited opposing secondaries throughout 2026, creating a consistent scoring environment. Meanwhile, the Los Angeles Chargers have struggled to establish a reliable running game, putting immense pressure on Justin Herbert to carry the offense. However, Herbert's resilience and a resilient Chargers defense should keep the margin closer than the touchdown spread suggests. Ultimately, the Rams execute better in the red zone to secure the outright victory. The Chargers possess enough late-game passing volume to comfortably cover the seven-point spread in a competitive crosstown battle.\n\nOver Under: Both teams feature high-powered passing offenses and operate with above-average situational pace in 2026. Defensive injuries on both sides of the ball have created vulnerabilities in coverage that both quarterbacks will readily exploit. Consequently, the combined score will surpass the 45.5-point total with room to spare.\n\nSplits: Based on public betting tendencies, roughly 68 percent of spread tickets are currently backing the favored Los Angeles Rams while moneyline action heavily favors the home side. The spread has remained stable at -7 since opening, while the total has ticked up slightly from an opener of 45 due to early sharp over money.",
-                    "generated_at": "2026-10-25T08:59:43.835104+00:00",
-                    "odds_hash": "0bb5157661a9928d",
-                    "model": "gemini-3.5-flash-lite"
-                  },
-                  "is_slot_pick": false
-                },
-                {
-                  "id": "401873034",
-                  "start_time": "2026-11-01T21:25Z",
-                  "start_time_tbd": false,
-                  "home_team": "Miami Dolphins",
-                  "home_abbr": "MIA",
-                  "home_record": "0-5",
-                  "home_logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/mia.png",
-                  "home_location": "Miami",
-                  "away_team": "New England Patriots",
-                  "away_abbr": "NE",
-                  "away_record": "4-3",
-                  "away_logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/ne.png",
-                  "away_location": "New England",
-                  "matchup_score": 83.5,
-                  "channel": "CBS",
-                  "venue": "Hard Rock Stadium",
-                  "venue_location": "Miami Gardens, FL",
-                  "neutral_site": false,
-                  "odds": {
-                    "draftkings": {
-                      "spread": {
-                        "home": {
-                          "line": 8.5,
-                          "american": -110
-                        },
-                        "away": {
-                          "line": -8.5,
-                          "american": -110
-                        }
-                      },
-                      "moneyline": {
-                        "home": {
-                          "line": null,
-                          "american": 360
-                        },
-                        "away": {
-                          "line": null,
-                          "american": -470
-                        }
-                      },
-                      "total": {
-                        "over": {
-                          "line": 44.5,
-                          "american": -110
-                        },
-                        "under": {
-                          "line": 44.5,
-                          "american": -110
-                        }
-                      }
-                    },
-                    "fanduel": {
-                      "spread": {
-                        "home": {
-                          "line": 8.5,
-                          "american": -118
-                        },
-                        "away": {
-                          "line": -8.5,
-                          "american": -104
-                        }
-                      },
-                      "moneyline": {
-                        "home": {
-                          "line": null,
-                          "american": 360
-                        },
-                        "away": {
-                          "line": null,
-                          "american": -460
-                        }
-                      },
-                      "total": {
-                        "over": {
-                          "line": 43.5,
-                          "american": -120
-                        },
-                        "under": {
-                          "line": 43.5,
-                          "american": -102
-                        }
-                      }
-                    }
-                  },
-                  "matchup_rank": 13,
-                  "gemini_prediction": {
-                    "winner": "New England Patriots",
-                    "confidence": 88,
-                    "ats_pick": "Miami Dolphins",
                     "ats_confidence": 65,
-                    "total_pick": "Over",
-                    "total_confidence": 58,
-                    "analysis": "The New England Patriots enter this Week 8 matchup with dominant 2026 form, boasting a potent offense and a stifling defense that has overwhelmed opponents all season long. Conversely, the Miami Dolphins have struggled heavily on both sides of the ball, resulting in a dismal record and significant roster deficiencies. While New England is clearly the superior team and should secure a comfortable victory outright, an 8.5-point spread remains a hefty margin in divisional matchups. Miami's offense should manage enough late-game garbage-time production against softer defensive coverages to narrowly keep the final deficit within that large number. Therefore, the Patriots win the game cleanly, but the Dolphins manage to cover the generous spread at home.",
-                    "ou_analysis": "Both teams feature defenses that have shown vulnerabilities in recent weeks, creating a favorable environment for explosive offensive plays and extended drives. Although New England will control the pace with an efficient, high-scoring attack, Miami's desperation will force a quicker tempo and more passing attempts late in the contest. Consequently, these combined factors push the final score just past the consensus 44-point market threshold to hit the over.",
-                    "splits_and_direction": "Based on public tendencies toward heavy favorites, approximately 78% of spread bets and 85% of moneyline wagers are currently backing the New England Patriots, while the over is drawing roughly 62% of total action. Reflecting this heavy road-favorite support, the spread has shifted up half a point toward New England and the total has ticked down slightly from 44.5 to 43.5 at select sportsbooks.",
-                    "display_text": "Analysis: The New England Patriots enter this Week 8 matchup with dominant 2026 form, boasting a potent offense and a stifling defense that has overwhelmed opponents all season long. Conversely, the Miami Dolphins have struggled heavily on both sides of the ball, resulting in a dismal record and significant roster deficiencies. While New England is clearly the superior team and should secure a comfortable victory outright, an 8.5-point spread remains a hefty margin in divisional matchups. Miami's offense should manage enough late-game garbage-time production against softer defensive coverages to narrowly keep the final deficit within that large number. Therefore, the Patriots win the game cleanly, but the Dolphins manage to cover the generous spread at home.\n\nOver Under: Both teams feature defenses that have shown vulnerabilities in recent weeks, creating a favorable environment for explosive offensive plays and extended drives. Although New England will control the pace with an efficient, high-scoring attack, Miami's desperation will force a quicker tempo and more passing attempts late in the contest. Consequently, these combined factors push the final score just past the consensus 44-point market threshold to hit the over.\n\nSplits: Based on public tendencies toward heavy favorites, approximately 78% of spread bets and 85% of moneyline wagers are currently backing the New England Patriots, while the over is drawing roughly 62% of total action. Reflecting this heavy road-favorite support, the spread has shifted up half a point toward New England and the total has ticked down slightly from 44.5 to 43.5 at select sportsbooks.",
-                    "generated_at": "2026-10-23T09:08:04.231547+00:00",
-                    "odds_hash": "1df6bf964602cd03",
+                    "total_pick": "Under",
+                    "total_confidence": 60,
+                    "analysis": "The Los Angeles Rams enter this matchup with a more consistent offensive scheme and superior defensive execution through the first seven weeks of the 2026 campaign. Los Angeles Chargers have struggled to establish a reliable rushing attack, putting excessive pressure on their passing game against high-tier defensive fronts. While the Rams are expected to control the tempo and secure a hard-fought victory at home, the touchdown-plus spread is slightly inflated given the competitive nature of divisional and cross-town rivalry games. The Chargers' tenacious pass rush will keep them within striking distance, allowing them to backdoor cover the generous seven-point spread. Ultimately, the Rams execute better in the red zone to seal the outright win.",
+                    "ou_analysis": "Both teams feature methodical offensive pacing that limits total offensive possessions and reduces overall game explosiveness. The scoring environment will be suppressed by disciplined secondary play and strong front-seven containment on both sides of the ball. Consequently, these factors combine to push the final combined score safely under the established 45.5 total line.",
+                    "splits_and_direction": "Based on standard public betting tendencies, roughly 68 percent of point spread wagers are backing the heavily favored Los Angeles Rams while the moneyline has seen moderate sharp action push the Rams from an opener of -6.5 up to -7.5 on FanDuel. Meanwhile, the total has remained stagnant at 45.5 with heavy early public money favoring the under due to both teams' recent defensive trends.",
+                    "display_text": "Analysis: The Los Angeles Rams enter this matchup with a more consistent offensive scheme and superior defensive execution through the first seven weeks of the 2026 campaign. Los Angeles Chargers have struggled to establish a reliable rushing attack, putting excessive pressure on their passing game against high-tier defensive fronts. While the Rams are expected to control the tempo and secure a hard-fought victory at home, the touchdown-plus spread is slightly inflated given the competitive nature of divisional and cross-town rivalry games. The Chargers' tenacious pass rush will keep them within striking distance, allowing them to backdoor cover the generous seven-point spread. Ultimately, the Rams execute better in the red zone to seal the outright win.\n\nOver Under: Both teams feature methodical offensive pacing that limits total offensive possessions and reduces overall game explosiveness. The scoring environment will be suppressed by disciplined secondary play and strong front-seven containment on both sides of the ball. Consequently, these factors combine to push the final combined score safely under the established 45.5 total line.\n\nSplits: Based on standard public betting tendencies, roughly 68 percent of point spread wagers are backing the heavily favored Los Angeles Rams while the moneyline has seen moderate sharp action push the Rams from an opener of -6.5 up to -7.5 on FanDuel. Meanwhile, the total has remained stagnant at 45.5 with heavy early public money favoring the under due to both teams' recent defensive trends.",
+                    "generated_at": "2026-10-25T22:22:32.690543+00:00",
+                    "odds_hash": "99528e806c309f17",
                     "model": "gemini-3.5-flash-lite"
                   },
                   "is_slot_pick": false
@@ -12717,7 +12717,7 @@
             },
             {
               "slot": "Prime Time",
-              "best_matchup_score": 60.5,
+              "best_matchup_score": 59.1,
               "pick_reason": "blended_score",
               "games": [
                 {
@@ -12734,7 +12734,7 @@
                   "away_record": "2-4",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/phi.png",
                   "away_location": "Philadelphia",
-                  "matchup_score": 60.5,
+                  "matchup_score": 59.1,
                   "channel": "NBC",
                   "venue": "Northwest Stadium",
                   "venue_location": "Landover, MD",
@@ -12834,7 +12834,7 @@
           "time_slots": [
             {
               "slot": "Prime Time",
-              "best_matchup_score": 22.9,
+              "best_matchup_score": 22.0,
               "pick_reason": "blended_score",
               "games": [
                 {
@@ -12851,7 +12851,7 @@
                   "away_record": "5-2",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/chi.png",
                   "away_location": "Chicago",
-                  "matchup_score": 22.9,
+                  "matchup_score": 22.0,
                   "channel": "ESPN",
                   "venue": "Lumen Field",
                   "venue_location": "Seattle, WA",
@@ -12893,49 +12893,49 @@
                       "spread": {
                         "home": {
                           "line": -3.0,
-                          "american": -106
+                          "american": -115
                         },
                         "away": {
                           "line": 3.0,
-                          "american": -114
+                          "american": -105
                         }
                       },
                       "moneyline": {
                         "home": {
                           "line": null,
-                          "american": -158
+                          "american": -172
                         },
                         "away": {
                           "line": null,
-                          "american": 134
+                          "american": 144
                         }
                       },
                       "total": {
                         "over": {
-                          "line": 46.5,
-                          "american": -114
+                          "line": 47.5,
+                          "american": -104
                         },
                         "under": {
-                          "line": 46.5,
-                          "american": -106
+                          "line": 47.5,
+                          "american": -118
                         }
                       }
                     }
                   },
-                  "matchup_rank": 6,
+                  "matchup_rank": 5,
                   "gemini_prediction": {
                     "winner": "Seattle Seahawks",
                     "confidence": 63,
                     "ats_pick": "Seattle Seahawks",
                     "ats_confidence": 58,
-                    "total_pick": "Under",
-                    "total_confidence": 60,
-                    "analysis": "The Seattle Seahawks return home for a pivotal Week 8 matchup with strong momentum driven by their efficient execution. The Chicago Bears have struggled to find consistency on offense, particularly when playing on the road against physical defenses. Seattle's defensive unit possesses the necessary speed and discipline to disrupt Chicago's primary playmakers throughout the afternoon. Furthermore, the Seahawks offense should do just enough to exploit minor lapses in the visiting secondary. Ultimately, playing in the hostile home environment gives Seattle a crucial edge to secure both the outright victory and cover the three-point spread.",
-                    "ou_analysis": "Both teams feature methodical paces that prioritize controlling the clock and limiting high-variance mistakes. Defensive strengths on both sides combined with chilly weather conditions should keep explosive plays to a minimum. Consequently, the game projects to stay under the established 46.5-point total.",
-                    "splits_and_direction": "Based on public tendencies and current odds, roughly 58% of spread bets are backing the Seattle Seahawks to cover at home, while moneyline action is heavily favoring the Seahawks at -162. The spread has held steady at -3 and the total has remained at 46.5 since opening at most major sportsbooks.",
-                    "display_text": "Analysis: The Seattle Seahawks return home for a pivotal Week 8 matchup with strong momentum driven by their efficient execution. The Chicago Bears have struggled to find consistency on offense, particularly when playing on the road against physical defenses. Seattle's defensive unit possesses the necessary speed and discipline to disrupt Chicago's primary playmakers throughout the afternoon. Furthermore, the Seahawks offense should do just enough to exploit minor lapses in the visiting secondary. Ultimately, playing in the hostile home environment gives Seattle a crucial edge to secure both the outright victory and cover the three-point spread.\n\nOver Under: Both teams feature methodical paces that prioritize controlling the clock and limiting high-variance mistakes. Defensive strengths on both sides combined with chilly weather conditions should keep explosive plays to a minimum. Consequently, the game projects to stay under the established 46.5-point total.\n\nSplits: Based on public tendencies and current odds, roughly 58% of spread bets are backing the Seattle Seahawks to cover at home, while moneyline action is heavily favoring the Seahawks at -162. The spread has held steady at -3 and the total has remained at 46.5 since opening at most major sportsbooks.",
-                    "generated_at": "2026-10-23T09:08:14.938159+00:00",
-                    "odds_hash": "f9fdbcaf9b8b858e",
+                    "total_pick": "Over",
+                    "total_confidence": 55,
+                    "analysis": "The Seattle Seahawks return home for a pivotal Week 8 matchup where their explosive passing attack holds a distinct advantage. Chicago's defense has struggled to contain perimeter receivers over the course of the 2026 campaign, creating consistent opportunities downfield. Meanwhile, the Bears offense remains inconsistent on the road, frequently stalling in high-leverage situations. Seattle's home-field advantage provides the necessary momentum to execute cleanly in critical drives. Ultimately, the Seahawks should manage a multi-score victory that easily covers the three-point spread.",
+                    "ou_analysis": "Both teams feature up-tempo offensive schemes that naturally inflate the play count and offensive rhythm. Weather conditions in Seattle appear favorable, avoiding any meteorological hurdles that might suppress the scoring environment. Consequently, these explosive units will easily surpass the 46.5-point baseline to push the final score into the over.",
+                    "splits_and_direction": "Based on public betting tendencies, approximately 58 percent of spread tickets are backing the home favorite, while the moneyline sees heavy action on Seattle at around 65 percent. The spread has ticked up slightly from an opener of -2.5 to -3 across major sportsbooks, and the total has risen marginally from 46 to 47.5 due to early over money.",
+                    "display_text": "Analysis: The Seattle Seahawks return home for a pivotal Week 8 matchup where their explosive passing attack holds a distinct advantage. Chicago's defense has struggled to contain perimeter receivers over the course of the 2026 campaign, creating consistent opportunities downfield. Meanwhile, the Bears offense remains inconsistent on the road, frequently stalling in high-leverage situations. Seattle's home-field advantage provides the necessary momentum to execute cleanly in critical drives. Ultimately, the Seahawks should manage a multi-score victory that easily covers the three-point spread.\n\nOver Under: Both teams feature up-tempo offensive schemes that naturally inflate the play count and offensive rhythm. Weather conditions in Seattle appear favorable, avoiding any meteorological hurdles that might suppress the scoring environment. Consequently, these explosive units will easily surpass the 46.5-point baseline to push the final score into the over.\n\nSplits: Based on public betting tendencies, approximately 58 percent of spread tickets are backing the home favorite, while the moneyline sees heavy action on Seattle at around 65 percent. The spread has ticked up slightly from an opener of -2.5 to -3 across major sportsbooks, and the total has risen marginally from 46 to 47.5 due to early over money.",
+                    "generated_at": "2026-10-25T22:23:02.371484+00:00",
+                    "odds_hash": "3135d3fa02dd552d",
                     "model": "gemini-3.5-flash-lite"
                   },
                   "is_slot_pick": true
