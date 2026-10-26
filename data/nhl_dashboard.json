@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-25T22:24:13.390315+00:00",
+  "generated_at": "2026-10-26T03:00:07.727771+00:00",
   "season": 2026,
   "display_timezone": "America/Chicago",
   "weeks": [
@@ -21925,14 +21925,14 @@
                     "odds_hash": "b33b91382f97771a",
                     "model": "gemini-3.5-flash-lite"
                   },
-                  "matchup_rank": 4,
+                  "matchup_rank": 2,
                   "is_slot_pick": true
                 }
               ]
             },
             {
               "slot": "Prime Time",
-              "best_matchup_score": 0.0,
+              "best_matchup_score": 100.0,
               "pick_reason": "combined_points",
               "games": [
                 {
@@ -21941,15 +21941,15 @@
                   "start_time_tbd": false,
                   "home_team": "Dallas Stars",
                   "home_abbr": "DAL",
-                  "home_record": "6-3-1",
+                  "home_record": null,
                   "home_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/dal.png",
                   "home_location": "Dallas",
                   "away_team": "New York Islanders",
                   "away_abbr": "NYI",
-                  "away_record": "5-3-2",
+                  "away_record": null,
                   "away_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/nyi.png",
                   "away_location": "New York",
-                  "matchup_score": 0.0,
+                  "matchup_score": 100.0,
                   "channel": "ESPN+, MSGSN, Prime Video (Local)",
                   "venue": "American Airlines Center",
                   "venue_location": "Dallas, TX",
@@ -22020,7 +22020,6 @@
                       }
                     }
                   },
-                  "matchup_rank": 1,
                   "gemini_prediction": {
                     "winner": "Dallas Stars",
                     "confidence": 68,
@@ -22036,6 +22035,7 @@
                     "odds_hash": "24ecc7037f7a4c9e",
                     "model": "gemini-3.5-flash-lite"
                   },
+                  "matchup_rank": 3,
                   "is_slot_pick": true
                 },
                 {
@@ -22044,15 +22044,15 @@
                   "start_time_tbd": false,
                   "home_team": "Winnipeg Jets",
                   "home_abbr": "WPG",
-                  "home_record": "4-3-3",
+                  "home_record": null,
                   "home_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/wpg.png",
                   "home_location": "Winnipeg",
                   "away_team": "Montreal Canadiens",
                   "away_abbr": "MTL",
-                  "away_record": "5-3-2",
+                  "away_record": null,
                   "away_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/mtl.png",
                   "away_location": "Montreal",
-                  "matchup_score": 50.0,
+                  "matchup_score": 100.0,
                   "channel": "TNT, truTV",
                   "venue": "Princess Auto Stadium",
                   "venue_location": "Winnipeg, MB",
@@ -22123,7 +22123,6 @@
                       }
                     }
                   },
-                  "matchup_rank": 2,
                   "gemini_prediction": {
                     "winner": "Winnipeg Jets",
                     "confidence": 55,
@@ -22139,6 +22138,7 @@
                     "odds_hash": "153a2211e0296937",
                     "model": "gemini-3.5-flash-lite"
                   },
+                  "matchup_rank": 4,
                   "is_slot_pick": false
                 },
                 {
@@ -22147,12 +22147,12 @@
                   "start_time_tbd": false,
                   "home_team": "Nashville Predators",
                   "home_abbr": "NSH",
-                  "home_record": "3-3-4",
+                  "home_record": null,
                   "home_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/nsh.png",
                   "home_location": "Nashville",
                   "away_team": "Colorado Avalanche",
                   "away_abbr": "COL",
-                  "away_record": "6-4-1",
+                  "away_record": null,
                   "away_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/col.png",
                   "away_location": "Colorado",
                   "matchup_score": 100.0,
@@ -22226,7 +22226,6 @@
                       }
                     }
                   },
-                  "matchup_rank": 5,
                   "gemini_prediction": {
                     "winner": "Colorado Avalanche",
                     "confidence": 70,
@@ -22242,6 +22241,7 @@
                     "odds_hash": "91919256a6147174",
                     "model": "gemini-3.5-flash-lite"
                   },
+                  "matchup_rank": 5,
                   "is_slot_pick": false
                 }
               ]
@@ -22336,7 +22336,6 @@
                       }
                     }
                   },
-                  "matchup_rank": 3,
                   "gemini_prediction": {
                     "winner": "Minnesota Wild",
                     "confidence": 68,
@@ -22352,6 +22351,7 @@
                     "odds_hash": "5b9f9fd372956be3",
                     "model": "gemini-3.5-flash-lite"
                   },
+                  "matchup_rank": 1,
                   "is_slot_pick": true
                 }
               ]
@@ -22399,11 +22399,11 @@
                       "spread": {
                         "home": {
                           "line": -1.5,
-                          "american": 120
+                          "american": 124
                         },
                         "away": {
                           "line": 1.5,
-                          "american": -142
+                          "american": -148
                         }
                       },
                       "moneyline": {
@@ -22431,21 +22431,21 @@
                       "spread": {
                         "home": {
                           "line": -1.5,
-                          "american": 116
+                          "american": 128
                         },
                         "away": {
                           "line": 1.5,
-                          "american": -142
+                          "american": -158
                         }
                       },
                       "moneyline": {
                         "home": {
                           "line": null,
-                          "american": -194
+                          "american": -184
                         },
                         "away": {
                           "line": null,
-                          "american": 160
+                          "american": 152
                         }
                       },
                       "total": {
@@ -22464,16 +22464,16 @@
                   "gemini_prediction": {
                     "winner": "Edmonton Oilers",
                     "confidence": 65,
-                    "ats_pick": "Edmonton Oilers",
-                    "ats_confidence": 60,
+                    "ats_pick": "Detroit Red Wings",
+                    "ats_confidence": 58,
                     "total_pick": "Over",
-                    "total_confidence": 58,
-                    "analysis": "The Edmonton Oilers hold a home ice advantage against the Detroit Red Wings based on current 2026 performance metrics. Edmonton's offensive attack creates high danger scoring chances at an elite rate in regulation. Detroit has struggled defensively on the road, allowing opponents sustained zone time and high shot volumes. The Oilers possess enough offensive firepower to win this matchup by multiple goals. Consequently, laying the 1.5 goal spread with the home favorites represents a sound analytical selection.",
-                    "ou_analysis": "Both teams feature potent top six forward groups that drive a fast paced transition game. Special teams opportunities should be frequent given the physical nature of both squads during the 2026 campaign. These factors combined create an environment where the combined final score easily surpasses the posted 6.5 goal threshold.",
-                    "splits_and_direction": "Public betting splits estimate that roughly 62 percent of spread and moneyline wagers are backing the Edmonton Oilers, while 55 percent of total bets lean toward the over. The home spread has remained steady at -1.5 while moneyline odds have slightly shifted toward Edmonton and the total has ticked up from an opener of 6.0.",
-                    "display_text": "Analysis: The Edmonton Oilers hold a home ice advantage against the Detroit Red Wings based on current 2026 performance metrics. Edmonton's offensive attack creates high danger scoring chances at an elite rate in regulation. Detroit has struggled defensively on the road, allowing opponents sustained zone time and high shot volumes. The Oilers possess enough offensive firepower to win this matchup by multiple goals. Consequently, laying the 1.5 goal spread with the home favorites represents a sound analytical selection.\n\nOver Under: Both teams feature potent top six forward groups that drive a fast paced transition game. Special teams opportunities should be frequent given the physical nature of both squads during the 2026 campaign. These factors combined create an environment where the combined final score easily surpasses the posted 6.5 goal threshold.\n\nSplits: Public betting splits estimate that roughly 62 percent of spread and moneyline wagers are backing the Edmonton Oilers, while 55 percent of total bets lean toward the over. The home spread has remained steady at -1.5 while moneyline odds have slightly shifted toward Edmonton and the total has ticked up from an opener of 6.0.",
-                    "generated_at": "2026-10-25T18:48:58.280163+00:00",
-                    "odds_hash": "ce3a9b8401243a65",
+                    "total_confidence": 60,
+                    "analysis": "The Edmonton Oilers hold home-ice advantage for this 2026 matchup and maintain a slight edge in overall roster depth. Detroit Red Wings have shown resilient offensive bursts throughout the current season, keeping most of their games tightly contested. Given the high-powered nature of Edmonton's attack, they are expected to control the pace of play for most of the regulation periods. However, Detroit's tenacity suggests they will keep the final score within a single goal if they do happen to fall. Consequently, Edmonton secures the narrow victory while Detroit covers the +1.5 puck line.",
+                    "ou_analysis": "Both teams feature elite offensive weapons capable of capitalizing on power play opportunities with high efficiency. The anticipated fast pace and aggressive forechecking styles will likely generate numerous scoring chances throughout the contest. Therefore, the combined final score is expected to surpass the posted threshold of 6.5 goals.",
+                    "splits_and_direction": "Based on public betting tendencies, approximately 62 percent of spread bets and 58 percent of moneyline wagers are backing the Edmonton Oilers at home. Meanwhile, the home spread and total have remained relatively stable since opening, though slight money movement has favored the Over.",
+                    "display_text": "Analysis: The Edmonton Oilers hold home-ice advantage for this 2026 matchup and maintain a slight edge in overall roster depth. Detroit Red Wings have shown resilient offensive bursts throughout the current season, keeping most of their games tightly contested. Given the high-powered nature of Edmonton's attack, they are expected to control the pace of play for most of the regulation periods. However, Detroit's tenacity suggests they will keep the final score within a single goal if they do happen to fall. Consequently, Edmonton secures the narrow victory while Detroit covers the +1.5 puck line.\n\nOver Under: Both teams feature elite offensive weapons capable of capitalizing on power play opportunities with high efficiency. The anticipated fast pace and aggressive forechecking styles will likely generate numerous scoring chances throughout the contest. Therefore, the combined final score is expected to surpass the posted threshold of 6.5 goals.\n\nSplits: Based on public betting tendencies, approximately 62 percent of spread bets and 58 percent of moneyline wagers are backing the Edmonton Oilers at home. Meanwhile, the home spread and total have remained relatively stable since opening, though slight money movement has favored the Over.",
+                    "generated_at": "2026-10-26T03:00:07.519460+00:00",
+                    "odds_hash": "8672a4398fc844fc",
                     "model": "gemini-3.5-flash-lite"
                   },
                   "is_slot_pick": true
@@ -22522,11 +22522,11 @@
                       "total": {
                         "over": {
                           "line": 6.5,
-                          "american": -125
+                          "american": -120
                         },
                         "under": {
                           "line": 6.5,
-                          "american": 105
+                          "american": 100
                         }
                       }
                     },
@@ -22554,11 +22554,11 @@
                       "total": {
                         "over": {
                           "line": 6.5,
-                          "american": -114
+                          "american": -115
                         },
                         "under": {
                           "line": 6.5,
-                          "american": -106
+                          "american": -105
                         }
                       }
                     }
@@ -22566,17 +22566,17 @@
                   "matchup_rank": 2,
                   "gemini_prediction": {
                     "winner": "Toronto Maple Leafs",
-                    "confidence": 61,
+                    "confidence": 65,
                     "ats_pick": "Calgary Flames",
                     "ats_confidence": 58,
                     "total_pick": "Over",
-                    "total_confidence": 62,
-                    "analysis": "The Toronto Maple Leafs enter this matchup with superior offensive efficiency based on their current 2026 season metrics. Calgary Flames benefit from home-ice advantage, which should keep them competitive throughout regulation despite their slightly lower overall performance metrics. The visitors possess a more clinical power play unit that can capitalize on undisciplined defensive sequences by the hosts. Consequently, Toronto's overall roster depth gives them the edge needed to secure a narrow victory on the road. Because the margin is expected to be slim, Calgary is positioned well to cover the +1.5 puck line.",
-                    "ou_analysis": "Both teams have showcased high-tempo transitional play and consistent secondary scoring throughout the 2026 campaign. Special teams conversions will likely inflate the scoring environment as both units struggle to suppress high-danger chances. Therefore, the combined final score is expected to surpass the posted 6.5 goal threshold.",
-                    "splits_and_direction": "Based on public betting tendencies, approximately 62 percent of bets are backing the visiting Toronto Maple Leafs on the moneyline and spread, while the remainder favor Calgary. The spread has remained steady at 1.5, the moneyline has seen a slight shift toward Toronto, and the total has ticked upward slightly from its opening number.",
-                    "display_text": "Analysis: The Toronto Maple Leafs enter this matchup with superior offensive efficiency based on their current 2026 season metrics. Calgary Flames benefit from home-ice advantage, which should keep them competitive throughout regulation despite their slightly lower overall performance metrics. The visitors possess a more clinical power play unit that can capitalize on undisciplined defensive sequences by the hosts. Consequently, Toronto's overall roster depth gives them the edge needed to secure a narrow victory on the road. Because the margin is expected to be slim, Calgary is positioned well to cover the +1.5 puck line.\n\nOver Under: Both teams have showcased high-tempo transitional play and consistent secondary scoring throughout the 2026 campaign. Special teams conversions will likely inflate the scoring environment as both units struggle to suppress high-danger chances. Therefore, the combined final score is expected to surpass the posted 6.5 goal threshold.\n\nSplits: Based on public betting tendencies, approximately 62 percent of bets are backing the visiting Toronto Maple Leafs on the moneyline and spread, while the remainder favor Calgary. The spread has remained steady at 1.5, the moneyline has seen a slight shift toward Toronto, and the total has ticked upward slightly from its opening number.",
-                    "generated_at": "2026-10-25T18:48:48.177768+00:00",
-                    "odds_hash": "ea81bbfaa236023c",
+                    "total_confidence": 60,
+                    "analysis": "The Toronto Maple Leafs enter this matchup with superior offensive efficiency and consistent special teams play during the 2026 campaign. Calgary struggles to maintain defensive zone structure under high-pressure forechecks, which plays directly into Toronto's primary scoring strengths. Although the Maple Leafs possess the edge in outright victory due to their depth, the Calgary Flames have proven resilient at home in tight matchups. Therefore, while Toronto should secure the win, the +1.5 spread provides enough cushion for Calgary to keep the final margin close. Ultimately, the road team triumphs in a tightly contested game that falls within a single goal.",
+                    "ou_analysis": "Both teams feature high-paced transition attacks that generate numerous scoring chances per sixty minutes of play. Recent 2026 defensive lapses and goaltending inconsistencies from both franchises elevate the probability of a high-scoring affair. Consequently, the combined final score comfortably clears the 6.5 goal threshold to hit the over.",
+                    "splits_and_direction": "Based on current public tendencies and opening odds, approximately 62% of moneyline bets and 58% of spread wagers are backing the Toronto Maple Leafs. The spread and moneyline have remained relatively stable with minor adjustments toward Toronto, while the total has ticked slightly upward toward the over at most major sportsbooks.",
+                    "display_text": "Analysis: The Toronto Maple Leafs enter this matchup with superior offensive efficiency and consistent special teams play during the 2026 campaign. Calgary struggles to maintain defensive zone structure under high-pressure forechecks, which plays directly into Toronto's primary scoring strengths. Although the Maple Leafs possess the edge in outright victory due to their depth, the Calgary Flames have proven resilient at home in tight matchups. Therefore, while Toronto should secure the win, the +1.5 spread provides enough cushion for Calgary to keep the final margin close. Ultimately, the road team triumphs in a tightly contested game that falls within a single goal.\n\nOver Under: Both teams feature high-paced transition attacks that generate numerous scoring chances per sixty minutes of play. Recent 2026 defensive lapses and goaltending inconsistencies from both franchises elevate the probability of a high-scoring affair. Consequently, the combined final score comfortably clears the 6.5 goal threshold to hit the over.\n\nSplits: Based on current public tendencies and opening odds, approximately 62% of moneyline bets and 58% of spread wagers are backing the Toronto Maple Leafs. The spread and moneyline have remained relatively stable with minor adjustments toward Toronto, while the total has ticked slightly upward toward the over at most major sportsbooks.",
+                    "generated_at": "2026-10-26T02:59:57.547617+00:00",
+                    "odds_hash": "77c68aaf75bccd42",
                     "model": "gemini-3.5-flash-lite"
                   },
                   "is_slot_pick": false
@@ -22637,31 +22637,31 @@
                       "spread": {
                         "home": {
                           "line": -1.5,
-                          "american": 176
+                          "american": 194
                         },
                         "away": {
                           "line": 1.5,
-                          "american": -220
+                          "american": -245
                         }
                       },
                       "moneyline": {
                         "home": {
                           "line": null,
-                          "american": -137
+                          "american": -126
                         },
                         "away": {
                           "line": null,
-                          "american": 114
+                          "american": 105
                         }
                       },
                       "total": {
                         "over": {
                           "line": 5.5,
-                          "american": -132
+                          "american": -122
                         },
                         "under": {
                           "line": 5.5,
-                          "american": 108
+                          "american": 100
                         }
                       }
                     }
@@ -22669,17 +22669,17 @@
                   "matchup_rank": 3,
                   "gemini_prediction": {
                     "winner": "New York Rangers",
-                    "confidence": 58,
+                    "confidence": 62,
                     "ats_pick": "New York Rangers",
-                    "ats_confidence": 55,
+                    "ats_confidence": 58,
                     "total_pick": "Over",
-                    "total_confidence": 60,
-                    "analysis": "The New York Rangers enter this contest with sharper special teams execution than the Los Angeles Kings. New York has utilized home ice effectively during the current season by dictating early play through sustained offensive pressure. Los Angeles struggles defensively when facing high-tempo forechecking units that generate heavy shot volume. Goaltending stability gives the Rangers a slight edge in close-game situations down the stretch. Ultimately, New York should secure a multi-goal victory to cover the 1.5 puck line.",
-                    "ou_analysis": "Both squads feature aggressive offensive strategies that routinely create high-danger scoring chances at even strength. Recent defensive lapses from both clubs point toward a wide-open pacing throughout regulation. Consequently, the combined score will surpass the posted 5.5 goal threshold due to high-converting power play units.",
-                    "splits_and_direction": "Based on public betting tendencies, roughly 62 percent of spread bets and 58 percent of moneyline wagers are backing the home favorite New York Rangers. The home spread has held steady at -1.5 while the total has ticked upward slightly from its opening number toward the over.",
-                    "display_text": "Analysis: The New York Rangers enter this contest with sharper special teams execution than the Los Angeles Kings. New York has utilized home ice effectively during the current season by dictating early play through sustained offensive pressure. Los Angeles struggles defensively when facing high-tempo forechecking units that generate heavy shot volume. Goaltending stability gives the Rangers a slight edge in close-game situations down the stretch. Ultimately, New York should secure a multi-goal victory to cover the 1.5 puck line.\n\nOver Under: Both squads feature aggressive offensive strategies that routinely create high-danger scoring chances at even strength. Recent defensive lapses from both clubs point toward a wide-open pacing throughout regulation. Consequently, the combined score will surpass the posted 5.5 goal threshold due to high-converting power play units.\n\nSplits: Based on public betting tendencies, roughly 62 percent of spread bets and 58 percent of moneyline wagers are backing the home favorite New York Rangers. The home spread has held steady at -1.5 while the total has ticked upward slightly from its opening number toward the over.",
-                    "generated_at": "2026-10-25T22:24:13.172131+00:00",
-                    "odds_hash": "bee781ec8045cee3",
+                    "total_confidence": 55,
+                    "analysis": "The New York Rangers return to Madison Square Garden holding a solid home-ice advantage for this cross-conference matchup in the 2026 season. Los Angeles Kings have shown vulnerabilities on the road defensively, struggling to contain high-paced transition attacks. New York's top forward line has executed efficiently on the power play through the early stages of the current campaign. Goaltending metrics slightly favor the home side based on recent 2026 performance trends and high-danger save percentages. Therefore, the Rangers are expected to secure a narrow victory and cover the 1.5-goal puck line.",
+                    "ou_analysis": "Both teams feature aggressive forechecking schemes that naturally push the pace and generate sustained offensive zone time. Special teams units have also been converting at a high clip this season, translating minor penalties into high-percentage scoring chances. Consequently, the combination of defensive lapses and potent secondary scoring should easily push the combined score past the 5.5 goal threshold.",
+                    "splits_and_direction": "Based on public tendencies, approximately 62 percent of spread bets and 58 percent of moneyline wagers are currently backing the New York Rangers at home. The home spread has held steady at -1.5, while the total has ticked up slightly from 5.5 towards the heavily juiced over side.",
+                    "display_text": "Analysis: The New York Rangers return to Madison Square Garden holding a solid home-ice advantage for this cross-conference matchup in the 2026 season. Los Angeles Kings have shown vulnerabilities on the road defensively, struggling to contain high-paced transition attacks. New York's top forward line has executed efficiently on the power play through the early stages of the current campaign. Goaltending metrics slightly favor the home side based on recent 2026 performance trends and high-danger save percentages. Therefore, the Rangers are expected to secure a narrow victory and cover the 1.5-goal puck line.\n\nOver Under: Both teams feature aggressive forechecking schemes that naturally push the pace and generate sustained offensive zone time. Special teams units have also been converting at a high clip this season, translating minor penalties into high-percentage scoring chances. Consequently, the combination of defensive lapses and potent secondary scoring should easily push the combined score past the 5.5 goal threshold.\n\nSplits: Based on public tendencies, approximately 62 percent of spread bets and 58 percent of moneyline wagers are currently backing the New York Rangers at home. The home spread has held steady at -1.5, while the total has ticked up slightly from 5.5 towards the heavily juiced over side.",
+                    "generated_at": "2026-10-26T02:59:47.338585+00:00",
+                    "odds_hash": "9ef5eca9191f2fc5",
                     "model": "gemini-3.5-flash-lite"
                   },
                   "is_slot_pick": false

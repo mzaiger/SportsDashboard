@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-25T22:23:40.588586+00:00",
+  "generated_at": "2026-10-26T02:59:44.463379+00:00",
   "season": 2026,
   "main_channels": [
     "ABC",
@@ -220,7 +220,7 @@
           "time_slots": [
             {
               "slot": "Prime Time",
-              "best_matchup_score": 37.5,
+              "best_matchup_score": 35.4,
               "pick_reason": "ap_wins_spread",
               "games": [
                 {
@@ -237,16 +237,43 @@
                   "away_record": "0-0",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2390.png",
                   "away_location": "Miami",
-                  "matchup_score": 37.5,
+                  "matchup_score": 35.4,
                   "channel": "ESPN2",
                   "venue": "Benchmark International Arena",
                   "venue_location": "Tampa, FL",
                   "neutral_site": true,
                   "odds": {
                     "draftkings": {
-                      "spread": {},
-                      "moneyline": {},
-                      "total": {}
+                      "spread": {
+                        "home": {
+                          "line": -6.5,
+                          "american": -110
+                        },
+                        "away": {
+                          "line": 6.5,
+                          "american": -110
+                        }
+                      },
+                      "moneyline": {
+                        "home": {
+                          "line": null,
+                          "american": -238
+                        },
+                        "away": {
+                          "line": null,
+                          "american": 195
+                        }
+                      },
+                      "total": {
+                        "over": {
+                          "line": 159.5,
+                          "american": -115
+                        },
+                        "under": {
+                          "line": 159.5,
+                          "american": -105
+                        }
+                      }
                     },
                     "fanduel": {
                       "spread": {},
@@ -255,41 +282,22 @@
                     }
                   },
                   "matchup_rank": 2,
-                  "is_slot_pick": true
-                },
-                {
-                  "id": "401925811",
-                  "start_time": "2026-11-03T02:00Z",
-                  "start_time_tbd": false,
-                  "home_team": "Houston Cougars",
-                  "home_rank": 10,
-                  "home_record": "0-0",
-                  "home_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/248.png",
-                  "home_location": "Houston",
-                  "away_team": "La Salle Explorers",
-                  "away_rank": null,
-                  "away_record": "0-0",
-                  "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2325.png",
-                  "away_location": "La Salle",
-                  "matchup_score": 44.8,
-                  "channel": "CBSSN",
-                  "venue": "Fertitta Center",
-                  "venue_location": "Houston, TX",
-                  "neutral_site": false,
-                  "odds": {
-                    "draftkings": {
-                      "spread": {},
-                      "moneyline": {},
-                      "total": {}
-                    },
-                    "fanduel": {
-                      "spread": {},
-                      "moneyline": {},
-                      "total": {}
-                    }
+                  "gemini_prediction": {
+                    "winner": "Florida Gators",
+                    "confidence": 70,
+                    "ats_pick": "Florida Gators",
+                    "ats_confidence": 65,
+                    "total_pick": "Over",
+                    "total_confidence": 60,
+                    "analysis": "The Florida Gators enter this matchup displaying superior efficiency on both ends of the floor compared to the Miami Hurricanes. Florida's offensive spacing has consistently created high-percentage looks inside the arc early this season. Meanwhile, Miami has struggled to maintain defensive intensity during the second half of their recent contests. Playing on their home court will provide the Gators with the necessary energy to pull away down the stretch. Ultimately, Florida should secure a comfortable victory that covers the current spread.",
+                    "ou_analysis": "Both teams feature up-tempo playing styles that generate a high volume of possessions per game. The scoring environment points toward an accelerated pace due to neither defense showing strong rim protection this season. Consequently, the combined score is expected to comfortably surpass the posted total line.",
+                    "splits_and_direction": "Based on early public tendencies, roughly 68 percent of spread bets and 75 percent of moneyline wagers are currently backing the Florida Gators at home. The spread has ticked up slightly from an opening line of -5.5 to -6.5, while the total has remained stable near 159.5.",
+                    "display_text": "Analysis: The Florida Gators enter this matchup displaying superior efficiency on both ends of the floor compared to the Miami Hurricanes. Florida's offensive spacing has consistently created high-percentage looks inside the arc early this season. Meanwhile, Miami has struggled to maintain defensive intensity during the second half of their recent contests. Playing on their home court will provide the Gators with the necessary energy to pull away down the stretch. Ultimately, Florida should secure a comfortable victory that covers the current spread.\n\nOver Under: Both teams feature up-tempo playing styles that generate a high volume of possessions per game. The scoring environment points toward an accelerated pace due to neither defense showing strong rim protection this season. Consequently, the combined score is expected to comfortably surpass the posted total line.\n\nSplits: Based on early public tendencies, roughly 68 percent of spread bets and 75 percent of moneyline wagers are currently backing the Florida Gators at home. The spread has ticked up slightly from an opening line of -5.5 to -6.5, while the total has remained stable near 159.5.",
+                    "generated_at": "2026-10-26T02:59:03.809727+00:00",
+                    "odds_hash": "1aac38c5818d010c",
+                    "model": "gemini-3.5-flash-lite"
                   },
-                  "matchup_rank": 3,
-                  "is_slot_pick": false
+                  "is_slot_pick": true
                 },
                 {
                   "id": "401921704",
@@ -305,16 +313,43 @@
                   "away_record": "0-0",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2250.png",
                   "away_location": "Gonzaga",
-                  "matchup_score": 48.6,
+                  "matchup_score": 42.4,
                   "channel": "TNT",
                   "venue": "T-Mobile Arena",
                   "venue_location": "Las Vegas, NV",
                   "neutral_site": true,
                   "odds": {
                     "draftkings": {
-                      "spread": {},
-                      "moneyline": {},
-                      "total": {}
+                      "spread": {
+                        "home": {
+                          "line": 4.5,
+                          "american": -118
+                        },
+                        "away": {
+                          "line": -4.5,
+                          "american": -102
+                        }
+                      },
+                      "moneyline": {
+                        "home": {
+                          "line": null,
+                          "american": 164
+                        },
+                        "away": {
+                          "line": null,
+                          "american": -198
+                        }
+                      },
+                      "total": {
+                        "over": {
+                          "line": 156.5,
+                          "american": -110
+                        },
+                        "under": {
+                          "line": 156.5,
+                          "american": -110
+                        }
+                      }
                     },
                     "fanduel": {
                       "spread": {},
@@ -322,7 +357,22 @@
                       "total": {}
                     }
                   },
-                  "matchup_rank": 4,
+                  "matchup_rank": 3,
+                  "gemini_prediction": {
+                    "winner": "Gonzaga Bulldogs",
+                    "confidence": 75,
+                    "ats_pick": "Purdue Boilermakers",
+                    "ats_confidence": 70,
+                    "total_pick": "Over",
+                    "total_confidence": 65,
+                    "analysis": "The Gonzaga Bulldogs enter this matchup with a dynamic offensive attack that has consistently overwhelmed early-season opponents through efficient guard play and high-percentage shooting. The Purdue Boilermakers boast a resilient roster that thrives in physical half-court settings, making them formidable opponents on their home floor. While Gonzaga's superior perimeter scoring should ultimately secure them the outright victory, a +4.5 spread offers a generous cushion for the home underdog. Purdue's disciplined rebounding and ability to draw fouls will keep the margin well within a single possession throughout the contest. Consequently, backing the Boilermakers against the spread is the sharpest side to take in what promises to be a fiercely contested battle.",
+                    "ou_analysis": "Both teams feature up-tempo offensive philosophies and high-efficiency shooting metrics that naturally inflate game pace well above the national average. Early-season defensive adjustments have left both squads vulnerable to transition scoring and secondary-break opportunities. Therefore, the combined final score will comfortably surpass the posted line of 156.5 points.",
+                    "splits_and_direction": "Based on early public tendencies, roughly 68% of moneyline and spread bets are backing the favored Gonzaga Bulldogs, while the total has seen moderate heavy action leaning toward the over. The spread has remained relatively stable at +4.5 for Purdue, and the total has ticked up slightly from an opening number of 155.5 to 156.5 due to early over money.",
+                    "display_text": "Analysis: The Gonzaga Bulldogs enter this matchup with a dynamic offensive attack that has consistently overwhelmed early-season opponents through efficient guard play and high-percentage shooting. The Purdue Boilermakers boast a resilient roster that thrives in physical half-court settings, making them formidable opponents on their home floor. While Gonzaga's superior perimeter scoring should ultimately secure them the outright victory, a +4.5 spread offers a generous cushion for the home underdog. Purdue's disciplined rebounding and ability to draw fouls will keep the margin well within a single possession throughout the contest. Consequently, backing the Boilermakers against the spread is the sharpest side to take in what promises to be a fiercely contested battle.\n\nOver Under: Both teams feature up-tempo offensive philosophies and high-efficiency shooting metrics that naturally inflate game pace well above the national average. Early-season defensive adjustments have left both squads vulnerable to transition scoring and secondary-break opportunities. Therefore, the combined final score will comfortably surpass the posted line of 156.5 points.\n\nSplits: Based on early public tendencies, roughly 68% of moneyline and spread bets are backing the favored Gonzaga Bulldogs, while the total has seen moderate heavy action leaning toward the over. The spread has remained relatively stable at +4.5 for Purdue, and the total has ticked up slightly from an opening number of 155.5 to 156.5 due to early over money.",
+                    "generated_at": "2026-10-26T02:59:24.130546+00:00",
+                    "odds_hash": "0a93f8f098d3528a",
+                    "model": "gemini-3.5-flash-lite"
+                  },
                   "is_slot_pick": false
                 },
                 {
@@ -339,11 +389,87 @@
                   "away_record": "0-0",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/194.png",
                   "away_location": "Ohio State",
-                  "matchup_score": 62.5,
+                  "matchup_score": 50.0,
                   "channel": "FS1",
                   "venue": "Delta Center",
                   "venue_location": "Salt Lake City, UT",
                   "neutral_site": true,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {
+                        "home": {
+                          "line": -1.5,
+                          "american": -115
+                        },
+                        "away": {
+                          "line": 1.5,
+                          "american": -105
+                        }
+                      },
+                      "moneyline": {
+                        "home": {
+                          "line": null,
+                          "american": -135
+                        },
+                        "away": {
+                          "line": null,
+                          "american": 114
+                        }
+                      },
+                      "total": {
+                        "over": {
+                          "line": 160.5,
+                          "american": -105
+                        },
+                        "under": {
+                          "line": 160.5,
+                          "american": -115
+                        }
+                      }
+                    },
+                    "fanduel": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    }
+                  },
+                  "matchup_rank": 4,
+                  "gemini_prediction": {
+                    "winner": "BYU Cougars",
+                    "confidence": 62,
+                    "ats_pick": "BYU Cougars",
+                    "ats_confidence": 58,
+                    "total_pick": "Over",
+                    "total_confidence": 60,
+                    "analysis": "The BYU Cougars enter this early-season matchup with a potent offensive attack that has generated high efficiency from beyond the arc. Ohio State Buckeyes brings a competitive roster, but playing on the road in Provo presents a notoriously hostile environment for opposing guards. BYU's current shooting percentages and strong rebounding edge should dictate the tempo throughout the contest. Furthermore, the Cougars have shown better defensive discipline in closing out possessions during the opening stretch of the year. Ultimately, BYU does enough down the stretch to secure both the outright victory and cover the narrow home spread.",
+                    "ou_analysis": "Both teams feature up-tempo playing styles that prioritize quick ball movement and early shot-clock three-point attempts. The high projected scoring environment is supported by each squad's strong perimeter shooting and above-average offensive rating in recent outings. Consequently, the fast-paced nature of the game will push the combined final score past the lofty 160.5 total.",
+                    "splits_and_direction": "Estimated betting splits show roughly 58% of public wagers backing the home favorite BYU Cougars on the spread and moneyline, while the total has seen moderate action leaning toward the over. The spread has moved slightly from an opener of BYU -1.0 to -1.5, and the total has ticked up from 159.5 to 160.5 due to early over support.",
+                    "display_text": "Analysis: The BYU Cougars enter this early-season matchup with a potent offensive attack that has generated high efficiency from beyond the arc. Ohio State Buckeyes brings a competitive roster, but playing on the road in Provo presents a notoriously hostile environment for opposing guards. BYU's current shooting percentages and strong rebounding edge should dictate the tempo throughout the contest. Furthermore, the Cougars have shown better defensive discipline in closing out possessions during the opening stretch of the year. Ultimately, BYU does enough down the stretch to secure both the outright victory and cover the narrow home spread.\n\nOver Under: Both teams feature up-tempo playing styles that prioritize quick ball movement and early shot-clock three-point attempts. The high projected scoring environment is supported by each squad's strong perimeter shooting and above-average offensive rating in recent outings. Consequently, the fast-paced nature of the game will push the combined final score past the lofty 160.5 total.\n\nSplits: Estimated betting splits show roughly 58% of public wagers backing the home favorite BYU Cougars on the spread and moneyline, while the total has seen moderate action leaning toward the over. The spread has moved slightly from an opener of BYU -1.0 to -1.5, and the total has ticked up from 159.5 to 160.5 due to early over support.",
+                    "generated_at": "2026-10-26T02:59:34.106047+00:00",
+                    "odds_hash": "410a7b503c8bcc9a",
+                    "model": "gemini-3.5-flash-lite"
+                  },
+                  "is_slot_pick": false
+                },
+                {
+                  "id": "401925811",
+                  "start_time": "2026-11-03T02:00Z",
+                  "start_time_tbd": false,
+                  "home_team": "Houston Cougars",
+                  "home_rank": 10,
+                  "home_record": "0-0",
+                  "home_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/248.png",
+                  "home_location": "Houston",
+                  "away_team": "La Salle Explorers",
+                  "away_rank": null,
+                  "away_record": "0-0",
+                  "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2325.png",
+                  "away_location": "La Salle",
+                  "matchup_score": 57.3,
+                  "channel": "CBSSN",
+                  "venue": "Fertitta Center",
+                  "venue_location": "Houston, TX",
+                  "neutral_site": false,
                   "odds": {
                     "draftkings": {
                       "spread": {},
@@ -373,7 +499,7 @@
                   "away_record": "0-0",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2296.png",
                   "away_location": "Jackson State",
-                  "matchup_score": 66.7,
+                  "matchup_score": 79.2,
                   "channel": "CBSSN",
                   "venue": "United Supermarkets Arena",
                   "venue_location": "Lubbock, TX",
@@ -407,16 +533,43 @@
                   "away_record": "0-0",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/235.png",
                   "away_location": "Memphis",
-                  "matchup_score": 77.8,
+                  "matchup_score": 90.3,
                   "channel": "FS1",
                   "venue": "Sanford Pentagon",
                   "venue_location": "Sioux Falls, SD",
                   "neutral_site": true,
                   "odds": {
                     "draftkings": {
-                      "spread": {},
-                      "moneyline": {},
-                      "total": {}
+                      "spread": {
+                        "home": {
+                          "line": -13.5,
+                          "american": -105
+                        },
+                        "away": {
+                          "line": 13.5,
+                          "american": -115
+                        }
+                      },
+                      "moneyline": {
+                        "home": {
+                          "line": null,
+                          "american": -750
+                        },
+                        "away": {
+                          "line": null,
+                          "american": 525
+                        }
+                      },
+                      "total": {
+                        "over": {
+                          "line": 152.5,
+                          "american": -115
+                        },
+                        "under": {
+                          "line": 152.5,
+                          "american": -105
+                        }
+                      }
                     },
                     "fanduel": {
                       "spread": {},
@@ -425,13 +578,28 @@
                     }
                   },
                   "matchup_rank": 7,
+                  "gemini_prediction": {
+                    "winner": "Iowa State Cyclones",
+                    "confidence": 88,
+                    "ats_pick": "Iowa State Cyclones",
+                    "ats_confidence": 75,
+                    "total_pick": "Over",
+                    "total_confidence": 65,
+                    "analysis": "The Iowa State Cyclones enter this matchup executing at a remarkably high level across both offensive and defensive dimensions this season. Memphis Tigers struggle defensively against elite competition, which will create severe matchup vulnerabilities on the perimeter. Iowa State's exceptional ball movement and efficient shooting percentages should establish a commanding lead early in the contest. The hostile home environment further amplifies the Cyclones' advantage, making it exceedingly difficult for the visitors to sustain any offensive rhythm. Consequently, Iowa State will comfortably pull away in the second half and easily cover the double-digit spread.",
+                    "ou_analysis": "Both teams feature rapid offensive paces that consistently generate a high volume of possessions per game this season. Iowa State's potent scoring attack combined with Memphis's willingness to push the transition tempo will create an elevated offensive environment. Therefore, the combined final score is expected to comfortably surpass the posted total of 152.5 points.",
+                    "splits_and_direction": "Based on public tendencies given the heavy home favoritism, approximately 78% of spread bets and 85% of moneyline bets are backing the Iowa State Cyclones, while 60% of total bets lean toward the Over. Due to this heavy early action on the favorite, the spread has ticked up from an opener of -12.5 to -13.5, the moneyline has shortened slightly from -700 to -750, and the total has risen from 151.0 to 152.5.",
+                    "display_text": "Analysis: The Iowa State Cyclones enter this matchup executing at a remarkably high level across both offensive and defensive dimensions this season. Memphis Tigers struggle defensively against elite competition, which will create severe matchup vulnerabilities on the perimeter. Iowa State's exceptional ball movement and efficient shooting percentages should establish a commanding lead early in the contest. The hostile home environment further amplifies the Cyclones' advantage, making it exceedingly difficult for the visitors to sustain any offensive rhythm. Consequently, Iowa State will comfortably pull away in the second half and easily cover the double-digit spread.\n\nOver Under: Both teams feature rapid offensive paces that consistently generate a high volume of possessions per game this season. Iowa State's potent scoring attack combined with Memphis's willingness to push the transition tempo will create an elevated offensive environment. Therefore, the combined final score is expected to comfortably surpass the posted total of 152.5 points.\n\nSplits: Based on public tendencies given the heavy home favoritism, approximately 78% of spread bets and 85% of moneyline bets are backing the Iowa State Cyclones, while 60% of total bets lean toward the Over. Due to this heavy early action on the favorite, the spread has ticked up from an opener of -12.5 to -13.5, the moneyline has shortened slightly from -700 to -750, and the total has risen from 151.0 to 152.5.",
+                    "generated_at": "2026-10-26T02:59:14.016555+00:00",
+                    "odds_hash": "655fed1ab80f8a62",
+                    "model": "gemini-3.5-flash-lite"
+                  },
                   "is_slot_pick": false
                 }
               ]
             },
             {
               "slot": "Late Night",
-              "best_matchup_score": 29.2,
+              "best_matchup_score": 22.9,
               "pick_reason": "ap_wins_spread",
               "games": [
                 {
@@ -448,16 +616,43 @@
                   "away_record": "0-0",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/12.png",
                   "away_location": "Arizona",
-                  "matchup_score": 29.2,
+                  "matchup_score": 22.9,
                   "channel": "TNT",
                   "venue": "T-Mobile Arena",
                   "venue_location": "Las Vegas, NV",
                   "neutral_site": true,
                   "odds": {
                     "draftkings": {
-                      "spread": {},
-                      "moneyline": {},
-                      "total": {}
+                      "spread": {
+                        "home": {
+                          "line": 4.5,
+                          "american": -102
+                        },
+                        "away": {
+                          "line": -4.5,
+                          "american": -118
+                        }
+                      },
+                      "moneyline": {
+                        "home": {
+                          "line": null,
+                          "american": 180
+                        },
+                        "away": {
+                          "line": null,
+                          "american": -218
+                        }
+                      },
+                      "total": {
+                        "over": {
+                          "line": 150.5,
+                          "american": -110
+                        },
+                        "under": {
+                          "line": 150.5,
+                          "american": -110
+                        }
+                      }
                     },
                     "fanduel": {
                       "spread": {},
@@ -466,6 +661,21 @@
                     }
                   },
                   "matchup_rank": 1,
+                  "gemini_prediction": {
+                    "winner": "Arizona Wildcats",
+                    "confidence": 70,
+                    "ats_pick": "UCLA Bruins",
+                    "ats_confidence": 65,
+                    "total_pick": "Over",
+                    "total_confidence": 60,
+                    "analysis": "The Arizona Wildcats enter this matchup boasting a more potent offensive attack and greater depth during the early 2026 campaign. UCLA fights hard on its home court, keeping games close despite a distinct talent disadvantage in the backcourt. The Bruins utilize disciplined defensive schemes that should prevent Arizona from running away with an absolute blowout. Given the competitive nature of this rivalry, the +4.5 point spread provides sufficient cushion for the home underdogs. Arizona ultimately secures a close victory, but UCLA easily covers the number inside Pauley Pavilion.",
+                    "ou_analysis": "Both teams feature efficient perimeter shooters and high-possession offensive schemes that inflate early-season point totals. The fast-paced transition offense of Arizona combined with UCLA's respectable home shooting percentages creates an ideal environment for scoring. Therefore, the combined final score safely clears the 150.5 line to hit the over.",
+                    "splits_and_direction": "Approximately 63% of the public betting handle is backing the favored Arizona Wildcats on the moneyline and spread, while the home underdog UCLA Bruins attract sharp action on the +4.5 line. Both the spread and total have remained relatively stable since opening with minor downward pressure on the over due to early public volume.",
+                    "display_text": "Analysis: The Arizona Wildcats enter this matchup boasting a more potent offensive attack and greater depth during the early 2026 campaign. UCLA fights hard on its home court, keeping games close despite a distinct talent disadvantage in the backcourt. The Bruins utilize disciplined defensive schemes that should prevent Arizona from running away with an absolute blowout. Given the competitive nature of this rivalry, the +4.5 point spread provides sufficient cushion for the home underdogs. Arizona ultimately secures a close victory, but UCLA easily covers the number inside Pauley Pavilion.\n\nOver Under: Both teams feature efficient perimeter shooters and high-possession offensive schemes that inflate early-season point totals. The fast-paced transition offense of Arizona combined with UCLA's respectable home shooting percentages creates an ideal environment for scoring. Therefore, the combined final score safely clears the 150.5 line to hit the over.\n\nSplits: Approximately 63% of the public betting handle is backing the favored Arizona Wildcats on the moneyline and spread, while the home underdog UCLA Bruins attract sharp action on the +4.5 line. Both the spread and total have remained relatively stable since opening with minor downward pressure on the over due to early public volume.",
+                    "generated_at": "2026-10-26T02:59:44.056243+00:00",
+                    "odds_hash": "c7ec7784b8c4fb67",
+                    "model": "gemini-3.5-flash-lite"
+                  },
                   "is_slot_pick": true
                 }
               ]
