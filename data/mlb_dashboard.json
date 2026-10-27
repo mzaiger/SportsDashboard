@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-26T23:37:56.201061+00:00",
+  "generated_at": "2026-10-27T03:30:51.691867+00:00",
   "season": 2026,
   "display_timezone": "America/Chicago",
   "weeks": [
@@ -58420,7 +58420,6 @@
                       }
                     }
                   },
-                  "matchup_rank": 1,
                   "gemini_prediction": {
                     "winner": "Tampa Bay Rays",
                     "confidence": 56,
@@ -58436,6 +58435,7 @@
                     "odds_hash": "32b3b03cfc136979",
                     "model": "gemini-3.5-flash-lite"
                   },
+                  "matchup_rank": 1,
                   "is_slot_pick": true
                 }
               ]
@@ -58482,17 +58482,77 @@
                   "neutral_site": false,
                   "odds": {
                     "draftkings": {
-                      "spread": {},
-                      "moneyline": {},
-                      "total": {}
+                      "spread": {
+                        "home": {
+                          "line": 1.5,
+                          "american": -169
+                        },
+                        "away": {
+                          "line": -1.5,
+                          "american": 140
+                        }
+                      },
+                      "moneyline": {
+                        "home": {
+                          "line": null,
+                          "american": 109
+                        },
+                        "away": {
+                          "line": null,
+                          "american": -131
+                        }
+                      },
+                      "total": {
+                        "over": {
+                          "line": 7,
+                          "american": -109
+                        },
+                        "under": {
+                          "line": 7,
+                          "american": -110
+                        }
+                      }
                     },
                     "fanduel": {
                       "spread": {},
-                      "moneyline": {},
-                      "total": {}
+                      "moneyline": {
+                        "home": {
+                          "line": null,
+                          "american": 108
+                        },
+                        "away": {
+                          "line": null,
+                          "american": -126
+                        }
+                      },
+                      "total": {
+                        "over": {
+                          "line": 7.5,
+                          "american": 116
+                        },
+                        "under": {
+                          "line": 7.5,
+                          "american": -142
+                        }
+                      }
                     }
                   },
                   "matchup_rank": 1,
+                  "gemini_prediction": {
+                    "winner": "Milwaukee Brewers",
+                    "confidence": 56,
+                    "ats_pick": "Tampa Bay Rays",
+                    "ats_confidence": 54,
+                    "total_pick": "Under",
+                    "total_confidence": 55,
+                    "analysis": "The Milwaukee Brewers enter this matchup with a slightly more consistent offensive approach throughout the 2026 campaign. Tampa Bay relies heavily on its pitching depth to keep games close, especially when playing at home. Milwaukee's starting pitcher has shown superior command over the last month, limiting hard contact against tough lineups. The Tampa Bay Rays will keep it close by utilizing their bullpen effectively in the middle frames. Ultimately, the Brewers edge this contest out by manufacturing a late run to secure the narrow victory.",
+                    "ou_analysis": "Both teams feature suppressed offensive environments supported by elite late-inning relief pitching that limits late scoring. The ballpark factors and current starting pitcher matchups favor a lower-scoring affair with limited extra-base hits. Therefore, the combined final score stays below the posted total of 7.5 runs.",
+                    "splits_and_direction": "Based on current public betting tendencies, roughly 58 percent of moneyline bets are backing the Milwaukee Brewers while the Tampa Bay Rays receive 62 percent of the action on the +1.5 run line. The moneyline has shifted slightly toward Milwaukee from its opening price, and the total has ticked down from 7.5 to 7 at several major sportsbooks.",
+                    "display_text": "Analysis: The Milwaukee Brewers enter this matchup with a slightly more consistent offensive approach throughout the 2026 campaign. Tampa Bay relies heavily on its pitching depth to keep games close, especially when playing at home. Milwaukee's starting pitcher has shown superior command over the last month, limiting hard contact against tough lineups. The Tampa Bay Rays will keep it close by utilizing their bullpen effectively in the middle frames. Ultimately, the Brewers edge this contest out by manufacturing a late run to secure the narrow victory.\n\nOver Under: Both teams feature suppressed offensive environments supported by elite late-inning relief pitching that limits late scoring. The ballpark factors and current starting pitcher matchups favor a lower-scoring affair with limited extra-base hits. Therefore, the combined final score stays below the posted total of 7.5 runs.\n\nSplits: Based on current public betting tendencies, roughly 58 percent of moneyline bets are backing the Milwaukee Brewers while the Tampa Bay Rays receive 62 percent of the action on the +1.5 run line. The moneyline has shifted slightly toward Milwaukee from its opening price, and the total has ticked down from 7.5 to 7 at several major sportsbooks.",
+                    "generated_at": "2026-10-27T03:30:51.533592+00:00",
+                    "odds_hash": "bb55217232967658",
+                    "model": "gemini-3.5-flash-lite"
+                  },
                   "is_slot_pick": true
                 }
               ]
