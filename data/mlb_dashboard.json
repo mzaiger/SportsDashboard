@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-28T03:46:14.986329+00:00",
+  "generated_at": "2026-10-28T10:23:29.044586+00:00",
   "season": 2026,
   "display_timezone": "America/Chicago",
   "weeks": [
@@ -58468,13 +58468,13 @@
                   "home_record": "98-64",
                   "home_logo": "https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/tb.png",
                   "home_location": "Tampa Bay",
-                  "home_pitcher": "G. Jax (0-1, 6.00)",
+                  "home_pitcher": "G. Jax (0-1, 5.40)",
                   "away_team": "Milwaukee Brewers",
                   "away_abbr": "MIL",
                   "away_record": "103-59",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/mil.png",
                   "away_location": "Milwaukee",
-                  "away_pitcher": "D. May (0-0, 5.63)",
+                  "away_pitcher": "D. May (0-0, 5.73)",
                   "matchup_score": 50.0,
                   "channel": "Fox",
                   "venue": "Tropicana Field",
@@ -58600,7 +58600,7 @@
                   "away_record": "103-59",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/mil.png",
                   "away_location": "Milwaukee",
-                  "away_pitcher": null,
+                  "away_pitcher": "J. Misiorowski (1-0, 2.70)",
                   "matchup_score": 50.0,
                   "channel": "Fox",
                   "venue": "Tropicana Field",
@@ -58608,9 +58608,36 @@
                   "neutral_site": false,
                   "odds": {
                     "draftkings": {
-                      "spread": {},
-                      "moneyline": {},
-                      "total": {}
+                      "spread": {
+                        "home": {
+                          "line": 1.5,
+                          "american": -149
+                        },
+                        "away": {
+                          "line": -1.5,
+                          "american": 123
+                        }
+                      },
+                      "moneyline": {
+                        "home": {
+                          "line": null,
+                          "american": 124
+                        },
+                        "away": {
+                          "line": null,
+                          "american": -149
+                        }
+                      },
+                      "total": {
+                        "over": {
+                          "line": 6.5,
+                          "american": -119
+                        },
+                        "under": {
+                          "line": 6.5,
+                          "american": -102
+                        }
+                      }
                     },
                     "fanduel": {
                       "spread": {},
@@ -58619,6 +58646,21 @@
                     }
                   },
                   "matchup_rank": 1,
+                  "gemini_prediction": {
+                    "winner": "Milwaukee Brewers",
+                    "confidence": 62,
+                    "ats_pick": "Tampa Bay Rays",
+                    "ats_confidence": 55,
+                    "total_pick": "Under",
+                    "total_confidence": 58,
+                    "analysis": "The Milwaukee Brewers enter this matchup with a solid advantage on the mound behind J. Misiorowski, who has showcased impressive form with a 2.70 ERA early in the 2026 season. Although the Tampa Bay Rays have yet to officially announce their starter, their home-field advantage keeps them competitive in high-stakes environments. The Brewers' lineup possesses the depth needed to manufacture runs against a yet-to-be-named starter or a potential bullpen game for Tampa Bay. However, the Rays' resilience at home suggests they will keep this game within a tight margin throughout the evening. Ultimately, Milwaukee's pitching strength should edge out a narrow victory, making the underdog Rays a strong candidate to cover the 1.5-run spread.",
+                    "ou_analysis": "The low total of 6.5 runs appropriately reflects an elite pitching matchup expected from Milwaukee's side alongside Tampa Bay's traditionally stingy run prevention strategies. Both ballclubs feature high-leverage bullpen arms and disciplined defensive units that tend to suppress high-scoring outbursts. Consequently, the game projects to play out at a measured pace, keeping the combined score safely under the posted line.",
+                    "splits_and_direction": "Based on public betting tendencies and the -149 away moneyline, an estimated 62% of bets are backing the Milwaukee Brewers to win outright, while roughly 58% of run-line wagers lean toward the Tampa Bay Rays plus the 1.5 runs. The moneyline has ticked slightly upward toward Milwaukee since opening, whereas the total of 6.5 has remained steady with minor juice adjustments on the over.",
+                    "display_text": "Analysis: The Milwaukee Brewers enter this matchup with a solid advantage on the mound behind J. Misiorowski, who has showcased impressive form with a 2.70 ERA early in the 2026 season. Although the Tampa Bay Rays have yet to officially announce their starter, their home-field advantage keeps them competitive in high-stakes environments. The Brewers' lineup possesses the depth needed to manufacture runs against a yet-to-be-named starter or a potential bullpen game for Tampa Bay. However, the Rays' resilience at home suggests they will keep this game within a tight margin throughout the evening. Ultimately, Milwaukee's pitching strength should edge out a narrow victory, making the underdog Rays a strong candidate to cover the 1.5-run spread.\n\nOver Under: The low total of 6.5 runs appropriately reflects an elite pitching matchup expected from Milwaukee's side alongside Tampa Bay's traditionally stingy run prevention strategies. Both ballclubs feature high-leverage bullpen arms and disciplined defensive units that tend to suppress high-scoring outbursts. Consequently, the game projects to play out at a measured pace, keeping the combined score safely under the posted line.\n\nSplits: Based on public betting tendencies and the -149 away moneyline, an estimated 62% of bets are backing the Milwaukee Brewers to win outright, while roughly 58% of run-line wagers lean toward the Tampa Bay Rays plus the 1.5 runs. The moneyline has ticked slightly upward toward Milwaukee since opening, whereas the total of 6.5 has remained steady with minor juice adjustments on the over.",
+                    "generated_at": "2026-10-28T10:23:28.435731+00:00",
+                    "odds_hash": "67d466a29b007f98",
+                    "model": "gemini-3.5-flash-lite"
+                  },
                   "is_slot_pick": true
                 }
               ]
@@ -58626,7 +58668,20 @@
           ]
         }
       ]
+    },
+    {
+      "week": 20261029,
+      "total_games": 0,
+      "days": [
+        {
+          "date": "2026-10-29",
+          "weekday": "Thursday",
+          "game_count": 0,
+          "is_preseason": false,
+          "time_slots": []
+        }
+      ]
     }
   ],
-  "current_week": 20261027
+  "current_week": 20261028
 }
