@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-01T11:08:24.823267+00:00",
+  "generated_at": "2026-11-01T17:44:24.326035+00:00",
   "season": 2026,
   "display_timezone": "America/Chicago",
   "weeks": [
@@ -14608,9 +14608,112 @@
           "time_slots": [
             {
               "slot": "Afternoon",
-              "best_matchup_score": 50.0,
+              "best_matchup_score": 55.6,
               "pick_reason": "spread_and_wins",
               "games": [
+                {
+                  "id": "401909903",
+                  "start_time": "2026-11-01T20:30Z",
+                  "start_time_tbd": false,
+                  "home_team": "Orlando Magic",
+                  "home_abbr": "ORL",
+                  "home_record": "2-3",
+                  "home_logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/orl.png",
+                  "home_location": "Orlando",
+                  "away_team": "Boston Celtics",
+                  "away_abbr": "BOS",
+                  "away_record": "4-1",
+                  "away_logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+                  "away_location": "Boston",
+                  "matchup_score": 55.6,
+                  "channel": "NBA League Pass",
+                  "venue": "Kia Center",
+                  "venue_location": "Orlando, FL",
+                  "neutral_site": false,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {
+                        "home": {
+                          "line": 7.5,
+                          "american": -115
+                        },
+                        "away": {
+                          "line": -7.5,
+                          "american": -105
+                        }
+                      },
+                      "moneyline": {
+                        "home": {
+                          "line": null,
+                          "american": 220
+                        },
+                        "away": {
+                          "line": null,
+                          "american": -270
+                        }
+                      },
+                      "total": {
+                        "over": {
+                          "line": 222.5,
+                          "american": -103
+                        },
+                        "under": {
+                          "line": 222.5,
+                          "american": -121
+                        }
+                      }
+                    },
+                    "fanduel": {
+                      "spread": {
+                        "home": {
+                          "line": 7.5,
+                          "american": -128
+                        },
+                        "away": {
+                          "line": -7.5,
+                          "american": 104
+                        }
+                      },
+                      "moneyline": {
+                        "home": {
+                          "line": null,
+                          "american": 205
+                        },
+                        "away": {
+                          "line": null,
+                          "american": -250
+                        }
+                      },
+                      "total": {
+                        "over": {
+                          "line": 222.5,
+                          "american": -106
+                        },
+                        "under": {
+                          "line": 222.5,
+                          "american": -114
+                        }
+                      }
+                    }
+                  },
+                  "matchup_rank": 2,
+                  "gemini_prediction": {
+                    "winner": "Boston Celtics",
+                    "confidence": 78,
+                    "ats_pick": "Orlando Magic",
+                    "ats_confidence": 65,
+                    "total_pick": "Under",
+                    "total_confidence": 60,
+                    "analysis": "The Boston Celtics enter this matchup showcasing elite offensive efficiency and superior depth during the 2026 campaign. Orlando possesses a formidable defensive identity at home that can disrupt perimeter-oriented attacks and keep games relatively close. While Boston ultimately secures the outright victory thanks to superior late-game execution, 7.5 points is a hefty margin on the road. The Orlando Magic have consistently proven resilient against top-tier opponents by controlling the paint and slowing down the tempo. Consequently, the Magic will do enough defensively to keep the final margin well within the single-digit spread.",
+                    "ou_analysis": "Pace projections indicate a deliberate half-court style controlled largely by Orlando's defensive schemes and Boston's measured ball movement. Both squads feature strong perimeter defensive rotations that suppress high-volume three-point shooting efficiency. These tactical factors combined with a juiced Under line on multiple sportsbooks point directly toward a lower-scoring affair.",
+                    "splits_and_direction": "Public betting splits heavily favor the Boston Celtics on the moneyline and spread due to their prominent brand and strong start, capturing roughly 68 percent of the early action. The spread and total have remained relatively stable since opening, with minor juice adjustments toward the Under and the underdog Magic.",
+                    "display_text": "Analysis: The Boston Celtics enter this matchup showcasing elite offensive efficiency and superior depth during the 2026 campaign. Orlando possesses a formidable defensive identity at home that can disrupt perimeter-oriented attacks and keep games relatively close. While Boston ultimately secures the outright victory thanks to superior late-game execution, 7.5 points is a hefty margin on the road. The Orlando Magic have consistently proven resilient against top-tier opponents by controlling the paint and slowing down the tempo. Consequently, the Magic will do enough defensively to keep the final margin well within the single-digit spread.\n\nOver Under: Pace projections indicate a deliberate half-court style controlled largely by Orlando's defensive schemes and Boston's measured ball movement. Both squads feature strong perimeter defensive rotations that suppress high-volume three-point shooting efficiency. These tactical factors combined with a juiced Under line on multiple sportsbooks point directly toward a lower-scoring affair.\n\nSplits: Public betting splits heavily favor the Boston Celtics on the moneyline and spread due to their prominent brand and strong start, capturing roughly 68 percent of the early action. The spread and total have remained relatively stable since opening, with minor juice adjustments toward the Under and the underdog Magic.",
+                    "generated_at": "2026-11-01T17:44:03.581072+00:00",
+                    "odds_hash": "5189258fe70f1ac0",
+                    "model": "gemini-3.5-flash-lite"
+                  },
+                  "is_slot_pick": true
+                },
                 {
                   "id": "401909904",
                   "start_time": "2026-11-01T22:00Z",
@@ -14625,7 +14728,7 @@
                   "away_record": "0-5",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bkn.png",
                   "away_location": "Brooklyn",
-                  "matchup_score": 50.0,
+                  "matchup_score": 60.0,
                   "channel": "NBA League Pass, DAZN (YES), DAZN IND",
                   "venue": "Gainbridge Fieldhouse",
                   "venue_location": "Indianapolis, IN",
@@ -14634,32 +14737,32 @@
                     "draftkings": {
                       "spread": {
                         "home": {
-                          "line": -4.5,
-                          "american": -105
+                          "line": -3.5,
+                          "american": -112
                         },
                         "away": {
-                          "line": 4.5,
-                          "american": -115
+                          "line": 3.5,
+                          "american": -108
                         }
                       },
                       "moneyline": {
                         "home": {
                           "line": null,
-                          "american": -175
+                          "american": -170
                         },
                         "away": {
                           "line": null,
-                          "american": 145
+                          "american": 142
                         }
                       },
                       "total": {
                         "over": {
                           "line": 230.5,
-                          "american": -115
+                          "american": -112
                         },
                         "under": {
                           "line": 230.5,
-                          "american": -105
+                          "american": -108
                         }
                       }
                     },
@@ -14696,7 +14799,7 @@
                       }
                     }
                   },
-                  "matchup_rank": 2,
+                  "matchup_rank": 3,
                   "gemini_prediction": {
                     "winner": "Indiana Pacers",
                     "confidence": 68,
@@ -14704,115 +14807,12 @@
                     "ats_confidence": 62,
                     "total_pick": "Over",
                     "total_confidence": 65,
-                    "analysis": "The Indiana Pacers return home to host the Brooklyn Nets in a matchup where offensive efficiency heavily favors the hosts. Indiana's current-season metrics highlight superior floor spacing and a higher assist-to-turnover ratio compared to their eastern conference rivals. Brooklyn has struggled to establish defensive consistency on the perimeter, which plays directly into the strengths of the Pacers' backcourt. Although the spread varies slightly between -3.5 and -4.5 across major sportsbooks, the Pacers possess enough firepower to clear this short margin. Expect Indiana to control the pace early and maintain a comfortable lead through the fourth quarter.",
-                    "ou_analysis": "Both teams currently operate at a swift pace and favor transition opportunities over half-court grinding, setting up an elevated scoring environment. The defensive rebounding rates for both squads indicate limited second-chance prevention, which should inflate total possessions. Consequently, the game total of 230.5 is primed to go over as high-efficiency shooting suppresses defensive stops down the stretch.",
-                    "splits_and_direction": "Approximately 61 percent of the public money is backing the Indiana Pacers on the spread and moneyline, driving the consensus line down from the opening number of -4.5 at DraftKings to -3.5 at FanDuel. Meanwhile, heavy action on the over has nudged juice slightly upward across multiple sportsbooks while the total number itself remains anchored at 230.5.",
-                    "display_text": "Analysis: The Indiana Pacers return home to host the Brooklyn Nets in a matchup where offensive efficiency heavily favors the hosts. Indiana's current-season metrics highlight superior floor spacing and a higher assist-to-turnover ratio compared to their eastern conference rivals. Brooklyn has struggled to establish defensive consistency on the perimeter, which plays directly into the strengths of the Pacers' backcourt. Although the spread varies slightly between -3.5 and -4.5 across major sportsbooks, the Pacers possess enough firepower to clear this short margin. Expect Indiana to control the pace early and maintain a comfortable lead through the fourth quarter.\n\nOver Under: Both teams currently operate at a swift pace and favor transition opportunities over half-court grinding, setting up an elevated scoring environment. The defensive rebounding rates for both squads indicate limited second-chance prevention, which should inflate total possessions. Consequently, the game total of 230.5 is primed to go over as high-efficiency shooting suppresses defensive stops down the stretch.\n\nSplits: Approximately 61 percent of the public money is backing the Indiana Pacers on the spread and moneyline, driving the consensus line down from the opening number of -4.5 at DraftKings to -3.5 at FanDuel. Meanwhile, heavy action on the over has nudged juice slightly upward across multiple sportsbooks while the total number itself remains anchored at 230.5.",
-                    "generated_at": "2026-11-01T11:08:13.806667+00:00",
-                    "odds_hash": "5cac1b304f4d7303",
-                    "model": "gemini-3.5-flash-lite"
-                  },
-                  "is_slot_pick": true
-                },
-                {
-                  "id": "401909903",
-                  "start_time": "2026-11-01T20:30Z",
-                  "start_time_tbd": false,
-                  "home_team": "Orlando Magic",
-                  "home_abbr": "ORL",
-                  "home_record": "2-3",
-                  "home_logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/orl.png",
-                  "home_location": "Orlando",
-                  "away_team": "Boston Celtics",
-                  "away_abbr": "BOS",
-                  "away_record": "4-1",
-                  "away_logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
-                  "away_location": "Boston",
-                  "matchup_score": 55.6,
-                  "channel": "NBA League Pass",
-                  "venue": "Kia Center",
-                  "venue_location": "Orlando, FL",
-                  "neutral_site": false,
-                  "odds": {
-                    "draftkings": {
-                      "spread": {
-                        "home": {
-                          "line": 7.5,
-                          "american": -125
-                        },
-                        "away": {
-                          "line": -7.5,
-                          "american": 101
-                        }
-                      },
-                      "moneyline": {
-                        "home": {
-                          "line": null,
-                          "american": 210
-                        },
-                        "away": {
-                          "line": null,
-                          "american": -258
-                        }
-                      },
-                      "total": {
-                        "over": {
-                          "line": 222.5,
-                          "american": -102
-                        },
-                        "under": {
-                          "line": 222.5,
-                          "american": -122
-                        }
-                      }
-                    },
-                    "fanduel": {
-                      "spread": {
-                        "home": {
-                          "line": 6.5,
-                          "american": -110
-                        },
-                        "away": {
-                          "line": -6.5,
-                          "american": -110
-                        }
-                      },
-                      "moneyline": {
-                        "home": {
-                          "line": null,
-                          "american": 205
-                        },
-                        "away": {
-                          "line": null,
-                          "american": -250
-                        }
-                      },
-                      "total": {
-                        "over": {
-                          "line": 222.5,
-                          "american": -110
-                        },
-                        "under": {
-                          "line": 222.5,
-                          "american": -110
-                        }
-                      }
-                    }
-                  },
-                  "matchup_rank": 3,
-                  "gemini_prediction": {
-                    "winner": "Boston Celtics",
-                    "confidence": 78,
-                    "ats_pick": "Orlando Magic",
-                    "ats_confidence": 65,
-                    "total_pick": "Under",
-                    "total_confidence": 60,
-                    "analysis": "The Boston Celtics enter this matchup showcasing superior offensive efficiency and elite perimeter shooting that will ultimately secure them the outright victory. However, the Orlando Magic have demonstrated tenacious interior defense and reliable home-court resilience throughout the 2026 season thus far. While Boston's depth gives them the clear edge down the stretch of close quarters, Orlando's ability to grind out possessions keeps them within striking distance. The visiting Celtics will lean on their veteran execution to close out the game in the final minutes. Consequently, the Magic are well-positioned to keep the final margin within the generous +7.5 spread provided by DraftKings.",
-                    "ou_analysis": "Both teams feature stout defensive schemes that routinely limit opponents' transition opportunities and half-court efficiency. The pace of play is expected to slow down significantly as Orlando tries to limit Boston's explosive offensive possessions. Considering these factors and the current scoring trends, the combined final score will safely land below the 222.5 total.",
-                    "splits_and_direction": "Based on public tendencies, approximately 68 percent of bets are backing the Boston Celtics on the spread and moneyline, while 55 percent of wagers are leaning toward the under. The spread has moved slightly from the opening number of 6.0 up to 7.5 at DraftKings, and the total has ticked down from 223.0 to 222.5.",
-                    "display_text": "Analysis: The Boston Celtics enter this matchup showcasing superior offensive efficiency and elite perimeter shooting that will ultimately secure them the outright victory. However, the Orlando Magic have demonstrated tenacious interior defense and reliable home-court resilience throughout the 2026 season thus far. While Boston's depth gives them the clear edge down the stretch of close quarters, Orlando's ability to grind out possessions keeps them within striking distance. The visiting Celtics will lean on their veteran execution to close out the game in the final minutes. Consequently, the Magic are well-positioned to keep the final margin within the generous +7.5 spread provided by DraftKings.\n\nOver Under: Both teams feature stout defensive schemes that routinely limit opponents' transition opportunities and half-court efficiency. The pace of play is expected to slow down significantly as Orlando tries to limit Boston's explosive offensive possessions. Considering these factors and the current scoring trends, the combined final score will safely land below the 222.5 total.\n\nSplits: Based on public tendencies, approximately 68 percent of bets are backing the Boston Celtics on the spread and moneyline, while 55 percent of wagers are leaning toward the under. The spread has moved slightly from the opening number of 6.0 up to 7.5 at DraftKings, and the total has ticked down from 223.0 to 222.5.",
-                    "generated_at": "2026-11-01T11:08:03.821533+00:00",
-                    "odds_hash": "ad17a5ada19a4cb2",
+                    "analysis": "The Indiana Pacers return home to host the Brooklyn Nets in a matchup where offensive efficiency heavily favors the hosts. Indiana has shown better execution in the half-court during the early weeks of the 2026 campaign, while Brooklyn continues to struggle with defensive rotations on the perimeter. The Pacers' high-tempo attack should pressure the visiting defense into early foul trouble and create high-percentage transition opportunities. Although the Nets possess capable scorers who can keep games competitive, their inability to secure defensive rebounds will ultimately hurt them. Consequently, Indiana is well-positioned to control the pace, build a comfortable lead, and cover the modest 3.5-point spread.",
+                    "ou_analysis": "Both teams feature up-tempo playing styles that consistently generate a high volume of possessions per game. The scoring environment will benefit from subpar perimeter defenses on both sides, leading to plenty of open three-point attempts and transition run-outs. Given these factors, the combined final score is expected to comfortably surpass the posted total of 230.5 points.",
+                    "splits_and_direction": "Based on public tendencies, approximately 65% of spread bets and moneyline wagers are backing the home favorite, while the total is seeing heavy action on the over at roughly 58%. The spread and moneyline have remained stable since opening, whereas the total has ticked up slightly from an opener of 229.5 to 230.5.",
+                    "display_text": "Analysis: The Indiana Pacers return home to host the Brooklyn Nets in a matchup where offensive efficiency heavily favors the hosts. Indiana has shown better execution in the half-court during the early weeks of the 2026 campaign, while Brooklyn continues to struggle with defensive rotations on the perimeter. The Pacers' high-tempo attack should pressure the visiting defense into early foul trouble and create high-percentage transition opportunities. Although the Nets possess capable scorers who can keep games competitive, their inability to secure defensive rebounds will ultimately hurt them. Consequently, Indiana is well-positioned to control the pace, build a comfortable lead, and cover the modest 3.5-point spread.\n\nOver Under: Both teams feature up-tempo playing styles that consistently generate a high volume of possessions per game. The scoring environment will benefit from subpar perimeter defenses on both sides, leading to plenty of open three-point attempts and transition run-outs. Given these factors, the combined final score is expected to comfortably surpass the posted total of 230.5 points.\n\nSplits: Based on public tendencies, approximately 65% of spread bets and moneyline wagers are backing the home favorite, while the total is seeing heavy action on the over at roughly 58%. The spread and moneyline have remained stable since opening, whereas the total has ticked up slightly from an opener of 229.5 to 230.5.",
+                    "generated_at": "2026-11-01T17:44:13.620847+00:00",
+                    "odds_hash": "b2a6324e7fec9778",
                     "model": "gemini-3.5-flash-lite"
                   },
                   "is_slot_pick": false
@@ -14847,64 +14847,64 @@
                     "draftkings": {
                       "spread": {
                         "home": {
-                          "line": -4.5,
-                          "american": -110
+                          "line": -2.5,
+                          "american": -115
                         },
                         "away": {
-                          "line": 4.5,
-                          "american": -110
+                          "line": 2.5,
+                          "american": -105
                         }
                       },
                       "moneyline": {
                         "home": {
                           "line": null,
-                          "american": -192
+                          "american": -148
                         },
                         "away": {
                           "line": null,
-                          "american": 160
+                          "american": 124
                         }
                       },
                       "total": {
                         "over": {
-                          "line": 227.5,
-                          "american": -110
+                          "line": 225.5,
+                          "american": -116
                         },
                         "under": {
-                          "line": 227.5,
-                          "american": -110
+                          "line": 225.5,
+                          "american": -107
                         }
                       }
                     },
                     "fanduel": {
                       "spread": {
                         "home": {
-                          "line": -4.5,
+                          "line": -2.5,
                           "american": -110
                         },
                         "away": {
-                          "line": 4.5,
+                          "line": 2.5,
                           "american": -110
                         }
                       },
                       "moneyline": {
                         "home": {
                           "line": null,
-                          "american": -180
+                          "american": -144
                         },
                         "away": {
                           "line": null,
-                          "american": 152
+                          "american": 122
                         }
                       },
                       "total": {
                         "over": {
-                          "line": 227.5,
-                          "american": -118
+                          "line": 225.5,
+                          "american": -114
                         },
                         "under": {
-                          "line": 227.5,
-                          "american": -104
+                          "line": 225.5,
+                          "american": -106
                         }
                       }
                     }
@@ -14912,17 +14912,17 @@
                   "matchup_rank": 1,
                   "gemini_prediction": {
                     "winner": "Los Angeles Lakers",
-                    "confidence": 68,
+                    "confidence": 62,
                     "ats_pick": "Los Angeles Lakers",
-                    "ats_confidence": 62,
+                    "ats_confidence": 58,
                     "total_pick": "Over",
-                    "total_confidence": 60,
-                    "analysis": "The Los Angeles Lakers enter this home matchup displaying superior offensive execution and more reliable depth early in the 2026 season. Toronto has struggled on the defensive glass and commits too many turnovers on the road, which will give Los Angeles extra possessions. LeBron James and Anthony Davis continue to orchestrate an efficient half-court offense that should exploit Toronto's interior defensive weaknesses. Although the Raptors possess a gritty perimeter rotation, their scoring droughts will ultimately cost them against a disciplined Lakers squad. Consequently, the Lakers control the tempo throughout the contest and secure a comfortable double-digit victory to cover the 4.5-point spread.",
-                    "ou_analysis": "Both teams operate at an above-average offensive pace and rank within the top tier of early-season transition scoring efficiency. Defensive rotations have been sluggish for both squads across their opening 2026 fixtures, allowing high percentages on uncontested three-point attempts. Therefore, these offensive trends combined with minimal notable injury absences on the scoring side push the combined final score past the 227.5-point total.",
-                    "splits_and_direction": "Based on standard public betting tendencies, approximately 65 percent of spread wagers and 72 percent of moneyline bets are backing the home favorite Los Angeles Lakers, while 58 percent of total handle leans toward the Over. The point spread has remained relatively stable at -4.5 after opening around -4, and the total has moved up slightly from an opening line of 226.5 to 227.5.",
-                    "display_text": "Analysis: The Los Angeles Lakers enter this home matchup displaying superior offensive execution and more reliable depth early in the 2026 season. Toronto has struggled on the defensive glass and commits too many turnovers on the road, which will give Los Angeles extra possessions. LeBron James and Anthony Davis continue to orchestrate an efficient half-court offense that should exploit Toronto's interior defensive weaknesses. Although the Raptors possess a gritty perimeter rotation, their scoring droughts will ultimately cost them against a disciplined Lakers squad. Consequently, the Lakers control the tempo throughout the contest and secure a comfortable double-digit victory to cover the 4.5-point spread.\n\nOver Under: Both teams operate at an above-average offensive pace and rank within the top tier of early-season transition scoring efficiency. Defensive rotations have been sluggish for both squads across their opening 2026 fixtures, allowing high percentages on uncontested three-point attempts. Therefore, these offensive trends combined with minimal notable injury absences on the scoring side push the combined final score past the 227.5-point total.\n\nSplits: Based on standard public betting tendencies, approximately 65 percent of spread wagers and 72 percent of moneyline bets are backing the home favorite Los Angeles Lakers, while 58 percent of total handle leans toward the Over. The point spread has remained relatively stable at -4.5 after opening around -4, and the total has moved up slightly from an opening line of 226.5 to 227.5.",
-                    "generated_at": "2026-11-01T11:08:24.234255+00:00",
-                    "odds_hash": "4f2643cbc9017690",
+                    "total_confidence": 55,
+                    "analysis": "The Los Angeles Lakers enter this home matchup holding a solid offensive rhythm that has defined their early 2026 campaign. Toronto has shown flashes of resilience on the road, but their defensive lapses on the perimeter tend to get exposed by elite playmakers. Los Angeles utilizes their home court advantage to secure steady possessions and capitalize on second-chance opportunities. The Raptors struggle to maintain defensive intensity down the stretch of tightly contested fourth quarters. Ultimately, the Lakers' star power and superior execution down the stretch secure both the outright victory and a cover of the short -2.5 spread.",
+                    "ou_analysis": "Both squads currently play at an above-average pace, prioritizing transition offense and early shot-clock opportunities over grinding half-court sets. The defensive metrics for each team suggest vulnerability in rim protection and perimeter containment, paving the way for efficient scoring. Consequently, these offensive tendencies easily push the combined final score past the established 225.5 total.",
+                    "splits_and_direction": "Approximately 58% of public bets are currently backing the Los Angeles Lakers on the spread and moneyline, while roughly 54% of wagers lean toward the Over. The spread has remained steady at -2.5 and the total has held firm at 225.5 since opening at these sportsbooks.",
+                    "display_text": "Analysis: The Los Angeles Lakers enter this home matchup holding a solid offensive rhythm that has defined their early 2026 campaign. Toronto has shown flashes of resilience on the road, but their defensive lapses on the perimeter tend to get exposed by elite playmakers. Los Angeles utilizes their home court advantage to secure steady possessions and capitalize on second-chance opportunities. The Raptors struggle to maintain defensive intensity down the stretch of tightly contested fourth quarters. Ultimately, the Lakers' star power and superior execution down the stretch secure both the outright victory and a cover of the short -2.5 spread.\n\nOver Under: Both squads currently play at an above-average pace, prioritizing transition offense and early shot-clock opportunities over grinding half-court sets. The defensive metrics for each team suggest vulnerability in rim protection and perimeter containment, paving the way for efficient scoring. Consequently, these offensive tendencies easily push the combined final score past the established 225.5 total.\n\nSplits: Approximately 58% of public bets are currently backing the Los Angeles Lakers on the spread and moneyline, while roughly 54% of wagers lean toward the Over. The spread has remained steady at -2.5 and the total has held firm at 225.5 since opening at these sportsbooks.",
+                    "generated_at": "2026-11-01T17:44:23.514129+00:00",
+                    "odds_hash": "346a45065cd30e7f",
                     "model": "gemini-3.5-flash-lite"
                   },
                   "is_slot_pick": true
