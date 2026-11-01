@@ -402,6 +402,39 @@ def on_main_channel(event):
     return any(_norm_channel(tok) in wanted for tok in _channel_tokens(broadcast_names(event)))
 
 
+# Nebraska (Huskers) always gets pulled onto the board, regardless of what
+# channel the game is on -- same override the NCAAF board has.
+NEBRASKA_TEAM = "Nebraska"
+
+
+def is_nebraska_team(team):
+    """True if an ESPN `team` object (or a bare name string) is Nebraska.
+
+    ESPN's displayName is "Nebraska Cornhuskers" (mascot included), so match
+    on the school `location` ("Nebraska") first, then fall back to a name
+    that starts with "Nebraska " so e.g. Omaha doesn't match."""
+    if isinstance(team, str):
+        name = team.strip()
+        return name == NEBRASKA_TEAM or name.startswith(NEBRASKA_TEAM + " ")
+    if not team:
+        return False
+    if (team.get("location") or "").strip() == NEBRASKA_TEAM:
+        return True
+    return is_nebraska_team(team.get("displayName") or "")
+
+
+def event_has_nebraska(event):
+    comps = event.get("competitions") or []
+    if not comps:
+        return False
+    return any(is_nebraska_team(c.get("team")) for c in comps[0].get("competitors", []))
+
+
+def on_board_channel(event):
+    """Main-channel games make the board, and so does any Nebraska game."""
+    return on_main_channel(event) or event_has_nebraska(event)
+
+
 def _parse_espn_record(competitor):
     """Extract (wins, losses, summary) from an ESPN scoreboard competitor's
     `records` list, or (None, None, None) if no overall record is present
@@ -535,7 +568,7 @@ def build_day(day, sharp_key, gemini_key=None, previous_odds_by_id=None,
     for event in events:
         if not event.get("competitions"):
             continue
-        if not on_main_channel(event):
+        if not on_board_channel(event):
             continue
         _board_ids.append(str(event.get("id")))
     _all_frozen = bool(_board_ids) and bool(started_game_ids) and all(
@@ -572,7 +605,7 @@ def build_day(day, sharp_key, gemini_key=None, previous_odds_by_id=None,
             continue
 
         outlet = broadcast_label(event)
-        if not on_main_channel(event):
+        if not on_board_channel(event):
             skipped_no_tv += 1
             continue
 
@@ -662,6 +695,7 @@ def build_day(day, sharp_key, gemini_key=None, previous_odds_by_id=None,
                 ) if x
             ) or None,
             "neutral_site": comp.get("neutralSite", False),
+            "is_nebraska": is_nebraska_team(home["team"]) or is_nebraska_team(away["team"]),
             "odds": odds,
             "_home_id": home_id,
             "_away_id": away_id,
