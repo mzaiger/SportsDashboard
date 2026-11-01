@@ -1065,12 +1065,19 @@ const SLOT_ICON = {
   'Time TBD': '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M9.1 9a3 3 0 0 1 5.8 1c0 2-3 3-3 3M12 17h.01"/></svg>'
 };
 
-// Keep a game on the Picks board if the person has picked it, or (CFB only)
-// if it's Nebraska's game -- Nebraska always shows up here whether or not
-// it's been picked.
+// Keep a game on the Picks board if the person has picked it, or (CFB and
+// NCAAMB) if it's Nebraska's game -- Nebraska always shows up here whether
+// or not it's been picked. NCAAMB falls back to the team names for games
+// built before the is_nebraska flag existed in the JSON.
+function isNebraskaGame(g) {
+  if (g.is_nebraska) return true;
+  const n = v => (v || '').trim();
+  const isNeb = (loc, name) => n(loc) === 'Nebraska' || n(name).startsWith('Nebraska ');
+  return isNeb(g.home_location, g.home_team) || isNeb(g.away_location, g.away_team);
+}
 function keepGame(sport, g) {
   if (hasAnyPick(sport, g.id)) return true;
-  if (sport === 'cfb' && g.is_nebraska) return true;
+  if ((sport === 'cfb' || sport === 'ncaamb') && isNebraskaGame(g)) return true;
   return false;
 }
 
