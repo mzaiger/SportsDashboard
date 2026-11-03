@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-03T05:07:19.130313+00:00",
+  "generated_at": "2026-11-03T15:54:22.463539+00:00",
   "season": 2026,
   "display_timezone": "America/Chicago",
   "weeks": [
@@ -16483,7 +16483,817 @@
           "time_slots": []
         }
       ]
+    },
+    {
+      "week": 20261104,
+      "total_games": 14,
+      "days": [
+        {
+          "date": "2026-11-04",
+          "weekday": "Wednesday",
+          "game_count": 14,
+          "is_preseason": false,
+          "time_slots": [
+            {
+              "slot": "Prime Time",
+              "best_matchup_score": 0.0,
+              "pick_reason": "spread_and_wins",
+              "games": [
+                {
+                  "id": "401909922",
+                  "start_time": "2026-11-05T00:00Z",
+                  "start_time_tbd": false,
+                  "home_team": "Detroit Pistons",
+                  "home_abbr": "DET",
+                  "home_record": "6-1",
+                  "home_logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/det.png",
+                  "home_location": "Detroit",
+                  "away_team": "Philadelphia 76ers",
+                  "away_abbr": "PHI",
+                  "away_record": "7-1",
+                  "away_logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phi.png",
+                  "away_location": "Philadelphia",
+                  "matchup_score": 0.0,
+                  "channel": "ESPN",
+                  "venue": "Little Caesars Arena",
+                  "venue_location": "Detroit, MI",
+                  "neutral_site": false,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {
+                        "away": {
+                          "line": 1.5,
+                          "american": -110
+                        },
+                        "home": {
+                          "line": -1.5,
+                          "american": -110
+                        }
+                      },
+                      "moneyline": {
+                        "home": {
+                          "line": null,
+                          "american": -119
+                        },
+                        "away": {
+                          "line": null,
+                          "american": 101
+                        }
+                      },
+                      "total": {
+                        "over": {
+                          "line": 218.5,
+                          "american": -110
+                        },
+                        "under": {
+                          "line": 218.5,
+                          "american": -110
+                        }
+                      }
+                    },
+                    "fanduel": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    }
+                  },
+                  "matchup_rank": 1,
+                  "gemini_prediction": {
+                    "winner": "Philadelphia 76ers",
+                    "confidence": 56,
+                    "ats_pick": "Philadelphia 76ers",
+                    "ats_confidence": 56,
+                    "total_pick": "Over",
+                    "total_confidence": 54,
+                    "analysis": "The Philadelphia 76ers enter this matchup with superior offensive efficiency and consistent execution in the early 2026 season. Detroit Pistons continues to struggle defensively, allowing opponents easy transition opportunities and high conversion rates inside the arc. Philadelphia's perimeter shooting will stretch the Pistons' weak help-defense rotations and create consistent scoring lanes. Although playing on the road introduces some volatility, the 76ers possess enough star power and depth to secure a narrow victory. Consequently, laying the slight underdog points with Philadelphia provides solid value given the current trajectory of both squads.",
+                    "ou_analysis": "Both teams feature up-tempo offensive philosophies that consistently push the pace in early-season possessions. Defensive lapses on both sides of the ball point toward an elevated scoring environment with plenty of second-chance opportunities. Therefore, the combined final score is expected to exceed the posted 218.5 total comfortably.",
+                    "splits_and_direction": "Public betting splits estimate roughly 58 percent of spread tickets and moneyline wagers supporting the Detroit Pistons as the home team, while the remaining action backs Philadelphia. The home spread has held steady at -1.5 and the total has ticked up slightly from an opener of 217.5 to 218.5 based on early over money.",
+                    "display_text": "Analysis: The Philadelphia 76ers enter this matchup with superior offensive efficiency and consistent execution in the early 2026 season. Detroit Pistons continues to struggle defensively, allowing opponents easy transition opportunities and high conversion rates inside the arc. Philadelphia's perimeter shooting will stretch the Pistons' weak help-defense rotations and create consistent scoring lanes. Although playing on the road introduces some volatility, the 76ers possess enough star power and depth to secure a narrow victory. Consequently, laying the slight underdog points with Philadelphia provides solid value given the current trajectory of both squads.\n\nOver Under: Both teams feature up-tempo offensive philosophies that consistently push the pace in early-season possessions. Defensive lapses on both sides of the ball point toward an elevated scoring environment with plenty of second-chance opportunities. Therefore, the combined final score is expected to exceed the posted 218.5 total comfortably.\n\nSplits: Public betting splits estimate roughly 58 percent of spread tickets and moneyline wagers supporting the Detroit Pistons as the home team, while the remaining action backs Philadelphia. The home spread has held steady at -1.5 and the total has ticked up slightly from an opener of 217.5 to 218.5 based on early over money.",
+                    "generated_at": "2026-11-03T15:53:43.067758+00:00",
+                    "odds_hash": "3c80b070aa519d98",
+                    "model": "gemini-3.5-flash-lite"
+                  },
+                  "is_slot_pick": true
+                },
+                {
+                  "id": "401909929",
+                  "start_time": "2026-11-05T01:00Z",
+                  "start_time_tbd": false,
+                  "home_team": "Oklahoma City Thunder",
+                  "home_abbr": "OKC",
+                  "home_record": "5-2",
+                  "home_logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
+                  "home_location": "Oklahoma City",
+                  "away_team": "Cleveland Cavaliers",
+                  "away_abbr": "CLE",
+                  "away_record": "4-3",
+                  "away_logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cle.png",
+                  "away_location": "Cleveland",
+                  "matchup_score": 22.0,
+                  "channel": "KSBI, Thunder App, DAZN CLE",
+                  "venue": "Paycom Center",
+                  "venue_location": "Oklahoma City, OK",
+                  "neutral_site": false,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {
+                        "home": {
+                          "line": -2.5,
+                          "american": -115
+                        },
+                        "away": {
+                          "line": 2.5,
+                          "american": -105
+                        }
+                      },
+                      "moneyline": {
+                        "away": {
+                          "line": null,
+                          "american": 117
+                        },
+                        "home": {
+                          "line": null,
+                          "american": -138
+                        }
+                      },
+                      "total": {
+                        "over": {
+                          "line": 228.5,
+                          "american": -110
+                        },
+                        "under": {
+                          "line": 228.5,
+                          "american": -110
+                        }
+                      }
+                    },
+                    "fanduel": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    }
+                  },
+                  "matchup_rank": 2,
+                  "gemini_prediction": {
+                    "winner": "Oklahoma City Thunder",
+                    "confidence": 62,
+                    "ats_pick": "Oklahoma City Thunder",
+                    "ats_confidence": 58,
+                    "total_pick": "Over",
+                    "total_confidence": 55,
+                    "analysis": "The Oklahoma City Thunder return home boasting an exceptional offensive rhythm that has defined their early 2026 campaign. Cleveland presents a formidable challenge with their elite interior defense and strong perimeter shooting, but they struggle to maintain defensive intensity on the road. Oklahoma City's superior depth and transition scoring should allow them to secure a narrow lead through most of the contest. As the fourth quarter unfolds, the Thunder's home-court advantage and clutch shot-making will prove decisive in preserving the victory. Consequently, laying the modest 2.5 points with the hosts is a mathematically sound play given their current trajectory.",
+                    "ou_analysis": "Both squads operate at a top-tier pace that consistently pushes possessions well above the league average. Their potent offensive efficiencies and high three-point volume point toward a scoring environment that easily eclipses the standard baseline. Therefore, the high-octane nature of this matchup drives the combined score cleanly over the posted 228.5 total.",
+                    "splits_and_direction": "Based on early public tendencies, approximately 58% of moneyline and spread bets are backing the home Thunder, while public action on the total is split roughly down the middle at 50% for each side. The spread has moved slightly from an opening line of -2 to the current -2.5, and the total has ticked up from an opening number of 227 to 228.5 due to heavy early over money.",
+                    "display_text": "Analysis: The Oklahoma City Thunder return home boasting an exceptional offensive rhythm that has defined their early 2026 campaign. Cleveland presents a formidable challenge with their elite interior defense and strong perimeter shooting, but they struggle to maintain defensive intensity on the road. Oklahoma City's superior depth and transition scoring should allow them to secure a narrow lead through most of the contest. As the fourth quarter unfolds, the Thunder's home-court advantage and clutch shot-making will prove decisive in preserving the victory. Consequently, laying the modest 2.5 points with the hosts is a mathematically sound play given their current trajectory.\n\nOver Under: Both squads operate at a top-tier pace that consistently pushes possessions well above the league average. Their potent offensive efficiencies and high three-point volume point toward a scoring environment that easily eclipses the standard baseline. Therefore, the high-octane nature of this matchup drives the combined score cleanly over the posted 228.5 total.\n\nSplits: Based on early public tendencies, approximately 58% of moneyline and spread bets are backing the home Thunder, while public action on the total is split roughly down the middle at 50% for each side. The spread has moved slightly from an opening line of -2 to the current -2.5, and the total has ticked up from an opening number of 227 to 228.5 due to heavy early over money.",
+                    "generated_at": "2026-11-03T15:54:00.867029+00:00",
+                    "odds_hash": "38357e3e1cb6aded",
+                    "model": "gemini-3.5-flash-lite"
+                  },
+                  "is_slot_pick": false
+                },
+                {
+                  "id": "401909930",
+                  "start_time": "2026-11-05T01:30Z",
+                  "start_time_tbd": false,
+                  "home_team": "Houston Rockets",
+                  "home_abbr": "HOU",
+                  "home_record": "7-1",
+                  "home_logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/hou.png",
+                  "home_location": "Houston",
+                  "away_team": "Minnesota Timberwolves",
+                  "away_abbr": "MIN",
+                  "away_record": "5-3",
+                  "away_logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/min.png",
+                  "away_location": "Minnesota",
+                  "matchup_score": 43.9,
+                  "channel": "DAZN MIN",
+                  "venue": "Toyota Center (Houston)",
+                  "venue_location": "Houston, TX",
+                  "neutral_site": false,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {
+                        "home": {
+                          "line": -9.5,
+                          "american": -105
+                        },
+                        "away": {
+                          "line": 9.5,
+                          "american": -115
+                        }
+                      },
+                      "moneyline": {
+                        "away": {
+                          "line": null,
+                          "american": 276
+                        },
+                        "home": {
+                          "line": null,
+                          "american": -345
+                        }
+                      },
+                      "total": {
+                        "under": {
+                          "line": 220.5,
+                          "american": -108
+                        },
+                        "over": {
+                          "line": 220.5,
+                          "american": -112
+                        }
+                      }
+                    },
+                    "fanduel": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    }
+                  },
+                  "matchup_rank": 3,
+                  "gemini_prediction": {
+                    "winner": "Houston Rockets",
+                    "confidence": 78,
+                    "ats_pick": "Houston Rockets",
+                    "ats_confidence": 70,
+                    "total_pick": "Under",
+                    "total_confidence": 65,
+                    "analysis": "The Houston Rockets have displayed exceptional home-court dominance and superior defensive intensity during the 2026 season. Minnesota has struggled to generate consistent offense on the road, frequently stalling in high-pressure defensive matchups. Houston's balanced scoring attack and disciplined wing defense will neutralize the Timberwolves' primary perimeter threats. The Rockets' superior rebounding advantage will also limit second-chance opportunities for the visiting squad. Consequently, Houston should comfortably control the pace of the game and cover the 9.5-point spread.",
+                    "ou_analysis": "Both teams feature slower-than-average offensive pacing and prioritize half-court defensive execution over transition opportunities. Key injuries to both rotations have further blunted their primary scoring efficiencies, pointing toward a lower-scoring affair. Therefore, the combined final score will comfortably fall short of the 220.5 total.",
+                    "splits_and_direction": "Public betting volume is heavily favoring the Houston Rockets at 68 percent on the moneyline and 62 percent on the spread, alongside 55 percent of bets leaning toward the Under. Due to this heavy early action on the home favorite, the spread has moved upward from an opening line of -8.5 to -9.5.",
+                    "display_text": "Analysis: The Houston Rockets have displayed exceptional home-court dominance and superior defensive intensity during the 2026 season. Minnesota has struggled to generate consistent offense on the road, frequently stalling in high-pressure defensive matchups. Houston's balanced scoring attack and disciplined wing defense will neutralize the Timberwolves' primary perimeter threats. The Rockets' superior rebounding advantage will also limit second-chance opportunities for the visiting squad. Consequently, Houston should comfortably control the pace of the game and cover the 9.5-point spread.\n\nOver Under: Both teams feature slower-than-average offensive pacing and prioritize half-court defensive execution over transition opportunities. Key injuries to both rotations have further blunted their primary scoring efficiencies, pointing toward a lower-scoring affair. Therefore, the combined final score will comfortably fall short of the 220.5 total.\n\nSplits: Public betting volume is heavily favoring the Houston Rockets at 68 percent on the moneyline and 62 percent on the spread, alongside 55 percent of bets leaning toward the Under. Due to this heavy early action on the home favorite, the spread has moved upward from an opening line of -8.5 to -9.5.",
+                    "generated_at": "2026-11-03T15:54:11.376050+00:00",
+                    "odds_hash": "7e137154fcb37bd8",
+                    "model": "gemini-3.5-flash-lite"
+                  },
+                  "is_slot_pick": false
+                },
+                {
+                  "id": "401909925",
+                  "start_time": "2026-11-05T00:30Z",
+                  "start_time_tbd": false,
+                  "home_team": "Brooklyn Nets",
+                  "home_abbr": "BKN",
+                  "home_record": "1-6",
+                  "home_logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bkn.png",
+                  "home_location": "Brooklyn",
+                  "away_team": "Charlotte Hornets",
+                  "away_abbr": "CHA",
+                  "away_record": "3-5",
+                  "away_logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cha.png",
+                  "away_location": "Charlotte",
+                  "matchup_score": 50.8,
+                  "channel": "DAZN (YES)",
+                  "venue": "Barclays Center",
+                  "venue_location": "Brooklyn, NY",
+                  "neutral_site": false,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {
+                        "home": {
+                          "line": 2.5,
+                          "american": -110
+                        },
+                        "away": {
+                          "line": -2.5,
+                          "american": -110
+                        }
+                      },
+                      "moneyline": {
+                        "home": {
+                          "line": null,
+                          "american": 115
+                        },
+                        "away": {
+                          "line": null,
+                          "american": -136
+                        }
+                      },
+                      "total": {
+                        "under": {
+                          "line": 214.5,
+                          "american": -110
+                        },
+                        "over": {
+                          "line": 214.5,
+                          "american": -110
+                        }
+                      }
+                    },
+                    "fanduel": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    }
+                  },
+                  "matchup_rank": 4,
+                  "gemini_prediction": {
+                    "winner": "Charlotte Hornets",
+                    "confidence": 55,
+                    "ats_pick": "Brooklyn Nets",
+                    "ats_confidence": 56,
+                    "total_pick": "Under",
+                    "total_confidence": 54,
+                    "analysis": "The Charlotte Hornets enter this matchup carrying a slight edge in early 2026 offensive execution. The Brooklyn Nets, playing at home, have shown defensive resilience despite a sluggish start to their campaign. Charlotte's backcourt efficiency narrowly tips the scales in their favor for an outright victory. However, the Brooklyn Nets plus the points offer tremendous value given their home-court defensive improvements. The Hornets should squeak out a close win, but the Nets easily cover the 2.5-point spread.",
+                    "ou_analysis": "Both teams feature bottom-tier offensive ratings and deliberate half-court pacing in the early 2026 season. Injuries to key rotational scorers have further limited the scoring ceiling for both squads. Consequently, the combined final score falls short of the 214.5 line.",
+                    "splits_and_direction": "Based on early public tendencies, roughly 58 percent of spread bets are backing the home underdog Brooklyn Nets while the away moneyline has attracted heavy professional action despite opening at -136. The spread has remained steady at 2.5 and the total has ticked down slightly from 215 to 214.5 due to early under money.",
+                    "display_text": "Analysis: The Charlotte Hornets enter this matchup carrying a slight edge in early 2026 offensive execution. The Brooklyn Nets, playing at home, have shown defensive resilience despite a sluggish start to their campaign. Charlotte's backcourt efficiency narrowly tips the scales in their favor for an outright victory. However, the Brooklyn Nets plus the points offer tremendous value given their home-court defensive improvements. The Hornets should squeak out a close win, but the Nets easily cover the 2.5-point spread.\n\nOver Under: Both teams feature bottom-tier offensive ratings and deliberate half-court pacing in the early 2026 season. Injuries to key rotational scorers have further limited the scoring ceiling for both squads. Consequently, the combined final score falls short of the 214.5 line.\n\nSplits: Based on early public tendencies, roughly 58 percent of spread bets are backing the home underdog Brooklyn Nets while the away moneyline has attracted heavy professional action despite opening at -136. The spread has remained steady at 2.5 and the total has ticked down slightly from 215 to 214.5 due to early under money.",
+                    "generated_at": "2026-11-03T15:53:52.491668+00:00",
+                    "odds_hash": "6da09028074cda5e",
+                    "model": "gemini-3.5-flash-lite"
+                  },
+                  "is_slot_pick": false
+                },
+                {
+                  "id": "401909933",
+                  "start_time": "2026-11-05T02:30Z",
+                  "start_time_tbd": false,
+                  "home_team": "San Antonio Spurs",
+                  "home_abbr": "SA",
+                  "home_record": "5-2",
+                  "home_logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sa.png",
+                  "home_location": "San Antonio",
+                  "away_team": "Dallas Mavericks",
+                  "away_abbr": "DAL",
+                  "away_record": "4-3",
+                  "away_logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/dal.png",
+                  "away_location": "Dallas",
+                  "matchup_score": 70.0,
+                  "channel": "ESPN",
+                  "venue": "Frost Bank Center",
+                  "venue_location": "San Antonio, TX",
+                  "neutral_site": false,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {
+                        "away": {
+                          "line": 12.5,
+                          "american": -110
+                        },
+                        "home": {
+                          "line": -12.5,
+                          "american": -110
+                        }
+                      },
+                      "moneyline": {
+                        "home": {
+                          "line": null,
+                          "american": -650
+                        },
+                        "away": {
+                          "line": null,
+                          "american": 474
+                        }
+                      },
+                      "total": {
+                        "under": {
+                          "line": 229.5,
+                          "american": -110
+                        },
+                        "over": {
+                          "line": 229.5,
+                          "american": -110
+                        }
+                      }
+                    },
+                    "fanduel": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    }
+                  },
+                  "matchup_rank": 5,
+                  "gemini_prediction": {
+                    "winner": "San Antonio Spurs",
+                    "confidence": 88,
+                    "ats_pick": "Dallas Mavericks",
+                    "ats_confidence": 62,
+                    "total_pick": "Over",
+                    "total_confidence": 60,
+                    "analysis": "The San Antonio Spurs enter this early November matchup as heavy favorites supported by exceptional offensive efficiency and stellar 2026 campaign momentum. Meanwhile, the Dallas Mavericks have struggled to find consistent defensive stops and face a massive uphill battle on the road against elite competition. However, a 12.5-point spread is exceptionally wide in modern NBA basketball, leaving significant room for a backdoor cover by the visiting squad. Dallas possesses enough perimeter firepower to keep the final margin within single digits even if San Antonio controls the game wire-to-wire. Ultimately, the Spurs secure the outright victory while the Mavericks manage to cover the generous double-digit spread.",
+                    "ou_analysis": "Both teams feature high-paced offensive schemes that rank near the top of the league in early-season possessions per game. The defensive frailties of the Mavericks combined with the explosive scoring capabilities of the Spurs create an ideal environment for an offensive showcase. Consequently, the combined final score easily surpasses the posted 229.5 total as both squads comfortably eclipse the 110-point threshold.",
+                    "splits_and_direction": "Based on public tendencies and the heavy -650 moneyline, approximately 78% of moneyline bets and 65% of spread tickets are backing the San Antonio Spurs to dominate at home. The spread has moved up from an open of -11.5 to -12.5 in favor of the home team, while the total has ticked up slightly from 228.0 to 229.5 due to heavy early action on the over.",
+                    "display_text": "Analysis: The San Antonio Spurs enter this early November matchup as heavy favorites supported by exceptional offensive efficiency and stellar 2026 campaign momentum. Meanwhile, the Dallas Mavericks have struggled to find consistent defensive stops and face a massive uphill battle on the road against elite competition. However, a 12.5-point spread is exceptionally wide in modern NBA basketball, leaving significant room for a backdoor cover by the visiting squad. Dallas possesses enough perimeter firepower to keep the final margin within single digits even if San Antonio controls the game wire-to-wire. Ultimately, the Spurs secure the outright victory while the Mavericks manage to cover the generous double-digit spread.\n\nOver Under: Both teams feature high-paced offensive schemes that rank near the top of the league in early-season possessions per game. The defensive frailties of the Mavericks combined with the explosive scoring capabilities of the Spurs create an ideal environment for an offensive showcase. Consequently, the combined final score easily surpasses the posted 229.5 total as both squads comfortably eclipse the 110-point threshold.\n\nSplits: Based on public tendencies and the heavy -650 moneyline, approximately 78% of moneyline bets and 65% of spread tickets are backing the San Antonio Spurs to dominate at home. The spread has moved up from an open of -11.5 to -12.5 in favor of the home team, while the total has ticked up slightly from 228.0 to 229.5 due to heavy early action on the over.",
+                    "generated_at": "2026-11-03T15:54:21.794391+00:00",
+                    "odds_hash": "209a2eb7243e3bd0",
+                    "model": "gemini-3.5-flash-lite"
+                  },
+                  "is_slot_pick": false
+                },
+                {
+                  "id": "401909927",
+                  "start_time": "2026-11-05T01:00Z",
+                  "start_time_tbd": false,
+                  "home_team": "Memphis Grizzlies",
+                  "home_abbr": "MEM",
+                  "home_record": "6-1",
+                  "home_logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mem.png",
+                  "home_location": "Memphis",
+                  "away_team": "Indiana Pacers",
+                  "away_abbr": "IND",
+                  "away_record": "2-6",
+                  "away_logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png",
+                  "away_location": "Indiana",
+                  "matchup_score": 75.0,
+                  "channel": "DAZN MEM, DAZN IND",
+                  "venue": "FedExForum",
+                  "venue_location": "Memphis, TN",
+                  "neutral_site": false,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    },
+                    "fanduel": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    }
+                  },
+                  "matchup_rank": 6,
+                  "is_slot_pick": false
+                },
+                {
+                  "id": "401909932",
+                  "start_time": "2026-11-05T02:00Z",
+                  "start_time_tbd": false,
+                  "home_team": "Phoenix Suns",
+                  "home_abbr": "PHX",
+                  "home_record": "1-4",
+                  "home_logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phx.png",
+                  "home_location": "Phoenix",
+                  "away_team": "Portland Trail Blazers",
+                  "away_abbr": "POR",
+                  "away_record": "5-1",
+                  "away_logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/por.png",
+                  "away_location": "Portland",
+                  "matchup_score": 77.5,
+                  "channel": "KUNP 16, BlazerVision, Arizona's Family 3TV, Suns Live",
+                  "venue": "Mortgage Matchup Center",
+                  "venue_location": "Phoenix, AZ",
+                  "neutral_site": false,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    },
+                    "fanduel": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    }
+                  },
+                  "matchup_rank": 7,
+                  "is_slot_pick": false
+                },
+                {
+                  "id": "401909923",
+                  "start_time": "2026-11-05T00:00Z",
+                  "start_time_tbd": false,
+                  "home_team": "Washington Wizards",
+                  "home_abbr": "WSH",
+                  "home_record": "4-3",
+                  "home_logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/wsh.png",
+                  "home_location": "Washington",
+                  "away_team": "Atlanta Hawks",
+                  "away_abbr": "ATL",
+                  "away_record": "4-4",
+                  "away_logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/atl.png",
+                  "away_location": "Atlanta",
+                  "matchup_score": 80.0,
+                  "channel": "MNMT",
+                  "venue": "Capital One Arena",
+                  "venue_location": "Washington, DC",
+                  "neutral_site": false,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    },
+                    "fanduel": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    }
+                  },
+                  "matchup_rank": 8,
+                  "is_slot_pick": false
+                },
+                {
+                  "id": "401909931",
+                  "start_time": "2026-11-05T02:00Z",
+                  "start_time_tbd": false,
+                  "home_team": "Denver Nuggets",
+                  "home_abbr": "DEN",
+                  "home_record": "3-3",
+                  "home_logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/den.png",
+                  "home_location": "Denver",
+                  "away_team": "Toronto Raptors",
+                  "away_abbr": "TOR",
+                  "away_record": "4-3",
+                  "away_logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/tor.png",
+                  "away_location": "Toronto",
+                  "matchup_score": 80.0,
+                  "channel": "TBD",
+                  "venue": "Ball Arena",
+                  "venue_location": "Denver, CO",
+                  "neutral_site": false,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    },
+                    "fanduel": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    }
+                  },
+                  "matchup_rank": 9,
+                  "is_slot_pick": false
+                },
+                {
+                  "id": "401909924",
+                  "start_time": "2026-11-05T00:30Z",
+                  "start_time_tbd": false,
+                  "home_team": "Boston Celtics",
+                  "home_abbr": "BOS",
+                  "home_record": "5-2",
+                  "home_logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
+                  "home_location": "Boston",
+                  "away_team": "Milwaukee Bucks",
+                  "away_abbr": "MIL",
+                  "away_record": "1-6",
+                  "away_logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mil.png",
+                  "away_location": "Milwaukee",
+                  "matchup_score": 85.0,
+                  "channel": "MyMi, Bucks App",
+                  "venue": "TD Garden",
+                  "venue_location": "Boston, MA",
+                  "neutral_site": false,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    },
+                    "fanduel": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    }
+                  },
+                  "matchup_rank": 10,
+                  "is_slot_pick": false
+                },
+                {
+                  "id": "401909926",
+                  "start_time": "2026-11-05T00:30Z",
+                  "start_time_tbd": false,
+                  "home_team": "New York Knicks",
+                  "home_abbr": "NY",
+                  "home_record": "3-4",
+                  "home_logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ny.png",
+                  "home_location": "New York",
+                  "away_team": "Chicago Bulls",
+                  "away_abbr": "CHI",
+                  "away_record": "1-6",
+                  "away_logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/chi.png",
+                  "away_location": "Chicago",
+                  "matchup_score": 96.2,
+                  "channel": "TBD",
+                  "venue": "Madison Square Garden",
+                  "venue_location": "New York, NY",
+                  "neutral_site": false,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    },
+                    "fanduel": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    }
+                  },
+                  "matchup_rank": 12,
+                  "is_slot_pick": false
+                },
+                {
+                  "id": "401909928",
+                  "start_time": "2026-11-05T01:00Z",
+                  "start_time_tbd": false,
+                  "home_team": "New Orleans Pelicans",
+                  "home_abbr": "NO",
+                  "home_record": "3-4",
+                  "home_logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/no.png",
+                  "home_location": "New Orleans",
+                  "away_team": "Utah Jazz",
+                  "away_abbr": "UTAH",
+                  "away_record": "1-6",
+                  "away_logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/utah.png",
+                  "away_location": "Utah",
+                  "matchup_score": 100.0,
+                  "channel": "GCSEN, Pelicans.com, KJZZ-TV, Jazz+",
+                  "venue": "Smoothie King Center",
+                  "venue_location": "New Orleans, LA",
+                  "neutral_site": false,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    },
+                    "fanduel": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    }
+                  },
+                  "matchup_rank": 13,
+                  "is_slot_pick": false
+                }
+              ]
+            },
+            {
+              "slot": "Late Night",
+              "best_matchup_score": 85.0,
+              "pick_reason": "spread_and_wins",
+              "games": [
+                {
+                  "id": "401909934",
+                  "start_time": "2026-11-05T03:00Z",
+                  "start_time_tbd": false,
+                  "home_team": "Sacramento Kings",
+                  "home_abbr": "SAC",
+                  "home_record": "1-6",
+                  "home_logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sac.png",
+                  "home_location": "Sacramento",
+                  "away_team": "Los Angeles Lakers",
+                  "away_abbr": "LAL",
+                  "away_record": "6-2",
+                  "away_logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png",
+                  "away_location": "Los Angeles",
+                  "matchup_score": 85.0,
+                  "channel": "Spectrum Sports Net, Spectrum Sports Net +",
+                  "venue": "Golden 1 Center",
+                  "venue_location": "Sacramento, CA",
+                  "neutral_site": false,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    },
+                    "fanduel": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    }
+                  },
+                  "matchup_rank": 11,
+                  "is_slot_pick": true
+                },
+                {
+                  "id": "401909935",
+                  "start_time": "2026-11-05T03:30Z",
+                  "start_time_tbd": false,
+                  "home_team": "LA Clippers",
+                  "home_abbr": "LAC",
+                  "home_record": "1-6",
+                  "home_logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lac.png",
+                  "home_location": "LA",
+                  "away_team": "Miami Heat",
+                  "away_abbr": "MIA",
+                  "away_record": "2-5",
+                  "away_logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+                  "away_location": "Miami",
+                  "matchup_score": 100.0,
+                  "channel": "ClipperVision",
+                  "venue": "Intuit Dome",
+                  "venue_location": "Inglewood, CA",
+                  "neutral_site": false,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    },
+                    "fanduel": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    }
+                  },
+                  "matchup_rank": 14,
+                  "is_slot_pick": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": 20261105,
+      "total_games": 2,
+      "days": [
+        {
+          "date": "2026-11-05",
+          "weekday": "Thursday",
+          "game_count": 2,
+          "is_preseason": false,
+          "time_slots": [
+            {
+              "slot": "Prime Time",
+              "best_matchup_score": 75.0,
+              "pick_reason": "spread_and_wins",
+              "games": [
+                {
+                  "id": "401909936",
+                  "start_time": "2026-11-06T02:00Z",
+                  "start_time_tbd": false,
+                  "home_team": "Phoenix Suns",
+                  "home_abbr": "PHX",
+                  "home_record": "1-4",
+                  "home_logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phx.png",
+                  "home_location": "Phoenix",
+                  "away_team": "Orlando Magic",
+                  "away_abbr": "ORL",
+                  "away_record": "2-5",
+                  "away_logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/orl.png",
+                  "away_location": "Orlando",
+                  "matchup_score": 75.0,
+                  "channel": "Suns Live, Arizona's Family 3TV",
+                  "venue": "Mortgage Matchup Center",
+                  "venue_location": "Phoenix, AZ",
+                  "neutral_site": false,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    },
+                    "fanduel": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    }
+                  },
+                  "matchup_rank": 2,
+                  "is_slot_pick": true
+                }
+              ]
+            },
+            {
+              "slot": "Late Night",
+              "best_matchup_score": 25.0,
+              "pick_reason": "spread_and_wins",
+              "games": [
+                {
+                  "id": "401909937",
+                  "start_time": "2026-11-06T03:00Z",
+                  "start_time_tbd": false,
+                  "home_team": "Golden State Warriors",
+                  "home_abbr": "GS",
+                  "home_record": "5-3",
+                  "home_logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+                  "home_location": "Golden State",
+                  "away_team": "Miami Heat",
+                  "away_abbr": "MIA",
+                  "away_record": "2-5",
+                  "away_logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
+                  "away_location": "Miami",
+                  "matchup_score": 25.0,
+                  "channel": "NBA TV",
+                  "venue": "Chase Center",
+                  "venue_location": "San Francisco, CA",
+                  "neutral_site": false,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    },
+                    "fanduel": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    }
+                  },
+                  "matchup_rank": 1,
+                  "is_slot_pick": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
-  "current_week": 20261102
+  "current_week": 20261104
 }
