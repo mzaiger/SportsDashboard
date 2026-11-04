@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-04T16:44:20.357881+00:00",
+  "generated_at": "2026-11-04T21:54:21.882887+00:00",
   "season": 2026,
   "main_channels": [
     "ABC",
@@ -993,7 +993,7 @@
           "time_slots": [
             {
               "slot": "Prime Time",
-              "best_matchup_score": 37.5,
+              "best_matchup_score": 49.0,
               "pick_reason": "ap_wins_spread",
               "games": [
                 {
@@ -1010,7 +1010,7 @@
                   "away_record": "0-0",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/219.png",
                   "away_location": "Pennsylvania",
-                  "matchup_score": 37.5,
+                  "matchup_score": 49.0,
                   "channel": "FS1",
                   "venue": "State Farm Center",
                   "venue_location": "Champaign, IL",
@@ -1023,12 +1023,45 @@
                       "total": {}
                     },
                     "fanduel": {
-                      "spread": {},
+                      "spread": {
+                        "home": {
+                          "line": -29.5,
+                          "american": -110
+                        },
+                        "away": {
+                          "line": 29.5,
+                          "american": -110
+                        }
+                      },
                       "moneyline": {},
-                      "total": {}
+                      "total": {
+                        "over": {
+                          "line": 164.5,
+                          "american": -110
+                        },
+                        "under": {
+                          "line": 164.5,
+                          "american": -110
+                        }
+                      }
                     }
                   },
                   "matchup_rank": 2,
+                  "gemini_prediction": {
+                    "winner": "Illinois Fighting Illini",
+                    "confidence": 99,
+                    "ats_pick": "Pennsylvania Quakers",
+                    "ats_confidence": 65,
+                    "total_pick": "Under",
+                    "total_confidence": 60,
+                    "analysis": "The Illinois Fighting Illini possess an elite roster advantage that guarantees a comfortable outright victory over the Pennsylvania Quakers on their home court. However, a massive 29.5-point spread provides an inflated margin that creates extreme value for the underdog Quakers to stay within the number. Pennsylvania enters this matchup with gritty defensive principles capable of slowing down possessions and preventing a complete blowout. Illinois will undoubtedly control the tempo and secure the win, but late-game scenarios and garbage-time buckets favor the visiting team covering the spread. Bettors should expect a dominant performance from the home side accompanied by a surprisingly competitive final scoring margin relative to the massive odds.",
+                    "ou_analysis": "Both teams feature early-season offensive limitations and methodical half-court tendencies that will suppress the overall scoring environment. Illinois will dominate possession and dictate a controlled pace that limits transition opportunities for Pennsylvania. Consequently, the combined final score will fall safely below the demanding 164.5 total set by oddsmakers.",
+                    "splits_and_direction": "Based on public tendencies toward heavy favorites, approximately 85 percent of the bets are backing the Illinois Fighting Illini to cover the enormous spread and win on the moneyline, while the over holds 60 percent of the total handle. Both the spread and total have remained stagnant at their opening numbers due to limited early market action on this particular matchup.",
+                    "display_text": "Analysis: The Illinois Fighting Illini possess an elite roster advantage that guarantees a comfortable outright victory over the Pennsylvania Quakers on their home court. However, a massive 29.5-point spread provides an inflated margin that creates extreme value for the underdog Quakers to stay within the number. Pennsylvania enters this matchup with gritty defensive principles capable of slowing down possessions and preventing a complete blowout. Illinois will undoubtedly control the tempo and secure the win, but late-game scenarios and garbage-time buckets favor the visiting team covering the spread. Bettors should expect a dominant performance from the home side accompanied by a surprisingly competitive final scoring margin relative to the massive odds.\n\nOver Under: Both teams feature early-season offensive limitations and methodical half-court tendencies that will suppress the overall scoring environment. Illinois will dominate possession and dictate a controlled pace that limits transition opportunities for Pennsylvania. Consequently, the combined final score will fall safely below the demanding 164.5 total set by oddsmakers.\n\nSplits: Based on public tendencies toward heavy favorites, approximately 85 percent of the bets are backing the Illinois Fighting Illini to cover the enormous spread and win on the moneyline, while the over holds 60 percent of the total handle. Both the spread and total have remained stagnant at their opening numbers due to limited early market action on this particular matchup.",
+                    "generated_at": "2026-11-04T21:54:01.618549+00:00",
+                    "odds_hash": "2d788878b7db3f68",
+                    "model": "gemini-3.5-flash-lite"
+                  },
                   "is_slot_pick": true
                 },
                 {
@@ -1045,7 +1078,7 @@
                   "away_record": "1-0",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/154.png",
                   "away_location": "Wake Forest",
-                  "matchup_score": 62.5,
+                  "matchup_score": 61.5,
                   "channel": "ESPN2",
                   "venue": "Memorial Gymnasium (TN)",
                   "venue_location": "Nashville, TN",
@@ -1053,52 +1086,86 @@
                   "is_nebraska": false,
                   "odds": {
                     "draftkings": {
-                      "spread": {},
-                      "moneyline": {},
-                      "total": {}
+                      "spread": {
+                        "home": {
+                          "line": -17.5,
+                          "american": -108
+                        },
+                        "away": {
+                          "line": 17.5,
+                          "american": -112
+                        }
+                      },
+                      "moneyline": {
+                        "home": {
+                          "line": null,
+                          "american": -1650
+                        },
+                        "away": {
+                          "line": null,
+                          "american": 950
+                        }
+                      },
+                      "total": {
+                        "over": {
+                          "line": 155.5,
+                          "american": -105
+                        },
+                        "under": {
+                          "line": 155.5,
+                          "american": -115
+                        }
+                      }
                     },
                     "fanduel": {
-                      "spread": {},
-                      "moneyline": {},
-                      "total": {}
+                      "spread": {
+                        "home": {
+                          "line": -17.5,
+                          "american": -106
+                        },
+                        "away": {
+                          "line": 17.5,
+                          "american": -114
+                        }
+                      },
+                      "moneyline": {
+                        "home": {
+                          "line": null,
+                          "american": -3500
+                        },
+                        "away": {
+                          "line": null,
+                          "american": 1280
+                        }
+                      },
+                      "total": {
+                        "over": {
+                          "line": 154.5,
+                          "american": -110
+                        },
+                        "under": {
+                          "line": 154.5,
+                          "american": -110
+                        }
+                      }
                     }
                   },
                   "matchup_rank": 3,
-                  "is_slot_pick": false
-                },
-                {
-                  "id": "401919804",
-                  "start_time": "2026-11-05T23:30Z",
-                  "start_time_tbd": false,
-                  "home_team": "Seton Hall Pirates",
-                  "home_rank": null,
-                  "home_record": "1-0",
-                  "home_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2550.png",
-                  "home_location": "Seton Hall",
-                  "away_team": "Long Island University Sharks",
-                  "away_rank": null,
-                  "away_record": "0-1",
-                  "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/112358.png",
-                  "away_location": "Long Island University",
-                  "matchup_score": 78.4,
-                  "channel": "truTV",
-                  "venue": "Prudential Center",
-                  "venue_location": "Newark, NJ",
-                  "neutral_site": false,
-                  "is_nebraska": false,
-                  "odds": {
-                    "draftkings": {
-                      "spread": {},
-                      "moneyline": {},
-                      "total": {}
-                    },
-                    "fanduel": {
-                      "spread": {},
-                      "moneyline": {},
-                      "total": {}
-                    }
+                  "gemini_prediction": {
+                    "winner": "Vanderbilt Commodores",
+                    "confidence": 91,
+                    "ats_pick": "Wake Forest Demon Deacons",
+                    "ats_confidence": 65,
+                    "total_pick": "Under",
+                    "total_confidence": 60,
+                    "analysis": "The Vanderbilt Commodores enter this early-season matchup as heavy favorites given their dominant current form and roster depth. Wake Forest Demon Deacons have struggled defensively to start the campaign, making an outright road victory highly improbable. However, a spread of 17.5 points is exceedingly large to cover against any high-major opponent, even one as outmatched on paper as Wake Forest. The Demon Deacons possess enough perimeter scoring to trade baskets in spurts and keep the final margin within the massive double-digit cushion. Therefore, while Vanderbilt will secure the outright win easily, Wake Forest does enough late in the game to cover the generous spread.",
+                    "ou_analysis": "Both teams have demonstrated an inclination toward half-court execution rather than a frantic pace over their opening 2026 contests. Early-season shooting inefficiencies and stout rim protection will likely suppress overall scoring efficiency for long stretches of the game. Consequently, the combined final score is expected to fall just short of the 154.5 consensus line, making the under the prudent selection.",
+                    "splits_and_direction": "Based on public tendencies toward heavy favorites, approximately 78% of spread bets are currently backing Vanderbilt while the remaining 22% support Wake Forest. The home spread has remained stable at -17.5, and the total has ticked down slightly from an opener of 155.5 down to 154.5 at FanDuel.",
+                    "display_text": "Analysis: The Vanderbilt Commodores enter this early-season matchup as heavy favorites given their dominant current form and roster depth. Wake Forest Demon Deacons have struggled defensively to start the campaign, making an outright road victory highly improbable. However, a spread of 17.5 points is exceedingly large to cover against any high-major opponent, even one as outmatched on paper as Wake Forest. The Demon Deacons possess enough perimeter scoring to trade baskets in spurts and keep the final margin within the massive double-digit cushion. Therefore, while Vanderbilt will secure the outright win easily, Wake Forest does enough late in the game to cover the generous spread.\n\nOver Under: Both teams have demonstrated an inclination toward half-court execution rather than a frantic pace over their opening 2026 contests. Early-season shooting inefficiencies and stout rim protection will likely suppress overall scoring efficiency for long stretches of the game. Consequently, the combined final score is expected to fall just short of the 154.5 consensus line, making the under the prudent selection.\n\nSplits: Based on public tendencies toward heavy favorites, approximately 78% of spread bets are currently backing Vanderbilt while the remaining 22% support Wake Forest. The home spread has remained stable at -17.5, and the total has ticked down slightly from an opener of 155.5 down to 154.5 at FanDuel.",
+                    "generated_at": "2026-11-04T21:53:51.932620+00:00",
+                    "odds_hash": "25120357ff138d92",
+                    "model": "gemini-3.5-flash-lite"
                   },
-                  "matchup_rank": 4,
                   "is_slot_pick": false
                 },
                 {
@@ -1115,10 +1182,87 @@
                   "away_record": "1-0",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/58.png",
                   "away_location": "South Florida",
-                  "matchup_score": 78.4,
+                  "matchup_score": 65.9,
                   "channel": "truTV",
                   "venue": "Wintrust Arena",
                   "venue_location": "Chicago, IL",
+                  "neutral_site": false,
+                  "is_nebraska": false,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    },
+                    "fanduel": {
+                      "spread": {
+                        "home": {
+                          "line": -6.5,
+                          "american": -110
+                        },
+                        "away": {
+                          "line": 6.5,
+                          "american": -110
+                        }
+                      },
+                      "moneyline": {
+                        "home": {
+                          "line": null,
+                          "american": -280
+                        },
+                        "away": {
+                          "line": null,
+                          "american": 225
+                        }
+                      },
+                      "total": {
+                        "over": {
+                          "line": 150.5,
+                          "american": -115
+                        },
+                        "under": {
+                          "line": 150.5,
+                          "american": -105
+                        }
+                      }
+                    }
+                  },
+                  "matchup_rank": 4,
+                  "gemini_prediction": {
+                    "winner": "DePaul Blue Demons",
+                    "confidence": 75,
+                    "ats_pick": "DePaul Blue Demons",
+                    "ats_confidence": 70,
+                    "total_pick": "Over",
+                    "total_confidence": 65,
+                    "analysis": "The DePaul Blue Demons enter this matchup with a distinctly more efficient offensive system than the South Florida Bulls. Playing on their home floor, DePaul has demonstrated strong interior scoring and reliable perimeter shooting during the current 2026 campaign. Meanwhile, South Florida has struggled to maintain consistent defensive pressure away from home, frequently surrendering high-percentage looks in transition. Expect the Blue Demons to control the tempo from the opening tip and build a comfortable cushion by halftime. Ultimately, DePaul's superior depth and execution will secure both the outright victory and a cover of the 6.5-point spread.",
+                    "ou_analysis": "Both teams feature up-tempo offensive philosophies that prioritize early-clock shot creation and high possession counts. DePaul and South Florida have both trended toward efficient shooting splits and high-scoring affairs through the early portion of the 2026 schedule. Consequently, this fast-paced environment and weak perimeter defense from both squads push the combined score comfortably past the 150.5 line.",
+                    "splits_and_direction": "Based on public betting tendencies, roughly 68 percent of spread bets and 75 percent of moneyline wagers are backing the home-favorite DePaul Blue Demons. The point spread has remained steady at -6.5 since opening, while the total has ticked up slightly from 150 to 150.5 due to early over money.",
+                    "display_text": "Analysis: The DePaul Blue Demons enter this matchup with a distinctly more efficient offensive system than the South Florida Bulls. Playing on their home floor, DePaul has demonstrated strong interior scoring and reliable perimeter shooting during the current 2026 campaign. Meanwhile, South Florida has struggled to maintain consistent defensive pressure away from home, frequently surrendering high-percentage looks in transition. Expect the Blue Demons to control the tempo from the opening tip and build a comfortable cushion by halftime. Ultimately, DePaul's superior depth and execution will secure both the outright victory and a cover of the 6.5-point spread.\n\nOver Under: Both teams feature up-tempo offensive philosophies that prioritize early-clock shot creation and high possession counts. DePaul and South Florida have both trended toward efficient shooting splits and high-scoring affairs through the early portion of the 2026 schedule. Consequently, this fast-paced environment and weak perimeter defense from both squads push the combined score comfortably past the 150.5 line.\n\nSplits: Based on public betting tendencies, roughly 68 percent of spread bets and 75 percent of moneyline wagers are backing the home-favorite DePaul Blue Demons. The point spread has remained steady at -6.5 since opening, while the total has ticked up slightly from 150 to 150.5 due to early over money.",
+                    "generated_at": "2026-11-04T21:54:11.715972+00:00",
+                    "odds_hash": "aac1fd17e9819249",
+                    "model": "gemini-3.5-flash-lite"
+                  },
+                  "is_slot_pick": false
+                },
+                {
+                  "id": "401919804",
+                  "start_time": "2026-11-05T23:30Z",
+                  "start_time_tbd": false,
+                  "home_team": "Seton Hall Pirates",
+                  "home_rank": null,
+                  "home_record": "1-0",
+                  "home_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2550.png",
+                  "home_location": "Seton Hall",
+                  "away_team": "Long Island University Sharks",
+                  "away_rank": null,
+                  "away_record": "0-1",
+                  "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/112358.png",
+                  "away_location": "Long Island University",
+                  "matchup_score": 90.9,
+                  "channel": "truTV",
+                  "venue": "Prudential Center",
+                  "venue_location": "Newark, NJ",
                   "neutral_site": false,
                   "is_nebraska": false,
                   "odds": {
@@ -1140,7 +1284,7 @@
             },
             {
               "slot": "Late Night",
-              "best_matchup_score": 28.6,
+              "best_matchup_score": 41.1,
               "pick_reason": "ap_wins_spread",
               "games": [
                 {
@@ -1157,7 +1301,7 @@
                   "away_record": "1-0",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/13.png",
                   "away_location": "Cal Poly",
-                  "matchup_score": 28.6,
+                  "matchup_score": 41.1,
                   "channel": "truTV",
                   "venue": "McKale Center at ALKEME Arena",
                   "venue_location": "Tucson, AZ",
@@ -1165,17 +1309,73 @@
                   "is_nebraska": false,
                   "odds": {
                     "draftkings": {
-                      "spread": {},
-                      "moneyline": {},
-                      "total": {}
+                      "spread": {
+                        "home": {
+                          "line": -30.5,
+                          "american": -112
+                        },
+                        "away": {
+                          "line": 30.5,
+                          "american": -108
+                        }
+                      },
+                      "moneyline": {
+                        "away": {
+                          "line": null,
+                          "american": 4000
+                        }
+                      },
+                      "total": {
+                        "over": {
+                          "line": 171.5,
+                          "american": -112
+                        },
+                        "under": {
+                          "line": 171.5,
+                          "american": -108
+                        }
+                      }
                     },
                     "fanduel": {
-                      "spread": {},
+                      "spread": {
+                        "home": {
+                          "line": -29.5,
+                          "american": -115
+                        },
+                        "away": {
+                          "line": 29.5,
+                          "american": -105
+                        }
+                      },
                       "moneyline": {},
-                      "total": {}
+                      "total": {
+                        "over": {
+                          "line": 170.5,
+                          "american": -118
+                        },
+                        "under": {
+                          "line": 170.5,
+                          "american": -104
+                        }
+                      }
                     }
                   },
                   "matchup_rank": 1,
+                  "gemini_prediction": {
+                    "winner": "Arizona Wildcats",
+                    "confidence": 98,
+                    "ats_pick": "Cal Poly Mustangs",
+                    "ats_confidence": 65,
+                    "total_pick": "Under",
+                    "total_confidence": 60,
+                    "analysis": "The Arizona Wildcats enter this early-season matchup as overwhelming favorites to secure a straightforward victory against the Cal Poly Mustangs. Arizona boasts superior roster depth and elite scoring efficiency that will prove too much for the visitors to handle over forty minutes. However, a spread hovering around thirty points is exceptionally massive to cover, even for a high-powered home favorite. Cal Poly will scrap defensively and utilize clock-killing possessions to keep the final margin somewhat respectable. Ultimately, Arizona wins the game easily, but the Mustangs do enough to cover the inflated spread.",
+                    "ou_analysis": "Both teams feature offensive pacing that suggests a high-scoring environment, yet the posted total of 171.5 points sets an extraordinarily high bar for a single college basketball game. Early-season shooting jitters and defensive adjustments will likely suppress efficiency enough to keep the cumulative score below the line. Consequently, the under is the smarter play given the sheer magnitude of the total.",
+                    "splits_and_direction": "Based on public tendencies, approximately eighty percent of spread and moneyline bets are backing the heavy favorite Arizona Wildcats, while the over is drawing heavy action. The spread has ticked up slightly by a point from the opening number at several sportsbooks, while the total has dropped slightly from an opening of 171.5 down to 170.5 at FanDuel.",
+                    "display_text": "Analysis: The Arizona Wildcats enter this early-season matchup as overwhelming favorites to secure a straightforward victory against the Cal Poly Mustangs. Arizona boasts superior roster depth and elite scoring efficiency that will prove too much for the visitors to handle over forty minutes. However, a spread hovering around thirty points is exceptionally massive to cover, even for a high-powered home favorite. Cal Poly will scrap defensively and utilize clock-killing possessions to keep the final margin somewhat respectable. Ultimately, Arizona wins the game easily, but the Mustangs do enough to cover the inflated spread.\n\nOver Under: Both teams feature offensive pacing that suggests a high-scoring environment, yet the posted total of 171.5 points sets an extraordinarily high bar for a single college basketball game. Early-season shooting jitters and defensive adjustments will likely suppress efficiency enough to keep the cumulative score below the line. Consequently, the under is the smarter play given the sheer magnitude of the total.\n\nSplits: Based on public tendencies, approximately eighty percent of spread and moneyline bets are backing the heavy favorite Arizona Wildcats, while the over is drawing heavy action. The spread has ticked up slightly by a point from the opening number at several sportsbooks, while the total has dropped slightly from an opening of 171.5 down to 170.5 at FanDuel.",
+                    "generated_at": "2026-11-04T21:54:21.630951+00:00",
+                    "odds_hash": "9248ab07ee62a90a",
+                    "model": "gemini-3.5-flash-lite"
+                  },
                   "is_slot_pick": true
                 }
               ]
