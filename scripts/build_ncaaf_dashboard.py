@@ -407,15 +407,9 @@ def choose_slot_pick(games_sorted):
 
     Priority:
       1. Nebraska is in this slot -> Nebraska is the pick, always.
-      2. Otherwise, score every game in the slot on two metrics and blend
-         them 50/50:
-           - combined AP rank (matchup_score; unranked teams count as
-             UNRANKED_VALUE), lower = more marquee
-           - closest posted spread (abs value across books), lower = more
-             competitive game
-         Each metric is min-max normalized across just this slot's games
-         (0 = best in the slot, 1 = worst), then averaged 50/50. The game
-         with the lowest blended score is the most watchable pick.
+      2. Otherwise, the game with the lowest matchup_score (the same
+         score behind the Matchup rank), so the pick always agrees
+         with the board's best-ranked matchup in the slot.
 
     Returns (index_into_games_sorted, reason) or (None, None) if empty.
     """
@@ -426,15 +420,11 @@ def choose_slot_pick(games_sorted):
         if g.get("is_nebraska"):
             return i, "nebraska"
 
-    ap_values = [g["matchup_score"] for g in games_sorted]
-    spread_values = [_closest_spread_abs(g) for g in games_sorted]
-
-    ap_norm = normalize_minmax(ap_values)
-    spread_norm = normalize_minmax(spread_values)
-
-    blended = [0.5 * a + 0.5 * s for a, s in zip(ap_norm, spread_norm)]
-    idx = min(range(len(blended)), key=lambda i: blended[i])
-    return idx, "watchability"
+    scored = [i for i, g in enumerate(games_sorted) if g.get("matchup_score") is not None]
+    if not scored:
+        return None, None
+    idx = min(scored, key=lambda i: games_sorted[i]["matchup_score"])
+    return idx, "matchup_score"
 
 
 # ---------------------------------------------------------------------------
