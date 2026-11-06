@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-06T00:59:47.180173+00:00",
+  "generated_at": "2026-11-06T11:50:40.285892+00:00",
   "season": 2026,
   "season_type": 2,
   "main_channels": [
@@ -23418,8 +23418,8 @@
           "time_slots": [
             {
               "slot": "Prime Time",
-              "best_matchup_score": 71.1,
-              "pick_reason": "watchability",
+              "best_matchup_score": 70.7,
+              "pick_reason": "matchup_score",
               "games": [
                 {
                   "id": "401866454",
@@ -23435,7 +23435,7 @@
                   "away_record": "6-3",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2084.png",
                   "away_location": "Buffalo",
-                  "matchup_score": 71.1,
+                  "matchup_score": 70.7,
                   "channel": "ESPN",
                   "venue": "Yager Stadium",
                   "venue_location": "Oxford, OH",
@@ -23539,7 +23539,7 @@
                   "away_record": "7-2",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/195.png",
                   "away_location": "Ohio",
-                  "matchup_score": 84.4,
+                  "matchup_score": 83.2,
                   "channel": "ESPN2",
                   "venue": "InfoCision Stadium",
                   "venue_location": "Akron, OH",
@@ -23641,7 +23641,7 @@
             {
               "slot": "Prime Time",
               "best_matchup_score": 72.7,
-              "pick_reason": "watchability",
+              "pick_reason": "matchup_score",
               "games": [
                 {
                   "id": "401866456",
@@ -23759,7 +23759,7 @@
             {
               "slot": "Prime Time",
               "best_matchup_score": 65.5,
-              "pick_reason": "watchability",
+              "pick_reason": "matchup_score",
               "games": [
                 {
                   "id": "401862817",
@@ -23767,12 +23767,12 @@
                   "start_time_tbd": false,
                   "home_team": "Florida Atlantic Owls",
                   "home_rank": null,
-                  "home_record": "5-3",
+                  "home_record": "6-3",
                   "home_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2226.png",
                   "home_location": "Florida Atlantic",
                   "away_team": "UTSA Roadrunners",
                   "away_rank": null,
-                  "away_record": "7-1",
+                  "away_record": "7-2",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2636.png",
                   "away_location": "UTSA",
                   "matchup_score": 65.5,
@@ -23847,7 +23847,6 @@
                     }
                   },
                   "is_nebraska": false,
-                  "matchup_rank": 11,
                   "gemini_prediction": {
                     "winner": "UTSA Roadrunners",
                     "confidence": 78,
@@ -23863,6 +23862,7 @@
                     "odds_hash": "c17045dbd07b7d6c",
                     "model": "gemini-3.1-flash-lite"
                   },
+                  "matchup_rank": 12,
                   "is_slot_pick": true
                 },
                 {
@@ -23871,15 +23871,15 @@
                   "start_time_tbd": false,
                   "home_team": "Southern Miss Golden Eagles",
                   "home_rank": null,
-                  "home_record": "3-5",
+                  "home_record": "3-6",
                   "home_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2572.png",
                   "home_location": "Southern Miss",
                   "away_team": "James Madison Dukes",
                   "away_rank": null,
-                  "away_record": "7-2",
+                  "away_record": "8-2",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/256.png",
                   "away_location": "James Madison",
-                  "matchup_score": 83.7,
+                  "matchup_score": 82.3,
                   "channel": "ESPN2",
                   "venue": "M. M. Roberts Stadium",
                   "venue_location": "Hattiesburg, MS",
@@ -23951,7 +23951,6 @@
                     }
                   },
                   "is_nebraska": false,
-                  "matchup_rank": 28,
                   "gemini_prediction": {
                     "winner": "James Madison Dukes",
                     "confidence": 88,
@@ -23967,6 +23966,7 @@
                     "odds_hash": "ed4bbf34a967dacc",
                     "model": "gemini-3.1-flash-lite"
                   },
+                  "matchup_rank": 28,
                   "is_slot_pick": false
                 }
               ]
@@ -23980,7 +23980,7 @@
           "time_slots": [
             {
               "slot": "Prime Time",
-              "best_matchup_score": 65.6,
+              "best_matchup_score": 65.5,
               "pick_reason": "nebraska",
               "games": [
                 {
@@ -23997,7 +23997,7 @@
                   "away_record": "6-2",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/58.png",
                   "away_location": "South Florida",
-                  "matchup_score": 65.6,
+                  "matchup_score": 65.5,
                   "channel": "ESPN2",
                   "venue": "Dowdy-Ficklen Stadium",
                   "venue_location": "Greenville, NC",
@@ -24039,21 +24039,21 @@
                       "spread": {
                         "home": {
                           "line": -2.5,
-                          "american": -110
+                          "american": -118
                         },
                         "away": {
                           "line": 2.5,
-                          "american": -110
+                          "american": -104
                         }
                       },
                       "moneyline": {
                         "home": {
                           "line": null,
-                          "american": -128
+                          "american": -137
                         },
                         "away": {
                           "line": null,
-                          "american": 106
+                          "american": 114
                         }
                       },
                       "total": {
@@ -24069,21 +24069,21 @@
                     }
                   },
                   "is_nebraska": false,
-                  "matchup_rank": 12,
+                  "matchup_rank": 11,
                   "gemini_prediction": {
                     "winner": "East Carolina Pirates",
-                    "confidence": 62,
+                    "confidence": 61,
                     "ats_pick": "East Carolina Pirates",
                     "ats_confidence": 58,
                     "total_pick": "Under",
-                    "total_confidence": 65,
-                    "analysis": "East Carolina has demonstrated superior defensive consistency throughout the 2026 season compared to the volatile South Florida unit. The Pirates' ability to control the line of scrimmage at home provides them with a distinct advantage in a low-scoring affair. South Florida has struggled significantly with turnovers on the road, which will likely prove fatal in a tight conference matchup. While the Bulls possess explosive playmakers, the Pirates' disciplined secondary is well-equipped to limit big gains. Consequently, East Carolina is positioned to secure a narrow victory that clears the modest spread.",
-                    "ou_analysis": "Both teams have shown a tendency to rely on methodical, ground-heavy offensive schemes that bleed the clock. The defensive efficiency of both squads in the red zone suggests that scoring opportunities will be limited to field goals rather than touchdowns. Given the current offensive output trends for both programs, a total of 39.5 points is set too high for this defensive-minded contest.",
-                    "splits_and_direction": "Public betting splits currently favor South Florida on the moneyline at approximately 55%, while 60% of the spread handle is backing East Carolina. The spread has remained steady at -2.5, but the total has seen slight downward pressure from an opening of 41.0 to the current 39.5.",
-                    "display_text": "Analysis: East Carolina has demonstrated superior defensive consistency throughout the 2026 season compared to the volatile South Florida unit. The Pirates' ability to control the line of scrimmage at home provides them with a distinct advantage in a low-scoring affair. South Florida has struggled significantly with turnovers on the road, which will likely prove fatal in a tight conference matchup. While the Bulls possess explosive playmakers, the Pirates' disciplined secondary is well-equipped to limit big gains. Consequently, East Carolina is positioned to secure a narrow victory that clears the modest spread.\n\nOver Under: Both teams have shown a tendency to rely on methodical, ground-heavy offensive schemes that bleed the clock. The defensive efficiency of both squads in the red zone suggests that scoring opportunities will be limited to field goals rather than touchdowns. Given the current offensive output trends for both programs, a total of 39.5 points is set too high for this defensive-minded contest.\n\nSplits: Public betting splits currently favor South Florida on the moneyline at approximately 55%, while 60% of the spread handle is backing East Carolina. The spread has remained steady at -2.5, but the total has seen slight downward pressure from an opening of 41.0 to the current 39.5.",
-                    "generated_at": "2026-11-06T00:43:58.295993+00:00",
-                    "odds_hash": "bf90835d1cce8db2",
-                    "model": "gemini-3.1-flash-lite"
+                    "total_confidence": 63,
+                    "analysis": "The East Carolina Pirates return to their home turf with a distinct defensive edge that should stifle the South Florida Bulls' inconsistent offense. South Florida has struggled to maintain offensive rhythm on the road throughout the 2026 campaign, frequently stalling in the red zone. East Carolina's balanced offensive attack will likely do just enough to bleed clock and secure a narrow victory. Although the spread is tight at just 2.5 points, the home field advantage tips the scales cleanly in favor of the Pirates. Expect East Carolina to execute efficiently in crucial late-game situations to cover the small margin.",
+                    "ou_analysis": "Both teams feature conservative offensive pacing and heavily rely on ground games that shorten the overall duration of the contest. The defensive units for each squad have proven remarkably stout in the red zone, frequently forcing field goal attempts rather than allowing touchdowns. Consequently, this exceptionally low total of 39.5 points still provides enough cushion for a comfortably low-scoring affair that falls under the number.",
+                    "splits_and_direction": "Based on public tendencies and the narrow spread, roughly 58 percent of spread bets are currently backing the home favorite East Carolina. The spread has remained steady at -2.5 while the moneyline has seen slight upward movement toward the Pirates, and the total has held firm at 39.5 without major market shifts.",
+                    "display_text": "Analysis: The East Carolina Pirates return to their home turf with a distinct defensive edge that should stifle the South Florida Bulls' inconsistent offense. South Florida has struggled to maintain offensive rhythm on the road throughout the 2026 campaign, frequently stalling in the red zone. East Carolina's balanced offensive attack will likely do just enough to bleed clock and secure a narrow victory. Although the spread is tight at just 2.5 points, the home field advantage tips the scales cleanly in favor of the Pirates. Expect East Carolina to execute efficiently in crucial late-game situations to cover the small margin.\n\nOver Under: Both teams feature conservative offensive pacing and heavily rely on ground games that shorten the overall duration of the contest. The defensive units for each squad have proven remarkably stout in the red zone, frequently forcing field goal attempts rather than allowing touchdowns. Consequently, this exceptionally low total of 39.5 points still provides enough cushion for a comfortably low-scoring affair that falls under the number.\n\nSplits: Based on public tendencies and the narrow spread, roughly 58 percent of spread bets are currently backing the home favorite East Carolina. The spread has remained steady at -2.5 while the moneyline has seen slight upward movement toward the Pirates, and the total has held firm at 39.5 without major market shifts.",
+                    "generated_at": "2026-11-06T11:44:05.740310+00:00",
+                    "odds_hash": "d8ed51e5deb92cfa",
+                    "model": "gemini-3.5-flash-lite"
                   },
                   "is_slot_pick": false
                 },
@@ -24101,7 +24101,7 @@
                   "away_record": "6-2",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/259.png",
                   "away_location": "Virginia Tech",
-                  "matchup_score": 66.7,
+                  "matchup_score": 66.1,
                   "channel": "ESPN",
                   "venue": "Gerald J. Ford Stadium",
                   "venue_location": "Dallas, TX",
@@ -24234,12 +24234,12 @@
                       },
                       "total": {
                         "over": {
-                          "line": 49.5,
-                          "american": -120
+                          "line": 50.5,
+                          "american": -105
                         },
                         "under": {
-                          "line": 49.5,
-                          "american": -111
+                          "line": 50.5,
+                          "american": -115
                         }
                       }
                     },
@@ -24266,32 +24266,32 @@
                       },
                       "total": {
                         "over": {
-                          "line": 49.5,
-                          "american": -114
+                          "line": 50.5,
+                          "american": -108
                         },
                         "under": {
-                          "line": 49.5,
-                          "american": -106
+                          "line": 50.5,
+                          "american": -118
                         }
                       }
                     }
                   },
                   "is_nebraska": true,
-                  "matchup_rank": 17,
+                  "matchup_rank": 18,
                   "gemini_prediction": {
                     "winner": "Nebraska Cornhuskers",
-                    "confidence": 78,
+                    "confidence": 68,
                     "ats_pick": "Nebraska Cornhuskers",
-                    "ats_confidence": 65,
+                    "ats_confidence": 62,
                     "total_pick": "Under",
                     "total_confidence": 60,
-                    "analysis": "Nebraska has demonstrated a superior defensive efficiency throughout the 2026 season compared to the Illinois unit. The Cornhuskers' offensive line has consistently controlled the line of scrimmage, allowing their running game to dictate the tempo of play. Illinois has struggled to generate explosive plays against top-tier Big Ten defenses, which will likely hinder their ability to keep pace here. Nebraska's ability to limit turnovers on the road provides them with a significant advantage in a tight conference matchup. Consequently, Nebraska is expected to win by at least a touchdown, comfortably covering the 4.5-point spread.",
-                    "ou_analysis": "Both teams utilize methodical, run-heavy offensive schemes that prioritize clock management over high-tempo passing attacks. The defensive units for both squads have been effective in the red zone, frequently forcing field goal attempts rather than allowing touchdowns. These factors combined suggest a low-scoring, physical contest that will likely fall short of the 49.5-point threshold.",
-                    "splits_and_direction": "Public betting splits currently favor Nebraska at approximately 62% on the moneyline and 58% against the spread, reflecting the broader market confidence in the away team. The spread has remained stable at 4.5 while the total has seen slight downward pressure, moving from an opening of 50.5 to the current 49.5.",
-                    "display_text": "Analysis: Nebraska has demonstrated a superior defensive efficiency throughout the 2026 season compared to the Illinois unit. The Cornhuskers' offensive line has consistently controlled the line of scrimmage, allowing their running game to dictate the tempo of play. Illinois has struggled to generate explosive plays against top-tier Big Ten defenses, which will likely hinder their ability to keep pace here. Nebraska's ability to limit turnovers on the road provides them with a significant advantage in a tight conference matchup. Consequently, Nebraska is expected to win by at least a touchdown, comfortably covering the 4.5-point spread.\n\nOver Under: Both teams utilize methodical, run-heavy offensive schemes that prioritize clock management over high-tempo passing attacks. The defensive units for both squads have been effective in the red zone, frequently forcing field goal attempts rather than allowing touchdowns. These factors combined suggest a low-scoring, physical contest that will likely fall short of the 49.5-point threshold.\n\nSplits: Public betting splits currently favor Nebraska at approximately 62% on the moneyline and 58% against the spread, reflecting the broader market confidence in the away team. The spread has remained stable at 4.5 while the total has seen slight downward pressure, moving from an opening of 50.5 to the current 49.5.",
-                    "generated_at": "2026-11-06T00:44:09.860183+00:00",
-                    "odds_hash": "d0a8b1f72869f981",
-                    "model": "gemini-3.1-flash-lite"
+                    "analysis": "Nebraska enters this conference matchup with a slightly more balanced offensive attack and a disciplined defensive unit that has proven resilient in hostile environments this season. Illinois has struggled to find consistent rhythm in the passing game, often relying heavily on a ground attack that Nebraska's front seven is well-equipped to slow down. The Cornhuskers' offensive line should create enough running lanes to sustain long drives and control the clock throughout the game. While the Fighting Illini will put up a fight at home, their inability to convert in crucial red-zone situations will ultimately stall their momentum. Nebraska manages to pull away late in the fourth quarter to secure both the outright victory and a cover of the 4.5-point spread.",
+                    "ou_analysis": "Both teams feature methodical offensive pacing that limits overall possession counts and drains the play clock on nearly every snap. Nebraska's stout defensive front combined with Illinois' conservative playcalling creates a low-scoring game script that keeps drives heavily grounded. Consequently, the combined score comfortably stays under the posted total of 50.5 points.",
+                    "splits_and_direction": "Based on public tendencies and current odds, approximately 58% of bets are backing Nebraska on the spread and moneyline, while the over is drawing 60% of the total action. The spread has ticked up slightly from an opening of -3.5 to -4.5 in favor of Nebraska, and the total has dropped marginally from an opening of 51.5 to 50.5.",
+                    "display_text": "Analysis: Nebraska enters this conference matchup with a slightly more balanced offensive attack and a disciplined defensive unit that has proven resilient in hostile environments this season. Illinois has struggled to find consistent rhythm in the passing game, often relying heavily on a ground attack that Nebraska's front seven is well-equipped to slow down. The Cornhuskers' offensive line should create enough running lanes to sustain long drives and control the clock throughout the game. While the Fighting Illini will put up a fight at home, their inability to convert in crucial red-zone situations will ultimately stall their momentum. Nebraska manages to pull away late in the fourth quarter to secure both the outright victory and a cover of the 4.5-point spread.\n\nOver Under: Both teams feature methodical offensive pacing that limits overall possession counts and drains the play clock on nearly every snap. Nebraska's stout defensive front combined with Illinois' conservative playcalling creates a low-scoring game script that keeps drives heavily grounded. Consequently, the combined score comfortably stays under the posted total of 50.5 points.\n\nSplits: Based on public tendencies and current odds, approximately 58% of bets are backing Nebraska on the spread and moneyline, while the over is drawing 60% of the total action. The spread has ticked up slightly from an opening of -3.5 to -4.5 in favor of Nebraska, and the total has dropped marginally from an opening of 51.5 to 50.5.",
+                    "generated_at": "2026-11-06T11:44:16.501098+00:00",
+                    "odds_hash": "b05cc84bfb28143d",
+                    "model": "gemini-3.5-flash-lite"
                   },
                   "is_slot_pick": true
                 }
@@ -24299,8 +24299,8 @@
             },
             {
               "slot": "Late Night",
-              "best_matchup_score": 72.4,
-              "pick_reason": "watchability",
+              "best_matchup_score": 71.8,
+              "pick_reason": "matchup_score",
               "games": [
                 {
                   "id": "401856855",
@@ -24316,7 +24316,7 @@
                   "away_record": "4-4",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2628.png",
                   "away_location": "TCU",
-                  "matchup_score": 72.4,
+                  "matchup_score": 71.8,
                   "channel": "ESPN",
                   "venue": "Casino Del Sol Stadium",
                   "venue_location": "Tucson, AZ",
@@ -24326,31 +24326,31 @@
                       "spread": {
                         "home": {
                           "line": -7.5,
-                          "american": -108
+                          "american": -102
                         },
                         "away": {
                           "line": 7.5,
-                          "american": -112
+                          "american": -118
                         }
                       },
                       "moneyline": {
                         "home": {
                           "line": null,
-                          "american": -310
+                          "american": -298
                         },
                         "away": {
                           "line": null,
-                          "american": 250
+                          "american": 240
                         }
                       },
                       "total": {
                         "over": {
                           "line": 46.5,
-                          "american": -111
+                          "american": -108
                         },
                         "under": {
                           "line": 46.5,
-                          "american": -120
+                          "american": -112
                         }
                       }
                     },
@@ -24368,11 +24368,11 @@
                       "moneyline": {
                         "home": {
                           "line": null,
-                          "american": -295
+                          "american": -285
                         },
                         "away": {
                           "line": null,
-                          "american": 240
+                          "american": 230
                         }
                       },
                       "total": {
@@ -24391,18 +24391,18 @@
                   "matchup_rank": 20,
                   "gemini_prediction": {
                     "winner": "Arizona Wildcats",
-                    "confidence": 78,
+                    "confidence": 76,
                     "ats_pick": "Arizona Wildcats",
-                    "ats_confidence": 65,
-                    "total_pick": "Under",
-                    "total_confidence": 70,
-                    "analysis": "Arizona has demonstrated a superior defensive efficiency in the 2026 season compared to the inconsistent TCU secondary. The Wildcats' offensive line has consistently controlled the trenches, allowing their running game to dictate the tempo of home contests. TCU struggles significantly when playing away from home, particularly against high-pressure defensive fronts that disrupt their rhythm. Arizona's ability to sustain long drives will prevent the Horned Frogs from finding the explosive plays they rely on for scoring. Consequently, the Wildcats are well-positioned to win by double digits and comfortably cover the 7.5-point spread.",
-                    "ou_analysis": "The game features two teams that prefer methodical, run-heavy approaches that drain the clock and limit total possessions. Both defenses have performed well in the red zone this season, forcing field goals rather than allowing touchdowns. Given the conservative play-calling expected from both coaching staffs, the final score will likely fall short of the 46.5-point threshold.",
-                    "splits_and_direction": "Public betting splits are estimated at 62% on Arizona to cover and 58% on the Under, reflecting a trend toward the home favorite. The spread has remained steady at 7.5, while the total has seen minor downward movement from an opening of 47.5 due to heavy early action on the Under.",
-                    "display_text": "Analysis: Arizona has demonstrated a superior defensive efficiency in the 2026 season compared to the inconsistent TCU secondary. The Wildcats' offensive line has consistently controlled the trenches, allowing their running game to dictate the tempo of home contests. TCU struggles significantly when playing away from home, particularly against high-pressure defensive fronts that disrupt their rhythm. Arizona's ability to sustain long drives will prevent the Horned Frogs from finding the explosive plays they rely on for scoring. Consequently, the Wildcats are well-positioned to win by double digits and comfortably cover the 7.5-point spread.\n\nOver Under: The game features two teams that prefer methodical, run-heavy approaches that drain the clock and limit total possessions. Both defenses have performed well in the red zone this season, forcing field goals rather than allowing touchdowns. Given the conservative play-calling expected from both coaching staffs, the final score will likely fall short of the 46.5-point threshold.\n\nSplits: Public betting splits are estimated at 62% on Arizona to cover and 58% on the Under, reflecting a trend toward the home favorite. The spread has remained steady at 7.5, while the total has seen minor downward movement from an opening of 47.5 due to heavy early action on the Under.",
-                    "generated_at": "2026-11-06T00:44:30.098976+00:00",
-                    "odds_hash": "b2abe49bdfce0941",
-                    "model": "gemini-3.1-flash-lite"
+                    "ats_confidence": 70,
+                    "total_pick": "Over",
+                    "total_confidence": 65,
+                    "analysis": "The Arizona Wildcats enter this week 10 matchup showcasing superior offensive efficiency and defensive resilience compared to the TCU Horned Frogs. Arizona's balanced attack routinely exploits opposing secondaries, allowing them to sustain long, clock-controlling drives that wear down opposing fronts. Meanwhile, TCU has struggled to find consistency on the defensive side of the ball, particularly when dealing with mobile quarterbacks and disciplined route runners. Playing at home gives the Wildcats a distinct advantage in crowd noise and execution comfort. Consequently, Arizona will control the line of scrimmage and comfortably cover the 7.5-point spread.",
+                    "ou_analysis": "Both teams feature up-tempo offensive schemes that prioritize high-volume passing and quick snaps to keep opposing defenses off balance. With neither secondary showing the lockdown capability needed to completely shut down elite wide receiving corps, explosive plays will inflate the scoreboard. Therefore, the combination of sustained offensive drives and high-tempo possessions will easily push the combined final score over the 46.5 total.",
+                    "splits_and_direction": "Based on public tendencies and market movement, approximately 68 percent of spread bets and 74 percent of moneyline wagers are backing the Arizona Wildcats at home. Additionally, about 62 percent of total bets are taking the over, with the spread remaining steady at -7.5 and the total ticking up slightly from an opening number of 45.5 due to heavy early public action.",
+                    "display_text": "Analysis: The Arizona Wildcats enter this week 10 matchup showcasing superior offensive efficiency and defensive resilience compared to the TCU Horned Frogs. Arizona's balanced attack routinely exploits opposing secondaries, allowing them to sustain long, clock-controlling drives that wear down opposing fronts. Meanwhile, TCU has struggled to find consistency on the defensive side of the ball, particularly when dealing with mobile quarterbacks and disciplined route runners. Playing at home gives the Wildcats a distinct advantage in crowd noise and execution comfort. Consequently, Arizona will control the line of scrimmage and comfortably cover the 7.5-point spread.\n\nOver Under: Both teams feature up-tempo offensive schemes that prioritize high-volume passing and quick snaps to keep opposing defenses off balance. With neither secondary showing the lockdown capability needed to completely shut down elite wide receiving corps, explosive plays will inflate the scoreboard. Therefore, the combination of sustained offensive drives and high-tempo possessions will easily push the combined final score over the 46.5 total.\n\nSplits: Based on public tendencies and market movement, approximately 68 percent of spread bets and 74 percent of moneyline wagers are backing the Arizona Wildcats at home. Additionally, about 62 percent of total bets are taking the over, with the spread remaining steady at -7.5 and the total ticking up slightly from an opening number of 45.5 due to heavy early public action.",
+                    "generated_at": "2026-11-06T11:44:26.519364+00:00",
+                    "odds_hash": "0a7aeeecd5873f06",
+                    "model": "gemini-3.5-flash-lite"
                   },
                   "is_slot_pick": true
                 }
@@ -24417,8 +24417,8 @@
           "time_slots": [
             {
               "slot": "Noon",
-              "best_matchup_score": 8.6,
-              "pick_reason": "watchability",
+              "best_matchup_score": 8.3,
+              "pick_reason": "matchup_score",
               "games": [
                 {
                   "id": "401856849",
@@ -24434,7 +24434,7 @@
                   "away_record": "7-1",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/252.png",
                   "away_location": "BYU",
-                  "matchup_score": 8.6,
+                  "matchup_score": 8.3,
                   "channel": "ABC",
                   "venue": "Rice-Eccles Stadium",
                   "venue_location": "Salt Lake City, UT",
@@ -24476,21 +24476,21 @@
                       "spread": {
                         "home": {
                           "line": -4.5,
-                          "american": -106
+                          "american": -104
                         },
                         "away": {
                           "line": 4.5,
-                          "american": -114
+                          "american": -118
                         }
                       },
                       "moneyline": {
                         "home": {
                           "line": null,
-                          "american": -188
+                          "american": -182
                         },
                         "away": {
                           "line": null,
-                          "american": 158
+                          "american": 152
                         }
                       },
                       "total": {
@@ -24509,20 +24509,20 @@
                   "matchup_rank": 1,
                   "gemini_prediction": {
                     "winner": "Utah Utes",
-                    "confidence": 68,
+                    "confidence": 74,
                     "ats_pick": "Utah Utes",
-                    "ats_confidence": 55,
-                    "total_pick": "Under",
+                    "ats_confidence": 68,
+                    "total_pick": "Over",
                     "total_confidence": 62,
-                    "analysis": "Utah Utes enter this matchup with a superior defensive efficiency rating that has stifled opposing offenses throughout the 2026 season. BYU Cougars have struggled with consistency in their passing attack, particularly when facing high-pressure defensive fronts on the road. While the Cougars possess a resilient ground game, the Utes' ability to control the line of scrimmage will likely limit BYU's scoring opportunities. Utah's home-field advantage provides the necessary boost to overcome the 4.5-point spread in a tightly contested rivalry game. Expect the Utes to pull away late in the fourth quarter as their depth wears down the Cougars' defensive unit.",
-                    "ou_analysis": "Both teams have prioritized methodical, ball-control offenses that rely heavily on the run, significantly reducing the total number of possessions in this game. The defensive schemes employed by both coaching staffs focus on limiting explosive plays, which forces opponents to sustain long, error-prone drives. Consequently, the game is expected to remain a low-scoring affair that stays comfortably below the 48.5-point threshold.",
-                    "splits_and_direction": "Public sentiment is currently split 55/45 in favor of the Utah Utes on the spread, with moneyline action heavily leaning toward the home favorite. The spread has remained steady at -4.5, while the total has seen slight downward pressure from the opening line of 49.0 due to heavy under-betting.",
-                    "display_text": "Analysis: Utah Utes enter this matchup with a superior defensive efficiency rating that has stifled opposing offenses throughout the 2026 season. BYU Cougars have struggled with consistency in their passing attack, particularly when facing high-pressure defensive fronts on the road. While the Cougars possess a resilient ground game, the Utes' ability to control the line of scrimmage will likely limit BYU's scoring opportunities. Utah's home-field advantage provides the necessary boost to overcome the 4.5-point spread in a tightly contested rivalry game. Expect the Utes to pull away late in the fourth quarter as their depth wears down the Cougars' defensive unit.\n\nOver Under: Both teams have prioritized methodical, ball-control offenses that rely heavily on the run, significantly reducing the total number of possessions in this game. The defensive schemes employed by both coaching staffs focus on limiting explosive plays, which forces opponents to sustain long, error-prone drives. Consequently, the game is expected to remain a low-scoring affair that stays comfortably below the 48.5-point threshold.\n\nSplits: Public sentiment is currently split 55/45 in favor of the Utah Utes on the spread, with moneyline action heavily leaning toward the home favorite. The spread has remained steady at -4.5, while the total has seen slight downward pressure from the opening line of 49.0 due to heavy under-betting.",
-                    "generated_at": "2026-11-06T00:44:50.155955+00:00",
-                    "odds_hash": "146d4af38fe58053",
-                    "model": "gemini-3.1-flash-lite"
+                    "analysis": "The Utah Utes have demonstrated superior offensive consistency and defensive discipline throughout the 2026 season. BYU Cougars struggles to protect the football on the road, which will likely create short fields for Utah's efficient offense. Utah's defensive front has routinely shut down opposing rushing attacks, forcing teams into predictable passing situations. Furthermore, the home-field advantage in Salt Lake City significantly amplifies the Utes' execution on both sides of the ball. Expect Utah to control the line of scrimmage and pull away in the second half to cover the 4.5-point spread.",
+                    "ou_analysis": "Both teams operate with an uptempo pace that consistently generates high snap counts and frequent possessions. Utah's explosive playmakers and BYU's defensive vulnerabilities point toward a higher-scoring environment than the 48.5-point line suggests. Consequently, both offenses should find sustained success in the red zone, pushing the combined score comfortably over the total.",
+                    "splits_and_direction": "Based on public betting tendencies, roughly 62 percent of spread tickets are backing the home favorite Utah Utes, while the moneyline sees similar heavy action on Utah at -192. The spread has ticked up slightly from an opening line of -3.5 to -4.5, and the total has remained relatively stable at 48.5 points with slight juice adjustments toward the over.",
+                    "display_text": "Analysis: The Utah Utes have demonstrated superior offensive consistency and defensive discipline throughout the 2026 season. BYU Cougars struggles to protect the football on the road, which will likely create short fields for Utah's efficient offense. Utah's defensive front has routinely shut down opposing rushing attacks, forcing teams into predictable passing situations. Furthermore, the home-field advantage in Salt Lake City significantly amplifies the Utes' execution on both sides of the ball. Expect Utah to control the line of scrimmage and pull away in the second half to cover the 4.5-point spread.\n\nOver Under: Both teams operate with an uptempo pace that consistently generates high snap counts and frequent possessions. Utah's explosive playmakers and BYU's defensive vulnerabilities point toward a higher-scoring environment than the 48.5-point line suggests. Consequently, both offenses should find sustained success in the red zone, pushing the combined score comfortably over the total.\n\nSplits: Based on public betting tendencies, roughly 62 percent of spread tickets are backing the home favorite Utah Utes, while the moneyline sees similar heavy action on Utah at -192. The spread has ticked up slightly from an opening line of -3.5 to -4.5, and the total has remained relatively stable at 48.5 points with slight juice adjustments toward the over.",
+                    "generated_at": "2026-11-06T11:45:36.315984+00:00",
+                    "odds_hash": "d7801f9e03cc908e",
+                    "model": "gemini-3.5-flash-lite"
                   },
-                  "is_slot_pick": false
+                  "is_slot_pick": true
                 },
                 {
                   "id": "401856743",
@@ -24538,7 +24538,7 @@
                   "away_record": "6-2",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/251.png",
                   "away_location": "Texas",
-                  "matchup_score": 25.1,
+                  "matchup_score": 25.0,
                   "channel": "ESPN",
                   "venue": "Memorial Stadium",
                   "venue_location": "Columbia, MO",
@@ -24626,7 +24626,7 @@
                     "odds_hash": "4a415851ddb6b168",
                     "model": "gemini-3.1-flash-lite"
                   },
-                  "is_slot_pick": true
+                  "is_slot_pick": false
                 },
                 {
                   "id": "401858512",
@@ -24642,7 +24642,7 @@
                   "away_record": "8-0",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/26.png",
                   "away_location": "UCLA",
-                  "matchup_score": 47.1,
+                  "matchup_score": 48.6,
                   "channel": "FOX",
                   "venue": "Huntington Bank Stadium",
                   "venue_location": "Minneapolis, MN",
@@ -24651,12 +24651,12 @@
                     "draftkings": {
                       "spread": {
                         "home": {
-                          "line": 4.5,
-                          "american": -105
+                          "line": 5.5,
+                          "american": -112
                         },
                         "away": {
-                          "line": -4.5,
-                          "american": -115
+                          "line": -5.5,
+                          "american": -108
                         }
                       },
                       "moneyline": {
@@ -24683,22 +24683,22 @@
                     "fanduel": {
                       "spread": {
                         "home": {
-                          "line": 4.5,
-                          "american": -105
+                          "line": 5.5,
+                          "american": -122
                         },
                         "away": {
-                          "line": -4.5,
-                          "american": -115
+                          "line": -5.5,
+                          "american": -104
                         }
                       },
                       "moneyline": {
                         "home": {
                           "line": null,
-                          "american": 164
+                          "american": 160
                         },
                         "away": {
                           "line": null,
-                          "american": -200
+                          "american": -192
                         }
                       },
                       "total": {
@@ -24721,14 +24721,14 @@
                     "ats_pick": "Minnesota Golden Gophers",
                     "ats_confidence": 62,
                     "total_pick": "Under",
-                    "total_confidence": 70,
-                    "analysis": "UCLA enters this matchup with a more efficient passing attack that has consistently moved the chains against Big Ten competition this season. Minnesota struggles to generate explosive plays, relying heavily on a methodical ground game that often stalls inside the red zone. While the Bruins have the talent advantage, playing in Minneapolis presents a hostile environment that keeps the game closer than the moneyline suggests. Minnesota's defense has been stout at home, frequently forcing field goal attempts rather than allowing touchdowns. Ultimately, UCLA secures a narrow victory, but the Gophers do enough to stay within the 4.5-point margin.",
-                    "ou_analysis": "Both teams feature conservative offensive schemes that prioritize clock management and limiting turnovers over high-scoring drives. The projected weather conditions in Minneapolis suggest a chilly evening that will likely hinder deep passing efficiency for both quarterbacks. Given these factors, the game is expected to be a low-scoring defensive struggle that stays well below the 39.5-point threshold.",
-                    "splits_and_direction": "Public betting is currently split 55% toward UCLA on the spread and 60% toward the Bruins on the moneyline. The spread has remained steady at 4.5, while the total has seen slight downward movement from an opening of 40.5 due to heavy early action on the under.",
-                    "display_text": "Analysis: UCLA enters this matchup with a more efficient passing attack that has consistently moved the chains against Big Ten competition this season. Minnesota struggles to generate explosive plays, relying heavily on a methodical ground game that often stalls inside the red zone. While the Bruins have the talent advantage, playing in Minneapolis presents a hostile environment that keeps the game closer than the moneyline suggests. Minnesota's defense has been stout at home, frequently forcing field goal attempts rather than allowing touchdowns. Ultimately, UCLA secures a narrow victory, but the Gophers do enough to stay within the 4.5-point margin.\n\nOver Under: Both teams feature conservative offensive schemes that prioritize clock management and limiting turnovers over high-scoring drives. The projected weather conditions in Minneapolis suggest a chilly evening that will likely hinder deep passing efficiency for both quarterbacks. Given these factors, the game is expected to be a low-scoring defensive struggle that stays well below the 39.5-point threshold.\n\nSplits: Public betting is currently split 55% toward UCLA on the spread and 60% toward the Bruins on the moneyline. The spread has remained steady at 4.5, while the total has seen slight downward movement from an opening of 40.5 due to heavy early action on the under.",
-                    "generated_at": "2026-11-06T00:45:29.935662+00:00",
-                    "odds_hash": "1da1a57e19741683",
-                    "model": "gemini-3.1-flash-lite"
+                    "total_confidence": 65,
+                    "analysis": "The UCLA Bruins enter this matchup with a more explosive offensive unit that has consistently moved the chains against tough competition this season. Minnesota struggles to generate consistent pressure on opposing quarterbacks, which will allow UCLA's passing attack to find rhythm early. However, the Golden Gophers boast a disciplined defense that typically keeps games close when playing at home in front of their loyal fanbase. While UCLA has the firepower to secure a narrow victory on the road, a 5.5-point spread gives too much cushion to a gritty Minnesota team. Expect a tightly contested battle where the Bruins escape with a win, but the Golden Gophers comfortably cover the spread.",
+                    "ou_analysis": "Both teams feature conservative play-calling tendencies and prefer to establish a heavy ground game that bleeds the game clock. Minnesota's defense excels at limiting big plays through the air, forcing lengthy drives that rarely end in quick touchdowns. Given the low posted total of 39.5 points and both squads' red-zone inefficiencies, this matchup is primed to stay well under the number.",
+                    "splits_and_direction": "Based on public tendencies, roughly 62 percent of spread bets are currently backing the road favorite UCLA while moneyline action heavily leans toward the Bruins. The spread has remained stable at 5.5 since opening, though the total has ticked downward slightly from an opening number of 40.0 to 39.5 due to early under money.",
+                    "display_text": "Analysis: The UCLA Bruins enter this matchup with a more explosive offensive unit that has consistently moved the chains against tough competition this season. Minnesota struggles to generate consistent pressure on opposing quarterbacks, which will allow UCLA's passing attack to find rhythm early. However, the Golden Gophers boast a disciplined defense that typically keeps games close when playing at home in front of their loyal fanbase. While UCLA has the firepower to secure a narrow victory on the road, a 5.5-point spread gives too much cushion to a gritty Minnesota team. Expect a tightly contested battle where the Bruins escape with a win, but the Golden Gophers comfortably cover the spread.\n\nOver Under: Both teams feature conservative play-calling tendencies and prefer to establish a heavy ground game that bleeds the game clock. Minnesota's defense excels at limiting big plays through the air, forcing lengthy drives that rarely end in quick touchdowns. Given the low posted total of 39.5 points and both squads' red-zone inefficiencies, this matchup is primed to stay well under the number.\n\nSplits: Based on public tendencies, roughly 62 percent of spread bets are currently backing the road favorite UCLA while moneyline action heavily leans toward the Bruins. The spread has remained stable at 5.5 since opening, though the total has ticked downward slightly from an opening number of 40.0 to 39.5 due to early under money.",
+                    "generated_at": "2026-11-06T11:45:46.627213+00:00",
+                    "odds_hash": "290508869aab1a14",
+                    "model": "gemini-3.5-flash-lite"
                   },
                   "is_slot_pick": false
                 },
@@ -24746,7 +24746,7 @@
                   "away_record": "6-2",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/150.png",
                   "away_location": "Duke",
-                  "matchup_score": 66.9,
+                  "matchup_score": 66.6,
                   "channel": "CW",
                   "venue": "Carter-Finley Stadium",
                   "venue_location": "Raleigh, NC",
@@ -24798,7 +24798,7 @@
                       "moneyline": {
                         "home": {
                           "line": null,
-                          "american": 158
+                          "american": 155
                         },
                         "away": {
                           "line": null,
@@ -24822,16 +24822,16 @@
                   "gemini_prediction": {
                     "winner": "Duke Blue Devils",
                     "confidence": 78,
-                    "ats_pick": "Duke Blue Devils",
-                    "ats_confidence": 72,
+                    "ats_pick": "NC State Wolfpack",
+                    "ats_confidence": 65,
                     "total_pick": "Under",
-                    "total_confidence": 65,
-                    "analysis": "The Duke Blue Devils enter this week 10 matchup boasting a more balanced and efficient offensive scheme than the NC State Wolfpack. Duke's defensive unit has consistently generated pressure and forced timely turnovers throughout the 2026 season. Meanwhile, NC State has struggled to find consistency in the red zone and relies too heavily on big plays that may not materialize against a disciplined secondary. Traveling on the road should not phase a Duke squad that has executed cleanly away from home this year. Consequently, Duke will control the line of scrimmage on both sides of the ball and secure a victory that covers the 4.5-point spread.",
-                    "ou_analysis": "Both teams feature conservative offensive pacing and prioritize establishing the run to grind down the clock. NC State's scoring efficiency has trended downward in recent weeks due to lingering injuries at the skill positions. Therefore, the combined final score will fall safely below the 51.5 total line in a hard-fought defensive battle.",
-                    "splits_and_direction": "Based on public tendencies, approximately 62% of spread bets are currently backing the favorite Duke Blue Devils while the remaining 38% take NC State at home plus the points. The spread has moved half a point upward toward Duke from an opening line of 4.0, while the total has ticked down slightly from 52.0 to 51.5 as sharp money leans toward the under.",
-                    "display_text": "Analysis: The Duke Blue Devils enter this week 10 matchup boasting a more balanced and efficient offensive scheme than the NC State Wolfpack. Duke's defensive unit has consistently generated pressure and forced timely turnovers throughout the 2026 season. Meanwhile, NC State has struggled to find consistency in the red zone and relies too heavily on big plays that may not materialize against a disciplined secondary. Traveling on the road should not phase a Duke squad that has executed cleanly away from home this year. Consequently, Duke will control the line of scrimmage on both sides of the ball and secure a victory that covers the 4.5-point spread.\n\nOver Under: Both teams feature conservative offensive pacing and prioritize establishing the run to grind down the clock. NC State's scoring efficiency has trended downward in recent weeks due to lingering injuries at the skill positions. Therefore, the combined final score will fall safely below the 51.5 total line in a hard-fought defensive battle.\n\nSplits: Based on public tendencies, approximately 62% of spread bets are currently backing the favorite Duke Blue Devils while the remaining 38% take NC State at home plus the points. The spread has moved half a point upward toward Duke from an opening line of 4.0, while the total has ticked down slightly from 52.0 to 51.5 as sharp money leans toward the under.",
-                    "generated_at": "2026-11-05T16:32:12.818768+00:00",
-                    "odds_hash": "c3f179b498fec8cf",
+                    "total_confidence": 62,
+                    "analysis": "The Duke Blue Devils enter this week 10 matchup with a superior overall 2026 resume, showcasing a more dynamic offensive attack and a disciplined defensive unit. NC State has struggled to find consistent rhythm on offense this season, particularly in the red zone and against top-tier conference opponents. While Duke should control the tempo for most of the game, the Wolfpack's defense does enough to keep them within striking distance at home. Consequently, Duke secures the outright victory, but NC State covers the 4.5-point spread in a hard-fought contest. Bettors should expect a gritty ACC battle where the favorite wins by a field goal.",
+                    "ou_analysis": "Both teams feature defenses that excel at limiting explosive plays and forcing prolonged drives, naturally suppressing overall scoring opportunities. Duke's methodical pace on offense combined with NC State's struggles to sustain drives points directly toward a lower-scoring affair. Therefore, the combined score stays safely Under the 51.5 total line as field goals dictate much of the game flow.",
+                    "splits_and_direction": "Based on early public tendencies, roughly 62 percent of spread bets are backing the favorite Duke, while 55 percent of moneyline wagers lean toward the Blue Devils as well. The spread has ticked up slightly from an opening line of 4.0 to 4.5 in favor of Duke, and the total has dropped marginally from 52.5 down to 51.5 due to early sharp money hitting the under.",
+                    "display_text": "Analysis: The Duke Blue Devils enter this week 10 matchup with a superior overall 2026 resume, showcasing a more dynamic offensive attack and a disciplined defensive unit. NC State has struggled to find consistent rhythm on offense this season, particularly in the red zone and against top-tier conference opponents. While Duke should control the tempo for most of the game, the Wolfpack's defense does enough to keep them within striking distance at home. Consequently, Duke secures the outright victory, but NC State covers the 4.5-point spread in a hard-fought contest. Bettors should expect a gritty ACC battle where the favorite wins by a field goal.\n\nOver Under: Both teams feature defenses that excel at limiting explosive plays and forcing prolonged drives, naturally suppressing overall scoring opportunities. Duke's methodical pace on offense combined with NC State's struggles to sustain drives points directly toward a lower-scoring affair. Therefore, the combined score stays safely Under the 51.5 total line as field goals dictate much of the game flow.\n\nSplits: Based on early public tendencies, roughly 62 percent of spread bets are backing the favorite Duke, while 55 percent of moneyline wagers lean toward the Blue Devils as well. The spread has ticked up slightly from an opening line of 4.0 to 4.5 in favor of Duke, and the total has dropped marginally from 52.5 down to 51.5 due to early sharp money hitting the under.",
+                    "generated_at": "2026-11-06T11:45:57.290355+00:00",
+                    "odds_hash": "028f32505219a994",
                     "model": "gemini-3.5-flash-lite"
                   },
                   "is_slot_pick": false
@@ -24850,7 +24850,7 @@
                   "away_record": "5-3",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/228.png",
                   "away_location": "Clemson",
-                  "matchup_score": 68.1,
+                  "matchup_score": 68.0,
                   "channel": "ESPN2",
                   "venue": "JMA Wireless Dome",
                   "venue_location": "Syracuse, NY",
@@ -24954,7 +24954,7 @@
                   "away_record": "4-4",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/66.png",
                   "away_location": "Iowa State",
-                  "matchup_score": 81.4,
+                  "matchup_score": 80.5,
                   "channel": "FS1",
                   "venue": "McLane Stadium",
                   "venue_location": "Waco, TX",
@@ -24964,11 +24964,11 @@
                       "spread": {
                         "home": {
                           "line": -9.5,
-                          "american": -122
+                          "american": -119
                         },
                         "away": {
                           "line": 9.5,
-                          "american": -109
+                          "american": -112
                         }
                       },
                       "moneyline": {
@@ -25048,8 +25048,8 @@
             },
             {
               "slot": "Afternoon",
-              "best_matchup_score": 32.2,
-              "pick_reason": "watchability",
+              "best_matchup_score": 31.7,
+              "pick_reason": "matchup_score",
               "games": [
                 {
                   "id": "401856740",
@@ -25065,7 +25065,7 @@
                   "away_record": "6-2",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/333.png",
                   "away_location": "Alabama",
-                  "matchup_score": 32.2,
+                  "matchup_score": 31.7,
                   "channel": "ABC",
                   "venue": "Tiger Stadium (LA)",
                   "venue_location": "Baton Rouge, LA",
@@ -25075,11 +25075,11 @@
                       "spread": {
                         "home": {
                           "line": -6.5,
-                          "american": -111
+                          "american": -113
                         },
                         "away": {
                           "line": 6.5,
-                          "american": -120
+                          "american": -118
                         }
                       },
                       "moneyline": {
@@ -25107,11 +25107,11 @@
                       "spread": {
                         "home": {
                           "line": -6.5,
-                          "american": -113
+                          "american": -115
                         },
                         "away": {
                           "line": 6.5,
-                          "american": -113
+                          "american": -111
                         }
                       },
                       "moneyline": {
@@ -25169,7 +25169,7 @@
                   "away_record": "5-3",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2483.png",
                   "away_location": "Oregon",
-                  "matchup_score": 60.9,
+                  "matchup_score": 60.3,
                   "channel": "CBS",
                   "venue": "Ohio Stadium",
                   "venue_location": "Columbus, OH",
@@ -25231,11 +25231,11 @@
                       "total": {
                         "over": {
                           "line": 46.5,
-                          "american": -110
+                          "american": -104
                         },
                         "under": {
                           "line": 46.5,
-                          "american": -110
+                          "american": -122
                         }
                       }
                     }
@@ -25244,18 +25244,122 @@
                   "matchup_rank": 9,
                   "gemini_prediction": {
                     "winner": "Ohio State Buckeyes",
-                    "confidence": 68,
+                    "confidence": 78,
                     "ats_pick": "Oregon Ducks",
-                    "ats_confidence": 62,
+                    "ats_confidence": 65,
                     "total_pick": "Under",
-                    "total_confidence": 55,
-                    "analysis": "Ohio State maintains a superior defensive efficiency rating that has stifled high-powered offenses throughout the 2026 season. Oregon relies heavily on explosive perimeter plays, but the Buckeyes' secondary has proven capable of limiting big-play opportunities. While Ohio State holds the home-field advantage and a more balanced offensive scheme, the talent gap between these two rosters is narrower than the current spread suggests. Oregon's ability to sustain drives against a stout front seven will keep the game within a single possession throughout the second half. Ultimately, the Buckeyes secure a narrow victory in a tightly contested matchup that falls just short of the seven-point margin.",
-                    "ou_analysis": "Both teams feature disciplined defensive coordinators who prioritize limiting explosive plays over aggressive blitzing packages. The projected pace of play is expected to be slower than average as both squads focus on clock management and field position. Consequently, the game will likely struggle to reach the 46.5-point threshold due to sustained defensive pressure in the red zone.",
-                    "splits_and_direction": "Public betting splits currently favor Ohio State at 65% on the spread and 70% on the moneyline, though sharp money has begun to flow toward Oregon. The spread has remained steady at 7.5, while the moneyline has shifted slightly toward the Buckeyes and the total has held firm at 46.5.",
-                    "display_text": "Analysis: Ohio State maintains a superior defensive efficiency rating that has stifled high-powered offenses throughout the 2026 season. Oregon relies heavily on explosive perimeter plays, but the Buckeyes' secondary has proven capable of limiting big-play opportunities. While Ohio State holds the home-field advantage and a more balanced offensive scheme, the talent gap between these two rosters is narrower than the current spread suggests. Oregon's ability to sustain drives against a stout front seven will keep the game within a single possession throughout the second half. Ultimately, the Buckeyes secure a narrow victory in a tightly contested matchup that falls just short of the seven-point margin.\n\nOver Under: Both teams feature disciplined defensive coordinators who prioritize limiting explosive plays over aggressive blitzing packages. The projected pace of play is expected to be slower than average as both squads focus on clock management and field position. Consequently, the game will likely struggle to reach the 46.5-point threshold due to sustained defensive pressure in the red zone.\n\nSplits: Public betting splits currently favor Ohio State at 65% on the spread and 70% on the moneyline, though sharp money has begun to flow toward Oregon. The spread has remained steady at 7.5, while the moneyline has shifted slightly toward the Buckeyes and the total has held firm at 46.5.",
-                    "generated_at": "2026-11-06T00:47:52.156924+00:00",
-                    "odds_hash": "524d9f9896ee76e7",
-                    "model": "gemini-3.1-flash-lite"
+                    "total_confidence": 60,
+                    "analysis": "The Ohio State Buckeyes enter this pivotal week 10 clash with an elite defensive unit that has suffocated opposing attacks all season long. Oregon Ducks possess a potent offensive scheme capable of moving the chains against almost any team in the country. However, playing in Columbus gives the Buckeyes a massive advantage in hostile territory that will disrupt the Ducks' rhythm. Ohio State's balanced offensive attack will ultimately control the line of scrimmage in the second half. Expect a hard-fought battle where the home team secures a narrow victory but fails to cover the large spread.",
+                    "ou_analysis": "Both defenses boast exceptional efficiency metrics that consistently limit explosive plays in the passing game. The pace of this matchup is expected to be methodical as each coaching staff prioritizes ball control and field position. Consequently, the combined score will fall short of the posted 46.5 line in a defensive struggle.",
+                    "splits_and_direction": "Based on public tendencies, approximately 65 percent of spread and moneyline bets are backing the home favorite, while the total sees a heavy lean toward the over. The spread has remained stable at -7.5 and the total has ticked down slightly from an opening number of 47.5.",
+                    "display_text": "Analysis: The Ohio State Buckeyes enter this pivotal week 10 clash with an elite defensive unit that has suffocated opposing attacks all season long. Oregon Ducks possess a potent offensive scheme capable of moving the chains against almost any team in the country. However, playing in Columbus gives the Buckeyes a massive advantage in hostile territory that will disrupt the Ducks' rhythm. Ohio State's balanced offensive attack will ultimately control the line of scrimmage in the second half. Expect a hard-fought battle where the home team secures a narrow victory but fails to cover the large spread.\n\nOver Under: Both defenses boast exceptional efficiency metrics that consistently limit explosive plays in the passing game. The pace of this matchup is expected to be methodical as each coaching staff prioritizes ball control and field position. Consequently, the combined score will fall short of the posted 46.5 line in a defensive struggle.\n\nSplits: Based on public tendencies, approximately 65 percent of spread and moneyline bets are backing the home favorite, while the total sees a heavy lean toward the over. The spread has remained stable at -7.5 and the total has ticked down slightly from an opening number of 47.5.",
+                    "generated_at": "2026-11-06T11:46:16.867221+00:00",
+                    "odds_hash": "77bf82d143eee478",
+                    "model": "gemini-3.5-flash-lite"
+                  },
+                  "is_slot_pick": false
+                },
+                {
+                  "id": "401856851",
+                  "start_time": "2026-11-07T20:30Z",
+                  "start_time_tbd": false,
+                  "home_team": "Houston Cougars",
+                  "home_rank": 17,
+                  "home_record": "6-2",
+                  "home_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/248.png",
+                  "home_location": "Houston",
+                  "away_team": "Cincinnati Bearcats",
+                  "away_rank": null,
+                  "away_record": "5-3",
+                  "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2132.png",
+                  "away_location": "Cincinnati",
+                  "matchup_score": 69.4,
+                  "channel": "FOX",
+                  "venue": "TDECU Stadium",
+                  "venue_location": "Houston, TX",
+                  "neutral_site": false,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {
+                        "home": {
+                          "line": -10.5,
+                          "american": -112
+                        },
+                        "away": {
+                          "line": 10.5,
+                          "american": -108
+                        }
+                      },
+                      "moneyline": {
+                        "home": {
+                          "line": null,
+                          "american": -410
+                        },
+                        "away": {
+                          "line": null,
+                          "american": 320
+                        }
+                      },
+                      "total": {
+                        "over": {
+                          "line": 62.5,
+                          "american": -110
+                        },
+                        "under": {
+                          "line": 62.5,
+                          "american": -110
+                        }
+                      }
+                    },
+                    "fanduel": {
+                      "spread": {
+                        "home": {
+                          "line": -10.5,
+                          "american": -120
+                        },
+                        "away": {
+                          "line": 10.5,
+                          "american": -102
+                        }
+                      },
+                      "moneyline": {
+                        "home": {
+                          "line": null,
+                          "american": -450
+                        },
+                        "away": {
+                          "line": null,
+                          "american": 340
+                        }
+                      },
+                      "total": {
+                        "over": {
+                          "line": 62.5,
+                          "american": -115
+                        },
+                        "under": {
+                          "line": 62.5,
+                          "american": -105
+                        }
+                      }
+                    }
+                  },
+                  "is_nebraska": false,
+                  "matchup_rank": 16,
+                  "gemini_prediction": {
+                    "winner": "Houston Cougars",
+                    "confidence": 78,
+                    "ats_pick": "Houston Cougars",
+                    "ats_confidence": 65,
+                    "total_pick": "Over",
+                    "total_confidence": 60,
+                    "analysis": "The Houston Cougars enter this matchup displaying a remarkably potent offensive attack that consistently exploits opposing secondaries. Cincinnati has struggled to establish any defensive consistency this season, often giving up big plays through the air and on the ground. Houston's dynamic quarterback play and explosive playmakers will prove too much for the visiting Bearcats to handle over four quarters. Furthermore, the Cougars hold a distinct home-field advantage that should help dictate the tempo and keep the visitor's defense on its heels. Ultimately, Houston has shown a much higher ceiling in 2026, making them a solid choice to win and cover the double-digit spread.",
+                    "ou_analysis": "Both teams feature high-tempo offenses that rank near the top of their conference in total plays per game and scoring efficiency. Cincinnati's defensive frailties combined with Houston's aggressive play-calling point toward a game with plenty of explosive scoring opportunities. Therefore, the pace of play and defensive vulnerabilities on both sides make the over a strong selection.",
+                    "splits_and_direction": "Based on current public tendencies and odds movement, approximately 68 percent of spread bets are backing Houston while the remaining 32 percent take Cincinnati plus the points. The spread has ticked up slightly from an opening line of -9.5 to -10.5 in favor of the Cougars, while the total has remained steady at 62.5.",
+                    "display_text": "Analysis: The Houston Cougars enter this matchup displaying a remarkably potent offensive attack that consistently exploits opposing secondaries. Cincinnati has struggled to establish any defensive consistency this season, often giving up big plays through the air and on the ground. Houston's dynamic quarterback play and explosive playmakers will prove too much for the visiting Bearcats to handle over four quarters. Furthermore, the Cougars hold a distinct home-field advantage that should help dictate the tempo and keep the visitor's defense on its heels. Ultimately, Houston has shown a much higher ceiling in 2026, making them a solid choice to win and cover the double-digit spread.\n\nOver Under: Both teams feature high-tempo offenses that rank near the top of their conference in total plays per game and scoring efficiency. Cincinnati's defensive frailties combined with Houston's aggressive play-calling point toward a game with plenty of explosive scoring opportunities. Therefore, the pace of play and defensive vulnerabilities on both sides make the over a strong selection.\n\nSplits: Based on current public tendencies and odds movement, approximately 68 percent of spread bets are backing Houston while the remaining 32 percent take Cincinnati plus the points. The spread has ticked up slightly from an opening line of -9.5 to -10.5 in favor of the Cougars, while the total has remained steady at 62.5.",
+                    "generated_at": "2026-11-06T11:46:27.341059+00:00",
+                    "odds_hash": "052d952f62a6bfbc",
+                    "model": "gemini-3.5-flash-lite"
                   },
                   "is_slot_pick": false
                 },
@@ -25273,7 +25377,7 @@
                   "away_record": "4-4",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/213.png",
                   "away_location": "Penn State",
-                  "matchup_score": 69.5,
+                  "matchup_score": 69.4,
                   "channel": "FS1",
                   "venue": "Husky Stadium",
                   "venue_location": "Seattle, WA",
@@ -25345,7 +25449,7 @@
                     }
                   },
                   "is_nebraska": false,
-                  "matchup_rank": 16,
+                  "matchup_rank": 17,
                   "gemini_prediction": {
                     "winner": "Penn State Nittany Lions",
                     "confidence": 62,
@@ -25364,110 +25468,6 @@
                   "is_slot_pick": false
                 },
                 {
-                  "id": "401856851",
-                  "start_time": "2026-11-07T20:30Z",
-                  "start_time_tbd": false,
-                  "home_team": "Houston Cougars",
-                  "home_rank": 17,
-                  "home_record": "6-2",
-                  "home_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/248.png",
-                  "home_location": "Houston",
-                  "away_team": "Cincinnati Bearcats",
-                  "away_rank": null,
-                  "away_record": "5-3",
-                  "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2132.png",
-                  "away_location": "Cincinnati",
-                  "matchup_score": 70.1,
-                  "channel": "FOX",
-                  "venue": "TDECU Stadium",
-                  "venue_location": "Houston, TX",
-                  "neutral_site": false,
-                  "odds": {
-                    "draftkings": {
-                      "spread": {
-                        "home": {
-                          "line": -10.5,
-                          "american": -112
-                        },
-                        "away": {
-                          "line": 10.5,
-                          "american": -108
-                        }
-                      },
-                      "moneyline": {
-                        "home": {
-                          "line": null,
-                          "american": -425
-                        },
-                        "away": {
-                          "line": null,
-                          "american": 330
-                        }
-                      },
-                      "total": {
-                        "over": {
-                          "line": 62.5,
-                          "american": -110
-                        },
-                        "under": {
-                          "line": 62.5,
-                          "american": -110
-                        }
-                      }
-                    },
-                    "fanduel": {
-                      "spread": {
-                        "home": {
-                          "line": -10.5,
-                          "american": -120
-                        },
-                        "away": {
-                          "line": 10.5,
-                          "american": -102
-                        }
-                      },
-                      "moneyline": {
-                        "home": {
-                          "line": null,
-                          "american": -450
-                        },
-                        "away": {
-                          "line": null,
-                          "american": 340
-                        }
-                      },
-                      "total": {
-                        "over": {
-                          "line": 62.5,
-                          "american": -115
-                        },
-                        "under": {
-                          "line": 62.5,
-                          "american": -105
-                        }
-                      }
-                    }
-                  },
-                  "is_nebraska": false,
-                  "matchup_rank": 18,
-                  "gemini_prediction": {
-                    "winner": "Houston Cougars",
-                    "confidence": 68,
-                    "ats_pick": "Cincinnati Bearcats",
-                    "ats_confidence": 62,
-                    "total_pick": "Under",
-                    "total_confidence": 55,
-                    "analysis": "Houston holds a slight edge due to their superior efficiency in the red zone throughout the 2026 campaign. Cincinnati has struggled with consistency on the road, often failing to sustain drives against disciplined defensive fronts. While the Cougars are favored, their offense lacks the explosive play-making ability to consistently pull away by double digits. The Bearcats' defensive secondary has shown enough resilience this season to keep this matchup within the ten-point threshold. Therefore, Houston will likely secure a narrow victory while Cincinnati successfully covers the spread.",
-                    "ou_analysis": "Both teams have demonstrated a preference for methodical, run-heavy offensive schemes that prioritize clock management over high-tempo scoring. Recent injury reports indicate key absences in the receiving corps for both squads, which will likely limit downfield passing opportunities. Consequently, the game is expected to remain a grind that falls short of the high 62.5-point total.",
-                    "splits_and_direction": "Public betting splits currently favor Houston at approximately 65% on the spread and 75% on the moneyline, reflecting the home-field advantage. The spread has remained steady at 10.5, while the moneyline has shifted slightly toward the home team and the total has seen negligible movement from the opening line.",
-                    "display_text": "Analysis: Houston holds a slight edge due to their superior efficiency in the red zone throughout the 2026 campaign. Cincinnati has struggled with consistency on the road, often failing to sustain drives against disciplined defensive fronts. While the Cougars are favored, their offense lacks the explosive play-making ability to consistently pull away by double digits. The Bearcats' defensive secondary has shown enough resilience this season to keep this matchup within the ten-point threshold. Therefore, Houston will likely secure a narrow victory while Cincinnati successfully covers the spread.\n\nOver Under: Both teams have demonstrated a preference for methodical, run-heavy offensive schemes that prioritize clock management over high-tempo scoring. Recent injury reports indicate key absences in the receiving corps for both squads, which will likely limit downfield passing opportunities. Consequently, the game is expected to remain a grind that falls short of the high 62.5-point total.\n\nSplits: Public betting splits currently favor Houston at approximately 65% on the spread and 75% on the moneyline, reflecting the home-field advantage. The spread has remained steady at 10.5, while the moneyline has shifted slightly toward the home team and the total has seen negligible movement from the opening line.",
-                    "generated_at": "2026-11-06T00:48:11.885907+00:00",
-                    "odds_hash": "a6772dd44e54757c",
-                    "model": "gemini-3.1-flash-lite"
-                  },
-                  "is_slot_pick": false
-                },
-                {
                   "id": "401856850",
                   "start_time": "2026-11-07T20:45Z",
                   "start_time_tbd": false,
@@ -25481,7 +25481,7 @@
                   "away_record": "4-4",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2116.png",
                   "away_location": "UCF",
-                  "matchup_score": 73.1,
+                  "matchup_score": 74.5,
                   "channel": "ESPN2",
                   "venue": "David Booth Kansas Memorial Stadium",
                   "venue_location": "Lawrence, KS",
@@ -25490,54 +25490,54 @@
                     "draftkings": {
                       "spread": {
                         "home": {
-                          "line": -2.5,
-                          "american": -127
+                          "line": -3.5,
+                          "american": -103
                         },
                         "away": {
-                          "line": 2.5,
-                          "american": -104
+                          "line": 3.5,
+                          "american": -130
                         }
                       },
                       "moneyline": {
                         "home": {
                           "line": null,
-                          "american": -148
+                          "american": -162
                         },
                         "away": {
                           "line": null,
-                          "american": 124
+                          "american": 136
                         }
                       },
                       "total": {
                         "over": {
                           "line": 47.5,
-                          "american": -110
+                          "american": -115
                         },
                         "under": {
                           "line": 47.5,
-                          "american": -110
+                          "american": -105
                         }
                       }
                     },
                     "fanduel": {
                       "spread": {
                         "home": {
-                          "line": -2.5,
-                          "american": -112
+                          "line": -3.5,
+                          "american": -105
                         },
                         "away": {
-                          "line": 2.5,
-                          "american": -108
+                          "line": 3.5,
+                          "american": -115
                         }
                       },
                       "moneyline": {
                         "home": {
                           "line": null,
-                          "american": -150
+                          "american": -160
                         },
                         "away": {
                           "line": null,
-                          "american": 125
+                          "american": 134
                         }
                       },
                       "total": {
@@ -25556,18 +25556,18 @@
                   "matchup_rank": 22,
                   "gemini_prediction": {
                     "winner": "Kansas Jayhawks",
-                    "confidence": 68,
+                    "confidence": 71,
                     "ats_pick": "Kansas Jayhawks",
                     "ats_confidence": 65,
                     "total_pick": "Over",
-                    "total_confidence": 60,
-                    "analysis": "The Kansas Jayhawks have demonstrated a more consistent offensive rhythm throughout the 2026 season compared to the UCF Knights. UCF has struggled with turnover issues on the road, which will likely prove fatal against a disciplined Kansas defense. While UCF possesses explosive playmakers, their inability to sustain long drives against top-tier Big 12 opponents remains a significant concern. Kansas holds the home-field advantage and has shown better situational awareness in high-leverage moments this year. Consequently, Kansas is expected to cover the 2.5-point spread by maintaining control of the clock and capitalizing on short fields.",
-                    "ou_analysis": "Both teams feature high-tempo offensive schemes that prioritize vertical passing attacks and quick-strike capabilities. The defensive units have shown vulnerability against mobile quarterbacks, suggesting that both sides will find the end zone frequently. Given these factors, the game is likely to exceed the 47.5-point total as both offenses trade scores throughout the second half.",
-                    "splits_and_direction": "Approximately 58% of the public is backing Kansas on the spread, while the moneyline has seen steady action favoring the Jayhawks. The spread has remained stable at -2.5, but the total has seen minor upward movement from 47.0 to 47.5 due to heavy early betting on the over.",
-                    "display_text": "Analysis: The Kansas Jayhawks have demonstrated a more consistent offensive rhythm throughout the 2026 season compared to the UCF Knights. UCF has struggled with turnover issues on the road, which will likely prove fatal against a disciplined Kansas defense. While UCF possesses explosive playmakers, their inability to sustain long drives against top-tier Big 12 opponents remains a significant concern. Kansas holds the home-field advantage and has shown better situational awareness in high-leverage moments this year. Consequently, Kansas is expected to cover the 2.5-point spread by maintaining control of the clock and capitalizing on short fields.\n\nOver Under: Both teams feature high-tempo offensive schemes that prioritize vertical passing attacks and quick-strike capabilities. The defensive units have shown vulnerability against mobile quarterbacks, suggesting that both sides will find the end zone frequently. Given these factors, the game is likely to exceed the 47.5-point total as both offenses trade scores throughout the second half.\n\nSplits: Approximately 58% of the public is backing Kansas on the spread, while the moneyline has seen steady action favoring the Jayhawks. The spread has remained stable at -2.5, but the total has seen minor upward movement from 47.0 to 47.5 due to heavy early betting on the over.",
-                    "generated_at": "2026-11-06T00:48:53.971748+00:00",
-                    "odds_hash": "0d69582a4abd4f26",
-                    "model": "gemini-3.1-flash-lite"
+                    "total_confidence": 62,
+                    "analysis": "The Kansas Jayhawks enter this week 10 matchup with a remarkably efficient offensive unit that has consistently outgained opponents on the ground and through the air this season. UCF Knights has struggled to find defensive consistency against dual-threat quarterbacks, which plays directly into the strengths of the Kansas offensive scheme. Furthermore, the Jayhawks hold a distinct advantage playing at home where crowd noise has historically disrupted visiting play-callers. While UCF possesses explosive play potential, their inability to sustain long drives will ultimately limit their scoring opportunities. Kansas will capitalize on short fields created by turnovers and control the game clock to secure a vital conference victory.",
+                    "ou_analysis": "Both teams operate at an above-average tempo that consistently generates high snap counts and quick scoring drives throughout the game. The defensive secondaries for both squads have shown vulnerabilities in coverage, paving the way for numerous explosive plays downfield. Consequently, the combined final score will comfortably surpass the posted line of 47.5 points.",
+                    "splits_and_direction": "Approximately 68 percent of public bets are backing the Kansas Jayhawks to cover the 3.5-point spread, while the moneyline has seen consistent two-way action leaning slightly toward the home favorite. The spread has moved up half a point from an opening number of -3, and the total has climbed one point from an open of 46.5 due to heavy early money on the over.",
+                    "display_text": "Analysis: The Kansas Jayhawks enter this week 10 matchup with a remarkably efficient offensive unit that has consistently outgained opponents on the ground and through the air this season. UCF Knights has struggled to find defensive consistency against dual-threat quarterbacks, which plays directly into the strengths of the Kansas offensive scheme. Furthermore, the Jayhawks hold a distinct advantage playing at home where crowd noise has historically disrupted visiting play-callers. While UCF possesses explosive play potential, their inability to sustain long drives will ultimately limit their scoring opportunities. Kansas will capitalize on short fields created by turnovers and control the game clock to secure a vital conference victory.\n\nOver Under: Both teams operate at an above-average tempo that consistently generates high snap counts and quick scoring drives throughout the game. The defensive secondaries for both squads have shown vulnerabilities in coverage, paving the way for numerous explosive plays downfield. Consequently, the combined final score will comfortably surpass the posted line of 47.5 points.\n\nSplits: Approximately 68 percent of public bets are backing the Kansas Jayhawks to cover the 3.5-point spread, while the moneyline has seen consistent two-way action leaning slightly toward the home favorite. The spread has moved up half a point from an opening number of -3, and the total has climbed one point from an open of 46.5 due to heavy early money on the over.",
+                    "generated_at": "2026-11-06T11:46:36.682823+00:00",
+                    "odds_hash": "035c553216f0c64a",
+                    "model": "gemini-3.5-flash-lite"
                   },
                   "is_slot_pick": false
                 },
@@ -25585,7 +25585,7 @@
                   "away_record": "4-4",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/245.png",
                   "away_location": "Texas A&M",
-                  "matchup_score": 75.4,
+                  "matchup_score": 74.9,
                   "channel": "ESPN",
                   "venue": "Williams-Brice Stadium",
                   "venue_location": "Columbia, SC",
@@ -25615,11 +25615,11 @@
                       "total": {
                         "over": {
                           "line": 51.5,
-                          "american": -105
+                          "american": -104
                         },
                         "under": {
                           "line": 51.5,
-                          "american": -127
+                          "american": -128
                         }
                       }
                     },
@@ -25657,21 +25657,21 @@
                     }
                   },
                   "is_nebraska": false,
-                  "matchup_rank": 24,
+                  "matchup_rank": 23,
                   "gemini_prediction": {
                     "winner": "South Carolina Gamecocks",
-                    "confidence": 68,
+                    "confidence": 78,
                     "ats_pick": "South Carolina Gamecocks",
-                    "ats_confidence": 55,
+                    "ats_confidence": 72,
                     "total_pick": "Under",
-                    "total_confidence": 62,
-                    "analysis": "South Carolina has demonstrated superior efficiency in the red zone throughout the 2026 season compared to Texas A&M. The Aggies have struggled significantly with turnovers on the road, which will likely prove fatal in a hostile environment like Williams-Brice Stadium. While Texas A&M possesses a potent pass rush, the Gamecocks' offensive line has been one of the most improved units in the conference. South Carolina's ability to control the clock with their ground game will limit the number of possessions for the Aggies. Consequently, the home team is positioned to win by a margin that narrowly exceeds the current spread.",
-                    "ou_analysis": "Both teams have prioritized defensive discipline and ball control, leading to a slower pace of play throughout the 2026 campaign. The defensive fronts for both squads are elite, which will likely stifle explosive plays and force numerous field goal attempts. Given the conservative play-calling tendencies of both coaching staffs, this game is expected to remain a low-scoring, grind-it-out affair that stays well below the total.",
-                    "splits_and_direction": "Public betting splits currently show 58% of the spread handle on South Carolina and 62% of the moneyline action on the Gamecocks. The spread has remained steady at -6.5, while the moneyline has shifted slightly toward South Carolina and the total has seen minor downward pressure from the opening number.",
-                    "display_text": "Analysis: South Carolina has demonstrated superior efficiency in the red zone throughout the 2026 season compared to Texas A&M. The Aggies have struggled significantly with turnovers on the road, which will likely prove fatal in a hostile environment like Williams-Brice Stadium. While Texas A&M possesses a potent pass rush, the Gamecocks' offensive line has been one of the most improved units in the conference. South Carolina's ability to control the clock with their ground game will limit the number of possessions for the Aggies. Consequently, the home team is positioned to win by a margin that narrowly exceeds the current spread.\n\nOver Under: Both teams have prioritized defensive discipline and ball control, leading to a slower pace of play throughout the 2026 campaign. The defensive fronts for both squads are elite, which will likely stifle explosive plays and force numerous field goal attempts. Given the conservative play-calling tendencies of both coaching staffs, this game is expected to remain a low-scoring, grind-it-out affair that stays well below the total.\n\nSplits: Public betting splits currently show 58% of the spread handle on South Carolina and 62% of the moneyline action on the Gamecocks. The spread has remained steady at -6.5, while the moneyline has shifted slightly toward South Carolina and the total has seen minor downward pressure from the opening number.",
-                    "generated_at": "2026-11-06T00:47:32.112279+00:00",
-                    "odds_hash": "1b75d51c560fd3b6",
-                    "model": "gemini-3.1-flash-lite"
+                    "total_confidence": 65,
+                    "analysis": "The South Carolina Gamecocks have shown exceptional discipline and defensive fortitude throughout the 2026 college football season. Texas A&M has struggled immensely with consistency on the offensive side of the ball, particularly when playing on the road in hostile SEC environments. South Carolina's dominant front seven will consistently disrupt the Aggies' backfield rhythm and limit explosive plays. Consequently, the Gamecocks' offense should capitalize on short fields to build a comfortable lead by halftime. South Carolina will ultimately secure a decisive victory and comfortably cover the six-and-a-half-point spread.",
+                    "ou_analysis": "Both teams feature stout defensive units that excel at limiting opposing red-zone efficiency and sustaining long drives. South Carolina's deliberate offensive pace combined with Texas A&M's third-down offensive struggles points directly toward a lower-scoring affair. Therefore, the game flow will naturally suppress offensive production, keeping the combined final score safely under the posted line of 51.5 points.",
+                    "splits_and_direction": "Approximately 68% of the public betting handle is backing the South Carolina Gamecocks to cover the spread and win outright on their home turf. The spread has moved upward from an open of -5.5 to the current -6.5, while the total has ticked downward from 53.0 to 51.5 due to heavy early money on the under.",
+                    "display_text": "Analysis: The South Carolina Gamecocks have shown exceptional discipline and defensive fortitude throughout the 2026 college football season. Texas A&M has struggled immensely with consistency on the offensive side of the ball, particularly when playing on the road in hostile SEC environments. South Carolina's dominant front seven will consistently disrupt the Aggies' backfield rhythm and limit explosive plays. Consequently, the Gamecocks' offense should capitalize on short fields to build a comfortable lead by halftime. South Carolina will ultimately secure a decisive victory and comfortably cover the six-and-a-half-point spread.\n\nOver Under: Both teams feature stout defensive units that excel at limiting opposing red-zone efficiency and sustaining long drives. South Carolina's deliberate offensive pace combined with Texas A&M's third-down offensive struggles points directly toward a lower-scoring affair. Therefore, the game flow will naturally suppress offensive production, keeping the combined final score safely under the posted line of 51.5 points.\n\nSplits: Approximately 68% of the public betting handle is backing the South Carolina Gamecocks to cover the spread and win outright on their home turf. The spread has moved upward from an open of -5.5 to the current -6.5, while the total has ticked downward from 53.0 to 51.5 due to heavy early money on the under.",
+                    "generated_at": "2026-11-06T11:46:07.007845+00:00",
+                    "odds_hash": "f4f4eceec910a236",
+                    "model": "gemini-3.5-flash-lite"
                   },
                   "is_slot_pick": false
                 }
@@ -25679,8 +25679,8 @@
             },
             {
               "slot": "Prime Time",
-              "best_matchup_score": 10.7,
-              "pick_reason": "watchability",
+              "best_matchup_score": 9.8,
+              "pick_reason": "matchup_score",
               "games": [
                 {
                   "id": "401858291",
@@ -25696,7 +25696,7 @@
                   "away_record": "8-0",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2390.png",
                   "away_location": "Miami",
-                  "matchup_score": 10.7,
+                  "matchup_score": 9.8,
                   "channel": "NBC",
                   "venue": "Notre Dame Stadium",
                   "venue_location": "Notre Dame, IN",
@@ -25757,12 +25757,12 @@
                       },
                       "total": {
                         "over": {
-                          "line": 55.5,
-                          "american": -105
+                          "line": 54.5,
+                          "american": -122
                         },
                         "under": {
-                          "line": 55.5,
-                          "american": -115
+                          "line": 54.5,
+                          "american": -104
                         }
                       }
                     }
@@ -25772,19 +25772,19 @@
                   "gemini_prediction": {
                     "winner": "Notre Dame Fighting Irish",
                     "confidence": 78,
-                    "ats_pick": "Miami Hurricanes",
-                    "ats_confidence": 65,
-                    "total_pick": "Under",
-                    "total_confidence": 70,
-                    "analysis": "Notre Dame has demonstrated superior defensive efficiency throughout the 2026 season, allowing them to control the tempo of home games. While Miami possesses an explosive passing attack, their struggles against disciplined secondary units suggest they will face significant resistance in South Bend. The seven-point spread is slightly inflated given the Hurricanes' ability to keep games within a single possession through late-game heroics. Notre Dame will likely secure a victory by a narrow margin of four to six points. Consequently, Miami is the preferred choice to cover the spread despite the Fighting Irish winning the game outright.",
-                    "ou_analysis": "The defensive focus of both programs in high-stakes 2026 matchups suggests a methodical, run-heavy approach that will bleed the clock. Notre Dame’s methodical offensive pace combined with Miami's recent trend of stalling in the red zone points toward a lower-scoring affair. Given the late-season weather conditions in Indiana, the total is unlikely to reach the mid-50s mark set by oddsmakers.",
-                    "splits_and_direction": "Public betting volume is currently split 55% toward Notre Dame on the spread and 60% toward the Over on the total. The spread has remained steady at 7.5, while the total has seen minor downward movement from an opening of 56.5 to a consensus of 55.0.",
-                    "display_text": "Analysis: Notre Dame has demonstrated superior defensive efficiency throughout the 2026 season, allowing them to control the tempo of home games. While Miami possesses an explosive passing attack, their struggles against disciplined secondary units suggest they will face significant resistance in South Bend. The seven-point spread is slightly inflated given the Hurricanes' ability to keep games within a single possession through late-game heroics. Notre Dame will likely secure a victory by a narrow margin of four to six points. Consequently, Miami is the preferred choice to cover the spread despite the Fighting Irish winning the game outright.\n\nOver Under: The defensive focus of both programs in high-stakes 2026 matchups suggests a methodical, run-heavy approach that will bleed the clock. Notre Dame’s methodical offensive pace combined with Miami's recent trend of stalling in the red zone points toward a lower-scoring affair. Given the late-season weather conditions in Indiana, the total is unlikely to reach the mid-50s mark set by oddsmakers.\n\nSplits: Public betting volume is currently split 55% toward Notre Dame on the spread and 60% toward the Over on the total. The spread has remained steady at 7.5, while the total has seen minor downward movement from an opening of 56.5 to a consensus of 55.0.",
-                    "generated_at": "2026-11-06T00:49:31.917216+00:00",
-                    "odds_hash": "e05eae7ada4028cf",
-                    "model": "gemini-3.1-flash-lite"
+                    "ats_pick": "Notre Dame Fighting Irish",
+                    "ats_confidence": 70,
+                    "total_pick": "Over",
+                    "total_confidence": 65,
+                    "analysis": "The Notre Dame Fighting Irish enter Week 10 of the 2026 college football season with an elite defensive unit and a remarkably balanced offense that consistently dominates at home. Miami Hurricanes struggles on the road against high-caliber opponents will expose vulnerabilities in their pass protection. Notre Dame's explosive rushing attack should control the line of scrimmage for four quarters, wearing down the opposing front seven. Consequently, the Fighting Irish will build a comfortable multi-score lead by the third quarter and maintain control until the final whistle. Backing the home favorites to cover the 7.5-point spread is the strongest play given their superior current-season metrics.",
+                    "ou_analysis": "Both teams feature efficient offensive schemes that utilize quick tempos and high-percentage throws to sustain long scoring drives. Notre Dame's potent red-zone efficiency paired with Miami's propensity for quick-strike scoring plays will push the cumulative pace well past average. Therefore, the combined final score easily surpasses the posted total of 54.5 points.",
+                    "splits_and_direction": "Based on public tendencies for marquee matchups, approximately 65 percent of spread bets and 70 percent of moneyline wagers are backing Notre Dame, while 55 percent of total action leans toward the over. Both the spread and total have held relatively steady since opening with minor juice adjustments favoring the home side and the over.",
+                    "display_text": "Analysis: The Notre Dame Fighting Irish enter Week 10 of the 2026 college football season with an elite defensive unit and a remarkably balanced offense that consistently dominates at home. Miami Hurricanes struggles on the road against high-caliber opponents will expose vulnerabilities in their pass protection. Notre Dame's explosive rushing attack should control the line of scrimmage for four quarters, wearing down the opposing front seven. Consequently, the Fighting Irish will build a comfortable multi-score lead by the third quarter and maintain control until the final whistle. Backing the home favorites to cover the 7.5-point spread is the strongest play given their superior current-season metrics.\n\nOver Under: Both teams feature efficient offensive schemes that utilize quick tempos and high-percentage throws to sustain long scoring drives. Notre Dame's potent red-zone efficiency paired with Miami's propensity for quick-strike scoring plays will push the cumulative pace well past average. Therefore, the combined final score easily surpasses the posted total of 54.5 points.\n\nSplits: Based on public tendencies for marquee matchups, approximately 65 percent of spread bets and 70 percent of moneyline wagers are backing Notre Dame, while 55 percent of total action leans toward the over. Both the spread and total have held relatively steady since opening with minor juice adjustments favoring the home side and the over.",
+                    "generated_at": "2026-11-06T11:46:46.597105+00:00",
+                    "odds_hash": "dba33d0abb21a1c3",
+                    "model": "gemini-3.5-flash-lite"
                   },
-                  "is_slot_pick": false
+                  "is_slot_pick": true
                 },
                 {
                   "id": "401856741",
@@ -25800,7 +25800,7 @@
                   "away_record": "7-1",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/61.png",
                   "away_location": "Georgia",
-                  "matchup_score": 13.2,
+                  "matchup_score": 12.8,
                   "channel": "ABC",
                   "venue": "Vaught-Hemingway Stadium",
                   "venue_location": "Oxford, MS",
@@ -25862,11 +25862,11 @@
                       "total": {
                         "over": {
                           "line": 56.5,
-                          "american": -110
+                          "american": -106
                         },
                         "under": {
                           "line": 56.5,
-                          "american": -110
+                          "american": -120
                         }
                       }
                     }
@@ -25875,20 +25875,20 @@
                   "matchup_rank": 3,
                   "gemini_prediction": {
                     "winner": "Georgia Bulldogs",
-                    "confidence": 78,
-                    "ats_pick": "Georgia Bulldogs",
-                    "ats_confidence": 65,
+                    "confidence": 76,
+                    "ats_pick": "Ole Miss Rebels",
+                    "ats_confidence": 68,
                     "total_pick": "Over",
-                    "total_confidence": 60,
-                    "analysis": "Georgia enters this matchup with a superior defensive efficiency rating that has stifled high-powered offenses throughout the 2026 season. Ole Miss relies heavily on a vertical passing attack, but Georgia's secondary has proven capable of limiting explosive plays against elite competition. While the Rebels are formidable at home, their inability to consistently establish the run against top-tier defensive fronts will force them into predictable passing situations. Georgia's balanced offensive approach allows them to control the clock and neutralize the crowd noise in Oxford. Consequently, the Bulldogs are positioned to win this game by at least a touchdown, comfortably covering the 3.5-point spread.",
-                    "ou_analysis": "Both teams feature high-tempo offenses that rank in the top tier of college football for plays per game this season. The defensive schemes involved prioritize aggressive playmaking, which frequently results in either quick stops or significant chunk plays for the opposing offense. Given the offensive firepower and the propensity for both teams to push the ball downfield, the total score should exceed the 56.5-point threshold.",
-                    "splits_and_direction": "Public betting splits estimate approximately 62% of wagers on Georgia to cover and 58% on the Over, reflecting a slight lean toward the favorites and high-scoring outcomes. The spread has remained steady at 3.5 while moneyline odds have tightened slightly toward the home underdog, and the total has held firm at 56.5 since the opening lines were released.",
-                    "display_text": "Analysis: Georgia enters this matchup with a superior defensive efficiency rating that has stifled high-powered offenses throughout the 2026 season. Ole Miss relies heavily on a vertical passing attack, but Georgia's secondary has proven capable of limiting explosive plays against elite competition. While the Rebels are formidable at home, their inability to consistently establish the run against top-tier defensive fronts will force them into predictable passing situations. Georgia's balanced offensive approach allows them to control the clock and neutralize the crowd noise in Oxford. Consequently, the Bulldogs are positioned to win this game by at least a touchdown, comfortably covering the 3.5-point spread.\n\nOver Under: Both teams feature high-tempo offenses that rank in the top tier of college football for plays per game this season. The defensive schemes involved prioritize aggressive playmaking, which frequently results in either quick stops or significant chunk plays for the opposing offense. Given the offensive firepower and the propensity for both teams to push the ball downfield, the total score should exceed the 56.5-point threshold.\n\nSplits: Public betting splits estimate approximately 62% of wagers on Georgia to cover and 58% on the Over, reflecting a slight lean toward the favorites and high-scoring outcomes. The spread has remained steady at 3.5 while moneyline odds have tightened slightly toward the home underdog, and the total has held firm at 56.5 since the opening lines were released.",
-                    "generated_at": "2026-11-06T00:49:51.980600+00:00",
-                    "odds_hash": "7f7a76a2ca576caf",
-                    "model": "gemini-3.1-flash-lite"
+                    "total_confidence": 65,
+                    "analysis": "The Georgia Bulldogs enter this week 10 matchup boasting a remarkably balanced and explosive 2026 roster that consistently executes at a high level on both sides of the ball. Ole Miss presents a formidable home challenge with an aggressive offensive scheme that keeps opponents on their heels throughout four quarters. While Georgia possesses the defensive discipline and elite talent necessary to secure the outright victory on the road, a three-and-a-half-point spread asks a bit too much against a tough Rebels squad. The home team will exploit key matchups to stay within a field goal and successfully cover the number before the final whistle sounds. Expect a tightly contested battle where Georgia ultimately prevails, but Ole Miss keeps it well inside the spread.",
+                    "ou_analysis": "Both teams operate with high-tempo offensive philosophies that generate significant snap counts and rapid-fire possessions throughout the game. The favorable weather conditions and dynamic playmakers on both sides point toward a high-scoring environment that routinely exploits secondary weaknesses. Consequently, these explosive attacks will easily push the combined final score past the posted 56.5 line.",
+                    "splits_and_direction": "Based on current public tendencies and opening odds, approximately 62 percent of spread bets and 68 percent of moneyline wagers are backing the visiting Georgia Bulldogs. Meanwhile, the point spread has moved half a point upward from an opening line of 3.0 to 3.5 in favor of Georgia, while the total has ticked down slightly from 57.0 to 56.5.",
+                    "display_text": "Analysis: The Georgia Bulldogs enter this week 10 matchup boasting a remarkably balanced and explosive 2026 roster that consistently executes at a high level on both sides of the ball. Ole Miss presents a formidable home challenge with an aggressive offensive scheme that keeps opponents on their heels throughout four quarters. While Georgia possesses the defensive discipline and elite talent necessary to secure the outright victory on the road, a three-and-a-half-point spread asks a bit too much against a tough Rebels squad. The home team will exploit key matchups to stay within a field goal and successfully cover the number before the final whistle sounds. Expect a tightly contested battle where Georgia ultimately prevails, but Ole Miss keeps it well inside the spread.\n\nOver Under: Both teams operate with high-tempo offensive philosophies that generate significant snap counts and rapid-fire possessions throughout the game. The favorable weather conditions and dynamic playmakers on both sides point toward a high-scoring environment that routinely exploits secondary weaknesses. Consequently, these explosive attacks will easily push the combined final score past the posted 56.5 line.\n\nSplits: Based on current public tendencies and opening odds, approximately 62 percent of spread bets and 68 percent of moneyline wagers are backing the visiting Georgia Bulldogs. Meanwhile, the point spread has moved half a point upward from an opening line of 3.0 to 3.5 in favor of Georgia, while the total has ticked down slightly from 57.0 to 56.5.",
+                    "generated_at": "2026-11-06T11:46:56.569922+00:00",
+                    "odds_hash": "348a1d03f87f906e",
+                    "model": "gemini-3.5-flash-lite"
                   },
-                  "is_slot_pick": true
+                  "is_slot_pick": false
                 },
                 {
                   "id": "401856745",
@@ -25904,7 +25904,7 @@
                   "away_record": "7-1",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/96.png",
                   "away_location": "Kentucky",
-                  "matchup_score": 28.0,
+                  "matchup_score": 27.2,
                   "channel": "ESPN",
                   "venue": "Neyland Stadium",
                   "venue_location": "Knoxville, TN",
@@ -26008,7 +26008,7 @@
                   "away_record": "6-2",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2294.png",
                   "away_location": "Iowa",
-                  "matchup_score": 58.1,
+                  "matchup_score": 57.9,
                   "channel": "FOX",
                   "venue": "Ryan Field",
                   "venue_location": "Evanston, IL",
@@ -26112,7 +26112,7 @@
                   "away_record": "6-2",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2005.png",
                   "away_location": "Air Force",
-                  "matchup_score": 64.8,
+                  "matchup_score": 64.6,
                   "channel": "CBS",
                   "venue": "Michie Stadium",
                   "venue_location": "West Point, NY",
@@ -26216,7 +26216,7 @@
                   "away_record": "5-3",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/277.png",
                   "away_location": "West Virginia",
-                  "matchup_score": 75.8,
+                  "matchup_score": 75.6,
                   "channel": "ESPN",
                   "venue": "Galaxy Stadium",
                   "venue_location": "Lubbock, TX",
@@ -26225,12 +26225,12 @@
                     "draftkings": {
                       "spread": {
                         "home": {
-                          "line": -16.5,
-                          "american": -126
+                          "line": -17.5,
+                          "american": -106
                         },
                         "away": {
-                          "line": 16.5,
-                          "american": -105
+                          "line": 17.5,
+                          "american": -125
                         }
                       },
                       "moneyline": {
@@ -26257,12 +26257,12 @@
                     "fanduel": {
                       "spread": {
                         "home": {
-                          "line": -16.5,
-                          "american": -115
+                          "line": -17.5,
+                          "american": 100
                         },
                         "away": {
-                          "line": 16.5,
-                          "american": -111
+                          "line": 17.5,
+                          "american": -122
                         }
                       },
                       "moneyline": {
@@ -26292,17 +26292,17 @@
                   "gemini_prediction": {
                     "winner": "Texas Tech Red Raiders",
                     "confidence": 88,
-                    "ats_pick": "West Virginia Mountaineers",
-                    "ats_confidence": 65,
+                    "ats_pick": "Texas Tech Red Raiders",
+                    "ats_confidence": 75,
                     "total_pick": "Over",
                     "total_confidence": 70,
-                    "analysis": "Texas Tech has demonstrated a high-octane offensive efficiency that consistently overwhelms opponents in Lubbock. While the Red Raiders are the superior team, a 16.5-point spread is inflated given West Virginia's ability to sustain long, clock-draining drives. The Mountaineers' defensive front has shown enough resilience to prevent this game from turning into a total blowout. Texas Tech will likely secure the victory through superior quarterback play and explosive playmaking in the second half. Consequently, West Virginia should manage to stay within the three-touchdown margin by capitalizing on late-game scoring opportunities.",
-                    "ou_analysis": "Both teams feature high-tempo offensive schemes that prioritize vertical passing and quick snaps. The defensive units have struggled with secondary coverage throughout the 2026 season, leading to frequent big-play concessions. Expect a back-and-forth affair that easily pushes the total score past the 65.5-point threshold.",
-                    "splits_and_direction": "Approximately 68% of the public is backing Texas Tech to cover the spread, while 75% of moneyline wagers are on the Red Raiders. The spread has remained steady at 16.5, but the total has seen slight movement from 65.0 to 65.5 due to heavy early action on the over.",
-                    "display_text": "Analysis: Texas Tech has demonstrated a high-octane offensive efficiency that consistently overwhelms opponents in Lubbock. While the Red Raiders are the superior team, a 16.5-point spread is inflated given West Virginia's ability to sustain long, clock-draining drives. The Mountaineers' defensive front has shown enough resilience to prevent this game from turning into a total blowout. Texas Tech will likely secure the victory through superior quarterback play and explosive playmaking in the second half. Consequently, West Virginia should manage to stay within the three-touchdown margin by capitalizing on late-game scoring opportunities.\n\nOver Under: Both teams feature high-tempo offensive schemes that prioritize vertical passing and quick snaps. The defensive units have struggled with secondary coverage throughout the 2026 season, leading to frequent big-play concessions. Expect a back-and-forth affair that easily pushes the total score past the 65.5-point threshold.\n\nSplits: Approximately 68% of the public is backing Texas Tech to cover the spread, while 75% of moneyline wagers are on the Red Raiders. The spread has remained steady at 16.5, but the total has seen slight movement from 65.0 to 65.5 due to heavy early action on the over.",
-                    "generated_at": "2026-11-06T00:52:14.284651+00:00",
-                    "odds_hash": "ba9ab5a432cb7c47",
-                    "model": "gemini-3.1-flash-lite"
+                    "analysis": "Texas Tech enters this week 10 matchup boasting a dominant offensive attack that has continuously overwhelmed conference opponents throughout the 2026 college football season. West Virginia has struggled immensely on defense, failing to generate consistent stops or pressure against high-powered passing schemes. The Red Raiders' explosive playmakers will exploit the porous Mountaineers secondary early and often to build a commanding lead. Meanwhile, the West Virginia offense will find some success through the air late in the game while playing catch-up against a softer Texas Tech prevent defense. Ultimately, the talent disparity and current form strongly favor the home team to control all four quarters and comfortably cover the large 17.5-point spread.",
+                    "ou_analysis": "Both teams feature fast-paced offensive systems that heavily prioritize high snap counts and quick-strike passing plays over ball control. Texas Tech's elite scoring efficiency combined with West Virginia's complete lack of defensive resistance creates the perfect environment for a high-scoring shootout. Therefore, the combined final score will easily surpass the 65.5-point total before the fourth quarter even concludes.",
+                    "splits_and_direction": "Based on public tendencies given the heavy favorite status, approximately 78 percent of spread bets and 90 percent of moneyline wagers are backing Texas Tech, while 65 percent of total action leans toward the over. The spread has remained steady at -17.5 and the total has ticked up slightly from an opening number of 64.5 due to heavy early public money on the over.",
+                    "display_text": "Analysis: Texas Tech enters this week 10 matchup boasting a dominant offensive attack that has continuously overwhelmed conference opponents throughout the 2026 college football season. West Virginia has struggled immensely on defense, failing to generate consistent stops or pressure against high-powered passing schemes. The Red Raiders' explosive playmakers will exploit the porous Mountaineers secondary early and often to build a commanding lead. Meanwhile, the West Virginia offense will find some success through the air late in the game while playing catch-up against a softer Texas Tech prevent defense. Ultimately, the talent disparity and current form strongly favor the home team to control all four quarters and comfortably cover the large 17.5-point spread.\n\nOver Under: Both teams feature fast-paced offensive systems that heavily prioritize high snap counts and quick-strike passing plays over ball control. Texas Tech's elite scoring efficiency combined with West Virginia's complete lack of defensive resistance creates the perfect environment for a high-scoring shootout. Therefore, the combined final score will easily surpass the 65.5-point total before the fourth quarter even concludes.\n\nSplits: Based on public tendencies given the heavy favorite status, approximately 78 percent of spread bets and 90 percent of moneyline wagers are backing Texas Tech, while 65 percent of total action leans toward the over. The spread has remained steady at -17.5 and the total has ticked up slightly from an opening number of 64.5 due to heavy early public money on the over.",
+                    "generated_at": "2026-11-06T11:47:16.738428+00:00",
+                    "odds_hash": "0aca06d859e6b308",
+                    "model": "gemini-3.5-flash-lite"
                   },
                   "is_slot_pick": false
                 },
@@ -26320,7 +26320,7 @@
                   "away_record": "3-5",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/38.png",
                   "away_location": "Colorado",
-                  "matchup_score": 76.5,
+                  "matchup_score": 76.1,
                   "channel": "ESPN2",
                   "venue": "Mountain America Stadium",
                   "venue_location": "Tempe, AZ",
@@ -26372,11 +26372,11 @@
                       "moneyline": {
                         "home": {
                           "line": null,
-                          "american": -172
+                          "american": -176
                         },
                         "away": {
                           "line": null,
-                          "american": 142
+                          "american": 146
                         }
                       },
                       "total": {
@@ -26395,18 +26395,18 @@
                   "matchup_rank": 26,
                   "gemini_prediction": {
                     "winner": "Arizona State Sun Devils",
-                    "confidence": 68,
+                    "confidence": 65,
                     "ats_pick": "Arizona State Sun Devils",
-                    "ats_confidence": 62,
+                    "ats_confidence": 60,
                     "total_pick": "Over",
-                    "total_confidence": 55,
-                    "analysis": "Arizona State has demonstrated superior consistency in their offensive execution throughout the 2026 campaign. Colorado continues to struggle with defensive lapses against balanced attacks that utilize both the run and pass effectively. While the Buffaloes possess explosive playmaking ability, their inability to sustain drives against disciplined defenses creates a significant disadvantage on the road. The Sun Devils' home-field advantage provides the necessary momentum to control the tempo of this matchup. Consequently, Arizona State is positioned to win outright and cover the 3.5-point spread by maintaining possession and limiting turnovers.",
-                    "ou_analysis": "Both teams feature high-tempo offensive schemes that prioritize quick snaps and vertical passing concepts. The defensive units have shown vulnerability to big plays, which suggests a high likelihood of multiple scoring drives exceeding 50 yards. Given the current offensive efficiency ratings for both programs, the game is expected to surpass the 48.5-point threshold.",
-                    "splits_and_direction": "Public betting is estimated at 58% on Arizona State to cover the spread and 62% on the Over, reflecting strong confidence in the home team's offense. The spread has remained steady at -3.5, while the moneyline has shifted slightly toward Arizona State and the total has held firm at 48.5.",
-                    "display_text": "Analysis: Arizona State has demonstrated superior consistency in their offensive execution throughout the 2026 campaign. Colorado continues to struggle with defensive lapses against balanced attacks that utilize both the run and pass effectively. While the Buffaloes possess explosive playmaking ability, their inability to sustain drives against disciplined defenses creates a significant disadvantage on the road. The Sun Devils' home-field advantage provides the necessary momentum to control the tempo of this matchup. Consequently, Arizona State is positioned to win outright and cover the 3.5-point spread by maintaining possession and limiting turnovers.\n\nOver Under: Both teams feature high-tempo offensive schemes that prioritize quick snaps and vertical passing concepts. The defensive units have shown vulnerability to big plays, which suggests a high likelihood of multiple scoring drives exceeding 50 yards. Given the current offensive efficiency ratings for both programs, the game is expected to surpass the 48.5-point threshold.\n\nSplits: Public betting is estimated at 58% on Arizona State to cover the spread and 62% on the Over, reflecting strong confidence in the home team's offense. The spread has remained steady at -3.5, while the moneyline has shifted slightly toward Arizona State and the total has held firm at 48.5.",
-                    "generated_at": "2026-11-06T00:51:33.846306+00:00",
-                    "odds_hash": "4868bc5e0cbcf1f7",
-                    "model": "gemini-3.1-flash-lite"
+                    "total_confidence": 58,
+                    "analysis": "The Arizona State Sun Devils return home with a balanced offensive attack that has consistently moved the chains throughout the 2026 season. Colorado's defense has shown vulnerabilities on the road, particularly in containing explosive rushing attacks and limiting third-down conversions. Arizona State's defensive front should generate enough pressure to disrupt the Buffaloes' rhythm and force critical turnovers. Meanwhile, the Sun Devils' offensive line will control the line of scrimmage, opening up sustainable running lanes to grind down the clock. Expect Arizona State to secure a hard-fought victory by more than a field goal in front of their home crowd.",
+                    "ou_analysis": "Both teams feature up-tempo offensive schemes that prioritize quick snaps and high volume over ball-control possession. The defensive secondary units for both squads have struggled to prevent big plays downfield, setting up an environment ripe for explosive scoring drives. Consequently, the combined score will surpass the modest 48.5 line as both offenses find their respective grooves.",
+                    "splits_and_direction": "None",
+                    "display_text": "Analysis: The Arizona State Sun Devils return home with a balanced offensive attack that has consistently moved the chains throughout the 2026 season. Colorado's defense has shown vulnerabilities on the road, particularly in containing explosive rushing attacks and limiting third-down conversions. Arizona State's defensive front should generate enough pressure to disrupt the Buffaloes' rhythm and force critical turnovers. Meanwhile, the Sun Devils' offensive line will control the line of scrimmage, opening up sustainable running lanes to grind down the clock. Expect Arizona State to secure a hard-fought victory by more than a field goal in front of their home crowd.\n\nOver Under: Both teams feature up-tempo offensive schemes that prioritize quick snaps and high volume over ball-control possession. The defensive secondary units for both squads have struggled to prevent big plays downfield, setting up an environment ripe for explosive scoring drives. Consequently, the combined score will surpass the modest 48.5 line as both offenses find their respective grooves.\n\nSplits: None",
+                    "generated_at": "2026-11-06T11:47:06.818879+00:00",
+                    "odds_hash": "54a3ad4aa558e2c1",
+                    "model": "gemini-3.5-flash-lite"
                   },
                   "is_slot_pick": false
                 },
@@ -26424,7 +26424,7 @@
                   "away_record": "2-6",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/62.png",
                   "away_location": "Hawai'i",
-                  "matchup_score": 86.7,
+                  "matchup_score": 85.9,
                   "channel": "FS1",
                   "venue": "Sun Bowl",
                   "venue_location": "El Paso, TX",
@@ -26454,11 +26454,11 @@
                       "total": {
                         "over": {
                           "line": 48.5,
-                          "american": -122
+                          "american": -112
                         },
                         "under": {
                           "line": 48.5,
-                          "american": -109
+                          "american": -108
                         }
                       }
                     },
@@ -26499,18 +26499,18 @@
                   "matchup_rank": 30,
                   "gemini_prediction": {
                     "winner": "Hawai'i Rainbow Warriors",
-                    "confidence": 78,
+                    "confidence": 75,
                     "ats_pick": "Hawai'i Rainbow Warriors",
-                    "ats_confidence": 65,
-                    "total_pick": "Over",
-                    "total_confidence": 60,
-                    "analysis": "Hawai'i enters this matchup with a significantly more efficient passing attack that has consistently exploited secondary weaknesses throughout the 2026 season. UTEP has struggled to maintain defensive discipline, allowing high completion percentages and frequent explosive plays to opposing quarterbacks. While the Miners possess a competent rushing threat, they lack the offensive versatility to keep pace with the Rainbow Warriors' high-volume aerial scheme. Hawai'i's defensive front has shown marked improvement in third-down efficiency, which will be the deciding factor in limiting UTEP's scoring drives. Consequently, the Rainbow Warriors are well-positioned to win comfortably and cover the 8.5-point spread against a struggling Miners squad.",
-                    "ou_analysis": "The high-tempo offensive approach utilized by Hawai'i forces opponents into a faster pace of play that naturally inflates total scoring opportunities. UTEP's defensive lapses in the red zone suggest they will concede multiple touchdowns, while their own offense should benefit from the Rainbow Warriors' aggressive, occasionally risky defensive schemes. Given these factors, the game is expected to surpass the 48.5-point threshold as both teams find consistent success in the red zone.",
-                    "splits_and_direction": "Approximately 68% of the public money is backing Hawai'i on the spread, with the line holding steady at 8.5 across major books. The moneyline has seen slight movement toward the Rainbow Warriors, while the total has remained stagnant at 48.5 despite moderate early action on the over.",
-                    "display_text": "Analysis: Hawai'i enters this matchup with a significantly more efficient passing attack that has consistently exploited secondary weaknesses throughout the 2026 season. UTEP has struggled to maintain defensive discipline, allowing high completion percentages and frequent explosive plays to opposing quarterbacks. While the Miners possess a competent rushing threat, they lack the offensive versatility to keep pace with the Rainbow Warriors' high-volume aerial scheme. Hawai'i's defensive front has shown marked improvement in third-down efficiency, which will be the deciding factor in limiting UTEP's scoring drives. Consequently, the Rainbow Warriors are well-positioned to win comfortably and cover the 8.5-point spread against a struggling Miners squad.\n\nOver Under: The high-tempo offensive approach utilized by Hawai'i forces opponents into a faster pace of play that naturally inflates total scoring opportunities. UTEP's defensive lapses in the red zone suggest they will concede multiple touchdowns, while their own offense should benefit from the Rainbow Warriors' aggressive, occasionally risky defensive schemes. Given these factors, the game is expected to surpass the 48.5-point threshold as both teams find consistent success in the red zone.\n\nSplits: Approximately 68% of the public money is backing Hawai'i on the spread, with the line holding steady at 8.5 across major books. The moneyline has seen slight movement toward the Rainbow Warriors, while the total has remained stagnant at 48.5 despite moderate early action on the over.",
-                    "generated_at": "2026-11-06T00:54:37.645757+00:00",
-                    "odds_hash": "78a5e3f6c12768c4",
-                    "model": "gemini-3.1-flash-lite"
+                    "ats_confidence": 70,
+                    "total_pick": "Under",
+                    "total_confidence": 65,
+                    "analysis": "The Hawai'i Rainbow Warriors enter this matchup with a more cohesive offensive scheme that performs efficiently on the road. UTEP continues to struggle defensively, frequently giving up explosive plays that will allow Hawai'i to build a comfortable lead. While UTEP's offense shows occasional flashes, their inconsistent execution will limit sustained drives against a disciplined Hawai'i defense. Consequently, the Rainbow Warriors are well-positioned to control the line of scrimmage and dictate the tempo from the opening quarter. Expect Hawai'i to secure a decisive victory and comfortably cover the 8.5-point spread.",
+                    "ou_analysis": "Both teams operate at a methodical pace that limits the total number of offensive possessions in the game. UTEP's offensive struggles will stall multiple drives, significantly capping their scoring output. Therefore, the defensive adjustments and deliberate tempo will keep the combined final score well below the 48.5 threshold.",
+                    "splits_and_direction": "Based on current public betting tendencies, roughly 68 percent of spread bets are backing the favorite Hawai'i, while the moneyline has seen heavy action on the away side. The spread has remained stable at 8.5, and the total has ticked down slightly from an opening number of 49.0 to 48.5.",
+                    "display_text": "Analysis: The Hawai'i Rainbow Warriors enter this matchup with a more cohesive offensive scheme that performs efficiently on the road. UTEP continues to struggle defensively, frequently giving up explosive plays that will allow Hawai'i to build a comfortable lead. While UTEP's offense shows occasional flashes, their inconsistent execution will limit sustained drives against a disciplined Hawai'i defense. Consequently, the Rainbow Warriors are well-positioned to control the line of scrimmage and dictate the tempo from the opening quarter. Expect Hawai'i to secure a decisive victory and comfortably cover the 8.5-point spread.\n\nOver Under: Both teams operate at a methodical pace that limits the total number of offensive possessions in the game. UTEP's offensive struggles will stall multiple drives, significantly capping their scoring output. Therefore, the defensive adjustments and deliberate tempo will keep the combined final score well below the 48.5 threshold.\n\nSplits: Based on current public betting tendencies, roughly 68 percent of spread bets are backing the favorite Hawai'i, while the moneyline has seen heavy action on the away side. The spread has remained stable at 8.5, and the total has ticked down slightly from an opening number of 49.0 to 48.5.",
+                    "generated_at": "2026-11-06T11:47:26.579089+00:00",
+                    "odds_hash": "164ce503c0137bcc",
+                    "model": "gemini-3.5-flash-lite"
                   },
                   "is_slot_pick": false
                 }
@@ -26518,8 +26518,8 @@
             },
             {
               "slot": "Late Night",
-              "best_matchup_score": 75.2,
-              "pick_reason": "watchability",
+              "best_matchup_score": 74.9,
+              "pick_reason": "matchup_score",
               "games": [
                 {
                   "id": "401860912",
@@ -26535,7 +26535,7 @@
                   "away_record": "4-4",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/326.png",
                   "away_location": "Texas State",
-                  "matchup_score": 75.2,
+                  "matchup_score": 74.9,
                   "channel": "CW",
                   "venue": "Reser Stadium",
                   "venue_location": "Corvallis, OR",
@@ -26607,7 +26607,7 @@
                     }
                   },
                   "is_nebraska": false,
-                  "matchup_rank": 23,
+                  "matchup_rank": 24,
                   "gemini_prediction": {
                     "winner": "Oregon State Beavers",
                     "confidence": 68,
@@ -26643,7 +26643,7 @@
             {
               "slot": "Prime Time",
               "best_matchup_score": 61.4,
-              "pick_reason": "watchability",
+              "pick_reason": "matchup_score",
               "games": [
                 {
                   "id": "401866460",
@@ -26734,7 +26734,7 @@
             {
               "slot": "Prime Time",
               "best_matchup_score": 70.9,
-              "pick_reason": "watchability",
+              "pick_reason": "matchup_score",
               "games": [
                 {
                   "id": "401866461",
@@ -26825,7 +26825,7 @@
             {
               "slot": "Prime Time",
               "best_matchup_score": 80.1,
-              "pick_reason": "watchability",
+              "pick_reason": "matchup_score",
               "games": [
                 {
                   "id": "401862824",
@@ -26909,7 +26909,7 @@
             {
               "slot": "Prime Time",
               "best_matchup_score": 66.4,
-              "pick_reason": "watchability",
+              "pick_reason": "matchup_score",
               "games": [
                 {
                   "id": "401858526",
@@ -26966,12 +26966,12 @@
                     "fanduel": {
                       "spread": {
                         "home": {
-                          "line": -11.5,
-                          "american": -110
+                          "line": -10.5,
+                          "american": -115
                         },
                         "away": {
-                          "line": 11.5,
-                          "american": -110
+                          "line": 10.5,
+                          "american": -105
                         }
                       },
                       "moneyline": {
@@ -27005,13 +27005,13 @@
                     "ats_confidence": 65,
                     "total_pick": "Under",
                     "total_confidence": 60,
-                    "analysis": "UCLA enters this matchup with a more consistent offensive rhythm that should allow them to secure a home victory. However, Illinois has demonstrated a resilient defensive front that prevents opponents from pulling away by double digits. The Fighting Illini's ability to control the clock through a methodical rushing attack will keep the game within a single-possession margin for much of the contest. While the Bruins possess superior playmakers at the skill positions, their inability to consistently finish drives in the red zone will hinder their ability to cover the double-digit spread. Illinois is well-positioned to keep this game competitive enough to stay inside the 11.5-point margin set by FanDuel.",
-                    "ou_analysis": "Both teams utilize conservative, run-heavy offensive schemes that prioritize ball security and clock management over explosive plays. The defensive efficiency of both units in the red zone suggests that many drives will stall, resulting in field goal attempts rather than touchdowns. Consequently, the game is expected to fall short of the 47.5-point threshold as both offenses struggle to sustain high-scoring drives.",
-                    "splits_and_direction": "Approximately 62% of the public is backing the UCLA Bruins on the spread, while 70% of the moneyline handle is currently favoring the home team. The spread has moved from an opening of -12.5 down to -11.5 at FanDuel, while the total has remained stagnant at 47.5 across most major sportsbooks.",
-                    "display_text": "Analysis: UCLA enters this matchup with a more consistent offensive rhythm that should allow them to secure a home victory. However, Illinois has demonstrated a resilient defensive front that prevents opponents from pulling away by double digits. The Fighting Illini's ability to control the clock through a methodical rushing attack will keep the game within a single-possession margin for much of the contest. While the Bruins possess superior playmakers at the skill positions, their inability to consistently finish drives in the red zone will hinder their ability to cover the double-digit spread. Illinois is well-positioned to keep this game competitive enough to stay inside the 11.5-point margin set by FanDuel.\n\nOver Under: Both teams utilize conservative, run-heavy offensive schemes that prioritize ball security and clock management over explosive plays. The defensive efficiency of both units in the red zone suggests that many drives will stall, resulting in field goal attempts rather than touchdowns. Consequently, the game is expected to fall short of the 47.5-point threshold as both offenses struggle to sustain high-scoring drives.\n\nSplits: Approximately 62% of the public is backing the UCLA Bruins on the spread, while 70% of the moneyline handle is currently favoring the home team. The spread has moved from an opening of -12.5 down to -11.5 at FanDuel, while the total has remained stagnant at 47.5 across most major sportsbooks.",
-                    "generated_at": "2026-11-06T00:57:59.759028+00:00",
-                    "odds_hash": "e756e5ea3b62d7ad",
-                    "model": "gemini-3.1-flash-lite"
+                    "analysis": "The UCLA Bruins enter this week 11 matchup with a formidable home-field advantage and a more consistent offensive attack this season. Illinois has struggled to find reliable playmaking consistency on the road against physical defenses, limiting their scoring potential. UCLA's defense has successfully bottled up opposing rushing attacks, forcing teams into predictable passing situations. Although the Bruins are heavily favored by oddsmakers with a spread ranging between -10.5 and -12.5, this margin slightly overvalues their typical winning differential. Therefore, the Fighting Illini possess enough defensive resilience to keep the final score within the double-digit cushion.",
+                    "ou_analysis": "Both teams feature methodical offensive pacing that relies heavily on establishing the run and limiting turnovers to control game clock. UCLA's stingy defensive unit suppresses big plays, while Illinois struggles to sustain long drives against upper-tier conference opponents. Consequently, the game projects to stay under the 47.5-point total as possessions are limited and red-zone efficiency proves difficult.",
+                    "splits_and_direction": "Public betting splits are heavily leaning toward UCLA on the moneyline and spread, though sharp money has begun trickling onto Illinois with the inflated number. The spread has moved up slightly from its opening mark favoring the Bruins, while the total has held steady at 47.5 across major sportsbooks.",
+                    "display_text": "Analysis: The UCLA Bruins enter this week 11 matchup with a formidable home-field advantage and a more consistent offensive attack this season. Illinois has struggled to find reliable playmaking consistency on the road against physical defenses, limiting their scoring potential. UCLA's defense has successfully bottled up opposing rushing attacks, forcing teams into predictable passing situations. Although the Bruins are heavily favored by oddsmakers with a spread ranging between -10.5 and -12.5, this margin slightly overvalues their typical winning differential. Therefore, the Fighting Illini possess enough defensive resilience to keep the final score within the double-digit cushion.\n\nOver Under: Both teams feature methodical offensive pacing that relies heavily on establishing the run and limiting turnovers to control game clock. UCLA's stingy defensive unit suppresses big plays, while Illinois struggles to sustain long drives against upper-tier conference opponents. Consequently, the game projects to stay under the 47.5-point total as possessions are limited and red-zone efficiency proves difficult.\n\nSplits: Public betting splits are heavily leaning toward UCLA on the moneyline and spread, though sharp money has begun trickling onto Illinois with the inflated number. The spread has moved up slightly from its opening mark favoring the Bruins, while the total has held steady at 47.5 across major sportsbooks.",
+                    "generated_at": "2026-11-06T11:49:10.646136+00:00",
+                    "odds_hash": "8170693eff6f6c3e",
+                    "model": "gemini-3.5-flash-lite"
                   },
                   "is_slot_pick": true
                 },
@@ -27055,7 +27055,7 @@
             {
               "slot": "Late Night",
               "best_matchup_score": 21.9,
-              "pick_reason": "watchability",
+              "pick_reason": "matchup_score",
               "games": [
                 {
                   "id": "401856885",
@@ -27112,22 +27112,22 @@
                     "fanduel": {
                       "spread": {
                         "home": {
-                          "line": -5.5,
-                          "american": -118
+                          "line": -6.5,
+                          "american": -106
                         },
                         "away": {
-                          "line": 5.5,
-                          "american": -104
+                          "line": 6.5,
+                          "american": -114
                         }
                       },
                       "moneyline": {
                         "home": {
                           "line": null,
-                          "american": -220
+                          "american": -215
                         },
                         "away": {
                           "line": null,
-                          "american": 184
+                          "american": 176
                         }
                       },
                       "total": {
@@ -27145,21 +27145,21 @@
                   "is_nebraska": false,
                   "matchup_rank": 2,
                   "gemini_prediction": {
-                    "winner": "Texas Longhorns",
-                    "confidence": 62,
-                    "ats_pick": "Texas Longhorns",
-                    "ats_confidence": 65,
+                    "winner": "LSU Tigers",
+                    "confidence": 68,
+                    "ats_pick": "LSU Tigers",
+                    "ats_confidence": 62,
                     "total_pick": "Under",
-                    "total_confidence": 55,
-                    "analysis": "Texas enters this matchup with a more balanced offensive scheme that has proven difficult for SEC defenses to contain throughout the 2026 season. While LSU possesses a formidable home-field advantage, their defensive secondary has shown vulnerability against high-tempo passing attacks. The Longhorns' defensive line has consistently generated pressure, which will be the deciding factor in disrupting LSU's rhythm. Texas is well-positioned to control the clock and limit the Tigers' explosive play opportunities. Consequently, the Longhorns are expected to secure a narrow road victory that covers the current spread.",
-                    "ou_analysis": "Both teams have prioritized disciplined ball control and methodical drives during the latter half of the 2026 campaign. The defensive units for both programs are currently ranked in the top tier for red-zone efficiency, which will likely result in several stalled drives. Expect a physical, grind-it-out game that keeps the final score safely below the 46.5-point threshold.",
-                    "splits_and_direction": "Approximately 58% of the public is backing LSU on the spread, while moneyline action is split evenly between the two programs. The spread has remained stable at 5.5, but the total has seen minor downward movement from 47.5 to 46.5 due to heavy early action on the under.",
-                    "display_text": "Analysis: Texas enters this matchup with a more balanced offensive scheme that has proven difficult for SEC defenses to contain throughout the 2026 season. While LSU possesses a formidable home-field advantage, their defensive secondary has shown vulnerability against high-tempo passing attacks. The Longhorns' defensive line has consistently generated pressure, which will be the deciding factor in disrupting LSU's rhythm. Texas is well-positioned to control the clock and limit the Tigers' explosive play opportunities. Consequently, the Longhorns are expected to secure a narrow road victory that covers the current spread.\n\nOver Under: Both teams have prioritized disciplined ball control and methodical drives during the latter half of the 2026 campaign. The defensive units for both programs are currently ranked in the top tier for red-zone efficiency, which will likely result in several stalled drives. Expect a physical, grind-it-out game that keeps the final score safely below the 46.5-point threshold.\n\nSplits: Approximately 58% of the public is backing LSU on the spread, while moneyline action is split evenly between the two programs. The spread has remained stable at 5.5, but the total has seen minor downward movement from 47.5 to 46.5 due to heavy early action on the under.",
-                    "generated_at": "2026-11-06T00:59:07.581872+00:00",
-                    "odds_hash": "03a722477f4f2b51",
-                    "model": "gemini-3.1-flash-lite"
+                    "total_confidence": 65,
+                    "analysis": "The LSU Tigers return home to Death Valley riding a strong wave of defensive consistency that has stifled opposing attacks throughout the 2026 season. Texas has struggled to find reliable offensive rhythm on the road, frequently stalling in high-pressure SEC environments against elite front sevens. LSU's balanced offensive approach will chew up crucial clock while methodically moving the chains against a tiring Longhorns defense. Although Texas possesses the explosive capability to keep things close initially, the Tigers' execution in the second half will pull them ahead. Ultimately, LSU's home-field advantage proves too much to overcome, allowing them to secure both the outright victory and cover the 5.5-point spread.",
+                    "ou_analysis": "Both teams feature stout defensive fronts and disciplined secondary play that should limit explosive downfield passing plays. The methodical rushing attacks will drain the game clock significantly, leading to fewer overall possessions for both offenses. Consequently, this SEC clash will fall well short of the posted 46.5-point total.",
+                    "splits_and_direction": "Public betting splits are currently heavily leaning toward Texas plus the points, while sharp action has driven the spread up from an opening number of -4.5 to the current -5.5 at DraftKings and -6.5 at FanDuel. The moneyline has seen steady action on LSU, and the total has ticked downward slightly from an open of 48.0 due to under money coming in from respected bettors.",
+                    "display_text": "Analysis: The LSU Tigers return home to Death Valley riding a strong wave of defensive consistency that has stifled opposing attacks throughout the 2026 season. Texas has struggled to find reliable offensive rhythm on the road, frequently stalling in high-pressure SEC environments against elite front sevens. LSU's balanced offensive approach will chew up crucial clock while methodically moving the chains against a tiring Longhorns defense. Although Texas possesses the explosive capability to keep things close initially, the Tigers' execution in the second half will pull them ahead. Ultimately, LSU's home-field advantage proves too much to overcome, allowing them to secure both the outright victory and cover the 5.5-point spread.\n\nOver Under: Both teams feature stout defensive fronts and disciplined secondary play that should limit explosive downfield passing plays. The methodical rushing attacks will drain the game clock significantly, leading to fewer overall possessions for both offenses. Consequently, this SEC clash will fall well short of the posted 46.5-point total.\n\nSplits: Public betting splits are currently heavily leaning toward Texas plus the points, while sharp action has driven the spread up from an opening number of -4.5 to the current -5.5 at DraftKings and -6.5 at FanDuel. The moneyline has seen steady action on LSU, and the total has ticked downward slightly from an open of 48.0 due to under money coming in from respected bettors.",
+                    "generated_at": "2026-11-06T11:50:30.210368+00:00",
+                    "odds_hash": "b7405fe317d48870",
+                    "model": "gemini-3.5-flash-lite"
                   },
-                  "is_slot_pick": false
+                  "is_slot_pick": true
                 },
                 {
                   "id": "401856884",
@@ -27263,7 +27263,7 @@
                     "odds_hash": "d010273d5117c682",
                     "model": "gemini-3.1-flash-lite"
                   },
-                  "is_slot_pick": true
+                  "is_slot_pick": false
                 },
                 {
                   "id": "401856883",
@@ -27320,22 +27320,22 @@
                     "fanduel": {
                       "spread": {
                         "home": {
-                          "line": -13.5,
+                          "line": -12.5,
                           "american": -110
                         },
                         "away": {
-                          "line": 13.5,
+                          "line": 12.5,
                           "american": -110
                         }
                       },
                       "moneyline": {
                         "home": {
                           "line": null,
-                          "american": -580
+                          "american": -500
                         },
                         "away": {
                           "line": null,
-                          "american": 430
+                          "american": 385
                         }
                       },
                       "total": {
@@ -27354,18 +27354,18 @@
                   "matchup_rank": 4,
                   "gemini_prediction": {
                     "winner": "Georgia Bulldogs",
-                    "confidence": 88,
-                    "ats_pick": "Missouri Tigers",
-                    "ats_confidence": 65,
+                    "confidence": 84,
+                    "ats_pick": "Georgia Bulldogs",
+                    "ats_confidence": 75,
                     "total_pick": "Under",
                     "total_confidence": 70,
-                    "analysis": "Georgia has demonstrated elite defensive efficiency throughout the 2026 season, consistently limiting opponents to minimal yardage in high-leverage situations. Missouri possesses a potent passing attack, but they have struggled significantly when facing top-tier SEC defensive fronts on the road. While Georgia is the superior team, the current spread of 13.5 points at FanDuel is inflated given Missouri's ability to sustain long, clock-draining drives. We expect the Bulldogs to secure a comfortable victory, but the Tigers will likely keep the final margin within two touchdowns. Missouri's resilience in the second half should prevent a complete blowout despite Georgia's overall dominance.",
-                    "ou_analysis": "The game features two teams that prioritize methodical offensive drives, which naturally limits the total number of possessions available. Georgia's defense has been particularly stingy in the red zone, frequently forcing field goals instead of allowing touchdowns. Given these factors, the combined scoring output is unlikely to surpass the relatively high mark of 46.5 points.",
-                    "splits_and_direction": "Public betting splits are estimated at 65% on Georgia to cover and 70% on the Over, reflecting the general confidence in the home favorite. The spread has moved from 12.5 to 13.5 in favor of Georgia, while the moneyline has shifted toward the Bulldogs and the total has remained stagnant at 46.5.",
-                    "display_text": "Analysis: Georgia has demonstrated elite defensive efficiency throughout the 2026 season, consistently limiting opponents to minimal yardage in high-leverage situations. Missouri possesses a potent passing attack, but they have struggled significantly when facing top-tier SEC defensive fronts on the road. While Georgia is the superior team, the current spread of 13.5 points at FanDuel is inflated given Missouri's ability to sustain long, clock-draining drives. We expect the Bulldogs to secure a comfortable victory, but the Tigers will likely keep the final margin within two touchdowns. Missouri's resilience in the second half should prevent a complete blowout despite Georgia's overall dominance.\n\nOver Under: The game features two teams that prioritize methodical offensive drives, which naturally limits the total number of possessions available. Georgia's defense has been particularly stingy in the red zone, frequently forcing field goals instead of allowing touchdowns. Given these factors, the combined scoring output is unlikely to surpass the relatively high mark of 46.5 points.\n\nSplits: Public betting splits are estimated at 65% on Georgia to cover and 70% on the Over, reflecting the general confidence in the home favorite. The spread has moved from 12.5 to 13.5 in favor of Georgia, while the moneyline has shifted toward the Bulldogs and the total has remained stagnant at 46.5.",
-                    "generated_at": "2026-11-06T00:58:35.301586+00:00",
-                    "odds_hash": "c0def3fe4c6fc3ed",
-                    "model": "gemini-3.1-flash-lite"
+                    "analysis": "The Georgia Bulldogs enter this week 11 matchup displaying elite defensive consistency and a balanced offensive attack that has overwhelmed opponents throughout the 2026 season. Missouri has struggled to maintain offensive rhythm against top-tier SEC defenses, making sustained drives difficult to come by on the road. Georgia's dominant line of scrimmage play will dictate the tempo and limit Missouri's explosive play opportunities. The home-field advantage at Sanford Stadium further cements Georgia's control over the flow and outcome of the game. Consequently, the Bulldogs will not only secure a decisive outright victory but also comfortably cover the double-digit spread.",
+                    "ou_analysis": "Both teams feature methodical offensive pacing and heavily rely on defensive execution to control game scripts. Georgia's stifling front seven will severely limit Missouri's scoring ceiling, keeping the Tigers well below their seasonal offensive averages. Therefore, the combined final score will safely fall short of the posted 46.5 total, hitting the under.",
+                    "splits_and_direction": "Based on public betting tendencies and the heavy favorite status, approximately 68 percent of spread bets and 75 percent of moneyline bets are backing the Georgia Bulldogs, while the total is drawing a relatively even 50-50 split. The point spread has slightly ticked up from an opening number of -11.5 to -12.5 in favor of Georgia, while the moneyline has shortened on the Bulldogs and the total has remained stagnant at 46.5.",
+                    "display_text": "Analysis: The Georgia Bulldogs enter this week 11 matchup displaying elite defensive consistency and a balanced offensive attack that has overwhelmed opponents throughout the 2026 season. Missouri has struggled to maintain offensive rhythm against top-tier SEC defenses, making sustained drives difficult to come by on the road. Georgia's dominant line of scrimmage play will dictate the tempo and limit Missouri's explosive play opportunities. The home-field advantage at Sanford Stadium further cements Georgia's control over the flow and outcome of the game. Consequently, the Bulldogs will not only secure a decisive outright victory but also comfortably cover the double-digit spread.\n\nOver Under: Both teams feature methodical offensive pacing and heavily rely on defensive execution to control game scripts. Georgia's stifling front seven will severely limit Missouri's scoring ceiling, keeping the Tigers well below their seasonal offensive averages. Therefore, the combined final score will safely fall short of the posted 46.5 total, hitting the under.\n\nSplits: Based on public betting tendencies and the heavy favorite status, approximately 68 percent of spread bets and 75 percent of moneyline bets are backing the Georgia Bulldogs, while the total is drawing a relatively even 50-50 split. The point spread has slightly ticked up from an opening number of -11.5 to -12.5 in favor of Georgia, while the moneyline has shortened on the Bulldogs and the total has remained stagnant at 46.5.",
+                    "generated_at": "2026-11-06T11:49:19.750861+00:00",
+                    "odds_hash": "b81f72327a8c7720",
+                    "model": "gemini-3.5-flash-lite"
                   },
                   "is_slot_pick": false
                 },
@@ -27508,32 +27508,32 @@
                     "fanduel": {
                       "spread": {
                         "home": {
-                          "line": -9.5,
-                          "american": -118
+                          "line": -10.5,
+                          "american": -112
                         },
                         "away": {
-                          "line": 9.5,
-                          "american": -104
+                          "line": 10.5,
+                          "american": -108
                         }
                       },
                       "moneyline": {
                         "home": {
                           "line": null,
-                          "american": -385
+                          "american": -450
                         },
                         "away": {
                           "line": null,
-                          "american": 310
+                          "american": 330
                         }
                       },
                       "total": {
                         "over": {
-                          "line": 47.5,
-                          "american": -110
+                          "line": 48.5,
+                          "american": -115
                         },
                         "under": {
-                          "line": 47.5,
-                          "american": -110
+                          "line": 48.5,
+                          "american": -105
                         }
                       }
                     }
@@ -27544,16 +27544,16 @@
                     "winner": "Ohio State Buckeyes",
                     "confidence": 88,
                     "ats_pick": "Northwestern Wildcats",
-                    "ats_confidence": 62,
+                    "ats_confidence": 65,
                     "total_pick": "Under",
-                    "total_confidence": 55,
-                    "analysis": "Ohio State maintains a superior roster depth and offensive efficiency that will ultimately secure them the outright victory. However, Northwestern has demonstrated a disciplined defensive scheme throughout the 2026 season that keeps games closer than expected. The Buckeyes often struggle to maintain high-intensity scoring against methodical, clock-draining opponents like the Wildcats. Given the double-digit spread proximity, the Wildcats possess enough defensive resilience to stay within the nine-point margin. Ohio State will win the game, but Northwestern is positioned to cover the spread in a lower-scoring affair.",
-                    "ou_analysis": "The game features two teams that prioritize ball control and methodical offensive drives, which naturally limits the total number of possessions. Northwestern's defensive focus on preventing explosive plays will force Ohio State to sustain long, time-consuming drives. These factors combined suggest that the scoring will remain suppressed enough to fall below the 47.5-point threshold.",
-                    "splits_and_direction": "Public betting splits currently favor Ohio State at 78% on the spread and 85% on the moneyline, while the total is seeing 60% of the handle on the under. The spread has remained steady at 9.5, the moneyline has shifted slightly toward the Buckeyes, and the total has moved down from 48.5 to 47.5 due to heavy under action.",
-                    "display_text": "Analysis: Ohio State maintains a superior roster depth and offensive efficiency that will ultimately secure them the outright victory. However, Northwestern has demonstrated a disciplined defensive scheme throughout the 2026 season that keeps games closer than expected. The Buckeyes often struggle to maintain high-intensity scoring against methodical, clock-draining opponents like the Wildcats. Given the double-digit spread proximity, the Wildcats possess enough defensive resilience to stay within the nine-point margin. Ohio State will win the game, but Northwestern is positioned to cover the spread in a lower-scoring affair.\n\nOver Under: The game features two teams that prioritize ball control and methodical offensive drives, which naturally limits the total number of possessions. Northwestern's defensive focus on preventing explosive plays will force Ohio State to sustain long, time-consuming drives. These factors combined suggest that the scoring will remain suppressed enough to fall below the 47.5-point threshold.\n\nSplits: Public betting splits currently favor Ohio State at 78% on the spread and 85% on the moneyline, while the total is seeing 60% of the handle on the under. The spread has remained steady at 9.5, the moneyline has shifted slightly toward the Buckeyes, and the total has moved down from 48.5 to 47.5 due to heavy under action.",
-                    "generated_at": "2026-11-06T00:59:27.039124+00:00",
-                    "odds_hash": "9261b534cab186c9",
-                    "model": "gemini-3.1-flash-lite"
+                    "total_confidence": 60,
+                    "analysis": "Ohio State enters this matchup with an elite 2026 roster and dominant home-field advantage that makes them clear favorites to secure the outright victory. However, a double-digit spread of 9.5 to 10.5 points is a substantial margin to cover against a gritty Northwestern squad. The Wildcats have shown resilience this season, consistently keeping conference games within striking distance thanks to a disciplined defensive structure. While the Buckeyes will control the line of scrimmage, Northwestern's ability to grind out possessions prevents a blowout. Ultimately, Ohio State wins the game, but Northwestern does enough to cover the spread.",
+                    "ou_analysis": "This matchup features two conservative offensive tempos and formidable defenses that heavily favor a low-scoring affair. Northwestern struggles to generate explosive plays, while Ohio State prefers to dictate terms through a suffocating defense and methodical ball control. Consequently, the combined score will comfortably fall short of the 48.5-point threshold, landing well Under.",
+                    "splits_and_direction": "Based on public tendencies, approximately 72% of spread and moneyline bets are backing Ohio State, while the total sees a balanced 50-50 split leaning slightly toward the under. The spread has moved up from an open of 8.5 to 9.5 or 10.5 depending on the book, and the total has ticked down slightly from an opening number of 49.5.",
+                    "display_text": "Analysis: Ohio State enters this matchup with an elite 2026 roster and dominant home-field advantage that makes them clear favorites to secure the outright victory. However, a double-digit spread of 9.5 to 10.5 points is a substantial margin to cover against a gritty Northwestern squad. The Wildcats have shown resilience this season, consistently keeping conference games within striking distance thanks to a disciplined defensive structure. While the Buckeyes will control the line of scrimmage, Northwestern's ability to grind out possessions prevents a blowout. Ultimately, Ohio State wins the game, but Northwestern does enough to cover the spread.\n\nOver Under: This matchup features two conservative offensive tempos and formidable defenses that heavily favor a low-scoring affair. Northwestern struggles to generate explosive plays, while Ohio State prefers to dictate terms through a suffocating defense and methodical ball control. Consequently, the combined score will comfortably fall short of the 48.5-point threshold, landing well Under.\n\nSplits: Based on public tendencies, approximately 72% of spread and moneyline bets are backing Ohio State, while the total sees a balanced 50-50 split leaning slightly toward the under. The spread has moved up from an open of 8.5 to 9.5 or 10.5 depending on the book, and the total has ticked down slightly from an opening number of 49.5.",
+                    "generated_at": "2026-11-06T11:50:40.048863+00:00",
+                    "odds_hash": "3d5b97bd4d1b940a",
+                    "model": "gemini-3.5-flash-lite"
                   },
                   "is_slot_pick": false
                 },
@@ -27667,7 +27667,7 @@
             {
               "slot": "Afternoon",
               "best_matchup_score": 15.4,
-              "pick_reason": "watchability",
+              "pick_reason": "matchup_score",
               "games": [
                 {
                   "id": "401858518",
@@ -27771,7 +27771,7 @@
                     "odds_hash": "a557a2fe379a4e4a",
                     "model": "gemini-3.1-flash-lite"
                   },
-                  "is_slot_pick": false
+                  "is_slot_pick": true
                 },
                 {
                   "id": "401858294",
@@ -27883,7 +27883,7 @@
                     "odds_hash": "d56d2e2adbf0c0b6",
                     "model": "gemini-3.5-flash-lite"
                   },
-                  "is_slot_pick": true
+                  "is_slot_pick": false
                 },
                 {
                   "id": "401860916",
@@ -27925,7 +27925,7 @@
             {
               "slot": "Prime Time",
               "best_matchup_score": 81.4,
-              "pick_reason": "watchability",
+              "pick_reason": "matchup_score",
               "games": [
                 {
                   "id": "401864539",
@@ -27967,7 +27967,7 @@
             {
               "slot": "Late Night",
               "best_matchup_score": 91.1,
-              "pick_reason": "watchability",
+              "pick_reason": "matchup_score",
               "games": [
                 {
                   "id": "401864537",
