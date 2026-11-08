@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-07T23:28:36.828984+00:00",
+  "generated_at": "2026-11-08T04:04:28.640498+00:00",
   "season": 2026,
   "main_channels": [
     "ABC",
@@ -1569,7 +1569,7 @@
           "time_slots": [
             {
               "slot": "Afternoon",
-              "best_matchup_score": 62.5,
+              "best_matchup_score": 75.0,
               "pick_reason": "ap_wins_spread",
               "games": [
                 {
@@ -1586,7 +1586,7 @@
                   "away_record": "2-0",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/21.png",
                   "away_location": "San Diego State",
-                  "matchup_score": 62.5,
+                  "matchup_score": 75.0,
                   "channel": "USA",
                   "venue": "Pechanga Arena",
                   "venue_location": "San Diego, CA",
@@ -1680,7 +1680,7 @@
             },
             {
               "slot": "Prime Time",
-              "best_matchup_score": 37.5,
+              "best_matchup_score": 25.0,
               "pick_reason": "ap_wins_spread",
               "games": [
                 {
@@ -1689,15 +1689,15 @@
                   "start_time_tbd": false,
                   "home_team": "Nebraska Cornhuskers",
                   "home_rank": null,
-                  "home_record": "1-0",
+                  "home_record": "2-0",
                   "home_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/158.png",
                   "home_location": "Nebraska",
                   "away_team": "Providence Friars",
                   "away_rank": null,
-                  "away_record": "1-0",
+                  "away_record": "1-1",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2507.png",
                   "away_location": "Providence",
-                  "matchup_score": 37.5,
+                  "matchup_score": 25.0,
                   "channel": "FS1",
                   "venue": "Mohegan Sun Arena",
                   "venue_location": "Uncasville, CT",
@@ -1769,7 +1769,6 @@
                       }
                     }
                   },
-                  "matchup_rank": 1,
                   "gemini_prediction": {
                     "winner": "Nebraska Cornhuskers",
                     "confidence": 63,
@@ -1785,6 +1784,7 @@
                     "odds_hash": "4bd85724954ac91b",
                     "model": "gemini-3.5-flash-lite"
                   },
+                  "matchup_rank": 1,
                   "is_slot_pick": true
                 }
               ]
@@ -1832,6 +1832,38 @@
                       "spread": {
                         "home": {
                           "line": -2.5,
+                          "american": -115
+                        },
+                        "away": {
+                          "line": 2.5,
+                          "american": -105
+                        }
+                      },
+                      "moneyline": {
+                        "home": {
+                          "line": null,
+                          "american": -142
+                        },
+                        "away": {
+                          "line": null,
+                          "american": 120
+                        }
+                      },
+                      "total": {
+                        "over": {
+                          "line": 162.5,
+                          "american": -112
+                        },
+                        "under": {
+                          "line": 162.5,
+                          "american": -108
+                        }
+                      }
+                    },
+                    "fanduel": {
+                      "spread": {
+                        "home": {
+                          "line": -2.5,
                           "american": -110
                         },
                         "away": {
@@ -1842,52 +1874,20 @@
                       "moneyline": {
                         "home": {
                           "line": null,
-                          "american": -130
+                          "american": -142
                         },
                         "away": {
                           "line": null,
-                          "american": 110
+                          "american": 116
                         }
                       },
                       "total": {
                         "over": {
-                          "line": 160.5,
-                          "american": -108
-                        },
-                        "under": {
-                          "line": 160.5,
-                          "american": -112
-                        }
-                      }
-                    },
-                    "fanduel": {
-                      "spread": {
-                        "home": {
-                          "line": -1.5,
-                          "american": -120
-                        },
-                        "away": {
-                          "line": 1.5,
-                          "american": -102
-                        }
-                      },
-                      "moneyline": {
-                        "home": {
-                          "line": null,
-                          "american": -134
-                        },
-                        "away": {
-                          "line": null,
-                          "american": 112
-                        }
-                      },
-                      "total": {
-                        "over": {
-                          "line": 158.5,
+                          "line": 161.5,
                           "american": -110
                         },
                         "under": {
-                          "line": 158.5,
+                          "line": 161.5,
                           "american": -110
                         }
                       }
@@ -1896,17 +1896,17 @@
                   "matchup_rank": 2,
                   "gemini_prediction": {
                     "winner": "Virginia Cavaliers",
-                    "confidence": 56,
+                    "confidence": 62,
                     "ats_pick": "Virginia Cavaliers",
-                    "ats_confidence": 55,
+                    "ats_confidence": 60,
                     "total_pick": "Under",
-                    "total_confidence": 60,
-                    "analysis": "The Virginia Cavaliers host the Arkansas Razorbacks in an early-season non-conference matchup featuring contrasting styles of play. Virginia relies on its trademark disciplined defense and methodical offensive approach to grind out low-scoring victories. Arkansas brings an aggressive transition game, but matching up against the Cavaliers' defensive unit away from home remains a stiff test. Ultimately, the Cavaliers' home-court advantage and execution in the half-court will allow them to edge out a close victory. Virginia should narrowly surpass the consensus 1.5-point spread by maintaining control of the game clock.",
-                    "ou_analysis": "Both teams feature defensive structures and methodical offensive schemes that typically suppress high-scoring outbursts. The high betting total of roughly 159.5 points overestimates the scoring capacity of Virginia's deliberate pace of play. Therefore, the game flow will likely dictate a lower-scoring affair that comfortably falls under the posted total.",
-                    "splits_and_direction": "Based on public betting tendencies, approximately 58 percent of spread tickets are backing the home favorite, while the moneyline has seen slight action favoring Virginia. The spread has ticked up slightly from an opening of 1.5 to 2.5 at DraftKings, and the total has adjusted downward by a point from an opening of 160.5.",
-                    "display_text": "Analysis: The Virginia Cavaliers host the Arkansas Razorbacks in an early-season non-conference matchup featuring contrasting styles of play. Virginia relies on its trademark disciplined defense and methodical offensive approach to grind out low-scoring victories. Arkansas brings an aggressive transition game, but matching up against the Cavaliers' defensive unit away from home remains a stiff test. Ultimately, the Cavaliers' home-court advantage and execution in the half-court will allow them to edge out a close victory. Virginia should narrowly surpass the consensus 1.5-point spread by maintaining control of the game clock.\n\nOver Under: Both teams feature defensive structures and methodical offensive schemes that typically suppress high-scoring outbursts. The high betting total of roughly 159.5 points overestimates the scoring capacity of Virginia's deliberate pace of play. Therefore, the game flow will likely dictate a lower-scoring affair that comfortably falls under the posted total.\n\nSplits: Based on public betting tendencies, approximately 58 percent of spread tickets are backing the home favorite, while the moneyline has seen slight action favoring Virginia. The spread has ticked up slightly from an opening of 1.5 to 2.5 at DraftKings, and the total has adjusted downward by a point from an opening of 160.5.",
-                    "generated_at": "2026-11-07T23:28:06.093252+00:00",
-                    "odds_hash": "37f2b6e07c08443f",
+                    "total_confidence": 58,
+                    "analysis": "The Virginia Cavaliers enter this matchup with a disciplined style that limits opponent efficiency and controls tempo effectively. Arkansas brings explosive offensive capabilities to the floor, but they often struggle against elite half-court defensive units. Playing on their home court gives Virginia a distinct advantage in executing critical possessions down the stretch. While the Razorbacks will undoubtedly make runs, the Cavaliers' tactical execution should secure a narrow victory. Ultimately, Virginia does just enough to cover the modest 2.5-point spread in a hard-fought contest.",
+                    "ou_analysis": "Pace factors strongly into this matchup as Virginia actively seeks to slow the game down and limit transition opportunities for Arkansas. Although the posted total sits at a relatively high 161.5, the methodical half-court nature of the Cavaliers' defense will suppress overall scoring efficiency. Consequently, the combined final score is expected to fall short of this high threshold.",
+                    "splits_and_direction": "Public betting splits are leaning slightly toward the Arkansas Razorbacks as road underdogs, capturing roughly 58 percent of the spread action. Meanwhile, both the home spread and the total have seen minor downward ticks since opening, reflecting early respected money backing Virginia and the under.",
+                    "display_text": "Analysis: The Virginia Cavaliers enter this matchup with a disciplined style that limits opponent efficiency and controls tempo effectively. Arkansas brings explosive offensive capabilities to the floor, but they often struggle against elite half-court defensive units. Playing on their home court gives Virginia a distinct advantage in executing critical possessions down the stretch. While the Razorbacks will undoubtedly make runs, the Cavaliers' tactical execution should secure a narrow victory. Ultimately, Virginia does just enough to cover the modest 2.5-point spread in a hard-fought contest.\n\nOver Under: Pace factors strongly into this matchup as Virginia actively seeks to slow the game down and limit transition opportunities for Arkansas. Although the posted total sits at a relatively high 161.5, the methodical half-court nature of the Cavaliers' defense will suppress overall scoring efficiency. Consequently, the combined final score is expected to fall short of this high threshold.\n\nSplits: Public betting splits are leaning slightly toward the Arkansas Razorbacks as road underdogs, capturing roughly 58 percent of the spread action. Meanwhile, both the home spread and the total have seen minor downward ticks since opening, reflecting early respected money backing Virginia and the under.",
+                    "generated_at": "2026-11-08T04:03:58.218926+00:00",
+                    "odds_hash": "a943c0a68d354164",
                     "model": "gemini-3.5-flash-lite"
                   },
                   "is_slot_pick": true
@@ -1936,30 +1936,30 @@
                       "spread": {
                         "home": {
                           "line": -2.5,
-                          "american": -110
+                          "american": -105
                         },
                         "away": {
                           "line": 2.5,
-                          "american": -110
+                          "american": -115
                         }
                       },
                       "moneyline": {
                         "home": {
                           "line": null,
-                          "american": -142
+                          "american": -135
                         },
                         "away": {
                           "line": null,
-                          "american": 120
+                          "american": 114
                         }
                       },
                       "total": {
                         "over": {
-                          "line": 154.5,
+                          "line": 156.5,
                           "american": -110
                         },
                         "under": {
-                          "line": 154.5,
+                          "line": 156.5,
                           "american": -110
                         }
                       }
@@ -1967,31 +1967,31 @@
                     "fanduel": {
                       "spread": {
                         "home": {
-                          "line": -2.5,
-                          "american": -114
+                          "line": -1.5,
+                          "american": -120
                         },
                         "away": {
-                          "line": 2.5,
-                          "american": -106
+                          "line": 1.5,
+                          "american": -102
                         }
                       },
                       "moneyline": {
                         "home": {
                           "line": null,
-                          "american": -146
+                          "american": -130
                         },
                         "away": {
                           "line": null,
-                          "american": 122
+                          "american": 108
                         }
                       },
                       "total": {
                         "over": {
-                          "line": 154.5,
+                          "line": 156.5,
                           "american": -110
                         },
                         "under": {
-                          "line": 154.5,
+                          "line": 156.5,
                           "american": -110
                         }
                       }
@@ -2000,17 +2000,17 @@
                   "matchup_rank": 4,
                   "gemini_prediction": {
                     "winner": "Boise State Broncos",
-                    "confidence": 61,
+                    "confidence": 58,
                     "ats_pick": "Boise State Broncos",
-                    "ats_confidence": 58,
-                    "total_pick": "Over",
-                    "total_confidence": 55,
-                    "analysis": "Boise State returns a cohesive core from the previous campaign that establishes an immediate upper hand on their home floor. Butler brings a retooled roster that will require several non-conference matchups to establish consistent offensive chemistry. The Broncos' defensive length inside should disrupt the Bulldogs' preferred cutting lanes and limit high-percentage looks near the rim. Furthermore, Boise State's disciplined ball-sharing creates efficient possessions against standard man-to-man defensive sets. Expect the home side to pull away late behind strong free-throw shooting to secure both the outright victory and the narrow cover.",
-                    "ou_analysis": "Both teams feature up-tempo offensive philosophies that emphasize transition opportunities and early-clock three-point attempts. The officiating crew is known for calling a tight game, which should send both squads to the free-throw line frequently and extend the game duration. Consequently, these factors combine to push the final combined score past the established 154.5-point threshold.",
-                    "splits_and_direction": "Based on public betting tendencies, roughly 58% of spread wagers and 62% of moneyline bets are backing the home favorite Boise State. The point spread has ticked up slightly from an opener of -2 to -2.5, while the total has remained steady at 154.5.",
-                    "display_text": "Analysis: Boise State returns a cohesive core from the previous campaign that establishes an immediate upper hand on their home floor. Butler brings a retooled roster that will require several non-conference matchups to establish consistent offensive chemistry. The Broncos' defensive length inside should disrupt the Bulldogs' preferred cutting lanes and limit high-percentage looks near the rim. Furthermore, Boise State's disciplined ball-sharing creates efficient possessions against standard man-to-man defensive sets. Expect the home side to pull away late behind strong free-throw shooting to secure both the outright victory and the narrow cover.\n\nOver Under: Both teams feature up-tempo offensive philosophies that emphasize transition opportunities and early-clock three-point attempts. The officiating crew is known for calling a tight game, which should send both squads to the free-throw line frequently and extend the game duration. Consequently, these factors combine to push the final combined score past the established 154.5-point threshold.\n\nSplits: Based on public betting tendencies, roughly 58% of spread wagers and 62% of moneyline bets are backing the home favorite Boise State. The point spread has ticked up slightly from an opener of -2 to -2.5, while the total has remained steady at 154.5.",
-                    "generated_at": "2026-11-07T23:28:16.183118+00:00",
-                    "odds_hash": "4819995c0058f497",
+                    "ats_confidence": 55,
+                    "total_pick": "Under",
+                    "total_confidence": 56,
+                    "analysis": "The Boise State Broncos enter this early-season matchup with a slight edge playing on their home court. Butler Bulldogs will put up a fight, but their offensive execution on the road has shown minor vulnerabilities in early-season efficiency metrics. Boise State's balanced scoring attack and disciplined defense should allow them to grind out a close victory. Covering the narrow 1.5 to 2.5 point spread is entirely within reach given the Broncos' reliable home-court advantage. Ultimately, Boise State makes just enough plays down the stretch to secure both the outright win and the cover.",
+                    "ou_analysis": "Both teams feature structured, half-court offensive sets that tend to bleed the shot clock and limit total possessions. The defensive intensity expected from both squads will likely keep transition opportunities to a minimum throughout the contest. Consequently, the combined score should fall safely under the high 156.5 point line established by oddsmakers.",
+                    "splits_and_direction": "Based on public tendencies, approximately 58% of bets are backing the home team on the spread and moneyline, with heavy action pushing the total. The spread has ticked down slightly from Boise State -2.5 to -1.5 at some sportsbooks, while the total has remained steady at 156.5.",
+                    "display_text": "Analysis: The Boise State Broncos enter this early-season matchup with a slight edge playing on their home court. Butler Bulldogs will put up a fight, but their offensive execution on the road has shown minor vulnerabilities in early-season efficiency metrics. Boise State's balanced scoring attack and disciplined defense should allow them to grind out a close victory. Covering the narrow 1.5 to 2.5 point spread is entirely within reach given the Broncos' reliable home-court advantage. Ultimately, Boise State makes just enough plays down the stretch to secure both the outright win and the cover.\n\nOver Under: Both teams feature structured, half-court offensive sets that tend to bleed the shot clock and limit total possessions. The defensive intensity expected from both squads will likely keep transition opportunities to a minimum throughout the contest. Consequently, the combined score should fall safely under the high 156.5 point line established by oddsmakers.\n\nSplits: Based on public tendencies, approximately 58% of bets are backing the home team on the spread and moneyline, with heavy action pushing the total. The spread has ticked down slightly from Boise State -2.5 to -1.5 at some sportsbooks, while the total has remained steady at 156.5.",
+                    "generated_at": "2026-11-08T04:04:08.091631+00:00",
+                    "odds_hash": "e64dae03d4c7ea1a",
                     "model": "gemini-3.5-flash-lite"
                   },
                   "is_slot_pick": false
@@ -2089,20 +2089,20 @@
                       "moneyline": {
                         "home": {
                           "line": null,
-                          "american": 115
+                          "american": 112
                         },
                         "away": {
                           "line": null,
-                          "american": -138
+                          "american": -134
                         }
                       },
                       "total": {
                         "over": {
-                          "line": 150.5,
+                          "line": 152.5,
                           "american": -110
                         },
                         "under": {
-                          "line": 150.5,
+                          "line": 152.5,
                           "american": -110
                         }
                       }
@@ -2114,14 +2114,14 @@
                     "confidence": 62,
                     "ats_pick": "Richmond Spiders",
                     "ats_confidence": 60,
-                    "total_pick": "Over",
+                    "total_pick": "Under",
                     "total_confidence": 58,
-                    "analysis": "The Richmond Spiders enter this matchup with a slightly more efficient offensive structure than the Temple Owls based on early-season metrics. Richmond's ability to protect the basketball and convert high-percentage looks gives them a distinct edge on the road. Temple struggles defensively to close out shooters, which will allow the Spiders to build a manageable lead early on. Although the Owls hold home-court advantage, their inconsistent half-court execution limits their ability to sustain offensive runs. Consequently, Richmond will manage the tempo effectively and cover the modest spread while securing the narrow victory.",
-                    "ou_analysis": "Both teams feature up-tempo playing styles that naturally generate a high volume of possessions over the course of forty minutes. Early-season defensive lapses and porous perimeter coverage from both squads point toward an elevated scoring environment. Therefore, the combined final score is expected to comfortably eclipse the 151.5 total posted by sportsbooks.",
-                    "splits_and_direction": "Estimated betting splits show approximately 58% of the public wagering on the visiting Richmond Spiders against the spread and 55% backing the over on the total. The spread has moved from an opener of Richmond -1.5 up to -2.5 at FanDuel while the total has ticked down slightly from 151.5 to 150.5.",
-                    "display_text": "Analysis: The Richmond Spiders enter this matchup with a slightly more efficient offensive structure than the Temple Owls based on early-season metrics. Richmond's ability to protect the basketball and convert high-percentage looks gives them a distinct edge on the road. Temple struggles defensively to close out shooters, which will allow the Spiders to build a manageable lead early on. Although the Owls hold home-court advantage, their inconsistent half-court execution limits their ability to sustain offensive runs. Consequently, Richmond will manage the tempo effectively and cover the modest spread while securing the narrow victory.\n\nOver Under: Both teams feature up-tempo playing styles that naturally generate a high volume of possessions over the course of forty minutes. Early-season defensive lapses and porous perimeter coverage from both squads point toward an elevated scoring environment. Therefore, the combined final score is expected to comfortably eclipse the 151.5 total posted by sportsbooks.\n\nSplits: Estimated betting splits show approximately 58% of the public wagering on the visiting Richmond Spiders against the spread and 55% backing the over on the total. The spread has moved from an opener of Richmond -1.5 up to -2.5 at FanDuel while the total has ticked down slightly from 151.5 to 150.5.",
-                    "generated_at": "2026-11-07T23:28:25.914694+00:00",
-                    "odds_hash": "25f4d76da65bf746",
+                    "analysis": "The Richmond Spiders enter this early-season matchup with a more cohesive offensive execution than the Temple Owls. Richmond's backcourt has shown superior decision-making and shooting efficiency through the opening stretch of games. Temple struggles defensively to contain penetrating guards, which will repeatedly put the Spiders in advantageous scoring positions. Although playing on the road introduces hostile noise, the Spiders have handled away environments remarkably well thus far. Ultimately, Richmond's execution down the stretch will secure both the outright victory and a cover of the small spread.",
+                    "ou_analysis": "Both teams operate at a deliberate, half-court pace that limits overall possession counts and suppresses fast-break opportunities. Early-season shooting percentages often lag behind efficiency metrics as rotations settle, keeping overall scoring in check. Therefore, the defensive pressure applied by both squads will successfully push the combined final score under the posted line.",
+                    "splits_and_direction": "Approximately 58 percent of early spread wagers are backing the Temple Owls as home underdogs, while moneyline action is closely split with slight leaning toward Richmond. The spread has moved downward from DraftKings opening at +1.5 to FanDuel's +2.5 for Temple, and the total has ticked up slightly from 151.5 to 152.5.",
+                    "display_text": "Analysis: The Richmond Spiders enter this early-season matchup with a more cohesive offensive execution than the Temple Owls. Richmond's backcourt has shown superior decision-making and shooting efficiency through the opening stretch of games. Temple struggles defensively to contain penetrating guards, which will repeatedly put the Spiders in advantageous scoring positions. Although playing on the road introduces hostile noise, the Spiders have handled away environments remarkably well thus far. Ultimately, Richmond's execution down the stretch will secure both the outright victory and a cover of the small spread.\n\nOver Under: Both teams operate at a deliberate, half-court pace that limits overall possession counts and suppresses fast-break opportunities. Early-season shooting percentages often lag behind efficiency metrics as rotations settle, keeping overall scoring in check. Therefore, the defensive pressure applied by both squads will successfully push the combined final score under the posted line.\n\nSplits: Approximately 58 percent of early spread wagers are backing the Temple Owls as home underdogs, while moneyline action is closely split with slight leaning toward Richmond. The spread has moved downward from DraftKings opening at +1.5 to FanDuel's +2.5 for Temple, and the total has ticked up slightly from 151.5 to 152.5.",
+                    "generated_at": "2026-11-08T04:04:17.954654+00:00",
+                    "odds_hash": "da481857457cdf52",
                     "model": "gemini-3.5-flash-lite"
                   },
                   "is_slot_pick": true
@@ -2168,21 +2168,21 @@
                       "moneyline": {
                         "home": {
                           "line": null,
-                          "american": 124
+                          "american": 114
                         },
                         "away": {
                           "line": null,
-                          "american": -148
+                          "american": -135
                         }
                       },
                       "total": {
                         "over": {
                           "line": 154.5,
-                          "american": -115
+                          "american": -110
                         },
                         "under": {
                           "line": 154.5,
-                          "american": -105
+                          "american": -110
                         }
                       }
                     },
@@ -2209,12 +2209,12 @@
                       },
                       "total": {
                         "over": {
-                          "line": 153.5,
-                          "american": -110
+                          "line": 154.5,
+                          "american": -115
                         },
                         "under": {
-                          "line": 153.5,
-                          "american": -110
+                          "line": 154.5,
+                          "american": -105
                         }
                       }
                     }
@@ -2223,16 +2223,16 @@
                   "gemini_prediction": {
                     "winner": "Pittsburgh Panthers",
                     "confidence": 62,
-                    "ats_pick": "Penn State Nittany Lions",
-                    "ats_confidence": 58,
+                    "ats_pick": "Pittsburgh Panthers",
+                    "ats_confidence": 60,
                     "total_pick": "Over",
-                    "total_confidence": 60,
-                    "analysis": "The Pittsburgh Panthers enter this matchup with a slightly more efficient offensive attack that should allow them to edge out a narrow victory on the road. However, the Penn State Nittany Lions boast a resilient home-court advantage that keeps them extremely competitive throughout forty minutes of play. Oddsmakers have set the line at +2.5 for the home side, which undervalues the gritty defensive stops Penn State can string together in crucial stretches. While Pittsburgh has shown better poise in late-game execution during the early 2026 slate, the Nittany Lions will do enough offensively to stay within the possession-based margin. Therefore, the Panthers secure the outright victory, but the Nittany Lions comfortably cover the spread.",
-                    "ou_analysis": "Both teams feature up-tempo guard play and a heavy reliance on transition offense that naturally inflates total possession counts. Early-season defensive rotations for both squads have shown vulnerabilities on the perimeter, leading to higher-than-average three-point volume and efficiency. Consequently, this high-paced scoring environment will comfortably push the combined final score over the posted line of 153.5 points.",
-                    "splits_and_direction": "Based on public betting trends, approximately 58% of spread bets are currently backing the home underdog while the moneyline has split evenly. The spread has remained stable at 2.5 points, and the total has shifted downward slightly from an opening of 154.5 down to 153.5.",
-                    "display_text": "Analysis: The Pittsburgh Panthers enter this matchup with a slightly more efficient offensive attack that should allow them to edge out a narrow victory on the road. However, the Penn State Nittany Lions boast a resilient home-court advantage that keeps them extremely competitive throughout forty minutes of play. Oddsmakers have set the line at +2.5 for the home side, which undervalues the gritty defensive stops Penn State can string together in crucial stretches. While Pittsburgh has shown better poise in late-game execution during the early 2026 slate, the Nittany Lions will do enough offensively to stay within the possession-based margin. Therefore, the Panthers secure the outright victory, but the Nittany Lions comfortably cover the spread.\n\nOver Under: Both teams feature up-tempo guard play and a heavy reliance on transition offense that naturally inflates total possession counts. Early-season defensive rotations for both squads have shown vulnerabilities on the perimeter, leading to higher-than-average three-point volume and efficiency. Consequently, this high-paced scoring environment will comfortably push the combined final score over the posted line of 153.5 points.\n\nSplits: Based on public betting trends, approximately 58% of spread bets are currently backing the home underdog while the moneyline has split evenly. The spread has remained stable at 2.5 points, and the total has shifted downward slightly from an opening of 154.5 down to 153.5.",
-                    "generated_at": "2026-11-07T23:28:36.508169+00:00",
-                    "odds_hash": "242e6c68c2a08208",
+                    "total_confidence": 55,
+                    "analysis": "The Pittsburgh Panthers enter this early-season matchup with a slightly more cohesive offensive unit that has shown better shooting efficiency in their opening contests. Penn State Nittany Lions will have the home court advantage, which typically provides an emotional lift and a boost in defensive intensity early in games. However, Pittsburgh's backcourt has executed better in late-game situations, giving them an edge in a closely contested environment. The Nittany Lions struggle to contain penetration, which will allow the Panthers to generate high-percentage looks throughout the contest. Ultimately, Pittsburgh's superior offensive execution will allow them to secure both the outright victory and cover the modest 2.5-point spread.",
+                    "ou_analysis": "Both teams feature up-tempo playing styles that emphasize quick possessions and early shot-clock offense. The scoring environment should be elevated as neither defense has shown the elite rim protection necessary to slow down aggressive driving guards. Given these fast-paced offensive schemes and the high number of anticipated possessions, the combined score is expected to clear the 154.5-point total.",
+                    "splits_and_direction": "Approximately 58% of public bets are currently backing the home underdog Penn State Nittany Lions on the spread and moneyline, while the total has seen roughly 62% of action leaning toward the Over. The spread has remained relatively stable at +2.5 since opening, whereas the total has crept up slightly from 154.0 to 154.5 based on early sharp money.",
+                    "display_text": "Analysis: The Pittsburgh Panthers enter this early-season matchup with a slightly more cohesive offensive unit that has shown better shooting efficiency in their opening contests. Penn State Nittany Lions will have the home court advantage, which typically provides an emotional lift and a boost in defensive intensity early in games. However, Pittsburgh's backcourt has executed better in late-game situations, giving them an edge in a closely contested environment. The Nittany Lions struggle to contain penetration, which will allow the Panthers to generate high-percentage looks throughout the contest. Ultimately, Pittsburgh's superior offensive execution will allow them to secure both the outright victory and cover the modest 2.5-point spread.\n\nOver Under: Both teams feature up-tempo playing styles that emphasize quick possessions and early shot-clock offense. The scoring environment should be elevated as neither defense has shown the elite rim protection necessary to slow down aggressive driving guards. Given these fast-paced offensive schemes and the high number of anticipated possessions, the combined score is expected to clear the 154.5-point total.\n\nSplits: Approximately 58% of public bets are currently backing the home underdog Penn State Nittany Lions on the spread and moneyline, while the total has seen roughly 62% of action leaning toward the Over. The spread has remained relatively stable at +2.5 since opening, whereas the total has crept up slightly from 154.0 to 154.5 based on early sharp money.",
+                    "generated_at": "2026-11-08T04:04:28.403333+00:00",
+                    "odds_hash": "7e5eec7b1166312e",
                     "model": "gemini-3.5-flash-lite"
                   },
                   "is_slot_pick": true
