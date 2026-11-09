@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-08T23:36:49.964303+00:00",
+  "generated_at": "2026-11-09T04:25:42.345098+00:00",
   "season": 2026,
   "main_channels": [
     "ABC",
@@ -1804,7 +1804,7 @@
           "time_slots": [
             {
               "slot": "Noon",
-              "best_matchup_score": 64.3,
+              "best_matchup_score": 75.0,
               "pick_reason": "ap_wins_spread",
               "games": [
                 {
@@ -1821,7 +1821,7 @@
                   "away_record": "1-1",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/8.png",
                   "away_location": "Arkansas",
-                  "matchup_score": 64.3,
+                  "matchup_score": 75.0,
                   "channel": "ESPN",
                   "venue": "Capital One Arena",
                   "venue_location": "Washington, DC",
@@ -1908,7 +1908,7 @@
                     "odds_hash": "c84464fbaf1be093",
                     "model": "gemini-3.5-flash-lite"
                   },
-                  "matchup_rank": 2,
+                  "matchup_rank": 3,
                   "is_slot_pick": true
                 },
                 {
@@ -1925,7 +1925,7 @@
                   "away_record": "2-1",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2086.png",
                   "away_location": "Butler",
-                  "matchup_score": 87.5,
+                  "matchup_score": 75.0,
                   "channel": "USA",
                   "venue": "ExtraMile Arena",
                   "venue_location": "Boise, ID",
@@ -2019,7 +2019,7 @@
             },
             {
               "slot": "Afternoon",
-              "best_matchup_score": 67.9,
+              "best_matchup_score": 62.5,
               "pick_reason": "ap_wins_spread",
               "games": [
                 {
@@ -2028,15 +2028,15 @@
                   "start_time_tbd": false,
                   "home_team": "Temple Owls",
                   "home_rank": null,
-                  "home_record": "1-0",
+                  "home_record": "1-1",
                   "home_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/218.png",
                   "home_location": "Temple",
                   "away_team": "Richmond Spiders",
                   "away_rank": null,
-                  "away_record": "2-0",
+                  "away_record": "3-0",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/257.png",
                   "away_location": "Richmond",
-                  "matchup_score": 67.9,
+                  "matchup_score": 62.5,
                   "channel": "ESPN2",
                   "venue": "The Palestra",
                   "venue_location": "Philadelphia, PA",
@@ -2123,7 +2123,7 @@
                     "odds_hash": "6ba790674b48cd1e",
                     "model": "gemini-3.5-flash-lite"
                   },
-                  "matchup_rank": 3,
+                  "matchup_rank": 1,
                   "is_slot_pick": true
                 }
               ]
@@ -2139,12 +2139,12 @@
                   "start_time_tbd": false,
                   "home_team": "Penn State Nittany Lions",
                   "home_rank": null,
-                  "home_record": "2-0",
+                  "home_record": "2-1",
                   "home_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/213.png",
                   "home_location": "Penn State",
                   "away_team": "Pittsburgh Panthers",
                   "away_rank": null,
-                  "away_record": "2-0",
+                  "away_record": "3-0",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/221.png",
                   "away_location": "Pittsburgh",
                   "matchup_score": 62.5,
@@ -2219,7 +2219,6 @@
                       }
                     }
                   },
-                  "matchup_rank": 1,
                   "gemini_prediction": {
                     "winner": "Pittsburgh Panthers",
                     "confidence": 61,
@@ -2235,6 +2234,7 @@
                     "odds_hash": "a6a4e0ba87dc6f94",
                     "model": "gemini-3.5-flash-lite"
                   },
+                  "matchup_rank": 2,
                   "is_slot_pick": true
                 }
               ]
@@ -2282,31 +2282,131 @@
                       "spread": {
                         "home": {
                           "line": -4.5,
-                          "american": -105
+                          "american": -115
                         },
                         "away": {
                           "line": 4.5,
-                          "american": -115
+                          "american": -105
                         }
                       },
                       "moneyline": {
                         "home": {
                           "line": null,
-                          "american": -175
+                          "american": -205
                         },
                         "away": {
                           "line": null,
-                          "american": 145
+                          "american": 170
                         }
                       },
                       "total": {
                         "over": {
-                          "line": 147.5,
-                          "american": -105
+                          "line": 148.5,
+                          "american": -108
                         },
                         "under": {
-                          "line": 147.5,
-                          "american": -115
+                          "line": 148.5,
+                          "american": -112
+                        }
+                      }
+                    },
+                    "fanduel": {
+                      "spread": {
+                        "home": {
+                          "line": -4.5,
+                          "american": -120
+                        },
+                        "away": {
+                          "line": 4.5,
+                          "american": -102
+                        }
+                      },
+                      "moneyline": {
+                        "home": {
+                          "line": null,
+                          "american": -215
+                        },
+                        "away": {
+                          "line": null,
+                          "american": 176
+                        }
+                      },
+                      "total": {
+                        "over": {
+                          "line": 148.5,
+                          "american": -110
+                        },
+                        "under": {
+                          "line": 148.5,
+                          "american": -110
+                        }
+                      }
+                    }
+                  },
+                  "matchup_rank": 1,
+                  "gemini_prediction": {
+                    "winner": "Indiana Hoosiers",
+                    "confidence": 78,
+                    "ats_pick": "Indiana Hoosiers",
+                    "ats_confidence": 71,
+                    "total_pick": "Over",
+                    "total_confidence": 65,
+                    "analysis": "The Indiana Hoosiers possess a distinct home-court advantage inside Assembly Hall that heavily influences this early-season matchup. Syracuse enters this contest struggling to establish consistent offensive rhythm against high-major defensive pressure. Indiana's frontcourt depth and efficient half-court execution should dictate the tempo from the opening tip. While the Orange will show flashes of perimeter scoring, their defensive rebounding deficiencies will prove costly. Ultimately, the Hoosiers will pull away in the second half to cover the 4.5-point spread comfortably.",
+                    "ou_analysis": "Both teams prefer an up-tempo style of play that naturally lends itself to higher-scoring possessions early in the shot clock. Indiana's potent backcourt creates efficient scoring opportunities, while Syracuse tends to play at a faster pace when chasing points. Consequently, the combined offensive efficiency will easily push the final tally past the 148.5-point threshold.",
+                    "splits_and_direction": "Based on public betting tendencies, approximately 68% of spread wagers and 72% of moneyline bets are backing the home favorite Indiana Hoosiers. The spread has ticked up slightly from its opening number of -3.5 to -4.5, while the total has remained stable at 148.5 with split action leaning marginally toward the over.",
+                    "display_text": "Analysis: The Indiana Hoosiers possess a distinct home-court advantage inside Assembly Hall that heavily influences this early-season matchup. Syracuse enters this contest struggling to establish consistent offensive rhythm against high-major defensive pressure. Indiana's frontcourt depth and efficient half-court execution should dictate the tempo from the opening tip. While the Orange will show flashes of perimeter scoring, their defensive rebounding deficiencies will prove costly. Ultimately, the Hoosiers will pull away in the second half to cover the 4.5-point spread comfortably.\n\nOver Under: Both teams prefer an up-tempo style of play that naturally lends itself to higher-scoring possessions early in the shot clock. Indiana's potent backcourt creates efficient scoring opportunities, while Syracuse tends to play at a faster pace when chasing points. Consequently, the combined offensive efficiency will easily push the final tally past the 148.5-point threshold.\n\nSplits: Based on public betting tendencies, approximately 68% of spread wagers and 72% of moneyline bets are backing the home favorite Indiana Hoosiers. The spread has ticked up slightly from its opening number of -3.5 to -4.5, while the total has remained stable at 148.5 with split action leaning marginally toward the over.",
+                    "generated_at": "2026-11-09T04:25:10.462382+00:00",
+                    "odds_hash": "1c04113898b239ca",
+                    "model": "gemini-3.5-flash-lite"
+                  },
+                  "is_slot_pick": true
+                },
+                {
+                  "id": "401909502",
+                  "start_time": "2026-11-10T02:00Z",
+                  "start_time_tbd": false,
+                  "home_team": "DePaul Blue Demons",
+                  "home_rank": null,
+                  "home_record": "2-0",
+                  "home_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/305.png",
+                  "home_location": "DePaul",
+                  "away_team": "Alabama A&M Bulldogs",
+                  "away_rank": null,
+                  "away_record": "2-0",
+                  "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2010.png",
+                  "away_location": "Alabama A&M",
+                  "matchup_score": 64.4,
+                  "channel": "truTV",
+                  "venue": "Wintrust Arena",
+                  "venue_location": "Chicago, IL",
+                  "neutral_site": false,
+                  "is_nebraska": false,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {
+                        "home": {
+                          "line": -23.5,
+                          "american": -110
+                        },
+                        "away": {
+                          "line": 23.5,
+                          "american": -124
+                        }
+                      },
+                      "moneyline": {
+                        "away": {
+                          "line": null,
+                          "american": 2200
+                        }
+                      },
+                      "total": {
+                        "over": {
+                          "line": 141.5,
+                          "american": -110
+                        },
+                        "under": {
+                          "line": 141.5,
+                          "american": -110
                         }
                       }
                     },
@@ -2316,23 +2416,23 @@
                       "total": {}
                     }
                   },
-                  "matchup_rank": 1,
+                  "matchup_rank": 2,
                   "gemini_prediction": {
-                    "winner": "Indiana Hoosiers",
-                    "confidence": 68,
-                    "ats_pick": "Indiana Hoosiers",
-                    "ats_confidence": 62,
+                    "winner": "DePaul Blue Demons",
+                    "confidence": 92,
+                    "ats_pick": "DePaul Blue Demons",
+                    "ats_confidence": 65,
                     "total_pick": "Over",
-                    "total_confidence": 59,
-                    "analysis": "The Indiana Hoosiers possess a distinct home-court advantage inside Assembly Hall that heavily influences early-season matchups. Syracuse has shown vulnerability on the defensive glass against physical frontcourts during the current 2026 campaign. Indiana's offensive execution in the half-court has generated efficient scoring opportunities at a higher rate than the Orange. Furthermore, the Hoosiers' perimeter defenders have consistently limited opposing three-point shooting efficiency over their opening games. Expect Indiana to control the tempo and secure a victory that exceeds the narrow point spread.",
-                    "ou_analysis": "Both teams feature up-tempo offensive schemes that prioritize early transition opportunities and high possession counts. Early-season defensive rotations for both squads remain a work in progress, leading to frequent breakdowns and open shots. Consequently, these offensive tendencies combined with weak perimeter resistance will push the combined final score past the 147.5 line.",
-                    "splits_and_direction": "Based on public tendencies, approximately 65% of point-spread bets and 70% of moneyline wagers are backing the favored Indiana Hoosiers at home. The point spread has moved slightly from an opener of -3.5 up to -4.5, while the total has ticked up from 146.5 to 147.5 due to early over money.",
-                    "display_text": "Analysis: The Indiana Hoosiers possess a distinct home-court advantage inside Assembly Hall that heavily influences early-season matchups. Syracuse has shown vulnerability on the defensive glass against physical frontcourts during the current 2026 campaign. Indiana's offensive execution in the half-court has generated efficient scoring opportunities at a higher rate than the Orange. Furthermore, the Hoosiers' perimeter defenders have consistently limited opposing three-point shooting efficiency over their opening games. Expect Indiana to control the tempo and secure a victory that exceeds the narrow point spread.\n\nOver Under: Both teams feature up-tempo offensive schemes that prioritize early transition opportunities and high possession counts. Early-season defensive rotations for both squads remain a work in progress, leading to frequent breakdowns and open shots. Consequently, these offensive tendencies combined with weak perimeter resistance will push the combined final score past the 147.5 line.\n\nSplits: Based on public tendencies, approximately 65% of point-spread bets and 70% of moneyline wagers are backing the favored Indiana Hoosiers at home. The point spread has moved slightly from an opener of -3.5 up to -4.5, while the total has ticked up from 146.5 to 147.5 due to early over money.",
-                    "generated_at": "2026-11-08T23:36:39.509500+00:00",
-                    "odds_hash": "6eee1b410b3673cc",
+                    "total_confidence": 55,
+                    "analysis": "DePaul enters this early-season matchup with a significantly deeper rotation and superior offensive efficiency compared to Alabama A&M. The Blue Demons have shown strong perimeter shooting and defensive rebounding through their opening 2026 contests, establishing a clear talent advantage on their home floor. While a 23.5-point spread is substantial, the Bulldogs struggle immensely to generate consistent half-court offense against major conference opponents. DePaul's relentless defensive pressure should force numerous turnovers that translate into easy transition baskets. Consequently, the superior athleticism of the home squad will ultimately wear down the visitors and push the final margin past the large number.",
+                    "ou_analysis": "Both teams are expected to play at an up-tempo pace that naturally inflates the overall possession count for this matchup. DePaul prefers an open-court style that yields high-percentage looks early in the shot clock, while Alabama A&M's defensive lapses routinely give up easy transition points. Given these contrasting stylistic strengths and vulnerabilities, the combined scoring output should comfortably surpass the 141.5-point threshold.",
+                    "splits_and_direction": "Approximately 78% of the public bets are backing DePaul to cover the large spread and win on the heavy moneyline, while the total has seen balanced action leaning slightly toward the over. The spread has moved up one point from the opening line of 22.5 to 23.5 in favor of the home team, and the total has ticked up from 140.0 to 141.5 due to early over money.",
+                    "display_text": "Analysis: DePaul enters this early-season matchup with a significantly deeper rotation and superior offensive efficiency compared to Alabama A&M. The Blue Demons have shown strong perimeter shooting and defensive rebounding through their opening 2026 contests, establishing a clear talent advantage on their home floor. While a 23.5-point spread is substantial, the Bulldogs struggle immensely to generate consistent half-court offense against major conference opponents. DePaul's relentless defensive pressure should force numerous turnovers that translate into easy transition baskets. Consequently, the superior athleticism of the home squad will ultimately wear down the visitors and push the final margin past the large number.\n\nOver Under: Both teams are expected to play at an up-tempo pace that naturally inflates the overall possession count for this matchup. DePaul prefers an open-court style that yields high-percentage looks early in the shot clock, while Alabama A&M's defensive lapses routinely give up easy transition points. Given these contrasting stylistic strengths and vulnerabilities, the combined scoring output should comfortably surpass the 141.5-point threshold.\n\nSplits: Approximately 78% of the public bets are backing DePaul to cover the large spread and win on the heavy moneyline, while the total has seen balanced action leaning slightly toward the over. The spread has moved up one point from the opening line of 22.5 to 23.5 in favor of the home team, and the total has ticked up from 140.0 to 141.5 due to early over money.",
+                    "generated_at": "2026-11-09T04:25:42.101474+00:00",
+                    "odds_hash": "c141e17646ca10f5",
                     "model": "gemini-3.5-flash-lite"
                   },
-                  "is_slot_pick": true
+                  "is_slot_pick": false
                 },
                 {
                   "id": "401920686",
@@ -2356,44 +2456,27 @@
                   "is_nebraska": false,
                   "odds": {
                     "draftkings": {
-                      "spread": {},
+                      "spread": {
+                        "home": {
+                          "line": -37.5,
+                          "american": -133
+                        },
+                        "away": {
+                          "line": 37.5,
+                          "american": -102
+                        }
+                      },
                       "moneyline": {},
-                      "total": {}
-                    },
-                    "fanduel": {
-                      "spread": {},
-                      "moneyline": {},
-                      "total": {}
-                    }
-                  },
-                  "matchup_rank": 2,
-                  "is_slot_pick": false
-                },
-                {
-                  "id": "401909502",
-                  "start_time": "2026-11-10T02:00Z",
-                  "start_time_tbd": false,
-                  "home_team": "DePaul Blue Demons",
-                  "home_rank": null,
-                  "home_record": "2-0",
-                  "home_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/305.png",
-                  "home_location": "DePaul",
-                  "away_team": "Alabama A&M Bulldogs",
-                  "away_rank": null,
-                  "away_record": "2-0",
-                  "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2010.png",
-                  "away_location": "Alabama A&M",
-                  "matchup_score": 75.0,
-                  "channel": "truTV",
-                  "venue": "Wintrust Arena",
-                  "venue_location": "Chicago, IL",
-                  "neutral_site": false,
-                  "is_nebraska": false,
-                  "odds": {
-                    "draftkings": {
-                      "spread": {},
-                      "moneyline": {},
-                      "total": {}
+                      "total": {
+                        "over": {
+                          "line": 141.5,
+                          "american": 100
+                        },
+                        "under": {
+                          "line": 141.5,
+                          "american": -130
+                        }
+                      }
                     },
                     "fanduel": {
                       "spread": {},
@@ -2402,6 +2485,21 @@
                     }
                   },
                   "matchup_rank": 3,
+                  "gemini_prediction": {
+                    "winner": "UConn Huskies",
+                    "confidence": 99,
+                    "ats_pick": "Wagner Seahawks",
+                    "ats_confidence": 65,
+                    "total_pick": "Under",
+                    "total_confidence": 60,
+                    "analysis": "The UConn Huskies enter this matchup with a massive talent advantage over the Wagner Seahawks. UConn's current-season efficiency metrics highlight an elite defensive stance and disciplined offensive execution that will overwhelm their opponent early. However, a 37.5-point spread is exceptionally large for any Division I basketball game, requiring an offensive blowout of historic proportions. Wagner will struggle to score efficiently against UConn's lockdown perimeter defense but should manage to scrap together enough points late against reserves. Consequently, UConn secures a comfortable double-digit victory while Wagner does just enough to cover the massive spread. Ultimately, the sheer size of the number makes the underdog the mathematically safer play against the spread.",
+                    "ou_analysis": "Pace projections suggest a methodical half-court tempo controlled largely by the defensive intensity of the home side. The scoring environment will be stifled as Wagner faces immense difficulties breaking through the stringent defensive sets. Therefore, the total falls Under 141.5 points due to limited possessions and cold shooting stretches.",
+                    "splits_and_direction": "Public betting splits are estimated at 72 percent of tickets on UConn to cover and 88 percent on the moneyline, with heavy action pushing the total down from an opening number of 144.5 to 141.5 while the spread has held relatively stable at 37.5.",
+                    "display_text": "Analysis: The UConn Huskies enter this matchup with a massive talent advantage over the Wagner Seahawks. UConn's current-season efficiency metrics highlight an elite defensive stance and disciplined offensive execution that will overwhelm their opponent early. However, a 37.5-point spread is exceptionally large for any Division I basketball game, requiring an offensive blowout of historic proportions. Wagner will struggle to score efficiently against UConn's lockdown perimeter defense but should manage to scrap together enough points late against reserves. Consequently, UConn secures a comfortable double-digit victory while Wagner does just enough to cover the massive spread. Ultimately, the sheer size of the number makes the underdog the mathematically safer play against the spread.\n\nOver Under: Pace projections suggest a methodical half-court tempo controlled largely by the defensive intensity of the home side. The scoring environment will be stifled as Wagner faces immense difficulties breaking through the stringent defensive sets. Therefore, the total falls Under 141.5 points due to limited possessions and cold shooting stretches.\n\nSplits: Public betting splits are estimated at 72 percent of tickets on UConn to cover and 88 percent on the moneyline, with heavy action pushing the total down from an opening number of 144.5 to 141.5 while the spread has held relatively stable at 37.5.",
+                    "generated_at": "2026-11-09T04:25:20.549709+00:00",
+                    "odds_hash": "3cecbb24e440d2bb",
+                    "model": "gemini-3.5-flash-lite"
+                  },
                   "is_slot_pick": false
                 },
                 {
@@ -2418,7 +2516,7 @@
                   "away_record": "1-1",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2287.png",
                   "away_location": "Illinois State",
-                  "matchup_score": 100.0,
+                  "matchup_score": 83.3,
                   "channel": "FS1",
                   "venue": "Mackey Arena",
                   "venue_location": "West Lafayette, IN",
@@ -2426,6 +2524,38 @@
                   "is_nebraska": false,
                   "odds": {
                     "draftkings": {
+                      "spread": {
+                        "home": {
+                          "line": -15.5,
+                          "american": -115
+                        },
+                        "away": {
+                          "line": 15.5,
+                          "american": -105
+                        }
+                      },
+                      "moneyline": {
+                        "home": {
+                          "line": null,
+                          "american": -1800
+                        },
+                        "away": {
+                          "line": null,
+                          "american": 1000
+                        }
+                      },
+                      "total": {
+                        "over": {
+                          "line": 144.5,
+                          "american": -112
+                        },
+                        "under": {
+                          "line": 144.5,
+                          "american": -108
+                        }
+                      }
+                    },
+                    "fanduel": {
                       "spread": {
                         "home": {
                           "line": -15.5,
@@ -2439,44 +2569,39 @@
                       "moneyline": {
                         "home": {
                           "line": null,
-                          "american": -1350
+                          "american": -2100
                         },
                         "away": {
                           "line": null,
-                          "american": 800
+                          "american": 1000
                         }
                       },
                       "total": {
                         "over": {
                           "line": 144.5,
-                          "american": -105
+                          "american": -115
                         },
                         "under": {
                           "line": 144.5,
-                          "american": -115
+                          "american": -105
                         }
                       }
-                    },
-                    "fanduel": {
-                      "spread": {},
-                      "moneyline": {},
-                      "total": {}
                     }
                   },
                   "matchup_rank": 4,
                   "gemini_prediction": {
                     "winner": "Purdue Boilermakers",
-                    "confidence": 92,
+                    "confidence": 95,
                     "ats_pick": "Illinois State Redbirds",
-                    "ats_confidence": 61,
+                    "ats_confidence": 62,
                     "total_pick": "Over",
                     "total_confidence": 58,
-                    "analysis": "The Purdue Boilermakers enter this contest with superior roster depth and efficient offensive execution during the early 2026 season matches. Illinois State Redbirds fight hard defensively, but they struggle to match the elite shot creation and interior presence of their hosts. While Purdue should secure a comfortable victory on their home floor, laying 15.5 points presents a fairly large hurdle in early-season college basketball scheduling. The Redbirds possess enough perimeter scoring capability to keep the final margin within the double-digit threshold. Ultimately, Purdue wins the game outright, but Illinois State does just enough to cover the sizeable spread.",
-                    "ou_analysis": "Both squads have shown a preference for up-tempo possessions and transition opportunities in their respective 2026 outings. The offensive efficiency ratings for both teams suggest that clean looks from beyond the arc and second-chance points will be readily available throughout the evening. Consequently, this combination of fast pacing and decent shooting percentages pushes the combined final score past the 144.5 betting line.",
-                    "splits_and_direction": "Based on public betting tendencies, roughly 71 percent of moneyline and spread wagers are backing the heavily favored home side, while the total sees a modest 55 percent leaning toward the over. The spread has ticked up slightly by half a point from its opening number due to early public support, while the total and moneyline have remained relatively static since opening.",
-                    "display_text": "Analysis: The Purdue Boilermakers enter this contest with superior roster depth and efficient offensive execution during the early 2026 season matches. Illinois State Redbirds fight hard defensively, but they struggle to match the elite shot creation and interior presence of their hosts. While Purdue should secure a comfortable victory on their home floor, laying 15.5 points presents a fairly large hurdle in early-season college basketball scheduling. The Redbirds possess enough perimeter scoring capability to keep the final margin within the double-digit threshold. Ultimately, Purdue wins the game outright, but Illinois State does just enough to cover the sizeable spread.\n\nOver Under: Both squads have shown a preference for up-tempo possessions and transition opportunities in their respective 2026 outings. The offensive efficiency ratings for both teams suggest that clean looks from beyond the arc and second-chance points will be readily available throughout the evening. Consequently, this combination of fast pacing and decent shooting percentages pushes the combined final score past the 144.5 betting line.\n\nSplits: Based on public betting tendencies, roughly 71 percent of moneyline and spread wagers are backing the heavily favored home side, while the total sees a modest 55 percent leaning toward the over. The spread has ticked up slightly by half a point from its opening number due to early public support, while the total and moneyline have remained relatively static since opening.",
-                    "generated_at": "2026-11-08T23:36:49.699375+00:00",
-                    "odds_hash": "235e9c1a2787d573",
+                    "analysis": "The Purdue Boilermakers enter this early-season contest holding a distinct talent advantage on their home court. Illinois State Redbirds will struggle to contain Purdue's high-efficiency interior scoring and disciplined half-court execution. However, a spread of 15.5 points is a substantial margin to lay against a competitive mid-major opponent in November. Illinois State possesses enough offensive capability to trade baskets and prevent a complete blowout. Ultimately, Purdue secures the outright victory, but Illinois State manages to cover the large spread.",
+                    "ou_analysis": "Both teams feature up-tempo offensive philosophies that generate plenty of early-season possessions. Purdue's potent scoring efficiency combined with defensive lapses typical of November basketball pushes the pace higher than expected. Consequently, the combined final score will safely clear the 144.5-point total line.",
+                    "splits_and_direction": "Based on public tendencies for heavy favorites, an estimated 78% of moneyline and spread bets are backing Purdue, while the total sees a balanced 55% split favoring the over. The spread has remained steady at -15.5, the moneyline has experienced slight upward adjustment on Purdue, and the total has ticked up marginally from 144 to 144.5.",
+                    "display_text": "Analysis: The Purdue Boilermakers enter this early-season contest holding a distinct talent advantage on their home court. Illinois State Redbirds will struggle to contain Purdue's high-efficiency interior scoring and disciplined half-court execution. However, a spread of 15.5 points is a substantial margin to lay against a competitive mid-major opponent in November. Illinois State possesses enough offensive capability to trade baskets and prevent a complete blowout. Ultimately, Purdue secures the outright victory, but Illinois State manages to cover the large spread.\n\nOver Under: Both teams feature up-tempo offensive philosophies that generate plenty of early-season possessions. Purdue's potent scoring efficiency combined with defensive lapses typical of November basketball pushes the pace higher than expected. Consequently, the combined final score will safely clear the 144.5-point total line.\n\nSplits: Based on public tendencies for heavy favorites, an estimated 78% of moneyline and spread bets are backing Purdue, while the total sees a balanced 55% split favoring the over. The spread has remained steady at -15.5, the moneyline has experienced slight upward adjustment on Purdue, and the total has ticked up marginally from 144 to 144.5.",
+                    "generated_at": "2026-11-09T04:25:30.502260+00:00",
+                    "odds_hash": "3f0e7386a22c7240",
                     "model": "gemini-3.5-flash-lite"
                   },
                   "is_slot_pick": false
