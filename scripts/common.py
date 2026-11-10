@@ -608,6 +608,11 @@ def _log_odds_breakdown(rows, sportsbooks=("draftkings", "fanduel"), markets=("s
 # prefix rule like "la " -> "los angeles " would wrongly hit "La Salle" etc.
 _TEAM_NAME_ALIASES = {
     "cbj blue jackets": "columbus blue jackets",
+    # ESPN calls the NBA team "LA Clippers"; the books (confirmed: 0 of 13
+    # Clippers games matched odds) use "Los Angeles Clippers". "la" vs "los
+    # angeles" can't be bridged by the fuzzy matcher, so alias it here.
+    "la clippers": "los angeles clippers",
+    "lac clippers": "los angeles clippers",
     "la kings": "los angeles kings",
     "mtl canadiens": "montreal canadiens",
     "nj devils": "new jersey devils",
