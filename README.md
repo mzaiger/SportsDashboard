@@ -71,7 +71,7 @@ MLB was already date-driven and didn't need this.
 | Data | `data/ncaaf_dashboard.json` | `data/nfl_dashboard.json` | `data/mlb_dashboard.json` | `data/nba_dashboard.json` | `data/ncaamb_dashboard.json` |
 | Builder | `scripts/build_ncaaf_dashboard.py` | `scripts/build_nfl_dashboard.py` | `scripts/build_mlb_dashboard.py` | `scripts/build_nba_dashboard.py` | `scripts/build_ncaamb_dashboard.py` |
 | Schedule/TV source | ESPN's public scoreboard + rankings APIs (no key needed) | ESPN's public scoreboard API (no key needed) | ESPN's public scoreboard API (no key needed) | ESPN's public scoreboard API (no key needed) | ESPN's public scoreboard API (no key needed) |
-| TV filter | Main channels only (ABC/CBS/NBC/FOX/ESPN/ESPN2/FS1) | none — all games | none — all games | none — all games | Main channels only (same set as NCAAF) |
+| TV filter | Main channels only (ABC/CBS/NBC/NBCSN/FOX/ESPN/ESPN2/FS1/CW) | none — all games | none — all games | none — all games | Main channels only (same set as NCAAF) |
 | Grouped by | Week → day | Week → day | Day (each "week" in the JSON is one calendar day — see MLB section below) | Day (same day-based scheme as MLB) | Day (same day-based scheme as MLB) |
 | Matchup ranking | 50% combined AP Top 25 rank + 25% combined win rank + 25% posted spread | 50% posted spread + 50% combined win rank | Combined win rank only (run line is ~always ±1.5, so it isn't a useful signal) | 50% posted spread + 50% combined win rank | 50% combined AP Top 25 rank + 25% combined win rank + 25% posted spread (same blend as NCAAF) |
 | Odds | [SharpAPI](https://sharpapi.io) (DraftKings + FanDuel) | same | same | same (SharpAPI league code `nba`) | same (SharpAPI league code `ncaab`) |
