@@ -282,8 +282,8 @@ def _parse_espn_record(competitor):
 def build_win_rank_lookup(team_records):
     """Rank every team with a known record by win percentage this season
     (rank 1 = best record on the board), the same convention NFL's/MLB's
-    win-rank lookups use. Ties broken by raw win total, then by team id
-    for a stable, deterministic order. `team_records` is
+    win-rank lookups use. Teams with identical records share a rank; ties on
+    win % are ordered by raw win total. `team_records` is
     {team_id: (wins, losses, ties)}. Returns {team_id: rank}."""
     entries = []
     for team_id, (wins, losses, ties) in team_records.items():
@@ -291,7 +291,17 @@ def build_win_rank_lookup(team_records):
         pct = (wins + 0.5 * ties) / games_played if games_played else -1
         entries.append((team_id, pct, wins))
     entries.sort(key=lambda e: (-e[1], -e[2], e[0]))
-    return {team_id: i + 1 for i, (team_id, pct, wins) in enumerate(entries)}
+    lookup = {}
+    prev_key, prev_rank = None, 0
+    for i, (team_id, pct, wins) in enumerate(entries):
+        key = (pct, wins)
+        # Identical records share a rank (1, 2, 2, 4 ...) instead of being
+        # split by team id, which would hand one of two equal teams an
+        # arbitrary edge in the win-rank component.
+        rank = prev_rank if key == prev_key else i + 1
+        lookup[team_id] = rank
+        prev_key, prev_rank = key, rank
+    return lookup
 
 
 def build_rank_lookup(rankings_payload, poll_name="AP Top 25"):
@@ -366,13 +376,16 @@ def matchup_components(home_rank, away_rank, home_win_rank, away_win_rank, odds)
     build_week to collect across the whole week and normalize/blend at
     once (see build_week's matchup_score assignment below) -- mirrors
     NFL's/MLB's matchup_score pattern. Any component with no data for
-    this particular game (e.g. neither team ranked, or no line posted
-    yet) comes back None and normalize_minmax() treats it as a neutral
-    mid-scale value rather than penalizing the game for missing data.
+    this particular game (e.g. no line posted
+    yet) comes back None; for the spread, normalize_minmax() scores that as
+    worst. The AP component is never None (see below).
     """
-    ap_component = None
-    if home_rank is not None or away_rank is not None:
-        ap_component = (home_rank or UNRANKED_VALUE) + (away_rank or UNRANKED_VALUE)
+    # A team with no ranking counts as UNRANKED_VALUE, so a game with NO
+    # ranked teams scores 2 * UNRANKED_VALUE -- worse than any game that has
+    # at least one ranked team, but not off the scale. (Previously it came
+    # back None and normalize_minmax scored it 1.0, which tied it with the
+    # worst *ranked* pair of the day.)
+    ap_component = (home_rank or UNRANKED_VALUE) + (away_rank or UNRANKED_VALUE)
 
     win_component = None
     if home_win_rank is not None or away_win_rank is not None:
