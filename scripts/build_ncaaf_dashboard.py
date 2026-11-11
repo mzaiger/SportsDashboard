@@ -101,7 +101,10 @@ def current_season_year():
 # since it isn't confirmed which exact string ESPN's API returns as the
 # broadcast shortName -- an unmatched variant here is harmless (it just
 # never matches _channel_tokens()), so both are kept for safety.
-MAIN_CHANNELS = {"ABC", "CBS", "NBC", "FOX", "ESPN", "ESPN2", "FS1", "CW"}
+# NBCSN = NBC Sports Network (relaunched; carries Peacock/NBCSN college
+# games, e.g. Illinois at Texas Tech on Nov 10, 2026). "NBC Sports Network"
+# is aliased below in case ESPN spells it out instead of "NBCSN".
+MAIN_CHANNELS = {"ABC", "CBS", "NBC", "FOX", "ESPN", "ESPN2", "FS1", "CW", "NBCSN"}
 
 # Nebraska always gets pulled onto the board and always wins its time
 # slot's "Time Slot Most Watchable Game" pick, no matter its AP rank or
@@ -237,6 +240,7 @@ _CHANNEL_ALIASES = {
     "FOX SPORTS": "FOX", "FOX BROADCASTING": "FOX", "FOX NETWORK": "FOX",
     "FOX BROADCASTING COMPANY": "FOX", "FOX SPORTS 1": "FS1",
     "ESPN 2": "ESPN2", "THE CW": "CW", "CW NETWORK": "CW",
+    "NBC SPORTS NETWORK": "NBCSN", "NBC SPORTS NET": "NBCSN",
 }
 
 
