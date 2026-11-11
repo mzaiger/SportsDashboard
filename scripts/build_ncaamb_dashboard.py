@@ -118,6 +118,7 @@ MAIN_CHANNELS = {
     # National cable -- college hoops additions vs. the CFB set
     "CBSSN",   # CBS Sports Network regular-season + tournament package
     "USA",     # NBC/USA's Big Ten national window
+    "NBCSN",   # NBC Sports Network (Peacock/NBCSN Big Ten/Big East/Big 12 games)
     # March Madness / major neutral-site package (CBS-Turner)
     "TNT", "TBS", "truTV",
 }
@@ -380,6 +381,7 @@ _CHANNEL_ALIASES = {
     "FOX BROADCASTING COMPANY": "FOX", "FOX SPORTS 1": "FS1",
     "ESPN 2": "ESPN2", "USA NET": "USA", "USA NETWORK": "USA",
     "CBS SPORTS NETWORK": "CBSSN",
+    "NBC SPORTS NETWORK": "NBCSN", "NBC SPORTS NET": "NBCSN",
 }
 
 
