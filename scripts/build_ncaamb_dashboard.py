@@ -382,6 +382,9 @@ _CHANNEL_ALIASES = {
     "ESPN 2": "ESPN2", "USA NET": "USA", "USA NETWORK": "USA",
     "CBS SPORTS NETWORK": "CBSSN",
     "NBC SPORTS NETWORK": "NBCSN", "NBC SPORTS NET": "NBCSN",
+    # ESPN lists Peacock/NBCSN simulcasts as just "Peacock" (e.g. Illinois at
+    # Texas Tech, Nov 10 2026) -- treat that as NBCSN so it makes the board.
+    "PEACOCK": "NBCSN",
 }
 
 
