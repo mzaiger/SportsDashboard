@@ -504,19 +504,31 @@ def build_win_rank_lookup(team_records):
         pct = wins / games_played if games_played else -1
         entries.append((team_id, pct, wins))
     entries.sort(key=lambda e: (-e[1], -e[2], e[0]))
-    return {team_id: i + 1 for i, (team_id, pct, wins) in enumerate(entries)}
+    lookup = {}
+    prev_key, prev_rank = None, 0
+    for i, (team_id, pct, wins) in enumerate(entries):
+        key = (pct, wins)
+        # Identical records share a rank (1, 2, 2, 4 ...) instead of being
+        # split by team id, which would hand one of two equal teams an
+        # arbitrary edge in the win-rank component.
+        rank = prev_rank if key == prev_key else i + 1
+        lookup[team_id] = rank
+        prev_key, prev_rank = key, rank
+    return lookup
 
 
 def matchup_components(home_rank, away_rank, home_win_rank, away_win_rank, odds):
     """Per-game (ap_component, win_component, spread_component) tuple for
     build_day to collect across the whole day and normalize/blend at
     once. Any component with no data for this particular game (e.g.
-    neither team ranked, or no line posted yet) comes back None and
-    normalize_minmax() treats it as a neutral mid-scale value rather than
-    penalizing the game for missing data."""
-    ap_component = None
-    if home_rank is not None or away_rank is not None:
-        ap_component = (home_rank or UNRANKED_VALUE) + (away_rank or UNRANKED_VALUE)
+    no line posted yet) comes back None and normalize_minmax() scores it
+    as worst. The AP component is never None (see below)."""
+    # A team with no ranking counts as UNRANKED_VALUE, so a game with NO
+    # ranked teams scores 2 * UNRANKED_VALUE -- worse than any game that has
+    # at least one ranked team, but not off the scale. (Previously it came
+    # back None and normalize_minmax scored it 1.0, which tied it with the
+    # worst *ranked* pair of the day.)
+    ap_component = (home_rank or UNRANKED_VALUE) + (away_rank or UNRANKED_VALUE)
 
     win_component = None
     if home_win_rank is not None or away_win_rank is not None:
