@@ -816,7 +816,7 @@
 <div class="status" id="statusMsg" style="display:none;"></div>
 
 <footer>
-  <p>The N badge ranks every game that day (1 = most marquee) by blending the DraftKings/FanDuel point spread with the two teams' win ranks. The star marks the best matchup in each time slot.</p>
+  <p>The N badge ranks every game that day (1 = most marquee) by blending combined AP Top 25 rank (50%), combined win rank (25%) and the DraftKings/FanDuel point spread (25%). Unranked teams count as 26. The star marks the best matchup in each time slot.</p>
   <p>Odds come from DraftKings and FanDuel through SharpAPI. Schedules, networks and records come from ESPN's public scoreboard.</p>
   <p>Gemini summaries are AI-generated from current-season stats and posted odds. They are for information only, not betting advice. Best Matchups shows only the starred games in each time slot. Confidence hides games where Gemini's score for the selected market is below the number you choose. Your light or dark choice is saved on this device.</p>
 </footer>
@@ -911,8 +911,8 @@ function kickoffTime(iso, tbd) {
 }
 
 function renderGame(g) {
-  // matchup_score is a blended 0-100 score (50% spread + 50% win rank,
-  // both normalized) -- treat the bottom ~1/5th of the 0-100 scale as a
+  // matchup_score is a blended 0-100 score (50% AP rank + 25% win rank
+  // + 25% spread, each normalized) -- treat the bottom ~1/5th of the 0-100 scale as a
   // "close/marquee" game. Adjust to taste.
   const closeGame = g.matchup_score !== null && g.matchup_score !== undefined && g.matchup_score <= 20;
   const isPick = !!g.is_slot_pick;
