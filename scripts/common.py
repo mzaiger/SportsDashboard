@@ -623,6 +623,13 @@ _TEAM_NAME_ALIASES = {
 
 def _normalize(name):
     name = _TEAM_NAME_ALIASES.get(name.strip().lower(), name)
+    # Apostrophes differ by feed ("St. John's" vs "St. Johns") and would
+    # otherwise split into stray tokens ("john", "s"). Strip them first.
+    name = name.replace("'", "").replace("\u2019", "")
+    # A LEADING "St."/"Saint" is a saint school (St. John's, St. Bonaventure,
+    # Saint Joseph's -- feeds mix "St." and "Saint"); a "St." anywhere else
+    # is "State" (Michigan St.). Canonicalize the leading form to "saint".
+    name = re.sub(r"^\s*(?:st\.?|saint)\s+", "saint ", name, flags=re.IGNORECASE)
     return (
         name.lower()
         .replace("st.", "state")
