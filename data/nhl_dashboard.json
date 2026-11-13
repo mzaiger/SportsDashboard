@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-13T01:09:19.004090+00:00",
+  "generated_at": "2026-11-13T12:05:56.551054+00:00",
   "season": 2026,
   "display_timezone": "America/Chicago",
   "weeks": [
@@ -34551,7 +34551,7 @@
           "time_slots": [
             {
               "slot": "Noon",
-              "best_matchup_score": 100.0,
+              "best_matchup_score": 50.0,
               "pick_reason": "combined_points",
               "games": [
                 {
@@ -34568,7 +34568,7 @@
                   "away_record": null,
                   "away_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/car.png",
                   "away_location": "Carolina",
-                  "matchup_score": 100.0,
+                  "matchup_score": 50.0,
                   "channel": "NHL Net, CARNHL, KONG, Prime Video (Local)",
                   "venue": "Veikkaus Arena",
                   "venue_location": "Helsinki, Finland",
@@ -34654,14 +34654,14 @@
                     "odds_hash": "54b03477ef2c11a4",
                     "model": "gemini-3.1-flash-lite"
                   },
-                  "matchup_rank": 10,
+                  "matchup_rank": 1,
                   "is_slot_pick": true
                 }
               ]
             },
             {
               "slot": "Prime Time",
-              "best_matchup_score": 0.0,
+              "best_matchup_score": 50.0,
               "pick_reason": "combined_points",
               "games": [
                 {
@@ -34670,15 +34670,15 @@
                   "start_time_tbd": false,
                   "home_team": "Boston Bruins",
                   "home_abbr": "BOS",
-                  "home_record": "13-4-1",
+                  "home_record": null,
                   "home_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/bos.png",
                   "home_location": "Boston",
                   "away_team": "Montreal Canadiens",
                   "away_abbr": "MTL",
-                  "away_record": "11-3-4",
+                  "away_record": null,
                   "away_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/mtl.png",
                   "away_location": "Montreal",
-                  "matchup_score": 0.0,
+                  "matchup_score": 50.0,
                   "channel": "ESPN+, NESN",
                   "venue": "TD Garden",
                   "venue_location": "Boston, MA",
@@ -34764,8 +34764,184 @@
                     "odds_hash": "de7e9446f7cf7b3e",
                     "model": "gemini-3.5-flash-lite"
                   },
-                  "matchup_rank": 1,
+                  "matchup_rank": 2,
                   "is_slot_pick": true
+                },
+                {
+                  "id": "401892697",
+                  "start_time": "2026-11-13T00:00Z",
+                  "start_time_tbd": false,
+                  "home_team": "Toronto Maple Leafs",
+                  "home_abbr": "TOR",
+                  "home_record": null,
+                  "home_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/tor.png",
+                  "home_location": "Toronto",
+                  "away_team": "Minnesota Wild",
+                  "away_abbr": "MIN",
+                  "away_record": null,
+                  "away_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/min.png",
+                  "away_location": "Minnesota",
+                  "matchup_score": 50.0,
+                  "channel": "ESPN+, MINNHL",
+                  "venue": "Scotiabank Arena",
+                  "venue_location": "Toronto, ON",
+                  "neutral_site": false,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {
+                        "home": {
+                          "line": 1.5,
+                          "american": -175
+                        },
+                        "away": {
+                          "line": -1.5,
+                          "american": 145
+                        }
+                      },
+                      "moneyline": {
+                        "home": {
+                          "line": null,
+                          "american": 142
+                        },
+                        "away": {
+                          "line": null,
+                          "american": -170
+                        }
+                      },
+                      "total": {
+                        "over": {
+                          "line": 6.5,
+                          "american": -102
+                        },
+                        "under": {
+                          "line": 6.5,
+                          "american": -118
+                        }
+                      }
+                    },
+                    "fanduel": {
+                      "spread": {
+                        "home": {
+                          "line": 1.5,
+                          "american": -160
+                        },
+                        "away": {
+                          "line": -1.5,
+                          "american": 130
+                        }
+                      },
+                      "moneyline": {
+                        "home": {
+                          "line": null,
+                          "american": 142
+                        },
+                        "away": {
+                          "line": null,
+                          "american": -172
+                        }
+                      },
+                      "total": {
+                        "over": {
+                          "line": 6.5,
+                          "american": -102
+                        },
+                        "under": {
+                          "line": 6.5,
+                          "american": -120
+                        }
+                      }
+                    }
+                  },
+                  "matchup_rank": 3,
+                  "is_slot_pick": false
+                },
+                {
+                  "id": "401892698",
+                  "start_time": "2026-11-13T00:00Z",
+                  "start_time_tbd": false,
+                  "home_team": "Ottawa Senators",
+                  "home_abbr": "OTT",
+                  "home_record": null,
+                  "home_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/ott.png",
+                  "home_location": "Ottawa",
+                  "away_team": "Colorado Avalanche",
+                  "away_abbr": "COL",
+                  "away_record": null,
+                  "away_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/col.png",
+                  "away_location": "Colorado",
+                  "matchup_score": 50.0,
+                  "channel": "ESPN+, Altitude Sports",
+                  "venue": "Canadian Tire Centre",
+                  "venue_location": "Ottawa, ON",
+                  "neutral_site": false,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {
+                        "home": {
+                          "line": 1.5,
+                          "american": -270
+                        },
+                        "away": {
+                          "line": -1.5,
+                          "american": 220
+                        }
+                      },
+                      "moneyline": {
+                        "home": {
+                          "line": null,
+                          "american": -112
+                        },
+                        "away": {
+                          "line": null,
+                          "american": -108
+                        }
+                      },
+                      "total": {
+                        "over": {
+                          "line": 6.5,
+                          "american": 102
+                        },
+                        "under": {
+                          "line": 6.5,
+                          "american": -122
+                        }
+                      }
+                    },
+                    "fanduel": {
+                      "spread": {
+                        "home": {
+                          "line": -1.5,
+                          "american": 205
+                        },
+                        "away": {
+                          "line": 1.5,
+                          "american": -260
+                        }
+                      },
+                      "moneyline": {
+                        "home": {
+                          "line": null,
+                          "american": -110
+                        },
+                        "away": {
+                          "line": null,
+                          "american": -110
+                        }
+                      },
+                      "total": {
+                        "over": {
+                          "line": 6.5,
+                          "american": 100
+                        },
+                        "under": {
+                          "line": 6.5,
+                          "american": -122
+                        }
+                      }
+                    }
+                  },
+                  "matchup_rank": 4,
+                  "is_slot_pick": false
                 },
                 {
                   "id": "401892700",
@@ -34773,15 +34949,15 @@
                   "start_time_tbd": false,
                   "home_team": "New Jersey Devils",
                   "home_abbr": "NJ",
-                  "home_record": "13-6-0",
+                  "home_record": null,
                   "home_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/nj.png",
                   "home_location": "New Jersey",
                   "away_team": "Washington Capitals",
                   "away_abbr": "WSH",
-                  "away_record": "10-6-0",
+                  "away_record": null,
                   "away_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/wsh.png",
                   "away_location": "Washington",
-                  "matchup_score": 32.1,
+                  "matchup_score": 50.0,
                   "channel": "ESPN+, MNMT, MSGSN",
                   "venue": "Prudential Center",
                   "venue_location": "Newark, NJ",
@@ -34867,286 +35043,7 @@
                     "odds_hash": "a8219aaf9532e6ae",
                     "model": "gemini-3.5-flash-lite"
                   },
-                  "matchup_rank": 2,
-                  "is_slot_pick": false
-                },
-                {
-                  "id": "401892698",
-                  "start_time": "2026-11-13T00:00Z",
-                  "start_time_tbd": false,
-                  "home_team": "Ottawa Senators",
-                  "home_abbr": "OTT",
-                  "home_record": "11-6-2",
-                  "home_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/ott.png",
-                  "home_location": "Ottawa",
-                  "away_team": "Colorado Avalanche",
-                  "away_abbr": "COL",
-                  "away_record": "11-6-2",
-                  "away_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/col.png",
-                  "away_location": "Colorado",
-                  "matchup_score": 35.7,
-                  "channel": "ESPN+, Altitude Sports",
-                  "venue": "Canadian Tire Centre",
-                  "venue_location": "Ottawa, ON",
-                  "neutral_site": false,
-                  "odds": {
-                    "draftkings": {
-                      "spread": {
-                        "home": {
-                          "line": 1.5,
-                          "american": -270
-                        },
-                        "away": {
-                          "line": -1.5,
-                          "american": 220
-                        }
-                      },
-                      "moneyline": {
-                        "home": {
-                          "line": null,
-                          "american": -112
-                        },
-                        "away": {
-                          "line": null,
-                          "american": -108
-                        }
-                      },
-                      "total": {
-                        "over": {
-                          "line": 6.5,
-                          "american": 102
-                        },
-                        "under": {
-                          "line": 6.5,
-                          "american": -122
-                        }
-                      }
-                    },
-                    "fanduel": {
-                      "spread": {
-                        "home": {
-                          "line": -1.5,
-                          "american": 205
-                        },
-                        "away": {
-                          "line": 1.5,
-                          "american": -260
-                        }
-                      },
-                      "moneyline": {
-                        "home": {
-                          "line": null,
-                          "american": -110
-                        },
-                        "away": {
-                          "line": null,
-                          "american": -110
-                        }
-                      },
-                      "total": {
-                        "over": {
-                          "line": 6.5,
-                          "american": 100
-                        },
-                        "under": {
-                          "line": 6.5,
-                          "american": -122
-                        }
-                      }
-                    }
-                  },
-                  "matchup_rank": 3,
-                  "is_slot_pick": false
-                },
-                {
-                  "id": "401892697",
-                  "start_time": "2026-11-13T00:00Z",
-                  "start_time_tbd": false,
-                  "home_team": "Toronto Maple Leafs",
-                  "home_abbr": "TOR",
-                  "home_record": "8-10-2",
-                  "home_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/tor.png",
-                  "home_location": "Toronto",
-                  "away_team": "Minnesota Wild",
-                  "away_abbr": "MIN",
-                  "away_record": "13-3-4",
-                  "away_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/min.png",
-                  "away_location": "Minnesota",
-                  "matchup_score": 42.9,
-                  "channel": "ESPN+, MINNHL",
-                  "venue": "Scotiabank Arena",
-                  "venue_location": "Toronto, ON",
-                  "neutral_site": false,
-                  "odds": {
-                    "draftkings": {
-                      "spread": {
-                        "home": {
-                          "line": 1.5,
-                          "american": -175
-                        },
-                        "away": {
-                          "line": -1.5,
-                          "american": 145
-                        }
-                      },
-                      "moneyline": {
-                        "home": {
-                          "line": null,
-                          "american": 142
-                        },
-                        "away": {
-                          "line": null,
-                          "american": -170
-                        }
-                      },
-                      "total": {
-                        "over": {
-                          "line": 6.5,
-                          "american": -102
-                        },
-                        "under": {
-                          "line": 6.5,
-                          "american": -118
-                        }
-                      }
-                    },
-                    "fanduel": {
-                      "spread": {
-                        "home": {
-                          "line": 1.5,
-                          "american": -160
-                        },
-                        "away": {
-                          "line": -1.5,
-                          "american": 130
-                        }
-                      },
-                      "moneyline": {
-                        "home": {
-                          "line": null,
-                          "american": 142
-                        },
-                        "away": {
-                          "line": null,
-                          "american": -172
-                        }
-                      },
-                      "total": {
-                        "over": {
-                          "line": 6.5,
-                          "american": -102
-                        },
-                        "under": {
-                          "line": 6.5,
-                          "american": -120
-                        }
-                      }
-                    }
-                  },
-                  "matchup_rank": 4,
-                  "is_slot_pick": false
-                },
-                {
-                  "id": "401892703",
-                  "start_time": "2026-11-13T01:00Z",
-                  "start_time_tbd": false,
-                  "home_team": "Dallas Stars",
-                  "home_abbr": "DAL",
-                  "home_record": "10-5-2",
-                  "home_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/dal.png",
-                  "home_location": "Dallas",
-                  "away_team": "Winnipeg Jets",
-                  "away_abbr": "WPG",
-                  "away_record": "8-8-3",
-                  "away_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/wpg.png",
-                  "away_location": "Winnipeg",
-                  "matchup_score": 53.6,
-                  "channel": "ESPN+, KDFI, Prime Video (Local)",
-                  "venue": "American Airlines Center",
-                  "venue_location": "Dallas, TX",
-                  "neutral_site": false,
-                  "odds": {
-                    "draftkings": {
-                      "spread": {
-                        "home": {
-                          "line": -1.5,
-                          "american": 160
-                        },
-                        "away": {
-                          "line": 1.5,
-                          "american": -192
-                        }
-                      },
-                      "moneyline": {
-                        "home": {
-                          "line": null,
-                          "american": -155
-                        },
-                        "away": {
-                          "line": null,
-                          "american": 130
-                        }
-                      },
-                      "total": {
-                        "over": {
-                          "line": 5.5,
-                          "american": -120
-                        },
-                        "under": {
-                          "line": 5.5,
-                          "american": 100
-                        }
-                      }
-                    },
-                    "fanduel": {
-                      "spread": {
-                        "home": {
-                          "line": -1.5,
-                          "american": 164
-                        },
-                        "away": {
-                          "line": 1.5,
-                          "american": -205
-                        }
-                      },
-                      "moneyline": {
-                        "home": {
-                          "line": null,
-                          "american": -162
-                        },
-                        "away": {
-                          "line": null,
-                          "american": 134
-                        }
-                      },
-                      "total": {
-                        "over": {
-                          "line": 5.5,
-                          "american": -120
-                        },
-                        "under": {
-                          "line": 5.5,
-                          "american": 100
-                        }
-                      }
-                    }
-                  },
                   "matchup_rank": 5,
-                  "gemini_prediction": {
-                    "winner": "Dallas Stars",
-                    "confidence": 62,
-                    "ats_pick": "Winnipeg Jets",
-                    "ats_confidence": 58,
-                    "total_pick": "Under",
-                    "total_confidence": 55,
-                    "analysis": "The Dallas Stars hold a solid home-ice advantage backed by strong defensive structure and consistent goaltending during the current campaign. Winnipeg puts up a fight on the road with persistent offensive pressure and special teams efficiency that keeps games close. While Dallas should ultimately secure the victory through depth scoring, Winnipeg has routinely kept margins tight against top competition this year. Therefore, taking the Jets to cover the 1.5-goal spread is the mathematically sound play given the frequency of one-goal outcomes. Expect a hard-fought battle where the Stars win by a narrow margin, failing to cover the puck line.",
-                    "ou_analysis": "Both teams feature structured defensive systems and elite goaltenders that limit high-danger scoring chances at even strength. The pace of play typically slows down in these tightly contested conference matchups as neutral zone trap tactics take precedence. Consequently, the combined score should stay under the posted line of 5.5 goals in a low-scoring affair.",
-                    "splits_and_direction": "Based on public tendencies, approximately 65 percent of bets are backing the Dallas Stars on the moneyline and spread, while the over is attracting heavy early action at 58 percent. The home moneyline has slightly shortened from -150 to -162 at FanDuel, and the total has remained steady at 5.5 with juice slightly moving toward the over.",
-                    "display_text": "Analysis: The Dallas Stars hold a solid home-ice advantage backed by strong defensive structure and consistent goaltending during the current campaign. Winnipeg puts up a fight on the road with persistent offensive pressure and special teams efficiency that keeps games close. While Dallas should ultimately secure the victory through depth scoring, Winnipeg has routinely kept margins tight against top competition this year. Therefore, taking the Jets to cover the 1.5-goal spread is the mathematically sound play given the frequency of one-goal outcomes. Expect a hard-fought battle where the Stars win by a narrow margin, failing to cover the puck line.\n\nOver Under: Both teams feature structured defensive systems and elite goaltenders that limit high-danger scoring chances at even strength. The pace of play typically slows down in these tightly contested conference matchups as neutral zone trap tactics take precedence. Consequently, the combined score should stay under the posted line of 5.5 goals in a low-scoring affair.\n\nSplits: Based on public tendencies, approximately 65 percent of bets are backing the Dallas Stars on the moneyline and spread, while the over is attracting heavy early action at 58 percent. The home moneyline has slightly shortened from -150 to -162 at FanDuel, and the total has remained steady at 5.5 with juice slightly moving toward the over.",
-                    "generated_at": "2026-11-13T01:08:38.838805+00:00",
-                    "odds_hash": "d92a3487d6b6250e",
-                    "model": "gemini-3.5-flash-lite"
-                  },
                   "is_slot_pick": false
                 },
                 {
@@ -35155,15 +35052,15 @@
                   "start_time_tbd": false,
                   "home_team": "Columbus Blue Jackets",
                   "home_abbr": "CBJ",
-                  "home_record": "7-9-0",
+                  "home_record": null,
                   "home_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/cbj.png",
                   "home_location": "Columbus",
                   "away_team": "Tampa Bay Lightning",
                   "away_abbr": "TB",
-                  "away_record": "12-4-2",
+                  "away_record": null,
                   "away_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/tb.png",
                   "away_location": "Tampa Bay",
-                  "matchup_score": 60.7,
+                  "matchup_score": 50.0,
                   "channel": "ESPN+, The Spot - MTN, CBJNHL, WWHO",
                   "venue": "Nationwide Arena",
                   "venue_location": "Columbus, OH",
@@ -35253,123 +35150,20 @@
                   "is_slot_pick": false
                 },
                 {
-                  "id": "401892704",
-                  "start_time": "2026-11-13T02:00Z",
-                  "start_time_tbd": false,
-                  "home_team": "Utah Mammoth",
-                  "home_abbr": "UTA",
-                  "home_record": "10-8-1",
-                  "home_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/uta.png",
-                  "home_location": "Utah",
-                  "away_team": "St. Louis Blues",
-                  "away_abbr": "STL",
-                  "away_record": "8-8-2",
-                  "away_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/stl.png",
-                  "away_location": "St. Louis",
-                  "matchup_score": 75.0,
-                  "channel": "ESPN+, Blues App, BN+, Utah 16, Mammoth+",
-                  "venue": "Delta Center",
-                  "venue_location": "Salt Lake City, UT",
-                  "neutral_site": false,
-                  "odds": {
-                    "draftkings": {
-                      "spread": {
-                        "home": {
-                          "line": 1.5,
-                          "american": -250
-                        },
-                        "away": {
-                          "line": -1.5,
-                          "american": 205
-                        }
-                      },
-                      "moneyline": {
-                        "home": {
-                          "line": null,
-                          "american": 110
-                        },
-                        "away": {
-                          "line": null,
-                          "american": -130
-                        }
-                      },
-                      "total": {
-                        "over": {
-                          "line": 5.5,
-                          "american": -135
-                        },
-                        "under": {
-                          "line": 5.5,
-                          "american": 114
-                        }
-                      }
-                    },
-                    "fanduel": {
-                      "spread": {
-                        "home": {
-                          "line": 1.5,
-                          "american": -245
-                        },
-                        "away": {
-                          "line": -1.5,
-                          "american": 194
-                        }
-                      },
-                      "moneyline": {
-                        "home": {
-                          "line": null,
-                          "american": 106
-                        },
-                        "away": {
-                          "line": null,
-                          "american": -128
-                        }
-                      },
-                      "total": {
-                        "over": {
-                          "line": 5.5,
-                          "american": -130
-                        },
-                        "under": {
-                          "line": 5.5,
-                          "american": 106
-                        }
-                      }
-                    }
-                  },
-                  "matchup_rank": 7,
-                  "gemini_prediction": {
-                    "winner": "St. Louis Blues",
-                    "confidence": 58,
-                    "ats_pick": "Utah Mammoth",
-                    "ats_confidence": 55,
-                    "total_pick": "Over",
-                    "total_confidence": 60,
-                    "analysis": "The St. Louis Blues enter this matchup with a slight edge in recent form and roster stability compared to the Utah Mammoth. St. Louis has shown superior offensive efficiency during the 2026 season, which should allow them to secure a narrow victory on the road. However, Utah's resilience at home makes them a dangerous opponent that can keep the game within a single-goal margin. Given the tight odds across DraftKings and FanDuel, the Mammoth present strong value as a home underdog against the puck line. Ultimately, expect the Blues to pull off a closely contested win while Utah covers the spread.",
-                    "ou_analysis": "Both teams feature high-paced offensive attacks and vulnerable defensive setups that point directly toward a high-scoring affair. The current total of 5.5 is well within reach given the potent scoring environments both squads have maintained throughout the 2026 campaign. Therefore, the combined final score is expected to comfortably eclipse the posted line, driving the Over home.",
-                    "splits_and_direction": "Based on public betting tendencies, approximately 58 percent of spread bets and 62 percent of moneyline wagers are backing the visiting St. Louis Blues. Both the spread and total have held relatively steady with minor juice adjustments favoring the Over and the away team since opening.",
-                    "display_text": "Analysis: The St. Louis Blues enter this matchup with a slight edge in recent form and roster stability compared to the Utah Mammoth. St. Louis has shown superior offensive efficiency during the 2026 season, which should allow them to secure a narrow victory on the road. However, Utah's resilience at home makes them a dangerous opponent that can keep the game within a single-goal margin. Given the tight odds across DraftKings and FanDuel, the Mammoth present strong value as a home underdog against the puck line. Ultimately, expect the Blues to pull off a closely contested win while Utah covers the spread.\n\nOver Under: Both teams feature high-paced offensive attacks and vulnerable defensive setups that point directly toward a high-scoring affair. The current total of 5.5 is well within reach given the potent scoring environments both squads have maintained throughout the 2026 campaign. Therefore, the combined final score is expected to comfortably eclipse the posted line, driving the Over home.\n\nSplits: Based on public betting tendencies, approximately 58 percent of spread bets and 62 percent of moneyline wagers are backing the visiting St. Louis Blues. Both the spread and total have held relatively steady with minor juice adjustments favoring the Over and the away team since opening.",
-                    "generated_at": "2026-11-13T01:08:48.809078+00:00",
-                    "odds_hash": "e83ea374f508fa76",
-                    "model": "gemini-3.5-flash-lite"
-                  },
-                  "is_slot_pick": false
-                },
-                {
                   "id": "401892699",
                   "start_time": "2026-11-13T00:30Z",
                   "start_time_tbd": false,
                   "home_team": "Florida Panthers",
                   "home_abbr": "FLA",
-                  "home_record": "10-7-2",
+                  "home_record": null,
                   "home_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/fla.png",
                   "home_location": "Florida",
                   "away_team": "Detroit Red Wings",
                   "away_abbr": "DET",
-                  "away_record": "7-9-3",
+                  "away_record": null,
                   "away_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/det.png",
                   "away_location": "Detroit",
-                  "matchup_score": 78.6,
+                  "matchup_score": 50.0,
                   "channel": "Disney+, ESPN+, Hulu",
                   "venue": "Amerant Bank Arena",
                   "venue_location": "Sunrise, FL",
@@ -35440,7 +35234,7 @@
                       }
                     }
                   },
-                  "matchup_rank": 8,
+                  "matchup_rank": 7,
                   "is_slot_pick": false
                 },
                 {
@@ -35449,15 +35243,15 @@
                   "start_time_tbd": false,
                   "home_team": "Chicago Blackhawks",
                   "home_abbr": "CHI",
-                  "home_record": "4-13-1",
+                  "home_record": null,
                   "home_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/chi.png",
                   "home_location": "Chicago",
                   "away_team": "Buffalo Sabres",
                   "away_abbr": "BUF",
-                  "away_record": "8-7-3",
+                  "away_record": null,
                   "away_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/buf.png",
                   "away_location": "Buffalo",
-                  "matchup_score": 100.0,
+                  "matchup_score": 50.0,
                   "channel": "ESPN+, MSGB, CHSN",
                   "venue": "United Center",
                   "venue_location": "Chicago, IL",
@@ -35528,7 +35322,6 @@
                       }
                     }
                   },
-                  "matchup_rank": 11,
                   "gemini_prediction": {
                     "winner": "Buffalo Sabres",
                     "confidence": 62,
@@ -35544,13 +35337,220 @@
                     "odds_hash": "d70c3ea4eb1de132",
                     "model": "gemini-3.5-flash-lite"
                   },
+                  "matchup_rank": 8,
+                  "is_slot_pick": false
+                },
+                {
+                  "id": "401892703",
+                  "start_time": "2026-11-13T01:00Z",
+                  "start_time_tbd": false,
+                  "home_team": "Dallas Stars",
+                  "home_abbr": "DAL",
+                  "home_record": null,
+                  "home_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/dal.png",
+                  "home_location": "Dallas",
+                  "away_team": "Winnipeg Jets",
+                  "away_abbr": "WPG",
+                  "away_record": null,
+                  "away_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/wpg.png",
+                  "away_location": "Winnipeg",
+                  "matchup_score": 50.0,
+                  "channel": "ESPN+, KDFI, Prime Video (Local)",
+                  "venue": "American Airlines Center",
+                  "venue_location": "Dallas, TX",
+                  "neutral_site": false,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {
+                        "home": {
+                          "line": -1.5,
+                          "american": 160
+                        },
+                        "away": {
+                          "line": 1.5,
+                          "american": -192
+                        }
+                      },
+                      "moneyline": {
+                        "home": {
+                          "line": null,
+                          "american": -155
+                        },
+                        "away": {
+                          "line": null,
+                          "american": 130
+                        }
+                      },
+                      "total": {
+                        "over": {
+                          "line": 5.5,
+                          "american": -120
+                        },
+                        "under": {
+                          "line": 5.5,
+                          "american": 100
+                        }
+                      }
+                    },
+                    "fanduel": {
+                      "spread": {
+                        "home": {
+                          "line": -1.5,
+                          "american": 164
+                        },
+                        "away": {
+                          "line": 1.5,
+                          "american": -205
+                        }
+                      },
+                      "moneyline": {
+                        "home": {
+                          "line": null,
+                          "american": -162
+                        },
+                        "away": {
+                          "line": null,
+                          "american": 134
+                        }
+                      },
+                      "total": {
+                        "over": {
+                          "line": 5.5,
+                          "american": -120
+                        },
+                        "under": {
+                          "line": 5.5,
+                          "american": 100
+                        }
+                      }
+                    }
+                  },
+                  "gemini_prediction": {
+                    "winner": "Dallas Stars",
+                    "confidence": 62,
+                    "ats_pick": "Winnipeg Jets",
+                    "ats_confidence": 58,
+                    "total_pick": "Under",
+                    "total_confidence": 55,
+                    "analysis": "The Dallas Stars hold a solid home-ice advantage backed by strong defensive structure and consistent goaltending during the current campaign. Winnipeg puts up a fight on the road with persistent offensive pressure and special teams efficiency that keeps games close. While Dallas should ultimately secure the victory through depth scoring, Winnipeg has routinely kept margins tight against top competition this year. Therefore, taking the Jets to cover the 1.5-goal spread is the mathematically sound play given the frequency of one-goal outcomes. Expect a hard-fought battle where the Stars win by a narrow margin, failing to cover the puck line.",
+                    "ou_analysis": "Both teams feature structured defensive systems and elite goaltenders that limit high-danger scoring chances at even strength. The pace of play typically slows down in these tightly contested conference matchups as neutral zone trap tactics take precedence. Consequently, the combined score should stay under the posted line of 5.5 goals in a low-scoring affair.",
+                    "splits_and_direction": "Based on public tendencies, approximately 65 percent of bets are backing the Dallas Stars on the moneyline and spread, while the over is attracting heavy early action at 58 percent. The home moneyline has slightly shortened from -150 to -162 at FanDuel, and the total has remained steady at 5.5 with juice slightly moving toward the over.",
+                    "display_text": "Analysis: The Dallas Stars hold a solid home-ice advantage backed by strong defensive structure and consistent goaltending during the current campaign. Winnipeg puts up a fight on the road with persistent offensive pressure and special teams efficiency that keeps games close. While Dallas should ultimately secure the victory through depth scoring, Winnipeg has routinely kept margins tight against top competition this year. Therefore, taking the Jets to cover the 1.5-goal spread is the mathematically sound play given the frequency of one-goal outcomes. Expect a hard-fought battle where the Stars win by a narrow margin, failing to cover the puck line.\n\nOver Under: Both teams feature structured defensive systems and elite goaltenders that limit high-danger scoring chances at even strength. The pace of play typically slows down in these tightly contested conference matchups as neutral zone trap tactics take precedence. Consequently, the combined score should stay under the posted line of 5.5 goals in a low-scoring affair.\n\nSplits: Based on public tendencies, approximately 65 percent of bets are backing the Dallas Stars on the moneyline and spread, while the over is attracting heavy early action at 58 percent. The home moneyline has slightly shortened from -150 to -162 at FanDuel, and the total has remained steady at 5.5 with juice slightly moving toward the over.",
+                    "generated_at": "2026-11-13T01:08:38.838805+00:00",
+                    "odds_hash": "d92a3487d6b6250e",
+                    "model": "gemini-3.5-flash-lite"
+                  },
+                  "matchup_rank": 9,
+                  "is_slot_pick": false
+                },
+                {
+                  "id": "401892704",
+                  "start_time": "2026-11-13T02:00Z",
+                  "start_time_tbd": false,
+                  "home_team": "Utah Mammoth",
+                  "home_abbr": "UTA",
+                  "home_record": null,
+                  "home_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/uta.png",
+                  "home_location": "Utah",
+                  "away_team": "St. Louis Blues",
+                  "away_abbr": "STL",
+                  "away_record": null,
+                  "away_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/stl.png",
+                  "away_location": "St. Louis",
+                  "matchup_score": 50.0,
+                  "channel": "ESPN+, Blues App, BN+, Utah 16, Mammoth+",
+                  "venue": "Delta Center",
+                  "venue_location": "Salt Lake City, UT",
+                  "neutral_site": false,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {
+                        "home": {
+                          "line": 1.5,
+                          "american": -250
+                        },
+                        "away": {
+                          "line": -1.5,
+                          "american": 205
+                        }
+                      },
+                      "moneyline": {
+                        "home": {
+                          "line": null,
+                          "american": 110
+                        },
+                        "away": {
+                          "line": null,
+                          "american": -130
+                        }
+                      },
+                      "total": {
+                        "over": {
+                          "line": 5.5,
+                          "american": -135
+                        },
+                        "under": {
+                          "line": 5.5,
+                          "american": 114
+                        }
+                      }
+                    },
+                    "fanduel": {
+                      "spread": {
+                        "home": {
+                          "line": 1.5,
+                          "american": -245
+                        },
+                        "away": {
+                          "line": -1.5,
+                          "american": 194
+                        }
+                      },
+                      "moneyline": {
+                        "home": {
+                          "line": null,
+                          "american": 106
+                        },
+                        "away": {
+                          "line": null,
+                          "american": -128
+                        }
+                      },
+                      "total": {
+                        "over": {
+                          "line": 5.5,
+                          "american": -130
+                        },
+                        "under": {
+                          "line": 5.5,
+                          "american": 106
+                        }
+                      }
+                    }
+                  },
+                  "gemini_prediction": {
+                    "winner": "St. Louis Blues",
+                    "confidence": 58,
+                    "ats_pick": "Utah Mammoth",
+                    "ats_confidence": 55,
+                    "total_pick": "Over",
+                    "total_confidence": 60,
+                    "analysis": "The St. Louis Blues enter this matchup with a slight edge in recent form and roster stability compared to the Utah Mammoth. St. Louis has shown superior offensive efficiency during the 2026 season, which should allow them to secure a narrow victory on the road. However, Utah's resilience at home makes them a dangerous opponent that can keep the game within a single-goal margin. Given the tight odds across DraftKings and FanDuel, the Mammoth present strong value as a home underdog against the puck line. Ultimately, expect the Blues to pull off a closely contested win while Utah covers the spread.",
+                    "ou_analysis": "Both teams feature high-paced offensive attacks and vulnerable defensive setups that point directly toward a high-scoring affair. The current total of 5.5 is well within reach given the potent scoring environments both squads have maintained throughout the 2026 campaign. Therefore, the combined final score is expected to comfortably eclipse the posted line, driving the Over home.",
+                    "splits_and_direction": "Based on public betting tendencies, approximately 58 percent of spread bets and 62 percent of moneyline wagers are backing the visiting St. Louis Blues. Both the spread and total have held relatively steady with minor juice adjustments favoring the Over and the away team since opening.",
+                    "display_text": "Analysis: The St. Louis Blues enter this matchup with a slight edge in recent form and roster stability compared to the Utah Mammoth. St. Louis has shown superior offensive efficiency during the 2026 season, which should allow them to secure a narrow victory on the road. However, Utah's resilience at home makes them a dangerous opponent that can keep the game within a single-goal margin. Given the tight odds across DraftKings and FanDuel, the Mammoth present strong value as a home underdog against the puck line. Ultimately, expect the Blues to pull off a closely contested win while Utah covers the spread.\n\nOver Under: Both teams feature high-paced offensive attacks and vulnerable defensive setups that point directly toward a high-scoring affair. The current total of 5.5 is well within reach given the potent scoring environments both squads have maintained throughout the 2026 campaign. Therefore, the combined final score is expected to comfortably eclipse the posted line, driving the Over home.\n\nSplits: Based on public betting tendencies, approximately 58 percent of spread bets and 62 percent of moneyline wagers are backing the visiting St. Louis Blues. Both the spread and total have held relatively steady with minor juice adjustments favoring the Over and the away team since opening.",
+                    "generated_at": "2026-11-13T01:08:48.809078+00:00",
+                    "odds_hash": "e83ea374f508fa76",
+                    "model": "gemini-3.5-flash-lite"
+                  },
+                  "matchup_rank": 10,
                   "is_slot_pick": false
                 }
               ]
             },
             {
               "slot": "Late Night",
-              "best_matchup_score": 92.9,
+              "best_matchup_score": 50.0,
               "pick_reason": "combined_points",
               "games": [
                 {
@@ -35559,15 +35559,15 @@
                   "start_time_tbd": false,
                   "home_team": "Los Angeles Kings",
                   "home_abbr": "LA",
-                  "home_record": "5-9-2",
+                  "home_record": null,
                   "home_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/la.png",
                   "home_location": "Los Angeles",
                   "away_team": "New York Islanders",
                   "away_abbr": "NYI",
-                  "away_record": "7-6-4",
+                  "away_record": null,
                   "away_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/nyi.png",
                   "away_location": "New York",
-                  "matchup_score": 92.9,
+                  "matchup_score": 50.0,
                   "channel": "Disney+, ESPN+, Hulu",
                   "venue": "crypto.com Arena",
                   "venue_location": "Los Angeles, CA",
@@ -35638,7 +35638,6 @@
                       }
                     }
                   },
-                  "matchup_rank": 9,
                   "gemini_prediction": {
                     "winner": "Los Angeles Kings",
                     "confidence": 65,
@@ -35654,6 +35653,7 @@
                     "odds_hash": "d6c09ec8ebfc1ca7",
                     "model": "gemini-3.5-flash-lite"
                   },
+                  "matchup_rank": 11,
                   "is_slot_pick": true
                 }
               ]
@@ -35830,12 +35830,12 @@
                       },
                       "total": {
                         "over": {
-                          "line": 5.5,
-                          "american": -135
+                          "line": 6.5,
+                          "american": 114
                         },
                         "under": {
-                          "line": 5.5,
-                          "american": 114
+                          "line": 6.5,
+                          "american": -135
                         }
                       }
                     },
@@ -35843,11 +35843,11 @@
                       "spread": {
                         "home": {
                           "line": -1.5,
-                          "american": 132
+                          "american": 138
                         },
                         "away": {
                           "line": 1.5,
-                          "american": -162
+                          "american": -170
                         }
                       },
                       "moneyline": {
@@ -35875,17 +35875,17 @@
                   "matchup_rank": 1,
                   "gemini_prediction": {
                     "winner": "Vegas Golden Knights",
-                    "confidence": 65,
+                    "confidence": 68,
                     "ats_pick": "Nashville Predators",
-                    "ats_confidence": 60,
-                    "total_pick": "Over",
-                    "total_confidence": 58,
-                    "analysis": "The Vegas Golden Knights return to home ice with a notable current-season advantage in offensive execution. Nashville struggles to maintain defensive consistency when traveling, often exposing their goaltending to high-danger scoring chances. Vegas capitalizes on power play opportunities while managing the puck efficiently through neutral ice. Although Nashville fights back through secondary scoring, their inability to shut down top-tier lines ultimately sinks them. Therefore, Vegas secures the narrow victory while Nashville does enough to keep the final margin within one goal.",
-                    "ou_analysis": "Both squads demonstrate strong offensive pacing that consistently drives high shot volumes in the early periods. Special teams conversions and aggressive forechecking create an open ice environment conducive to multiple goals. Consequently, the combined score comfortably surpasses the posted total line.",
-                    "splits_and_direction": "Based on early public tendencies, roughly 62 percent of spread bets and 68 percent of moneyline wagers are backing the home favorite. The spread has remained steady at -1.5 while the total has shown slight upward pressure across major sportsbooks.",
-                    "display_text": "Analysis: The Vegas Golden Knights return to home ice with a notable current-season advantage in offensive execution. Nashville struggles to maintain defensive consistency when traveling, often exposing their goaltending to high-danger scoring chances. Vegas capitalizes on power play opportunities while managing the puck efficiently through neutral ice. Although Nashville fights back through secondary scoring, their inability to shut down top-tier lines ultimately sinks them. Therefore, Vegas secures the narrow victory while Nashville does enough to keep the final margin within one goal.\n\nOver Under: Both squads demonstrate strong offensive pacing that consistently drives high shot volumes in the early periods. Special teams conversions and aggressive forechecking create an open ice environment conducive to multiple goals. Consequently, the combined score comfortably surpasses the posted total line.\n\nSplits: Based on early public tendencies, roughly 62 percent of spread bets and 68 percent of moneyline wagers are backing the home favorite. The spread has remained steady at -1.5 while the total has shown slight upward pressure across major sportsbooks.",
-                    "generated_at": "2026-11-13T01:09:18.676646+00:00",
-                    "odds_hash": "31db4c6e48e1b243",
+                    "ats_confidence": 55,
+                    "total_pick": "Under",
+                    "total_confidence": 60,
+                    "analysis": "The Vegas Golden Knights hold home-ice advantage for this inter-conference matchup and demonstrate superior overall stability during the current 2026 campaign. Nashville brings a competitive edge on the road but struggles to consistently generate offense against elite defensive structures. Vegas should control the flow of play through disciplined neutral zone execution and steady goaltending. However, winning by multiple goals remains a challenging task given Nashville's resilience in tight checking games. Ultimately, the Golden Knights secure a narrow victory while the Predators keep the margin within a single goal.",
+                    "ou_analysis": "Both teams feature structured defensive schemes and reliable goaltender performances that suppress high-danger scoring opportunities. The pace of play is expected to slow down significantly as neither side wants to trade defensive lapses in a hostile environment. Consequently, the combined final score falls comfortably short of the 6.5 goal threshold.",
+                    "splits_and_direction": "Public betting splits are estimated at 62 percent of wagers backing the Vegas moneyline, while the spread sees balanced action with slight lean toward the underdog Predators. The home moneyline has tightened slightly from its opening numbers, and the total has seen a heavy lean toward the under due to early sharp money.",
+                    "display_text": "Analysis: The Vegas Golden Knights hold home-ice advantage for this inter-conference matchup and demonstrate superior overall stability during the current 2026 campaign. Nashville brings a competitive edge on the road but struggles to consistently generate offense against elite defensive structures. Vegas should control the flow of play through disciplined neutral zone execution and steady goaltending. However, winning by multiple goals remains a challenging task given Nashville's resilience in tight checking games. Ultimately, the Golden Knights secure a narrow victory while the Predators keep the margin within a single goal.\n\nOver Under: Both teams feature structured defensive schemes and reliable goaltender performances that suppress high-danger scoring opportunities. The pace of play is expected to slow down significantly as neither side wants to trade defensive lapses in a hostile environment. Consequently, the combined final score falls comfortably short of the 6.5 goal threshold.\n\nSplits: Public betting splits are estimated at 62 percent of wagers backing the Vegas moneyline, while the spread sees balanced action with slight lean toward the underdog Predators. The home moneyline has tightened slightly from its opening numbers, and the total has seen a heavy lean toward the under due to early sharp money.",
+                    "generated_at": "2026-11-13T12:05:55.797560+00:00",
+                    "odds_hash": "51a3cba8bf68d482",
                     "model": "gemini-3.5-flash-lite"
                   },
                   "is_slot_pick": true
@@ -35895,7 +35895,525 @@
           ]
         }
       ]
+    },
+    {
+      "week": 20261114,
+      "total_games": 14,
+      "days": [
+        {
+          "date": "2026-11-14",
+          "weekday": "Saturday",
+          "game_count": 14,
+          "is_preseason": false,
+          "time_slots": [
+            {
+              "slot": "Noon",
+              "best_matchup_score": 11.9,
+              "pick_reason": "combined_points",
+              "games": [
+                {
+                  "id": "401891809",
+                  "start_time": "2026-11-14T18:00Z",
+                  "start_time_tbd": false,
+                  "home_team": "Carolina Hurricanes",
+                  "home_abbr": "CAR",
+                  "home_record": "15-3-2",
+                  "home_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/car.png",
+                  "home_location": "Carolina",
+                  "away_team": "Seattle Kraken",
+                  "away_abbr": "SEA",
+                  "away_record": "9-7-1",
+                  "away_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/sea.png",
+                  "away_location": "Seattle",
+                  "matchup_score": 11.9,
+                  "channel": "NHL Net, CARNHL, KONG, Prime Video (Local)",
+                  "venue": "Veikkaus Arena",
+                  "venue_location": "Helsinki, Finland",
+                  "neutral_site": true,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    },
+                    "fanduel": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    }
+                  },
+                  "matchup_rank": 3,
+                  "is_slot_pick": true
+                }
+              ]
+            },
+            {
+              "slot": "Afternoon",
+              "best_matchup_score": 90.5,
+              "pick_reason": "combined_points",
+              "games": [
+                {
+                  "id": "401892708",
+                  "start_time": "2026-11-14T20:30Z",
+                  "start_time_tbd": false,
+                  "home_team": "Chicago Blackhawks",
+                  "home_abbr": "CHI",
+                  "home_record": "5-13-1",
+                  "home_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/chi.png",
+                  "home_location": "Chicago",
+                  "away_team": "Winnipeg Jets",
+                  "away_abbr": "WPG",
+                  "away_record": "9-8-3",
+                  "away_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/wpg.png",
+                  "away_location": "Winnipeg",
+                  "matchup_score": 90.5,
+                  "channel": "ESPN+, CHSN",
+                  "venue": "United Center",
+                  "venue_location": "Chicago, IL",
+                  "neutral_site": false,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    },
+                    "fanduel": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    }
+                  },
+                  "matchup_rank": 12,
+                  "is_slot_pick": true
+                }
+              ]
+            },
+            {
+              "slot": "Prime Time",
+              "best_matchup_score": 0.0,
+              "pick_reason": "combined_points",
+              "games": [
+                {
+                  "id": "401892709",
+                  "start_time": "2026-11-15T00:00Z",
+                  "start_time_tbd": false,
+                  "home_team": "Boston Bruins",
+                  "home_abbr": "BOS",
+                  "home_record": "13-5-1",
+                  "home_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/bos.png",
+                  "home_location": "Boston",
+                  "away_team": "Minnesota Wild",
+                  "away_abbr": "MIN",
+                  "away_record": "14-3-4",
+                  "away_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/min.png",
+                  "away_location": "Minnesota",
+                  "matchup_score": 0.0,
+                  "channel": "ESPN+, MINNHL, NESN",
+                  "venue": "TD Garden",
+                  "venue_location": "Boston, MA",
+                  "neutral_site": false,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    },
+                    "fanduel": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    }
+                  },
+                  "matchup_rank": 1,
+                  "is_slot_pick": true
+                },
+                {
+                  "id": "401892711",
+                  "start_time": "2026-11-15T00:00Z",
+                  "start_time_tbd": false,
+                  "home_team": "Montreal Canadiens",
+                  "home_abbr": "MTL",
+                  "home_record": "12-3-4",
+                  "home_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/mtl.png",
+                  "home_location": "Montreal",
+                  "away_team": "Colorado Avalanche",
+                  "away_abbr": "COL",
+                  "away_record": "11-6-3",
+                  "away_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/col.png",
+                  "away_location": "Colorado",
+                  "matchup_score": 9.5,
+                  "channel": "ESPN+, Altitude 2 Sports, KTVD-TV (My20)",
+                  "venue": "Bell Centre",
+                  "venue_location": "Montreal, QC",
+                  "neutral_site": false,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    },
+                    "fanduel": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    }
+                  },
+                  "matchup_rank": 2,
+                  "is_slot_pick": false
+                },
+                {
+                  "id": "401892714",
+                  "start_time": "2026-11-15T00:00Z",
+                  "start_time_tbd": false,
+                  "home_team": "Washington Capitals",
+                  "home_abbr": "WSH",
+                  "home_record": "10-7-0",
+                  "home_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/wsh.png",
+                  "home_location": "Washington",
+                  "away_team": "New Jersey Devils",
+                  "away_abbr": "NJ",
+                  "away_record": "14-6-0",
+                  "away_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/nj.png",
+                  "away_location": "New Jersey",
+                  "matchup_score": 23.8,
+                  "channel": "ESPN+, MNMT, MSG",
+                  "venue": "Capital One Arena",
+                  "venue_location": "Washington, DC",
+                  "neutral_site": false,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    },
+                    "fanduel": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    }
+                  },
+                  "matchup_rank": 4,
+                  "is_slot_pick": false
+                },
+                {
+                  "id": "401892710",
+                  "start_time": "2026-11-15T00:00Z",
+                  "start_time_tbd": false,
+                  "home_team": "Toronto Maple Leafs",
+                  "home_abbr": "TOR",
+                  "home_record": "8-11-2",
+                  "home_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/tor.png",
+                  "home_location": "Toronto",
+                  "away_team": "Edmonton Oilers",
+                  "away_abbr": "EDM",
+                  "away_record": "14-3-3",
+                  "away_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/edm.png",
+                  "away_location": "Edmonton",
+                  "matchup_score": 35.7,
+                  "channel": "NHL Net",
+                  "venue": "Scotiabank Arena",
+                  "venue_location": "Toronto, ON",
+                  "neutral_site": false,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    },
+                    "fanduel": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    }
+                  },
+                  "matchup_rank": 5,
+                  "is_slot_pick": false
+                },
+                {
+                  "id": "401892717",
+                  "start_time": "2026-11-15T01:00Z",
+                  "start_time_tbd": false,
+                  "home_team": "Dallas Stars",
+                  "home_abbr": "DAL",
+                  "home_record": "10-6-2",
+                  "home_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/dal.png",
+                  "home_location": "Dallas",
+                  "away_team": "Buffalo Sabres",
+                  "away_abbr": "BUF",
+                  "away_record": "8-7-4",
+                  "away_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/buf.png",
+                  "away_location": "Buffalo",
+                  "matchup_score": 42.9,
+                  "channel": "ESPN+, MSGB, Prime Video (Local)",
+                  "venue": "American Airlines Center",
+                  "venue_location": "Dallas, TX",
+                  "neutral_site": false,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    },
+                    "fanduel": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    }
+                  },
+                  "matchup_rank": 6,
+                  "is_slot_pick": false
+                },
+                {
+                  "id": "401892712",
+                  "start_time": "2026-11-15T00:00Z",
+                  "start_time_tbd": false,
+                  "home_team": "Tampa Bay Lightning",
+                  "home_abbr": "TB",
+                  "home_record": "13-4-2",
+                  "home_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/tb.png",
+                  "home_location": "Tampa Bay",
+                  "away_team": "Detroit Red Wings",
+                  "away_abbr": "DET",
+                  "away_record": "7-10-3",
+                  "away_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/det.png",
+                  "away_location": "Detroit",
+                  "matchup_score": 45.2,
+                  "channel": "ESPN+, DSN, The Spot - MTN",
+                  "venue": "Benchmark International Arena",
+                  "venue_location": "Tampa, FL",
+                  "neutral_site": false,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    },
+                    "fanduel": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    }
+                  },
+                  "matchup_rank": 7,
+                  "is_slot_pick": false
+                },
+                {
+                  "id": "401892716",
+                  "start_time": "2026-11-15T00:00Z",
+                  "start_time_tbd": false,
+                  "home_team": "St. Louis Blues",
+                  "home_abbr": "STL",
+                  "home_record": "9-8-2",
+                  "home_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/stl.png",
+                  "home_location": "St. Louis",
+                  "away_team": "Florida Panthers",
+                  "away_abbr": "FLA",
+                  "away_record": "11-7-2",
+                  "away_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/fla.png",
+                  "away_location": "Florida",
+                  "matchup_score": 47.6,
+                  "channel": "ESPN+, Scripps Sports, Blues App, BN+",
+                  "venue": "Enterprise Center",
+                  "venue_location": "St. Louis, MO",
+                  "neutral_site": false,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    },
+                    "fanduel": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    }
+                  },
+                  "matchup_rank": 8,
+                  "is_slot_pick": false
+                },
+                {
+                  "id": "401892713",
+                  "start_time": "2026-11-15T00:00Z",
+                  "start_time_tbd": false,
+                  "home_team": "Pittsburgh Penguins",
+                  "home_abbr": "PIT",
+                  "home_record": "7-10-2",
+                  "home_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/pit.png",
+                  "home_location": "Pittsburgh",
+                  "away_team": "Ottawa Senators",
+                  "away_abbr": "OTT",
+                  "away_record": "12-6-2",
+                  "away_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/ott.png",
+                  "away_location": "Ottawa",
+                  "matchup_score": 54.8,
+                  "channel": "ESPN+",
+                  "venue": "PPG Paints Arena",
+                  "venue_location": "Pittsburgh, PA",
+                  "neutral_site": false,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    },
+                    "fanduel": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    }
+                  },
+                  "matchup_rank": 10,
+                  "is_slot_pick": false
+                },
+                {
+                  "id": "401892718",
+                  "start_time": "2026-11-15T02:00Z",
+                  "start_time_tbd": false,
+                  "home_team": "Utah Mammoth",
+                  "home_abbr": "UTA",
+                  "home_record": "10-8-2",
+                  "home_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/uta.png",
+                  "home_location": "Utah",
+                  "away_team": "San Jose Sharks",
+                  "away_abbr": "SJ",
+                  "away_record": "8-11-2",
+                  "away_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/sj.png",
+                  "away_location": "San Jose",
+                  "matchup_score": 66.7,
+                  "channel": "ESPN+, NBC Sports BA, Utah 16, Mammoth+",
+                  "venue": "Delta Center",
+                  "venue_location": "Salt Lake City, UT",
+                  "neutral_site": false,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    },
+                    "fanduel": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    }
+                  },
+                  "matchup_rank": 11,
+                  "is_slot_pick": false
+                },
+                {
+                  "id": "401892715",
+                  "start_time": "2026-11-15T00:00Z",
+                  "start_time_tbd": false,
+                  "home_team": "Columbus Blue Jackets",
+                  "home_abbr": "CBJ",
+                  "home_record": "7-10-0",
+                  "home_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/cbj.png",
+                  "home_location": "Columbus",
+                  "away_team": "Philadelphia Flyers",
+                  "away_abbr": "PHI",
+                  "away_record": "5-10-6",
+                  "away_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/phi.png",
+                  "away_location": "Philadelphia",
+                  "matchup_score": 100.0,
+                  "channel": "ESPN+, NBC Sports Phil, CBJNHL",
+                  "venue": "Nationwide Arena",
+                  "venue_location": "Columbus, OH",
+                  "neutral_site": false,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    },
+                    "fanduel": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    }
+                  },
+                  "matchup_rank": 14,
+                  "is_slot_pick": false
+                }
+              ]
+            },
+            {
+              "slot": "Late Night",
+              "best_matchup_score": 47.6,
+              "pick_reason": "combined_points",
+              "games": [
+                {
+                  "id": "401892719",
+                  "start_time": "2026-11-15T03:00Z",
+                  "start_time_tbd": false,
+                  "home_team": "Anaheim Ducks",
+                  "home_abbr": "ANA",
+                  "home_record": "10-8-1",
+                  "home_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/ana.png",
+                  "home_location": "Anaheim",
+                  "away_team": "New York Islanders",
+                  "away_abbr": "NYI",
+                  "away_record": "8-6-4",
+                  "away_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/nyi.png",
+                  "away_location": "New York",
+                  "matchup_score": 47.6,
+                  "channel": "ESPN+, MSGSN, KCOP, Prime Video (Local)",
+                  "venue": "Honda Center",
+                  "venue_location": "Anaheim, CA",
+                  "neutral_site": false,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    },
+                    "fanduel": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    }
+                  },
+                  "matchup_rank": 9,
+                  "is_slot_pick": true
+                },
+                {
+                  "id": "401892720",
+                  "start_time": "2026-11-15T03:00Z",
+                  "start_time_tbd": false,
+                  "home_team": "Los Angeles Kings",
+                  "home_abbr": "LA",
+                  "home_record": "5-10-2",
+                  "home_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/la.png",
+                  "home_location": "Los Angeles",
+                  "away_team": "Calgary Flames",
+                  "away_abbr": "CGY",
+                  "away_record": "8-10-1",
+                  "away_logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/cgy.png",
+                  "away_location": "Calgary",
+                  "matchup_score": 90.5,
+                  "channel": "ESPN+, ABTV",
+                  "venue": "crypto.com Arena",
+                  "venue_location": "Los Angeles, CA",
+                  "neutral_site": false,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    },
+                    "fanduel": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    }
+                  },
+                  "matchup_rank": 13,
+                  "is_slot_pick": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
-  "current_week": 20261112
+  "current_week": 20261113
 }
