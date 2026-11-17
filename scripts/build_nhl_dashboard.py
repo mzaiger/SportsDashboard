@@ -463,6 +463,16 @@ def build_day(day, sharp_key, gemini_key=None, previous_odds_by_id=None,
         already_started = gid_str in started_game_ids
         previous_entry = previous_entries_by_id.get(gid_str)
 
+        # ESPN's scoreboard stops returning team records once a game is live
+        # or final, so a rebuild after puck drop would overwrite the pregame
+        # W-L-OTL with None and the tile would lose its record as soon as a
+        # score shows. Keep whatever was saved pregame when ESPN has none now.
+        if previous_entry is not None:
+            if not home_record:
+                home_record = previous_entry.get("home_record")
+            if not away_record:
+                away_record = previous_entry.get("away_record")
+
         # Once a game has ANY score recorded in scores.json (live or
         # final -- see load_started_game_ids), freeze its odds and Gemini
         # prediction at exactly whatever was last saved instead of
