@@ -332,13 +332,67 @@ function _pickCookieName(sport, gameId) {
   return `${PICK_COOKIE_PREFIX}${sport}_${gameId}`;
 }
 
+// Picks are kept in localStorage (key "fb_pick_<name>") instead of cookies. A SameSite=Lax cookie can't be written from an iframe on
+// another site, which is exactly how Trendslope shows this site on its own domain. Each entry is {"x":<expiry ms>,"v":<pick json>}, so
+// picks still lapse every Aug 1. Old pick_* cookies are still read (and removed as picks change). Inside Trendslope on its own domain
+// the storage goes through the bridge (window.TSB, see transfer.js) so Trendslope and this site share one store.
+const _PK = 'fb_pick_';
+function _pkBridge() { try { return window.TSB && window.TSB.on ? window.TSB : null; } catch (e) { return null; } }
+function _pkRaw(name) { try { const b = _pkBridge(); return b ? b.get(_PK + name) : localStorage.getItem(_PK + name); } catch (e) { return null; } }
+function _pkPut(name, s) {
+  try {
+    const b = _pkBridge();
+    if (b) b.setRaw(_PK + name, s);
+    else if (s == null) localStorage.removeItem(_PK + name);
+    else localStorage.setItem(_PK + name, s);
+  } catch (e) { /* storage blocked: the pick just won't stick */ }
+}
+function _pkNames() {
+  const out = [];
+  try {
+    const b = _pkBridge();
+    if (b) b.M.forEach((v, k) => { if (k.startsWith(_PK)) out.push(k.slice(_PK.length)); });
+    else for (let i = 0; i < localStorage.length; i++) { const k = localStorage.key(i); if (k && k.startsWith(_PK)) out.push(k.slice(_PK.length)); }
+  } catch (e) {}
+  return out;
+}
+function _cookieNames() {
+  return document.cookie.split(';').map(r => { const i = r.indexOf('='); return (i === -1 ? r : r.slice(0, i)).trim(); }).filter(n => n.startsWith(PICK_COOKIE_PREFIX));
+}
+function _cookieRead(name) {
+  const target = name + '=';
+  for (let raw of document.cookie.split(';')) {
+    raw = raw.trim();
+    if (raw.startsWith(target)) { try { return decodeURIComponent(raw.slice(target.length)); } catch (e) { return null; } }
+  }
+  return null;
+}
+function _legacyDeleteCookie(name) {
+  document.cookie = `${name}=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; SameSite=Lax`;
+}
+// Decoded pick payload (a JSON string) or null: new storage first, then any old cookie.
+function _readPick(name) {
+  const raw = _pkRaw(name);
+  if (raw != null) {
+    try {
+      const o = JSON.parse(raw);
+      if (o && typeof o.x === 'number' && typeof o.v === 'string') {
+        if (Date.now() >= o.x) { _pkPut(name, null); return null; }
+        return o.v;
+      }
+    } catch (e) {}
+  }
+  return _cookieRead(name);
+}
+
 function _setCookie(name, value) {
-  const expires = _nextAug1Utc().toUTCString();
-  document.cookie = `${name}=${encodeURIComponent(value)}; expires=${expires}; path=/; SameSite=Lax`;
+  _pkPut(name, JSON.stringify({ x: _nextAug1Utc().getTime(), v: value }));
+  _legacyDeleteCookie(name);
 }
 
 function _deleteCookie(name) {
-  document.cookie = `${name}=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; SameSite=Lax`;
+  _pkPut(name, null);
+  _legacyDeleteCookie(name);
 }
 
 // Splits a stored cookie payload into { main, total } -- the two
@@ -357,23 +411,9 @@ function _normalizePickGroup(parsed) {
 }
 
 function getPickGroup(sport, gameId) {
-  const target = _pickCookieName(sport, gameId) + '=';
-  const parts = document.cookie.split(';');
-  for (let raw of parts) {
-    raw = raw.trim();
-    if (raw.startsWith(target)) {
-      const decoded = decodeURIComponent(raw.slice(target.length));
-      try {
-        const parsed = JSON.parse(decoded);
-        // Refresh the Aug 1 expiry on every read too, not just on
-        // set/change -- harmless once the target date is fixed, and
-        // keeps behavior consistent if this ever changes again.
-        _setCookie(_pickCookieName(sport, gameId), decoded);
-        return _normalizePickGroup(parsed);
-      } catch (e) { return { main: null, total: null }; }
-    }
-  }
-  return { main: null, total: null };
+  const decoded = _readPick(_pickCookieName(sport, gameId));
+  if (decoded == null) return { main: null, total: null };
+  try { return _normalizePickGroup(JSON.parse(decoded)); } catch (e) { return { main: null, total: null }; }
 }
 
 // The spread/moneyline pick for a game (mutually exclusive with itself --
@@ -400,15 +440,11 @@ function hasAnyPick(sport, gameId) {
 function getAllPicks(sport) {
   const prefix = `${PICK_COOKIE_PREFIX}${sport}_`;
   const out = {};
-  document.cookie.split(';').forEach(raw => {
-    raw = raw.trim();
-    const eq = raw.indexOf('=');
-    if (eq === -1) return;
-    const name = raw.slice(0, eq);
+  new Set(_pkNames().concat(_cookieNames())).forEach(name => {
     if (!name.startsWith(prefix)) return;
-    const gameId = name.slice(prefix.length);
-    try { out[gameId] = _normalizePickGroup(JSON.parse(decodeURIComponent(raw.slice(eq + 1)))); }
-    catch (e) { /* ignore malformed cookie */ }
+    const decoded = _readPick(name);
+    if (decoded == null) return;
+    try { out[name.slice(prefix.length)] = _normalizePickGroup(JSON.parse(decoded)); } catch (e) { /* ignore malformed entry */ }
   });
   return out;
 }
@@ -418,12 +454,7 @@ function getAllPicks(sport) {
 // clear-all-picks modal). Returns the count removed so the caller can
 // bail out of re-rendering if there was nothing to clear.
 function clearAllPickCookies() {
-  const names = document.cookie.split(';').reduce((acc, raw) => {
-    const eq = raw.indexOf('=');
-    const name = (eq === -1 ? raw : raw.slice(0, eq)).trim();
-    if (name.startsWith(PICK_COOKIE_PREFIX)) acc.push(name);
-    return acc;
-  }, []);
+  const names = Array.from(new Set(_pkNames().concat(_cookieNames()))).filter(n => n.startsWith(PICK_COOKIE_PREFIX));
   names.forEach(_deleteCookie);
   return names.length;
 }
