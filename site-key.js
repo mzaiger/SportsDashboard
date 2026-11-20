@@ -1,3 +1,15 @@
+/* Inside Trendslope (an iframe) load the shared embed helper so every page of this site gets it from this one file. */
+(function () {
+  try {
+    if (window.parent !== window && !window.__tsEmbedLoaded) {
+      window.__tsEmbedLoaded = 1;
+      const e = document.createElement('script');
+      e.src = '/ts-embed.js';   // lives in the root of marcitech.is-a.dev
+      (document.head || document.documentElement).appendChild(e);
+    }
+  } catch (err) {}
+})();
+
 /* site-key.js
  * Shared abbreviation key + cookie-policy note, injected on every page.
  * Self-contained (own CSS + markup) so it doesn't depend on any given
@@ -53,8 +65,10 @@
       border-top:1px solid var(--line,#263150); padding-top:0.9rem; margin-top:0.2rem;
       margin-bottom:0.9rem;
     }
+    /* inside Trendslope's tall frame, "fixed" would mean the bottom/middle of a very tall page, so pin to the visible screen instead (values come from ts-embed.js) */
+    html.ts-embedded #keyFabBtn{position:absolute; bottom:auto; top:calc(var(--ts-vt,0px) + var(--ts-vh,100vh) - 2.9rem);}
+    html.ts-embedded #keyModalOverlay{position:absolute; inset:auto; left:0; right:0; top:var(--ts-vt,0px); height:var(--ts-vh,100vh);}
   `;
-
 
   function injectStyle() {
     const s = document.createElement('style');
