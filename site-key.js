@@ -16,11 +16,6 @@
  * page's :root color variables or nav layout -- just include this file
  * with a <script src="site-key.js"></script> tag and it wires itself up.
  */
-/* the nav bar's "stuck" shadow normally follows window.scrollY, which stays 0 inside Trendslope's tall frame; follow the screen position instead */
-addEventListener('ts-viewport', function (e) {
-  document.querySelectorAll('.nav-bar').forEach(function (b) { b.classList.toggle('stuck', e.detail.top > 2); });
-});
-
 (function () {
   const STYLE = `
     #keyFabBtn{
@@ -70,10 +65,6 @@ addEventListener('ts-viewport', function (e) {
       border-top:1px solid var(--line,#263150); padding-top:0.9rem; margin-top:0.2rem;
       margin-bottom:0.9rem;
     }
-    /* inside Trendslope's tall frame, "fixed" would mean the bottom/middle of a very tall page, so pin to the visible screen instead (values come from ts-embed.js) */
-    html.ts-embedded #keyModal{max-height:calc(var(--ts-vh,100vh) * 0.85);}
-    html.ts-embedded #keyFabBtn{position:absolute; bottom:auto; top:calc(var(--ts-vt,0px) + var(--ts-vh,100vh) - 2.9rem);}
-    html.ts-embedded #keyModalOverlay{position:absolute; inset:auto; left:0; right:0; top:var(--ts-vt,0px); height:var(--ts-vh,100vh);}
   `;
 
   function injectStyle() {
