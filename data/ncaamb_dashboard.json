@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-21T01:18:07.085800+00:00",
+  "generated_at": "2026-11-21T12:28:32.546438+00:00",
   "season": 2026,
   "main_channels": [
     "ABC",
@@ -8847,7 +8847,7 @@
           "time_slots": [
             {
               "slot": "Noon",
-              "best_matchup_score": 30.7,
+              "best_matchup_score": 31.2,
               "pick_reason": "ap_wins_spread",
               "games": [
                 {
@@ -8864,7 +8864,7 @@
                   "away_record": "3-2",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/197.png",
                   "away_location": "Oklahoma State",
-                  "matchup_score": 30.7,
+                  "matchup_score": 31.2,
                   "channel": "ESPN2",
                   "venue": "TD Arena",
                   "venue_location": "Charleston, SC",
@@ -8951,7 +8951,7 @@
                     "odds_hash": "69cd9bfb268ceb71",
                     "model": "gemini-3.5-flash-lite"
                   },
-                  "matchup_rank": 4,
+                  "matchup_rank": 2,
                   "is_slot_pick": true
                 },
                 {
@@ -8968,7 +8968,7 @@
                   "away_record": "4-2",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/5.png",
                   "away_location": "UAB",
-                  "matchup_score": 55.2,
+                  "matchup_score": 52.3,
                   "channel": "CBSSN",
                   "venue": "Colonial Hall",
                   "venue_location": "White Sulphur Springs, WV",
@@ -9035,7 +9035,7 @@
             },
             {
               "slot": "Afternoon",
-              "best_matchup_score": 28.4,
+              "best_matchup_score": 31.2,
               "pick_reason": "ap_wins_spread",
               "games": [
                 {
@@ -9052,7 +9052,7 @@
                   "away_record": "5-1",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/227.png",
                   "away_location": "Rhode Island",
-                  "matchup_score": 28.4,
+                  "matchup_score": 31.2,
                   "channel": "CBSSN",
                   "venue": "Colonial Hall",
                   "venue_location": "White Sulphur Springs, WV",
@@ -9139,7 +9139,7 @@
                     "odds_hash": "f919cc7979212432",
                     "model": "gemini-3.5-flash-lite"
                   },
-                  "matchup_rank": 1,
+                  "matchup_rank": 3,
                   "is_slot_pick": true
                 },
                 {
@@ -9260,7 +9260,7 @@
                   "away_record": "3-3",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/77.png",
                   "away_location": "Northwestern",
-                  "matchup_score": 58.0,
+                  "matchup_score": 60.4,
                   "channel": "ESPN2",
                   "venue": "TD Arena",
                   "venue_location": "Charleston, SC",
@@ -9358,121 +9358,17 @@
               "pick_reason": "ap_wins_spread",
               "games": [
                 {
-                  "id": "401916290",
-                  "start_time": "2026-11-21T01:00Z",
-                  "start_time_tbd": false,
-                  "home_team": "Indiana Hoosiers",
-                  "home_rank": null,
-                  "home_record": "5-0",
-                  "home_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/84.png",
-                  "home_location": "Indiana",
-                  "away_team": "Kentucky Wildcats",
-                  "away_rank": null,
-                  "away_record": "4-1",
-                  "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/96.png",
-                  "away_location": "Kentucky",
-                  "matchup_score": 30.0,
-                  "channel": "CBS",
-                  "venue": "Lucas Oil Stadium",
-                  "venue_location": "Indianapolis, IN",
-                  "neutral_site": true,
-                  "is_nebraska": false,
-                  "odds": {
-                    "draftkings": {
-                      "spread": {
-                        "home": {
-                          "line": -3.5,
-                          "american": -105
-                        },
-                        "away": {
-                          "line": 3.5,
-                          "american": -115
-                        }
-                      },
-                      "moneyline": {
-                        "home": {
-                          "line": null,
-                          "american": -162
-                        },
-                        "away": {
-                          "line": null,
-                          "american": 136
-                        }
-                      },
-                      "total": {
-                        "over": {
-                          "line": 153.5,
-                          "american": -108
-                        },
-                        "under": {
-                          "line": 153.5,
-                          "american": -112
-                        }
-                      }
-                    },
-                    "fanduel": {
-                      "spread": {
-                        "home": {
-                          "line": -3.5,
-                          "american": -105
-                        },
-                        "away": {
-                          "line": 3.5,
-                          "american": -115
-                        }
-                      },
-                      "moneyline": {
-                        "home": {
-                          "line": null,
-                          "american": -152
-                        },
-                        "away": {
-                          "line": null,
-                          "american": 128
-                        }
-                      },
-                      "total": {
-                        "over": {
-                          "line": 154.5,
-                          "american": -105
-                        },
-                        "under": {
-                          "line": 154.5,
-                          "american": -115
-                        }
-                      }
-                    }
-                  },
-                  "matchup_rank": 2,
-                  "gemini_prediction": {
-                    "winner": "Indiana Hoosiers",
-                    "confidence": 62,
-                    "ats_pick": "Indiana Hoosiers",
-                    "ats_confidence": 58,
-                    "total_pick": "Over",
-                    "total_confidence": 60,
-                    "analysis": "The Indiana Hoosiers possess a distinct home-court advantage inside Assembly Hall that heavily influences early season matchups. Kentucky has flashed explosive offensive capabilities, but defensive continuity remains a work in progress for the Wildcats. Indiana's frontcourt depth allows them to control the paint and limit second-chance opportunities against Kentucky. Execution in the closing minutes of tight stretches will ultimately favor the hosts. Therefore, the Hoosiers should secure both the outright victory and cover the modest 3.5-point spread.",
-                    "ou_analysis": "Both teams feature up-tempo offensive philosophies that generate high possession counts throughout regulation. The scoring environment is elevated by exceptional guard play and reliable three-point shooting on both rosters. Consequently, the combined final score will push comfortably past the 153.5-point threshold.",
-                    "splits_and_direction": "Based on public tendencies, approximately 62 percent of spread bets are backing the home favorite Indiana Hoosiers. The spread has ticked up slightly from an opener of -3 to -3.5, while the total has adjusted upward by a full point from 153 to 154.5 due to heavy over moneyline action.",
-                    "display_text": "Analysis: The Indiana Hoosiers possess a distinct home-court advantage inside Assembly Hall that heavily influences early season matchups. Kentucky has flashed explosive offensive capabilities, but defensive continuity remains a work in progress for the Wildcats. Indiana's frontcourt depth allows them to control the paint and limit second-chance opportunities against Kentucky. Execution in the closing minutes of tight stretches will ultimately favor the hosts. Therefore, the Hoosiers should secure both the outright victory and cover the modest 3.5-point spread.\n\nOver Under: Both teams feature up-tempo offensive philosophies that generate high possession counts throughout regulation. The scoring environment is elevated by exceptional guard play and reliable three-point shooting on both rosters. Consequently, the combined final score will push comfortably past the 153.5-point threshold.\n\nSplits: Based on public tendencies, approximately 62 percent of spread bets are backing the home favorite Indiana Hoosiers. The spread has ticked up slightly from an opener of -3 to -3.5, while the total has adjusted upward by a full point from 153 to 154.5 due to heavy over moneyline action.",
-                    "generated_at": "2026-11-20T17:56:45.859745+00:00",
-                    "odds_hash": "d81871a082f7dbd8",
-                    "model": "gemini-3.5-flash-lite"
-                  },
-                  "is_slot_pick": true
-                },
-                {
                   "id": "401921691",
                   "start_time": "2026-11-21T02:30Z",
                   "start_time_tbd": false,
                   "home_team": "NC State Wolfpack",
                   "home_rank": null,
-                  "home_record": "5-0",
+                  "home_record": "5-1",
                   "home_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/152.png",
                   "home_location": "NC State",
                   "away_team": "Seton Hall Pirates",
                   "away_rank": null,
-                  "away_record": "4-1",
+                  "away_record": "5-1",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2550.png",
                   "away_location": "Seton Hall",
                   "matchup_score": 30.0,
@@ -9547,7 +9443,6 @@
                       }
                     }
                   },
-                  "matchup_rank": 3,
                   "gemini_prediction": {
                     "winner": "NC State Wolfpack",
                     "confidence": 74,
@@ -9563,6 +9458,111 @@
                     "odds_hash": "d19195f5c6fd74ae",
                     "model": "gemini-3.5-flash-lite"
                   },
+                  "matchup_rank": 1,
+                  "is_slot_pick": true
+                },
+                {
+                  "id": "401916290",
+                  "start_time": "2026-11-21T01:00Z",
+                  "start_time_tbd": false,
+                  "home_team": "Indiana Hoosiers",
+                  "home_rank": null,
+                  "home_record": "6-0",
+                  "home_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/84.png",
+                  "home_location": "Indiana",
+                  "away_team": "Kentucky Wildcats",
+                  "away_rank": null,
+                  "away_record": "4-2",
+                  "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/96.png",
+                  "away_location": "Kentucky",
+                  "matchup_score": 33.1,
+                  "channel": "CBS",
+                  "venue": "Lucas Oil Stadium",
+                  "venue_location": "Indianapolis, IN",
+                  "neutral_site": true,
+                  "is_nebraska": false,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {
+                        "home": {
+                          "line": -3.5,
+                          "american": -105
+                        },
+                        "away": {
+                          "line": 3.5,
+                          "american": -115
+                        }
+                      },
+                      "moneyline": {
+                        "home": {
+                          "line": null,
+                          "american": -162
+                        },
+                        "away": {
+                          "line": null,
+                          "american": 136
+                        }
+                      },
+                      "total": {
+                        "over": {
+                          "line": 153.5,
+                          "american": -108
+                        },
+                        "under": {
+                          "line": 153.5,
+                          "american": -112
+                        }
+                      }
+                    },
+                    "fanduel": {
+                      "spread": {
+                        "home": {
+                          "line": -3.5,
+                          "american": -105
+                        },
+                        "away": {
+                          "line": 3.5,
+                          "american": -115
+                        }
+                      },
+                      "moneyline": {
+                        "home": {
+                          "line": null,
+                          "american": -152
+                        },
+                        "away": {
+                          "line": null,
+                          "american": 128
+                        }
+                      },
+                      "total": {
+                        "over": {
+                          "line": 154.5,
+                          "american": -105
+                        },
+                        "under": {
+                          "line": 154.5,
+                          "american": -115
+                        }
+                      }
+                    }
+                  },
+                  "gemini_prediction": {
+                    "winner": "Indiana Hoosiers",
+                    "confidence": 62,
+                    "ats_pick": "Indiana Hoosiers",
+                    "ats_confidence": 58,
+                    "total_pick": "Over",
+                    "total_confidence": 60,
+                    "analysis": "The Indiana Hoosiers possess a distinct home-court advantage inside Assembly Hall that heavily influences early season matchups. Kentucky has flashed explosive offensive capabilities, but defensive continuity remains a work in progress for the Wildcats. Indiana's frontcourt depth allows them to control the paint and limit second-chance opportunities against Kentucky. Execution in the closing minutes of tight stretches will ultimately favor the hosts. Therefore, the Hoosiers should secure both the outright victory and cover the modest 3.5-point spread.",
+                    "ou_analysis": "Both teams feature up-tempo offensive philosophies that generate high possession counts throughout regulation. The scoring environment is elevated by exceptional guard play and reliable three-point shooting on both rosters. Consequently, the combined final score will push comfortably past the 153.5-point threshold.",
+                    "splits_and_direction": "Based on public tendencies, approximately 62 percent of spread bets are backing the home favorite Indiana Hoosiers. The spread has ticked up slightly from an opener of -3 to -3.5, while the total has adjusted upward by a full point from 153 to 154.5 due to heavy over moneyline action.",
+                    "display_text": "Analysis: The Indiana Hoosiers possess a distinct home-court advantage inside Assembly Hall that heavily influences early season matchups. Kentucky has flashed explosive offensive capabilities, but defensive continuity remains a work in progress for the Wildcats. Indiana's frontcourt depth allows them to control the paint and limit second-chance opportunities against Kentucky. Execution in the closing minutes of tight stretches will ultimately favor the hosts. Therefore, the Hoosiers should secure both the outright victory and cover the modest 3.5-point spread.\n\nOver Under: Both teams feature up-tempo offensive philosophies that generate high possession counts throughout regulation. The scoring environment is elevated by exceptional guard play and reliable three-point shooting on both rosters. Consequently, the combined final score will push comfortably past the 153.5-point threshold.\n\nSplits: Based on public tendencies, approximately 62 percent of spread bets are backing the home favorite Indiana Hoosiers. The spread has ticked up slightly from an opener of -3 to -3.5, while the total has adjusted upward by a full point from 153 to 154.5 due to heavy over moneyline action.",
+                    "generated_at": "2026-11-20T17:56:45.859745+00:00",
+                    "odds_hash": "d81871a082f7dbd8",
+                    "model": "gemini-3.5-flash-lite"
+                  },
+                  "matchup_rank": 4,
                   "is_slot_pick": false
                 },
                 {
@@ -9571,15 +9571,15 @@
                   "start_time_tbd": false,
                   "home_team": "Murray State Racers",
                   "home_rank": null,
-                  "home_record": "5-1",
+                  "home_record": "6-1",
                   "home_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/93.png",
                   "home_location": "Murray State",
                   "away_team": "Wisconsin Badgers",
                   "away_rank": null,
-                  "away_record": "4-1",
+                  "away_record": "4-2",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/275.png",
                   "away_location": "Wisconsin",
-                  "matchup_score": 33.4,
+                  "matchup_score": 36.2,
                   "channel": "CBSSN",
                   "venue": "Baha Mar Convention Center",
                   "venue_location": "Nassau, Bahamas",
@@ -9666,7 +9666,7 @@
                     "odds_hash": "2723da15468815ff",
                     "model": "gemini-3.5-flash-lite"
                   },
-                  "matchup_rank": 5,
+                  "matchup_rank": 6,
                   "is_slot_pick": false
                 },
                 {
@@ -9675,15 +9675,15 @@
                   "start_time_tbd": false,
                   "home_team": "Xavier Musketeers",
                   "home_rank": null,
-                  "home_record": "5-0",
+                  "home_record": "5-1",
                   "home_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2752.png",
                   "home_location": "Xavier",
                   "away_team": "Iowa Hawkeyes",
                   "away_rank": null,
-                  "away_record": "2-2",
+                  "away_record": "3-2",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2294.png",
                   "away_location": "Iowa",
-                  "matchup_score": 42.5,
+                  "matchup_score": 40.4,
                   "channel": "TNT",
                   "venue": "Cintas Center",
                   "venue_location": "Cincinnati, OH",
@@ -9777,7 +9777,7 @@
             },
             {
               "slot": "Late Night",
-              "best_matchup_score": 37.5,
+              "best_matchup_score": 35.4,
               "pick_reason": "ap_wins_spread",
               "games": [
                 {
@@ -9786,15 +9786,15 @@
                   "start_time_tbd": false,
                   "home_team": "Saint Mary's Gaels",
                   "home_rank": null,
-                  "home_record": "4-1",
+                  "home_record": "5-1",
                   "home_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2608.png",
                   "home_location": "Saint Mary's",
                   "away_team": "Saint Louis Billikens",
                   "away_rank": null,
-                  "away_record": "3-1",
+                  "away_record": "3-2",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/139.png",
                   "away_location": "Saint Louis",
-                  "matchup_score": 37.5,
+                  "matchup_score": 35.4,
                   "channel": "ESPN2",
                   "venue": "University Credit Union Pavilion",
                   "venue_location": "Moraga, CA",
@@ -9866,7 +9866,6 @@
                       }
                     }
                   },
-                  "matchup_rank": 6,
                   "gemini_prediction": {
                     "winner": "Saint Mary's Gaels",
                     "confidence": 58,
@@ -9882,6 +9881,7 @@
                     "odds_hash": "a266342d25723593",
                     "model": "gemini-3.5-flash-lite"
                   },
+                  "matchup_rank": 5,
                   "is_slot_pick": true
                 }
               ]
@@ -9928,54 +9928,54 @@
                     "draftkings": {
                       "spread": {
                         "home": {
-                          "line": 3.5,
-                          "american": -110
+                          "line": 4.5,
+                          "american": -118
                         },
                         "away": {
-                          "line": -3.5,
-                          "american": -110
+                          "line": -4.5,
+                          "american": -102
                         }
                       },
                       "moneyline": {
                         "home": {
                           "line": null,
-                          "american": 140
+                          "american": 164
                         },
                         "away": {
                           "line": null,
-                          "american": -166
+                          "american": -198
                         }
                       },
                       "total": {
                         "over": {
                           "line": 160.5,
-                          "american": -105
+                          "american": -108
                         },
                         "under": {
                           "line": 160.5,
-                          "american": -115
+                          "american": -112
                         }
                       }
                     },
                     "fanduel": {
                       "spread": {
                         "home": {
-                          "line": 3.5,
-                          "american": -110
+                          "line": 4.5,
+                          "american": -115
                         },
                         "away": {
-                          "line": -3.5,
-                          "american": -110
+                          "line": -4.5,
+                          "american": -105
                         }
                       },
                       "moneyline": {
                         "home": {
                           "line": null,
-                          "american": 136
+                          "american": 155
                         },
                         "away": {
                           "line": null,
-                          "american": -162
+                          "american": -188
                         }
                       },
                       "total": {
@@ -9995,15 +9995,15 @@
                     "winner": "Michigan Wolverines",
                     "confidence": 76,
                     "ats_pick": "Michigan Wolverines",
-                    "ats_confidence": 71,
+                    "ats_confidence": 70,
                     "total_pick": "Over",
-                    "total_confidence": 68,
-                    "analysis": "Michigan enters this matchup with an explosive offensive attack that has consistently outpaced early-season expectations. The Wolverines boast superior depth in the backcourt, allowing them to dictate the tempo against a resilient Villanova squad. While Villanova holds home-court advantage, their defensive rotations have shown vulnerabilities against elite perimeter shooting. Michigan's efficient ball movement will create high-percentage scoring opportunities throughout the contest. Ultimately, the Wolverines have the firepower to secure a road victory by a comfortable margin exceeding the current spread.",
-                    "ou_analysis": "Both teams feature fast-paced offensive schemes that frequently push the ball in transition and minimize prolonged half-court possessions. The high scoring environment is further supported by porous early-season perimeter defenses and efficient free-throw shooting units. Consequently, these combined offensive metrics point toward a high-scoring affair that comfortably clears the 160.5 point threshold.",
-                    "splits_and_direction": "Based on public tendencies and opening odds, approximately 62 percent of spread bets and 68 percent of moneyline wagers are backing the visiting Michigan Wolverines. The spread has moved a half-point toward Villanova from an opening of +4 to +3.5, while the total has ticked up slightly from 159.5 to 160.5 amid heavy early action on the over.",
-                    "display_text": "Analysis: Michigan enters this matchup with an explosive offensive attack that has consistently outpaced early-season expectations. The Wolverines boast superior depth in the backcourt, allowing them to dictate the tempo against a resilient Villanova squad. While Villanova holds home-court advantage, their defensive rotations have shown vulnerabilities against elite perimeter shooting. Michigan's efficient ball movement will create high-percentage scoring opportunities throughout the contest. Ultimately, the Wolverines have the firepower to secure a road victory by a comfortable margin exceeding the current spread.\n\nOver Under: Both teams feature fast-paced offensive schemes that frequently push the ball in transition and minimize prolonged half-court possessions. The high scoring environment is further supported by porous early-season perimeter defenses and efficient free-throw shooting units. Consequently, these combined offensive metrics point toward a high-scoring affair that comfortably clears the 160.5 point threshold.\n\nSplits: Based on public tendencies and opening odds, approximately 62 percent of spread bets and 68 percent of moneyline wagers are backing the visiting Michigan Wolverines. The spread has moved a half-point toward Villanova from an opening of +4 to +3.5, while the total has ticked up slightly from 159.5 to 160.5 amid heavy early action on the over.",
-                    "generated_at": "2026-11-21T01:17:57.004828+00:00",
-                    "odds_hash": "c1da6e48c6202cb7",
+                    "total_confidence": 65,
+                    "analysis": "The Michigan Wolverines enter this matchup playing at a remarkably high level with superior offensive efficiency that sets them apart this season. Villanova Wildcats struggle defensively on the perimeter, which Michigan's sharp-shooting guards will exploit throughout the game. Turnovers have plagued Villanova in key moments, giving Michigan extra possessions to build a comfortable lead. Expect Michigan to control the tempo from the opening tip and maintain a multi-possession advantage into the second half. Ultimately, the Wolverines have too much firepower for the Wildcats to handle over forty minutes of play.",
+                    "ou_analysis": "Both teams feature high-tempo offenses that rank among the nation's leaders in possessions per game this season. Defensively, neither squad has shown the rim protection required to slow down elite guard play, pointing directly to a high-scoring affair. Consequently, the combined final score will comfortably exceed the posted total of 160.5 points.",
+                    "splits_and_direction": "Based on public betting tendencies, roughly 68 percent of bets are backing the Michigan Wolverines on the spread and moneyline, while 55 percent of wagers are leaning toward the over. The spread has moved half a point upward in favor of Michigan, and the total has climbed slightly from an opening number of 159.5 to 160.5 due to heavy early over money.",
+                    "display_text": "Analysis: The Michigan Wolverines enter this matchup playing at a remarkably high level with superior offensive efficiency that sets them apart this season. Villanova Wildcats struggle defensively on the perimeter, which Michigan's sharp-shooting guards will exploit throughout the game. Turnovers have plagued Villanova in key moments, giving Michigan extra possessions to build a comfortable lead. Expect Michigan to control the tempo from the opening tip and maintain a multi-possession advantage into the second half. Ultimately, the Wolverines have too much firepower for the Wildcats to handle over forty minutes of play.\n\nOver Under: Both teams feature high-tempo offenses that rank among the nation's leaders in possessions per game this season. Defensively, neither squad has shown the rim protection required to slow down elite guard play, pointing directly to a high-scoring affair. Consequently, the combined final score will comfortably exceed the posted total of 160.5 points.\n\nSplits: Based on public betting tendencies, roughly 68 percent of bets are backing the Michigan Wolverines on the spread and moneyline, while 55 percent of wagers are leaning toward the over. The spread has moved half a point upward in favor of Michigan, and the total has climbed slightly from an opening number of 159.5 to 160.5 due to heavy early over money.",
+                    "generated_at": "2026-11-21T12:28:20.756172+00:00",
+                    "odds_hash": "5e4f3d9fdea6a7bf",
                     "model": "gemini-3.5-flash-lite"
                   },
                   "is_slot_pick": true
@@ -10039,12 +10039,12 @@
                     "draftkings": {
                       "spread": {
                         "home": {
-                          "line": -26.5,
-                          "american": -105
+                          "line": -25.5,
+                          "american": -110
                         },
                         "away": {
-                          "line": 26.5,
-                          "american": -115
+                          "line": 25.5,
+                          "american": -110
                         }
                       },
                       "moneyline": {
@@ -10055,24 +10055,24 @@
                       },
                       "total": {
                         "over": {
-                          "line": 152.5,
-                          "american": -110
+                          "line": 148.5,
+                          "american": -115
                         },
                         "under": {
-                          "line": 152.5,
-                          "american": -110
+                          "line": 148.5,
+                          "american": -105
                         }
                       }
                     },
                     "fanduel": {
                       "spread": {
                         "home": {
-                          "line": -26.5,
-                          "american": -110
+                          "line": -25.5,
+                          "american": -118
                         },
                         "away": {
-                          "line": 26.5,
-                          "american": -110
+                          "line": 25.5,
+                          "american": -104
                         }
                       },
                       "moneyline": {
@@ -10083,11 +10083,11 @@
                       },
                       "total": {
                         "over": {
-                          "line": 152.5,
+                          "line": 149.5,
                           "american": -110
                         },
                         "under": {
-                          "line": 152.5,
+                          "line": 149.5,
                           "american": -110
                         }
                       }
@@ -10097,16 +10097,16 @@
                   "gemini_prediction": {
                     "winner": "Duke Blue Devils",
                     "confidence": 95,
-                    "ats_pick": "Washington State Cougars",
-                    "ats_confidence": 60,
+                    "ats_pick": "Duke Blue Devils",
+                    "ats_confidence": 75,
                     "total_pick": "Over",
-                    "total_confidence": 55,
-                    "analysis": "The Duke Blue Devils enter this contest with an exceptionally talented roster that dominates both sides of the basketball court. Washington State Cougars struggle immensely with depth and defensive rotations against elite competition this season. Duke's superior offensive execution will allow them to build a massive lead early in the game. However, a 26.5-point spread is massive, and backdoor scoring opportunities late in the contest will help Washington State stay within the huge number. Therefore, Duke secures the comfortable outright victory while the Cougars manage to cover the heavily inflated spread.",
-                    "ou_analysis": "Both teams feature fast-paced offensive schemes that generate high possession counts throughout regulation. Duke's efficient scoring combined with Washington State's defensive lapses will push the combined final score past the century mark for efficiency. Consequently, the game total of 152.5 points will go Over as both offenses find consistent rhythm.",
-                    "splits_and_direction": "Approximately 78% of the public bets are backing the Duke Blue Devils to cover the large spread and win on the moneyline due to their dominant profile. The spread has remained steady at -26.5 and the total has held firm at 152.5 since opening at these sportsbooks.",
-                    "display_text": "Analysis: The Duke Blue Devils enter this contest with an exceptionally talented roster that dominates both sides of the basketball court. Washington State Cougars struggle immensely with depth and defensive rotations against elite competition this season. Duke's superior offensive execution will allow them to build a massive lead early in the game. However, a 26.5-point spread is massive, and backdoor scoring opportunities late in the contest will help Washington State stay within the huge number. Therefore, Duke secures the comfortable outright victory while the Cougars manage to cover the heavily inflated spread.\n\nOver Under: Both teams feature fast-paced offensive schemes that generate high possession counts throughout regulation. Duke's efficient scoring combined with Washington State's defensive lapses will push the combined final score past the century mark for efficiency. Consequently, the game total of 152.5 points will go Over as both offenses find consistent rhythm.\n\nSplits: Approximately 78% of the public bets are backing the Duke Blue Devils to cover the large spread and win on the moneyline due to their dominant profile. The spread has remained steady at -26.5 and the total has held firm at 152.5 since opening at these sportsbooks.",
-                    "generated_at": "2026-11-21T01:18:06.894747+00:00",
-                    "odds_hash": "1e3d04825641f5ec",
+                    "total_confidence": 65,
+                    "analysis": "Duke enters this matchup with an elite roster that has dominated opponents throughout the early 2026 college basketball season. The Blue Devils boast an explosive offensive attack that efficiently converts from both inside and beyond the arc. Washington State has struggled defensively against top-tier competition, making it very difficult for them to slow down Duke's primary scorers. Furthermore, Duke's depth and home-court advantage will likely widen the margin significantly by the second half. Expect the Blue Devils to control the tempo from the opening tip and comfortably cover the large 25.5-point spread.",
+                    "ou_analysis": "Both teams feature fast-paced offensive schemes that routinely generate high possession counts and quick transition opportunities. Duke's potent scoring capabilities combined with Washington State's defensive lapses will push the game into a high-scoring environment. Consequently, the combined score should comfortably exceed the posted total of 148.5 or 149.5 points.",
+                    "splits_and_direction": "Public betting splits heavily favor Duke to cover the large spread and win on the moneyline, capturing roughly 78% of the early action. The spread has remained stable at -25.5 while the total has ticked up slightly from 148.5 to 149.5 due to heavy over money.",
+                    "display_text": "Analysis: Duke enters this matchup with an elite roster that has dominated opponents throughout the early 2026 college basketball season. The Blue Devils boast an explosive offensive attack that efficiently converts from both inside and beyond the arc. Washington State has struggled defensively against top-tier competition, making it very difficult for them to slow down Duke's primary scorers. Furthermore, Duke's depth and home-court advantage will likely widen the margin significantly by the second half. Expect the Blue Devils to control the tempo from the opening tip and comfortably cover the large 25.5-point spread.\n\nOver Under: Both teams feature fast-paced offensive schemes that routinely generate high possession counts and quick transition opportunities. Duke's potent scoring capabilities combined with Washington State's defensive lapses will push the game into a high-scoring environment. Consequently, the combined score should comfortably exceed the posted total of 148.5 or 149.5 points.\n\nSplits: Public betting splits heavily favor Duke to cover the large spread and win on the moneyline, capturing roughly 78% of the early action. The spread has remained stable at -25.5 while the total has ticked up slightly from 148.5 to 149.5 due to heavy over money.",
+                    "generated_at": "2026-11-21T12:28:30.315225+00:00",
+                    "odds_hash": "ed6d71c929efa223",
                     "model": "gemini-3.5-flash-lite"
                   },
                   "is_slot_pick": true
@@ -10116,7 +10116,251 @@
           ]
         }
       ]
+    },
+    {
+      "week": 20261122,
+      "total_games": 6,
+      "days": [
+        {
+          "date": "2026-11-22",
+          "weekday": "Sunday",
+          "game_count": 6,
+          "time_slots": [
+            {
+              "slot": "Noon",
+              "best_matchup_score": 12.5,
+              "pick_reason": "ap_wins_spread",
+              "games": [
+                {
+                  "id": "401902281",
+                  "start_time": "2026-11-22T17:00Z",
+                  "start_time_tbd": false,
+                  "home_team": "Butler Bulldogs",
+                  "home_rank": null,
+                  "home_record": "4-2",
+                  "home_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2086.png",
+                  "home_location": "Butler",
+                  "away_team": "Nebraska Cornhuskers",
+                  "away_rank": 24,
+                  "away_record": "5-0",
+                  "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/158.png",
+                  "away_location": "Nebraska",
+                  "matchup_score": 12.5,
+                  "channel": "FS1",
+                  "venue": "Credit Union 1 Arena",
+                  "venue_location": "Chicago, IL",
+                  "neutral_site": true,
+                  "is_nebraska": true,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    },
+                    "fanduel": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    }
+                  },
+                  "matchup_rank": 1,
+                  "is_slot_pick": true
+                },
+                {
+                  "id": "401928802",
+                  "start_time": "2026-11-22T19:00Z",
+                  "start_time_tbd": false,
+                  "home_team": "Western Kentucky Hilltoppers",
+                  "home_rank": null,
+                  "home_record": "4-2",
+                  "home_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/98.png",
+                  "home_location": "Western Kentucky",
+                  "away_team": "George Washington Revolutionaries",
+                  "away_rank": null,
+                  "away_record": "5-1",
+                  "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/45.png",
+                  "away_location": "George Washington",
+                  "matchup_score": 64.8,
+                  "channel": "CBSSN",
+                  "venue": "Colonial Hall",
+                  "venue_location": "White Sulphur Springs, WV",
+                  "neutral_site": true,
+                  "is_nebraska": false,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    },
+                    "fanduel": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    }
+                  },
+                  "matchup_rank": 4,
+                  "is_slot_pick": false
+                },
+                {
+                  "id": "401920736",
+                  "start_time": "2026-11-22T18:00Z",
+                  "start_time_tbd": false,
+                  "home_team": "Northwestern Wildcats",
+                  "home_rank": null,
+                  "home_record": "3-3",
+                  "home_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/77.png",
+                  "home_location": "Northwestern",
+                  "away_team": "Dayton Flyers",
+                  "away_rank": null,
+                  "away_record": "3-3",
+                  "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2168.png",
+                  "away_location": "Dayton",
+                  "matchup_score": 87.5,
+                  "channel": "ESPN2",
+                  "venue": "TD Arena",
+                  "venue_location": "Charleston, SC",
+                  "neutral_site": true,
+                  "is_nebraska": false,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    },
+                    "fanduel": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    }
+                  },
+                  "matchup_rank": 6,
+                  "is_slot_pick": false
+                }
+              ]
+            },
+            {
+              "slot": "Afternoon",
+              "best_matchup_score": 62.5,
+              "pick_reason": "ap_wins_spread",
+              "games": [
+                {
+                  "id": "401920381",
+                  "start_time": "2026-11-22T20:30Z",
+                  "start_time_tbd": false,
+                  "home_team": "Oklahoma State Cowboys",
+                  "home_rank": null,
+                  "home_record": "3-2",
+                  "home_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/197.png",
+                  "home_location": "Oklahoma State",
+                  "away_team": "Virginia Tech Hokies",
+                  "away_rank": null,
+                  "away_record": "6-0",
+                  "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/259.png",
+                  "away_location": "Virginia Tech",
+                  "matchup_score": 62.5,
+                  "channel": "ESPN",
+                  "venue": "TD Arena",
+                  "venue_location": "Charleston, SC",
+                  "neutral_site": true,
+                  "is_nebraska": false,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    },
+                    "fanduel": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    }
+                  },
+                  "matchup_rank": 2,
+                  "is_slot_pick": true
+                },
+                {
+                  "id": "401926795",
+                  "start_time": "2026-11-22T21:30Z",
+                  "start_time_tbd": false,
+                  "home_team": "Liberty Flames",
+                  "home_rank": null,
+                  "home_record": "4-1",
+                  "home_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2335.png",
+                  "home_location": "Liberty",
+                  "away_team": "Richmond Spiders",
+                  "away_rank": null,
+                  "away_record": "3-3",
+                  "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/257.png",
+                  "away_location": "Richmond",
+                  "matchup_score": 76.1,
+                  "channel": "CBSSN",
+                  "venue": "Colonial Hall",
+                  "venue_location": "White Sulphur Springs, WV",
+                  "neutral_site": true,
+                  "is_nebraska": false,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    },
+                    "fanduel": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    }
+                  },
+                  "matchup_rank": 5,
+                  "is_slot_pick": false
+                }
+              ]
+            },
+            {
+              "slot": "Prime Time",
+              "best_matchup_score": 62.5,
+              "pick_reason": "ap_wins_spread",
+              "games": [
+                {
+                  "id": "401921420",
+                  "start_time": "2026-11-22T23:00Z",
+                  "start_time_tbd": false,
+                  "home_team": "Minnesota Golden Gophers",
+                  "home_rank": null,
+                  "home_record": "6-0",
+                  "home_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/135.png",
+                  "home_location": "Minnesota",
+                  "away_team": "Utah Utes",
+                  "away_rank": null,
+                  "away_record": "3-2",
+                  "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/254.png",
+                  "away_location": "Utah",
+                  "matchup_score": 62.5,
+                  "channel": "ESPN2",
+                  "venue": "TD Arena",
+                  "venue_location": "Charleston, SC",
+                  "neutral_site": true,
+                  "is_nebraska": false,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    },
+                    "fanduel": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    }
+                  },
+                  "matchup_rank": 3,
+                  "is_slot_pick": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
-  "current_week": 20261120
+  "current_week": 20261121
 }
