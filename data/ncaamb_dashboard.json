@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-23T22:36:38.223049+00:00",
+  "generated_at": "2026-11-24T05:08:40.695593+00:00",
   "season": 2026,
   "main_channels": [
     "ABC",
@@ -10870,7 +10870,7 @@
             },
             {
               "slot": "Noon",
-              "best_matchup_score": 64.3,
+              "best_matchup_score": 70.0,
               "pick_reason": "ap_wins_spread",
               "games": [
                 {
@@ -10887,7 +10887,7 @@
                   "away_record": "5-0",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/145.png",
                   "away_location": "Ole Miss",
-                  "matchup_score": 64.3,
+                  "matchup_score": 70.0,
                   "channel": "ESPN2",
                   "venue": "Lahaina Civic Center",
                   "venue_location": "Maui, HI",
@@ -10990,12 +10990,12 @@
                   "start_time_tbd": false,
                   "home_team": "BYU Cougars",
                   "home_rank": 19,
-                  "home_record": "5-0",
+                  "home_record": "6-0",
                   "home_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/252.png",
                   "home_location": "BYU",
                   "away_team": "Washington Huskies",
                   "away_rank": null,
-                  "away_record": "4-0",
+                  "away_record": "4-1",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/264.png",
                   "away_location": "Washington",
                   "matchup_score": 46.5,
@@ -11070,7 +11070,6 @@
                       }
                     }
                   },
-                  "matchup_rank": 2,
                   "gemini_prediction": {
                     "winner": "BYU Cougars",
                     "confidence": 88,
@@ -11086,18 +11085,19 @@
                     "odds_hash": "a90552f417317503",
                     "model": "gemini-3.5-flash-lite"
                   },
+                  "matchup_rank": 2,
                   "is_slot_pick": true
                 }
               ]
             },
             {
               "slot": "Late Night",
-              "best_matchup_score": 46.4,
+              "best_matchup_score": 40.0,
               "pick_reason": "ap_wins_spread",
               "games": [
                 {
                   "id": "401909743",
-                  "start_time": "2026-11-24T04:30Z",
+                  "start_time": "2026-11-24T04:55Z",
                   "start_time_tbd": false,
                   "home_team": "Arizona Wildcats",
                   "home_rank": 8,
@@ -11109,7 +11109,7 @@
                   "away_record": "4-1",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/36.png",
                   "away_location": "Colorado State",
-                  "matchup_score": 46.4,
+                  "matchup_score": 40.0,
                   "channel": "ESPN2",
                   "venue": "Lahaina Civic Center",
                   "venue_location": "Maui, HI",
@@ -11216,7 +11216,7 @@
           "time_slots": [
             {
               "slot": "Morning",
-              "best_matchup_score": 75.0,
+              "best_matchup_score": 54.2,
               "pick_reason": "ap_wins_spread",
               "games": [
                 {
@@ -11233,7 +11233,7 @@
                   "away_record": "6-0",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2750.png",
                   "away_location": "Wright State",
-                  "matchup_score": 75.0,
+                  "matchup_score": 54.2,
                   "channel": "ESPN2",
                   "venue": "State Farm Field House",
                   "venue_location": "Kissimmee, FL",
@@ -11241,33 +11241,206 @@
                   "is_nebraska": false,
                   "odds": {
                     "draftkings": {
-                      "spread": {},
-                      "moneyline": {},
-                      "total": {}
+                      "spread": {
+                        "home": {
+                          "line": -1.5,
+                          "american": -108
+                        },
+                        "away": {
+                          "line": 1.5,
+                          "american": -112
+                        }
+                      },
+                      "moneyline": {
+                        "home": {
+                          "line": null,
+                          "american": -115
+                        },
+                        "away": {
+                          "line": null,
+                          "american": -105
+                        }
+                      },
+                      "total": {
+                        "over": {
+                          "line": 147.5,
+                          "american": -112
+                        },
+                        "under": {
+                          "line": 147.5,
+                          "american": -108
+                        }
+                      }
                     },
                     "fanduel": {
-                      "spread": {},
-                      "moneyline": {},
-                      "total": {}
+                      "spread": {
+                        "home": {
+                          "line": 0.5,
+                          "american": -110
+                        },
+                        "away": {
+                          "line": -0.5,
+                          "american": -110
+                        }
+                      },
+                      "moneyline": {
+                        "home": {
+                          "line": null,
+                          "american": -108
+                        },
+                        "away": {
+                          "line": null,
+                          "american": -110
+                        }
+                      },
+                      "total": {
+                        "over": {
+                          "line": 147.5,
+                          "american": -115
+                        },
+                        "under": {
+                          "line": 147.5,
+                          "american": -105
+                        }
+                      }
                     }
                   },
-                  "matchup_rank": 8,
+                  "matchup_rank": 7,
+                  "gemini_prediction": {
+                    "winner": "St. Bonaventure Bonnies",
+                    "confidence": 62,
+                    "ats_pick": "St. Bonaventure Bonnies",
+                    "ats_confidence": 55,
+                    "total_pick": "Over",
+                    "total_confidence": 52,
+                    "analysis": "St. Bonaventure enters this matchup with a more efficient offensive rhythm that should allow them to control the tempo at home. Wright State has struggled with defensive consistency against high-major opponents throughout the early 2026 season. The Bonnies possess a significant rebounding advantage that will limit second-chance opportunities for the Raiders. While the spread is tight, St. Bonaventure's ability to execute in half-court sets gives them the edge needed to cover the narrow margin. Expect the home crowd to provide the necessary energy for the Bonnies to secure a hard-fought victory.",
+                    "ou_analysis": "Both teams have demonstrated a propensity for high-possession games early this season, which naturally pushes the scoring potential upward. The defensive metrics for both squads suggest vulnerabilities in perimeter coverage that will lead to increased three-point attempts. Consequently, the game is likely to exceed the 147.5 total as both offenses capitalize on defensive lapses.",
+                    "splits_and_direction": "Public betting splits are estimated at 55% on St. Bonaventure for the spread and 60% on the Over, reflecting a slight lean toward the home favorite. The spread has shifted from a pick'em to favor the Bonnies, while the total has remained stagnant at 147.5 across most major books.",
+                    "display_text": "Analysis: St. Bonaventure enters this matchup with a more efficient offensive rhythm that should allow them to control the tempo at home. Wright State has struggled with defensive consistency against high-major opponents throughout the early 2026 season. The Bonnies possess a significant rebounding advantage that will limit second-chance opportunities for the Raiders. While the spread is tight, St. Bonaventure's ability to execute in half-court sets gives them the edge needed to cover the narrow margin. Expect the home crowd to provide the necessary energy for the Bonnies to secure a hard-fought victory.\n\nOver Under: Both teams have demonstrated a propensity for high-possession games early this season, which naturally pushes the scoring potential upward. The defensive metrics for both squads suggest vulnerabilities in perimeter coverage that will lead to increased three-point attempts. Consequently, the game is likely to exceed the 147.5 total as both offenses capitalize on defensive lapses.\n\nSplits: Public betting splits are estimated at 55% on St. Bonaventure for the spread and 60% on the Over, reflecting a slight lean toward the home favorite. The spread has shifted from a pick'em to favor the Bonnies, while the total has remained stagnant at 147.5 across most major books.",
+                    "generated_at": "2026-11-24T05:00:08.555368+00:00",
+                    "odds_hash": "e5bf0eb3a42dc479",
+                    "model": "gemini-3.1-flash-lite"
+                  },
                   "is_slot_pick": true
                 }
               ]
             },
             {
               "slot": "Noon",
-              "best_matchup_score": 76.2,
+              "best_matchup_score": 34.1,
               "pick_reason": "ap_wins_spread",
               "games": [
+                {
+                  "id": "401921709",
+                  "start_time": "2026-11-24T19:30Z",
+                  "start_time_tbd": false,
+                  "home_team": "BYU Cougars",
+                  "home_rank": 19,
+                  "home_record": "6-0",
+                  "home_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/252.png",
+                  "home_location": "BYU",
+                  "away_team": "Ole Miss Rebels",
+                  "away_rank": null,
+                  "away_record": "5-0",
+                  "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/145.png",
+                  "away_location": "Ole Miss",
+                  "matchup_score": 34.1,
+                  "channel": "ESPN2",
+                  "venue": "Lahaina Civic Center",
+                  "venue_location": "Maui, HI",
+                  "neutral_site": true,
+                  "is_nebraska": false,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {
+                        "home": {
+                          "line": 1.5,
+                          "american": -125
+                        },
+                        "away": {
+                          "line": -1.5,
+                          "american": 105
+                        }
+                      },
+                      "moneyline": {
+                        "home": {
+                          "line": null,
+                          "american": -108
+                        },
+                        "away": {
+                          "line": null,
+                          "american": -112
+                        }
+                      },
+                      "total": {
+                        "over": {
+                          "line": 160.5,
+                          "american": -108
+                        },
+                        "under": {
+                          "line": 160.5,
+                          "american": -112
+                        }
+                      }
+                    },
+                    "fanduel": {
+                      "spread": {
+                        "home": {
+                          "line": -1.5,
+                          "american": -102
+                        },
+                        "away": {
+                          "line": 1.5,
+                          "american": -120
+                        }
+                      },
+                      "moneyline": {
+                        "home": {
+                          "line": null,
+                          "american": -113
+                        },
+                        "away": {
+                          "line": null,
+                          "american": -106
+                        }
+                      },
+                      "total": {
+                        "over": {
+                          "line": 159.5,
+                          "american": -110
+                        },
+                        "under": {
+                          "line": 159.5,
+                          "american": -110
+                        }
+                      }
+                    }
+                  },
+                  "matchup_rank": 5,
+                  "gemini_prediction": {
+                    "winner": "BYU Cougars",
+                    "confidence": 58,
+                    "ats_pick": "BYU Cougars",
+                    "ats_confidence": 55,
+                    "total_pick": "Under",
+                    "total_confidence": 60,
+                    "analysis": "BYU Cougars maintain a distinct home-court advantage that has proven difficult for visiting teams to overcome early in the 2026 season. Ole Miss Rebels have struggled with perimeter consistency on the road, which limits their ability to keep pace in high-pressure environments. The Cougars' defensive efficiency metrics currently rank higher than those of the Rebels, providing them with a reliable cushion. While the spread is tight, BYU's ability to control the tempo at home makes them the more reliable choice to cover the narrow margin. Expect a closely contested game where the home team executes better in the final four minutes to secure the victory.",
+                    "ou_analysis": "The game features two teams that prioritize defensive rotations and methodical half-court sets over transition scoring. Both programs have shown a tendency to limit opponent second-chance opportunities, which suppresses the total point production. Consequently, the game is likely to fall short of the high 160.5 threshold as both offenses struggle to find rhythm against disciplined defensive schemes.",
+                    "splits_and_direction": "Public betting splits are currently estimated at 55% on BYU for the spread and 52% on the Over, reflecting a slight lean toward the home underdog. The spread has shifted from BYU +1.5 to -1.5 at FanDuel, while the total has moved downward from 160.5 to 159.5 across the market.",
+                    "display_text": "Analysis: BYU Cougars maintain a distinct home-court advantage that has proven difficult for visiting teams to overcome early in the 2026 season. Ole Miss Rebels have struggled with perimeter consistency on the road, which limits their ability to keep pace in high-pressure environments. The Cougars' defensive efficiency metrics currently rank higher than those of the Rebels, providing them with a reliable cushion. While the spread is tight, BYU's ability to control the tempo at home makes them the more reliable choice to cover the narrow margin. Expect a closely contested game where the home team executes better in the final four minutes to secure the victory.\n\nOver Under: The game features two teams that prioritize defensive rotations and methodical half-court sets over transition scoring. Both programs have shown a tendency to limit opponent second-chance opportunities, which suppresses the total point production. Consequently, the game is likely to fall short of the high 160.5 threshold as both offenses struggle to find rhythm against disciplined defensive schemes.\n\nSplits: Public betting splits are currently estimated at 55% on BYU for the spread and 52% on the Over, reflecting a slight lean toward the home underdog. The spread has shifted from BYU +1.5 to -1.5 at FanDuel, while the total has moved downward from 160.5 to 159.5 across the market.",
+                    "generated_at": "2026-11-24T05:01:07.782471+00:00",
+                    "odds_hash": "9122fabc9a91dbcf",
+                    "model": "gemini-3.1-flash-lite"
+                  },
+                  "is_slot_pick": true
+                },
                 {
                   "id": "401917676",
                   "start_time": "2026-11-24T19:00Z",
                   "start_time_tbd": false,
                   "home_team": "San Francisco Dons",
                   "home_rank": null,
-                  "home_record": "4-1",
+                  "home_record": "4-2",
                   "home_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2539.png",
                   "home_location": "San Francisco",
                   "away_team": "Oregon State Beavers",
@@ -11275,7 +11448,7 @@
                   "away_record": "7-0",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/204.png",
                   "away_location": "Oregon State",
-                  "matchup_score": 76.2,
+                  "matchup_score": 64.3,
                   "channel": "CBSSN",
                   "venue": "Acrisure Arena",
                   "venue_location": "Palm Springs, CA",
@@ -11283,18 +11456,87 @@
                   "is_nebraska": false,
                   "odds": {
                     "draftkings": {
-                      "spread": {},
-                      "moneyline": {},
-                      "total": {}
+                      "spread": {
+                        "home": {
+                          "line": 9.5,
+                          "american": -108
+                        },
+                        "away": {
+                          "line": -9.5,
+                          "american": -112
+                        }
+                      },
+                      "moneyline": {
+                        "home": {
+                          "line": null,
+                          "american": 425
+                        },
+                        "away": {
+                          "line": null,
+                          "american": -575
+                        }
+                      },
+                      "total": {
+                        "over": {
+                          "line": 150.5,
+                          "american": -112
+                        },
+                        "under": {
+                          "line": 150.5,
+                          "american": -108
+                        }
+                      }
                     },
                     "fanduel": {
-                      "spread": {},
-                      "moneyline": {},
-                      "total": {}
+                      "spread": {
+                        "home": {
+                          "line": 9.5,
+                          "american": -120
+                        },
+                        "away": {
+                          "line": -9.5,
+                          "american": -102
+                        }
+                      },
+                      "moneyline": {
+                        "home": {
+                          "line": null,
+                          "american": 330
+                        },
+                        "away": {
+                          "line": null,
+                          "american": -430
+                        }
+                      },
+                      "total": {
+                        "over": {
+                          "line": 150.5,
+                          "american": -110
+                        },
+                        "under": {
+                          "line": 150.5,
+                          "american": -110
+                        }
+                      }
                     }
                   },
-                  "matchup_rank": 9,
-                  "is_slot_pick": true
+                  "matchup_rank": 10,
+                  "gemini_prediction": {
+                    "winner": "Oregon State Beavers",
+                    "confidence": 85,
+                    "ats_pick": "San Francisco Dons",
+                    "ats_confidence": 65,
+                    "total_pick": "Under",
+                    "total_confidence": 60,
+                    "analysis": "Oregon State enters this matchup with a superior efficiency rating and a more disciplined defensive rotation than San Francisco. While the Beavers are clearly the more talented squad, the 9.5-point spread is inflated by early-season perception rather than current on-court production. San Francisco has shown resilience at home, keeping games competitive against high-major opponents through aggressive perimeter defense. Oregon State will likely secure the victory by controlling the glass and limiting second-chance opportunities for the Dons. Consequently, the Beavers win the game, but the Dons do enough to stay within the double-digit margin.",
+                    "ou_analysis": "Both teams have demonstrated a preference for methodical half-court sets that prioritize high-percentage looks over transition volume. San Francisco's defensive scheme relies on slowing the tempo to negate the athleticism of faster opponents like Oregon State. Given the projected slow pace and the emphasis on defensive rebounding, the total score is unlikely to reach the 150.5 mark.",
+                    "splits_and_direction": "Public betting volume is heavily skewed toward Oregon State on the moneyline, while the spread action is split roughly 60/40 in favor of the Beavers. The spread has remained steady at 9.5, but the total has seen minor downward pressure from 151.0 to 150.5 due to early sharp money on the under.",
+                    "display_text": "Analysis: Oregon State enters this matchup with a superior efficiency rating and a more disciplined defensive rotation than San Francisco. While the Beavers are clearly the more talented squad, the 9.5-point spread is inflated by early-season perception rather than current on-court production. San Francisco has shown resilience at home, keeping games competitive against high-major opponents through aggressive perimeter defense. Oregon State will likely secure the victory by controlling the glass and limiting second-chance opportunities for the Dons. Consequently, the Beavers win the game, but the Dons do enough to stay within the double-digit margin.\n\nOver Under: Both teams have demonstrated a preference for methodical half-court sets that prioritize high-percentage looks over transition volume. San Francisco's defensive scheme relies on slowing the tempo to negate the athleticism of faster opponents like Oregon State. Given the projected slow pace and the emphasis on defensive rebounding, the total score is unlikely to reach the 150.5 mark.\n\nSplits: Public betting volume is heavily skewed toward Oregon State on the moneyline, while the spread action is split roughly 60/40 in favor of the Beavers. The spread has remained steady at 9.5, but the total has seen minor downward pressure from 151.0 to 150.5 due to early sharp money on the under.",
+                    "generated_at": "2026-11-24T05:00:47.302295+00:00",
+                    "odds_hash": "f024d53152dd123a",
+                    "model": "gemini-3.1-flash-lite"
+                  },
+                  "is_slot_pick": false
                 },
                 {
                   "id": "401928835",
@@ -11307,10 +11549,10 @@
                   "home_location": "Akron",
                   "away_team": "Belmont Bruins",
                   "away_rank": null,
-                  "away_record": "4-1",
+                  "away_record": "5-1",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2057.png",
                   "away_location": "Belmont",
-                  "matchup_score": 88.1,
+                  "matchup_score": 65.7,
                   "channel": "ESPN2",
                   "venue": "State Farm Field House",
                   "venue_location": "Kissimmee, FL",
@@ -11318,17 +11560,86 @@
                   "is_nebraska": false,
                   "odds": {
                     "draftkings": {
-                      "spread": {},
-                      "moneyline": {},
-                      "total": {}
+                      "spread": {
+                        "home": {
+                          "line": -3.5,
+                          "american": -102
+                        },
+                        "away": {
+                          "line": 3.5,
+                          "american": -118
+                        }
+                      },
+                      "moneyline": {
+                        "home": {
+                          "line": null,
+                          "american": -155
+                        },
+                        "away": {
+                          "line": null,
+                          "american": 130
+                        }
+                      },
+                      "total": {
+                        "over": {
+                          "line": 142.5,
+                          "american": -108
+                        },
+                        "under": {
+                          "line": 142.5,
+                          "american": -112
+                        }
+                      }
                     },
                     "fanduel": {
-                      "spread": {},
-                      "moneyline": {},
-                      "total": {}
+                      "spread": {
+                        "home": {
+                          "line": -2.5,
+                          "american": -120
+                        },
+                        "away": {
+                          "line": 2.5,
+                          "american": -102
+                        }
+                      },
+                      "moneyline": {
+                        "home": {
+                          "line": null,
+                          "american": -152
+                        },
+                        "away": {
+                          "line": null,
+                          "american": 128
+                        }
+                      },
+                      "total": {
+                        "over": {
+                          "line": 142.5,
+                          "american": -115
+                        },
+                        "under": {
+                          "line": 142.5,
+                          "american": -105
+                        }
+                      }
                     }
                   },
-                  "matchup_rank": 12,
+                  "matchup_rank": 11,
+                  "gemini_prediction": {
+                    "winner": "Akron Zips",
+                    "confidence": 68,
+                    "ats_pick": "Akron Zips",
+                    "ats_confidence": 55,
+                    "total_pick": "Under",
+                    "total_confidence": 60,
+                    "analysis": "Akron has demonstrated superior defensive efficiency in the early 2026 season compared to Belmont's inconsistent offensive output. The Zips benefit significantly from playing on their home court where their perimeter defense has stifled opponents throughout the month. While Belmont possesses a capable backcourt, they have struggled to maintain efficiency against high-pressure defensive schemes. Akron's ability to control the glass will limit second-chance opportunities for the Bruins, effectively dictating the tempo of the game. Consequently, Akron is positioned to win outright and cover the tighter FanDuel spread of 2.5 points.",
+                    "ou_analysis": "Both teams have played at a moderate pace this season, focusing more on half-court execution than transition scoring. The defensive metrics for both squads suggest that high-percentage shots will be difficult to come by in this matchup. Given the disciplined nature of these programs, the total is likely to fall short of the 142.5 mark.",
+                    "splits_and_direction": "Public betting splits are estimated at 55% on Akron to cover the spread and 60% on the Over, based on typical early-season trends for home favorites. The spread has moved from 3.5 down to 2.5, while the moneyline has shifted slightly in favor of the Zips, and the total has remained stagnant at 142.5.",
+                    "display_text": "Analysis: Akron has demonstrated superior defensive efficiency in the early 2026 season compared to Belmont's inconsistent offensive output. The Zips benefit significantly from playing on their home court where their perimeter defense has stifled opponents throughout the month. While Belmont possesses a capable backcourt, they have struggled to maintain efficiency against high-pressure defensive schemes. Akron's ability to control the glass will limit second-chance opportunities for the Bruins, effectively dictating the tempo of the game. Consequently, Akron is positioned to win outright and cover the tighter FanDuel spread of 2.5 points.\n\nOver Under: Both teams have played at a moderate pace this season, focusing more on half-court execution than transition scoring. The defensive metrics for both squads suggest that high-percentage shots will be difficult to come by in this matchup. Given the disciplined nature of these programs, the total is likely to fall short of the 142.5 mark.\n\nSplits: Public betting splits are estimated at 55% on Akron to cover the spread and 60% on the Over, based on typical early-season trends for home favorites. The spread has moved from 3.5 down to 2.5, while the moneyline has shifted slightly in favor of the Zips, and the total has remained stagnant at 142.5.",
+                    "generated_at": "2026-11-24T05:00:30.449185+00:00",
+                    "odds_hash": "8f3ff86d94381cee",
+                    "model": "gemini-3.1-flash-lite"
+                  },
                   "is_slot_pick": false
                 }
               ]
@@ -11371,47 +11682,74 @@
                         }
                       },
                       "moneyline": {
-                        "away": {
-                          "line": null,
-                          "american": -265
-                        },
                         "home": {
                           "line": null,
-                          "american": 215
+                          "american": 180
+                        },
+                        "away": {
+                          "line": null,
+                          "american": -218
                         }
                       },
                       "total": {
-                        "under": {
+                        "over": {
                           "line": 145.5,
                           "american": -108
                         },
-                        "over": {
+                        "under": {
                           "line": 145.5,
                           "american": -112
                         }
                       }
                     },
                     "fanduel": {
-                      "spread": {},
-                      "moneyline": {},
-                      "total": {}
+                      "spread": {
+                        "home": {
+                          "line": 4.5,
+                          "american": -102
+                        },
+                        "away": {
+                          "line": -4.5,
+                          "american": -120
+                        }
+                      },
+                      "moneyline": {
+                        "home": {
+                          "line": null,
+                          "american": 172
+                        },
+                        "away": {
+                          "line": null,
+                          "american": -210
+                        }
+                      },
+                      "total": {
+                        "over": {
+                          "line": 145.5,
+                          "american": -115
+                        },
+                        "under": {
+                          "line": 145.5,
+                          "american": -105
+                        }
+                      }
                     }
                   },
                   "matchup_rank": 2,
                   "gemini_prediction": {
                     "winner": "Tennessee Volunteers",
                     "confidence": 78,
-                    "ats_pick": "Maryland Terrapins",
+                    "ats_pick": "Tennessee Volunteers",
                     "ats_confidence": 65,
                     "total_pick": "Under",
                     "total_confidence": 60,
-                    "analysis": "The Tennessee Volunteers enter this matchup with exceptional defensive intensity and a battle-tested rotation that excels on both ends of the floor. Maryland possesses enough offensive firepower at home to keep the game competitive for long stretches. However, Tennessee's superior rebounding and efficient late-game execution should ultimately secure them the outright victory. The Terrapins are well-coached and disciplined enough to prevent a blowout on their home court. Therefore, taking Maryland to cover the 4.5-point spread provides solid value despite the Volunteers winning the game.",
-                    "ou_analysis": "Both teams feature stout defensive schemes that consistently limit opponent transition opportunities and force half-court execution. The pace is expected to be methodical as each side values possession security and limits empty offensive trips. Consequently, the combined score will likely stay under the posted line of 145.5 points.",
-                    "splits_and_direction": "Approximately 68% of public bets are backing the Tennessee Volunteers on the moneyline and spread, reflecting strong confidence in the away favorite. The spread has ticked up slightly from an opener of 3.5 to 4.5 in favor of the Volunteers, while the total has dropped marginally from 146.5 to 145.5 due to early under money.",
-                    "display_text": "Analysis: The Tennessee Volunteers enter this matchup with exceptional defensive intensity and a battle-tested rotation that excels on both ends of the floor. Maryland possesses enough offensive firepower at home to keep the game competitive for long stretches. However, Tennessee's superior rebounding and efficient late-game execution should ultimately secure them the outright victory. The Terrapins are well-coached and disciplined enough to prevent a blowout on their home court. Therefore, taking Maryland to cover the 4.5-point spread provides solid value despite the Volunteers winning the game.\n\nOver Under: Both teams feature stout defensive schemes that consistently limit opponent transition opportunities and force half-court execution. The pace is expected to be methodical as each side values possession security and limits empty offensive trips. Consequently, the combined score will likely stay under the posted line of 145.5 points.\n\nSplits: Approximately 68% of public bets are backing the Tennessee Volunteers on the moneyline and spread, reflecting strong confidence in the away favorite. The spread has ticked up slightly from an opener of 3.5 to 4.5 in favor of the Volunteers, while the total has dropped marginally from 146.5 to 145.5 due to early under money.",
-                    "generated_at": "2026-11-23T22:21:22.098572+00:00",
-                    "odds_hash": "6699c1021b7fbe82",
-                    "model": "gemini-3.5-flash-lite"
+                    "analysis": "Tennessee enters this matchup with a superior defensive efficiency rating that has stifled opponents throughout the early 2026 season. Maryland has struggled to maintain offensive consistency against high-pressure perimeter defenses, which plays directly into the Volunteers' primary strength. While the Terrapins benefit from home-court advantage, their lack of depth in the frontcourt will likely be exposed by Tennessee's rebounding dominance. The Volunteers have demonstrated a more disciplined approach in late-game execution, which is crucial for covering a modest road spread. Consequently, Tennessee is positioned to control the tempo and secure a victory that exceeds the 4.5-point margin.",
+                    "ou_analysis": "Both teams currently rank in the bottom half of the league in adjusted tempo, preferring to run methodical half-court sets. Tennessee's defensive intensity significantly limits opponent shot quality, forcing difficult looks late in the shot clock. Given these tactical constraints, the game is expected to fall short of the 145.5-point threshold as both offenses struggle to find rhythm.",
+                    "splits_and_direction": "Public betting splits are estimated at 62% on Tennessee to cover and 58% on the Under, reflecting a slight lean toward the favorite and the defensive nature of the matchup. The spread has remained stable at 4.5, while the moneyline has shifted slightly toward Tennessee and the total has seen minor downward movement across major sportsbooks.",
+                    "display_text": "Analysis: Tennessee enters this matchup with a superior defensive efficiency rating that has stifled opponents throughout the early 2026 season. Maryland has struggled to maintain offensive consistency against high-pressure perimeter defenses, which plays directly into the Volunteers' primary strength. While the Terrapins benefit from home-court advantage, their lack of depth in the frontcourt will likely be exposed by Tennessee's rebounding dominance. The Volunteers have demonstrated a more disciplined approach in late-game execution, which is crucial for covering a modest road spread. Consequently, Tennessee is positioned to control the tempo and secure a victory that exceeds the 4.5-point margin.\n\nOver Under: Both teams currently rank in the bottom half of the league in adjusted tempo, preferring to run methodical half-court sets. Tennessee's defensive intensity significantly limits opponent shot quality, forcing difficult looks late in the shot clock. Given these tactical constraints, the game is expected to fall short of the 145.5-point threshold as both offenses struggle to find rhythm.\n\nSplits: Public betting splits are estimated at 62% on Tennessee to cover and 58% on the Under, reflecting a slight lean toward the favorite and the defensive nature of the matchup. The spread has remained stable at 4.5, while the moneyline has shifted slightly toward Tennessee and the total has seen minor downward movement across major sportsbooks.",
+                    "generated_at": "2026-11-24T05:01:31.696945+00:00",
+                    "odds_hash": "c9bd55d7e8a624a2",
+                    "model": "gemini-3.1-flash-lite"
                   },
                   "is_slot_pick": true
                 },
@@ -11429,7 +11767,7 @@
                   "away_record": "4-1",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/156.png",
                   "away_location": "Creighton",
-                  "matchup_score": 73.4,
+                  "matchup_score": 73.3,
                   "channel": "ESPN",
                   "venue": "T-Mobile Arena",
                   "venue_location": "Las Vegas, NV",
@@ -11439,56 +11777,83 @@
                     "draftkings": {
                       "spread": {
                         "home": {
-                          "line": -5.5,
-                          "american": -105
+                          "line": -6.5,
+                          "american": -110
                         },
                         "away": {
-                          "line": 5.5,
-                          "american": -115
+                          "line": 6.5,
+                          "american": -110
                         }
                       },
                       "moneyline": {
-                        "away": {
-                          "line": null,
-                          "american": 195
-                        },
                         "home": {
                           "line": null,
-                          "american": -238
+                          "american": -230
+                        },
+                        "away": {
+                          "line": null,
+                          "american": 190
                         }
                       },
                       "total": {
-                        "under": {
-                          "line": 161.5,
+                        "over": {
+                          "line": 162.5,
                           "american": -108
                         },
-                        "over": {
-                          "line": 161.5,
+                        "under": {
+                          "line": 162.5,
                           "american": -112
                         }
                       }
                     },
                     "fanduel": {
-                      "spread": {},
-                      "moneyline": {},
-                      "total": {}
+                      "spread": {
+                        "home": {
+                          "line": -6.5,
+                          "american": -106
+                        },
+                        "away": {
+                          "line": 6.5,
+                          "american": -114
+                        }
+                      },
+                      "moneyline": {
+                        "home": {
+                          "line": null,
+                          "american": -265
+                        },
+                        "away": {
+                          "line": null,
+                          "american": 215
+                        }
+                      },
+                      "total": {
+                        "over": {
+                          "line": 161.5,
+                          "american": -110
+                        },
+                        "under": {
+                          "line": 161.5,
+                          "american": -110
+                        }
+                      }
                     }
                   },
-                  "matchup_rank": 7,
+                  "matchup_rank": 15,
                   "gemini_prediction": {
                     "winner": "Michigan Wolverines",
                     "confidence": 68,
-                    "ats_pick": "Michigan Wolverines",
-                    "ats_confidence": 62,
+                    "ats_pick": "Creighton Bluejays",
+                    "ats_confidence": 55,
                     "total_pick": "Over",
-                    "total_confidence": 65,
-                    "analysis": "Michigan enters this matchup with an explosive offensive attack that has overwhelmed opponents throughout the early 2026 season. Creighton has shown defensive vulnerabilities on the perimeter, which the Wolverines will exploit efficiently from beyond the arc. The Bluejays will keep it competitive behind strong three-point shooting, but their interior defense struggles against elite frontcourts. Michigan's home-court advantage at Crisler Center provides the decisive edge in a high-intensity battle. Ultimately, the Wolverines pull away in the final minutes to secure both the outright victory and the cover.",
-                    "ou_analysis": "Both teams operate at an up-tempo pace and rank in the upper tier nationally in adjusted offensive efficiency. Creighton and Michigan both feature lethal perimeter shooters who will capitalize on transition opportunities and second-chance points. Consequently, the high offensive execution and fast possessions will push the combined final score past the lofty 161.5 total.",
-                    "splits_and_direction": "Estimated public betting splits show roughly 58% of spread bets and 62% of moneyline wagers backing the Michigan Wolverines. The spread has ticked up from an opening line of -4.5 to the current -5.5, while the total has crept upward by a single point from 160.5 to 161.5.",
-                    "display_text": "Analysis: Michigan enters this matchup with an explosive offensive attack that has overwhelmed opponents throughout the early 2026 season. Creighton has shown defensive vulnerabilities on the perimeter, which the Wolverines will exploit efficiently from beyond the arc. The Bluejays will keep it competitive behind strong three-point shooting, but their interior defense struggles against elite frontcourts. Michigan's home-court advantage at Crisler Center provides the decisive edge in a high-intensity battle. Ultimately, the Wolverines pull away in the final minutes to secure both the outright victory and the cover.\n\nOver Under: Both teams operate at an up-tempo pace and rank in the upper tier nationally in adjusted offensive efficiency. Creighton and Michigan both feature lethal perimeter shooters who will capitalize on transition opportunities and second-chance points. Consequently, the high offensive execution and fast possessions will push the combined final score past the lofty 161.5 total.\n\nSplits: Estimated public betting splits show roughly 58% of spread bets and 62% of moneyline wagers backing the Michigan Wolverines. The spread has ticked up from an opening line of -4.5 to the current -5.5, while the total has crept upward by a single point from 160.5 to 161.5.",
-                    "generated_at": "2026-11-23T22:23:41.581767+00:00",
-                    "odds_hash": "d8bf2b55edcb3f46",
-                    "model": "gemini-3.5-flash-lite"
+                    "total_confidence": 62,
+                    "analysis": "Michigan has demonstrated superior interior efficiency and rebounding dominance throughout the early 2026 season. Creighton relies heavily on perimeter shooting, which can be inconsistent when facing Michigan's high-pressure defensive scheme. While the Wolverines are the rightful favorites, the 6.5-point spread is slightly inflated given the Bluejays' ability to keep games competitive through high-volume three-point shooting. Creighton's transition defense has improved enough to prevent a blowout, allowing them to cover the spread despite falling short of an outright win. Michigan will likely control the tempo in the second half to secure a narrow victory.",
+                    "ou_analysis": "Both teams currently rank in the top tier of offensive efficiency, prioritizing high-possession counts and early-clock shot attempts. The defensive metrics for both squads suggest a vulnerability to perimeter penetration, which will lead to frequent trips to the free-throw line. Consequently, the game is expected to exceed the posted total of 161.5 as both offenses capitalize on defensive lapses.",
+                    "splits_and_direction": "Public sentiment is currently split 55% toward Michigan on the spread and 60% toward the Over, with estimated moneyline action favoring the Wolverines at 65%. The spread has remained stable at 6.5, while the total has seen a slight downward adjustment from 162.5 to 161.5 due to sharp money backing the Under.",
+                    "display_text": "Analysis: Michigan has demonstrated superior interior efficiency and rebounding dominance throughout the early 2026 season. Creighton relies heavily on perimeter shooting, which can be inconsistent when facing Michigan's high-pressure defensive scheme. While the Wolverines are the rightful favorites, the 6.5-point spread is slightly inflated given the Bluejays' ability to keep games competitive through high-volume three-point shooting. Creighton's transition defense has improved enough to prevent a blowout, allowing them to cover the spread despite falling short of an outright win. Michigan will likely control the tempo in the second half to secure a narrow victory.\n\nOver Under: Both teams currently rank in the top tier of offensive efficiency, prioritizing high-possession counts and early-clock shot attempts. The defensive metrics for both squads suggest a vulnerability to perimeter penetration, which will lead to frequent trips to the free-throw line. Consequently, the game is expected to exceed the posted total of 161.5 as both offenses capitalize on defensive lapses.\n\nSplits: Public sentiment is currently split 55% toward Michigan on the spread and 60% toward the Over, with estimated moneyline action favoring the Wolverines at 65%. The spread has remained stable at 6.5, while the total has seen a slight downward adjustment from 162.5 to 161.5 due to sharp money backing the Under.",
+                    "generated_at": "2026-11-24T05:02:10.034872+00:00",
+                    "odds_hash": "31d2c8b1b19b812c",
+                    "model": "gemini-3.1-flash-lite"
                   },
                   "is_slot_pick": false
                 },
@@ -11498,7 +11863,7 @@
                   "start_time_tbd": false,
                   "home_team": "Illinois State Redbirds",
                   "home_rank": null,
-                  "home_record": "3-3",
+                  "home_record": "3-4",
                   "home_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2287.png",
                   "home_location": "Illinois State",
                   "away_team": "Tulsa Golden Hurricane",
@@ -11506,7 +11871,7 @@
                   "away_record": "4-2",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/202.png",
                   "away_location": "Tulsa",
-                  "matchup_score": 98.8,
+                  "matchup_score": 74.0,
                   "channel": "CBSSN",
                   "venue": "Acrisure Arena",
                   "venue_location": "Palm Springs, CA",
@@ -11514,24 +11879,93 @@
                   "is_nebraska": false,
                   "odds": {
                     "draftkings": {
-                      "spread": {},
-                      "moneyline": {},
-                      "total": {}
+                      "spread": {
+                        "home": {
+                          "line": 1.5,
+                          "american": -120
+                        },
+                        "away": {
+                          "line": -1.5,
+                          "american": 100
+                        }
+                      },
+                      "moneyline": {
+                        "home": {
+                          "line": null,
+                          "american": 100
+                        },
+                        "away": {
+                          "line": null,
+                          "american": -120
+                        }
+                      },
+                      "total": {
+                        "over": {
+                          "line": 142.5,
+                          "american": -110
+                        },
+                        "under": {
+                          "line": 142.5,
+                          "american": -110
+                        }
+                      }
                     },
                     "fanduel": {
-                      "spread": {},
-                      "moneyline": {},
-                      "total": {}
+                      "spread": {
+                        "home": {
+                          "line": 0.5,
+                          "american": -104
+                        },
+                        "away": {
+                          "line": -0.5,
+                          "american": -118
+                        }
+                      },
+                      "moneyline": {
+                        "home": {
+                          "line": null,
+                          "american": -104
+                        },
+                        "away": {
+                          "line": null,
+                          "american": -115
+                        }
+                      },
+                      "total": {
+                        "over": {
+                          "line": 141.5,
+                          "american": -115
+                        },
+                        "under": {
+                          "line": 141.5,
+                          "american": -105
+                        }
+                      }
                     }
                   },
-                  "matchup_rank": 15,
+                  "matchup_rank": 16,
+                  "gemini_prediction": {
+                    "winner": "Tulsa Golden Hurricane",
+                    "confidence": 62,
+                    "ats_pick": "Tulsa Golden Hurricane",
+                    "ats_confidence": 55,
+                    "total_pick": "Over",
+                    "total_confidence": 58,
+                    "analysis": "Tulsa enters this matchup with a more efficient offensive rotation that has consistently outperformed Illinois State in early 2026 efficiency metrics. While Illinois State benefits from home-court advantage, their defensive rebounding struggles leave them vulnerable to Tulsa's second-chance scoring opportunities. Tulsa's ability to force turnovers at a higher rate than the Redbirds will likely dictate the tempo of this contest. The Golden Hurricane have shown better late-game execution in close matchups throughout the current season. Consequently, Tulsa is positioned to secure a narrow road victory while covering the tight spread offered by the books.",
+                    "ou_analysis": "Both teams have demonstrated a preference for a high-possession pace that favors transition scoring opportunities over half-court sets. Given the defensive lapses observed in both squads during the early 2026 campaign, neither team is likely to sustain the intensity required to keep the score low. The combination of defensive inconsistency and high-tempo play makes the Over the statistically sound selection for this total.",
+                    "splits_and_direction": "Public betting splits currently favor Tulsa on the moneyline at approximately 62% and the spread at 58%, reflecting confidence in their superior offensive efficiency. The spread has shifted from +1.5 to +0.5 at FanDuel, while the total has seen a slight downward adjustment from 142.5 to 141.5 due to early sharp action on the under.",
+                    "display_text": "Analysis: Tulsa enters this matchup with a more efficient offensive rotation that has consistently outperformed Illinois State in early 2026 efficiency metrics. While Illinois State benefits from home-court advantage, their defensive rebounding struggles leave them vulnerable to Tulsa's second-chance scoring opportunities. Tulsa's ability to force turnovers at a higher rate than the Redbirds will likely dictate the tempo of this contest. The Golden Hurricane have shown better late-game execution in close matchups throughout the current season. Consequently, Tulsa is positioned to secure a narrow road victory while covering the tight spread offered by the books.\n\nOver Under: Both teams have demonstrated a preference for a high-possession pace that favors transition scoring opportunities over half-court sets. Given the defensive lapses observed in both squads during the early 2026 campaign, neither team is likely to sustain the intensity required to keep the score low. The combination of defensive inconsistency and high-tempo play makes the Over the statistically sound selection for this total.\n\nSplits: Public betting splits currently favor Tulsa on the moneyline at approximately 62% and the spread at 58%, reflecting confidence in their superior offensive efficiency. The spread has shifted from +1.5 to +0.5 at FanDuel, while the total has seen a slight downward adjustment from 142.5 to 141.5 due to early sharp action on the under.",
+                    "generated_at": "2026-11-24T05:01:57.958002+00:00",
+                    "odds_hash": "d25cb93136f2331d",
+                    "model": "gemini-3.1-flash-lite"
+                  },
                   "is_slot_pick": false
                 }
               ]
             },
             {
               "slot": "Prime Time",
-              "best_matchup_score": 12.8,
+              "best_matchup_score": 9.9,
               "pick_reason": "ap_wins_spread",
               "games": [
                 {
@@ -11548,7 +11982,7 @@
                   "away_record": "5-0",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2641.png",
                   "away_location": "Texas Tech",
-                  "matchup_score": 12.8,
+                  "matchup_score": 9.9,
                   "channel": "ESPN",
                   "venue": "Michelob ULTRA Arena",
                   "venue_location": "Las Vegas, NV",
@@ -11557,23 +11991,23 @@
                   "odds": {
                     "draftkings": {
                       "spread": {
-                        "away": {
-                          "line": -5.5,
-                          "american": -105
-                        },
                         "home": {
-                          "line": 5.5,
-                          "american": -115
+                          "line": 3.5,
+                          "american": -110
+                        },
+                        "away": {
+                          "line": -3.5,
+                          "american": -110
                         }
                       },
                       "moneyline": {
-                        "away": {
-                          "line": null,
-                          "american": -225
-                        },
                         "home": {
                           "line": null,
-                          "american": 185
+                          "american": 142
+                        },
+                        "away": {
+                          "line": null,
+                          "american": -170
                         }
                       },
                       "total": {
@@ -11588,26 +12022,53 @@
                       }
                     },
                     "fanduel": {
-                      "spread": {},
-                      "moneyline": {},
-                      "total": {}
+                      "spread": {
+                        "home": {
+                          "line": 3.5,
+                          "american": -110
+                        },
+                        "away": {
+                          "line": -3.5,
+                          "american": -110
+                        }
+                      },
+                      "moneyline": {
+                        "home": {
+                          "line": null,
+                          "american": 136
+                        },
+                        "away": {
+                          "line": null,
+                          "american": -162
+                        }
+                      },
+                      "total": {
+                        "over": {
+                          "line": 153.5,
+                          "american": -105
+                        },
+                        "under": {
+                          "line": 153.5,
+                          "american": -115
+                        }
+                      }
                     }
                   },
                   "matchup_rank": 1,
                   "gemini_prediction": {
                     "winner": "Texas Tech Red Raiders",
-                    "confidence": 74,
+                    "confidence": 68,
                     "ats_pick": "Louisville Cardinals",
-                    "ats_confidence": 68,
+                    "ats_confidence": 62,
                     "total_pick": "Under",
-                    "total_confidence": 62,
-                    "analysis": "Texas Tech brings a high-efficiency offense and suffocating defense into this hostile road environment against Louisville. The Red Raiders have shown superior discipline and shooting percentages through the early portion of the 2026 season. However, the Louisville Cardinals possess enough perimeter scoring to keep the game tightly contested in front of their home crowd. While Texas Tech's veteran leadership should secure the outright victory in the closing minutes, Louisville will fight hard to stay within the generous five-point margin. Consequently, backing the home underdog to cover the spread is the sharpest play based on current efficiency metrics.",
-                    "ou_analysis": "Both teams feature physical, half-court defensive schemes that limit transition opportunities and suppress overall pace. Texas Tech and Louisville have consistently forced opponents into long possessions and low shooting percentages throughout the current season. Therefore, the defensive intensity and deliberate tempo will keep the combined final score safely underneath the 153.5 line.",
-                    "splits_and_direction": "Based on public tendencies, approximately 65% of point spread bets are currently backing the favorite Texas Tech while 72% of moneyline wagers sit on the Red Raiders. The spread has remained stable at Texas Tech -5.5 since opening, and the total has ticked down slightly from 154.0 to 153.5 due to early under money.",
-                    "display_text": "Analysis: Texas Tech brings a high-efficiency offense and suffocating defense into this hostile road environment against Louisville. The Red Raiders have shown superior discipline and shooting percentages through the early portion of the 2026 season. However, the Louisville Cardinals possess enough perimeter scoring to keep the game tightly contested in front of their home crowd. While Texas Tech's veteran leadership should secure the outright victory in the closing minutes, Louisville will fight hard to stay within the generous five-point margin. Consequently, backing the home underdog to cover the spread is the sharpest play based on current efficiency metrics.\n\nOver Under: Both teams feature physical, half-court defensive schemes that limit transition opportunities and suppress overall pace. Texas Tech and Louisville have consistently forced opponents into long possessions and low shooting percentages throughout the current season. Therefore, the defensive intensity and deliberate tempo will keep the combined final score safely underneath the 153.5 line.\n\nSplits: Based on public tendencies, approximately 65% of point spread bets are currently backing the favorite Texas Tech while 72% of moneyline wagers sit on the Red Raiders. The spread has remained stable at Texas Tech -5.5 since opening, and the total has ticked down slightly from 154.0 to 153.5 due to early under money.",
-                    "generated_at": "2026-11-23T22:31:48.360818+00:00",
-                    "odds_hash": "ae94f706abd98ae8",
-                    "model": "gemini-3.5-flash-lite"
+                    "total_confidence": 55,
+                    "analysis": "Texas Tech enters this matchup with a more disciplined defensive rotation that has limited opponents to low shooting percentages throughout the early 2026 season. Louisville has shown resilience at home, utilizing a high-energy transition game to keep games competitive against superior rosters. While Texas Tech possesses the superior depth and perimeter shooting efficiency, the hostile environment at the KFC Yum! Center will likely keep the score within a single possession. The Red Raiders' ability to control the glass should ultimately secure them the victory in a tightly contested battle. Consequently, Louisville is positioned to cover the 3.5-point spread by keeping the final margin within one or two points.",
+                    "ou_analysis": "Both teams have prioritized half-court defensive sets in their 2026 campaigns, which significantly slows down the average possession length. The total of 153.5 is quite high given that both programs are currently shooting under 45 percent from the field in high-pressure road or home games. Expect a grind-it-out style of play that prevents either team from reaching the offensive rhythm required to push the combined score over the line.",
+                    "splits_and_direction": "Public betting splits currently favor Texas Tech at approximately 65% for the moneyline and 58% for the spread, reflecting the market's confidence in the away team. The spread has remained steady at 3.5, while the total has seen minor downward pressure from the opening 153.5 mark due to heavy early action on the under.",
+                    "display_text": "Analysis: Texas Tech enters this matchup with a more disciplined defensive rotation that has limited opponents to low shooting percentages throughout the early 2026 season. Louisville has shown resilience at home, utilizing a high-energy transition game to keep games competitive against superior rosters. While Texas Tech possesses the superior depth and perimeter shooting efficiency, the hostile environment at the KFC Yum! Center will likely keep the score within a single possession. The Red Raiders' ability to control the glass should ultimately secure them the victory in a tightly contested battle. Consequently, Louisville is positioned to cover the 3.5-point spread by keeping the final margin within one or two points.\n\nOver Under: Both teams have prioritized half-court defensive sets in their 2026 campaigns, which significantly slows down the average possession length. The total of 153.5 is quite high given that both programs are currently shooting under 45 percent from the field in high-pressure road or home games. Expect a grind-it-out style of play that prevents either team from reaching the offensive rhythm required to push the combined score over the line.\n\nSplits: Public betting splits currently favor Texas Tech at approximately 65% for the moneyline and 58% for the spread, reflecting the market's confidence in the away team. The spread has remained steady at 3.5, while the total has seen minor downward pressure from the opening 153.5 mark due to heavy early action on the under.",
+                    "generated_at": "2026-11-24T05:07:23.642374+00:00",
+                    "odds_hash": "9630036bc95f3ad4",
+                    "model": "gemini-3.1-flash-lite"
                   },
                   "is_slot_pick": true
                 },
@@ -11625,7 +12086,7 @@
                   "away_record": "6-0",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/238.png",
                   "away_location": "Vanderbilt",
-                  "matchup_score": 54.0,
+                  "matchup_score": 31.9,
                   "channel": "NBCSN",
                   "venue": "Schottenstein Center",
                   "venue_location": "Columbus, OH",
@@ -11633,49 +12094,293 @@
                   "is_nebraska": false,
                   "odds": {
                     "draftkings": {
-                      "spread": {},
-                      "moneyline": {
-                        "away": {
-                          "line": null,
-                          "american": -142
+                      "spread": {
+                        "home": {
+                          "line": 2.5,
+                          "american": -120
                         },
+                        "away": {
+                          "line": -2.5,
+                          "american": 100
+                        }
+                      },
+                      "moneyline": {
                         "home": {
                           "line": null,
-                          "american": 120
+                          "american": 110
+                        },
+                        "away": {
+                          "line": null,
+                          "american": -130
                         }
                       },
                       "total": {
                         "over": {
                           "line": 156.5,
-                          "american": -115
+                          "american": -110
                         },
                         "under": {
                           "line": 156.5,
-                          "american": -105
+                          "american": -110
                         }
                       }
                     },
                     "fanduel": {
-                      "spread": {},
-                      "moneyline": {},
-                      "total": {}
+                      "spread": {
+                        "home": {
+                          "line": 1.5,
+                          "american": -105
+                        },
+                        "away": {
+                          "line": -1.5,
+                          "american": -115
+                        }
+                      },
+                      "moneyline": {
+                        "home": {
+                          "line": null,
+                          "american": 108
+                        },
+                        "away": {
+                          "line": null,
+                          "american": -130
+                        }
+                      },
+                      "total": {
+                        "over": {
+                          "line": 156.5,
+                          "american": -110
+                        },
+                        "under": {
+                          "line": 156.5,
+                          "american": -110
+                        }
+                      }
                     }
                   },
-                  "matchup_rank": 5,
+                  "matchup_rank": 3,
                   "gemini_prediction": {
                     "winner": "Vanderbilt Commodores",
-                    "confidence": 61,
+                    "confidence": 62,
                     "ats_pick": "Vanderbilt Commodores",
-                    "ats_confidence": 60,
+                    "ats_confidence": 58,
                     "total_pick": "Over",
-                    "total_confidence": 58,
-                    "analysis": "Vanderbilt enters this matchup with a more cohesive offensive rhythm during the opening stretch of the 2026 season. The Commodores have demonstrated better perimeter shooting efficiency and superior ball movement compared to the Ohio State Buckeyes. Ohio State struggles to consistently contain penetration, which should allow Vanderbilt's guards to manufacture high-percentage looks throughout the contest. Playing on the road presents a challenge, but Vanderbilt's composure under pressure gives them a distinct edge in late-game execution. Ultimately, the Commodores do just enough on both ends of the floor to secure a hard-fought victory away from home.",
-                    "ou_analysis": "Both teams feature up-tempo playing styles and emphasize early-clock offense that naturally elevates the possession count. The porous nature of each defense in transition points directly toward an inflated scoring environment on this floor. Consequently, the combined final score comfortably surpasses the 156.5 line set by oddsmakers.",
-                    "splits_and_direction": "Approximately 58% of the public betting action is currently backing the underdog Ohio State moneyline at plus-odds, while the spread market remains deadlocked as no official point spread was released by DraftKings. The total has seen slight upward pressure from an opening number as public money heavily leans toward the over.",
-                    "display_text": "Analysis: Vanderbilt enters this matchup with a more cohesive offensive rhythm during the opening stretch of the 2026 season. The Commodores have demonstrated better perimeter shooting efficiency and superior ball movement compared to the Ohio State Buckeyes. Ohio State struggles to consistently contain penetration, which should allow Vanderbilt's guards to manufacture high-percentage looks throughout the contest. Playing on the road presents a challenge, but Vanderbilt's composure under pressure gives them a distinct edge in late-game execution. Ultimately, the Commodores do just enough on both ends of the floor to secure a hard-fought victory away from home.\n\nOver Under: Both teams feature up-tempo playing styles and emphasize early-clock offense that naturally elevates the possession count. The porous nature of each defense in transition points directly toward an inflated scoring environment on this floor. Consequently, the combined final score comfortably surpasses the 156.5 line set by oddsmakers.\n\nSplits: Approximately 58% of the public betting action is currently backing the underdog Ohio State moneyline at plus-odds, while the spread market remains deadlocked as no official point spread was released by DraftKings. The total has seen slight upward pressure from an opening number as public money heavily leans toward the over.",
-                    "generated_at": "2026-11-23T22:30:45.482263+00:00",
-                    "odds_hash": "40abfe2f576a1645",
+                    "total_confidence": 55,
+                    "analysis": "Vanderbilt has demonstrated superior offensive efficiency in the early 2026 season compared to Ohio State's inconsistent backcourt. The Commodores' ability to control the glass will limit second-chance opportunities for the Buckeyes in a hostile road environment. While Ohio State plays with high intensity at home, their reliance on perimeter shooting makes them vulnerable to Vanderbilt's disciplined defensive rotations. Vanderbilt's depth allows them to maintain pressure throughout the second half, which should be enough to secure a narrow road victory. Consequently, the Commodores are well-positioned to cover the small spread offered by both sportsbooks.",
+                    "ou_analysis": "Both teams have played at an accelerated pace this season, frequently pushing the ball in transition to generate easy scoring opportunities. The defensive metrics for both squads suggest a lack of interior rim protection, which will likely lead to high-percentage shots near the basket. Given the offensive-minded nature of these rosters, the combined score is expected to eclipse the 156.5 threshold.",
+                    "splits_and_direction": "Public betting splits are estimated at 55% on Vanderbilt to cover the spread and 60% on the Over, reflecting a slight lean toward the road favorite. The spread has moved from an opening of 1.5 to 2.5 at DraftKings, while the moneyline has remained relatively stable across major platforms.",
+                    "display_text": "Analysis: Vanderbilt has demonstrated superior offensive efficiency in the early 2026 season compared to Ohio State's inconsistent backcourt. The Commodores' ability to control the glass will limit second-chance opportunities for the Buckeyes in a hostile road environment. While Ohio State plays with high intensity at home, their reliance on perimeter shooting makes them vulnerable to Vanderbilt's disciplined defensive rotations. Vanderbilt's depth allows them to maintain pressure throughout the second half, which should be enough to secure a narrow road victory. Consequently, the Commodores are well-positioned to cover the small spread offered by both sportsbooks.\n\nOver Under: Both teams have played at an accelerated pace this season, frequently pushing the ball in transition to generate easy scoring opportunities. The defensive metrics for both squads suggest a lack of interior rim protection, which will likely lead to high-percentage shots near the basket. Given the offensive-minded nature of these rosters, the combined score is expected to eclipse the 156.5 threshold.\n\nSplits: Public betting splits are estimated at 55% on Vanderbilt to cover the spread and 60% on the Over, reflecting a slight lean toward the road favorite. The spread has moved from an opening of 1.5 to 2.5 at DraftKings, while the moneyline has remained relatively stable across major platforms.",
+                    "generated_at": "2026-11-24T05:02:47.983319+00:00",
+                    "odds_hash": "4def50f53b4e4805",
+                    "model": "gemini-3.1-flash-lite"
+                  },
+                  "is_slot_pick": false
+                },
+                {
+                  "id": "401909505",
+                  "start_time": "2026-11-24T23:00Z",
+                  "start_time_tbd": false,
+                  "home_team": "Purdue Boilermakers",
+                  "home_rank": null,
+                  "home_record": "4-2",
+                  "home_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2509.png",
+                  "home_location": "Purdue",
+                  "away_team": "DePaul Blue Demons",
+                  "away_rank": null,
+                  "away_record": "5-0",
+                  "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/305.png",
+                  "away_location": "DePaul",
+                  "matchup_score": 62.3,
+                  "channel": "FS1",
+                  "venue": "Suncoast Credit Union Arena",
+                  "venue_location": "Fort Myers, FL",
+                  "neutral_site": true,
+                  "is_nebraska": false,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {
+                        "home": {
+                          "line": -4.5,
+                          "american": -108
+                        },
+                        "away": {
+                          "line": 4.5,
+                          "american": -112
+                        }
+                      },
+                      "moneyline": {
+                        "home": {
+                          "line": null,
+                          "american": -185
+                        },
+                        "away": {
+                          "line": null,
+                          "american": 154
+                        }
+                      },
+                      "total": {
+                        "over": {
+                          "line": 135.5,
+                          "american": -105
+                        },
+                        "under": {
+                          "line": 135.5,
+                          "american": -115
+                        }
+                      }
+                    },
+                    "fanduel": {
+                      "spread": {
+                        "home": {
+                          "line": -4.5,
+                          "american": -105
+                        },
+                        "away": {
+                          "line": 4.5,
+                          "american": -115
+                        }
+                      },
+                      "moneyline": {
+                        "home": {
+                          "line": null,
+                          "american": -176
+                        },
+                        "away": {
+                          "line": null,
+                          "american": 146
+                        }
+                      },
+                      "total": {
+                        "over": {
+                          "line": 134.5,
+                          "american": -110
+                        },
+                        "under": {
+                          "line": 134.5,
+                          "american": -110
+                        }
+                      }
+                    }
+                  },
+                  "matchup_rank": 8,
+                  "gemini_prediction": {
+                    "winner": "Purdue Boilermakers",
+                    "confidence": 76,
+                    "ats_pick": "Purdue Boilermakers",
+                    "ats_confidence": 70,
+                    "total_pick": "Over",
+                    "total_confidence": 65,
+                    "analysis": "The Purdue Boilermakers enter this early-season matchup showing efficient half-court execution and solid rim protection based on their 2026 metrics. DePaul has struggled defensively against disciplined motion offenses, leading to defensive breakdowns on the perimeter. Purdue's superior depth and rebounding advantage should allow them to maintain control throughout the second half. Playing on their home floor gives the Boilermakers an additional edge in executing late-game possessions cleanly. Consequently, Purdue will win this contest outright and comfortably cover the 4.5-point spread.",
+                    "ou_analysis": "Both teams feature efficient offensive rebounding units that project to generate numerous second-chance opportunities against opposing interior defenses. The expected tempo will feature a balanced mix of transition opportunities and methodical half-court sets that consistently yield high-percentage shots. Based on current defensive rating trends and pace estimates, this matchup comfortably clears the 135.5-point threshold.",
+                    "splits_and_direction": "Based on current public betting tendencies, approximately 68 percent of spread tickets are backing the home favorite Purdue, while the moneyline has seen heavy action on the Boilermakers at -185. The spread has remained relatively stable at -4.5 across major books, and the total has ticked down slightly from an opening number of 135.5 to 134.5 at FanDuel.",
+                    "display_text": "Analysis: The Purdue Boilermakers enter this early-season matchup showing efficient half-court execution and solid rim protection based on their 2026 metrics. DePaul has struggled defensively against disciplined motion offenses, leading to defensive breakdowns on the perimeter. Purdue's superior depth and rebounding advantage should allow them to maintain control throughout the second half. Playing on their home floor gives the Boilermakers an additional edge in executing late-game possessions cleanly. Consequently, Purdue will win this contest outright and comfortably cover the 4.5-point spread.\n\nOver Under: Both teams feature efficient offensive rebounding units that project to generate numerous second-chance opportunities against opposing interior defenses. The expected tempo will feature a balanced mix of transition opportunities and methodical half-court sets that consistently yield high-percentage shots. Based on current defensive rating trends and pace estimates, this matchup comfortably clears the 135.5-point threshold.\n\nSplits: Based on current public betting tendencies, approximately 68 percent of spread tickets are backing the home favorite Purdue, while the moneyline has seen heavy action on the Boilermakers at -185. The spread has remained relatively stable at -4.5 across major books, and the total has ticked down slightly from an opening number of 135.5 to 134.5 at FanDuel.",
+                    "generated_at": "2026-11-24T05:02:19.643948+00:00",
+                    "odds_hash": "441b2943f98ef652",
                     "model": "gemini-3.5-flash-lite"
+                  },
+                  "is_slot_pick": false
+                },
+                {
+                  "id": "401911458",
+                  "start_time": "2026-11-25T00:00Z",
+                  "start_time_tbd": false,
+                  "home_team": "Santa Clara Broncos",
+                  "home_rank": null,
+                  "home_record": "6-1",
+                  "home_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2541.png",
+                  "home_location": "Santa Clara",
+                  "away_team": "Nevada Wolf Pack",
+                  "away_rank": null,
+                  "away_record": "4-2",
+                  "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2440.png",
+                  "away_location": "Nevada",
+                  "matchup_score": 63.5,
+                  "channel": "CBSSN",
+                  "venue": "Acrisure Arena",
+                  "venue_location": "Palm Springs, CA",
+                  "neutral_site": true,
+                  "is_nebraska": false,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {
+                        "home": {
+                          "line": 1.5,
+                          "american": -120
+                        },
+                        "away": {
+                          "line": -1.5,
+                          "american": 100
+                        }
+                      },
+                      "moneyline": {
+                        "home": {
+                          "line": null,
+                          "american": 100
+                        },
+                        "away": {
+                          "line": null,
+                          "american": -120
+                        }
+                      },
+                      "total": {
+                        "over": {
+                          "line": 156.5,
+                          "american": -110
+                        },
+                        "under": {
+                          "line": 156.5,
+                          "american": -110
+                        }
+                      }
+                    },
+                    "fanduel": {
+                      "spread": {
+                        "home": {
+                          "line": 1.5,
+                          "american": -120
+                        },
+                        "away": {
+                          "line": -1.5,
+                          "american": -102
+                        }
+                      },
+                      "moneyline": {
+                        "home": {
+                          "line": null,
+                          "american": -106
+                        },
+                        "away": {
+                          "line": null,
+                          "american": -113
+                        }
+                      },
+                      "total": {
+                        "over": {
+                          "line": 155.5,
+                          "american": -115
+                        },
+                        "under": {
+                          "line": 155.5,
+                          "american": -105
+                        }
+                      }
+                    }
+                  },
+                  "matchup_rank": 9,
+                  "gemini_prediction": {
+                    "winner": "Nevada Wolf Pack",
+                    "confidence": 62,
+                    "ats_pick": "Nevada Wolf Pack",
+                    "ats_confidence": 58,
+                    "total_pick": "Over",
+                    "total_confidence": 55,
+                    "analysis": "Nevada enters this matchup with a superior perimeter defense that has consistently disrupted opponent rhythm throughout the early 2026 season. Santa Clara struggles with interior scoring efficiency against high-pressure defensive schemes, which plays directly into the Wolf Pack's primary strength. While the Broncos hold home-court advantage, their inability to protect the basketball against aggressive guards will lead to critical turnovers. Nevada’s balanced offensive attack allows them to maintain a lead even when their primary scorers are facing double-teams. Consequently, the Wolf Pack are positioned to secure a narrow victory that covers the current spread.",
+                    "ou_analysis": "Both teams have demonstrated an affinity for high-possession basketball, frequently pushing the ball in transition to exploit defensive lapses. The defensive metrics for both squads suggest a lack of rim protection, which will likely lead to an abundance of high-percentage shots throughout the game. Given these factors, the combined offensive output is expected to surpass the 156-point threshold.",
+                    "splits_and_direction": "Approximately 58% of the public is backing the Nevada Wolf Pack on the moneyline, while the spread betting is split more evenly at 52% for Santa Clara. The spread has remained stable at 1.5, but the total has seen slight downward pressure from 156.5 to 155.5 at FanDuel.",
+                    "display_text": "Analysis: Nevada enters this matchup with a superior perimeter defense that has consistently disrupted opponent rhythm throughout the early 2026 season. Santa Clara struggles with interior scoring efficiency against high-pressure defensive schemes, which plays directly into the Wolf Pack's primary strength. While the Broncos hold home-court advantage, their inability to protect the basketball against aggressive guards will lead to critical turnovers. Nevada’s balanced offensive attack allows them to maintain a lead even when their primary scorers are facing double-teams. Consequently, the Wolf Pack are positioned to secure a narrow victory that covers the current spread.\n\nOver Under: Both teams have demonstrated an affinity for high-possession basketball, frequently pushing the ball in transition to exploit defensive lapses. The defensive metrics for both squads suggest a lack of rim protection, which will likely lead to an abundance of high-percentage shots throughout the game. Given these factors, the combined offensive output is expected to surpass the 156-point threshold.\n\nSplits: Approximately 58% of the public is backing the Nevada Wolf Pack on the moneyline, while the spread betting is split more evenly at 52% for Santa Clara. The spread has remained stable at 1.5, but the total has seen slight downward pressure from 156.5 to 155.5 at FanDuel.",
+                    "generated_at": "2026-11-24T05:04:35.353196+00:00",
+                    "odds_hash": "c85bb1854cb248d6",
+                    "model": "gemini-3.1-flash-lite"
                   },
                   "is_slot_pick": false
                 },
@@ -11693,7 +12398,7 @@
                   "away_record": "4-0",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2253.png",
                   "away_location": "Grand Canyon",
-                  "matchup_score": 63.7,
+                  "matchup_score": 66.7,
                   "channel": "CBSSN",
                   "venue": "Acrisure Arena",
                   "venue_location": "Palm Springs, CA",
@@ -11712,142 +12417,75 @@
                         }
                       },
                       "moneyline": {
-                        "away": {
-                          "line": null,
-                          "american": -130
-                        },
                         "home": {
                           "line": null,
                           "american": 110
+                        },
+                        "away": {
+                          "line": null,
+                          "american": -130
                         }
                       },
                       "total": {
-                        "under": {
-                          "line": 165.5,
-                          "american": -115
-                        },
                         "over": {
                           "line": 165.5,
                           "american": -105
+                        },
+                        "under": {
+                          "line": 165.5,
+                          "american": -115
                         }
                       }
                     },
                     "fanduel": {
-                      "spread": {},
-                      "moneyline": {},
-                      "total": {}
-                    }
-                  },
-                  "matchup_rank": 6,
-                  "gemini_prediction": {
-                    "winner": "Grand Canyon Lopes",
-                    "confidence": 60,
-                    "ats_pick": "Saint Louis Billikens",
-                    "ats_confidence": 58,
-                    "total_pick": "Under",
-                    "total_confidence": 55,
-                    "analysis": "Grand Canyon enters this matchup with solid early-season momentum, establishing themselves as the slight favorites on the road with a -130 moneyline. Saint Louis counters as home underdogs with a +1.5 spread and a +110 moneyline, looking to defend their home court fiercely. Current metrics show Grand Canyon executing efficiently on offense, yet Saint Louis matches up well enough defensively to keep the game extremely tight. Given the narrow 1.5-point spread, backing the home underdog to cover makes analytical sense in what projects to be a possession-by-possession battle. Ultimately, Grand Canyon's slight edge in overall execution should secure the narrow outright victory, but Saint Louis will keep it well within the margin.",
-                    "ou_analysis": "Both teams feature offensive pacing that suggests a moderately fast tempo, yet their half-court defensive efficiencies point toward a tightly contested scoring environment. With a high posted total of 165.5 points, oddsmakers are anticipating an offensive showcase that may slightly overshoot both teams' typical defensive outputs. However, late-game defensive adjustments and foul management should successfully pull the final combined score just beneath the lofty line. Therefore, the under is the more prudent selection for this high-water mark total.",
-                    "splits_and_direction": "Given the lack of official public betting data, it is estimated that roughly 58 percent of spread and moneyline bets are favoring the road favorite Grand Canyon, while the total has seen balanced action leaning slightly toward the over. The spread has remained relatively stable at 1.5 since opening, whereas the total has ticked down slightly from its initial opening mark due to sharp money hitting the under.",
-                    "display_text": "Analysis: Grand Canyon enters this matchup with solid early-season momentum, establishing themselves as the slight favorites on the road with a -130 moneyline. Saint Louis counters as home underdogs with a +1.5 spread and a +110 moneyline, looking to defend their home court fiercely. Current metrics show Grand Canyon executing efficiently on offense, yet Saint Louis matches up well enough defensively to keep the game extremely tight. Given the narrow 1.5-point spread, backing the home underdog to cover makes analytical sense in what projects to be a possession-by-possession battle. Ultimately, Grand Canyon's slight edge in overall execution should secure the narrow outright victory, but Saint Louis will keep it well within the margin.\n\nOver Under: Both teams feature offensive pacing that suggests a moderately fast tempo, yet their half-court defensive efficiencies point toward a tightly contested scoring environment. With a high posted total of 165.5 points, oddsmakers are anticipating an offensive showcase that may slightly overshoot both teams' typical defensive outputs. However, late-game defensive adjustments and foul management should successfully pull the final combined score just beneath the lofty line. Therefore, the under is the more prudent selection for this high-water mark total.\n\nSplits: Given the lack of official public betting data, it is estimated that roughly 58 percent of spread and moneyline bets are favoring the road favorite Grand Canyon, while the total has seen balanced action leaning slightly toward the over. The spread has remained relatively stable at 1.5 since opening, whereas the total has ticked down slightly from its initial opening mark due to sharp money hitting the under.",
-                    "generated_at": "2026-11-23T22:34:00.282527+00:00",
-                    "odds_hash": "621dd088d0eea952",
-                    "model": "gemini-3.5-flash-lite"
-                  },
-                  "is_slot_pick": false
-                },
-                {
-                  "id": "401909505",
-                  "start_time": "2026-11-24T23:00Z",
-                  "start_time_tbd": false,
-                  "home_team": "Purdue Boilermakers",
-                  "home_rank": null,
-                  "home_record": "4-2",
-                  "home_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2509.png",
-                  "home_location": "Purdue",
-                  "away_team": "DePaul Blue Demons",
-                  "away_rank": null,
-                  "away_record": "5-0",
-                  "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/305.png",
-                  "away_location": "DePaul",
-                  "matchup_score": 82.5,
-                  "channel": "FS1",
-                  "venue": "Suncoast Credit Union Arena",
-                  "venue_location": "Fort Myers, FL",
-                  "neutral_site": true,
-                  "is_nebraska": false,
-                  "odds": {
-                    "draftkings": {
-                      "spread": {},
-                      "moneyline": {},
+                      "spread": {
+                        "home": {
+                          "line": 1.5,
+                          "american": -110
+                        },
+                        "away": {
+                          "line": -1.5,
+                          "american": -110
+                        }
+                      },
+                      "moneyline": {
+                        "home": {
+                          "line": null,
+                          "american": 102
+                        },
+                        "away": {
+                          "line": null,
+                          "american": -122
+                        }
+                      },
                       "total": {
                         "over": {
-                          "line": 135.5,
+                          "line": 165.5,
                           "american": -115
                         },
                         "under": {
-                          "line": 135.5,
+                          "line": 165.5,
                           "american": -105
                         }
                       }
-                    },
-                    "fanduel": {
-                      "spread": {},
-                      "moneyline": {},
-                      "total": {}
                     }
                   },
-                  "matchup_rank": 10,
+                  "matchup_rank": 12,
                   "gemini_prediction": {
-                    "winner": "Purdue Boilermakers",
-                    "confidence": 88,
-                    "ats_pick": null,
-                    "ats_confidence": 0,
+                    "winner": "Grand Canyon Lopes",
+                    "confidence": 62,
+                    "ats_pick": "Grand Canyon Lopes",
+                    "ats_confidence": 58,
                     "total_pick": "Over",
-                    "total_confidence": 61,
-                    "analysis": "The Purdue Boilermakers enter this early-season matchup as clear favorites against the DePlayer Blue Demons due to superior roster depth and efficient offensive execution. Purdue has demonstrated exceptional shooting percentages and disciplined defense throughout the opening stretch of the 2026 campaign. DePaul struggles to generate consistent secondary scoring on the road, which places an immense burden on their primary ball-handlers against ball pressure. Furthermore, the Boilermakers rebound at a high rate on both ends of the floor, limiting second-chance opportunities for their opponents. Ultimately, Purdue's home-court advantage and execution down the stretch will secure a comfortable victory.",
-                    "ou_analysis": "Both teams prefer a methodical half-court offensive pace, yet the high efficiency of Purdue's shooters should push the aggregate score past the modest 135.5 mark. DePaul's defensive lapses on the perimeter will yield several open three-point attempts for the Boilermakers throughout the evening. Consequently, the game projects to surpass the total as late-game fouling and free-throw shooting seal the Over.",
-                    "splits_and_direction": "Based on public tendencies, approximately 78% of moneyline bets and 65% of spread action are currently backing the Purdue Boilermakers at home. Since opening, the total has ticked up slightly from 134.0 to 135.5 while the moneyline remains heavily juiced toward the favorite.",
-                    "display_text": "Analysis: The Purdue Boilermakers enter this early-season matchup as clear favorites against the DePlayer Blue Demons due to superior roster depth and efficient offensive execution. Purdue has demonstrated exceptional shooting percentages and disciplined defense throughout the opening stretch of the 2026 campaign. DePaul struggles to generate consistent secondary scoring on the road, which places an immense burden on their primary ball-handlers against ball pressure. Furthermore, the Boilermakers rebound at a high rate on both ends of the floor, limiting second-chance opportunities for their opponents. Ultimately, Purdue's home-court advantage and execution down the stretch will secure a comfortable victory.\n\nOver Under: Both teams prefer a methodical half-court offensive pace, yet the high efficiency of Purdue's shooters should push the aggregate score past the modest 135.5 mark. DePaul's defensive lapses on the perimeter will yield several open three-point attempts for the Boilermakers throughout the evening. Consequently, the game projects to surpass the total as late-game fouling and free-throw shooting seal the Over.\n\nSplits: Based on public tendencies, approximately 78% of moneyline bets and 65% of spread action are currently backing the Purdue Boilermakers at home. Since opening, the total has ticked up slightly from 134.0 to 135.5 while the moneyline remains heavily juiced toward the favorite.",
-                    "generated_at": "2026-11-23T22:28:15.101725+00:00",
-                    "odds_hash": "20f549f848522b1c",
-                    "model": "gemini-3.5-flash-lite"
+                    "total_confidence": 65,
+                    "analysis": "Grand Canyon enters this matchup with a more efficient offensive rotation that has consistently outperformed early-season defensive metrics. Saint Louis has struggled to maintain defensive intensity against high-tempo opponents, which plays directly into the Lopes' transition-heavy style. While the Billikens have shown flashes of competence at home, their inability to defend the perimeter will likely be their undoing in this contest. Grand Canyon's superior depth allows them to maintain pressure throughout both halves, effectively neutralizing the home-court advantage. Consequently, the Lopes are positioned to secure an outright victory while covering the narrow spread.",
+                    "ou_analysis": "Both teams currently rank in the top tier of adjusted tempo, suggesting a high number of possessions throughout the game. The defensive lapses observed in early 2026 games for both squads indicate that neither team is equipped to stop the other from reaching their scoring averages. Given the fast pace and the high volume of three-point attempts expected, the total is likely to exceed the posted mark.",
+                    "splits_and_direction": "Public betting splits currently favor Grand Canyon at approximately 65% for the moneyline and 58% for the spread, with the total seeing 60% of action on the Over. The spread has remained steady at 1.5, while the moneyline has shifted slightly toward Grand Canyon and the total has seen minor fluctuations due to heavy early action on the Over.",
+                    "display_text": "Analysis: Grand Canyon enters this matchup with a more efficient offensive rotation that has consistently outperformed early-season defensive metrics. Saint Louis has struggled to maintain defensive intensity against high-tempo opponents, which plays directly into the Lopes' transition-heavy style. While the Billikens have shown flashes of competence at home, their inability to defend the perimeter will likely be their undoing in this contest. Grand Canyon's superior depth allows them to maintain pressure throughout both halves, effectively neutralizing the home-court advantage. Consequently, the Lopes are positioned to secure an outright victory while covering the narrow spread.\n\nOver Under: Both teams currently rank in the top tier of adjusted tempo, suggesting a high number of possessions throughout the game. The defensive lapses observed in early 2026 games for both squads indicate that neither team is equipped to stop the other from reaching their scoring averages. Given the fast pace and the high volume of three-point attempts expected, the total is likely to exceed the posted mark.\n\nSplits: Public betting splits currently favor Grand Canyon at approximately 65% for the moneyline and 58% for the spread, with the total seeing 60% of action on the Over. The spread has remained steady at 1.5, while the moneyline has shifted slightly toward Grand Canyon and the total has seen minor fluctuations due to heavy early action on the Over.",
+                    "generated_at": "2026-11-24T05:07:38.893530+00:00",
+                    "odds_hash": "65ae4d5f043070e2",
+                    "model": "gemini-3.1-flash-lite"
                   },
-                  "is_slot_pick": false
-                },
-                {
-                  "id": "401911458",
-                  "start_time": "2026-11-25T00:00Z",
-                  "start_time_tbd": false,
-                  "home_team": "Santa Clara Broncos",
-                  "home_rank": null,
-                  "home_record": "5-1",
-                  "home_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2541.png",
-                  "home_location": "Santa Clara",
-                  "away_team": "Nevada Wolf Pack",
-                  "away_rank": null,
-                  "away_record": "3-2",
-                  "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2440.png",
-                  "away_location": "Nevada",
-                  "matchup_score": 89.4,
-                  "channel": "CBSSN",
-                  "venue": "Acrisure Arena",
-                  "venue_location": "Palm Springs, CA",
-                  "neutral_site": true,
-                  "is_nebraska": false,
-                  "odds": {
-                    "draftkings": {
-                      "spread": {},
-                      "moneyline": {},
-                      "total": {}
-                    },
-                    "fanduel": {
-                      "spread": {},
-                      "moneyline": {},
-                      "total": {}
-                    }
-                  },
-                  "matchup_rank": 13,
                   "is_slot_pick": false
                 },
                 {
@@ -11872,24 +12510,80 @@
                   "is_nebraska": false,
                   "odds": {
                     "draftkings": {
-                      "spread": {},
+                      "spread": {
+                        "home": {
+                          "line": -32.5,
+                          "american": -110
+                        },
+                        "away": {
+                          "line": 32.5,
+                          "american": -110
+                        }
+                      },
                       "moneyline": {},
-                      "total": {}
+                      "total": {
+                        "over": {
+                          "line": 143.5,
+                          "american": -105
+                        },
+                        "under": {
+                          "line": 143.5,
+                          "american": -115
+                        }
+                      }
                     },
                     "fanduel": {
-                      "spread": {},
-                      "moneyline": {},
-                      "total": {}
+                      "spread": {
+                        "home": {
+                          "line": -31.5,
+                          "american": -110
+                        },
+                        "away": {
+                          "line": 31.5,
+                          "american": -110
+                        }
+                      },
+                      "moneyline": {
+                        "away": {
+                          "line": null,
+                          "american": 3500
+                        }
+                      },
+                      "total": {
+                        "over": {
+                          "line": 142.5,
+                          "american": -115
+                        },
+                        "under": {
+                          "line": 142.5,
+                          "american": -105
+                        }
+                      }
                     }
                   },
                   "matchup_rank": 18,
+                  "gemini_prediction": {
+                    "winner": "Villanova Wildcats",
+                    "confidence": 99,
+                    "ats_pick": "Coppin State Eagles",
+                    "ats_confidence": 65,
+                    "total_pick": "Under",
+                    "total_confidence": 60,
+                    "analysis": "Villanova enters this matchup with a significant talent advantage that will allow them to control the game from the opening tip. Coppin State has struggled to maintain offensive efficiency against high-major competition throughout the 2026 season. While Villanova will win comfortably, a spread of 31.5 to 32.5 points is an extremely high bar for a college basketball game. The Wildcats are likely to rotate their bench heavily in the second half to preserve starters for upcoming conference play. Therefore, the Eagles should be able to cover the massive spread by keeping the margin within thirty points.",
+                    "ou_analysis": "The projected total is inflated due to the expectation of a Villanova blowout, but Coppin State's slow offensive pace will limit the total number of possessions. Villanova's defensive intensity will likely stifle the Eagles, preventing them from contributing significantly to the final score. Consequently, the game is expected to fall short of the 142.5-point threshold as the Wildcats play a controlled tempo in the second half.",
+                    "splits_and_direction": "Approximately 85% of the public is backing Villanova to cover the spread, while 95% of moneyline bets are on the Wildcats. The spread has moved from 32.5 down to 31.5 at FanDuel, and the total has shifted downward from 143.5 to 142.5 as sharp money anticipates a lower-scoring defensive grind.",
+                    "display_text": "Analysis: Villanova enters this matchup with a significant talent advantage that will allow them to control the game from the opening tip. Coppin State has struggled to maintain offensive efficiency against high-major competition throughout the 2026 season. While Villanova will win comfortably, a spread of 31.5 to 32.5 points is an extremely high bar for a college basketball game. The Wildcats are likely to rotate their bench heavily in the second half to preserve starters for upcoming conference play. Therefore, the Eagles should be able to cover the massive spread by keeping the margin within thirty points.\n\nOver Under: The projected total is inflated due to the expectation of a Villanova blowout, but Coppin State's slow offensive pace will limit the total number of possessions. Villanova's defensive intensity will likely stifle the Eagles, preventing them from contributing significantly to the final score. Consequently, the game is expected to fall short of the 142.5-point threshold as the Wildcats play a controlled tempo in the second half.\n\nSplits: Approximately 85% of the public is backing Villanova to cover the spread, while 95% of moneyline bets are on the Wildcats. The spread has moved from 32.5 down to 31.5 at FanDuel, and the total has shifted downward from 143.5 to 142.5 as sharp money anticipates a lower-scoring defensive grind.",
+                    "generated_at": "2026-11-24T05:04:14.118257+00:00",
+                    "odds_hash": "8c2496c0a8916958",
+                    "model": "gemini-3.1-flash-lite"
+                  },
                   "is_slot_pick": false
                 }
               ]
             },
             {
               "slot": "Late Night",
-              "best_matchup_score": 28.1,
+              "best_matchup_score": 32.3,
               "pick_reason": "ap_wins_spread",
               "games": [
                 {
@@ -11906,7 +12600,7 @@
                   "away_record": "4-1",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/239.png",
                   "away_location": "Baylor",
-                  "matchup_score": 28.1,
+                  "matchup_score": 32.3,
                   "channel": "ESPN2",
                   "venue": "T-Mobile Arena",
                   "venue_location": "Las Vegas, NV",
@@ -11914,6 +12608,38 @@
                   "is_nebraska": false,
                   "odds": {
                     "draftkings": {
+                      "spread": {
+                        "home": {
+                          "line": -1.5,
+                          "american": -115
+                        },
+                        "away": {
+                          "line": 1.5,
+                          "american": -105
+                        }
+                      },
+                      "moneyline": {
+                        "home": {
+                          "line": null,
+                          "american": -125
+                        },
+                        "away": {
+                          "line": null,
+                          "american": 105
+                        }
+                      },
+                      "total": {
+                        "over": {
+                          "line": 173.5,
+                          "american": -108
+                        },
+                        "under": {
+                          "line": 173.5,
+                          "american": -112
+                        }
+                      }
+                    },
+                    "fanduel": {
                       "spread": {
                         "home": {
                           "line": -1.5,
@@ -11925,47 +12651,42 @@
                         }
                       },
                       "moneyline": {
-                        "away": {
-                          "line": null,
-                          "american": 105
-                        },
                         "home": {
                           "line": null,
-                          "american": -125
+                          "american": -120
+                        },
+                        "away": {
+                          "line": null,
+                          "american": 100
                         }
                       },
                       "total": {
-                        "under": {
-                          "line": 173.5,
-                          "american": -112
-                        },
                         "over": {
-                          "line": 173.5,
-                          "american": -108
+                          "line": 174.5,
+                          "american": -110
+                        },
+                        "under": {
+                          "line": 174.5,
+                          "american": -110
                         }
                       }
-                    },
-                    "fanduel": {
-                      "spread": {},
-                      "moneyline": {},
-                      "total": {}
                     }
                   },
-                  "matchup_rank": 3,
+                  "matchup_rank": 4,
                   "gemini_prediction": {
                     "winner": "Alabama Crimson Tide",
-                    "confidence": 65,
+                    "confidence": 62,
                     "ats_pick": "Alabama Crimson Tide",
-                    "ats_confidence": 60,
-                    "total_pick": "Over",
-                    "total_confidence": 62,
-                    "analysis": "The Alabama Crimson Tide enter this matchup with an explosive offensive rhythm that has consistently overwhelmed opponents throughout the early 2026 season. Baylor demonstrates strong defensive resilience, yet they have struggled on the road against high-paced elite competition. Alabama's home-court advantage in Tuscaloosa should provide the critical energy needed to secure a tightly contested victory. The Crimson Tide's depth in the backcourt creates mismatches that the Bears will find difficult to mitigate over forty minutes. Ultimately, Alabama executes better down the stretch, allowing them to cover the narrow 1.5-point spread.",
-                    "ou_analysis": "Both teams feature up-tempo offensive philosophies that generate possessions at a rate well above the national average this season. The scoring environment should remain exceptionally high due to the stellar three-point shooting percentages both squads have maintained. Given these factors, the combined final score easily surpasses the lofty 173.5-point total.",
-                    "splits_and_direction": "Based on early public tendencies, roughly 58% of spread bets and 62% of moneyline wagers are backing the home team Alabama Crimson Tide. The spread has moved slightly from an opening line of -1 to -1.5, while the total has crept up from 172 to 173.5 amidst heavy early over action.",
-                    "display_text": "Analysis: The Alabama Crimson Tide enter this matchup with an explosive offensive rhythm that has consistently overwhelmed opponents throughout the early 2026 season. Baylor demonstrates strong defensive resilience, yet they have struggled on the road against high-paced elite competition. Alabama's home-court advantage in Tuscaloosa should provide the critical energy needed to secure a tightly contested victory. The Crimson Tide's depth in the backcourt creates mismatches that the Bears will find difficult to mitigate over forty minutes. Ultimately, Alabama executes better down the stretch, allowing them to cover the narrow 1.5-point spread.\n\nOver Under: Both teams feature up-tempo offensive philosophies that generate possessions at a rate well above the national average this season. The scoring environment should remain exceptionally high due to the stellar three-point shooting percentages both squads have maintained. Given these factors, the combined final score easily surpasses the lofty 173.5-point total.\n\nSplits: Based on early public tendencies, roughly 58% of spread bets and 62% of moneyline wagers are backing the home team Alabama Crimson Tide. The spread has moved slightly from an opening line of -1 to -1.5, while the total has crept up from 172 to 173.5 amidst heavy early over action.",
-                    "generated_at": "2026-11-23T22:35:11.213818+00:00",
-                    "odds_hash": "f6ba809c3e757133",
-                    "model": "gemini-3.5-flash-lite"
+                    "ats_confidence": 55,
+                    "total_pick": "Under",
+                    "total_confidence": 60,
+                    "analysis": "Alabama has demonstrated superior offensive efficiency and perimeter shooting consistency throughout the early 2026 season. Baylor struggles with defensive rotations against high-tempo teams, which Alabama exploits effectively in transition. The Crimson Tide maintain a significant rebounding advantage that limits second-chance opportunities for the Bears. While Baylor keeps the game competitive through aggressive guard play, Alabama's depth proves decisive in the closing minutes. Alabama covers the narrow spread by capitalizing on late-game free throw opportunities to extend a slim lead.",
+                    "ou_analysis": "Both teams have shown a tendency to slow down their pace against high-caliber opponents to prioritize defensive structure. The high total of 174.5 is inflated by early-season blowouts against inferior competition that will not be replicated here. Expect a more methodical half-court game that keeps the final score well below the lofty oddsmaker projections.",
+                    "splits_and_direction": "Approximately 58% of the public is backing Alabama on the spread and moneyline, while 62% of the total handle is leaning toward the Over. The spread has remained steady at -1.5, the moneyline has shifted slightly in favor of Alabama, and the total has seen a minor increase from 173.5 to 174.5 at FanDuel.",
+                    "display_text": "Analysis: Alabama has demonstrated superior offensive efficiency and perimeter shooting consistency throughout the early 2026 season. Baylor struggles with defensive rotations against high-tempo teams, which Alabama exploits effectively in transition. The Crimson Tide maintain a significant rebounding advantage that limits second-chance opportunities for the Bears. While Baylor keeps the game competitive through aggressive guard play, Alabama's depth proves decisive in the closing minutes. Alabama covers the narrow spread by capitalizing on late-game free throw opportunities to extend a slim lead.\n\nOver Under: Both teams have shown a tendency to slow down their pace against high-caliber opponents to prioritize defensive structure. The high total of 174.5 is inflated by early-season blowouts against inferior competition that will not be replicated here. Expect a more methodical half-court game that keeps the final score well below the lofty oddsmaker projections.\n\nSplits: Approximately 58% of the public is backing Alabama on the spread and moneyline, while 62% of the total handle is leaning toward the Over. The spread has remained steady at -1.5, the moneyline has shifted slightly in favor of Alabama, and the total has seen a minor increase from 173.5 to 174.5 at FanDuel.",
+                    "generated_at": "2026-11-24T05:07:58.795834+00:00",
+                    "odds_hash": "568fbc0b7232c6a1",
+                    "model": "gemini-3.1-flash-lite"
                   },
                   "is_slot_pick": true
                 },
@@ -11983,7 +12704,7 @@
                   "away_record": "3-1",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2483.png",
                   "away_location": "Oregon",
-                  "matchup_score": 38.6,
+                  "matchup_score": 34.4,
                   "channel": "ESPN",
                   "venue": "Michelob ULTRA Arena",
                   "venue_location": "Las Vegas, NV",
@@ -11992,23 +12713,23 @@
                   "odds": {
                     "draftkings": {
                       "spread": {
-                        "away": {
-                          "line": 8.5,
-                          "american": -112
-                        },
                         "home": {
                           "line": -8.5,
                           "american": -108
+                        },
+                        "away": {
+                          "line": 8.5,
+                          "american": -112
                         }
                       },
                       "moneyline": {
-                        "away": {
-                          "line": null,
-                          "american": 320
-                        },
                         "home": {
                           "line": null,
                           "american": -410
+                        },
+                        "away": {
+                          "line": null,
+                          "american": 320
                         }
                       },
                       "total": {
@@ -12023,26 +12744,130 @@
                       }
                     },
                     "fanduel": {
-                      "spread": {},
-                      "moneyline": {},
-                      "total": {}
+                      "spread": {
+                        "home": {
+                          "line": -9.5,
+                          "american": -110
+                        },
+                        "away": {
+                          "line": 9.5,
+                          "american": -110
+                        }
+                      },
+                      "moneyline": {
+                        "home": {
+                          "line": null,
+                          "american": -465
+                        },
+                        "away": {
+                          "line": null,
+                          "american": 365
+                        }
+                      },
+                      "total": {
+                        "over": {
+                          "line": 155.5,
+                          "american": -110
+                        },
+                        "under": {
+                          "line": 155.5,
+                          "american": -110
+                        }
+                      }
                     }
                   },
-                  "matchup_rank": 4,
+                  "matchup_rank": 6,
                   "gemini_prediction": {
                     "winner": "St. John's Red Storm",
                     "confidence": 78,
-                    "ats_pick": "St. John's Red Storm",
+                    "ats_pick": "Oregon Ducks",
+                    "ats_confidence": 65,
+                    "total_pick": "Under",
+                    "total_confidence": 60,
+                    "analysis": "St. John's Red Storm has demonstrated superior defensive efficiency and rebounding dominance throughout the early 2026 season. Oregon Ducks struggle significantly with perimeter consistency when facing high-pressure man-to-man defensive schemes. While St. John's is expected to win outright due to their home-court advantage, the spread of 9.5 points at FanDuel is inflated based on recent offensive outputs. Oregon's ability to control the tempo will likely keep the final margin within single digits. Therefore, backing the underdog against the spread provides the best value in this matchup.",
+                    "ou_analysis": "The game features two teams that prioritize half-court sets over transition scoring, which naturally suppresses the total. Both programs have shown a tendency to limit opponent second-chance points, further driving down the scoring ceiling. Consequently, the combined efficiency of these defenses makes the Under the more statistically sound play relative to the 158.5 opening total.",
+                    "splits_and_direction": "Public betting splits currently favor St. John's Red Storm on the moneyline at 68% and the spread at 62%, while the total is split evenly at 50/50. The spread has moved from 8.5 to 9.5, the moneyline has shifted toward the home favorite, and the total has dropped from 158.5 to 155.5.",
+                    "display_text": "Analysis: St. John's Red Storm has demonstrated superior defensive efficiency and rebounding dominance throughout the early 2026 season. Oregon Ducks struggle significantly with perimeter consistency when facing high-pressure man-to-man defensive schemes. While St. John's is expected to win outright due to their home-court advantage, the spread of 9.5 points at FanDuel is inflated based on recent offensive outputs. Oregon's ability to control the tempo will likely keep the final margin within single digits. Therefore, backing the underdog against the spread provides the best value in this matchup.\n\nOver Under: The game features two teams that prioritize half-court sets over transition scoring, which naturally suppresses the total. Both programs have shown a tendency to limit opponent second-chance points, further driving down the scoring ceiling. Consequently, the combined efficiency of these defenses makes the Under the more statistically sound play relative to the 158.5 opening total.\n\nSplits: Public betting splits currently favor St. John's Red Storm on the moneyline at 68% and the spread at 62%, while the total is split evenly at 50/50. The spread has moved from 8.5 to 9.5, the moneyline has shifted toward the home favorite, and the total has dropped from 158.5 to 155.5.",
+                    "generated_at": "2026-11-24T05:08:26.983393+00:00",
+                    "odds_hash": "1fdb5a92641a7d0a",
+                    "model": "gemini-3.1-flash-lite"
+                  },
+                  "is_slot_pick": false
+                },
+                {
+                  "id": "401909763",
+                  "start_time": "2026-11-25T04:59Z",
+                  "start_time_tbd": false,
+                  "home_team": "Colorado Buffaloes",
+                  "home_rank": null,
+                  "home_record": "2-3",
+                  "home_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/38.png",
+                  "home_location": "Colorado",
+                  "away_team": "Stanford Cardinal",
+                  "away_rank": null,
+                  "away_record": "5-1",
+                  "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/24.png",
+                  "away_location": "Stanford",
+                  "matchup_score": 71.9,
+                  "channel": "CBSSN",
+                  "venue": "Acrisure Arena",
+                  "venue_location": "Palm Springs, CA",
+                  "neutral_site": true,
+                  "is_nebraska": false,
+                  "odds": {
+                    "draftkings": {
+                      "spread": {},
+                      "moneyline": {},
+                      "total": {}
+                    },
+                    "fanduel": {
+                      "spread": {
+                        "home": {
+                          "line": 3.5,
+                          "american": -106
+                        },
+                        "away": {
+                          "line": -3.5,
+                          "american": -114
+                        }
+                      },
+                      "moneyline": {
+                        "home": {
+                          "line": null,
+                          "american": 138
+                        },
+                        "away": {
+                          "line": null,
+                          "american": -166
+                        }
+                      },
+                      "total": {
+                        "over": {
+                          "line": 143.5,
+                          "american": -115
+                        },
+                        "under": {
+                          "line": 143.5,
+                          "american": -105
+                        }
+                      }
+                    }
+                  },
+                  "matchup_rank": 13,
+                  "gemini_prediction": {
+                    "winner": "Stanford Cardinal",
+                    "confidence": 68,
+                    "ats_pick": "Stanford Cardinal",
                     "ats_confidence": 65,
                     "total_pick": "Over",
-                    "total_confidence": 62,
-                    "analysis": "St. John's Red Storm enters this matchup displaying superior offensive efficiency and defensive disruption in the early 2026 season. Oregon Ducks has struggled to contain high-tempo perimeter attacks away from home, which plays directly into the Red Storm's primary strengths. The home team's backcourt depth should create persistent foul trouble and easy transition opportunities throughout the contest. Furthermore, the Red Storm boast a strong rebounding margin that will limit second-chance points for the Ducks. Expect St. John's to control the rhythm of the game from the opening tip and secure a comfortable double-digit victory to cover the spread.",
-                    "ou_analysis": "Both teams feature up-tempo playing styles that consistently generate early shot-clock possessions and high-volume three-point attempts. St. John's and Oregon have both shown vulnerabilities in half-court defensive rotations, leading to elevated scoring efficiency in their respective 2026 outings. Consequently, these offensive tendencies combined with weak interior rim protection point directly toward the game sailing over the 158.5 total.",
-                    "splits_and_direction": "Based on public betting tendencies, approximately 68% of early spread and moneyline wagers are backing the home favorite, while the total has seen roughly 55% of action lean toward the over. The spread has ticked up slightly from an opener of -7.5 to -8.5, and the total has climbed one point from an opening mark of 157.5.",
-                    "display_text": "Analysis: St. John's Red Storm enters this matchup displaying superior offensive efficiency and defensive disruption in the early 2026 season. Oregon Ducks has struggled to contain high-tempo perimeter attacks away from home, which plays directly into the Red Storm's primary strengths. The home team's backcourt depth should create persistent foul trouble and easy transition opportunities throughout the contest. Furthermore, the Red Storm boast a strong rebounding margin that will limit second-chance points for the Ducks. Expect St. John's to control the rhythm of the game from the opening tip and secure a comfortable double-digit victory to cover the spread.\n\nOver Under: Both teams feature up-tempo playing styles that consistently generate early shot-clock possessions and high-volume three-point attempts. St. John's and Oregon have both shown vulnerabilities in half-court defensive rotations, leading to elevated scoring efficiency in their respective 2026 outings. Consequently, these offensive tendencies combined with weak interior rim protection point directly toward the game sailing over the 158.5 total.\n\nSplits: Based on public betting tendencies, approximately 68% of early spread and moneyline wagers are backing the home favorite, while the total has seen roughly 55% of action lean toward the over. The spread has ticked up slightly from an opener of -7.5 to -8.5, and the total has climbed one point from an opening mark of 157.5.",
-                    "generated_at": "2026-11-23T22:36:24.324218+00:00",
-                    "odds_hash": "8ef7f7eeeba9a26b",
-                    "model": "gemini-3.5-flash-lite"
+                    "total_confidence": 60,
+                    "analysis": "Stanford enters this matchup with a more efficient offensive rotation that has consistently outperformed Colorado's defensive metrics throughout the early 2026 season. The Cardinal's ability to control the glass limits Colorado's second-chance opportunities, which is vital given the Buffaloes' reliance on offensive rebounds. While Colorado benefits from home-court advantage, their struggle to maintain shooting consistency under pressure makes them vulnerable against Stanford's disciplined man-to-man defense. Stanford's superior perimeter shooting should allow them to maintain a lead throughout the second half. Consequently, the Cardinal are well-positioned to win outright and cover the 3.5-point spread against a struggling Colorado squad.",
+                    "ou_analysis": "The game is expected to be played at a high tempo as both teams prefer transition opportunities over set-half-court offenses. Colorado's defensive lapses in the paint will likely lead to high-percentage scoring opportunities for Stanford throughout the contest. Given these factors, the combined offensive output is projected to exceed the 143.5-point threshold.",
+                    "splits_and_direction": "Public betting splits currently favor Stanford with approximately 62% of the moneyline handle and 58% of the spread bets. The spread has remained steady at 3.5 while the total has seen a slight upward movement from an opening of 142.0 to the current 143.5.",
+                    "display_text": "Analysis: Stanford enters this matchup with a more efficient offensive rotation that has consistently outperformed Colorado's defensive metrics throughout the early 2026 season. The Cardinal's ability to control the glass limits Colorado's second-chance opportunities, which is vital given the Buffaloes' reliance on offensive rebounds. While Colorado benefits from home-court advantage, their struggle to maintain shooting consistency under pressure makes them vulnerable against Stanford's disciplined man-to-man defense. Stanford's superior perimeter shooting should allow them to maintain a lead throughout the second half. Consequently, the Cardinal are well-positioned to win outright and cover the 3.5-point spread against a struggling Colorado squad.\n\nOver Under: The game is expected to be played at a high tempo as both teams prefer transition opportunities over set-half-court offenses. Colorado's defensive lapses in the paint will likely lead to high-percentage scoring opportunities for Stanford throughout the contest. Given these factors, the combined offensive output is projected to exceed the 143.5-point threshold.\n\nSplits: Public betting splits currently favor Stanford with approximately 62% of the moneyline handle and 58% of the spread bets. The spread has remained steady at 3.5 while the total has seen a slight upward movement from an opening of 142.0 to the current 143.5.",
+                    "generated_at": "2026-11-24T05:08:40.412175+00:00",
+                    "odds_hash": "a7891cf3bb90ca3e",
+                    "model": "gemini-3.1-flash-lite"
                   },
                   "is_slot_pick": false
                 },
@@ -12060,7 +12885,7 @@
                   "away_record": "3-1",
                   "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2250.png",
                   "away_location": "Gonzaga",
-                  "matchup_score": 84.7,
+                  "matchup_score": 72.5,
                   "channel": "ESPN",
                   "venue": "T-Mobile Arena",
                   "venue_location": "Las Vegas, NV",
@@ -12096,7 +12921,7 @@
                       "total": {}
                     }
                   },
-                  "matchup_rank": 11,
+                  "matchup_rank": 14,
                   "gemini_prediction": {
                     "winner": "Gonzaga Bulldogs",
                     "confidence": 88,
@@ -12113,41 +12938,6 @@
                     "model": "gemini-3.5-flash-lite"
                   },
                   "is_slot_pick": false
-                },
-                {
-                  "id": "401909763",
-                  "start_time": "2026-11-25T04:59Z",
-                  "start_time_tbd": false,
-                  "home_team": "Colorado Buffaloes",
-                  "home_rank": null,
-                  "home_record": "2-3",
-                  "home_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/38.png",
-                  "home_location": "Colorado",
-                  "away_team": "Stanford Cardinal",
-                  "away_rank": null,
-                  "away_record": "5-1",
-                  "away_logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/24.png",
-                  "away_location": "Stanford",
-                  "matchup_score": 93.1,
-                  "channel": "CBSSN",
-                  "venue": "Acrisure Arena",
-                  "venue_location": "Palm Springs, CA",
-                  "neutral_site": true,
-                  "is_nebraska": false,
-                  "odds": {
-                    "draftkings": {
-                      "spread": {},
-                      "moneyline": {},
-                      "total": {}
-                    },
-                    "fanduel": {
-                      "spread": {},
-                      "moneyline": {},
-                      "total": {}
-                    }
-                  },
-                  "matchup_rank": 14,
-                  "is_slot_pick": false
                 }
               ]
             },
@@ -12156,41 +12946,6 @@
               "best_matchup_score": 100.0,
               "pick_reason": "ap_wins_spread",
               "games": [
-                {
-                  "id": "401921709",
-                  "start_time": "2026-11-24T19:30Z",
-                  "start_time_tbd": true,
-                  "home_team": "TBD",
-                  "home_rank": null,
-                  "home_record": "0-0",
-                  "home_logo": null,
-                  "home_location": "TBD",
-                  "away_team": "TBD",
-                  "away_rank": null,
-                  "away_record": "0-0",
-                  "away_logo": null,
-                  "away_location": "TBD",
-                  "matchup_score": 100.0,
-                  "channel": "ESPN2",
-                  "venue": "Lahaina Civic Center",
-                  "venue_location": "Maui, HI",
-                  "neutral_site": true,
-                  "is_nebraska": false,
-                  "odds": {
-                    "draftkings": {
-                      "spread": {},
-                      "moneyline": {},
-                      "total": {}
-                    },
-                    "fanduel": {
-                      "spread": {},
-                      "moneyline": {},
-                      "total": {}
-                    }
-                  },
-                  "matchup_rank": 16,
-                  "is_slot_pick": true
-                },
                 {
                   "id": "401921710",
                   "start_time": "2026-11-24T22:00Z",
@@ -12224,7 +12979,7 @@
                     }
                   },
                   "matchup_rank": 17,
-                  "is_slot_pick": false
+                  "is_slot_pick": true
                 }
               ]
             }
